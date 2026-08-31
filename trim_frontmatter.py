@@ -1,530 +1,538 @@
 from pathlib import Path
 import argparse
 import csv
+import fnmatch
 import re
+from collections import Counter
 
 import pymupdf
 
 
 # ---------------------------------------------------------------------------
-# Configuration
+# Defaults
 # ---------------------------------------------------------------------------
 
-# We only inspect the beginning of each report.
-#
-# The reports we have looked at so far typically begin Chapter 1 somewhere
-# around physical PDF pages 4-10. Scanning 15 gives us some extra room while
-# avoiding unnecessary processing of the whole report.
+# Only inspect the beginning of each report.
 DEFAULT_SCAN_LIMIT = 15
 
-
-# If Chapter 1 begins after this fraction of the physical page height,
-# keep the WHOLE page.
-#
-# Example:
-#
-#     0.35 = 35% down the page
-#
-# So:
-#
-#     Chapter 1 at 10% down the page
-#         -> page is mostly Chapter 1
-#         -> EXCLUDE the page
-#
-#     Chapter 1 at 70% down the page
-#         -> page contains useful front matter before Chapter 1
-#         -> INCLUDE the whole page
-#
-# This is intentional. We prefer a small amount of Chapter 1 leaking into
-# the shortened PDF rather than losing useful front matter such as:
-#
-#     - List of Figures
-#     - List of Tables
-#     - Abbreviations
-#     - Acknowledgements
-#
+# If the detected boundary starts at or below 35% of the page height,
+# keep the whole physical page so we do not lose front matter above it.
 DEFAULT_INCLUDE_PAGE_THRESHOLD = 0.35
 
+# By default, process report PDFs only.
+# The * after Report also catches names such as 26010_Report(1).pdf.
+DEFAULT_INCLUDE_PATTERNS = ["*_Report*.pdf"]
+
 
 # ---------------------------------------------------------------------------
-# Chapter 1 heading patterns
+# Boundary heading patterns
 # ---------------------------------------------------------------------------
 
-# Full forms:
-#
-#     Chapter 1: Introduction
-#     Chapter 1 Introduction
-#     CHAPTER 1: INTRODUCTION
-#     Chapter I: Introduction
-#     Chapter One: Introduction
-#
+# Examples:
+#   Chapter 1: Introduction
+#   CHAPTER 1 INTRODUCTION
+#   Chapter I: Introduction
+#   Chapter One - Introduction
 CHAPTER_1_FULL_PATTERN = re.compile(
-    r"^\s*chapter\s+(?:1|i|one)"
-    r"\s*[\.\:\-\)]?\s*"
-    r"introduction\b",
+    r"^\s*chapter\s+(?:1|i|one)\s*[\.\:\-\)]?\s*introduction\b",
     re.IGNORECASE,
 )
 
-
-# A Chapter heading by itself:
-#
-#     Chapter 1
-#
-# followed on the next line by:
-#
-#     Introduction
-#
+# Examples:
+#   Chapter 1
+#   Chapter I
+# followed by a separate line containing Introduction.
 CHAPTER_1_ONLY_PATTERN = re.compile(
-    r"^\s*chapter\s+(?:1|i|one)"
-    r"\s*[\.\:\-\)]?\s*$",
+    r"^\s*chapter\s+(?:1|i|one)\s*[\.\:\-\)]?\s*$",
     re.IGNORECASE,
 )
 
-
-# Numbered forms:
-#
-#     1. Introduction
-#     1 Introduction
-#     1.Introduction
-#     1: Introduction
-#
+# Examples:
+#   1. Introduction
+#   1 Introduction
+#   1.0 Introduction
 NUMBERED_INTRO_PATTERN = re.compile(
-    r"^\s*1\s*[\.\:\-\)]?\s*introduction\b",
+    r"^\s*1(?:\.0)?\s*[\.\:\-\)]?\s*introduction\b",
     re.IGNORECASE,
 )
 
-
-# Roman numeral form:
-#
-#     I. Introduction
-#
+# Example:
+#   I. Introduction
 ROMAN_INTRO_PATTERN = re.compile(
     r"^\s*i\s*[\.\:\-\)]\s*introduction\b",
     re.IGNORECASE,
 )
 
-
-# Used when Chapter 1 and Introduction are split across two lines.
+# Fallback for older/non-chaptered reports such as 1912_Report.pdf:
+#   Introduction
+#   Introduction: Background
 INTRODUCTION_ONLY_PATTERN = re.compile(
-    r"^\s*introduction\b",
+    r"^\s*introduction\b(?:\s*[:\-].*)?$",
     re.IGNORECASE,
 )
 
-
-# Common subsection formats that usually appear shortly after the real
-# Chapter 1 heading:
-#
-#     1.1 Problem Statement
-#     1.1 Background
-#     1.2 Scope
-#
+# Evidence that real Chapter 1 content follows a heading.
 SUBSECTION_PATTERN = re.compile(
     r"^\s*1\.\d+(?:\.\d+)*\b",
     re.IGNORECASE,
 )
 
+# Used to recognize standalone TOC/index page numbers.
+PAGE_NUMBER_PATTERN = re.compile(
+    r"^(?:\d+|[ivxlcdm]+|\d+\s*[-\u2013]\s*\d+)$",
+    re.IGNORECASE,
+)
+
 
 # ---------------------------------------------------------------------------
-# Text extraction helpers
+# Generic helpers
 # ---------------------------------------------------------------------------
+
 
 def normalize_line(line):
-    """
-    Collapse repeated whitespace and remove whitespace from the beginning
-    and end of a line.
-
-    Example:
-
-        "   Chapter   1:   Introduction  "
-
-    becomes:
-
-        "Chapter 1: Introduction"
-    """
-
+    """Collapse repeated whitespace and trim a line."""
     return " ".join(line.strip().split())
 
 
-def extract_lines_with_positions(page):
+def glob_match(name, pattern):
+    """Case-insensitive shell-style glob matching."""
+    return fnmatch.fnmatch(name.casefold(), pattern.casefold())
+
+
+def discover_pdfs(folder, include_patterns, ignore_patterns):
     """
-    Extract text line-by-line while preserving the vertical position of
-    each line on the physical PDF page.
+    Find files directly inside folder.
 
-    We need the vertical position because it lets us distinguish:
+    Include semantics:
+      - If the user gives no --include args, DEFAULT_INCLUDE_PATTERNS are used.
+      - If the user gives one or more --include args, they replace the defaults.
 
-        Chapter 1 near the TOP of a page
-            -> exclude that page
-
-    from:
-
-        List of Tables
-        List of Figures
-        ...
-        Chapter 1 near the BOTTOM
-            -> keep that page
-
-    Returns a list like:
-
-        [
-            {
-                "text": "Chapter 1: Introduction",
-                "y0": 512.4,
-                "y1": 529.2,
-            },
-            ...
-        ]
+    Ignore semantics:
+      - Every --ignore pattern is layered on top of the include patterns.
     """
+    files = []
 
+    for path in folder.iterdir():
+        if not path.is_file():
+            continue
+
+        if not any(glob_match(path.name, p) for p in include_patterns):
+            continue
+
+        if any(glob_match(path.name, p) for p in ignore_patterns):
+            continue
+
+        files.append(path)
+
+    return sorted(files, key=lambda p: p.name.casefold())
+
+
+# ---------------------------------------------------------------------------
+# PDF text + geometry extraction
+# ---------------------------------------------------------------------------
+
+
+def extract_lines(page):
+    """
+    Extract text lines while preserving their physical PDF coordinates.
+
+    This matters because a TOC may store:
+
+        Chapter 1: Introduction
+
+    and its right-aligned page number as two separate text objects on the
+    same visual row. Looking only at the text string can therefore create
+    false positives.
+    """
+    output = []
     page_dict = page.get_text("dict", sort=True)
 
-    extracted_lines = []
-
     for block in page_dict.get("blocks", []):
-        # Type 0 means a text block.
         if block.get("type") != 0:
             continue
 
         for line in block.get("lines", []):
             spans = line.get("spans", [])
-
             if not spans:
                 continue
 
-            # Combine all spans belonging to this visual line.
-            text = "".join(
-                span.get("text", "")
-                for span in spans
+            text = normalize_line(
+                "".join(span.get("text", "") for span in spans)
             )
-
-            text = normalize_line(text)
 
             if not text:
                 continue
 
-            bbox = line.get("bbox")
+            x0, y0, x1, y1 = line.get("bbox", (0, 0, 0, 0))
 
-            if bbox:
-                y0 = bbox[1]
-                y1 = bbox[3]
-            else:
-                # Very unlikely fallback.
-                y0 = 0
-                y1 = 0
+            output.append(
+                {
+                    "text": text,
+                    "x0": x0,
+                    "y0": y0,
+                    "x1": x1,
+                    "y1": y1,
+                }
+            )
 
-            extracted_lines.append({
-                "text": text,
-                "y0": y0,
-                "y1": y1,
-            })
+    output.sort(key=lambda item: (item["y0"], item["x0"]))
+    return output
 
-    # Although sort=True normally handles reading order, explicitly sorting
-    # by vertical position makes the behavior easier to reason about.
-    extracted_lines.sort(
-        key=lambda item: (item["y0"], item["y1"])
-    )
 
-    return extracted_lines
+def same_visual_row(a, b, tolerance=3.0):
+    """Return True when two extracted lines are on approximately the same row."""
+    a_center = (a["y0"] + a["y1"]) / 2
+    b_center = (b["y0"] + b["y1"]) / 2
+    return abs(a_center - b_center) <= tolerance
 
 
 # ---------------------------------------------------------------------------
-# TOC detection
+# Local TOC/index rejection
 # ---------------------------------------------------------------------------
 
-def looks_like_toc_entry(line):
+
+def row_has_right_page_number(lines, index, page_width):
     """
-    Decide whether ONE LINE looks like a Table of Contents entry.
+    Check whether a candidate row has a page number on its far right.
 
-    This is intentionally different from asking whether the WHOLE PAGE is
-    a table of contents.
+    This rejects TOC entries such as:
 
-    That distinction is important because reports such as 26030 can have:
+        Chapter 1: Introduction                         6
 
-        List of Figures
-        List of Tables
-        Chapter 1: Introduction
+    even when PyMuPDF extracts the heading and the number as separate
+    text objects.
 
-    all on the same physical PDF page.
-
-    Examples considered TOC-like:
-
-        Chapter 1: Introduction ............ 6
-        Chapter 1: Introduction             6
-        1.1 Problem Statement .............. 8
+    This is deliberately local. We do NOT reject an entire page merely
+    because some part of it looks like a TOC/list page. That is important
+    for reports where list material and the real Chapter 1 share a page.
     """
+    candidate = lines[index]
 
-    line = normalize_line(line)
-
-    # Dotted leader followed by a page number:
-    #
-    #     Chapter 1: Introduction ........ 6
-    #
-    if re.search(r"\.{2,}\s*\d+\s*$", line):
-        return True
-
-    # Chapter entry ending in a standalone page number:
-    #
-    #     Chapter 1: Introduction 6
-    #
+    # Same text object contains dotted leaders + page number.
     if re.search(
-        r"\bintroduction\s+\d+\s*$",
-        line,
+        r"\.{2,}\s*(?:\d+|[ivxlcdm]+)\s*$",
+        candidate["text"],
         re.IGNORECASE,
     ):
         return True
 
-    # Generic numbered subsection with dotted leader:
-    #
-    #     1.1 Problem Statement ........ 8
-    #
+    # Same text object contains a trailing page number without dots.
     if re.search(
-        r"^\s*\d+(?:\.\d+)+.*\.{2,}\s*\d+\s*$",
-        line,
+        r"\bintroduction\s+(?:\d+|[ivxlcdm]+)\s*$",
+        candidate["text"],
+        re.IGNORECASE,
     ):
         return True
 
-    return False
+    # Separate right-aligned text object on the same visual row.
+    for other_index, other in enumerate(lines):
+        if other_index == index:
+            continue
 
+        if not same_visual_row(candidate, other):
+            continue
 
-def nearby_text_looks_like_real_content(lines, start_index):
-    """
-    Inspect the text immediately AFTER a possible Chapter 1 heading.
+        if other["x0"] < page_width * 0.65:
+            continue
 
-    A real chapter usually has things such as:
-
-        1.1 Background
-        1.1 Problem Statement
-
-    and/or actual paragraph text.
-
-    A TOC usually contains many short entries ending with page numbers.
-
-    This function provides another safeguard against mistaking a TOC entry
-    for the real chapter.
-    """
-
-    following = lines[start_index:start_index + 15]
-
-    if not following:
-        # A heading at the very bottom of the physical page may legitimately
-        # have its content starting on the next page.
-        #
-        # We do not automatically reject it.
-        return True
-
-    texts = [item["text"] for item in following]
-
-    # Strong evidence: a Chapter 1 subsection follows the heading.
-    for text in texts[:6]:
-        if SUBSECTION_PATTERN.match(text):
+        if PAGE_NUMBER_PATTERN.fullmatch(other["text"]):
             return True
 
-    # Count TOC-looking lines.
-    toc_like_count = sum(
-        1
-        for text in texts
-        if looks_like_toc_entry(text)
-    )
-
-    # Count words in the nearby content.
-    combined_text = " ".join(texts)
-
-    word_count = len(
-        re.findall(r"\b[\w'-]+\b", combined_text)
-    )
-
-    # If most nearby lines look like TOC entries, this is probably not the
-    # real chapter.
-    if following and toc_like_count >= max(3, len(following) // 2):
-        return False
-
-    # Real chapter prose normally gives us plenty of words.
-    if word_count >= 20:
-        return True
-
-    # Not enough evidence.
     return False
 
 
-# ---------------------------------------------------------------------------
-# Chapter 1 detection
-# ---------------------------------------------------------------------------
-
-def find_chapter_1_on_page(page):
+def following_rows_look_indexed(lines, start_index, page_width, limit=8):
     """
-    Look for the REAL Chapter 1 heading on one PDF page.
+    Check whether the rows immediately after a candidate mostly look like
+    TOC/index entries with right-aligned page numbers.
 
-    Returns None if no reliable heading is found.
-
-    Otherwise returns a dictionary containing:
-
-        {
-            "y": vertical coordinate,
-            "position_ratio": fraction down the page,
-            "heading": detected heading text,
-            "line_index": index of heading
-        }
-
-    position_ratio examples:
-
-        0.10 -> about 10% down the page
-        0.50 -> halfway down the page
-        0.80 -> about 80% down the page
+    This is another local safeguard. It helps when the candidate's own
+    page number is extracted strangely or is missing, while nearby TOC rows
+    still expose the pattern.
     """
+    row_indexes = []
 
-    lines = extract_lines_with_positions(page)
+    for index in range(start_index, min(len(lines), start_index + limit * 2)):
+        item = lines[index]
+
+        # Skip standalone page-number text objects. They belong to another
+        # row and are checked through row_has_right_page_number().
+        if PAGE_NUMBER_PATTERN.fullmatch(item["text"]):
+            continue
+
+        row_indexes.append(index)
+
+        if len(row_indexes) >= limit:
+            break
+
+    if not row_indexes:
+        return False
+
+    indexed_count = sum(
+        row_has_right_page_number(lines, index, page_width)
+        for index in row_indexes
+    )
+
+    return (
+        indexed_count >= 2
+        and indexed_count >= len(row_indexes) * 0.40
+    )
+
+
+# ---------------------------------------------------------------------------
+# Candidate validation
+# ---------------------------------------------------------------------------
+
+
+def following_text_looks_real(lines, start_index, page_width):
+    """
+    Validate that useful prose or real section content follows the heading.
+
+    Real content commonly contains:
+      - 1.1 Problem Statement
+      - 1.1 Background
+      - prose paragraphs
+
+    A TOC/index instead tends to contain repeated right-aligned page numbers.
+    """
+    if following_rows_look_indexed(lines, start_index, page_width):
+        return False
+
+    texts = []
+
+    for item in lines[start_index : start_index + 15]:
+        if PAGE_NUMBER_PATTERN.fullmatch(item["text"]):
+            continue
+        texts.append(item["text"])
+
+    # A heading at the very bottom of a page may have its body on the next
+    # physical page. Do not reject that automatically.
+    if not texts:
+        return True
+
+    # Strong evidence: a Chapter 1 subsection follows shortly afterward.
+    if any(SUBSECTION_PATTERN.match(text) for text in texts[:6]):
+        return True
+
+    word_count = len(
+        re.findall(r"\b[\w'-]+\b", " ".join(texts))
+    )
+
+    return word_count >= 20
+
+
+def meaningful_words_before(lines, boundary_index, page_height):
+    """
+    Count meaningful words above the real boundary on the same physical page.
+
+    If enough useful material appears above the boundary, keep that entire
+    page even when the boundary itself starts before the normal percentage
+    threshold.
+
+    This handles cases such as:
+
+        Objective
+        <objective paragraph>
+        Introduction
+        <main report body>
+
+    We prefer a little main-body leakage over losing that Objective section.
+    """
+    texts = []
+
+    for item in lines[:boundary_index]:
+        # Ignore extreme header/footer zones.
+        if item["y0"] < page_height * 0.04:
+            continue
+
+        if item["y0"] > page_height * 0.94:
+            continue
+
+        if PAGE_NUMBER_PATTERN.fullmatch(item["text"]):
+            continue
+
+        texts.append(item["text"])
+
+    return len(
+        re.findall(r"\b[\w'-]+\b", " ".join(texts))
+    )
+
+
+# ---------------------------------------------------------------------------
+# Boundary detection
+# ---------------------------------------------------------------------------
+
+
+def find_boundary_on_page(page):
+    """
+    Find the real beginning of the report body on one physical PDF page.
+
+    Preferred boundary:
+      - Chapter 1 / Chapter I / 1. Introduction
+
+    Fallback boundary:
+      - plain "Introduction" for older reports that do not use chapters
+
+    Returns None if no reliable boundary is found.
+    """
+    lines = extract_lines(page)
 
     if not lines:
         return None
 
+    page_width = page.rect.width
     page_height = page.rect.height
 
-    if page_height <= 0:
-        return None
-
     for index, item in enumerate(lines):
-        line = item["text"]
+        text = item["text"]
 
-        heading_text = None
+        boundary_type = None
+        heading_text = text
         content_start_index = index + 1
 
         # ---------------------------------------------------------------
-        # Case 1:
-        #
-        #     Chapter 1: Introduction
-        #
+        # Chapter 1: Introduction
         # ---------------------------------------------------------------
+        if CHAPTER_1_FULL_PATTERN.match(text):
+            boundary_type = "CHAPTER_1"
 
-        if CHAPTER_1_FULL_PATTERN.match(line):
-            heading_text = line
+        # ---------------------------------------------------------------
+        # 1. Introduction / 1.0 Introduction
+        # ---------------------------------------------------------------
+        elif NUMBERED_INTRO_PATTERN.match(text):
+            boundary_type = "CHAPTER_1"
 
-            # Reject:
-            #
-            #     Chapter 1: Introduction ........ 6
-            #
-            if looks_like_toc_entry(line):
+        # ---------------------------------------------------------------
+        # I. Introduction
+        # ---------------------------------------------------------------
+        elif ROMAN_INTRO_PATTERN.match(text):
+            boundary_type = "CHAPTER_1"
+
+        # ---------------------------------------------------------------
+        # Chapter 1
+        # Introduction
+        # ---------------------------------------------------------------
+        elif CHAPTER_1_ONLY_PATTERN.match(text):
+            next_index = index + 1
+
+            while (
+                next_index < len(lines)
+                and PAGE_NUMBER_PATTERN.fullmatch(lines[next_index]["text"])
+            ):
+                next_index += 1
+
+            if next_index >= len(lines):
                 continue
 
-        # ---------------------------------------------------------------
-        # Case 2:
-        #
-        #     1. Introduction
-        #
-        # ---------------------------------------------------------------
+            next_text = lines[next_index]["text"]
 
-        elif NUMBERED_INTRO_PATTERN.match(line):
-            heading_text = line
-
-            if looks_like_toc_entry(line):
+            if not INTRODUCTION_ONLY_PATTERN.match(next_text):
                 continue
 
-        # ---------------------------------------------------------------
-        # Case 3:
-        #
-        #     I. Introduction
-        #
-        # ---------------------------------------------------------------
-
-        elif ROMAN_INTRO_PATTERN.match(line):
-            heading_text = line
-
-            if looks_like_toc_entry(line):
+            if row_has_right_page_number(lines, next_index, page_width):
                 continue
 
+            boundary_type = "CHAPTER_1"
+            heading_text = f"{text} {next_text}"
+            content_start_index = next_index + 1
+
         # ---------------------------------------------------------------
-        # Case 4:
-        #
-        #     Chapter 1
-        #     Introduction
-        #
+        # Fallback for non-chaptered reports:
+        # Introduction
         # ---------------------------------------------------------------
-
-        elif CHAPTER_1_ONLY_PATTERN.match(line):
-            if index + 1 >= len(lines):
-                continue
-
-            next_line = lines[index + 1]["text"]
-
-            if not INTRODUCTION_ONLY_PATTERN.match(next_line):
-                continue
-
-            # Reject something such as:
-            #
-            #     Chapter 1
-            #     Introduction ........ 6
-            #
-            if looks_like_toc_entry(next_line):
-                continue
-
-            heading_text = f"{line} {next_line}"
-
-            # Actual content starts after both heading lines.
-            content_start_index = index + 2
+        elif INTRODUCTION_ONLY_PATTERN.match(text):
+            boundary_type = "INTRODUCTION"
 
         else:
             continue
 
-        # ---------------------------------------------------------------
-        # Check what comes after the possible heading.
-        # ---------------------------------------------------------------
+        # Reject the candidate itself if it is a TOC/index row.
+        if row_has_right_page_number(lines, index, page_width):
+            continue
 
-        if not nearby_text_looks_like_real_content(
+        # Reject a candidate followed by more TOC/index rows.
+        if following_rows_look_indexed(
             lines,
             content_start_index,
+            page_width,
         ):
             continue
 
-        y = item["y0"]
+        # Require real content after the candidate.
+        if not following_text_looks_real(
+            lines,
+            content_start_index,
+            page_width,
+        ):
+            continue
 
-        position_ratio = y / page_height
+        preboundary_words = meaningful_words_before(
+            lines,
+            index,
+            page_height,
+        )
 
         return {
-            "y": y,
-            "position_ratio": position_ratio,
+            "boundary_type": boundary_type,
             "heading": heading_text,
-            "line_index": index,
+            "position_ratio": item["y0"] / page_height,
+            "preboundary_words": preboundary_words,
         }
 
     return None
 
 
-def find_chapter_1(doc, scan_limit):
+def find_boundary(doc, scan_limit):
     """
     Scan only the first N physical PDF pages.
 
-    Returns:
-
-        {
-            "page_index": zero-based physical page index,
-            "position_ratio": where the heading begins,
-            "heading": matched heading text,
-        }
-
-    or None.
+    Also track how much extractable text exists so a failure can be reported as:
+      - NO_TEXT_IN_SCAN
+      - BOUNDARY_NOT_FOUND
     """
-
-    pages_to_scan = min(
-        scan_limit,
-        doc.page_count,
-    )
+    pages_to_scan = min(scan_limit, doc.page_count)
+    total_text_characters = 0
 
     for page_index in range(pages_to_scan):
         page = doc[page_index]
 
-        match = find_chapter_1_on_page(page)
+        page_text = page.get_text("text", sort=True)
+        total_text_characters += len(page_text.strip())
+
+        match = find_boundary_on_page(page)
 
         if match is not None:
-            return {
-                "page_index": page_index,
-                "position_ratio": match["position_ratio"],
-                "heading": match["heading"],
-            }
+            match["page_index"] = page_index
+            match["total_text_characters"] = total_text_characters
+            return match
 
-    return None
+    return {
+        "page_index": None,
+        "total_text_characters": total_text_characters,
+    }
 
 
 # ---------------------------------------------------------------------------
 # PDF cutting
 # ---------------------------------------------------------------------------
+
+
+def empty_result(filename, total_pages, status):
+    """Create a consistent result row for failures."""
+    return {
+        "filename": filename,
+        "total_pages": total_pages,
+        "boundary_type": "",
+        "boundary_heading": "",
+        "boundary_pdf_page": "",
+        "boundary_start_percent": "",
+        "boundary_page_included": "",
+        "include_reason": "",
+        "preboundary_words": "",
+        "pages_saved": "",
+        "status": status,
+    }
+
 
 def cut_frontmatter(
     input_pdf,
@@ -533,113 +541,78 @@ def cut_frontmatter(
     include_page_threshold,
 ):
     """
-    Detect Chapter 1 and create a shortened PDF containing the front matter.
+    Create a shortened PDF containing the front matter.
 
-    There are two cases.
+    Boundary page policy:
 
-    CASE A
-    ------
+    1. Boundary starts sufficiently far down the page:
+       Keep the whole page.
 
-    Chapter 1 starts near the top:
+    2. Significant useful text exists above the boundary on that page:
+       Keep the whole page.
 
-        [ Chapter 1 ]
-        lots of chapter content
-        ...
+    3. Otherwise:
+       Exclude the boundary page.
 
-    We EXCLUDE that physical page.
-
-    CASE B
-    ------
-
-    Useful front matter appears first:
-
-        List of Figures
-        List of Tables
-        ...
-
-        [ Chapter 1 ]
-
-    We INCLUDE that whole physical page.
-
-    This intentionally allows a small amount of Chapter 1 to leak into the
-    output rather than throwing away useful front matter.
+    This intentionally favors a small amount of Introduction/Chapter 1
+    leakage over losing useful front matter.
     """
-
     doc = pymupdf.open(input_pdf)
 
     try:
-        chapter_match = find_chapter_1(
-            doc,
-            scan_limit,
-        )
+        match = find_boundary(doc, scan_limit)
 
-        if chapter_match is None:
-            return {
-                "filename": input_pdf.name,
-                "total_pages": doc.page_count,
-                "chapter1_pdf_page": "",
-                "chapter1_start_percent": "",
-                "chapter1_page_included": "",
-                "pages_saved": "",
-                "status": "NOT_FOUND",
-            }
+        if match["page_index"] is None:
+            if match["total_text_characters"] < 40:
+                status = "NO_TEXT_IN_SCAN"
+            else:
+                status = "BOUNDARY_NOT_FOUND"
 
-        chapter_1_index = chapter_match["page_index"]
-        position_ratio = chapter_match["position_ratio"]
+            return empty_result(
+                input_pdf.name,
+                doc.page_count,
+                status,
+            )
 
-        # Convert to a nicer percentage for logging.
+        boundary_index = match["page_index"]
+        position_ratio = match["position_ratio"]
+        preboundary_words = match["preboundary_words"]
+
         start_percent = round(position_ratio * 100, 1)
 
         # ---------------------------------------------------------------
-        # Decide whether to keep the physical page containing Chapter 1.
+        # Decide whether to keep the physical boundary page.
         # ---------------------------------------------------------------
+        if position_ratio >= include_page_threshold:
+            include_boundary_page = True
+            include_reason = "STARTS_AFTER_THRESHOLD"
 
-        include_chapter_page = (
-            position_ratio >= include_page_threshold
-        )
-
-        if include_chapter_page:
-            # Example:
-            #
-            # Chapter 1 is physical page 7
-            # zero-based index = 6
-            #
-            # Keep indexes:
-            #
-            #     0 through 6
-            #
-            # = physical pages 1 through 7.
-            #
-            pages_to_keep = chapter_1_index + 1
+        elif preboundary_words >= 20:
+            include_boundary_page = True
+            include_reason = "FRONTMATTER_ABOVE_BOUNDARY"
 
         else:
-            # Chapter 1 starts near the top.
-            #
-            # Keep everything BEFORE the Chapter 1 page.
-            #
-            # Example:
-            #
-            # Chapter 1 is physical page 7
-            # zero-based index = 6
-            #
-            # Keep indexes:
-            #
-            #     0 through 5
-            #
-            # = physical pages 1 through 6.
-            #
-            pages_to_keep = chapter_1_index
+            include_boundary_page = False
+            include_reason = "EXCLUDED_BOUNDARY_PAGE"
 
-        # Chapter 1 appears on the first physical page.
+        if include_boundary_page:
+            pages_to_keep = boundary_index + 1
+        else:
+            pages_to_keep = boundary_index
+
         if pages_to_keep <= 0:
             return {
                 "filename": input_pdf.name,
                 "total_pages": doc.page_count,
-                "chapter1_pdf_page": chapter_1_index + 1,
-                "chapter1_start_percent": start_percent,
-                "chapter1_page_included": "NO",
+                "boundary_type": match["boundary_type"],
+                "boundary_heading": match["heading"],
+                "boundary_pdf_page": boundary_index + 1,
+                "boundary_start_percent": start_percent,
+                "boundary_page_included": "NO",
+                "include_reason": "BOUNDARY_AT_START",
+                "preboundary_words": preboundary_words,
                 "pages_saved": 0,
-                "status": "CHAPTER_1_AT_START",
+                "status": "BOUNDARY_AT_START",
             }
 
         output_doc = pymupdf.open()
@@ -650,6 +623,10 @@ def cut_frontmatter(
                 from_page=0,
                 to_page=pages_to_keep - 1,
             )
+
+            # Avoid stale output from a previous run.
+            if output_pdf.exists():
+                output_pdf.unlink()
 
             output_doc.save(
                 output_pdf,
@@ -663,13 +640,15 @@ def cut_frontmatter(
         return {
             "filename": input_pdf.name,
             "total_pages": doc.page_count,
-            "chapter1_pdf_page": chapter_1_index + 1,
-            "chapter1_start_percent": start_percent,
-            "chapter1_page_included": (
-                "YES"
-                if include_chapter_page
-                else "NO"
+            "boundary_type": match["boundary_type"],
+            "boundary_heading": match["heading"],
+            "boundary_pdf_page": boundary_index + 1,
+            "boundary_start_percent": start_percent,
+            "boundary_page_included": (
+                "YES" if include_boundary_page else "NO"
             ),
+            "include_reason": include_reason,
+            "preboundary_words": preboundary_words,
             "pages_saved": pages_to_keep,
             "status": "OK",
         }
@@ -679,27 +658,99 @@ def cut_frontmatter(
 
 
 # ---------------------------------------------------------------------------
-# Command-line program
+# Console output
 # ---------------------------------------------------------------------------
+
+
+def print_result(number, total, result):
+    """Readable one-line result for each file."""
+    prefix = f"[{number:03d}/{total:03d}]"
+    status = result["status"]
+    filename = result["filename"]
+
+    if status == "OK":
+        boundary_label = (
+            "Chapter 1"
+            if result["boundary_type"] == "CHAPTER_1"
+            else "Introduction"
+        )
+
+        if result["boundary_page_included"] == "YES":
+            action = "kept boundary page"
+        else:
+            action = "excluded boundary page"
+
+        print(
+            f"{prefix} OK       {filename} | "
+            f"{boundary_label} p{result['boundary_pdf_page']} "
+            f"@ {result['boundary_start_percent']}% | "
+            f"{action} | saved {result['pages_saved']}"
+        )
+
+    elif status == "NO_TEXT_IN_SCAN":
+        print(
+            f"{prefix} NO-TEXT  {filename} | "
+            "almost no extractable text in scanned pages"
+        )
+
+    elif status == "BOUNDARY_NOT_FOUND":
+        print(
+            f"{prefix} MISS     {filename} | "
+            "text exists, but no supported Introduction boundary was found"
+        )
+
+    elif status == "BOUNDARY_AT_START":
+        print(
+            f"{prefix} START    {filename} | "
+            "boundary is on the first page; nothing useful to cut before it"
+        )
+
+    else:
+        print(f"{prefix} ERROR    {filename} | {status}")
+
+
+def print_summary(results):
+    counts = Counter(result["status"] for result in results)
+
+    print()
+    print("Summary")
+    print(f"  OK:                 {counts.get('OK', 0)}")
+    print(f"  Boundary not found: {counts.get('BOUNDARY_NOT_FOUND', 0)}")
+    print(f"  No text in scan:    {counts.get('NO_TEXT_IN_SCAN', 0)}")
+    print(f"  Boundary at start:  {counts.get('BOUNDARY_AT_START', 0)}")
+
+    error_count = sum(
+        count
+        for status, count in counts.items()
+        if status.startswith("ERROR:")
+    )
+
+    print(f"  Errors:             {error_count}")
+
+
+# ---------------------------------------------------------------------------
+# Command-line entry point
+# ---------------------------------------------------------------------------
+
 
 def main():
     parser = argparse.ArgumentParser(
         description=(
-            "Extract senior-project report front matter while "
-            "automatically detecting the start of Chapter 1."
+            "Extract senior-project report front matter while detecting "
+            "Chapter 1 or a plain Introduction boundary."
         )
     )
 
     parser.add_argument(
         "input_folder",
         type=Path,
-        help="Folder containing the original PDF reports",
+        help="Folder containing source PDFs",
     )
 
     parser.add_argument(
         "output_folder",
         type=Path,
-        help="Folder where shortened PDFs will be written",
+        help="Folder for shortened PDFs",
     )
 
     parser.add_argument(
@@ -707,8 +758,8 @@ def main():
         type=int,
         default=DEFAULT_SCAN_LIMIT,
         help=(
-            "Maximum number of physical PDF pages to inspect "
-            f"for Chapter 1. Default: {DEFAULT_SCAN_LIMIT}"
+            "Maximum number of physical pages to inspect. "
+            f"Default: {DEFAULT_SCAN_LIMIT}"
         ),
     )
 
@@ -717,10 +768,30 @@ def main():
         type=float,
         default=DEFAULT_INCLUDE_PAGE_THRESHOLD,
         help=(
-            "Keep the physical Chapter 1 page when the heading "
-            "begins after this fraction of the page height. "
-            f"Default: {DEFAULT_INCLUDE_PAGE_THRESHOLD} "
-            "(35%% down the page)."
+            "Keep the boundary page if the heading begins after this "
+            "fraction of page height. Default: 0.35"
+        ),
+    )
+
+    parser.add_argument(
+        "--include",
+        action="append",
+        default=None,
+        metavar="GLOB",
+        help=(
+            "File glob to include. Repeatable. If supplied, these patterns "
+            "replace the default '*_Report*.pdf'. Quote globs in your shell."
+        ),
+    )
+
+    parser.add_argument(
+        "--ignore",
+        action="append",
+        default=[],
+        metavar="GLOB",
+        help=(
+            "File glob to ignore after inclusion. Repeatable. "
+            "Quote globs in your shell."
         ),
     )
 
@@ -729,55 +800,52 @@ def main():
     input_folder = args.input_folder
     output_folder = args.output_folder
 
-    # ---------------------------------------------------------------
-    # Basic argument validation
-    # ---------------------------------------------------------------
-
     if not input_folder.exists():
-        parser.error(
-            f"Input folder does not exist: {input_folder}"
-        )
+        parser.error(f"Input folder does not exist: {input_folder}")
 
     if not input_folder.is_dir():
-        parser.error(
-            f"Input path is not a directory: {input_folder}"
-        )
+        parser.error(f"Input path is not a directory: {input_folder}")
 
     if args.scan_pages <= 0:
-        parser.error(
-            "--scan-pages must be greater than 0"
-        )
+        parser.error("--scan-pages must be greater than 0")
 
     if not 0 <= args.include_if_after <= 1:
-        parser.error(
-            "--include-if-after must be between 0 and 1"
-        )
+        parser.error("--include-if-after must be between 0 and 1")
 
-    output_folder.mkdir(
-        parents=True,
-        exist_ok=True,
+    if input_folder.resolve() == output_folder.resolve():
+        parser.error("Input and output folders must be different")
+
+    include_patterns = (
+        args.include
+        if args.include
+        else DEFAULT_INCLUDE_PATTERNS
     )
 
-    # Only PDFs directly inside the input directory are processed.
-    pdf_files = sorted(
-        input_folder.glob("*.pdf")
+    ignore_patterns = args.ignore
+
+    output_folder.mkdir(parents=True, exist_ok=True)
+
+    pdf_files = discover_pdfs(
+        input_folder,
+        include_patterns,
+        ignore_patterns,
     )
 
+    print("Front-matter extractor")
+    print(f"  Input:    {input_folder}")
+    print(f"  Output:   {output_folder}")
+    print(f"  Include:  {', '.join(include_patterns)}")
     print(
-        f"Found {len(pdf_files)} PDF files"
+        f"  Ignore:   "
+        f"{', '.join(ignore_patterns) if ignore_patterns else '(none)'}"
     )
+    print(f"  Scan:     first {args.scan_pages} pages")
+    print(f"  Found:    {len(pdf_files)} files")
     print()
 
     results = []
 
-    # ---------------------------------------------------------------
-    # Process PDFs
-    # ---------------------------------------------------------------
-
-    for number, pdf_path in enumerate(
-        pdf_files,
-        start=1,
-    ):
+    for number, pdf_path in enumerate(pdf_files, start=1):
         output_path = output_folder / pdf_path.name
 
         try:
@@ -788,78 +856,31 @@ def main():
                 args.include_if_after,
             )
 
-            results.append(result)
-
-            if result["status"] == "OK":
-                included = (
-                    result["chapter1_page_included"] == "YES"
-                )
-
-                page_action = (
-                    "included Chapter 1 page"
-                    if included
-                    else "excluded Chapter 1 page"
-                )
-
-                print(
-                    f"[{number}/{len(pdf_files)}] "
-                    f"{pdf_path.name}: "
-                    f"Chapter 1 = PDF page "
-                    f"{result['chapter1_pdf_page']}, "
-                    f"starts at "
-                    f"{result['chapter1_start_percent']}%, "
-                    f"{page_action}, "
-                    f"saved first "
-                    f"{result['pages_saved']} pages"
-                )
-
-            else:
-                print(
-                    f"[{number}/{len(pdf_files)}] "
-                    f"{pdf_path.name}: "
-                    f"{result['status']}"
-                )
-
         except Exception as exc:
-            print(
-                f"[{number}/{len(pdf_files)}] "
-                f"{pdf_path.name}: "
-                f"ERROR: {exc}"
+            result = empty_result(
+                pdf_path.name,
+                "",
+                f"ERROR: {exc}",
             )
 
-            results.append({
-                "filename": pdf_path.name,
-                "total_pages": "",
-                "chapter1_pdf_page": "",
-                "chapter1_start_percent": "",
-                "chapter1_page_included": "",
-                "pages_saved": "",
-                "status": f"ERROR: {exc}",
-            })
+        results.append(result)
+        print_result(number, len(pdf_files), result)
 
-    # ---------------------------------------------------------------
-    # Write audit CSV
-    # ---------------------------------------------------------------
+    csv_path = output_folder / "processing_report.csv"
 
-    csv_path = (
-        output_folder
-        / "processing_report.csv"
-    )
-
-    with open(
-        csv_path,
-        "w",
-        newline="",
-        encoding="utf-8",
-    ) as f:
+    with open(csv_path, "w", newline="", encoding="utf-8") as file:
         writer = csv.DictWriter(
-            f,
+            file,
             fieldnames=[
                 "filename",
                 "total_pages",
-                "chapter1_pdf_page",
-                "chapter1_start_percent",
-                "chapter1_page_included",
+                "boundary_type",
+                "boundary_heading",
+                "boundary_pdf_page",
+                "boundary_start_percent",
+                "boundary_page_included",
+                "include_reason",
+                "preboundary_words",
                 "pages_saved",
                 "status",
             ],
@@ -868,9 +889,9 @@ def main():
         writer.writeheader()
         writer.writerows(results)
 
+    print_summary(results)
     print()
-    print("Finished.")
-    print(f"Log: {csv_path}")
+    print(f"CSV log: {csv_path}")
 
 
 if __name__ == "__main__":

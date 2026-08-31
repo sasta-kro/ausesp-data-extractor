@@ -2,4 +2,9 @@
 .DS_Store
 
 **/**.pdf
+**/**.zip
+
 output/
+test-subset/
+
+all-senior-projects/
