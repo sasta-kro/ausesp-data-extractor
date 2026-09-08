@@ -113,7 +113,10 @@ Known document traps (see also the corpus design note inside the AUSE repo,
 - Student IDs print as `ddd-dddd`, seven digits total, and can sit before
   or after names, in parentheses, or on the following line.
 
-A reviewed, manually verified CSV built from agent-read documents exists as
-`output/reviewed-import.csv` in the working tree (not committed). It covers
-the 48-project thinned sample and is the safe import source until the
-pipeline reaches that quality.
+A reviewed, manually verified CSV built from agent-read documents is produced
+by `steps/build_reviewed_csv.py` from the JSON records in
+`ground-truth/batches/` (one file per extraction batch, full 40-row coverage
+of the importable thinned sample, including verbatim abstracts and cleaned
+people fields). Output lands at `output/reviewed-import.csv` (untracked). It
+is the safe import source until the pipeline reaches that quality. Extend the
+batch records rather than the script when corrections come up.
