@@ -1,0 +1,263 @@
+{
+ "1637": {
+  "title": "M-parking system",
+  "period": "2/2016",
+  "students": {
+   "5455213": "Charoenkeith W.",
+   "5615712": "Parin M.",
+   "5618624": "Daran S."
+  },
+  "advisor": "Dr. Benjawan Srisura",
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "transportation"
+   ]
+  }
+ },
+ "1719": {
+  "title": "MIDI Signals Manipulating Console for Live Multiple-Keyboard Performance",
+  "period": "1/2021",
+  "students": {
+   "6115308": "Kanyarat Nalucupchanchai",
+   "6111099": "Napatsorn Kawaree",
+   "6110032": "Taechasit Sarasitt"
+  },
+  "advisor": "Asst. Prof. Dr. Thitipong Tanprasert",
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "technology": [
+    "python"
+   ]
+  }
+ },
+ "2148": {
+  "title": "My portfolio: Web Application for Portfolio Builder",
+  "period": "2/2021",
+  "students": {
+   "6135118": "Paranan Vipornnitipacha"
+  },
+  "advisor": "Asst.Prof.Dr. Paitoon Porntrakoon",
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ]
+  }
+ },
+ "2117": {
+  "title": "AuIdea",
+  "period": "1/2021",
+  "students": {
+   "6135205": "Pinky Shahi",
+   "6135102": "Suchawan Chaiworn",
+   "6138108": "Lipika Baniya"
+  },
+  "advisor": "A. Kiratijuta Bhumichitr",
+  "classification": {
+   "category": [
+    "software_application",
+    "ai_data"
+   ],
+   "domain": [
+    "campus"
+   ]
+  }
+ },
+ "25102": {
+  "title": "AU CANTEEN: AU Student Food Ordering Platform",
+  "period": "2/2025",
+  "students": {
+   "6520255": "Nang Hsi Wan Inn",
+   "6520277": "Thu Thu Win"
+  },
+  "advisor": "Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan",
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "campus",
+    "e_commerce"
+   ],
+   "technology": [
+    "postgresql",
+    "nextjs",
+    "nodejs"
+   ]
+  }
+ },
+ "26006": {
+  "title": "RANGOON: QR Ordering System",
+  "period": "2/2025",
+  "students": {
+   "6540036": "Su Myat Thu",
+   "6540061": "Theint Tha Zin Aung"
+  },
+  "advisor": "A. Jinchun Lu",
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "technology": [
+    "react",
+    "laravel",
+    "mysql"
+   ]
+  }
+ },
+ "26010": {
+  "title": "Jewelry Shop Management System",
+  "period": "2/2025",
+  "students": {
+   "6511724": "Aung Khant",
+   "6511488": "Toe Oo Wai Yan",
+   "6530027": "Thin New Oo"
+  },
+  "advisor": "A. Jinchun Lu",
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ]
+  }
+ },
+ "26037": {
+  "title": "Game Realism through Graphics and Physics",
+  "period": "2/2025",
+  "students": {
+   "6420131": "Sai Sy Hein"
+  },
+  "advisor": "Dr. Phyo Min Tun",
+  "classification": {
+   "category": [
+    "research",
+    "game"
+   ],
+   "platform": [
+    "game"
+   ],
+   "domain": [
+    "entertainment"
+   ]
+  }
+ },
+ "1643": {
+  "title": "Game Promotion Finding",
+  "period": "2/2018",
+  "students": {
+   "5715283": "Parun Sirisopa",
+   "5714011": "Settasuk Kongsithiseth"
+  },
+  "advisor": "Dr. Benjawan Srisura",
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "entertainment"
+   ]
+  }
+ },
+ "2006": {
+  "title": "Face Mask Detection",
+  "period": "1/2020",
+  "students": {
+   "6010017": "Parichart Meesin",
+   "6013633": "Kamonrut Vorrawongprasert"
+  },
+  "advisor": "Chayapol Moemeng",
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "business",
+    "healthcare"
+   ],
+   "topic": [
+    "computer_vision"
+   ]
+  }
+ },
+ "2244": {
+  "title": "AUVR",
+  "period": "2/2023",
+  "students": {
+   "6135229": "Morgan Kieffer",
+   "6115269": "Sethanant Tetanonsakul"
+  },
+  "advisor": "Tapanan Yeophantong",
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ]
+  }
+ },
+ "2596": {
+  "title": "AU Timeout – Sports Court Booking and Equipment Rental System for Assumption University",
+  "period": "2/2025",
+  "students": {
+   "6540153": "Mi Mi Zaw",
+   "6238126": "Min Aung Kyaw",
+   "6611665": "Hsu Shwe Yaung"
+  },
+  "advisor": "Asst. Prof. Dr. Thanachai Thumthawatworn",
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile",
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ]
+  }
+ }
+}

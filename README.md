@@ -1,210 +1,119 @@
-# SP Frontmatter Extractor
+# AUSESP Data Extractor
 
-A small Python pipeline for preparing and trimming senior-project reports before sending them to an LLM or other downstream processing.
+Extraction pipeline for Assumption University software engineering senior
+projects (AUSESP). Converts raw senior-project report files into an
+import-ready CSV for the AUSE Discovery archive.
 
-The goal is to keep only the useful front matter, such as the cover, approval pages, abstract, acknowledgements, table of contents, lists of figures/tables, and similar material, while stopping at the start of Chapter 1 or a plain `Introduction` section.
+## Relevance to AUSE Discovery
+
+AUSE Discovery (the main repository this tool lives beside, ignored by its
+git) is the public searchable archive of historical senior projects. It
+accepts bulk metadata through a CSV import: exact headers, taxonomy keys
+from `config/taxonomy/values.yaml`, people as JSON fields. This tool exists
+to produce that CSV from the university's raw report files. The main project
+consumes only the result CSV. How the CSV is produced, by code or by manual
+extraction, is this repository's concern alone.
+
+Repository split:
+
+- Main repo: `ause-discover` (the application). Ignores `tools/` entirely.
+- This repo: `ausesp-data-extractor`. Remote
+  `git@github.com:sasta-kro/ausesp-data-extractor.git`. Separate history,
+  separate concerns, free to iterate.
 
 ## Pipeline
 
 ```text
-raw reports / ZIPs
-      |
-      v
-prepare_reports.py
-      |
-      v
-normalized report PDFs
-      |
-      v
-trim_frontmatter.py
-      |
-      v
-short frontmatter PDFs + CSV logs
+resources/all-sp-projects/        raw corpus: 221 projects, ZIPs and PDFs
+        |
+        v
+steps/1_prepare.py               unzip, normalize, clean -> reports/
+        |
+        v
+steps/2_trim.py                  keep front matter only -> thinned/
+        |
+        v
+steps/3_extract_and_build_csv.py extract metadata, classify, emit CSV
+        |
+        v
+output/import.csv                import into AUSE Discovery admin UI
 ```
 
-`prepare_reports.py` is optional if your input folder already contains clean report PDFs.
+Steps 1 and 2 came from the original sp-frontmatter-extractor history and
+already produced the current thinned corpus. Step 3 is newer and still has
+known defects; see the handoff section.
 
-## Requirements
+## Usage
 
-- Python 3
-- PyMuPDF
+```sh
+python3 -m venv .venv
+.venv/bin/pip install -r requirements.txt
 
-Install dependencies:
+# Step 1: prepare raw reports (optional when the folder already holds clean PDFs)
+.venv/bin/python steps/1_prepare.py <raw-dir> <reports-dir>
 
-```bash
-pip install -r requirements.txt
+# Step 2: trim to front matter
+.venv/bin/python steps/2_trim.py <reports-dir> <thinned-dir>
+
+# Step 3: extract and build the import CSV
+.venv/bin/python steps/3_extract_and_build_csv.py \
+  --pdfs <thinned-dir> \
+  --taxonomy <path-to>/ause-discover/config/taxonomy/values.yaml \
+  --output output
+
+# Validate against references
+.venv/bin/python steps/validate.py \
+  --metadata output/metadata \
+  --corpus <corpus-analysis.json> \
+  --sample ground-truth/sample.json
 ```
 
-## Quick start
+`ground-truth/sample.json` holds records extracted by independent document
+reading (LLM agents reading the PDFs), not by the code. It is the quality
+reference. Extend it, do not weaken it to match the code.
 
-### 1. Prepare raw PDFs and ZIP archives
+The taxonomy file comes from the main repository. The extractor can only
+emit keys that file defines. Key additions happen there, then sync to the
+database with `ausectl catalog sync`.
 
-```bash
-python prepare_reports.py \
-  ./all-senior-projects \
-  ./prepared-reports \
-  --clean
-```
+## Handoff notes for the next agent
 
-By default, the preparation step considers:
+Goal: produce a trustworthy import CSV for all 221 projects. Approach is
+open: fix the pipeline, fan out manual extraction agents over the unzipped
+reports, or combine both. The AUSE project only consumes the result.
 
-```text
-*_Report*.pdf
-*_Report*.zip
-```
+Known defects observed in real import output (2026-09-05, thinned corpus):
 
-Direct report PDFs are copied into the staging folder. Report ZIPs are inspected and a usable report PDF is extracted when it can be selected safely.
+- Advisor parsing produced `).` for project 2006 (Face Mask Detection).
+  Parenthesized signature artifacts leak into the advisor field.
+- Committee parsing produced literal underscores for project 2121
+  (Wearable Biosensing Device). Signature-line separators are not filtered.
+- Some projects with a real abstract extracted none (2121 among them).
+- Titles sometimes swallow following student names or course lines.
+- Word-per-line PDF extraction mode misses some students (2238).
+- Classification uses title and abstract only. Evidence deeper in the
+  document (methodology tools such as Qt, Spring Boot) is never tagged.
+  Full-document classification was tried and rejected: literature-review
+  mentions create false tags. A better fix is reading tools/acknowledgement
+  chapters specifically, not the whole document.
+- Proposal-phase front matter has no abstract and cannot import. The
+  application rejects such rows by design. Import them once final reports
+  exist.
 
-To prepare files and immediately run the slicer:
+Known document traps (see also the corpus design note inside the AUSE repo,
+`docs/dev-notes/archvies/CORPUS_AND_SEARCH_DESIGN.md`):
 
-```bash
-python prepare_reports.py \
-  ./all-senior-projects \
-  ./prepared-reports \
-  --clean \
-  --run-slicer ./output
-```
+- Stale template titles: `Text Classification for Education Publication`
+  appears on approval pages and headers of unrelated projects.
+- Fictional placeholder approvers: Hal Emmerich, Frank Jaeger,
+  Drago Pettrovich Madnar (Metal Gear names) on project 2596.
+- Cover/approval spelling conflicts: RANGOON vs YANGOON (26006),
+  Vipornnitipacha vs Vitpornnitipacha (2148).
+- Cover team brands instead of titles: AutoWise (26010).
+- Student IDs print as `ddd-dddd`, seven digits total, and can sit before
+  or after names, in parentheses, or on the following line.
 
-### 2. Trim front matter
-
-```bash
-python trim_frontmatter.py ./prepared-reports ./output
-```
-
-By default, the slicer processes:
-
-```text
-*_Report*.pdf
-```
-
-It scans only the first 15 physical PDF pages and looks for boundaries such as:
-
-```text
-Chapter 1: Introduction
-Chapter 1
-Introduction
-1. Introduction
-1.0 Introduction
-I. Introduction
-Introduction
-```
-
-If the boundary begins near the top of a page, that page is excluded. If it begins far enough down the page, the whole page is kept so useful front matter above the heading is not lost. The default threshold is 35% down the page.
-
-## File filtering
-
-Both scripts support repeatable shell-style glob filters. Quote globs in zsh/bash so the shell does not expand them first.
-
-Add ignores on top of the defaults:
-
-```bash
-python trim_frontmatter.py ./input ./output \
-  --ignore "*draft*" \
-  --ignore "*old*"
-```
-
-Replace the default include pattern:
-
-```bash
-python trim_frontmatter.py ./input ./output \
-  --include "*.pdf" \
-  --ignore "*_Slide.pdf" \
-  --ignore "*_Poster.pdf"
-```
-
-Multiple `--include` arguments are allowed.
-
-For ZIP contents, `prepare_reports.py` already ignores obvious slide, poster, presentation, and external-exposure PDFs. Add more member-level ignores with:
-
-```bash
---member-ignore "*appendix*.pdf"
-```
-
-## Useful options
-
-### `trim_frontmatter.py`
-
-```text
---scan-pages N
-```
-
-Maximum number of physical PDF pages to inspect. Default: `15`.
-
-```text
---include-if-after FRACTION
-```
-
-Keep the boundary page if the heading starts after this fraction of page height. Default: `0.35`.
-
-### `prepare_reports.py`
-
-```text
---clean
-```
-
-Delete the staging folder before preparing files.
-
-```text
---run-slicer OUTPUT_FOLDER
-```
-
-Run `trim_frontmatter.py` automatically after preparation.
-
-```text
---slicer PATH
-```
-
-Use a custom path to the slicer script.
-
-## Logs and statuses
-
-The preparation step writes:
-
-```text
-prepared-reports/preparation_report.csv
-```
-
-Common preparation statuses include:
-
-- `READY`: PDF successfully staged
-- `DOCX_ONLY`: ZIP contains DOCX files but no usable PDF
-- `NO_PDF_IN_ZIP`: no usable PDF found
-- `AMBIGUOUS_ZIP`: multiple plausible PDFs were found and the script refused to guess
-- `BAD_ZIP` / `ZIP_ERROR`: archive problem
-
-The slicer writes:
-
-```text
-output/processing_report.csv
-```
-
-Common slicing statuses include:
-
-- `OK`: boundary found and output created
-- `BOUNDARY_NOT_FOUND`: readable text exists, but no supported boundary was detected
-- `NO_TEXT_IN_SCAN`: little or no extractable text was found in the scanned pages, often indicating an image-only/scanned PDF
-- `BOUNDARY_AT_START`: the report starts immediately at the detected boundary
-- `ERROR: ...`: processing failed
-
-The CSV also records the detected boundary page, heading, position on the page, whether that page was included, and how many pages were saved.
-
-## Notes and limitations
-
-- The slicer does not use an LLM.
-- It does not process the whole report. Only the first `N` pages are inspected.
-- PDF pages are copied directly, so original text, images, and formatting are preserved.
-- OCR fallback is not currently included. Image-only PDFs may appear as `NO_TEXT_IN_SCAN`.
-- DOCX-to-PDF conversion is not currently included. ZIPs containing only DOCX files are reported as `DOCX_ONLY`.
-- ZIP extraction is conservative. When multiple plausible PDFs exist, the script reports `AMBIGUOUS_ZIP` instead of guessing.
-
-## Typical repository layout
-
-```text
-sp-frontmatter-extractor/
-├── prepare_reports.py
-├── trim_frontmatter.py
-├── requirements.txt
-├── all-senior-projects/
-├── prepared-reports/
-└── output/
-```
+A reviewed, manually verified CSV built from agent-read documents exists as
+`output/reviewed-import.csv` in the working tree (not committed). It covers
+the 48-project thinned sample and is the safe import source until the
+pipeline reaches that quality.

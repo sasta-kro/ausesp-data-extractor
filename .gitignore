@@ -8,3 +8,7 @@ output/
 test-subset/
 
 all-senior-projects/
+
+.venv/
+output/
+__pycache__/
