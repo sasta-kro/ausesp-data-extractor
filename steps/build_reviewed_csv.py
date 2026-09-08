@@ -90,9 +90,10 @@ def main() -> int:
             "import_key": f"sp-{project_id}",
             "title": title,
             # The source-file numbers are opaque legacy identifiers from a
-            # previous system. They stay in import_key for traceability and
-            # are not published as reference_code.
-            "reference_code": "",
+            # previous system: semantics unknown, internal use only. They are
+            # stored in reference_code (visible to admins, searchable) and
+            # hidden from the public UI.
+            "reference_code": project_id,
             "abstract": abstract,
             "academic_year": year,
             "semester": semester,
