@@ -35,6 +35,21 @@ def squish(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
+# Person names are stored bare: no Mr/Ms honorifics and no academic titles
+# (Dr, Doc, Prof, Asst. Prof., A., ...), which vary inconsistently across
+# documents and add nothing to search or dedup. Ground-truth records stay
+# verbatim; this normalization happens only at CSV build time.
+HONORIFIC = re.compile(
+    r"^(?:(?:Mrs|Miss|Ms|Mr|Professor|Assistant|Associate|Ajarn|Asst|Assoc"
+    r"|Prof|Doctor|Doc|Dr|Aj|A)(?:\.|\b)\s*)+")
+DOCTORATE = re.compile(r",?\s*Ph\.?\s*D\.?\s*$", re.IGNORECASE)
+
+
+def person_name(name: str) -> str:
+    cleaned = HONORIFIC.sub("", DOCTORATE.sub("", squish(name))).strip()
+    return cleaned or squish(name)
+
+
 def load_taxonomy(path: Path) -> dict[str, set[str]]:
     keys: dict[str, set[str]] = {}
     for match in re.finditer(r"dimension:\s*(\w+),\s*key:\s*([\w_]+)", path.read_text()):
@@ -45,7 +60,7 @@ def load_taxonomy(path: Path) -> dict[str, set[str]]:
 def student_json(students: list[dict]) -> list[dict]:
     result = []
     for student in students:
-        entry = {"display_name": squish(student.get("name") or "")}
+        entry = {"display_name": person_name(student.get("name") or "")}
         if not entry["display_name"]:
             continue
         student_id = student.get("student_id")
@@ -102,9 +117,9 @@ def main() -> int:
             "course_key": "senior_project",
             "title_aliases": json.dumps([squish(alias) for alias in record.get("aliases", []) if squish(alias)], ensure_ascii=False),
             "students": json.dumps(student_json(record.get("students", [])), ensure_ascii=False),
-            "advisors": json.dumps([{"display_name": squish(record["advisor"])}] if squish(record.get("advisor") or "") else [], ensure_ascii=False),
+            "advisors": json.dumps([{"display_name": person_name(record["advisor"])}] if squish(record.get("advisor") or "") else [], ensure_ascii=False),
             "co_advisors": json.dumps([], ensure_ascii=False),
-            "committee_members": json.dumps([{"display_name": squish(name)} for name in record.get("committee", []) if squish(name)], ensure_ascii=False),
+            "committee_members": json.dumps([{"display_name": person_name(name)} for name in record.get("committee", []) if squish(name)], ensure_ascii=False),
         }
         classification = record.get("classification", {})
         for facet, column in FACET_COLUMNS.items():
