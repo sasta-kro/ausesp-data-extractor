@@ -115,8 +115,23 @@ Known document traps (see also the corpus design note inside the AUSE repo,
 
 A reviewed, manually verified CSV built from agent-read documents is produced
 by `steps/build_reviewed_csv.py` from the JSON records in
-`ground-truth/batches/` (one file per extraction batch, full 40-row coverage
-of the importable thinned sample, including verbatim abstracts and cleaned
-people fields). Output lands at `output/reviewed-import.csv` (untracked). It
-is the safe import source until the pipeline reaches that quality. Extend the
-batch records rather than the script when corrections come up.
+`ground-truth/batches/` (one file per extraction batch; 142 of 217 report
+projects covered as of 2026-09-08, including verbatim abstracts and cleaned
+people fields with honorifics and academic titles stripped at build time).
+Output lands at `output/reviewed-import.csv` (untracked). It is the safe
+import source until the pipeline reaches that quality. Extend the batch
+records rather than the script when corrections come up.
+
+Corpus quirks found during the 100-project run (2026-09-08):
+
+- The same project filed under two numbers: 1703/1711 (byte-identical ZIPs),
+  1934/2003 (same game and team), 1827/1920 (SAMT Master), and 1906 (final)
+  vs 2004 (proposal) of the same Elderly Care project. All kept; the import
+  owner decides whether to skip the duplicates.
+- 1651, 1902, 1940 are RAR archives; nothing on the machine unpacks them
+  (`brew install unar` would).
+- 14 reports are Word documents, converted to plain text with
+  pandoc/textutil before reading.
+- `php` appears in two reports but is not a taxonomy key; it was stripped.
+  Consider adding it to the main repo's values.yaml if that stack matters.
+- sp-1800 prints no advisor anywhere in the document.
