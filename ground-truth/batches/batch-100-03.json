@@ -1,0 +1,213 @@
+[
+ {
+  "id": "1653",
+  "canonical_title": "A Case Study of the Indoor Performance of Bluetooth Smart with Raspberry Pi",
+  "aliases": [
+   "A Case Study of the Indoor Performance of Bluetooth Smart with Raspberry Pi 3"
+  ],
+  "phase": "final",
+  "course_code": "TS 4299",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Mara Alyssa Dalisay",
+    "student_id": "5645451"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Dobri Atanassov Batovski",
+  "committee": [
+   "A. Piyakul Tillapart",
+   "Asst. Prof. Dr. Thanachai Thumthawatworn"
+  ],
+  "abstract": "This project deals with the results of an experimental study of the indoor transmission performance of Bluetooth low energy (BLE, also known as Bluetooth Smart) using Raspberry Pi 3 and Raspberry Pi Zero W. The l2ping link layer tool is used to send multiple consecutive packets between two connected Bluetooth devices in order to study how the transmission latency varies with the increase of the distance between said devices in corridor and room configurations. Packets of two different sizes, 44 bytes and 200 bytes, are chosen for the transmission experiments. Experimental results with the use of power banks are also obtained.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "hardware_iot",
+    "research"
+   ],
+   "platform": [
+    "embedded_hardware"
+   ],
+   "domain": [],
+   "topic": [],
+   "technology": []
+  }
+ },
+ {
+  "id": "1657",
+  "canonical_title": "UIP: Unified University Information System for Prospective Students on Mobile Devices",
+  "aliases": [
+   "AU Admission"
+  ],
+  "phase": "final",
+  "course_code": "SC4299",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Chotikar Phoophaphimukthum",
+    "student_id": "5613032"
+   },
+   {
+    "name": "Pitiwat Arunruviwat",
+    "student_id": "5613739"
+   },
+   {
+    "name": "Kornkamol Kiatopas",
+    "student_id": "5615959"
+   }
+  ],
+  "advisor": "Dr. Songsak Channarukul",
+  "committee": [
+   "Asst. Prof. Paitoon Porntrakoon",
+   "A. Piyakul Tillapart"
+  ],
+  "abstract": "In this project, we present you an Unified University Information System for Prospective Students on Mobile Devices (UIP) that will be used by prospective student and staff or program concealer. UIP have 3 main features are program recommendation, chat and apply.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile",
+    "web"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [
+    "recommender_system"
+   ],
+   "technology": [
+    "firebase"
+   ]
+  }
+ },
+ {
+  "id": "1661",
+  "canonical_title": "JustOne",
+  "aliases": [
+   "Just One"
+  ],
+  "phase": "proposal",
+  "course_code": null,
+  "program": "computer_science",
+  "semester": null,
+  "academic_year": null,
+  "students": [
+   {
+    "name": "Kevin Narang",
+    "student_id": "5815227"
+   },
+   {
+    "name": "Kwang Min Kim",
+    "student_id": "5738001"
+   }
+  ],
+  "advisor": null,
+  "committee": [],
+  "abstract": null,
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "e_commerce"
+   ],
+   "topic": [],
+   "technology": []
+  }
+ },
+ {
+  "id": "1662",
+  "canonical_title": "VMS Senior Project System",
+  "aliases": [
+   "Senior Project System"
+  ],
+  "phase": "final",
+  "course_code": "IT 4299",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Natthawat P.",
+    "student_id": "5616971"
+   },
+   {
+    "name": "Thanawat U.",
+    "student_id": "5631014"
+   },
+   {
+    "name": "Siwapong C.",
+    "student_id": "5646919"
+   }
+  ],
+  "advisor": "A. Suparwat Charoenvikrom",
+  "committee": [
+   "Asst. Prof. Paitoon Porntrakoon",
+   "A. Piyakul Tillapart"
+  ],
+  "abstract": null,
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [],
+   "technology": [
+    "mysql"
+   ]
+  }
+ },
+ {
+  "id": "1702",
+  "canonical_title": "Room Reservation System",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT 4299",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Zainab Sanoh",
+    "student_id": "5648016"
+   }
+  ],
+  "advisor": "Dr. Jittima Wongwuttiwat",
+  "committee": [
+   "Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishna",
+   "A. Chayapol Meomeng"
+  ],
+  "abstract": "This project is aimed at developing a scheduler for group meetings. This is a web based tool. Any managers can call for a meeting and send the details coordinates of the meeting (location, date, time etc.) to all invitees. This is useful for a small office, school or a department. Facility to book room and editing meeting points are also available. Room reservation system can be a very helpful system within companies or organizations. It provides services such as reserving a room for a meeting or a conference within a few minutes and can remind the participants about the meeting or conference. Furthermore, it can also reply back to the organizer who will be available or on that day or who will not be able to attend to the meeting.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": []
+  }
+ }
+]

@@ -1,0 +1,236 @@
+[
+ {
+  "id": "1638",
+  "canonical_title": "Marathon Management System",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT 4292",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Thanatcha Premsupha",
+    "student_id": "5714270"
+   },
+   {
+    "name": "Phyu Phyu Khaing",
+    "student_id": "5718331"
+   },
+   {
+    "name": "Wasin Rattanaroengchai",
+    "student_id": "5737458"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Darun Kesrarat",
+  "committee": [
+   "A. Tapanan Yeophantong",
+   "A. Piyakul Tillapart"
+  ],
+  "abstract": null,
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [
+    "geolocation"
+   ],
+   "technology": [
+    "wordpress"
+   ]
+  }
+ },
+ {
+  "id": "1640",
+  "canonical_title": "Apartment Management System",
+  "aliases": [],
+  "phase": "proposal",
+  "course_code": "IT 4299",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Juladeach Pokhaiputthinun",
+    "student_id": "5713539"
+   },
+   {
+    "name": "Surawat Pothong",
+    "student_id": "5726804"
+   },
+   {
+    "name": "Zhe Zhou",
+    "student_id": "5748101"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Darun Kesrarat",
+  "committee": [
+   "Asst. Prof. Dr. Adtha Lawanna",
+   "A. Tun Tun Aung"
+  ],
+  "abstract": null,
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "mysql"
+   ]
+  }
+ },
+ {
+  "id": "1642",
+  "canonical_title": "Phonies (Recommender System for Smartphone Product)",
+  "aliases": [],
+  "phase": "proposal",
+  "course_code": "IT 4299",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Kritanu Singhavorawuti",
+    "student_id": "5616813"
+   },
+   {
+    "name": "Palod Patimavirujh",
+    "student_id": "5612602"
+   },
+   {
+    "name": "Napat Woodtisanti",
+    "student_id": "5610873"
+   }
+  ],
+  "advisor": "Dr. Benjawan Srisura",
+  "committee": [
+   "Asst. Prof. Dr. Adtha Lawanna",
+   "Dr. Chokdee Liophanich"
+  ],
+  "abstract": null,
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "e_commerce"
+   ],
+   "topic": [
+    "recommender_system"
+   ],
+   "technology": [
+    "mysql"
+   ]
+  }
+ },
+ {
+  "id": "1646",
+  "canonical_title": "Piano Score Sheet with Pitch Alphabets Generator using Optical Music Recognition",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "Menh Keo",
+    "student_id": "6038302"
+   },
+   {
+    "name": "Aung Khant Oo",
+    "student_id": "6118154"
+   }
+  ],
+  "advisor": "A. Kiratijuta Bhumichitr",
+  "committee": [
+   "Asst. Prof. Dr. Paitoon Porntrakoon",
+   "A. Tapanan Yeophantong"
+  ],
+  "abstract": "For beginners who learn to play piano, recognizing the pitch alphabet of each music note and their position has always been handy stuff. That's the main problem that we're going to solve in this senior project I. In order to solve that problem, we are going to build a platform that end users can upload their sheets and then we will apply Haar-like feature to adopt to Optical Music Recognition process to print the pitch alphabet on top of each music note that is going to help the users be able to read the sheet music easily. For our senior project I, our system will be able to detect both PDF and digital image format of sheet music and convert them into some digital format printed upon each music note.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application",
+    "research"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [
+    "computer_vision",
+    "ocr"
+   ],
+   "technology": [
+    "python"
+   ]
+  }
+ },
+ {
+  "id": "1650",
+  "canonical_title": "2D side action game",
+  "aliases": [
+   "Digitized Dimension"
+  ],
+  "phase": "final",
+  "course_code": "IT4299",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Worachit Into",
+    "student_id": "5614787"
+   },
+   {
+    "name": "Ratnaphorn Champi",
+    "student_id": "5645108"
+   },
+   {
+    "name": "Woranat Swangswai",
+    "student_id": "5837619"
+   }
+  ],
+  "advisor": "A. Pawut Satitsuksanoh",
+  "committee": [
+   "A. Tapanan Yeophantong",
+   "Asst. Prof. Paitoon Porntrakoon"
+  ],
+  "abstract": "In our childhood, we grew up playing computer games. Computer game is the most common source of entertainment because it makes the player feel involved since they can interact with the game to achieve some goals of the game. Unlike watching movies or listening to music, with games players get the change of interacting and bring out their emotions while playing like killing, fighting, competing and many more. So, the concept of this project comes up with the games that remind us of our childhood. Therefore, we try to design a 2D game into 8 bit resolution like the old ones that we are familiar with. The story of the game is based on university life combine with some Sci-Fi theme.\n\nTo make our game fun and challenging we have different stages with different level of difficulty. The first stage is rather simple and easy so novice players can begin to play and get used to how to play. Once they move to next level it gets harder and more killing, jumping, being aware of the fire is required. We show the score on the screen to make it more interesting and keep count of the score by increasing the number of the score as the player kills a monster and collect the scores until the player dies or reaches the end of level.\n\nWe hope our game can make people enjoy playing and find the challenges interesting and want to play more.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "game"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [],
+   "technology": []
+  }
+ }
+]

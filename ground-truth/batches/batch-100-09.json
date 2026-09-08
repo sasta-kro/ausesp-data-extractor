@@ -1,0 +1,228 @@
+[
+ {
+  "id": "1822",
+  "canonical_title": "Motorist data collection for store parking",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT4292 and CS 4200",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Thayawat Thathong",
+    "student_id": "5717532"
+   },
+   {
+    "name": "Chinnawat Wongpatamajaroen",
+    "student_id": "5811398"
+   },
+   {
+    "name": "Prasong Chonsathian",
+    "student_id": "5937618"
+   }
+  ],
+  "advisor": "Mr. Chayapol Moemeng",
+  "committee": [
+   "Mr. Tapanan Yeophantong",
+   "Asst. Prof. Paitoon Porntrakoon, Ph.D."
+  ],
+  "abstract": null,
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "software_application"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "transportation"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "python",
+    "opencv",
+    "firebase"
+   ]
+  }
+ },
+ {
+  "id": "1823",
+  "canonical_title": "Line Bot for Printing Tax Invoice",
+  "aliases": [
+   "Artificial Intelligence for printing the tax of gas station"
+  ],
+  "phase": "final",
+  "course_code": "CS3200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Kamonchanok Arttanate",
+    "student_id": null
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "Asst. Prof. Paitoon Porntrakoon",
+   "Dr. Benjawan Srisura"
+  ],
+  "abstract": "The number of people filling gas at the gas station and request for the tax invoice has been increased recently, is one of the services that people often use. So, I decided to create this project, which is a printing tax invoice by Line Bot, an artificial intelligence for printing tax invoice of filling gas. I would say that the uniqueness of my Line Bot can reduce the wait time of the gas station's customer to get the tax invoice. I designed my Line Bot base on the user who is an owner or employees in the gas station. I provided the user with my two main features. The first one is printing, which allows the user to search by taxpayer number and print the tax invoice. Secondly, config the gas price, which allows the user to update the gas price that can be change every day, which allows users who is an owner or a manager. I also evaluated our system by sample group of people to give back the feedback after experience through my Line Bot.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "python"
+   ]
+  }
+ },
+ {
+  "id": "1824",
+  "canonical_title": "Smart Hydroponic Farm",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 4200 (SC4299)",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Rajanart Incharoensakdi",
+    "student_id": "5735451"
+   },
+   {
+    "name": "Pimtarat Jelaskuvanich",
+    "student_id": "5410193"
+   }
+  ],
+  "advisor": "A. Pawut Satitsuksanoh",
+  "committee": [
+   "Dr. Dobri Atanassov Batovski",
+   "A. Chayapol Moemeng"
+  ],
+  "abstract": "Hydroponic is a method in agriculture that has grown more popular among farming entrepreneurs and enthusiasts. However, many entrepreneurs and recreational farmers face the problem of controlling the water solution quality within the system: the electrical conductivity (EC) and pH value of the water. To address this problem, we have developed a Hydroponic Fertilizer Controller (HFC) along with a mobile application to fulfil the task of measuring and controlling the level of the farm's EC and pH as they desired. The test conducted shows that the HFC can manage the EC and pH value at user-specified multiple levels at a satisfactory level. We also conduct experiment by install the system into a real farm, Mai Nam Farm, with the result which satisfied the farm owner.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "hardware_iot",
+    "software_application"
+   ],
+   "platform": [
+    "embedded_hardware",
+    "mobile"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [],
+   "technology": [
+    "python"
+   ]
+  }
+ },
+ {
+  "id": "1826",
+  "canonical_title": "Animal Adoption Management System",
+  "aliases": [
+   "Animal Adoption Website"
+  ],
+  "phase": "final",
+  "course_code": "SC4299/IT4292",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Emanuele Ambrosini",
+    "student_id": "5625104"
+   },
+   {
+    "name": "Montakant Panyasing",
+    "student_id": "5711068"
+   },
+   {
+    "name": "Sunthorn Phanakunakorn",
+    "student_id": "5713743"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Darun Kesrarat",
+  "committee": [
+   "Asst. Prof. Dr. Adtha Lawanna",
+   "Dr. Benjawan Srisura"
+  ],
+  "abstract": null,
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [
+    "recommender_system"
+   ],
+   "technology": []
+  }
+ },
+ {
+  "id": "1827",
+  "canonical_title": "SAMT Master",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS3200/IT4291",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Aye Myat Mon",
+    "student_id": "5818026"
+   },
+   {
+    "name": "Puja Karmacharya",
+    "student_id": "5818313"
+   },
+   {
+    "name": "Nuzhat Sarwar",
+    "student_id": "5838433"
+   }
+  ],
+  "advisor": "A. Darun",
+  "committee": [],
+  "abstract": null,
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [
+    "geolocation"
+   ],
+   "technology": []
+  }
+ }
+]

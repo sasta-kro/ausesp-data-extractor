@@ -1,0 +1,218 @@
+[
+ {
+  "id": "1703",
+  "canonical_title": "Restaurant Management System",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT 4299",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Aniceto Manuel Moreira Belo",
+    "student_id": "5538432"
+   },
+   {
+    "name": "Agostinho de Sousa Gama da Costa",
+    "student_id": "5538429"
+   },
+   {
+    "name": "Sai Than Htike",
+    "student_id": "5618394"
+   }
+  ],
+  "advisor": "Dr. Chokdee Liopanich",
+  "committee": [
+   "A. Chayapol Moemeng",
+   "Dr. Benjawan Srisura"
+  ],
+  "abstract": "Today, the restaurant business has been growing rapidly. Every restaurant tries to present something new and unique to its customers. Many successful restaurants attract customers, but many of them fail. A contributing factor in addition to food, the more important is the service that is offered. The system integrates restaurant management, or simply called restaurant management system, will greatly helping restaurants to provide faster and better service to its customers, at the same time providing reliable control for the management of the restaurant. that's why we want to try to apply an online-based system to facilitate transactions and provide convenience for customers. Restaurant management system can handle the overall operations of the restaurant, from the moment customers arrive, order a meal, food preparation, up until customers make a payment and left the restaurant.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": []
+  }
+ },
+ {
+  "id": "1707",
+  "canonical_title": "Biddingpluz (Online Auction System)",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT 4291",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Kwanchanok Sitthivej",
+    "student_id": "5710380"
+   },
+   {
+    "name": "Krittiyaporn Plodpiyakun",
+    "student_id": "5711100"
+   },
+   {
+    "name": "Titi Chanpoom",
+    "student_id": "5715095"
+   }
+  ],
+  "advisor": "Dr. Kwankamol Nongpong",
+  "committee": [
+   "A. Tapanan Yeophantong",
+   "Dr. Benjawan Srisura"
+  ],
+  "abstract": "Biddingpluz is the web-based online application in which provide the auction service to both seller and buyer. Users are able to place bid or post the item they want. The concentration of our project is the bidding logic inside the system. For instance, the bidding price increment and Buy it now logic are examples of the critical parts we are interested to study. It is not only the general function but also the auction function we intend to focus on the system to work properly.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "e_commerce"
+   ],
+   "topic": [],
+   "technology": [
+    "mysql"
+   ]
+  }
+ },
+ {
+  "id": "1709",
+  "canonical_title": "Design of Quantum Computing Algorithms for Combinatorial Problems",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Mr. Xiaohan Yu",
+    "student_id": "5718303"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Dobri Atanassov Batovski",
+  "committee": [
+   "A. Chayapol Moemeng",
+   "Asst. Prof. Dr. Paitoon Porntrakoon"
+  ],
+  "abstract": "Existing quantum computing algorithms for combinatorial optimization are applied in testing the rearrangeability of individual permutations in the circuit-switched hypercube. This work is an initial step in designing future hybrid configurations of classical and quantum computers for exhaustive computations related to NP hard network topology problems.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "research"
+   ],
+   "platform": [],
+   "domain": [],
+   "topic": [],
+   "technology": []
+  }
+ },
+ {
+  "id": "1710",
+  "canonical_title": "Crowd Analytic",
+  "aliases": [
+   "Crowd Analytics"
+  ],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Pannachet L",
+    "student_id": "5715280"
+   },
+   {
+    "name": "Sai Kham Sheng",
+    "student_id": "5717607"
+   },
+   {
+    "name": "Chinnawat W.",
+    "student_id": "5811398"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "Dr. Dobri Atanassov Batovski",
+   "A. Paitoon Porntrakoon"
+  ],
+  "abstract": null,
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "opencv"
+   ]
+  }
+ },
+ {
+  "id": "1711",
+  "canonical_title": "Restaurant Management System",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT 4299",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Aniceto Manuel Moreira Belo",
+    "student_id": "5538432"
+   },
+   {
+    "name": "Agostinho de Sousa Gama da Costa",
+    "student_id": "5538429"
+   },
+   {
+    "name": "Sai Than Htike",
+    "student_id": "5618394"
+   }
+  ],
+  "advisor": "Dr. Chokdee Liopanich",
+  "committee": [
+   "A. Chayapol Moemeng",
+   "Dr. Benjawan Srisura"
+  ],
+  "abstract": "Today, the restaurant business has been growing rapidly. Every restaurant tries to present something new and unique to its customers. Many successful restaurants attract customers, but many of them fail. A contributing factor in addition to food, the more important is the service that is offered. The system integrates restaurant management, or simply called restaurant management system, will greatly helping restaurants to provide faster and better service to its customers, at the same time providing reliable control for the management of the restaurant. that's why we want to try to apply an online-based system to facilitate transactions and provide convenience for customers. Restaurant management system can handle the overall operations of the restaurant, from the moment customers arrive, order a meal, food preparation, up until customers make a payment and left the restaurant.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": []
+  }
+ }
+]

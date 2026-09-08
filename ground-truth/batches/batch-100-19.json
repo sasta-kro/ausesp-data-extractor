@@ -1,0 +1,212 @@
+[
+ {
+  "id": "2108",
+  "canonical_title": "MSCS Student Management System",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT4292",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Kan Wuthithepbuncha",
+    "student_id": "6010163"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Rachsuda Setthawong",
+  "committee": [
+   "A. Suparwat Charoenvikrom",
+   "Asst. Prof. Dr. Benjawan Srisura"
+  ],
+  "abstract": "In this Senior Project 2, I am building a new system for the registration of classes and theses in Master of Science in Computer Science (MSCS) curriculum, as well as the system for recording the graduation information of MSCS students. My new system will also be compared with the system that is currently used by the MSCS students, secretary, and director.\n\nAs opposed to the students in BSCS, BSIT, and other bachelor's degree programs, the students in MSCS program currently use a manually approved system to register for a class or a thesis. This works fine if there are not many students, as the MSCS program typically has a maximum of 20 students in each year. However, the current system are still some pertinent drawbacks that need to be rectified.\n\nThe new system provides centralized information for managing classes, theses, as well as student graduation information, to help lessen the time required when manipulating with the data. Both the current and new systems have three main user groups, consisting of the students, director, and secretary.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [],
+   "technology": []
+  }
+ },
+ {
+  "id": "2114",
+  "canonical_title": "Naughty Hamsters",
+  "aliases": [
+   "Naughty Hamsters Casual Game"
+  ],
+  "phase": "proposal",
+  "course_code": null,
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Sutisan Nilrattanakul",
+    "student_id": "6213221"
+   },
+   {
+    "name": "Wanitcha Srithongchuay",
+    "student_id": "6213365"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "A. Chayapol Moemeng",
+   "Dr. Khaing Sandar Htun"
+  ],
+  "abstract": "Since our young age, both of this project's creators have experienced playing a number of games. For this course Senior Project I, we therefore took the opportunity to start learning and improving our skills on game development by selecting the topic of casual game development. With existing problems and player's expectations regarding gaming experience in consideration, our team has implemented our own-designed game called Naughty Hamsters as an online multiplayer party game. The game implementation is done by using the development tools of Unity 2020.3.32 as game engine and Photon Unity Networking 2.40 to deliver networking solutions. This project report covers several aspects and details of how this game is created; including project background, project framework and methodology, and project implementation and testing. Conducting this project, we have studied theorems and concepts to create a game, as well as putting on action by ourselves. Finally, we are able to successfully implement a playable and enjoyable game. Creating Naughty Hamsters has allowed us to take a significant step to gain more understanding of the scene behind game creation and development as it has given us opportunities to learn, use, and improve our performance better. In the end, we strongly hope that Naughty Hamsters can be further developed, tested, and launched in the future and become one of the games listed on some online game platforms to be played and enjoyed by real gamers.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "game"
+   ],
+   "platform": [
+    "game",
+    "desktop"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [],
+   "technology": [
+    "unity"
+   ]
+  }
+ },
+ {
+  "id": "2115",
+  "canonical_title": "LINE Chatbot for Coupon Customer",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS4200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Apitsara Choppradit",
+    "student_id": "5710497"
+   },
+   {
+    "name": "Tanapat Limtemsap",
+    "student_id": "6014216"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "Dr. Benjawan Srisura",
+   "Asst. Prof. Dr. Paitoon Porntrakoon"
+  ],
+  "abstract": "Digital transformation is quite a common word nowadays. Many businesses try to adapt to current society and improve by combining the usage of digital and technology because of easily collecting and analyzing data to improve their business process. The One Petroleum is also one of them. They try to incorporate the chatbot into managing and generating coupon processes. But some parts of these processes still require the labor of humans to perform and take more time. So, this project is developed in order to improve these processes to be more automatic, more digital and reduce the human labor and time spent.\n\nThe project which we are developing will be divided into two major parts – LINE chatbot and Web Application – as well as the rework of coupon form. The project is developed by using Next.js framework and MongoDB to build the web app because of convenience and low budget in development to deploy on Vercel Server. And creating LINE chatbot by using LINE Developers Platform's Messaging API.\n\nThe result of this project is that the site operator or business owner comment that some words on user interfaces are hard to understand or not relate in the real working environment.\n\nIn conclusion, there are some benefits gained from implementing this project. The project can reduce the human work and time spent on generating and managing coupon processes. It also makes the processes to be more convenient as it allows employees to send pictures from the oil stations directly and business owners and check processes outside off the oil station's office. Lastly, it also provides a better data visualization on the information at hand better than a collection of paper coupons to count on.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web",
+    "mobile"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "nextjs",
+    "mongodb",
+    "react"
+   ]
+  }
+ },
+ {
+  "id": "2116",
+  "canonical_title": "Data Analytics with D-Network Worldwide Company",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT4292",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Tanus Witpattanakul",
+    "student_id": "6015131"
+   },
+   {
+    "name": "Pon-ake Phayak",
+    "student_id": "6017503"
+   },
+   {
+    "name": "Kittisak Sadee",
+    "student_id": "6037506"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Darun Kesrarat",
+  "committee": [
+   "Asst. Prof. Dr. Benjawan Srisura",
+   "A. Suparwat Charoenvikrom"
+  ],
+  "abstract": null,
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "mysql"
+   ]
+  }
+ },
+ {
+  "id": "2118",
+  "canonical_title": "VitriApp-Aufträge - Mobile application for checklists in a computer-aided facility management context",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS4200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Jan Duldhardt",
+    "student_id": "6118135"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "Dr. Songsak Channarukul",
+   "Dr. Kwankamol Nongpong"
+  ],
+  "abstract": "Checklists are everywhere, they help us to reduce failure by compensating for potential limits of human memory and attention. Especially when it comes to facility management, checklists are a good tool for the people who feed the system with data such that every time there is a routine to be followed, the person can just use a checklist to not forget anything. Similar to when we go grocery shopping and do not prepare a list, often we buy unnecessary things, and worse we forgot things that we urgently need. This is the reason EBCsoft GmbH is developing Vormula Editor, Vormula App and VitriApp-Aufträge. With the Vormula Editor, the customer can create custom checklists with endless possibilities. To use these checklists, the customer has two choices: Vormula App, a simple mobile application where the user can download checklists from the Vormula Editor, fill them out, and export them via email. Second, the VitriApp-Aufträge, which also has all the features of the Vormula-App but can connect with the Vitricon CAFM. Both of these applications are already in production and available for Android, iOS, and UWP. After an initial proof of concept prototype at the beginning of 2020, I began working on developing both applications in April 2021. Even though both applications are already in use by our customers, the applications are still in active development, as customers require more and more features. Because of this, it was and still is very important to keep the code quality at high standards such that new features and changes can be implemented quickly. This is reached by using design patterns and principles like Clean Code, Clean Architecture, and SOLID principles.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [],
+   "technology": []
+  }
+ }
+]

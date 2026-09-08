@@ -1,0 +1,213 @@
+[
+ {
+  "id": "2018",
+  "canonical_title": "Slip Salary",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "Soravis Varayuththasawad",
+    "student_id": "5913094"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "Asst. Prof. Dr. Benjawan Srisura",
+   "Asst. Prof. Dr. Paitoon Porntrakoon"
+  ],
+  "abstract": "This paper introduces the application – Slip Salary – that is alternative solution to handle payment of employees in selected organization. The application uses simple structure in order to fulfill its objective. Using Firestore as database with suitable amount of data, this affects not only the database structure will be simple but also the cost will be deducted. Including React.js for application side, The well-known web development tool with several benefits. As a result, Slip Salary is able to complete its assigned features: management, providing printing format.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "firebase",
+    "react"
+   ]
+  }
+ },
+ {
+  "id": "2019",
+  "canonical_title": "Computer Simulations of Graphene Biosensors Using a Raspberry Pi 4 Cluster",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Min Aung Dain",
+    "student_id": "5648042"
+   },
+   {
+    "name": "Aung Hlaing Moe",
+    "student_id": "5745402"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Dobri Atanassov Batovski",
+  "committee": [
+   "A. Piyakul Tillapart",
+   "Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan"
+  ],
+  "abstract": "The use of graphene biosensors for the detection of viruses, like Covid-19, is limited by the biosensor design characteristics. Computational experiments can assist the industry and speed up the research and development (R&D) process of more reliable graphene configurations. Our project has resulted in a research paper of computer simulation on graphene sensors based on Raspberry Pi 4 devices.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "research"
+   ],
+   "platform": [
+    "embedded_hardware"
+   ],
+   "domain": [
+    "healthcare"
+   ],
+   "topic": [],
+   "technology": [
+    "python"
+   ]
+  }
+ },
+ {
+  "id": "2024",
+  "canonical_title": "Computer-Aided Facility Management (CAFM)",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS3200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "Jan Duldhardt",
+    "student_id": "6118135"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "Dr. Songsak Channarukul",
+   "Dr. Kwankamol Nongpong"
+  ],
+  "abstract": "Technology becomes more and more important in our daily life. It can help us to be more efficient and productive in almost every aspect. Especially businesses can profit tremendously when going digitally. Businesses, who have to manage lots of properties, have many responsibilities when it comes to facility management. One way in the right direction is to implement a Computer Aided Facility Management (CAFM) system which can help with many aspects regarding facility management.\nThe problem with many CAFM systems is that they are not very intuitive. Often, they are very complex and mostly designed for desktop usage. Because of that CAFM systems should have complementary and easy to use mobile applications. Where users can manage individual aspects of facility management on the go.\nVitriApp-Zähler 2 (ZAAPP) is one of those complementary mobile applications. It is designed to integrate with the energy management module of the Vitricon CAFM software.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [
+    "geolocation"
+   ],
+   "technology": []
+  }
+ },
+ {
+  "id": "2025",
+  "canonical_title": "Colors Puzzle: A Casual puzzle game",
+  "aliases": [
+   "Colors Puzzle: A casual puzzle game"
+  ],
+  "phase": "final",
+  "course_code": "CS3200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "Aman Upadhya",
+    "student_id": "6115306"
+   },
+   {
+    "name": "Thanitsak Leaungsupornpong",
+    "student_id": "6115309"
+   },
+   {
+    "name": "Chayapam Suesawatwanich",
+    "student_id": "6016930"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "Asst. Prof. Dr. Dobri Atanassov Batovski",
+   "Asst. Prof. Dr. Paitoon Porntrakoon"
+  ],
+  "abstract": "Color Puzzle is a casual game targeted for the wide audience in this game we tried to improve the previous version of Colors Puzzle. In 2020, with the casual game market popularity, we had realized the Colors Puzzle Game's potential in the casual mobile gaming market. However, certain aspects of the game still needed to be addressed due to the bad designs or some feedback on both platforms' comments.\nTo handle problems, in this project we decided to make major changes in 3 aspects of Colors Puzzle, including UI/UX, Game mechanics, and overall gameplay. The work has been distributed to three members regarding the experiences and specialty to work on each part of the Colors Puzzle, main objective of the project is to create a more engaging and fun version of Colors Puzzle.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "game"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [],
+   "technology": [
+    "unity"
+   ]
+  }
+ },
+ {
+  "id": "2036",
+  "canonical_title": "Web Classification Chrome Extension POC: Gambling Blocker",
+  "aliases": [
+   "Web Classification Chrome Extension: Gambling Blocker",
+   "Gambling Website Classification"
+  ],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "Perawat Wongkrit",
+    "student_id": "6010603"
+   }
+  ],
+  "advisor": "Dr. Chayapol Moemeng",
+  "committee": [
+   "Dr. Kwankamol Nongpong",
+   "Dr. Rachsuda Setthawong"
+  ],
+  "abstract": "Gambling has been a problem in Thailand for a longtime which government cannot entirely fix the people addition in gambling, especially in teenager and working age adult. Because gambling is illegal in Thailand, government and police try to raid and catch gambling though out Thailand but still not effective. That due to gambling website start to gain popularity among Thai gamblers. That popularity also reaches the underage, unlike the adult, underage teen protection because they still not have much experience in these black side of the world. The Problems caused by excessive gambling are not just financial. Too much time spent on gambling can also lead to relationship and legal problems, job loss, bad education grade, mental health problems including depression and anxiety, and even suicide. Some people might say that problems is might not happen because they might get rich from gambling, but that is not the case because most of these gambling websites have the algorithm to get money from user on one way or another. Some websites easily give the money to the user first, so the user will invest more, and they will get a bigger amount of money from user. These websites persuade people to use their website by advertise on illegal free website though out Thailand. A lot of people will encounter these websites a lot because people who don't have much money will try to find alternate way of get the free service, such as watching free movie online website, pornography website and etc.. One of the ways to protect or filter out these websites is using web page classification technique.\nOur service is an google chrome extension that help block the Thai gambling website using our own custom model to classify which website is gambling website. We use google chrome extension because of two reasons. First due to, parent can easily install the extension without their children acknowledgement. And secondly, majority of Thailand population are using google chrome as their main browser.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "security"
+   ],
+   "topic": [
+    "nlp"
+   ],
+   "technology": [
+    "python"
+   ]
+  }
+ }
+]

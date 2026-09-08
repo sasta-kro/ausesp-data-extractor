@@ -1,0 +1,213 @@
+[
+ {
+  "id": "1937",
+  "canonical_title": "Flying Basket: A Mobile App for Indian Grocery Online Shopping",
+  "aliases": [
+   "Mobile Application for Online Grocery Shopping"
+  ],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Kevin Narang",
+    "student_id": "5815227"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Anilkumar Kothalil Gopalkrishnan",
+  "committee": [
+   "Asst. Prof. Dr. Rachsuda Setthawong",
+   "Asst. Prof. Dr. Dobri Atanassov Batovski"
+  ],
+  "abstract": "This project focuses on ordering Indian grocery items online. Currently it is a mobile application for android users that is fully responsive. The grocery store owners can add items that can be listed for sale for the customers that are the users of the application. On the same hand the application is a user friendly and easy to use system where the user can add the items to their carts and simply place order via the mobile application. Every data is stored on the cloud. This application is the only application in Bangkok that focuses on the online service of delivering Indian grocery items. It reduces the hassle of the people who go to shop for these products. This application will allow you to sit at your home and order the products and they will be delivered to your doorstep fresh. We are anticipating that this application would be useful to the Indian community in Bangkok.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "e_commerce"
+   ],
+   "topic": [],
+   "technology": [
+    "firebase"
+   ]
+  }
+ },
+ {
+  "id": "1938",
+  "canonical_title": "Opinion Mining on Twitter Post",
+  "aliases": [],
+  "phase": "proposal",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Sai Kham Lao",
+    "student_id": "5748124"
+   },
+   {
+    "name": "Deep Kumar",
+    "student_id": "5818029"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Rachsuda Setthawong",
+  "committee": [
+   "Asst. Dean Suparwat Charoenvikrom",
+   "A. Pawut Satitsuksanoh"
+  ],
+  "abstract": null,
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [
+    "nlp"
+   ],
+   "technology": []
+  }
+ },
+ {
+  "id": "1949",
+  "canonical_title": "On-My-Way Parcel Delivery",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT 4292",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Leopold Yangane Faye",
+    "student_id": "5818008"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Paitoon Porntrakoon",
+  "committee": [
+   "Asst. Prof. Dr. Benjawan Srisura",
+   "A. Chayapol Moemeng"
+  ],
+  "abstract": "In this project, we have tried to create and implement a system from scratch. The knowledge and resources needed for such work have been gathered throughout the process. The system we have attempted to make is one that comes at its right time with the use of technologies nowadays in almost every domain of our lives. Taking as example the revolutionary model of Uber, our goal was to show an environment where casual individuals could engage in a relation of offer and demand without going through much struggle. Conceptually, the On-My-Way application is basically one platform that offers a delivery service between one customer and a potential nearby driver. It is a system where the primary users can create their profile, create a delivery to be picked up by another registered user and track the delivery of their parcel on the map. The usual parcel deliveries are usually time consuming, involving a few paperwork and can be money and effort wise challenging. Our application aims to help better the delivery processes by putting the two main involved users at the center of the process while helping the reduce the amount of money and time they are to spend on the traditional delivery services. Among many benefits, we offer to the driver the possibility to work any time at will, to control which task to choose and which to decline. To the customer we give the opportunity to start a request any time without suffering constraints such as bad weather or traffic keeping one from getting to a postal service agency, the ease of mind resulting from the possibility to know where the delivery process is at. This system deals with 2 users mainly and 3 to the complete end. A customer who requests a parcel to be delivered; a carrier who is available and ready to fulfil the customer’s task, and accessorily a recipient at the very end of the process.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "transportation"
+   ],
+   "topic": [
+    "geolocation"
+   ],
+   "technology": [
+    "firebase"
+   ]
+  }
+ },
+ {
+  "id": "1950",
+  "canonical_title": "ARMS: Assumption University Room Management System",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Grid Kornsutatipkul",
+    "student_id": "6013732"
+   },
+   {
+    "name": "Thanathas Chawengvorakul",
+    "student_id": "6014586"
+   },
+   {
+    "name": "Sokvathara Lin",
+    "student_id": "6018002"
+   }
+  ],
+  "advisor": "Dr. Songsak Channarukul",
+  "committee": [
+   "A. Chayapol Moemeng",
+   "Asst. Prof. Dr. Paitoon Porntrakoon"
+  ],
+  "abstract": "Nowadays, automated systems are taking roles in assisting human life. It can perform many tasks in various kinds of field base on what it has programmed. Assumption University Room Management System or in short called ARMS. It can dramatically improve the performance of examination seat arrangement and as a result of saving more time and cost consumed. Moreover, it also diminishes the human errors which might occur during the process. In many universities’ rooms, buildings, papers, documents, and electricity are heavily consumed during the examination period. Without proper management and allocating these resources, it might further raise the unnecessary expense of the university. ARMS is a kind of automated system, which can automatically perform an examination seating arrangement. It provides the necessary features to automatically arrange all the eligible students to the specific seats in examination rooms easily. Moreover, the useful insights and reports of how the system arranged will also be provided. Furthermore, users can also modify and manually arrange some specialized courses of their desire. In conclusion, the ARMS system is almost a one-stop-solution for the examination seating management.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [],
+   "technology": []
+  }
+ },
+ {
+  "id": "1952",
+  "canonical_title": "Smart Residence",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Zheng Wang",
+    "student_id": "5826905"
+   },
+   {
+    "name": "Kitipong Sillathum",
+    "student_id": "5717607"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "Asst. Prof. Dr. Dobri Atanassov Batovski",
+   "A. Piyakul Tillpart"
+  ],
+  "abstract": "Internet of Things (IoT) is a system of interconnected and interrelated computing devices where they can transfer data over a network that is ever-growing in recent years. With the proliferation of IoT devices and the development of AI technologies, a smart environmental monitoring and control system is able to be built and may change the way of people’s life and work style in the near future. This project aims on deploying a sensor-embedded environment to monitor the area occupancy and event occurrences, where models would be trained and used to detect the area occupancy status through the sensors’ data in real-time. The prototype built in this project can be utilized for nursing home or elderly house, to assist the work of nursing staff in a nonintrusive way.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "hardware_iot"
+   ],
+   "platform": [
+    "embedded_hardware",
+    "web"
+   ],
+   "domain": [
+    "healthcare"
+   ],
+   "topic": [],
+   "technology": [
+    "firebase",
+    "python"
+   ]
+  }
+ }
+]

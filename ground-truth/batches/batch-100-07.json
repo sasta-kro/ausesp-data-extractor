@@ -1,0 +1,219 @@
+[
+ {
+  "id": "1801",
+  "canonical_title": "Home Security & Surveillance System",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "SC4299",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Zubair Hossain",
+    "student_id": "5428312"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. AnilKumar K. Gopalakrishnan",
+  "committee": [
+   "Asst. Prof. Dr. Dobri Atanassov Batovski",
+   "Asst. Prof. Pawut Satitsuksanoh"
+  ],
+  "abstract": null,
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "hardware_iot"
+   ],
+   "platform": [
+    "embedded_hardware"
+   ],
+   "domain": [
+    "security"
+   ],
+   "topic": [],
+   "technology": [
+    "python"
+   ]
+  }
+ },
+ {
+  "id": "1802",
+  "canonical_title": "AUComplaint",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT 4291",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Alexander J. Fuller",
+    "student_id": "5738016"
+   },
+   {
+    "name": "Shahin R.",
+    "student_id": "5718470"
+   }
+  ],
+  "advisor": "Asst. Prof. Paitoon Porntrakoon",
+  "committee": [
+   "Asst. Prof. Dr. Chokdee Liophanich",
+   "A. Chayapol Moemeng"
+  ],
+  "abstract": "AUComplaint is a customized complaints management system designed and built specifically for use by Assumption University, Thailand. The deployed web application is accessible from any mobile or desktop device via the internet browser. The student interface is sleek in design, with a view to simplicity, making it easy for students to anonymously make a complaint with the 2 step complaining process, and complaints are directed immediately to the student’s faculty Secretaries.\nComplaints vary in severity depending upon the matter at hand. When a student wishes to report a problem regarding such an issue as a locked room or malfunctioning light, the quickest approach is usually to make a trip to the secretary, or even the cleaner if one can be found, where the student comfortably requests some assistance. This poses little of an issue, since there is no severity to the problem and nobody has any reason to feel embarrassed or worried about speaking to somebody about it. This kind of low severity problem poses little of an issue and can be resolved quickly and easily with little effort. However, when a student wants to complain or discuss an issue with a higher level of severity, it is most likely not so simple to resolve by a quick visit to the secretary or the cleaner. In fact, some complaints take many months or even years to resolve, especially where a resolution cannot be found by any of the involved parties. The first step however, is to ‘break the silence’, and tell somebody that can help. Unfortunately this can be the hardest step in trying to fix a problem, and often students are reluctant to talk about issues with anybody of authority. There are many reasons a student may wish to make a complaint, and there are many reasons why a student would not want to talk openly about their problem.\nThe severity of a problem, the embarrassment, the consequences of any allegations made, are just a few factors that deter students from making an un-confidential complaint, and generally influence whether or not the student will actually talk to anybody about the problem in the first place. An example of an un-confidential complaint of high severity is one in which a matter is brought up about a member of staff or other students, and the complaining student feels that they may be subject to ramifications by the staff member or other students accused within the complaint. In this case, if the student feels threatened by making the un-confidential complaint, it is most likely that they will not make the complaint, and therefore will not resolve the issue since there they are afraid of the consequences of talking about it.\nTherefore, AUComplaint handles complaints completely confidentially, and gives all users the complete satisfaction of anonymity when explaining their problem. It particularly offers a solution to those students who wish to make a complaint, but have been unable or unwilling to do so without some kind of promise of confidentiality. AUComplaint also offers an opportunity for ABAC to gain better insight into the issues that students have within ABAC, since the record of complaints is permanent, and will provide a massive database of usable information, collated into well-presented statistical reports.\nThe Administrator/Staff interface is easy to navigate and selectively displays all complaints related to the Staff member’s faculty. Complaints can be opened by each staff member to allow interaction with the Student by means of chat messages, as well as offering Staff the ability to easily forward the complaint to a higher body of Staff within their faculty. Once a complaint has been resolved, the Administrator/Staff interface makes it simple to mark the complaint as resolved, thus closing the complaint and delivering a satisfaction survey to the Student. The survey is easy to use, with a unique and fun design, with the intention of enticing students to give their time to complete the survey. AUComplaint sends email notifications to any Staff members that receive a complaint, whether it be a new complaint from a Student, or a passed complaint from another Staff member. The system also allows Staff to view a variety of detailed statistical reports based on analytics of all complaints made.\nAUComplaint is customized to cater to the University’s requirements in full, allowing Secretaries, Directors and Deans of all 12 faculties to access and manage complaints made by students of their respective faculties.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [],
+   "technology": [
+    "nodejs",
+    "mysql"
+   ]
+  }
+ },
+ {
+  "id": "1804",
+  "canonical_title": "Animal Adoption Management System",
+  "aliases": [
+   "Animal Adoption Website"
+  ],
+  "phase": "final",
+  "course_code": "SC4299/IT 4291",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Tanapon Thanomsakul",
+    "student_id": "5615663"
+   },
+   {
+    "name": "Montakant Panyasing",
+    "student_id": "5711068"
+   },
+   {
+    "name": "Sunthorn Phanakunakorn",
+    "student_id": "5713743"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Darun Kesrarat",
+  "committee": [
+   "Asst. Prof. Dr. Adtha Lawanna",
+   "Dr. Benjawan Srisura"
+  ],
+  "abstract": null,
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [],
+   "technology": []
+  }
+ },
+ {
+  "id": "1805",
+  "canonical_title": "Metro Sky Trip",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT 4291 & CS 3200",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Aticha Joylek",
+    "student_id": "5810466"
+   },
+   {
+    "name": "Narabodee Anantapornkit",
+    "student_id": "5837556"
+   },
+   {
+    "name": "Siwaporn Chanratassawakul",
+    "student_id": "5913262"
+   }
+  ],
+  "advisor": "Dr. Benjawan Srisura",
+  "committee": [
+   "Asst. Prof. Dr. Chokdee Liophanich",
+   "Asst. Prof. Titida Nochai"
+  ],
+  "abstract": null,
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "transportation"
+   ],
+   "topic": [
+    "recommender_system"
+   ],
+   "technology": [
+    "mysql"
+   ]
+  }
+ },
+ {
+  "id": "1809",
+  "canonical_title": "Food Shop System",
+  "aliases": [
+   "EzEat"
+  ],
+  "phase": "final",
+  "course_code": "IT 4292",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Alexander James Fuller",
+    "student_id": "5738016"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Chokdee Liophanich",
+  "committee": [
+   "Asst. Prof. Dr. Titida Nochai",
+   "Dr. Benjawan Srisura"
+  ],
+  "abstract": null,
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business",
+    "e_commerce"
+   ],
+   "topic": [],
+   "technology": [
+    "nodejs",
+    "mongodb"
+   ]
+  }
+ }
+]

@@ -1,0 +1,230 @@
+[
+ {
+  "id": "2119",
+  "canonical_title": "Infinite Runner: A Casual Game for Marketing",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Aman Upadhya",
+    "student_id": "6115306"
+   },
+   {
+    "name": "Thanitsak Leaungsupornpong",
+    "student_id": "6115309"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "A. Kiratijuta Bhumichitr",
+   "Asst. Prof. Dr. Paitoon Porntrakoon"
+  ],
+  "abstract": "Infinite runner is a collaborative game created by students of computer science and communication arts, while working together as a team under Baksters. Infinite runner is a casual endless running game. The main idea behind this game was to build a foundation where the game can be used in the future for marketability.\n\nWhile still trying the preserve the elements of a casual game, where the games are short in length and generally are easy to learn making it really engaging for the players, we also tried to create a project that can be used as showcase for future batches at ABAC in the hope to get them interested in game develop thus, building a game community.\n\nThere is a lot of learning that went into the project, from self-learning to learning as a team with each other, Infinite Runner is not just a game from a development perspective it also packs tremendous amount of artistic work.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "game"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [],
+   "technology": [
+    "unity"
+   ]
+  }
+ },
+ {
+  "id": "2120",
+  "canonical_title": "Habitat: University Dormitory Management",
+  "aliases": [
+   "Habitat: Dormitory University Management"
+  ],
+  "phase": "final",
+  "course_code": "CS 3200 / ITX 3009",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Phanuwat Sikharestrakul",
+    "student_id": "6115218"
+   },
+   {
+    "name": "Jirapat Suwanjunee",
+    "student_id": "6217410"
+   },
+   {
+    "name": "Krittamet Chuwongworaphinit",
+    "student_id": "6111252"
+   }
+  ],
+  "advisor": "Dr. Songsak Channarukul",
+  "committee": [
+   "A. Chayapol Moemeng",
+   "A. Kiratijuta Bhumichitr"
+  ],
+  "abstract": "In university of Thailand, dormitory in campus is the main point when students decide to stay, spend time doing activity in the university on campus to make convenient to the students, especially international students who come to Thailand. The dormitory on campus will be immediately good choice. The students can pay expenses of dormitory while there are some mistakes when calculate the expenses. There are more than one student stays in room, so the expenses should be separated in each student. Almost dormitory applications do not aim to solve this problem and cannot check the detail of expenses.\n\nHabitat is a dormitory of university on campus application built on 2 platforms are an iOS that focuses on expenses in each student, news, and alternative bank payment for students. Another platform is a web application platform for managing system to check any expenses, manage each room in dormitory in each building, and also, petition to collect any problems of students such as some room make too noise, the students can report on the petition feature.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile",
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [],
+   "technology": []
+  }
+ },
+ {
+  "id": "2125",
+  "canonical_title": "eVac: Online Vaccination App (Android)",
+  "aliases": [
+   "eVac: Online Vaccination Tracking App (Android)"
+  ],
+  "phase": "final",
+  "course_code": "ITX3009/CSX3010",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Suja Subedi",
+    "student_id": "6218323"
+   },
+   {
+    "name": "Zhenli Zhang",
+    "student_id": "6218016"
+   },
+   {
+    "name": "Mushi Sonthliwal",
+    "student_id": "6213102"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Paitoon Porntrakoon",
+  "committee": [
+   "A. Chayapol Moemeng",
+   "A. Tapanan Yeophantong"
+  ],
+  "abstract": "For the past 2 years, the world as a collective has had to withstand the effects of a pandemic. Our vaccines became almost as valuable as our passports, and our team thought that we should come up with a way to ease the entire process of procuring, recording and showcasing our vaccinations. That is why we created eVac. eVac is an android application that can help you keep track of your vaccination appointments, add appointments, create a vaccine certificate, record your previous vaccines and record the proof of vaccination.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "healthcare"
+   ],
+   "topic": [],
+   "technology": [
+    "firebase"
+   ]
+  }
+ },
+ {
+  "id": "2126",
+  "canonical_title": "My Medical Check Up",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT4292",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Tachasit Sarasitt",
+    "student_id": "6110032"
+   },
+   {
+    "name": "Napatsorn Kawaree",
+    "student_id": "6111099"
+   },
+   {
+    "name": "Kanyarat Nalucupchanchai",
+    "student_id": "6115308"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Paitoon Porntrakoon",
+  "committee": [
+   "Asst. Prof. Dr. Benjawan Srisura",
+   "A. Chayapol Moemeng"
+  ],
+  "abstract": "In order to facilitate the need for many Thai people to go to the hospital for health check-ups 1-2 times a year. Due to the fact that people who work in companies have a measure to have annual health checks for company employees, there are a lot of people in the working age who do annual health checks. This does not include childhood and adolescents who at some schools have ambulances for annual health checks. In addition, older people who start to have health problems are more interested in health than childhood, adolescence and working people. Normally, the elderly will have annual check-ups from the hospital in order to keep them informed of their ongoing health problems.\n\nThe problem that we foresee in the system for collecting Medical check up results of Thai people is the display of health information that has stored health data after the health check in the form of a health diary. Today, technology is accessible to all ages. In order to develop health check results using technology, a website was created to store information of people who have annual health checks for easy and convenient use and store information on the side of those who received the health results.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "healthcare"
+   ],
+   "topic": [],
+   "technology": [
+    "mysql",
+    "python",
+    "wordpress"
+   ]
+  }
+ },
+ {
+  "id": "2127",
+  "canonical_title": "Grade Report Generator",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT4292 / CS 4200",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Swe Lin Htut",
+    "student_id": "6018184"
+   },
+   {
+    "name": "Phoo Pwint Sone",
+    "student_id": "6118147"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Paitoon Porntrakoon",
+  "committee": [
+   "A. Chayapol Momeng",
+   "Asst. Prof. Dr. Benjawan Srisura"
+  ],
+  "abstract": "These days, the number of ABAC students has almost doubled since 2010, and more and more work and responsibilities have to be taken from the University. Among them, one of the main responsibilities is to handle the students' grades, including for each subject grading system, and generating them. On top of that, there are so many subjects that share the subject code which make it more complicated and difficult to generate all the grade reports manually. It is tough to make changes, check or modify for each subject one by one. Besides, the possibility of human errors is very common in this case. Thus, we plan to make the \"Grade Report Generator\" which will solve all the struggling secretaries are facing right now. \"Grade Report Generator\" is a web application that automatically generates the grade report of the subjects offered by VMS faculty in a semester. Some of the main features of our project are such as managing semester and approval committees, managing codeshare subjects and subjects offered in a semester, managing grading criteria of each subject and its codeshare subjects and also to generate minutes of meeting, change the date or move the meeting place and so on. In this report, we are going to provide what is the scope of our project, how we create the Grade Report Generator including the methodology, workflow and so on.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [],
+   "technology": [
+    "mysql",
+    "python"
+   ]
+  }
+ }
+]

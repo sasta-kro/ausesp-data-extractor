@@ -1,0 +1,220 @@
+[
+ {
+  "id": "1954",
+  "canonical_title": "Keyword Analytics",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT4291",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Mustavi Sarker",
+    "student_id": "6018145"
+   },
+   {
+    "name": "Sorasit Arsirapongphisit",
+    "student_id": "6017564"
+   },
+   {
+    "name": "Chawalit Khotwong",
+    "student_id": "6014085"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "Asst. Prof. Dr. Darun Kesrarat",
+   "Dr. Kwankamol Nongpong"
+  ],
+  "abstract": "Over the years, the rise in the use of social media platforms such as Twitter, Facebook and Instagram have created vast amounts of data. One of the key indicators of segregation and performance of this data in these social media platforms is usually associated with a “hashtag” or a keyword, which in this article we will refer to as “topic”.\n\nOne of the greatest challenges today is being able to mine and process this vast amount of data (also known as “Big Data”) based on some of these topics and extract useful information out of them. This article explores the idea of extracting live data and processing them near real-time to create indicators such as time-series, sentiment analysis and trend prediction. These indicators will help users analyze and understand patterns in the latest social media trends and make decisions to support their business or marketing goals.\n\nThis article will focus on the aforementioned aspects through analysis and processing of data by using our very own big data analytics engine that extracts live Tweets from the popular social media platform Twitter and provides basic data analytics of that data intelligently and near real time with great accuracy. The highlight of this engine is the Time Series indicator as it produces graphs based on the most popular Twitter trends, so the users of the software product have an overview of what’s going on in social media as it happens live. This enables the end-user to analyze the patterns of the hashtag or topic’s lifespan, adding to that, end-users will be able to have the engine track a particular hashtag or topic of their choice and see the performance of it.\n\nAnother major challenge to mining real-time social network data is the noise, which can be caused due to various factors, so we have a Kalman Filter in place to filter to smooth out the noise in the time series data. Using the Kalman Filter also helps us forecast the trending probability of a particular based on the moving average of the data being streamed.\n\nSo as a general result, we produced a big data processing engine which leverages twitter data to handling multiple data streams, and later can be retrofitted to support other social media platform, depending on how the data is delivered.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [
+    "nlp"
+   ],
+   "technology": [
+    "python"
+   ]
+  }
+ },
+ {
+  "id": "2001",
+  "canonical_title": "Document Flow for AU HR",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT4292",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "Qianheng Ma",
+    "student_id": "5913929"
+   },
+   {
+    "name": "Peng Chen",
+    "student_id": "5918413"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "A. Suparwat Charoenvikrom",
+   "Asst. Prof. Dr. Paitoon"
+  ],
+  "abstract": "Document flow for Human Resources is an automatic flow with Microsoft Office software to help the HR and authorised people to handle staff’s leave requests in ABAC online.\n\nThis project aims to eliminate the paperwork for the leave requests, make it possible to submit the leave requests at anywhere, anytime with the network. With this project, AU’s staff will no longer need to come to the university to take the paper form and submit it manually and the HR personnel will not need to record each request’s information manually. All the request information will be saved automatically. The HR personnel can also use MS Power BI to access the data and make it visualization. It is easy to view the summary of each specific staff in a specific date interval.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "other"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [],
+   "technology": [
+    "mysql"
+   ]
+  }
+ },
+ {
+  "id": "2003",
+  "canonical_title": "August Witcher of the Grand House",
+  "aliases": [
+   "Thai Ghost Side-Scrolling Game (August Witcher of the Grand House)"
+  ],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Mungyeong Kim",
+    "student_id": "5911116"
+   },
+   {
+    "name": "Anawil Chumphun",
+    "student_id": "5912087"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "Asst. Prof. Dr. Paitoon Porntrakoon",
+   "A. Tapanan Yeophantong"
+  ],
+  "abstract": "Nowadays, many people like playing games and E-sports has been popular, side-scrolling game is defined as a game that game playing action is viewed from a side-view camera angle, and the onscreen characters can only move to the left or rights to reach the end of the game. Moreover, many people are interested in ghost stories and Thailand is well known for scary stories and some mysterious places so we decided to combine both game and Thai ghost story to make an interesting single game.\n\nAugust Witcher of the Grand House is a side-scrolling game which is designed to attract people who loves playing game with ghost story. In this game, a player will be playing from outside to inside a mysterious house to get through there with some weapons from stage and fight with Thai ghosts. The game is mainly playable on PCs.\n\nOur goal is to successfully design and implement our own design of the game on PCs based, and each character’s stories Thai ghost concerned to the game more interesting and enjoyable.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "game"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [],
+   "technology": [
+    "unreal_engine"
+   ]
+  }
+ },
+ {
+  "id": "2004",
+  "canonical_title": "Elderly care service Finder",
+  "aliases": [
+   "Elderly Care Service Finder"
+  ],
+  "phase": "proposal",
+  "course_code": "IT 4291",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Kaori Saito",
+    "student_id": "5828406"
+   },
+   {
+    "name": "Sophearith Saing",
+    "student_id": "5838108"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Paitoon Porntrakoon",
+  "committee": [
+   "Asst. Prof. Dr. Rachsuda Setthawong",
+   "A. Chayapol Moemeng"
+  ],
+  "abstract": "This project is aimed at finding elderly care services for both parties in our system. The system is designed and developed based on the research by SCB Economic Intelligence Center. This is a web-based system, which can find and match Caregiver and Elders. Caregiver can provide services and schedules and Elders select services that they want then the system will match and show the list of Caregivers nearby Elders. Elders also can set services as default that they want to get. Then, they can choose whether they want to have a meeting with Caregiver who they selected from the list before making final decision to get services. Facility to communicate by using messenger and notification for both Caregivers and Elders are also available. Elderly care service Finder can be a very helpful system within Caregivers and Elders. This system provides services for not only Caregivers and Elders, but also administrators to approve Caregivers’ information to be kept up-to-date and quality of their work by certification with identification or signature by the specific doctor or certified person, so that Elders feel secure and trust the information on our website. Furthermore, our system can also help both users to reduce the difficulty of finding care services around them by searching by postal code or service. Finally, this system is anticipated to be useful not only for specific area of Thailand, but also for all people in Thailand.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "healthcare"
+   ],
+   "topic": [],
+   "technology": [
+    "firebase",
+    "mongodb",
+    "nodejs"
+   ]
+  }
+ },
+ {
+  "id": "2005",
+  "canonical_title": "Sale Forecasting Model's Recommendation for New Promotional Menu",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT 4292",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "Sophearith Saing",
+    "student_id": "5838108"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Rachsuda Setthawong",
+  "committee": [
+   "Asst. Prof. Paitoon Porntrakoon",
+   "A. Suparwat Charoenvikrom"
+  ],
+  "abstract": "Time series analysis is the main tool used for predicting the future in various areas and especially in financial. From stock market to number of users or amount of sales, various tools and method are applied to time series data to assist in choosing the best decision to make. The goal of this work is to predict the amount of sales quantity of various menu from a Thai franchise restaurant. In order to do so, we tested a total of 7 different approaches of how to get the best prediction. This includes matching item from each menu’s attributes, using Jaccard Similarity to find the most similar menu then forecast using one item or combine forecast of a few item then get the average. All forecasts are done in using Holt-Winters for its simple yet powerful capability. Various type of ways to calculate the score was implemented to see which way is the best for calculating match for forecasting. The result is an indication of which menu will be the best seller or customers favorite, so the restaurant can focus on integrating it into their promotions.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [],
+   "domain": [
+    "business"
+   ],
+   "topic": [
+    "recommender_system"
+   ],
+   "technology": [
+    "python"
+   ]
+  }
+ }
+]

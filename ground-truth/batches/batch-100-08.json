@@ -1,0 +1,210 @@
+[
+ {
+  "id": "1810",
+  "canonical_title": "Smart Home",
+  "aliases": [],
+  "phase": "proposal",
+  "course_code": "IT 4291",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Thayawat Thathong",
+    "student_id": "5717532"
+   },
+   {
+    "name": "Prasong Chonsathian",
+    "student_id": "5937618"
+   }
+  ],
+  "advisor": "Asst. Prof. Chokdee Liophanich, Ph.D.",
+  "committee": [
+   "Asst. Prof. Titida Nochai",
+   "Benjawan Srisura, Ph.D."
+  ],
+  "abstract": null,
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "hardware_iot"
+   ],
+   "platform": [
+    "embedded_hardware"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [],
+   "technology": [
+    "firebase"
+   ]
+  }
+ },
+ {
+  "id": "1811",
+  "canonical_title": "Travel Guide",
+  "aliases": [
+   "Travel Diary"
+  ],
+  "phase": "final",
+  "course_code": "CS4200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Nathanan Pornprapee",
+    "student_id": null
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "Dr. Kwankamol Nongpong",
+   "A. Piyakul Tillapart"
+  ],
+  "abstract": "The way people travel has changed because of technologies. So, we decided to create this project, which is a travel diary, mobile application for helping users to keep tracks of locations and experiences along their trip just like they’re making their own travel journals. We designed the application to be user generated content, which users can start a trip, then select location to check-in, write reviews and add photos to record that in to their trip. They can keep checking-in until the trip ends, which the ended trip will be keep in the past trips, where users can come back and take a look.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [
+    "geolocation"
+   ],
+   "technology": []
+  }
+ },
+ {
+  "id": "1812",
+  "canonical_title": "People Sensor with Computer Vision",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT 4292",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Hein Htet Naing",
+    "student_id": "5818035"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "A. Piyakul Tillapart",
+   "A. Pawut Satitsuksanoh"
+  ],
+  "abstract": "In this report, we proposed a system for people sensor to keep track of people movement with computer vision technology. This report consists of 3 main concepts: (1) people detection, (2) people tracking and (3) people counting. A Deep Neural Network architecture is used for people detections and Kalman Filter is being used for tracking purposes. On top on that we’ve proposed a method to make probabilistic assumption for multi-object tracking across different images.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "embedded_hardware",
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "python",
+    "opencv"
+   ]
+  }
+ },
+ {
+  "id": "1813",
+  "canonical_title": "ISL Room Sensor",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS4200",
+  "program": "computer_science",
+  "semester": null,
+  "academic_year": null,
+  "students": [
+   {
+    "name": "Asnai Narang",
+    "student_id": "5815228"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "A. Pawut Satitsuksanoh",
+   "Dr. Kwankamol Nongpong"
+  ],
+  "abstract": null,
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "hardware_iot"
+   ],
+   "platform": [
+    "embedded_hardware"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [],
+   "technology": [
+    "firebase"
+   ]
+  }
+ },
+ {
+  "id": "1814",
+  "canonical_title": "ISL Text Mining And Analytics Platform",
+  "aliases": [
+   "Smart Digest",
+   "Keyword Impact",
+   "Brand Impact"
+  ],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Kasperi Reinikainen",
+    "student_id": "5818014"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "Dr. Kwankamol Nongpong",
+   "A. Pawut Satitsuksanoh"
+  ],
+  "abstract": "In this report I present a platform that is able to process large amounts of text data and serve it for quantitative real-time analytics based on terms and concepts extracted from the text. The work consists of four main components; text extraction in form of web scrapers, text processing pipeline in form of data-stream processing application, text classification in form of a concept-predictor API and a set of analytical API endpoints in form of cloud-functions.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [
+    "nlp"
+   ],
+   "technology": [
+    "python",
+    "nodejs"
+   ]
+  }
+ }
+]

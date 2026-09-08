@@ -1,0 +1,228 @@
+[
+ {
+  "id": "1715",
+  "canonical_title": "Detection of Natural and Artificial Light Sources from Photographs",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "summer",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Jian Pan",
+    "student_id": "5728309"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Dobri Atanassov Batovski",
+  "committee": [
+   "A. Chayapol Moemeng",
+   "Asst. Prof. Dr. Paitoon Porntrakoon"
+  ],
+  "abstract": "Over decades, researchers have provided many algorithms on Color constancy, light source detection, spectral power distribution and color temperature. But nearly no algorithm has said clearly that the algorithm can be used for figuring out the difference between illumination scene under artificial light source and illumination scene under natural light source. This project provides a macro description of possible algorithms about distinguish of natural light source and artificial light source and finally using CCT as this project's algorithm and method.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "research"
+   ],
+   "platform": [],
+   "domain": [
+    "other"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": []
+  }
+ },
+ {
+  "id": "1716",
+  "canonical_title": "Text Enhancement of Photographs Taken with a Moving Smartphone",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Xiaohan Yu",
+    "student_id": "5718303"
+   },
+   {
+    "name": "Jian Pan",
+    "student_id": "5728309"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Dobri Atanassov Batovski",
+  "committee": [
+   "A. Chayapol Moemeng",
+   "Asst. Prof. Paitoon Porntrakoon"
+  ],
+  "abstract": "The enhancement of blurred photographs is a challenging task in digital image processing. In some cases, the motion blur can be reduced in order to recognize symbolic content, which is of particular interest in investigative journalism and forensic science. An algorithm for selected practical cases is designed and tested for further implementation in a smartphone app for real-time deblurring.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "opencv"
+   ]
+  }
+ },
+ {
+  "id": "1718",
+  "canonical_title": "Anywhere Time Attendance Terminal by using fingerprint in Smartphone",
+  "aliases": [],
+  "phase": "proposal",
+  "course_code": "IT 4292",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Juladeach Pokhaiputthinun",
+    "student_id": "5713539"
+   },
+   {
+    "name": "Surawat Pothong",
+    "student_id": "5726804"
+   },
+   {
+    "name": "Zhe Zhou",
+    "student_id": "5748101"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Darun Kesrarat",
+  "committee": [
+   "Asst. Prof. Dr. Adtha Lawanna",
+   "Dr. Benjawan Srisura"
+  ],
+  "abstract": null,
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [
+    "geolocation"
+   ],
+   "technology": []
+  }
+ },
+ {
+  "id": "1720",
+  "canonical_title": "Banknote Recognition for Visually Impaired People",
+  "aliases": [
+   "Banknote Recognition for Visually Impaired"
+  ],
+  "phase": "final",
+  "course_code": "CS4200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Pathompong Kunapermsiri",
+    "student_id": "5716712"
+   },
+   {
+    "name": "Chatchawan Yoojuie",
+    "student_id": "5715298"
+   },
+   {
+    "name": "Natthakul Boonmee",
+    "student_id": "5710081"
+   }
+  ],
+  "advisor": "Dr. Kwankamol Nongpong",
+  "committee": [
+   "A. Tapanan Yeophantong",
+   "A. Chayapol Moemeng"
+  ],
+  "abstract": "This research aims to study and implement an application for visually impaired people on android platform. We focused on implementing an application that will be used to detect Thai Banknote of type 16 only, whereas we did not focused on detecting the genuineness of Thai banknote. The main objectives of the study is to use the deep learning to classify and detect the Thai banknotes. We will also be collecting and training of banknote dataset in 5 categories, which are the banknotes of 20, 50, 100, 500 and 1,000 baht. The tools that will be used in the study include, the android SDK for implementing the application for android device and TensorFlow which will be used for implementing the model for object classification and detection The result of the study, the application can recognize and differentiate 5 classes of banknote, then generate a sound to tell the result in real-time and reliable. So, the visually impaired people can apply this application in daily life.",
+  "reported_keywords": [
+   "TensorFlow",
+   "Keras",
+   "Visually impaired people",
+   "Thai Banknote Type 16",
+   "Binary classification",
+   "Object detection"
+  ],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": []
+  }
+ },
+ {
+  "id": "1724",
+  "canonical_title": "DECK: A B2B Customer Loyalty Point Transfer System using Blockchain Technology",
+  "aliases": [
+   "Deck"
+  ],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Panusorn Srijamorn",
+    "student_id": "5713074"
+   },
+   {
+    "name": "Pichayuth Kittisriswai",
+    "student_id": "5713091"
+   }
+  ],
+  "advisor": "Dr. Songsak Channarukul",
+  "committee": [
+   "Asst. Prof. Dr. Thitipong Tanprasert",
+   "Dr. Kwankamol Nongpong"
+  ],
+  "abstract": "For years, customer loyalty programs have been launched on gas station, airlines, supermarkets, and grocery stores, typically in the form of credit cards or loyalty cards. While the memberships for many loyalty rewards programs are growing daily, many of these are not used regularly. That is because consumers have begun to move towards digital and cashless society, so the scope of loyalty programs has been changed. In this project, we are going to develop a universal loyalty program application. Users can keep their loyalty card and track their points transfer instantly via the application. Blockchain technology has used to create a secure and transparent record of all point transferring transactions.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "desktop",
+    "mobile"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "nodejs"
+   ]
+  }
+ }
+]

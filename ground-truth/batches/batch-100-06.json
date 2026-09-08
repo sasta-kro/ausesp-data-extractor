@@ -1,0 +1,227 @@
+[
+ {
+  "id": "1725",
+  "canonical_title": "Divvy: Local Rides Sharing Application",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 3200/IT 4291",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Sittisak Tangpraditchai",
+    "student_id": "5813526"
+   },
+   {
+    "name": "Chitavorn Bhuvapanich",
+    "student_id": "5812039"
+   },
+   {
+    "name": "Varissara Tangsajjanuraksa",
+    "student_id": "5811095"
+   }
+  ],
+  "advisor": "Dr. Songsak Channarukul",
+  "committee": [
+   "Dr. Benjawan Srisura",
+   "A. Chayapol Moemeng"
+  ],
+  "abstract": "Nowadays, the technological advancement connects human and non-living thing together. We have experienced various applications that use the concept “Ride Sharing”. They provide a more convenient way for transportation such as Grab and Uber. Ride Sharing is an instance of carpooling which is a concept that is widely accepted across the planet. Ride sharing means hailing privately owned cars. With the use of mobile applications, connection between drivers and passengers who would like to share rides becomes easier and more convenient. It would possibly provide significant social and environmental benefits as well.",
+  "reported_keywords": [
+   "Ride Sharing",
+   "Driver",
+   "Passenger",
+   "Trip Companion",
+   "Real-Time Chat System",
+   "Matching"
+  ],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "transportation"
+   ],
+   "topic": [],
+   "technology": [
+    "firebase"
+   ]
+  }
+ },
+ {
+  "id": "1726",
+  "canonical_title": "Cloud Property Fields Inspection System",
+  "aliases": [],
+  "phase": "proposal",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Serhii Bielik",
+    "student_id": "5748106"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "Asst. Prof. Paitoon Porntrakoon",
+   "Dr. Benjawan Srisura"
+  ],
+  "abstract": null,
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": []
+  }
+ },
+ {
+  "id": "1728",
+  "canonical_title": "Task Assistant",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Silapin Narthasilpa",
+    "student_id": "5710944"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "Dr. Kwankamol Nongpong",
+   "Asst. Prof. Dr. Darun Kesrarat"
+  ],
+  "abstract": "ISL members have been using Scrum Methodology for software development. Sometimes, using just Excel files to keep track of things going on, who is doing what tasks, who has effort left to do incoming tasks, and what the status of the task is in right now, in each sprint is a painful thing and there is no tools to aid them. So, we decided to find a way and develop one thing that can help them, which is Task Assistant, planning and keeping track of things in an efficient way. Also, we foresee that daily task planning is useful for personal use. So, we provided not only team assistance but also personal assistance to aid all types of users.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "firebase",
+    "mysql",
+    "nodejs"
+   ]
+  }
+ },
+ {
+  "id": "1730",
+  "canonical_title": "AU Connect (A Mobile Application for AU Library Services)",
+  "aliases": [
+   "AU Connect (Mobile Application for AU Library Services)"
+  ],
+  "phase": "final",
+  "course_code": "IT 4292",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Kwanchanok Sitthivej",
+    "student_id": "5710380"
+   },
+   {
+    "name": "Krittiyaporn Plodpiyakun",
+    "student_id": "5711100"
+   },
+   {
+    "name": "Titi Chanpoom",
+    "student_id": "5715095"
+   }
+  ],
+  "advisor": "Dr. Kwankamol Nongpong",
+  "committee": [
+   "A. Tapanan Yeophantong",
+   "A. Pawut Satitsuksanoh"
+  ],
+  "abstract": "AU Connect is the system provides the library service for AU members via mobile application and web application. The core features for mobile application are browse book, book reservation, request book and journal to purchase, event with content management discovery and user transaction. Meanwhile, librarians can view and manage reserved book's information and information for request to purchase.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile",
+    "web"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [],
+   "technology": [
+    "mysql"
+   ]
+  }
+ },
+ {
+  "id": "1800",
+  "canonical_title": "Radio Frequency Identification for Counting Lap-Based Running",
+  "aliases": [],
+  "phase": "final",
+  "course_code": null,
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Chawan V.",
+    "student_id": "5737444"
+   },
+   {
+    "name": "Artisd C.",
+    "student_id": "5712266"
+   }
+  ],
+  "advisor": null,
+  "committee": [],
+  "abstract": "Fit for Run activity is a daily running activity, which needed several staffs and take a long time to pay attention in operation. Lap counting, and summarization of runners were operated by staffs manually. In traditional solution, several hours are required for giving a plastic brand for a lap then summarize those runners' records into papers at the end of the day. Moreover, all those records could not deliver to runners instantly. Our project brought some technologies to solve the problems using a combination of technologies. Normally, this kind of event is usually a small local community event, which only has little budget and manpower that could be allocated in the management of the event. Therefore, expenditure should be primary sector that we need to concern about it. Also, its specification should be sufficient to improve the operation of this event. Due to the lack of cost-effective solution for the problem domain, this study proposes a cost-effective interactive platform that is based on low-frequency (LF) RFID devices instead of using ultra-high frequency (UHF) RFID because their costs are totally different. The proposed platforms help manage the running events, log runner specifics, manages data through a centralized database, and show participants' data such as lap counting and result in real time. The proposed system web application was deployed on cloud web server including database server and been used at the Fit for Run Event at Assumption University on 1 – 22 February 2017.",
+  "reported_keywords": [
+   "RFID",
+   "HTML",
+   "Web Application",
+   "Cloud Server",
+   "NoSQL",
+   "Firebase"
+  ],
+  "classification": {
+   "category": [
+    "hardware_iot",
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [],
+   "technology": [
+    "firebase"
+   ]
+  }
+ }
+]

@@ -1,0 +1,228 @@
+[
+ {
+  "id": "2037",
+  "canonical_title": "PROMAI: Promotion Recommendation on E-commerce Application",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "Sanpawat Sewsuwan",
+    "student_id": "6113187"
+   },
+   {
+    "name": "Saharat Tiewkunupakan",
+    "student_id": "6114520"
+   },
+   {
+    "name": "Thanapol Sopanhari",
+    "student_id": "6113632"
+   }
+  ],
+  "advisor": "Dr. Songsak Channarukul",
+  "committee": [
+   "A. Chayapol Moemeng",
+   "A. Kiratijuta Bhumichitr"
+  ],
+  "abstract": "In the present day, shopping is the activity that people spend time as a hobby or buying basic needs. Nevertheless, the said activities are usually time-consuming and troublesome for finding the products to help fulfill a promotion and searching for the available promotions. Unexpectedly, the existing e-commerce applications do not aim to solve this pain point. If managed properly, they can undoubtedly boost the products’ sales.\n\nPromai is an e-commerce application built on an iOS platform that focuses on promotion recommendations and package recommendations for those who do not know what to buy to achieve a promotion. With the various approaches to suggest, it improves the user experience by making it more accessible. Besides, combining with the promotions’ progress tracking bars will significantly stimulate their desires to purchase. Furthermore, Promai Pro is provided for the staff to create and manage promotions at their fingertips.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "e_commerce"
+   ],
+   "topic": [
+    "recommender_system"
+   ],
+   "technology": []
+  }
+ },
+ {
+  "id": "2039",
+  "canonical_title": "Nearby Festival",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Aung Khant Oo",
+    "student_id": "6118154"
+   },
+   {
+    "name": "Siyu Han",
+    "student_id": "6118516"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Darun Kesrarat",
+  "committee": [
+   "Asst. Prof. Dr. Paitoon Porntrakoon",
+   "Asst. Prof. Dr. Dobri Atanassov Batovski"
+  ],
+  "abstract": "Thailand is well known for its unique culture, numerous forms of activities, as well as carnivals. All these activities have contributed to the tourism economy in Thailand. However, in the marketplace, there is still a lack of a platform that helps people to find festivals around them. Our Nearby Festival application is trying to solve this kind of vacancy by creating a platform that enables travelers to easily find the festivals going around their places. We hope our application can bring a little force in promoting the tourism of Thailand.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web",
+    "mobile"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [
+    "geolocation"
+   ],
+   "technology": [
+    "react",
+    "firebase"
+   ]
+  }
+ },
+ {
+  "id": "2041",
+  "canonical_title": "Concepts Discovery Using Topic Modeling",
+  "aliases": [
+   "Concept Discovery using Topic Modeling"
+  ],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "Harpreet Singh Arora",
+    "student_id": "5838428"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "A. Piyakul Tillapart",
+   "Dr. Kwankamol Nongpong"
+  ],
+  "abstract": "Mandatory exploring of collections of textual data should be a thing of the past, as technology matures and develops, a new learning curve for machine learning should be implemented. For that very reason, there was development of a machine learning technique called Topic Modeling, it is an unsupervised learning algorithm that helps discover hidden topics within a large collection of textual data. The framework consists of three steps; data ingestion, big data processing, topic modeling with visualization, where the topic model we discuss is based on Latent Dirichlet Allocation & Pachinko Allocation for comparison and results judgement. The aim of this project was to provide assistance and reduce burden on Market Researchers from processing data for concept discovery in a manual procedure.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [],
+   "domain": [
+    "business"
+   ],
+   "topic": [
+    "nlp"
+   ],
+   "technology": []
+  }
+ },
+ {
+  "id": "2042",
+  "canonical_title": "Boom Boxing! A Voice Controlled Boxing Game.",
+  "aliases": [
+   "BoomBoxing"
+  ],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Nguyen Ha Duong",
+    "student_id": "6128301"
+   },
+   {
+    "name": "Nguyen Huy Tung",
+    "student_id": "6128110"
+   },
+   {
+    "name": "Phumin Abdul Hameed",
+    "student_id": "6135117"
+   }
+  ],
+  "advisor": "Chayapol Moemeng",
+  "committee": [
+   "Asst. Prof. Dr. Paitoon Porntrakoon",
+   "A. Suparwat Charoenvikrom"
+  ],
+  "abstract": "Among the fast improved game developing environment, all the game are aiming to get the player to play with from different perspective as well as method to play the game. Traditional keyboard and mouse games are becoming less popular day by day. In fact, with the fast-developing rate, games like VR, and voice control game are likely to be choose intern of game evolution. With that in mind, our group had started the BoomBoxing project in order to try ourself in this area mostly for experience. BoomBoxing is a small game that developed to allow player to move and play based on their voice only without the help of keyboard or mouse. We have applied a library in C# for Unity which is keywordrecognizer after considering a lot of other choices. All of the material for BoomBoxing will be explained as clear as our could in this report and from our website.\nFor information inform of website and downloading the game. We suggesting u to try our website: https://phumzxter.github.io/bbstatic/index.html",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "game"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [],
+   "technology": [
+    "unity"
+   ]
+  }
+ },
+ {
+  "id": "2102",
+  "canonical_title": "Isekai: My Journey In The City",
+  "aliases": [
+   "My Journey In The City"
+  ],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "PhonePyae KyawSwar",
+    "student_id": "6118156"
+   },
+   {
+    "name": "Hein Khant Zaw",
+    "student_id": "6121300"
+   },
+   {
+    "name": "Chen Yang Hsu",
+    "student_id": "6121400"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Paitoon Porntrakoon",
+  "committee": [
+   "Asst. Prof. Dr. Benjawan Srisura",
+   "A. Chayapol Moemeng"
+  ],
+  "abstract": "My Journey In the City is a diary app targeted for tourists and travellers who like to save memories while travelling. Whenever a user reaches a destination across the world, he can save that moment by saving photos and simple/short diaries. The map will show all the memories the traveller had as a pinned photo and how many diaries the traveller created during the arrival. Users can also check the places information before writing a diary from the google map.\n\nOur team has three members working on two platforms Android and iOS. We are focusing on UI/UX design, Data Modelling and API testing for most of our time during the semester. Our goal is to create an app that helps to some extent for the traveller from saving memories with ease while enjoying the journey.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [
+    "geolocation"
+   ],
+   "technology": []
+  }
+ }
+]

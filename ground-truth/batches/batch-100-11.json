@@ -1,0 +1,212 @@
+[
+ {
+  "id": "1906",
+  "canonical_title": "Elderly care service Finder",
+  "aliases": [
+   "Elderly Care Service Finder"
+  ],
+  "phase": "final",
+  "course_code": "IT 4292",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Ms. Kaori Saito",
+    "student_id": "5828406"
+   },
+   {
+    "name": "Mr. Sophearith Saing",
+    "student_id": "5838108"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Paitoon",
+  "committee": [
+   "Asst. Prof. Dr. Rachsuda Setthawong",
+   "A. Chayapol Moemeng"
+  ],
+  "abstract": "This project is aimed at finding elderly care services for both parties in our system. The system is designed and developed based on the research by SCB Economic Intelligence Center. This is a web-based system, which can find and match Caregiver and Elders. Caregiver can provide services and schedules and Elders select services that they want then the system will match and show the list of Caregivers nearby Elders. Elders also can set services as default that they want to get. Then, they can choose whether they want to have a meeting with Caregiver who they selected from the list before making final decision to get services. Facility to communicate by using messenger and notification for both Caregiver and Elders are also available. Elderly care service Finder can be a very helpful system within Caregivers and Elders. This system provides services for not only Caregivers and Elders, but also administrators to approve Caregivers' information to be kept up-to-date and quality of their work by certification with identification or signature by the specific doctor or certified person, so that Elders feel secure and trust the information on our website. Furthermore, our system can also help both users to reduce the difficulty of finding care services around them by searching by postal code or service. Finally, this system is anticipated to be useful not only for specific area of Thailand, but also for all people in Thailand.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "healthcare"
+   ],
+   "topic": [],
+   "technology": [
+    "mongodb",
+    "nodejs"
+   ]
+  }
+ },
+ {
+  "id": "1908",
+  "canonical_title": "AI Play Games",
+  "aliases": [
+   "AI Play Game"
+  ],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Fengbo Zhou",
+    "student_id": "5918131"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "A. Kwankamol Nongpong",
+   "Asst. Prof. Dr. Dobri Batovski"
+  ],
+  "abstract": "This project focuses on creating an AI that can play arcade games. Just like how DeepBlue played chess, this project is about creating an AI that can play console games by itself and get a good score. There are many related works done by others, such as Mario bot which is a bot that can play classic Mario games on it own and pass the stages. This project does not stipulate which game can be used, so there are several options such as Google Chrome dinosaur game and battle city etc. But dinosaur game is too easy to be solved because the dinosaur is moving all the time so the available action is only two, jump or down to avoid obstacles, as for battle city, the problem is too complicated to be solved for a starter's project. So finally Circus Charlie was chosen as this project.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "game"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "python",
+    "opencv"
+   ]
+  }
+ },
+ {
+  "id": "1909",
+  "canonical_title": "Automated Schedule of Undergraduate Student Advising Reservation using Extended Flower Pollination Algorithm",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Sai Kham Lao",
+    "student_id": "5748124"
+   },
+   {
+    "name": "Deep Kumar",
+    "student_id": "5818029"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Rachsuda Setthawong",
+  "committee": [
+   "Asst. Dean Suparwat Charoenvikrom",
+   "A. Pawut Satitsuksanoh"
+  ],
+  "abstract": "Academic advising is an important process to assist undergraduate students in their academic life because it provides students the direction about personal, social, and educational concerns. However, the traditional process that an advisor manually generates an advising schedule often ends up with some conflicts with student schedules. To address this problem effectively and efficiently, this work introduces the eXtended Flower Pollination Algorithm (XFPA), which extends the Adapted Flower pollination Algorithm (AFPA) to automatically generate an optimal academic advising schedule that conforms to availability and/or preferences of both advisor and students. In particular, this work redefines a representative of a candidate schedule (solution), adapts the operators so that candidates' solutions can exchange information during evolution steps, and also accepts the hard and soft constraints when generating an optimal solution. The remedy function is also introduced to solve the conflict slots that cannot be suitable for them. Moreover, to further improve the proposed algorithm, XFPA is modified to enhance the nearly optimal solution generated in the complex datasets. The experiment results show that enhanced version of XFPA (EXFPA) is capable of automatically and efficiently generating optimal solutions in both simple and complex datasets.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "research"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [],
+   "technology": []
+  }
+ },
+ {
+  "id": "1911",
+  "canonical_title": "License Plate Recording System for Condominium (Car Plate Checker & Car Plate Management)",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Fengbo Zhou",
+    "student_id": "5918131"
+   },
+   {
+    "name": "Rubina Shrestha",
+    "student_id": "6018194"
+   }
+  ],
+  "advisor": "A. Suparwat Charoenvikrom",
+  "committee": [
+   "A. Tapanan Yeophantong",
+   "A. Piyakul Tillapart"
+  ],
+  "abstract": null,
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile",
+    "web"
+   ],
+   "domain": [
+    "security"
+   ],
+   "topic": [
+    "computer_vision",
+    "ocr"
+   ],
+   "technology": [
+    "react",
+    "mongodb",
+    "nodejs"
+   ]
+  }
+ },
+ {
+  "id": "1912",
+  "canonical_title": "Neural Network Learning Generalization with Customized Gaussian Noise Injection",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT 4292",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Mr. Chaitach Vadhanachai",
+    "student_id": "5915132"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Thitipong Tanprasert",
+  "committee": [
+   "Asst. Prof. Dr. AnilKumar Kothalil Gopalakrishnan",
+   "Asst. Prof. Dr. Benjawan Srisura"
+  ],
+  "abstract": "This report provides a study of Neural Network Learning Generalization with Gaussian Noise Injection. Though such injections have been studied when applied to data. There have been few studied on understanding the Neural Network Generalization when applied to network activation. Here we derive the generalization of the Neural Network with gaussian noise injection, obtained by scaling the injection noise to original data. we show analytically and empirically that such generalization produces the accuracy with different datasets",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "research"
+   ],
+   "platform": [],
+   "domain": [],
+   "topic": [],
+   "technology": []
+  }
+ }
+]

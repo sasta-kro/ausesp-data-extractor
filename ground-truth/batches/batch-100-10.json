@@ -1,0 +1,223 @@
+[
+ {
+  "id": "1828",
+  "canonical_title": "AU Network Profiler",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS3200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Ms. Tadsawan Tansuwan",
+    "student_id": "5936910"
+   },
+   {
+    "name": "Mr. Soravis Varayuththasawad",
+    "student_id": "5913094"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "A. Pawut Satitsuksanoh",
+   "A. Piyakul Tillapart"
+  ],
+  "abstract": "This paper introduces the platform - AU Network Profiler - in which it explores user's behavior within the Assumption university's network and produce insights relating to those group of users. The platform combines the knowledge of network to preprocess incoming flow of packets into structural dataset, k-means clustering algorithm to produce user segmentation and later analyze those cohorts. The client-application includes the web interface which virtualized the cohort analysis and network utilization for the possible user to have the ability to understand the overview of their network. With its functionality to find user's behavior groups present in the network, AU Network Profiler has the ability to produce insights of the characteristic of each segment. Overall, to conclude about the AU Network Profiler, it is network analytic tools with a goal to understand the behavioristic of the user within the network.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [],
+   "technology": []
+  }
+ },
+ {
+  "id": "1836",
+  "canonical_title": "PeerShare: An Expense Sharing Mobile Application",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS3200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Mr. Rachatha Pramualsuk",
+    "student_id": "5911694"
+   },
+   {
+    "name": "Mr. Prutchakorn Ngamsuanplu",
+    "student_id": "5913262"
+   },
+   {
+    "name": "Mr. Poom Penghiran",
+    "student_id": "5913873"
+   }
+  ],
+  "advisor": "Dr. Songsak Channarukul",
+  "committee": [
+   "Dr. Kwankamol Nongpong",
+   "Asst. Prof. Dr. Thitipong Tanprasert"
+  ],
+  "abstract": "Nowadays, convenience has become one of the necessities that govern a decision in expending money, especially in transactions done with many peers. Said transactions often are complicated and time-consuming as each peer would have to pass around a single receipt to calculate how much each of them owes the person who had paid on behalf of them. This scenario happened in almost every transaction we shared.\nPeerShare is an expense sharing mobile application proposes a more convenient solution for bill splitting. By taking a snapshot of the receipt then crop the part which contains item prices. Then, the owner of the bill (the person who paid first) sends a request asking money to each peer. Each peer can repay the amount owed back to the owner via AU Spark E-wallet. This step of the transaction happens within PeerShare application in which each peer has registered his or her E-wallet account.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "finance"
+   ],
+   "topic": [
+    "ocr"
+   ],
+   "technology": []
+  }
+ },
+ {
+  "id": "1837",
+  "canonical_title": "Sibyl: Using Data Analytics to Predict Student Performance for Recommended Courses",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 4200/IT 4292",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Mr. Sittisak Tangpraditchai",
+    "student_id": "5813526"
+   },
+   {
+    "name": "Mr. Chitavorn Bhuvapanich",
+    "student_id": "5812039"
+   },
+   {
+    "name": "Ms. Varissara Tangsajjanuraksa",
+    "student_id": "5811095"
+   }
+  ],
+  "advisor": "Dr. Songsak Channarukul",
+  "committee": [
+   "Dr. Benjawan Srisura",
+   "A. Tapanan Yeophantong"
+  ],
+  "abstract": "In the present, recommender systems are tools for filtering users' historical information and activities to predict a set of items that likely to be the preference of the users. Besides, businesses utilize recommender systems to increase the value for its organizations and customers. Recommender systems researches and applications present statistic and artificial techniques related in constructing recommender system including machine learning, data mining, collaborative filtering, and content-based filtering. As we have chosen matrix factorization technique to build a course recommender system for university students called \"Sibyl\". Sibyl recommends courses by predicting grade of the selected courses. In this report, we delineate the design, analysis, and implementation of Sibyl in detailed. Moreover, we will discuss the problems we faced and methodology that makes Sibyl achieved in recommending courses using of one the collaborative filtering approach called matrix factorization.",
+  "reported_keywords": [
+   "Recommender system",
+   "matrix factorization",
+   "courses recommender system",
+   "prediction"
+  ],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [
+    "recommender_system"
+   ],
+   "technology": [
+    "python"
+   ]
+  }
+ },
+ {
+  "id": "1839",
+  "canonical_title": "SMFD Painless Form E-Approval",
+  "aliases": [],
+  "phase": "final",
+  "course_code": null,
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Shahin R.",
+    "student_id": null
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [],
+  "abstract": "Think about how much time you spend on getting a paper or petition signed. It gets worse if many authorities need to sign your petition and its a nightmare if your request needs to be signed by a high authority such as organisation president. To understand what exactly is, SMFD read Bob's story.\nBob is a guy who works for an enterprise as a designer. Bob wants to get an authorised leave for four days. Bob works for the IT department, which is located forty Kilometre far from headquarter. Bob was sick on Monday; he first needs to download then print authorised leave form and take it to his immediate supervisor who is called John; if John is free, he signs his petition now Bob he has to take his paper his paper to IT department director Adam on the eleventh floor. Unfortunately, Adam is busy; he'll come back in three hours then he might sign Bob's petition. Now Bob needs to get to the headquarter and get his paper singed by Vice president and President but again, unfortunately, Vice president is only available on Wednesdays and President is only available on Fridays Bob is sick, tired and hopeless and he'll give up his petition and go to work even though he is sick and make others sick as well!\nAdam, the IT manager, is a smart guy. He hears the Bob story, and he wants to fix this huge issue. He does some research and finds out about SMFD, which makes the whole process paperless, fast and secure!\nNext week Alice gets sick. She logs in into SMFD and request for an authorised leave, Adam receives an email about the case and checks his medical certificate everything is exceptional Adam sign Alice's petition on his laptop right after Adam sign John receives a notification on his tablet, so he signed as well, who is next on the list? Vice president, So he'll receive a notification, and he'll sign at all. Finally, the President receives a notification while on his vacation, signs the petition using his phone.\nAlice receives a notification about her petition approved on every step. Alice didn't leave the house; nobody kills the threes to get papers signed. The organisation saved tones of money on time and made their employees happy.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "laravel",
+    "mysql"
+   ]
+  }
+ },
+ {
+  "id": "1904",
+  "canonical_title": "Staff Clocking System Using Face Detection",
+  "aliases": [],
+  "phase": "proposal",
+  "course_code": "CS4200",
+  "program": "computer_science",
+  "semester": null,
+  "academic_year": null,
+  "students": [
+   {
+    "name": "Sonam Choejur Tshering",
+    "student_id": "5918422"
+   },
+   {
+    "name": "Brighton Tapiwa Shanji",
+    "student_id": "5748131"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "A. Tapanan Yeophantong",
+   "Asst. Prof. Dr. Paitoon Porntrakoon"
+  ],
+  "abstract": null,
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "hardware_iot"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "firebase",
+    "python"
+   ]
+  }
+ }
+]

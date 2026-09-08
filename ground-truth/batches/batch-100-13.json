@@ -1,0 +1,219 @@
+[
+ {
+  "id": "1920",
+  "canonical_title": "SAMT Master",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS4200/IT4292",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Aye Myat Mon",
+    "student_id": "5818026"
+   },
+   {
+    "name": "Puja Karmacharya",
+    "student_id": "5818313"
+   },
+   {
+    "name": "Nuzhat Sarwar",
+    "student_id": "5838433"
+   }
+  ],
+  "advisor": "A. Darun",
+  "committee": [],
+  "abstract": null,
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [],
+   "technology": []
+  }
+ },
+ {
+  "id": "1927",
+  "canonical_title": "Smart Circulation System",
+  "aliases": [],
+  "phase": "proposal",
+  "course_code": "CS 3200/IT4291",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Zheng Wang",
+    "student_id": "5826905"
+   },
+   {
+    "name": "Zhuoyu Tang",
+    "student_id": "5828425"
+   },
+   {
+    "name": "Jiadong Jiao",
+    "student_id": "5918459"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "Dr. Kwankamol Nongpong",
+   "Dr. Songsak Channarukul"
+  ],
+  "abstract": "RFID (Radio-Frequency Identification) is a powerful technology that uses wireless radio frequency for data communication to automatically identify, and track tags attached to objects. It has been widely applied in various industries such as inventory, logistics, access control and so on.\nThis project aims on digital transformation of library circulation services via RFID solution, in which achieves self-service circulation. Users would be able to borrow books, return books by themselves, simply using the smart circulation platform without the help of librarians. It not only saves the work of librarians, but also provides better service experience for library users.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "hardware_iot"
+   ],
+   "platform": [
+    "embedded_hardware",
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [],
+   "technology": [
+    "firebase",
+    "python"
+   ]
+  }
+ },
+ {
+  "id": "1928",
+  "canonical_title": "AU Competitive Intelligence",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS3200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Harpreet Singh Arora",
+    "student_id": "5838428"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "A. Piyakul Tillapart",
+   "Dr. Kwankamol Nongpong"
+  ],
+  "abstract": "This paper is introducing the platform – AU Competitive Intelligence – which provides insights on how Assumption University performs against its competitors using online sources. The platform performs preprocessing on the incoming flow of unstructured documents into the structural dataset. Also, the platform allows concept learning by utilizing machine learning to classify documents into the field of studies. The platform includes a web interface that shows analysis results being visualized. From this platform, we can quantify the competitiveness of Assumption University with other competing universities in Thailand and also the field of studies. In conclusion, AU Competitive Intelligence is a concept competitive platform to provide a quantifiable presence in online academics.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [
+    "nlp"
+   ],
+   "technology": []
+  }
+ },
+ {
+  "id": "1933",
+  "canonical_title": "Case Studies of Fault Tolerance in Numerical Analysis",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT 4291 / IT 4292",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Zhuoyu Tang",
+    "student_id": "5828425"
+   },
+   {
+    "name": "Qianheng Ma",
+    "student_id": "5913929"
+   },
+   {
+    "name": "Peng Chen",
+    "student_id": "5918413"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Dobri Atanassov Batovski",
+  "committee": [
+   "A. Tapanan Yeophantong",
+   "Asst. Prof. Titida Nochai"
+  ],
+  "abstract": "A Raspberry Pi cluster combines Raspberry Pi devices in a connected network so that many devices can work together in parallel to increase the overall computing power. This project uses selected numerical approaches to process data with a wireless Raspberry Pi cluster, collect statistical results about the processing time and analyse the fault-tolerance of the wireless network configuration to evaluate the reliability of said cluster for distributed computing.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "research"
+   ],
+   "platform": [
+    "embedded_hardware"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [],
+   "technology": [
+    "python"
+   ]
+  }
+ },
+ {
+  "id": "1936",
+  "canonical_title": "Clarion: Data Warehouse and Business Intelligence for Campus Analytics",
+  "aliases": [
+   "Clarion: Data Warehouse and Business Intelligence"
+  ],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Rachatha Pramualsuk",
+    "student_id": "5911694"
+   },
+   {
+    "name": "Poom Penghiran",
+    "student_id": "5913873"
+   }
+  ],
+  "advisor": "Dr. Songsak Channarukul",
+  "committee": [
+   "A. Chayapol Moemeng",
+   "Asst.Prof.Dr. Paitoon Porntrakoon"
+  ],
+  "abstract": "In a world that is driven by data, every business across all sectors are looking to gain an edge over their competitors using every data they have and that they might obtain. University and educational industry are no exceptions. The problems, however, lie in fragments of data sources inside the organization. In addition to fragmentation of data, is the lack of tools to come up with meaningful insights.\nAt first, out goal is to research and see what value can existing data bring us. We took a change to interview the university registrar. He told us of his vision, what he wants to see, what he wants to know and what is available. From there, we drafted our project and to try to answer and deliver the university registrar goals; A tool that can use existing data to answers business questions around the university. Hence, our project Clarion.\nOur first task in the development of Clarion is to understand what we have. So we spent the first couple of weeks to study data and its sources. We've identified three available sources being Keystone; university registrar's student information system, AU Spark; a student information mobile application, and data from the university registrar itself.\nGetting to understand available data as well as its format, we started designing our project. We decided to create the Clarion; a bundle of data warehouse and business dashboards for Assumption University of Thailand.\nClarion is a data warehouse designed for Assumption University of Thailand. Merging many data sources into one single meaningful platform consisting of Power BI report and OLAP cube. In Power BI, we have prepared dashboards with different aspects of university data with built-in filters for users. They can play around and manipulate queries via a neatly designed interface that is provided by Power BI. OLAP cube, on the other hand, is a blank canvas of strategically cleaned data. Users can freely explore data themselves by dragging and dropping dimensions on to the screen to come up with insights or to answers any business questions they might have.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "other"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [],
+   "technology": [
+    "python"
+   ]
+  }
+ }
+]

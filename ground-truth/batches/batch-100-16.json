@@ -1,0 +1,223 @@
+[
+ {
+  "id": "2007",
+  "canonical_title": "Online Customer Behavior Analysis",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "Siyu Han",
+    "student_id": "6118516"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Paitoon Porntrakoon",
+  "committee": [
+   "Asst. Prof. Benjawan Srisura",
+   "A. Chayapol Moemeng"
+  ],
+  "abstract": "In recent times, online shopping is growing on a large scale. Predicting user behavior in the context of e-commerce gains importance as it enables business to understand consumer needs. As online shopping is increasing, large amounts of data on consumers’ online behavior have become available on the web. JD.com is one of the largest online retailers in China that can collect massive user behavior data. In this paper, I’m going to build a website that can simulate user shopping behavior; and based on the imbalanced shopping data of real users from JD.com (https://jdata.jd.com/html/detail.html?id=1)[1], the paper will predict what product the user will purchase with comparison of several machine learning algorithms.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "e_commerce"
+   ],
+   "topic": [
+    "recommender_system"
+   ],
+   "technology": [
+    "python"
+   ]
+  }
+ },
+ {
+  "id": "2008",
+  "canonical_title": "Cloud Gaming: Cloud Café",
+  "aliases": [
+   "Cloud Gaming"
+  ],
+  "phase": "final",
+  "course_code": null,
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "Taranjit Singh",
+    "student_id": "6011149"
+   },
+   {
+    "name": "Shiv Dechasakphan",
+    "student_id": "6011552"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "A. Suparwat Charoenvikrom",
+   "Asst. Prof. Dr. Paitoon Porntrakoon"
+  ],
+  "abstract": "Nowadays there is a huge rise in the number of online games, as technology is getting better the games are starting to look more and more realistic. This brings a huge problem for people who cannot upgrade their computers every time a new game release that requires more ram or video memory. Then there is the problem of hardware compatibility and driver’s problem that can be hard for a person with a less technological background. So, at Cloud Café we provide an alternative to getting your computer and keeping it up to date. We provide a cloud gaming platform where users can play games on any Mac or Windows computer that can run Microsoft teams.\n\nWe accomplish this with AWS provided cloud compute instances and allow users to play games over the network. This has been made possible due to the increasing internet speeds all over Thailand as well as the low latency RDP provided using Parsec. At Cloud Café we make the experience of starting a game on an AWS instance all done in a single click therefore making the complex process fully automated.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "game"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [],
+   "technology": []
+  }
+ },
+ {
+  "id": "2010",
+  "canonical_title": "Advance Hotel Management System",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT 4292/CS 4200",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "Mungyeong Kim",
+    "student_id": "5911116"
+   },
+   {
+    "name": "Anawil Chumphun",
+    "student_id": "5912087"
+   },
+   {
+    "name": "Tasnia Rehnuma Mahmud",
+    "student_id": "5748008"
+   }
+  ],
+  "advisor": "Asst.Prof.Dr. Adtha Lawanna",
+  "committee": [
+   "Asst.Prof.Dr. Darun Kesrarat",
+   "Asst.Prof.Dr. Benjawan Srisura"
+  ],
+  "abstract": "Tourism is a significant part of this land of smiles - Thailand. And one business that goes hand in hand with tourism, is the hotel business. A good hotel management system of any hotel impacts positively on the customer and gives a very good impression about the hotel. A proper hotel management system, having all the proper information, also shows the customer that the hotel is convenient, trustworthy and safe. A good hotel management system is also extremely helpful, for the manager and staff of the hotel as well. It also makes the interaction with customers easier for them as well. Our project is aimed at researching an existing hotel management system - Ipower Chiang Rai Hotel, find its weaknesses and then ultimately developing an improved version of the system. The goal is to create a system that helps all of its users view and access the hotel in a better and easier way.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "mysql"
+   ]
+  }
+ },
+ {
+  "id": "2014",
+  "canonical_title": "Vehicle Analytics",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT4292/CS4200",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "Mustavi Sarker",
+    "student_id": "6018145"
+   },
+   {
+    "name": "Sorasit Arsirapongphisit",
+    "student_id": "6017564"
+   },
+   {
+    "name": "Chawalit Khotwong",
+    "student_id": "6014085"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "Asst. Prof. Dr. Darun Kesrarat",
+   "Dr. Kwankamol Nongpong"
+  ],
+  "abstract": "Vehicle detection and classification has become a major trend over the last few years due to the advent of self-driving cars. This drove towards the development of advanced traffic monitoring systems which use computer vision powered by various machine learning techniques to detect, classify and track moving vehicles. Even just a decade ago, this was completely unheard of. Although machine learning algorithms existed at the time, the computers were not powerful enough to run inference using those machine learning algorithms.\n\nIf we look at the history of object detection and classification, we can reminisce about how digital cameras in the early 2000s detected faces even without powerful hardware capable of parallel processing. Although it was a very basic form of object detection, far from the advanced neural network powered object detection methods we have now, it still did what it was supposed to do and paved the way towards more advanced neural network powered detection methods we have now. Image classification and object detection has come a long way since the days of the early digital cameras. Now thanks to more powerful machines and neural networks, we can train them to detect and classify at a level never before seen in the past. How we use object detection has also changed greatly as well. There’s now support for more applications, where we can use these classifiers to detect more types of objects and also multiple objects at the same time.\n\nTraffic monitoring has been a field that greatly lacked innovation. Traditionally, companies would use cameras and a team of personnel to monitor the incoming and ongoing traffic on the roads. This can prove as a tedious task for humans to perform, and expenses can also add up. Early traffic monitoring systems [1] consisted of systems that used sensors to measure the road usage for a short period of time. This problem with using traffic counters is that there are various factors that affect the data collection of the traffic counting sensors. One of the major challenges [2] with Automatic Traffic Counters (ATR) is that there needs to be a sufficient number of ATRs present on the road to accurately measure the traffic flow, also lack of data accuracy on roads where they have multiple traffic signals where they have high volume traffic. Compared to traditional sensors to count vehicles, using computer vision for vehicle counting can provide greater detail and accuracy on traffic congestion and also, reduce the cost greatly, as the number of sensors required decreases by a significant margin.\n\nIn this article, we talk about how we developed a scalable traffic monitoring system powered by computer vision which was specifically designed to be implemented at the Stadium One shopping center. The moving object detector in the system is capable of handling the following situations: counting, classifying and tracking vehicles using only computer vision, monitoring the density of the traffic with great accuracy comparable to Automatic Traffic Counters and tracking parked vehicles in Stadium One’s parking lot.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "transportation"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "firebase",
+    "opencv",
+    "python"
+   ]
+  }
+ },
+ {
+  "id": "2017",
+  "canonical_title": "Dental Management System",
+  "aliases": [],
+  "phase": "proposal",
+  "course_code": "IT 4291",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "Tanakorn Navanugraha",
+    "student_id": "6025106"
+   },
+   {
+    "name": "Rajbir Singh",
+    "student_id": "6015184"
+   }
+  ],
+  "advisor": "Asst.Prof. Dr. Adtha Lawanna",
+  "committee": [
+   "Asst.Prof. Titida Nochai",
+   "Asst.Prof. Dr. Benjawan Srisura"
+  ],
+  "abstract": null,
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "healthcare"
+   ],
+   "topic": [],
+   "technology": [
+    "mysql",
+    "python"
+   ]
+  }
+ }
+]
