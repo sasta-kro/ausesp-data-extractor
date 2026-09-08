@@ -89,7 +89,10 @@ def main() -> int:
         row = {
             "import_key": f"sp-{project_id}",
             "title": title,
-            "reference_code": project_id,
+            # The source-file numbers are opaque legacy identifiers from a
+            # previous system. They stay in import_key for traceability and
+            # are not published as reference_code.
+            "reference_code": "",
             "abstract": abstract,
             "academic_year": year,
             "semester": semester,
