@@ -30,8 +30,7 @@
     "game"
    ],
    "platform": [
-    "android",
-    "ios"
+    "mobile"
    ],
    "domain": [
     "entertainment"
@@ -79,7 +78,7 @@
     "software_application"
    ],
    "platform": [
-    "ios",
+    "mobile",
     "web"
    ],
    "domain": [
@@ -87,8 +86,7 @@
    ],
    "topic": [],
    "technology": [
-    "react",
-    "swift"
+    "react"
    ]
   }
  },
@@ -129,7 +127,7 @@
     "software_application"
    ],
    "platform": [
-    "android"
+    "mobile"
    ],
    "domain": [
     "healthcare"
@@ -228,7 +226,6 @@
    ],
    "topic": [],
    "technology": [
-    "flask",
     "mysql",
     "python"
    ]

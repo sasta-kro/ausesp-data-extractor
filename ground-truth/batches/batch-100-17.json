@@ -70,15 +70,14 @@
     "hardware_iot"
    ],
    "platform": [
-    "raspberry_pi"
+    "embedded_hardware"
    ],
    "domain": [
     "healthcare"
    ],
    "topic": [],
    "technology": [
-    "python",
-    "tensorflow"
+    "python"
    ]
   }
  },
@@ -117,10 +116,7 @@
    "topic": [
     "geolocation"
    ],
-   "technology": [
-    "csharp",
-    "java"
-   ]
+   "technology": []
   }
  },
  {

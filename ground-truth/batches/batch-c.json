@@ -88,7 +88,8 @@
    ],
    "technology": [
     "opencv",
-    "python"
+    "python",
+    "tensorflow"
    ]
   }
  },
@@ -162,7 +163,7 @@
     "hardware_iot"
    ],
    "platform": [
-    "raspberry_pi",
+    "embedded_hardware",
     "web"
    ],
    "domain": [

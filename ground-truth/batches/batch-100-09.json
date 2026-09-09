@@ -120,8 +120,8 @@
     "hardware_iot"
    ],
    "platform": [
-    "mobile",
-    "raspberry_pi"
+    "embedded_hardware",
+    "mobile"
    ],
    "domain": [
     "other"
@@ -177,9 +177,7 @@
    "topic": [
     "recommender_system"
    ],
-   "technology": [
-    "csharp"
-   ]
+   "technology": []
   }
  },
  {

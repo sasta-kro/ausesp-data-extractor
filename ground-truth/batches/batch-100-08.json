@@ -108,7 +108,7 @@
     "ai_data"
    ],
    "platform": [
-    "raspberry_pi",
+    "embedded_hardware",
     "web"
    ],
    "domain": [
@@ -118,9 +118,8 @@
     "computer_vision"
    ],
    "technology": [
-    "opencv",
     "python",
-    "tensorflow"
+    "opencv"
    ]
   }
  },
@@ -152,7 +151,7 @@
     "hardware_iot"
    ],
    "platform": [
-    "raspberry_pi"
+    "embedded_hardware"
    ],
    "domain": [
     "campus"
@@ -203,9 +202,8 @@
     "nlp"
    ],
    "technology": [
-    "flask",
-    "nodejs",
-    "python"
+    "python",
+    "nodejs"
    ]
   }
  }

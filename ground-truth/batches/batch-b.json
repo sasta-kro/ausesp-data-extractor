@@ -46,8 +46,7 @@
    ],
    "technology": [
     "opencv",
-    "python",
-    "tensorflow"
+    "python"
    ]
   }
  },
@@ -124,16 +123,15 @@
     "software_application"
    ],
    "platform": [
-    "android"
+    "mobile"
    ],
    "domain": [
     "healthcare"
    ],
    "topic": [],
    "technology": [
-    "java",
-    "mysql",
-    "php"
+    "php",
+    "mysql"
    ]
   }
  },

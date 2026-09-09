@@ -98,8 +98,7 @@
    ],
    "technology": [
     "opencv",
-    "python",
-    "tensorflow"
+    "python"
    ]
   }
  },
@@ -149,7 +148,6 @@
     "ocr"
    ],
    "technology": [
-    "express",
     "mongodb",
     "nodejs",
     "react"

@@ -185,7 +185,6 @@
     "ocr"
    ],
    "technology": [
-    "flask",
     "python"
    ]
   }

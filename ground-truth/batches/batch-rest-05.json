@@ -250,7 +250,7 @@
     "student_id": "6611968"
    },
    {
-    "name": "Min Thant",
+    "name": "Min Thant Naing",
     "student_id": "6612012"
    }
   ],
@@ -1305,7 +1305,7 @@
   "advisor": "Dr. Phyo Min Tun",
   "committee": [
    "A. Sakchhi Paudel",
-   "A. Atthipat"
+   "A. Atthipat Hirunadisuan"
   ],
   "abstract": "Bangkok Buddy is a mobile app designed to help international tourists plan their trips to Bangkok more easily and personally. Tourists often struggle with scattered travel information, not enough time to plan, and a lack of details about entry fees, opening hours, and preparation requirements. Our app handles these problems by bringing together attraction data and automatically creating personalized travel itineraries based on user preferences and available travel days. The app uses Flutter for its frontend interface and Firebase for backend services and data management. It also works with Google Maps API and Google Places API for precise location data and map visuals. A rule-based itinerary generator sorts attractions based on user interests, groups nearby locations, and sets visit times based on daily travel limits. By merging organized attraction data with automated itinerary planning, the app cuts down on planning time, makes itineraries more practical, and improves the overall travel experience for tourists in Bangkok.",
   "abstract_source": "document",

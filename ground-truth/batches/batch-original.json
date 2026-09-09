@@ -177,8 +177,7 @@
    ],
    "technology": [
     "opencv",
-    "python",
-    "tensorflow"
+    "python"
    ]
   }
  },
@@ -507,7 +506,6 @@
    ],
    "topic": [],
    "technology": [
-    "java",
     "nodejs",
     "postgresql"
    ]

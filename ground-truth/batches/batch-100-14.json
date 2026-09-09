@@ -28,15 +28,14 @@
     "software_application"
    ],
    "platform": [
-    "android"
+    "mobile"
    ],
    "domain": [
     "e_commerce"
    ],
    "topic": [],
    "technology": [
-    "firebase",
-    "java"
+    "firebase"
    ]
   }
  },
@@ -79,9 +78,7 @@
    "topic": [
     "nlp"
    ],
-   "technology": [
-    "java"
-   ]
+   "technology": []
   }
  },
  {
@@ -111,7 +108,7 @@
     "software_application"
    ],
    "platform": [
-    "android"
+    "mobile"
    ],
    "domain": [
     "transportation"
@@ -165,9 +162,7 @@
     "campus"
    ],
    "topic": [],
-   "technology": [
-    "csharp"
-   ]
+   "technology": []
   }
  },
  {
@@ -211,7 +206,6 @@
    "topic": [],
    "technology": [
     "firebase",
-    "flask",
     "python"
    ]
   }
