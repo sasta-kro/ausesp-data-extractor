@@ -115,10 +115,10 @@ Known document traps (see also the corpus design note inside the AUSE repo,
 
 A reviewed, manually verified CSV built from agent-read documents is produced
 by `steps/build_reviewed_csv.py` from the JSON records in
-`ground-truth/batches/` (one file per extraction batch; all 145 reviewed
-projects covered, including verbatim abstracts, generated grounded
-descriptions where documents print none, and cleaned people fields with
-honorifics and academic titles stripped at build time). Output lands at
+`ground-truth/batches/` (one file per extraction batch; all 217 report
+projects covered as of 2026-09-09, including verbatim abstracts, generated
+grounded descriptions where documents print none, and cleaned people fields
+with honorifics and academic titles stripped at build time). Output lands at
 `output/reviewed-import.csv` (untracked). It is the safe import source until
 the pipeline reaches that quality. Extend the batch records rather than the
 script when corrections come up.
