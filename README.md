@@ -115,12 +115,22 @@ Known document traps (see also the corpus design note inside the AUSE repo,
 
 A reviewed, manually verified CSV built from agent-read documents is produced
 by `steps/build_reviewed_csv.py` from the JSON records in
-`ground-truth/batches/` (one file per extraction batch; 142 of 217 report
-projects covered as of 2026-09-08, including verbatim abstracts and cleaned
-people fields with honorifics and academic titles stripped at build time).
-Output lands at `output/reviewed-import.csv` (untracked). It is the safe
-import source until the pipeline reaches that quality. Extend the batch
-records rather than the script when corrections come up.
+`ground-truth/batches/` (one file per extraction batch; all 145 reviewed
+projects covered, including verbatim abstracts, generated grounded
+descriptions where documents print none, and cleaned people fields with
+honorifics and academic titles stripped at build time). Output lands at
+`output/reviewed-import.csv` (untracked). It is the safe import source until
+the pipeline reaches that quality. Extend the batch records rather than the
+script when corrections come up.
+
+A second full-corpus pass (2026-09-09) produced `ground-truth/discovery/`
+records: whole-document technology and domain evidence with used-versus-cited
+status, plus grounded abstracts for abstractless documents. Run
+`steps/apply_discovery.py` to regenerate `output/discovery-report.md` (ranked
+taxonomy key suggestions not yet in values.yaml) and fold corrections into
+the canonical batches. `steps/extract_discovery.py` pulls a result JSON out
+of an agent transcript file. The prepared extraction cache lives in
+`.tmp-prepared/` (gitignored, kept on disk).
 
 Corpus quirks found during the 100-project run (2026-09-08):
 
