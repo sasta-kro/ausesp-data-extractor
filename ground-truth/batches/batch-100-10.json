@@ -37,6 +37,7 @@
    ],
    "topic": [],
    "technology": [
+    "flask",
     "python"
    ]
   }
@@ -76,7 +77,7 @@
     "software_application"
    ],
    "platform": [
-    "mobile"
+    "ios"
    ],
    "domain": [
     "finance"
@@ -84,7 +85,9 @@
    "topic": [
     "ocr"
    ],
-   "technology": []
+   "technology": [
+    "swift"
+   ]
   }
  },
  {
@@ -219,7 +222,8 @@
     "computer_vision"
    ],
    "technology": [
-    "firebase"
+    "firebase",
+    "tensorflow"
    ]
   }
  }

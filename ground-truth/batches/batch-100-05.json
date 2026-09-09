@@ -69,7 +69,7 @@
     "software_application"
    ],
    "platform": [
-    "mobile"
+    "ios"
    ],
    "domain": [
     "other"
@@ -78,7 +78,8 @@
     "computer_vision"
    ],
    "technology": [
-    "opencv"
+    "opencv",
+    "swift"
    ]
   }
  },
@@ -117,7 +118,7 @@
     "software_application"
    ],
    "platform": [
-    "mobile"
+    "android"
    ],
    "domain": [
     "business"
@@ -126,6 +127,7 @@
     "geolocation"
    ],
    "technology": [
+    "java",
     "php"
    ]
   }
@@ -175,7 +177,7 @@
     "software_application"
    ],
    "platform": [
-    "mobile"
+    "android"
    ],
    "domain": [
     "healthcare"
@@ -184,7 +186,8 @@
     "computer_vision"
    ],
    "technology": [
-    "python"
+    "python",
+    "tensorflow"
    ]
   }
  },

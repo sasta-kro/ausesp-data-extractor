@@ -29,7 +29,7 @@
     "research"
    ],
    "platform": [
-    "embedded_hardware"
+    "raspberry_pi"
    ],
    "domain": [],
    "topic": [],
@@ -83,7 +83,9 @@
     "recommender_system"
    ],
    "technology": [
-    "firebase"
+    "csharp",
+    "firebase",
+    "swift"
    ]
   }
  },
@@ -117,7 +119,7 @@
     "software_application"
    ],
    "platform": [
-    "mobile"
+    "ios"
    ],
    "domain": [
     "business",

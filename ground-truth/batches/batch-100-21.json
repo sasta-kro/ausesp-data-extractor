@@ -36,6 +36,7 @@
    ],
    "topic": [],
    "technology": [
+    "angular",
     "firebase",
     "kotlin"
    ]
@@ -69,7 +70,7 @@
     "software_application"
    ],
    "platform": [
-    "embedded_hardware"
+    "raspberry_pi"
    ],
    "domain": [
     "business"
@@ -124,6 +125,7 @@
    ],
    "topic": [],
    "technology": [
+    "express",
     "mongodb",
     "nodejs",
     "react"

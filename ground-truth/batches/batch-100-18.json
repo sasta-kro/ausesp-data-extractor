@@ -34,7 +34,7 @@
     "software_application"
    ],
    "platform": [
-    "mobile"
+    "ios"
    ],
    "domain": [
     "e_commerce"
@@ -43,7 +43,9 @@
     "recommender_system",
     "gamification"
    ],
-   "technology": []
+   "technology": [
+    "swift"
+   ]
   }
  },
  {
@@ -77,7 +79,7 @@
     "software_application"
    ],
    "platform": [
-    "mobile",
+    "android",
     "web"
    ],
    "domain": [
@@ -176,6 +178,7 @@
    ],
    "topic": [],
    "technology": [
+    "csharp",
     "unity"
    ]
   }
@@ -217,7 +220,8 @@
     "software_application"
    ],
    "platform": [
-    "mobile"
+    "android",
+    "ios"
    ],
    "domain": [
     "other"

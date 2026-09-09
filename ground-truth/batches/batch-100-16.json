@@ -35,6 +35,7 @@
     "recommender_system"
    ],
    "technology": [
+    "flask",
     "python"
    ]
   }
@@ -78,7 +79,9 @@
     "entertainment"
    ],
    "topic": [],
-   "technology": []
+   "technology": [
+    "csharp"
+   ]
   }
  },
  {
@@ -174,7 +177,8 @@
    "technology": [
     "firebase",
     "opencv",
-    "python"
+    "python",
+    "tensorflow"
    ]
   }
  },
@@ -216,6 +220,7 @@
    ],
    "topic": [],
    "technology": [
+    "django",
     "mysql",
     "php",
     "python"

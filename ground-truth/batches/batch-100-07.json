@@ -26,7 +26,7 @@
     "hardware_iot"
    ],
    "platform": [
-    "embedded_hardware"
+    "raspberry_pi"
    ],
    "domain": [
     "security"
@@ -75,8 +75,9 @@
    ],
    "topic": [],
    "technology": [
-    "nodejs",
-    "mysql"
+    "express",
+    "mysql",
+    "nodejs"
    ]
   }
  },
@@ -123,7 +124,9 @@
     "other"
    ],
    "topic": [],
-   "technology": []
+   "technology": [
+    "csharp"
+   ]
   }
  },
  {
@@ -211,8 +214,9 @@
    ],
    "topic": [],
    "technology": [
-    "nodejs",
-    "mongodb"
+    "express",
+    "mongodb",
+    "nodejs"
    ]
   }
  }

@@ -30,7 +30,7 @@
     "hardware_iot"
    ],
    "platform": [
-    "embedded_hardware"
+    "raspberry_pi"
    ],
    "domain": [
     "healthcare"
@@ -122,7 +122,7 @@
     "ai_data"
    ],
    "platform": [
-    "embedded_hardware"
+    "raspberry_pi"
    ],
    "domain": [
     "security"
@@ -132,7 +132,8 @@
    ],
    "technology": [
     "opencv",
-    "python"
+    "python",
+    "tensorflow"
    ]
   }
  },
@@ -175,7 +176,8 @@
    ],
    "topic": [],
    "technology": [
-    "react"
+    "react",
+    "swift"
    ]
   }
  }

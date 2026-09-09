@@ -162,7 +162,7 @@
     "hardware_iot"
    ],
    "platform": [
-    "embedded_hardware",
+    "raspberry_pi",
     "web"
    ],
    "domain": [

@@ -88,6 +88,7 @@
    "topic": [],
    "technology": [
     "firebase",
+    "flask",
     "python"
    ]
   }
@@ -169,13 +170,14 @@
     "hardware_iot"
    ],
    "platform": [
-    "embedded_hardware"
+    "raspberry_pi"
    ],
    "domain": [
     "other"
    ],
    "topic": [],
    "technology": [
+    "java",
     "python"
    ]
   }

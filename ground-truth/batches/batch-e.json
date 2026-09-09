@@ -89,6 +89,7 @@
     "computer_vision"
    ],
    "technology": [
+    "express",
     "mongodb",
     "nodejs",
     "react"
@@ -142,6 +143,7 @@
     "recommender_system"
    ],
    "technology": [
+    "express",
     "mongodb",
     "nodejs"
    ]
@@ -191,6 +193,7 @@
     "gamification"
    ],
    "technology": [
+    "express",
     "mongodb",
     "nodejs",
     "react"

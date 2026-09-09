@@ -89,7 +89,8 @@
    "topic": [],
    "technology": [
     "firebase",
-    "python"
+    "python",
+    "tensorflow"
    ]
   }
  },
@@ -214,7 +215,9 @@
    "topic": [
     "recommender_system"
    ],
-   "technology": []
+   "technology": [
+    "csharp"
+   ]
   }
  }
 ]

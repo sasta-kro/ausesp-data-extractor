@@ -41,6 +41,8 @@
     "recommender_system"
    ],
    "technology": [
+    "angular",
+    "express",
     "mongodb",
     "nodejs"
    ]
@@ -86,7 +88,8 @@
    ],
    "technology": [
     "opencv",
-    "python"
+    "python",
+    "tensorflow"
    ]
   }
  },
@@ -172,6 +175,7 @@
     "ocr"
    ],
    "technology": [
+    "java",
     "mongodb",
     "nodejs",
     "react"

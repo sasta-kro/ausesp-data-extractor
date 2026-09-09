@@ -32,13 +32,16 @@
     "software_application"
    ],
    "platform": [
-    "mobile"
+    "ios"
    ],
    "domain": [
     "business"
    ],
    "topic": [],
-   "technology": []
+   "technology": [
+    "csharp",
+    "swift"
+   ]
   }
  },
  {
@@ -135,6 +138,7 @@
    ],
    "topic": [],
    "technology": [
+    "angular",
     "laravel",
     "php"
    ]
@@ -177,7 +181,7 @@
     "software_application"
    ],
    "platform": [
-    "mobile",
+    "ios",
     "web"
    ],
    "domain": [
@@ -188,6 +192,7 @@
     "gamification"
    ],
    "technology": [
+    "express",
     "nodejs"
    ]
   }

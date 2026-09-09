@@ -198,7 +198,8 @@
     "software_application"
    ],
    "platform": [
-    "mobile"
+    "android",
+    "ios"
    ],
    "domain": [
     "business"
@@ -206,7 +207,9 @@
    "topic": [
     "geolocation"
    ],
-   "technology": []
+   "technology": [
+    "csharp"
+   ]
   }
  }
 ]

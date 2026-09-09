@@ -34,13 +34,16 @@
     "software_application"
    ],
    "platform": [
+    "android",
     "web"
    ],
    "domain": [
     "business"
    ],
    "topic": [],
-   "technology": []
+   "technology": [
+    "csharp"
+   ]
   }
  },
  {
@@ -218,7 +221,9 @@
     "business"
    ],
    "topic": [],
-   "technology": []
+   "technology": [
+    "csharp"
+   ]
   }
  }
 ]

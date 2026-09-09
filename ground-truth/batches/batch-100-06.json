@@ -41,7 +41,7 @@
     "software_application"
    ],
    "platform": [
-    "mobile"
+    "ios"
    ],
    "domain": [
     "transportation"
@@ -50,6 +50,7 @@
     "geolocation"
    ],
    "technology": [
+    "csharp",
     "firebase"
    ]
   }
@@ -119,7 +120,7 @@
     "software_application"
    ],
    "platform": [
-    "mobile"
+    "android"
    ],
    "domain": [
     "business"
@@ -127,6 +128,7 @@
    "topic": [],
    "technology": [
     "firebase",
+    "java",
     "mysql",
     "nodejs"
    ]
@@ -169,7 +171,7 @@
     "software_application"
    ],
    "platform": [
-    "mobile",
+    "ios",
     "web"
    ],
    "domain": [
@@ -178,7 +180,8 @@
    "topic": [],
    "technology": [
     "mysql",
-    "php"
+    "php",
+    "swift"
    ]
   }
  },
