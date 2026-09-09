@@ -1,0 +1,357 @@
+[
+ {
+  "id": "26026",
+  "canonical_title": "A Hybrid AI System for Personalized MG Car Recommendation",
+  "aliases": [
+   "MGnition",
+   "MGNITION"
+  ],
+  "phase": "final",
+  "course_code": "CSX 3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Khaing Zaw Lin",
+    "student_id": "6611924"
+   },
+   {
+    "name": "Lamin Thiri",
+    "student_id": "6611929"
+   },
+   {
+    "name": "Sai Kyaw Zin Ye Tun",
+    "student_id": "6611978"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Benjawin Srisura",
+  "committee": [
+   "Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan",
+   "A. Tianai Tang"
+  ],
+  "abstract": "Choosing a suitable car can be challenging due to the large number of available models, specifications, and features in the automotive market. Customers often struggle to identify vehicles that match their personal preferences, budget, and lifestyle while underlying traditional automotive websites mainly rely on manual filtering and browsing. This project presents MGNITION, an AI-driven vehicle recommendation and showroom booking system designed to assist users in selecting suitable MG cars. The system applies a hybrid recommendation approach combining rule-based filtering, cosine similarity ranking, and regression-based score refinement to generate personalized vehicle recommendations. User preferences such as budget, seating capacity, fuel type, lifestyle, and driving needs are analyzed to produce the top recommended cars with explanation factors. The system also includes comparison of cars, showroom discovery, and consultation booking features. MGNITION is implemented using React, Flask, PostgreSQL, and Scikit-learn, demonstrating how AI can improve vehicle selection and enhance the car recommendation and booking experience.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "transportation"
+   ],
+   "topic": [
+    "recommender_system"
+   ],
+   "technology": [
+    "python",
+    "react",
+    "flask",
+    "postgresql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "automotive",
+     "label": "Automotive / Car Sales",
+     "status": "used",
+     "evidence": "\"This project proposes MGNITION, an AI-driven car recommendation system designed for MG vehicles available in Thailand.\" (Chapter 1, Background)"
+    }
+   ],
+   "technology": [
+    {
+     "key": "scikit_learn",
+     "label": "Scikit-learn",
+     "status": "used",
+     "evidence": "Tech stack (section 4.2.4): \"Machine Learning: Python, Scikit-learn\""
+    },
+    {
+     "key": "material_ui",
+     "label": "Material UI",
+     "status": "used",
+     "evidence": "\"Develop an intuitive web application using React and Material UI\" (Objectives, Chapter 1)"
+    },
+    {
+     "key": "vite",
+     "label": "Vite",
+     "status": "used",
+     "evidence": "Tech stack (section 4.2.4): \"Frontend: React, Vite, JavaScript, CSS\""
+    },
+    {
+     "key": "javascript",
+     "label": "JavaScript",
+     "status": "used",
+     "evidence": "Tech stack (section 4.2.4): \"Frontend: React, Vite, JavaScript, CSS\""
+    },
+    {
+     "key": "google_maps_api",
+     "label": "Google Maps JavaScript API",
+     "status": "used",
+     "evidence": "\"The system uses Google Maps API to display showroom locations, map markers, and showroom-focused navigation features.\" (section 4.2.3, External Services)"
+    },
+    {
+     "key": "gmail_smtp",
+     "label": "Gmail SMTP",
+     "status": "used",
+     "evidence": "\"It also uses Gmail SMTP to send booking-related and password-reset emails.\" (section 4.2.3, External Services)"
+    },
+    {
+     "key": "figma",
+     "label": "Figma",
+     "status": "used",
+     "evidence": "\"Design Tools: Figma - UI/UX design and prototyping\" (section 4.2.5)"
+    }
+   ]
+  }
+ },
+ {
+  "id": "26027",
+  "canonical_title": "MCG Care 2.0 (Air Conditioning Service Management System)",
+  "aliases": [
+   "MCG Care"
+  ],
+  "phase": "final",
+  "course_code": "CSX3011/ITX3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Khaing Thin Zar Sein",
+    "student_id": "6530381"
+   },
+   {
+    "name": "Pyae Phyo Aung",
+    "student_id": "6530069"
+   },
+   {
+    "name": "Phyu Thandar Khin",
+    "student_id": "6520271"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Benjawan Srisura",
+  "committee": [
+   "Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan",
+   "A. Tianai Tang"
+  ],
+  "abstract": "This report presents the design, development, and implementation of MCG Care, a digital platform created to streamline operations for an air conditioning sales and service company. The system addresses key challenges in service management, including inefficient booking processes, fragmented customer communication, limited-service history tracking, and manual scheduling. MCG Care integrates two platforms into a unified system: an iOS mobile application for customers and technicians, and a web-based admin dashboard for administrators. Its main features include automated technician assignment based on availability, skills, and location, QR code–based service history tracking, intelligent scheduling, and a community forum for customer support and knowledge sharing. Customers can register their air conditioning units, book maintenance services, participate in discussions, and provide feedback after service completion. Technicians use the mobile app to view assignments, scan QR codes to access service records, update job statuses, create service logs, and create time-off requests. Administrators manage products, services, technicians, bookings, timeslots, and forum activities through the dashboard. The system was developed using modern web technologies, employing NestJS for the backend API, Supabase with Drizzle ORM for database management, Next.js with React and TypeScript for the admin dashboard, and native iOS development for mobile applications. Automated scheduling algorithms and maintenance reminder systems ensure efficient operations and enhanced customer satisfaction. MCG Care's value lies in its ability to automate complex scheduling logic, provide transparent service tracking through QR codes, facilitate community-driven support, and enable comprehensive administrative control. The system bridges the gap between traditional service management approaches and modern digital solutions, providing a scalable foundation for service-based businesses in the HVAC industry.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "ios",
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "nextjs",
+    "nodejs",
+    "postgresql",
+    "react",
+    "swift"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "hvac",
+     "label": "HVAC / Air Conditioning Services",
+     "status": "used",
+     "evidence": "\"providing a scalable foundation for service-based businesses in the HVAC industry\" (Abstract) and \"air conditioning sales and service company\" (Chapter 1)"
+    }
+   ],
+   "technology": [
+    {
+     "key": "nestjs",
+     "label": "NestJS",
+     "status": "used",
+     "evidence": "\"The backend is built using NestJS, a Node.js framework that supports modular and scalable application design.\" (section 4.1.1)"
+    },
+    {
+     "key": "supabase",
+     "label": "Supabase",
+     "status": "used",
+     "evidence": "\"All persistent data is stored in a PostgreSQL database hosted on Supabase.\" (section 3.2.1)"
+    },
+    {
+     "key": "drizzle_orm",
+     "label": "Drizzle ORM",
+     "status": "used",
+     "evidence": "\"Data is stored in a PostgreSQL database hosted on Supabase, accessed via Drizzle ORM for type-safe queries and schema management.\" (section 3.2.1)"
+    },
+    {
+     "key": "typescript",
+     "label": "TypeScript",
+     "status": "used",
+     "evidence": "\"employing NestJS for the backend API, Supabase with Drizzle ORM for database management, Next.js with React and TypeScript for the admin dashboard\" (Abstract)"
+    },
+    {
+     "key": "shadcn_ui",
+     "label": "shadcn/ui",
+     "status": "used",
+     "evidence": "\"The admin dashboard was developed using Next.js and shadcn/ui.\" (section 1.5, Phase 4)"
+    },
+    {
+     "key": "tailwind_css",
+     "label": "Tailwind CSS",
+     "status": "used",
+     "evidence": "\"Tailwind CSS provides utility-first styling with dark mode support via next-themes.\" (section 3.2.3)"
+    },
+    {
+     "key": "tanstack_query",
+     "label": "TanStack Query",
+     "status": "used",
+     "evidence": "\"TanStack Query handles server state with caching, background refetching, and optimistic updates.\" (section 3.2.3)"
+    },
+    {
+     "key": "supabase_edge_functions",
+     "label": "Supabase Edge Functions (cron jobs)",
+     "status": "used",
+     "evidence": "\"Using Supabase Edge Functions, daily cron jobs maintain technician availability by removing expired timeslots and generating new ones for the upcoming 30 days.\" (section 3.2.2)"
+    },
+    {
+     "key": "avfoundation",
+     "label": "AVFoundation",
+     "status": "used",
+     "evidence": "\"QR Code Scanning: Implemented using the AVFoundation framework, QR codes are validated against the backend to retrieve service history.\" (section 3.2.4)"
+    },
+    {
+     "key": "render",
+     "label": "Render",
+     "status": "used",
+     "evidence": "\"The backend API was deployed on Render\" (section 1.5, Deployment Strategy)"
+    },
+    {
+     "key": "vercel",
+     "label": "Vercel",
+     "status": "used",
+     "evidence": "\"The web dashboard is deployed separately on Vercel.\" (section 4.5.2)"
+    },
+    {
+     "key": "jwt",
+     "label": "JSON Web Token (JWT)",
+     "status": "used",
+     "evidence": "\"the system issues a JSON Web Token (JWT) that contains the user's identity and role\" (section 4.1.3)"
+    },
+    {
+     "key": "figma",
+     "label": "Figma",
+     "status": "used",
+     "evidence": "\"Wireframes and prototypes were developed using Figma to visualize system functionality prior to implementation.\" (section 3.4.2)"
+    }
+   ]
+  }
+ },
+ {
+  "id": "26030",
+  "canonical_title": "OCR-Based Accounting Automation for Odoo",
+  "aliases": [
+   "Clario",
+   "Clario OCR"
+  ],
+  "phase": "final",
+  "course_code": "ITX3009, CSX3010",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Thu Ya Myint Myat Thein",
+    "student_id": "6530227"
+   },
+   {
+    "name": "Hein Htet Moe Tun",
+    "student_id": "6530394"
+   },
+   {
+    "name": "S Harry Lynn Oo",
+    "student_id": "6530241"
+   }
+  ],
+  "advisor": "Dr. Kwankamol Nongpong",
+  "committee": [
+   "A. Sakchhi Paudel",
+   "Asst. Prof. Dr. Dobri Atanassov Batovski"
+  ],
+  "abstract": "This report presents the development of Clario OCR, an enterprise resource planning (ERP) extension designed to automate the processing of receipts and invoices using Optical Character Recognition (OCR) technology. The system aims to eliminate the need for manual data entry by automatically extracting financial and transactional information from uploaded documents and converting it into structured accounting data. By integrating intelligent document processing with business management software, Clario improves efficiency, accuracy, and productivity in financial record management. The system is developed as a module for Odoo 17, an open-source ERP platform widely used by businesses for accounting, inventory, and operational management. When a user uploads a receipt or invoice, the document is processed using Microsoft Azure Document Intelligence, which performs OCR to extract textual and structural data from the image or PDF file. The extracted information is then analyzed and organized by the Clario parsing system to identify important fields such as vendor name, invoice number, reference number, tax identification number, product descriptions, quantities, prices, and VAT information. The extracted data is automatically converted into a structured vendor bill within the Odoo accounting system, allowing businesses to review, edit, and confirm the information before saving it into the database. This automation significantly reduces the time required for bookkeeping tasks and minimizes human errors associated with manual data entry. Clario also ensures secure system integration and reliable data processing through its modular architecture within the Odoo framework. The system is designed to support multiple receipt formats and adapt to different invoice layouts using Azure's intelligent document analysis capabilities combined with rule-based data parsing techniques. Overall, Clario OCR demonstrates how the integration of OCR technology, intelligent document processing, and ERP systems can streamline financial workflows and modernize traditional document handling processes. The system provides a practical and scalable solution for businesses seeking to automate invoice processing and improve the efficiency of their accounting operations.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "finance"
+   ],
+   "topic": [
+    "ocr"
+   ],
+   "technology": [
+    "python",
+    "postgresql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "erp",
+     "label": "Enterprise Resource Planning (ERP)",
+     "status": "used",
+     "evidence": "\"an enterprise resource planning (ERP) extension designed to automate the processing of receipts and invoices\" (Abstract)"
+    }
+   ],
+   "technology": [
+    {
+     "key": "odoo",
+     "label": "Odoo ERP",
+     "status": "used",
+     "evidence": "\"The system is developed as a module for Odoo 17, an open-source ERP platform widely used by businesses for accounting, inventory, and operational management.\" (Abstract; Tech stack Table 4.4)"
+    },
+    {
+     "key": "azure_document_intelligence",
+     "label": "Microsoft Azure Document Intelligence",
+     "status": "used",
+     "evidence": "\"the document is processed using Microsoft Azure Document Intelligence, which performs OCR to extract textual and structural data from the image or PDF file\" (Abstract; Tech stack Table 4.4)"
+    },
+    {
+     "key": "docker",
+     "label": "Docker",
+     "status": "used",
+     "evidence": "\"The deployment environment also utilizes Docker containers, which help maintain consistent system configuration and simplify deployment across development and production environments.\" (section 4.6)"
+    },
+    {
+     "key": "xml",
+     "label": "XML (Odoo views)",
+     "status": "used",
+     "evidence": "\"The module is developed using the Odoo framework, which is based on Python for backend logic, XML for user interface definitions, and PostgreSQL for database management.\" (section 3.5)"
+    },
+    {
+     "key": "odoo_marketplace",
+     "label": "Odoo Marketplace",
+     "status": "used",
+     "evidence": "\"the Clario OCR module was deployed to the Odoo Marketplace, which is the official distribution platform for Odoo applications\" (section 5.3)"
+    }
+   ]
+  }
+ }
+]

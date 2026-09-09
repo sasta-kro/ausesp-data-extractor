@@ -1,0 +1,332 @@
+[
+ {
+  "id": "26008",
+  "canonical_title": "Five Two One Cafe",
+  "aliases": [
+   "Five Two One Café",
+   "CafeShop Ordering and Management System"
+  ],
+  "phase": "final",
+  "course_code": "CSX 3011/ITX 3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Hsu Yee Mon",
+    "student_id": "6530339"
+   },
+   {
+    "name": "Kyaw Phone Zaw",
+    "student_id": "6440087"
+   },
+   {
+    "name": "Krisada Chatrachotchawla",
+    "student_id": "6430185"
+   }
+  ],
+  "advisor": "A. Jinchun Lu",
+  "committee": [
+   "Asst. Prof. Dr. Darun Kesrarat",
+   "Asst. Prof. Dr. Thanachai Thumthawatworn"
+  ],
+  "abstract": "The CafeShop Ordering and Management System is developed to address common operational challenges faced by cafés, including inefficient order management, delayed communication between customers and staff, and limited access to real-time business data. Traditional café operations often rely on manual order taking and paper-based processes, which may lead to order inaccuracies, slower service, and difficulties in tracking sales and operational performance.\n\nTo solve these issues, the CafeShop system provides a digital platform that integrates customer ordering, payment processing, and administrative management into a single system. Customers can scan a QR code assigned to each table to access a digital menu through their mobile devices, browse available items, select menu variations such as sizes, and place orders directly through the system. Payments are supported through PromptPay QR code integration using the Omise payment gateway, enabling a secure and convenient cashless payment experience.\n\nFor café staff and administrators, the system provides a web-based dashboard that allows real-time monitoring and management of orders, menu items, tables, and invoices. The system utilizes WebSocket technology to deliver instant notifications when new orders are placed, allowing staff to process orders efficiently. Additionally, administrators can monitor sales data and manage operational activities through a centralized interface.\n\nBy integrating digital ordering, real-time communication, and administrative management tools, the CafeShop system improves operational efficiency, reduces manual workload, minimizes ordering errors, and enhances the overall customer service experience in café environments.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "e_commerce"
+   ],
+   "topic": [],
+   "technology": [
+    "java",
+    "postgresql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "food_beverage_service",
+     "label": "Food and beverage service",
+     "status": "used",
+     "evidence": "Page 10: 'a customized digital ordering platform designed specifically for café operations'"
+    }
+   ],
+   "technology": [
+    {
+     "key": "vue_js",
+     "label": "Vue.js",
+     "status": "used",
+     "evidence": "Page 21 Tech Stack: 'Frontend : Vuejs , Typescript'; page 19: 'The frontend service is developed using Vue.js'"
+    },
+    {
+     "key": "typescript",
+     "label": "TypeScript",
+     "status": "used",
+     "evidence": "Page 21 Tech Stack: 'Frontend : Vuejs , Typescript'"
+    },
+    {
+     "key": "spring_boot",
+     "label": "Spring Boot",
+     "status": "used",
+     "evidence": "Page 21 Tech Stack: 'Backend : Spring boot'; page 19: 'The backend is implemented using Java with the Spring Boot framework'"
+    },
+    {
+     "key": "websocket",
+     "label": "WebSocket",
+     "status": "used",
+     "evidence": "Page 7: 'Provide real-time order notifications using WebSocket technology'"
+    },
+    {
+     "key": "heroku",
+     "label": "Heroku",
+     "status": "used",
+     "evidence": "Page 19: 'cloud-based architecture deployed on the Heroku platform'; page 21: 'Hosting : Herouku platform'"
+    },
+    {
+     "key": "amazon_s3",
+     "label": "Amazon S3",
+     "status": "used",
+     "evidence": "Page 20: 'Amazon S3 is used for storing menu item images'"
+    },
+    {
+     "key": "omise",
+     "label": "Omise payment gateway",
+     "status": "used",
+     "evidence": "Page 11: 'The system integrates PromptPay QR code payments using the Omise payment gateway'"
+    },
+    {
+     "key": "promptpay",
+     "label": "PromptPay",
+     "status": "used",
+     "evidence": "Page 7: 'Support both cash and cashless payment through Prompt Pay QR code integration'"
+    },
+    {
+     "key": "zxing",
+     "label": "ZXing QR Code Library",
+     "status": "cited",
+     "evidence": "References page 41, entry [8]: 'ZXing Project. (n.d.). ZXing QR Code Library.'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "26009",
+  "canonical_title": "NYK Cosmetics Business Management System",
+  "aliases": [
+   "Cosmetics Business Management System"
+  ],
+  "phase": "final",
+  "course_code": "CSX 3011",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Hein Naing Soe",
+    "student_id": "6530070"
+   },
+   {
+    "name": "Kyi Phyu Shin",
+    "student_id": "6530335"
+   }
+  ],
+  "advisor": "A. Jinchun Lu",
+  "committee": [
+   "Asst. Prof. Dr. Paitoon Porntrakoon",
+   "Dr. Phyo Min Tun"
+  ],
+  "abstract": "This project presents the development of a web-based Cosmetics Business Management System designed to improve operational efficiency in sales management and administrative processes at NYK Cosmetics, a retail and wholesale cosmetics business. The system aims to reduce manual workload by providing a centralized platform that integrates sales order management, inventory tracking, customer loan monitoring, and administrative reporting.\n\nThe application enables salespersons to record customer orders digitally through a web-based system, allowing them to access the platform conveniently from tablets or web browsers. The system automatically updates inventory and transaction records in real time after each order submission. Administrators can review, adjust, and manage orders through a centralized web dashboard without relying on manual record books or scattered spreadsheets. In addition, the system includes customer loan management features that allow administrators to track outstanding balances, monitor payment histories, and maintain accurate financial records efficiently. The system also provides statistical dashboards that display sales performance by product, shop, and region, enabling better decision-making and business analysis. By implementing this system, NYK Cosmetics can reduce operational errors and improve overall business management efficiency.\n\nThe system is developed using modern web technologies including Next.js for the frontend, Nest.js for the backend, and PostgreSQL for the database, and deployed on cloud infrastructure to ensure accessibility and scalability. Overall, the proposed system establishes a centralized digital platform that enhances operational management and supports the future growth of NYK Cosmetics.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "nextjs",
+    "react",
+    "postgresql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "retail_wholesale",
+     "label": "Retail and wholesale business",
+     "status": "used",
+     "evidence": "Page 4: 'NYK Cosmetics is a retail and wholesale cosmetics business established in 2013'"
+    },
+    {
+     "key": "inventory_management",
+     "label": "Inventory management",
+     "status": "used",
+     "evidence": "Page 6: 'The system maintains product inventory records and automatically updates stock quantities whenever new orders are submitted or adjusted by administrators'"
+    }
+   ],
+   "technology": [
+    {
+     "key": "nestjs",
+     "label": "NestJS",
+     "status": "used",
+     "evidence": "Page 15: 'For the backend, NestJS was used to build the server-side application'"
+    },
+    {
+     "key": "neon",
+     "label": "Neon managed PostgreSQL",
+     "status": "used",
+     "evidence": "Page 15: 'To support cloud-based database hosting, Neon was used as the managed PostgreSQL service'"
+    },
+    {
+     "key": "vercel",
+     "label": "Vercel",
+     "status": "used",
+     "evidence": "Page 15: 'Vercel was used to deploy the frontend application, providing fast global delivery and seamless integration with the Next.js framework'"
+    },
+    {
+     "key": "heroku",
+     "label": "Heroku",
+     "status": "used",
+     "evidence": "Page 15: 'The backend services were deployed using Heroku, which simplifies server management and application deployment'"
+    },
+    {
+     "key": "amazon_s3",
+     "label": "Amazon S3",
+     "status": "used",
+     "evidence": "Page 15: 'Amazon Web Services (AWS) S3 was used for storing and managing uploaded files such as product images'"
+    },
+    {
+     "key": "istock",
+     "label": "iStock Inventory Management System",
+     "status": "cited",
+     "evidence": "Page 8 Related Work: 'some businesses use software such as the iStock Inventory Management System to manage inventory and sales data'; also sole reference on page 52"
+    }
+   ]
+  }
+ },
+ {
+  "id": "26011",
+  "canonical_title": "Bicycle Fitting Using Computer Vision",
+  "aliases": [],
+  "phase": "proposal",
+  "course_code": "CSX 3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Gulizara Benjapalaporn",
+    "student_id": "6612233"
+   },
+   {
+    "name": "Jatupon Itsara",
+    "student_id": "6610073"
+   },
+   {
+    "name": "Thananya Amornwiriya",
+    "student_id": "6610609"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Dobri Atanassov Batovski",
+  "committee": [
+   "Asst. Prof. Dr. Darun Kesrarat",
+   "A. Tianai Tang"
+  ],
+  "abstract": "Proper road bike fitting is essential for cycling safety, performance, and injury prevention; however, professional bike fitting systems often require specialized equipment and expert assessment, making them costly and inaccessible to many cyclists. This senior project, developed by the First Safe Point team, addresses this problem by investigating a low-cost, vision-based approach for road bike posture analysis using computer vision techniques. The proposed system utilizes MediaPipe Pose Estimation to detect cyclist body landmarks from recorded road cycling videos and computes key joint angles, including knee, hip, elbow, ankle, and back angles. These angles are evaluated against industry-standard road bike fitting ranges to provide visual posture feedback.\n\nThis report presents the initial development phase of the system, focusing on pose detection, joint angle computation, and real-time visualization, as well as the evaluation of cyclists' perceptions of the posture feedback generated by the system.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "research",
+    "ai_data"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "python",
+    "opencv"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "smartphone_camera",
+     "label": "Smartphone camera capture",
+     "status": "used",
+     "evidence": "Page 16: 'Video recordings were captured using the camera of an iPhone 15 Pro smartphone'"
+    }
+   ],
+   "domain": [
+    {
+     "key": "sports_biomechanics",
+     "label": "Sports biomechanics and bike fitting",
+     "status": "used",
+     "evidence": "Page 19: 'These joint angles are important indicators used in cycling biomechanics to assess whether the rider's position is comfortable and efficient during pedaling'"
+    }
+   ],
+   "technology": [
+    {
+     "key": "mediapipe",
+     "label": "MediaPipe",
+     "status": "used",
+     "evidence": "Page 3 Abstract: 'The proposed system utilizes MediaPipe Pose Estimation to detect cyclist body landmarks'; Appendix B page 50: 'Pose Estimation Framework: MediaPipe'"
+    },
+    {
+     "key": "pandas",
+     "label": "pandas",
+     "status": "used",
+     "evidence": "Appendix D page 52 source code: 'import pandas as pd'"
+    },
+    {
+     "key": "scipy",
+     "label": "SciPy",
+     "status": "used",
+     "evidence": "Appendix D pages 52-53 source code: 'from scipy.stats import spearmanr' and 'from scipy.stats import f_oneway'"
+    },
+    {
+     "key": "seaborn",
+     "label": "Seaborn",
+     "status": "used",
+     "evidence": "Appendix D page 52 source code: 'import seaborn as sns'"
+    },
+    {
+     "key": "matplotlib",
+     "label": "Matplotlib",
+     "status": "used",
+     "evidence": "Appendix D page 52 source code: 'import matplotlib.pyplot as plt'"
+    },
+    {
+     "key": "deeplabcut",
+     "label": "DeepLabCut",
+     "status": "cited",
+     "evidence": "Page 12 Related Work: 'Systems such as DeepLabCut allow researchers to track specific body parts in animals and humans without the need for physical markers'"
+    }
+   ]
+  }
+ }
+]

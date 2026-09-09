@@ -1,0 +1,314 @@
+[
+ {
+  "id": "2132",
+  "canonical_title": "Voice Application: Personal Wine Consultant",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CSX 3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Thitare Nimanong",
+    "student_id": "6210015"
+   },
+   {
+    "name": "Chanatip Kwankeua",
+    "student_id": "6215452"
+   },
+   {
+    "name": "Ornwara Sangthongnirundorn",
+    "student_id": "6215112"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "Asst. Prof. Dr. Benjawan Srisura",
+   "A. Suparwat Charoenvikrom"
+  ],
+  "abstract": "Buying wine is an experience unlike purchasing other foods and beverages. Interaction and service are also key factors in deciding whether or not to purchase an item. Merchants that sell their products in wine cellars must also employ personal consultants (PC) to support and assist customers. To support both PCs and customers, our voice application can also assist customers during their breaks in selecting wines. The customer can interact with the application by speaking or by typing and using the app to select wines. Then, the wine cellar staff will be notified and be able to assist the customer in payments and packaging. After gathering user feedback for our system, we realize that some features require adjustments to better satisfy the user's needs. In the future, given time and resources, we would like to implement these changes.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "android"
+   ],
+   "domain": [
+    "e_commerce"
+   ],
+   "topic": [
+    "nlp",
+    "recommender_system"
+   ],
+   "technology": [
+    "firebase"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "voice_assistant",
+     "label": "Voice Assistant Devices (Google Assistant)",
+     "status": "used",
+     "evidence": "Users must invoke google assistant by saying the application keyword to start using the application (p. 26)."
+    }
+   ],
+   "domain": [
+    {
+     "key": "food_beverage",
+     "label": "Food and Beverage (Wine Retail)",
+     "status": "used",
+     "evidence": "Merchants that sell their products in wine cellars must also employ personal consultants (PC) to support and assist customers (Abstract, p. 3)."
+    }
+   ],
+   "technology": [
+    {
+     "key": "google_assistant",
+     "label": "Google Assistant",
+     "status": "used",
+     "evidence": "after careful consideration, this project will be developed on top of Google Assistant (p. 16)."
+    },
+    {
+     "key": "google_actions",
+     "label": "Actions on Google (Conversational Actions)",
+     "status": "used",
+     "evidence": "The service that is used in this project is also inside GCP and it is called Google Action. Google Action allows developers to create a complex conversation between users and agents (p. 16)."
+    },
+    {
+     "key": "heroku",
+     "label": "Heroku",
+     "status": "used",
+     "evidence": "Tech stack: Fulfillment Server (Heroku server) (p. 26)."
+    },
+    {
+     "key": "line_notify",
+     "label": "LINE Notify",
+     "status": "used",
+     "evidence": "the system will send a notification through Line notify to the store staff (p. 21)."
+    },
+    {
+     "key": "github",
+     "label": "GitHub",
+     "status": "used",
+     "evidence": "We set up a GitHub repository specifically for the project (p. 28)."
+    },
+    {
+     "key": "dialogflow",
+     "label": "Dialogflow",
+     "status": "cited",
+     "evidence": "Google Assistant itself had a voice application service called Dialogflow ... but Google deprecated it to open for Google Action (p. 16)."
+    }
+   ]
+  }
+ },
+ {
+  "id": "2136",
+  "canonical_title": "iLearn",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Pinky Shahi",
+    "student_id": "6135205"
+   },
+   {
+    "name": "Suchawan Chaiworn",
+    "student_id": "6135102"
+   },
+   {
+    "name": "Lipika Baniya",
+    "student_id": "6138108"
+   }
+  ],
+  "advisor": "A. Kiratijuta Bhumichitr",
+  "committee": [
+   "A. Chayapol Moemeng",
+   "A. Tapanan Yeophantong"
+  ],
+  "abstract": "Many companies want to gather data from their customers or users but are unable to do so, because they might be a small company. Big companies like Facebook and Google have enormous amounts of data about all their users but face many privacy issues and concerns. Small companies don't want enormous amounts of data but just enough to help with their research. That is the problem we're going to solve. As a solution, we will build a platform for companies to host surveys on a website and gather user's opinions and data. A web scraper will help gather images to display to the user while a search expansion will help analyze the user's responses and scrape better images to display while also increasing the accuracy. For our senior project, our system will scrape images from the internet, take survey answers from users as well as perform search expansion for higher accuracy and performance.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "mongodb",
+    "firebase",
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "market_research",
+     "label": "Market Research and Survey Data Collection",
+     "status": "used",
+     "evidence": "we will build a platform for companies to host surveys on a website and gather user's opinions and data (Abstract, p. 4)."
+    }
+   ],
+   "technology": [
+    {
+     "key": "selenium",
+     "label": "Selenium",
+     "status": "used",
+     "evidence": "the image scraper will navigate through the pages of a website using Selenium, a tool for browser automation (p. 6)."
+    },
+    {
+     "key": "chromedriver",
+     "label": "ChromeDriver",
+     "status": "used",
+     "evidence": "using Selenium, a tool for browser automation, and ChromeDriver, a tool to control Chrome (p. 6)."
+    },
+    {
+     "key": "beautifulsoup",
+     "label": "BeautifulSoup",
+     "status": "used",
+     "evidence": "With the help of BeautifulSoup, a Python library for pulling data out of HTML and XML files, we can look through the messy HTML data and extract the data we need (p. 7)."
+    },
+    {
+     "key": "scrapy",
+     "label": "Scrapy",
+     "status": "cited",
+     "evidence": "The first part is the web scraping solution which uses Scrapy, an open source and collaborative framework for extracting data from websites written in Python (related work [1], p. 4)."
+    },
+    {
+     "key": "django",
+     "label": "Django",
+     "status": "cited",
+     "evidence": "it developed a web service with Django, a framework for developing web applications using Python as base language (related work [1], p. 4)."
+    },
+    {
+     "key": "keras",
+     "label": "Keras",
+     "status": "cited",
+     "evidence": "The search expansion can be further worked on, for example, we can do image recognition on the existing data using Keras models and the ImageNet dataset (Conclusion, p. 14)."
+    },
+    {
+     "key": "imagenet",
+     "label": "ImageNet",
+     "status": "cited",
+     "evidence": "image recognition on the existing data using Keras models and the ImageNet dataset to find out more related keywords (Conclusion, p. 14)."
+    }
+   ]
+  }
+ },
+ {
+  "id": "2137",
+  "canonical_title": "AU Room Reservation: Smart Room Reservation Management for University",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CSX 3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Navamongkol Tongta",
+    "student_id": "6213387"
+   },
+   {
+    "name": "Voraruethai Chancharung",
+    "student_id": "6210109"
+   },
+   {
+    "name": "Krittin Vetpitak",
+    "student_id": "6213638"
+   }
+  ],
+  "advisor": "Dr. Songsak Channarukul",
+  "committee": [
+   "A. Chayapol Moemeng",
+   "A. Kiratijuta Bhumichitr"
+  ],
+  "abstract": "The purpose of the AU Room Reservation System is to manage booking details such as booking details and room details because, in the past, we discovered that the university used paper for faculty admin to book rooms, but it was quite difficult for ordinary students to book rooms for any study or project discussion, but the AU reservation system makes it easy for staff to book rooms on the website. Room and booking information can be easily recorded, checked, created, modified, and deleted by staff. AU Room Reservation is a smart room reservation management tool for universities that runs on three platforms: iOS, Android, and Web. It focuses on booking each student. An Android kiosk application for showing today's schedule in each room with a kiosk is another platform. The final platform is a web application platform for maintaining and checking any reservations, as well as managing each room and each booking..",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "ios",
+    "android",
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [],
+   "technology": [
+    "swift",
+    "firebase"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "kiosk",
+     "label": "Interactive Kiosk Console",
+     "status": "used",
+     "evidence": "An Android kiosk application for showing today's schedule in each room with a kiosk is another platform (Abstract, p. 3); kiosk displays timeslot and generates a QR Code to check-in (p. 1)."
+    }
+   ],
+   "domain": [],
+   "technology": [
+    {
+     "key": "xcode",
+     "label": "Xcode",
+     "status": "used",
+     "evidence": "The mobile application is developed by Swift 5.5.2 programming language using Xcode 13.2 (p. 11)."
+    },
+    {
+     "key": "android_studio",
+     "label": "Android Studio",
+     "status": "used",
+     "evidence": "Kiosk console is developed from android 10.1 using Android Studio for user part (p. 11)."
+    },
+    {
+     "key": "qr_code",
+     "label": "QR Code Check-In",
+     "status": "used",
+     "evidence": "The check-in function is a function to check if students actually use the room by scanning the QR code (p. 12)."
+    },
+    {
+     "key": "google_forms",
+     "label": "Google Forms",
+     "status": "used",
+     "evidence": "We use a Google form where consumers can rank their satisfaction on a scale of 1 to 5 (p. 30)."
+    },
+    {
+     "key": "meet_in_touch",
+     "label": "Meet In Touch",
+     "status": "cited",
+     "evidence": "One of the famous systems we will compare with is Meet In Touch. It is a reservation system setup in front of meeting rooms (p. 3)."
+    },
+    {
+     "key": "room_minister",
+     "label": "Room Minister",
+     "status": "cited",
+     "evidence": "Another system is Room Minister. It is also a room reservation system (p. 5)."
+    }
+   ]
+  }
+ }
+]

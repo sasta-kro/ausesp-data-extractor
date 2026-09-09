@@ -1,0 +1,428 @@
+[
+ {
+  "id": "26017",
+  "canonical_title": "Automation Aspects of Spin-Locked Magnetic Levitation",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT4292",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Ismail Hamdhoon",
+    "student_id": "6420140"
+   },
+   {
+    "name": "Sanzana Tahsin",
+    "student_id": "6138302"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Dobri Atanassov Batovski",
+  "committee": [
+   "Dr. Kwankamol Nongpong",
+   "A. Sakchhi Paudel"
+  ],
+  "abstract": "This project presents the design and implementation of an machine learning magnetic levitation system capable of manipulating lightweight objects through transparent barriers without the use of electromagnets or direct physical contact. The system leverages the repulsive and attractive forces between two permanent magnets one spinning rotor magnet above and one freely suspended floater magnet below it to achieve stable levitation and controlled spatial movement of a target object. A sole purpose of this work is the integration of a real-time pipeline powered by machine learning to close the control loop. Developing a machine learning aspects using Reinforcement learning method on monitors the position, and stability of the levitated object, feeding this data into a trained model that dynamically adjusts the speed, direction, and vertical position of the spinning magnet. This feedback mechanism enables the system to perform precision levitation including lateral translation, rotational control, and active stabilization against instability all without human intervention. Unlike conventional magnetic levitation approaches that rely on electromagnetic coils and complex power electronics, this system is purely passive on the levitation side, reducing hardware complexity while demonstrating that intelligent software control of the spin can compensate for the unstable nature of permanent-magnet equilibria. The result is a compact, low-power, and mechanically simple platform with potential applications in contactless object handling, laboratory automation, educational demonstrations, and manipulation in sealed or sterile environments. This work demonstrates that the combination of Magnetostatics, mechanics and modern machine learning techniques which can allow new ways of contactless manipulation.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "hardware_iot",
+    "ai_data"
+   ],
+   "platform": [
+    "raspberry_pi"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [],
+   "technology": [
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "laboratory_automation",
+     "label": "Laboratory automation",
+     "status": "cited",
+     "evidence": "Abstract: \"potential applications in contactless object handling, laboratory automation, educational demonstrations\""
+    }
+   ],
+   "technology": [
+    {
+     "key": "raspberry_pi_os",
+     "label": "Raspberry Pi OS",
+     "status": "used",
+     "evidence": "Section 3.2.3 Software Environment: \"Operating System: Raspberry Pi OS (Debian-based Linux)\""
+    },
+    {
+     "key": "pigpio",
+     "label": "pigpio",
+     "status": "used",
+     "evidence": "Section 3.2.3: \"Motor Control: RPi.GPIO / pigpio library for PWM signal generation to the ESC\""
+    },
+    {
+     "key": "rpi_gpio",
+     "label": "RPi.GPIO",
+     "status": "used",
+     "evidence": "Section 3.2.3: \"Motor Control: RPi.GPIO / pigpio library for PWM signal generation to the ESC\""
+    },
+    {
+     "key": "lgpio",
+     "label": "lgpio",
+     "status": "used",
+     "evidence": "Appendix A.3: \"the main loop polls the Hall sensor via lgpio at 0.5ms intervals to count rising edges\""
+    },
+    {
+     "key": "sigrok",
+     "label": "sigrok-cli",
+     "status": "used",
+     "evidence": "Appendix A.3: \"reads the UNI-T tachometer output via sigrok-cli\"; Table 7: \"Tachometer interface sigrok-cli, continuous analog mode\""
+    },
+    {
+     "key": "random_forest",
+     "label": "Random Forest regression",
+     "status": "used",
+     "evidence": "Section 5.5.3: \"The Random Forest Regression model was selected as the optimal choice for this experiment\""
+    },
+    {
+     "key": "reinforcement_learning",
+     "label": "Reinforcement learning",
+     "status": "used",
+     "evidence": "Section 4.3: \"The system is formulated as a Markov Decision Process (MDP)\"; Section 5.5.1: \"the experiment transitioned from a Reinforcement Learning approach to a supervised regression framework\""
+    },
+    {
+     "key": "bldc_motor",
+     "label": "Brushless DC motor with ESC",
+     "status": "used",
+     "evidence": "Table 1 Hardware Components: \"Brushless DC Motor - Drives the rotor magnet at controlled RPM\"; \"ESC (Electronic Speed Controller) - Translates PWM signals from the Raspberry Pi into motor drive currents\""
+    }
+   ]
+  }
+ },
+ {
+  "id": "26018",
+  "canonical_title": "DockForge",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CSX/ITX 3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Thiri Htet",
+    "student_id": "6611714"
+   },
+   {
+    "name": "Swan Htet Aung",
+    "student_id": "6611977"
+   },
+   {
+    "name": "Thwin Htoo Aung",
+    "student_id": "6612109"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "Asst. Prof. Dr. Paitoon Porntrakoon",
+   "A. Athiphat Hirunadisuan"
+  ],
+  "abstract": "Docker has become one of the most important tools in modern software development for building, deploying, and managing applications in containerized environments. However, many developers face difficulties when writing Dockerfiles manually, remembering complex syntax, managing multi-stage builds, and executing Docker commands correctly. This project introduces DockForge, a Visual Studio Code extension designed to simplify Dockerfile creation and container management through a graphical user interface. DockForge provides an intuitive development environment that allows developers to visually construct Dockerfiles, validate them in real time, test builds with live logs, and run containers directly from within the VS Code interface. The system integrates Docker CLI functionality, Docker Hub search capabilities, and real-time validation tools into a unified workflow. By reducing complexity and improving usability, DockForge enhances developer productivity and lowers the barrier to adopting Docker in modern software development workflows.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [],
+   "technology": [
+    "react",
+    "nodejs"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "devops",
+     "label": "DevOps / container tooling",
+     "status": "used",
+     "evidence": "Abstract: \"DockForge, a Visual Studio Code extension designed to simplify Dockerfile creation and container management through a graphical user interface\""
+    }
+   ],
+   "technology": [
+    {
+     "key": "docker",
+     "label": "Docker",
+     "status": "used",
+     "evidence": "Section 4.2.2: \"The backend uses Node.js child_process modules (exec and spawn) to interact directly with the host machine's native Docker daemon\""
+    },
+    {
+     "key": "docker_hub",
+     "label": "Docker Hub",
+     "status": "used",
+     "evidence": "Section 3.3: \"The system connects directly to Docker Hub's public API to facilitate base image selection\""
+    },
+    {
+     "key": "typescript",
+     "label": "TypeScript",
+     "status": "used",
+     "evidence": "Section 4.2.3: \"TypeScript is used to add static typing to the JavaScript codebase\""
+    },
+    {
+     "key": "vite",
+     "label": "Vite",
+     "status": "used",
+     "evidence": "Section 4.2.3: \"Vite is utilized as the frontend build tool and bundler\""
+    },
+    {
+     "key": "monaco_editor",
+     "label": "Monaco Editor",
+     "status": "used",
+     "evidence": "Section 4.2.3: \"DockForge integrates the Monaco Editor (the same code editor that powers VS Code itself)\""
+    },
+    {
+     "key": "vscode_extension_api",
+     "label": "VS Code Extension API",
+     "status": "used",
+     "evidence": "Section 3.1: \"The extension utilizes the VS Code Extension API to manage the workspace and relies on a React-based Webview\""
+    },
+    {
+     "key": "vscode_webview_ui_toolkit",
+     "label": "VS Code Webview UI Toolkit",
+     "status": "used",
+     "evidence": "Section 4.2.4: \"By utilizing the VS Code Webview UI Toolkit, the extension maintains visual consistency with the native editor's themes\""
+    },
+    {
+     "key": "kubernetes",
+     "label": "Kubernetes",
+     "status": "cited",
+     "evidence": "Section 1.3 and 6 Future Work: \"Expanding the GUI to support Docker Compose for multi-container applications and Kubernetes configurations\""
+    },
+    {
+     "key": "docker_compose",
+     "label": "Docker Compose",
+     "status": "cited",
+     "evidence": "Future Work: \"Expanding the GUI to support Docker Compose for multi-container applications\""
+    },
+    {
+     "key": "github_actions",
+     "label": "GitHub Actions",
+     "status": "cited",
+     "evidence": "Section 1.3 Out of Scope: \"does not include connections to automatic deployment pipelines (like GitHub Actions or Jenkins)\""
+    },
+    {
+     "key": "jenkins",
+     "label": "Jenkins",
+     "status": "cited",
+     "evidence": "Section 1.3 Out of Scope: \"(like GitHub Actions or Jenkins)\""
+    }
+   ]
+  }
+ },
+ {
+  "id": "26020",
+  "canonical_title": "Orchestronic IDP Part 3",
+  "aliases": [
+   "Orchestronic Internal Developer Platform Part 3"
+  ],
+  "phase": "final",
+  "course_code": "CSX3011/ITX3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Thu Yein",
+    "student_id": "6420169"
+   },
+   {
+    "name": "Hein Thant",
+    "student_id": "6430047"
+   },
+   {
+    "name": "Htet Aung Shine",
+    "student_id": "6530145"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "Asst. Prof. Dr. Darun Kesrarat",
+   "Asst. Prof. Dr. Thanachai Thumthawatworn"
+  ],
+  "abstract": "Cloud infrastructure plays an important role in modern software development. Developers often need servers, databases, and other resources in order to build and test applications. However, in many organizations the process of requesting these resources is slow because developers must wait for operations teams to manually provision them. This delay can slow down development and reduce team productivity. Orchestronic is an Internal Developer Platform (IDP) designed to simplify and automate the process of cloud resource provisioning. The platform allows developers to request infrastructure resources through a self-service interface while maintaining approval and control by project managers and IT personnel. The Orchestronic platform has been developed over multiple senior project phases. In Senior Project 1 (Semester 2/2024), the first team introduced the initial concept and built the foundation of the system, focusing on basic cloud resource provisioning and core system architecture. In Senior Project 2 (Semester 1/2025), the second team improved the system by expanding the platform's capabilities, improving the user interface, and adding support for additional cloud resources and workflow management. This project represents Part 3 of the Orchestronic platform, developed during Senior Project 2 (Semester 2/2025). The goal of this phase is to further enhance the platform by improving automation, expanding infrastructure capabilities, and integrating additional development tools that support modern cloud-based workflows. By continuing the development of Orchestronic, this project aims to create a more complete Internal Developer Platform that helps organizations reduce manual infrastructure management, improve collaboration between development and operations teams, and accelerate software development processes.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [],
+   "technology": [
+    "react",
+    "nodejs",
+    "express",
+    "postgresql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "devops",
+     "label": "DevOps / internal developer platform",
+     "status": "used",
+     "evidence": "Abstract: \"Orchestronic is an Internal Developer Platform (IDP) designed to simplify and automate the process of cloud resource provisioning\""
+    }
+   ],
+   "technology": [
+    {
+     "key": "microsoft_azure",
+     "label": "Microsoft Azure",
+     "status": "used",
+     "evidence": "Section 3.3: \"Orchestronic integrates with both Amazon Web Services and Microsoft Azure to support provisioning of common infrastructure resources\""
+    },
+    {
+     "key": "aws",
+     "label": "Amazon Web Services",
+     "status": "used",
+     "evidence": "Section 1.2: \"integrates with cloud service providers such as Microsoft Azure and Amazon Web Services (AWS) to automatically provision the requested resources\""
+    },
+    {
+     "key": "azure_app_service",
+     "label": "Azure App Service",
+     "status": "used",
+     "evidence": "Section 4.2.2 Tech Stack: \"Hosting: Microsoft Azure App Service for backend hosting and deployment\""
+    },
+    {
+     "key": "azure_ad",
+     "label": "Azure AD",
+     "status": "used",
+     "evidence": "Section 5.1.2: \"The login page implements secure authentication through Azure AD integration\""
+    },
+    {
+     "key": "aws_sdk_javascript",
+     "label": "AWS SDK for JavaScript",
+     "status": "used",
+     "evidence": "Section 4.2.2: \"Cloud SDKs: AWS SDK for JavaScript and Azure SDK for Node.js for cloud provider integrations\""
+    },
+    {
+     "key": "ec2",
+     "label": "Amazon EC2",
+     "status": "used",
+     "evidence": "Limitations 1: \"a fixed set of resource types (For example, EC2 only available t3.micro)\"; 5.1.4: \"EC2 Instance Type\""
+    },
+    {
+     "key": "k3s",
+     "label": "K3s",
+     "status": "used",
+     "evidence": "Section 5.1.4: \"the platform utilizes K3s to deploy a self-managed Kubernetes cluster\""
+    },
+    {
+     "key": "kubernetes",
+     "label": "Kubernetes",
+     "status": "used",
+     "evidence": "Section 5.3.2: \"dynamically route traffic through the Traefik ingress controller to the specific K3s cluster and pod\""
+    },
+    {
+     "key": "gitlab",
+     "label": "GitLab (self-hosted)",
+     "status": "used",
+     "evidence": "Section 5.1.10: \"managing organizational access to the self-hosted GitLab environment\""
+    },
+    {
+     "key": "traefik",
+     "label": "Traefik",
+     "status": "used",
+     "evidence": "Section 5.3.1: \"integrating certificates generated via Traefik's Let's Encrypt automation with Cloudflare\""
+    },
+    {
+     "key": "lets_encrypt",
+     "label": "Let's Encrypt",
+     "status": "used",
+     "evidence": "Section 5.3.1: \"certificates generated via Traefik's Let's Encrypt automation\""
+    },
+    {
+     "key": "cloudflare",
+     "label": "Cloudflare",
+     "status": "used",
+     "evidence": "Section 5.3.1: \"Cloudflare, the platform's DNS provider\""
+    },
+    {
+     "key": "jwt",
+     "label": "JSON Web Tokens",
+     "status": "used",
+     "evidence": "Section 4.2.2: \"Authentication: JSON Web Tokens (JWT) for session management and role-based access control\""
+    },
+    {
+     "key": "tailwind_css",
+     "label": "Tailwind CSS",
+     "status": "used",
+     "evidence": "Section 4.2.2: \"Styling: Tailwind CSS for responsive and consistent UI design\""
+    },
+    {
+     "key": "swagger",
+     "label": "Swagger UI",
+     "status": "used",
+     "evidence": "Section 5.2 Project Resources: \"Swagger UI - Api Docs\""
+    },
+    {
+     "key": "terraform",
+     "label": "Terraform",
+     "status": "cited",
+     "evidence": "Section 2.2.3: \"IaC tools such as Terraform, AWS CloudFormation, and Pulumi\"; Reference [1]"
+    },
+    {
+     "key": "aws_cloudformation",
+     "label": "AWS CloudFormation",
+     "status": "cited",
+     "evidence": "Section 2.2.3 and Reference [2]: \"AWS CloudFormation. AWS Documentation.\""
+    },
+    {
+     "key": "pulumi",
+     "label": "Pulumi",
+     "status": "cited",
+     "evidence": "Section 2.2.3: \"IaC tools such as Terraform, AWS CloudFormation, and Pulumi\""
+    },
+    {
+     "key": "backstage",
+     "label": "Backstage",
+     "status": "cited",
+     "evidence": "Section 2.2.4: \"Backstage (open source, developed by Spotify), Port, and Cortex\""
+    },
+    {
+     "key": "google_cloud_platform",
+     "label": "Google Cloud Platform",
+     "status": "cited",
+     "evidence": "Section 2.2.2: \"AWS, Microsoft Azure, and Google Cloud Platform (GCP) offer web-based management consoles\""
+    },
+    {
+     "key": "aws_eks",
+     "label": "AWS EKS",
+     "status": "cited",
+     "evidence": "Section 5.1.4: \"rather than using the AWS-managed EKS service\""
+    }
+   ]
+  }
+ }
+]

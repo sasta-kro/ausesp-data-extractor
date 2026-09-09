@@ -1,0 +1,417 @@
+[
+ {
+  "id": "25117",
+  "canonical_title": "Online ordering system for Feel ABAC Restaurant",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CSX3010 / ITX3009",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Lin Myat Phyo",
+    "student_id": "6530201"
+   },
+   {
+    "name": "Bhone Myint San",
+    "student_id": "6520225"
+   },
+   {
+    "name": "Thet Hnin Eain",
+    "student_id": "6530147"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Darun Kesrarat",
+  "committee": [
+   "Asst. Prof. Dr. AnilKumar Kothalil Gopalakrishnan",
+   "A. Tianai Tang"
+  ],
+  "abstract": "Our Senior Project II is a web-based food ordering system developed for a Burmese restaurant located at Assumption University. The project aims to solve operational problems caused by the current ordering method, where customers place orders through messaging platforms such as Facebook Messenger. This manual process makes it difficult for staff to manage multiple orders, track order status, calculate prices, and coordinate delivery, which often leads to delays and communication errors. The proposed system provides a centralized platform where customers can browse the menu, customize dishes, place orders, and track their order status in real time. The platform supports highly flexible menu customization to match the nature of Burmese cuisine, where customers often choose ingredients, spice levels, and additional options. It also integrates payment through QR PromptPay and provides live order updates for both customers and restaurant staff. On the administrative side, the system includes a dashboard that allows restaurant staff to manage menu items, monitor incoming orders, update order status, and control item availability. This automation reduces manual workload, improves order accuracy, and provides better organization of restaurant operations.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "e_commerce",
+    "campus"
+   ],
+   "topic": [
+    "geolocation"
+   ],
+   "technology": [
+    "nextjs",
+    "react",
+    "nodejs",
+    "postgresql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "food_service",
+     "label": "Food service and restaurant operations",
+     "status": "used",
+     "evidence": "Abstract: \"Our Senior Project II is a web-based food ordering system developed for a Burmese restaurant located at Assumption University.\""
+    }
+   ],
+   "technology": [
+    {
+     "key": "typescript",
+     "label": "TypeScript",
+     "status": "used",
+     "evidence": "Section 4.1.2: \"TypeScript ensures type safety throughout the application, reducing runtime errors.\""
+    },
+    {
+     "key": "tailwind_css",
+     "label": "Tailwind CSS",
+     "status": "used",
+     "evidence": "Section 4.1.3: \"The interface is built using Tailwind CSS 4 for utility-first styling.\""
+    },
+    {
+     "key": "shadcn_ui",
+     "label": "shadcn/ui",
+     "status": "used",
+     "evidence": "Section 4.1.3: \"shadcn/ui components based on Radix UI primitives.\""
+    },
+    {
+     "key": "drizzle_orm",
+     "label": "Drizzle ORM",
+     "status": "used",
+     "evidence": "Section 3.2.3: \"Database access is handled through Drizzle ORM with Neon, providing type-safe queries, transactions, automatic connection pooling.\""
+    },
+    {
+     "key": "neon",
+     "label": "NeonDB (serverless PostgreSQL)",
+     "status": "used",
+     "evidence": "Section 4.2.3: \"The system uses PostgreSQL hosted on NeonDB, with Drizzle ORM providing type-safe database access.\""
+    },
+    {
+     "key": "better_auth",
+     "label": "Better Auth",
+     "status": "used",
+     "evidence": "Section 4.2.2: \"User authentication is managed using Better Auth, supporting email/password login and Google OAuth.\""
+    },
+    {
+     "key": "pusher",
+     "label": "Pusher (real-time messaging)",
+     "status": "used",
+     "evidence": "Section 4.2.5: \"Real-time updates are handled using Pusher WebSocket-based messaging.\""
+    },
+    {
+     "key": "cloudflare_r2",
+     "label": "Cloudflare R2 (object storage)",
+     "status": "used",
+     "evidence": "Section 4.2.6: \"Menu images and payment receipts are stored using Cloudflare R2 object storage with CDN support.\""
+    },
+    {
+     "key": "vercel",
+     "label": "Vercel (hosting)",
+     "status": "used",
+     "evidence": "Section 4.4.3: \"The application is deployed on Vercel, with automatic deployments triggered directly from the GitHub repository.\""
+    },
+    {
+     "key": "google_maps",
+     "label": "Google Maps API",
+     "status": "used",
+     "evidence": "Section 4.3.5: \"Google Maps API is used for delivery location selection and address validation, ensuring accurate delivery fee calculation.\""
+    },
+    {
+     "key": "brevo",
+     "label": "Brevo (transactional email)",
+     "status": "used",
+     "evidence": "Section 4.3.1: \"Brevo is used to send transactional emails such as account verification and system notifications.\""
+    },
+    {
+     "key": "uploadthing",
+     "label": "UploadThing (file uploads)",
+     "status": "used",
+     "evidence": "Section 4.3.2: \"UploadThing is used to manage secure file uploads, enforcing file size limits and allowed file types.\""
+    },
+    {
+     "key": "zustand",
+     "label": "Zustand (state management)",
+     "status": "used",
+     "evidence": "Section 4.4.4: \"Zustand is used for lightweight global client-side state management, such as UI preferences and shared application states.\""
+    },
+    {
+     "key": "zod",
+     "label": "Zod (schema validation)",
+     "status": "used",
+     "evidence": "Section 1.5 Quality Assurance Practices: \"Zod schema validation for inputs.\""
+    },
+    {
+     "key": "promptpay",
+     "label": "PromptPay QR payments",
+     "status": "used",
+     "evidence": "Section 4.3.3: \"The system uses Prompt Pay QR code payments, which are widely adopted in Thailand.\""
+    },
+    {
+     "key": "prisma",
+     "label": "Prisma ORM",
+     "status": "cited",
+     "evidence": "Section 2.2 comparison: \"Prisma is powerful but heavier, with more background complexity and slower build times.\""
+    }
+   ]
+  }
+ },
+ {
+  "id": "25118",
+  "canonical_title": "TrustLoop: Secondhand marketplace for AU students",
+  "aliases": [
+   "TrustLoop"
+  ],
+  "phase": "final",
+  "course_code": "CSX3011/ITX3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Pwint Hmon Nathar",
+    "student_id": "6530230"
+   },
+   {
+    "name": "Min Thant Naing",
+    "student_id": "6530233"
+   },
+   {
+    "name": "MangShang SauYing",
+    "student_id": "6511089"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Paitoon Porntrakoon",
+  "committee": [
+   "A. Jinchun Lu",
+   "A. Athiphat Hirunadisuan"
+  ],
+  "abstract": "TrustLoop is a secure, student-exclusive online marketplace developed for Assumption University (AU) students to buy, sell, donate, and auction items within a trusted environment. The system was developed in collaboration with the administrator of the Assumption University Myanmar Students Facebook Group, where many students currently trade second-hand items through informal posts. However, platforms such as Facebook Marketplace or Facebook group posts often lack proper identity verification, which can lead to scams, fake identities, and unreliable transactions. To address this issue, TrustLoop uses Microsoft Entra ID authentication to ensure that only verified AU students can access and participate in the platform. The system includes features such as item listings, donation and request posts, auction functionality, user ratings and reviews, real-time notifications, and product management tools. TrustLoop is developed using Next.js, MongoDB Atlas, Cloudinary, and Vercel to provide a scalable and responsive web application that supports safe and convenient item exchanges within the university community.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "campus",
+    "e_commerce"
+   ],
+   "topic": [],
+   "technology": [
+    "nextjs",
+    "mongodb"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "secondhand_marketplace",
+     "label": "Second-hand trading and reuse marketplace",
+     "status": "used",
+     "evidence": "Cover title: \"TrustLoop: Secondhand marketplace for AU students\"; abstract: students \"buy, sell, donate, and auction items within a trusted environment.\""
+    }
+   ],
+   "technology": [
+    {
+     "key": "tailwind_css",
+     "label": "Tailwind CSS",
+     "status": "used",
+     "evidence": "Section 3.1: \"Styling: Tailwind CSS is used to create a clean, responsive, and consistent user interface across different devices.\""
+    },
+    {
+     "key": "mongoose",
+     "label": "Mongoose ODM",
+     "status": "used",
+     "evidence": "Section 3.1: \"MongoDB Atlas is used as the cloud database service, with Mongoose as the Object Data Modeling (ODM) library for managing database schemas and queries.\""
+    },
+    {
+     "key": "nextauth",
+     "label": "NextAuth v5",
+     "status": "used",
+     "evidence": "Section 3.1: \"Microsoft Entra ID authentication is implemented using NextAuth v5 to restrict access to verified Assumption University student accounts.\""
+    },
+    {
+     "key": "microsoft_entra_id",
+     "label": "Microsoft Entra ID",
+     "status": "used",
+     "evidence": "Abstract: \"TrustLoop uses Microsoft Entra ID authentication to ensure that only verified AU students can access and participate in the platform.\""
+    },
+    {
+     "key": "stripe",
+     "label": "Stripe payment gateway",
+     "status": "used",
+     "evidence": "Section 3.1: \"Stripe is integrated to handle secure online payments during checkout and to support payment-related transaction processing within the platform.\""
+    },
+    {
+     "key": "cloudinary",
+     "label": "Cloudinary (image hosting)",
+     "status": "used",
+     "evidence": "Phase 3 Implementation: \"Upload and manage product images using Cloudinary for optimized storage and fast delivery.\""
+    },
+    {
+     "key": "vercel",
+     "label": "Vercel (hosting)",
+     "status": "used",
+     "evidence": "Section 3.1: \"The application is deployed on Vercel, which provides automatic builds, continuous integration, and scalable hosting for the platform.\""
+    },
+    {
+     "key": "resend",
+     "label": "Resend (email service)",
+     "status": "used",
+     "evidence": "Section 3.1: \"Resend is used to send transactional email notifications, such as order updates, payment confirmations, and important system alerts to users.\""
+    },
+    {
+     "key": "github",
+     "label": "GitHub (CI/CD)",
+     "status": "used",
+     "evidence": "Phase 5 Deployment: \"Integrate the deployment pipeline with GitHub, where every commit to the main branch automatically triggers a build and deployment.\""
+    },
+    {
+     "key": "openai",
+     "label": "OpenAI GPT models",
+     "status": "cited",
+     "evidence": "References: \"OpenAI. (2024). AI chatbot development with GPT models. https://platform.openai.com/docs/\" cited in connection with the TrustLoop Chatbot feature."
+    }
+   ]
+  }
+ },
+ {
+  "id": "26003",
+  "canonical_title": "Lecture sense: A notebookLM clone for lectures",
+  "aliases": [
+   "LectureSense"
+  ],
+  "phase": "proposal",
+  "course_code": "CSX 3010 / ITX 3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Kanat Khamzin",
+    "student_id": "6530009"
+   },
+   {
+    "name": "Danila Derii",
+    "student_id": "6530154"
+   },
+   {
+    "name": "Ivan Kozanchuk",
+    "student_id": "6510278"
+   }
+  ],
+  "advisor": "A. Tianai Tang",
+  "committee": [
+   "Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan",
+   "Asst. Prof. Dr. Benjawan Srisura"
+  ],
+  "abstract": "students face significant challenges in managing and navigating the vast amount of lecture contents. Traditional methods of reviewing lectures often involve manual processes, such as \"scrubbing\" through hours of course materials to find specific information, which is inherently time-consuming and inefficient. This can lead to fragmented learning, missed deadlines, and a lack of clear visibility for instructors into student struggles. The advent of AI-driven digital solutions offers an opportunity to transform these academic proceses, making them more efficient and personalized. This project focuses on developing LectureSense, a standalone web aplication that serves as a specialized \"NotebookLM clone\" for lectures. The platform is designed to bridge the gap between lecture delivery and student comprehension by automatically mapping transcripts to slides and timestamps The primary objective of this platform is to enhance study efficiency and improve the instructional feedback loop by providing role-based access to tailored dashboards. For students, these dashboards facilitate searchable content, automated sumaries, and flashcard generation with direct citations to source material. For instructors, the platform clusters student questions and provides a \"confusion heatmap\" to identify parts of the material that require further explanation. By integrating OpenAI LLM via API and a RAG pipeline, LectureSense ensures a student-friendly system that streamlines the operational side of academic learning",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [
+    "nlp"
+   ],
+   "technology": [
+    "python",
+    "react",
+    "nextjs",
+    "postgresql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "fastapi",
+     "label": "FastAPI",
+     "status": "used",
+     "evidence": "Section 4.2.2: \"sends HTTP requests to the backend server built with FastAPI\"; Tech Stack: \"for backend we used python with fastapi framework.\""
+    },
+    {
+     "key": "pgvector",
+     "label": "pgvector",
+     "status": "used",
+     "evidence": "Section 3.1.2: \"stored in PostgreSQL with the pgvector extension, enabling similarity search directly in SQL using distance metrics such as cosine or Euclidean distance.\""
+    },
+    {
+     "key": "openai",
+     "label": "OpenAI API (LLM)",
+     "status": "used",
+     "evidence": "Section 4.2.2: \"The system integrates with an external AI model (OpenAI) to generate answers, summaries, and flashcards from lecture content.\""
+    },
+    {
+     "key": "whisper",
+     "label": "Whisper (speech-to-text)",
+     "status": "used",
+     "evidence": "Section 3.1.1: \"transcribed with a two-step strategy: local Whisper (preferred, e.g., \\\"base\\\" model) returning timestamped segments, with an OpenAI Whisper API fallback.\""
+    },
+    {
+     "key": "rag",
+     "label": "Retrieval-Augmented Generation",
+     "status": "used",
+     "evidence": "Chapter 3: \"This project applies a retrieval-augmented pipeline that converts lecture materials into a searchable knowledge base and then answers student questions using only retrieved lecture fragments.\""
+    },
+    {
+     "key": "railway",
+     "label": "Railway (backend hosting)",
+     "status": "used",
+     "evidence": "Section 4.2.3: \"Railway, to host our backend.\""
+    },
+    {
+     "key": "vercel",
+     "label": "Vercel (frontend hosting)",
+     "status": "used",
+     "evidence": "Section 4.2.3: \"Vercel to host our frontend, we picked it to minimize cost since Vercel as a free tier and easy to setup.\""
+    },
+    {
+     "key": "pymupdf",
+     "label": "PyMuPDF",
+     "status": "used",
+     "evidence": "Section 3.1.1: \"extracts text per page using PyMuPDF (fitz) to keep a (page_text, page_number) mapping.\""
+    },
+    {
+     "key": "python_pptx",
+     "label": "python-pptx",
+     "status": "used",
+     "evidence": "Section 3.1.1: \"uses python-pptx to extract text from text-containing shapes per slide, producing (slide_text, slide_number) pairs.\""
+    },
+    {
+     "key": "docling",
+     "label": "Docling (document parsing)",
+     "status": "used",
+     "evidence": "Section 4.1.3: \"The system transcribes audio via Whisper and parses documents via Docling, creating a mapped \\\"Content Core\\\".\""
+    },
+    {
+     "key": "scikit_learn",
+     "label": "scikit-learn",
+     "status": "cited",
+     "evidence": "Reference [14] \"scikit-learn Machine Learning Library Documentation\" supports Section 3.1.5: \"the system clusters similar questions to detect recuring confusion topics.\""
+    }
+   ]
+  }
+ }
+]

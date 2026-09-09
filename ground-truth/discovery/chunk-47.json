@@ -1,0 +1,352 @@
+[
+ {
+  "id": "2593",
+  "canonical_title": "SkillSync: Collaborative Platform",
+  "aliases": [
+   "SkillSync"
+  ],
+  "phase": "final",
+  "course_code": "CSX3011",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Sokty Heng",
+    "student_id": "6530353"
+   },
+   {
+    "name": "Sujit Dityam",
+    "student_id": "6511800"
+   },
+   {
+    "name": "Wai Phyo Oo",
+    "student_id": "6520213"
+   }
+  ],
+  "advisor": "A. Sakchhi Paudel",
+  "committee": [
+   "A. Chayapol Moemeng",
+   "Dr. Phyo Min Tun"
+  ],
+  "abstract": "SkillSync is a comprehensive academic collaboration/networking mobile application on the google play store designed specifically for ABAC students who seek to connect and collaborate on projects, even across different faculties and disciplines. The system addresses the challenges of traditional collaboration methods by providing skill-based discovery, real-time project posting, and seamless communication integration. Built using Flutter for cross-platform compatibility, Firebase for backend services, and published through Professor Chayapol Moemeng's google play store developer account “Rehatcher” for external exposure, SkillSync serves a unified community of ABAC students authenticated exclusively through their institutional Microsoft accounts. The application features real-time direct messaging, project contribution requests, notification management, and an intelligent profile system that showcases each student's skills, major, and academic background to ensure meaningful and complementary team formation.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "android",
+    "mobile"
+   ],
+   "domain": [
+    "campus",
+    "education"
+   ],
+   "topic": [],
+   "technology": [
+    "firebase"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "flutter",
+     "label": "Flutter",
+     "status": "used",
+     "evidence": "Ch. 5: 'The frontend is built using the Flutter framework, which enables cross-platform mobile development'"
+    },
+    {
+     "key": "cloud_firestore",
+     "label": "Cloud Firestore",
+     "status": "used",
+     "evidence": "Sec. 4.3.2: 'the system uses Cloud Firestore, a scalable NoSQL cloud database that supports real-time updates across collections including users, projects, conversations, messages, and notifications'"
+    },
+    {
+     "key": "google_cloud",
+     "label": "Google Cloud Platform",
+     "status": "used",
+     "evidence": "Sec. 4.2: 'leveraging a NoSQL database in the cloud through Google Cloud and Cloud Firestore'"
+    },
+    {
+     "key": "microsoft_oauth",
+     "label": "Microsoft OAuth",
+     "status": "used",
+     "evidence": "Sec. 5.2.2: 'SkillSync implements Microsoft OAuth as its sole authentication method, integrated through Firebase Authentication'"
+    },
+    {
+     "key": "visual_studio_code",
+     "label": "Visual Studio Code",
+     "status": "used",
+     "evidence": "Sec. 4.5 Tech Stack: 'The IDE used throughout development is Visual Studio Code.'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2594",
+  "canonical_title": "AUGo – A campus AR social App",
+  "aliases": [
+   "AUGo – A campus AR social app",
+   "AUGo – A campus AR social media app"
+  ],
+  "phase": "final",
+  "course_code": "CSX 3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Khin Yadanar Moe",
+    "student_id": "6612128"
+   },
+   {
+    "name": "Sam Yati",
+    "student_id": "6611982"
+   },
+   {
+    "name": "Win Yu Maung",
+    "student_id": "6612054"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Thanachai Thumthawatworn",
+  "committee": [
+   "Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan",
+   "A. Mana Tanachan"
+  ],
+  "abstract": "This report includes the detailed development of AUGo, an iOS social campus application that integrates Augmented Reality (AR) with an interactive map. The project addresses low student engagement and inefficient communication at Assumption University by centralizing campus announcements, events, and social interactions into one unified platform. It eliminates the need to monitor scattered social media groups and messaging apps, making campus information easily accessible through an interactive map. AUGo supports three user roles: Students explore campus via AR, collect 3D objects, and discover events; Announcers publish location-based announcements to increase visibility; and Administrators moderate content and user activity. Key features include AR-based collection, real-time notifications, and a social feed with geotagged posts. The iOS app is built using Swift, with MapKit for map integration, and ARKit for AR features. The app is supported by Firebase for handling authentication, database, and notifications. The admin dashboard is developed with TypeScript and deployed on Vercel using a serverless architecture. AUGo demonstrates how combining AR with social and map features can improve campus life, with potential for future expansions to make university events more interactive and engaging.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "ios",
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [
+    "gamification",
+    "geolocation"
+   ],
+   "technology": [
+    "swift",
+    "firebase",
+    "react"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "arkit",
+     "label": "ARKit",
+     "status": "used",
+     "evidence": "Abstract p.3: 'The iOS app is built using Swift, with MapKit for map integration, and ARKit for AR features.'"
+    },
+    {
+     "key": "mapkit",
+     "label": "MapKit",
+     "status": "used",
+     "evidence": "Sec. 3.2 Functional Requirements: 'The system shall display campus locations using MapKit.'"
+    },
+    {
+     "key": "swiftui",
+     "label": "SwiftUI",
+     "status": "used",
+     "evidence": "Sec. 4.3.1 Mobile Application tech stack: 'Swift, ARKit, MapKit, SwiftUI'"
+    },
+    {
+     "key": "typescript",
+     "label": "TypeScript",
+     "status": "used",
+     "evidence": "Sec. 4.2.1: 'Admin Web Dashboard - Built using TypeScript, Hosted on Vercel'"
+    },
+    {
+     "key": "vercel",
+     "label": "Vercel",
+     "status": "used",
+     "evidence": "Sec. 5.1: 'Deployment is achieved using Vercel for web services'; admin dashboard hosted at augo-admin-dashboard.vercel.app"
+    },
+    {
+     "key": "cloud_firestore",
+     "label": "Cloud Firestore",
+     "status": "used",
+     "evidence": "Sec. 3.2: 'The system shall store user data and posts in Firebase Firestore.'"
+    },
+    {
+     "key": "cloud_functions",
+     "label": "Firebase Cloud Functions",
+     "status": "used",
+     "evidence": "Sec. 5.2.3.7: 'High-severity categories ... are automatically handled by the system through Cloud Functions.'"
+    },
+    {
+     "key": "nextjs",
+     "label": "Next.js",
+     "status": "cited",
+     "evidence": "References [1]: Vercel, 'Next.js Documentation.' https://nextjs.org/docs (not explicitly claimed as used in body)"
+    },
+    {
+     "key": "tailwind_css",
+     "label": "Tailwind CSS",
+     "status": "cited",
+     "evidence": "References [4]: Tailwind Labs, 'Tailwind CSS Documentation.' https://tailwindcss.com/docs"
+    },
+    {
+     "key": "nodejs",
+     "label": "Node.js",
+     "status": "cited",
+     "evidence": "References [5]: OpenJS Foundation, 'Node.js Documentation.' https://nodejs.org/en/docs"
+    },
+    {
+     "key": "leaflet",
+     "label": "Leaflet",
+     "status": "cited",
+     "evidence": "References [14]: Leaflet Project, 'Leaflet JavaScript Library Documentation.' https://leafletjs.com/"
+    },
+    {
+     "key": "google_maps",
+     "label": "Google Maps",
+     "status": "cited",
+     "evidence": "Sec. 2.3 Related Work: 'navigation tools like Google Maps provide efficient location-based services'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2595",
+  "canonical_title": "AU Study Group Finder: Connecting students through smarter Study Group Coordination",
+  "aliases": [
+   "AU Study Group Finder"
+  ],
+  "phase": "final",
+  "course_code": "ITX 3009",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Shaun Lai Kyaw San",
+    "student_id": "6540067"
+   },
+   {
+    "name": "Chan Mya Nyein",
+    "student_id": "6540202"
+   },
+   {
+    "name": "Tun Tauk Oo",
+    "student_id": "6611302"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Thanachai Thumthawatworn",
+  "committee": [
+   "Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan",
+   "A. Mana Thanachan"
+  ],
+  "abstract": "Finding and coordinating study groups remains a persistent challenge for university students, often leading to wasted time, missed sessions, and lost peer learning opportunities. This Senior Project presents AU Study Group Finder, a centralized web platform developed to remove the friction from peer collaboration at Assumption University. The system simplifies the process of study group formation, scheduling, and communication by providing a structured environment where students can discover groups based on shared courses, topics, or upcoming examinations. The platform is built using TypeScript and Tailwind CSS for the frontend, with a PHP Laravel backend and PostgreSQL database, deployed on Railway cloud infrastructure. It features a four-tier role system comprising Admin, Moderator, Leader, and Member, each with clearly defined permissions and responsibilities. Key functionalities include group discovery and management, recurring session scheduling with calendar tracking, real-time group chat with smart notifications, a karma-based reward system that incentivizes positive participation, and a comprehensive admin dashboard for platform oversight and engagement analytics. Evaluation of the system demonstrated that AU Study Group Finder effectively addresses the core challenges of peer collaboration by consolidating group formation, communication, and scheduling into a single accessible platform. The system contributes to improved study session attendance, reduced cancellations, and enhanced exam preparation through structured peer learning.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "education",
+    "campus"
+   ],
+   "topic": [
+    "gamification"
+   ],
+   "technology": [
+    "php",
+    "laravel",
+    "postgresql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "typescript",
+     "label": "TypeScript",
+     "status": "used",
+     "evidence": "Sec. 3.9 Tools and Technologies Summary: 'Frontend Language TypeScript - Type-safe UI development'"
+    },
+    {
+     "key": "tailwind_css",
+     "label": "Tailwind CSS",
+     "status": "used",
+     "evidence": "Sec. 3.9: 'Frontend Styling Tailwind CSS - Utility-first responsive styling'"
+    },
+    {
+     "key": "railway",
+     "label": "Railway",
+     "status": "used",
+     "evidence": "Sec. 3.9: 'Deployment Railway - Cloud hosting and CI/CD'; Ch. 6: 'deployed to a live production environment on the Railway cloud platform'"
+    },
+    {
+     "key": "websocket",
+     "label": "WebSockets",
+     "status": "used",
+     "evidence": "Sec. 3.9: 'Real-Time Laravel Echo + WebSockets - Live group chat and notifications'"
+    },
+    {
+     "key": "laravel_echo",
+     "label": "Laravel Echo",
+     "status": "used",
+     "evidence": "Sec. 3.7.2: 'the real-time WebSocket broadcasting system using Laravel Echo'"
+    },
+    {
+     "key": "laravel_sanctum",
+     "label": "Laravel Sanctum",
+     "status": "used",
+     "evidence": "Sec. 3.7.2: 'the authentication and role-based access control system using Laravel Sanctum'"
+    },
+    {
+     "key": "eloquent_orm",
+     "label": "Eloquent ORM",
+     "status": "used",
+     "evidence": "Sec. 3.7.2: 'Laravel's Eloquent ORM was used to interact with the PostgreSQL database'"
+    },
+    {
+     "key": "phpunit",
+     "label": "PHPUnit",
+     "status": "used",
+     "evidence": "Sec. 3.8.1: 'Laravel's built-in PHPUnit testing framework was used to write and execute all unit tests'"
+    },
+    {
+     "key": "figma",
+     "label": "Figma",
+     "status": "used",
+     "evidence": "Sec. 3.9: 'Design Figma - UI wireframing and prototyping'"
+    },
+    {
+     "key": "github",
+     "label": "GitHub",
+     "status": "used",
+     "evidence": "Sec. 3.9: 'Version Control Git / GitHub - Source code management'"
+    },
+    {
+     "key": "ai_assistant",
+     "label": "AI Liveroom assistant",
+     "status": "used",
+     "evidence": "Ch. 5: 'The Liveroom feature provides members with an AI-powered interactive space where users can ask questions related to any course or subject and receive responses in a conversational format.'"
+    }
+   ]
+  }
+ }
+]

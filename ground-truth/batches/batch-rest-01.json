@@ -1,0 +1,1483 @@
+[
+ {
+  "id": "2128",
+  "canonical_title": "Pro Timer",
+  "aliases": [
+   "ProTimer"
+  ],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "PhonePyaeKyawSwar",
+    "student_id": "6118156"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "Paitoon Porntrakoon",
+   "Suparwat Charoenvikrom"
+  ],
+  "abstract": "Shooting ranges in Thailand needed a simple tool for measuring shooting speed, but existing shot timer applications were complicated, not user friendly, and often paid. The project built Pro Timer, an Android application that records shot time and split time by detecting the sound of each shot. It was developed in Android Studio with Kotlin and uses Firebase for authentication, profile data, profile pictures, and shooting history. Users can adjust sound sensitivity in decibels and save up to 40 rounds per session with dated history. Testing on a real device led to fixes such as a single button design, UI adjustment to the target device, and a decibel value option converted from amplitude.",
+  "abstract_source": "generated",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "android"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [],
+   "technology": [
+    "kotlin",
+    "firebase"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "shooting_sports",
+     "label": "Shooting sports training",
+     "status": "used",
+     "evidence": "This application will be used by shooting range trainers and trainees when they are training."
+    }
+   ],
+   "technology": [
+    {
+     "key": "android_studio",
+     "label": "Android Studio",
+     "status": "used",
+     "evidence": "For tech stack, I use android studio with kotlin and use firebase as a backend."
+    },
+    {
+     "key": "firestore",
+     "label": "Cloud Firestore",
+     "status": "used",
+     "evidence": "In firebase firestore, I store user profile data such as age and name."
+    },
+    {
+     "key": "firebase_auth",
+     "label": "Firebase Authentication",
+     "status": "used",
+     "evidence": "Authentication stores email addresses and generates UID for each user."
+    },
+    {
+     "key": "firebase_storage",
+     "label": "Firebase Storage",
+     "status": "used",
+     "evidence": "I use firebase storage to store the profile pictures."
+    }
+   ]
+  }
+ },
+ {
+  "id": "2130",
+  "canonical_title": "Video Analytics from IP Cameras for Smart Homes",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Sochivoath Chiv",
+    "student_id": "6128304"
+   },
+   {
+    "name": "Dao Trung Kien",
+    "student_id": "6128302"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "Dr. Kwankamol Nongpong",
+   "A. Piyakul Tillpart"
+  ],
+  "abstract": "Medical Alert systems are in high demand in the healthcare industry. Furthermore, with a generally ageing population, medical alert systems that assist family members and caretakers in nursing homes are extremely sought after. Fall detection systems have been a hot topic of research over the past two decades as fall accidents are one of the most fatal yet frequent occurrences an elderly person may experience. The goal of our project is to create a robust and accurate fall detection system as well as a portable demonstration kit for the management of BAKSTERS to demonstrate our system to the stakeholders and potential customers. By utilising PoseNet's pose estimation model to extract skeletal data from image frames, our system analyses a series of skeletal information through Deep Learning to identify the event of a fall. Through this methodology, our model in conjunction with the demo kit was able to perform with over 94% accuracy when detecting and notifying the user of fall events. Having tested in multiple different environments, we have produced a highly reliable fall detection system that is robust and accurate when utilising the portable demonstration kit.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "desktop",
+    "web"
+   ],
+   "domain": [
+    "healthcare"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "python",
+    "opencv",
+    "tensorflow",
+    "flask"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "hikvision_camera",
+     "label": "HikVision IP camera",
+     "status": "used",
+     "evidence": "Table 4.1 List of Demo Kit Equipment and Prices: HikVision Camera with protective box."
+    }
+   ],
+   "domain": [
+    {
+     "key": "elderly_care",
+     "label": "Elderly care and fall detection",
+     "status": "used",
+     "evidence": "The goal of our project is to create a robust and accurate fall detection system... fall accidents are one of the most fatal yet frequent occurrences an elderly person may experience."
+    },
+    {
+     "key": "smart_home",
+     "label": "Smart home monitoring",
+     "status": "used",
+     "evidence": "Produce a robust, automated, indoor home monitoring and fall detection system (title: Video Analytics from IP Cameras for Smart Homes)."
+    }
+   ],
+   "technology": [
+    {
+     "key": "posenet",
+     "label": "PoseNet pose estimation",
+     "status": "used",
+     "evidence": "Our approach analyses a series of the subject's skeletal information obtained from PoseNet's pose estimation model to determine the event of a fall."
+    },
+    {
+     "key": "keras",
+     "label": "Keras",
+     "status": "used",
+     "evidence": "The creation, training and utilisation of our deep learning model was done through the use of Tensorflow and Keras."
+    },
+    {
+     "key": "lstm",
+     "label": "LSTM recurrent layer",
+     "status": "used",
+     "evidence": "The deep learning model combines convolutional neural networks (CNN) to perform feature extraction on each skeletal instance with an LSTM layer to extract temporal information."
+    },
+    {
+     "key": "kalman_filter",
+     "label": "Kalman tracker",
+     "status": "used",
+     "evidence": "PoseNet itself works as a pseudo-person detector and can therefore be combined with a distance-based Kalman Tracker to produce a custom PoseNet-based tracking algorithm."
+    },
+    {
+     "key": "line_messaging_api",
+     "label": "LINE Messaging API",
+     "status": "used",
+     "evidence": "The main module used for notification is the official Line API SDK."
+    },
+    {
+     "key": "google_drive_api",
+     "label": "Google Drive API v3",
+     "status": "used",
+     "evidence": "To access the google drive, the system used the Drive API v3 module for developers."
+    },
+    {
+     "key": "bootstrap",
+     "label": "Bootstrap",
+     "status": "used",
+     "evidence": "The web UI was coded using Bootstraps open source framework with custom CSS, HTML and Javascript scripts where necessary."
+    },
+    {
+     "key": "numpy",
+     "label": "NumPy",
+     "status": "used",
+     "evidence": "Other notable modules used in the system: Numpy - data manipulation and processing."
+    },
+    {
+     "key": "openpose",
+     "label": "OpenPose",
+     "status": "cited",
+     "evidence": "Although PoseNet may be less accurate than other pose estimation models such as OpenPose, PoseNet was intended to run on mobile devices."
+    },
+    {
+     "key": "movenet",
+     "label": "MoveNet",
+     "status": "cited",
+     "evidence": "Future works include... it might prove interesting to experiment with other types of pose estimation models such as MoveNet and OpenPose."
+    }
+   ]
+  }
+ },
+ {
+  "id": "2131",
+  "canonical_title": "VMS Chatbot - Chinese WeChat Auto Reply Bot",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CSX3010/ITX3009",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Hao Ye",
+    "student_id": "6238023"
+   },
+   {
+    "name": "Zheqi Shen",
+    "student_id": "6238426"
+   },
+   {
+    "name": "Dawei Song",
+    "student_id": "6228447"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "A. Chayapol Moemeng",
+   "Asst. Prof. Dr. Benjawan Srisura"
+  ],
+  "abstract": "Nowadays, artificial intelligence is increasingly prosperous, and there are many related technical practices and products. Based on information retrieval related technologies, combined with crawler, text analysis, natural language processing and other related technologies to form intelligent chatbots, although chatbots are not particularly complex and core in nature However, as an interaction point of scientific research applications and an important way of human-computer interaction, its significance is self-evident. This experiment is based on web crawler technology, basic ideas of information retrieval, basic natural language processing knowledge, network application deployment, Server configuration and deployment, WeChat platform application external connection and other related theoretical knowledge and technical means, completely independently realize the construction of WeChat public account background chat robot, and realize convenient and effective communication between users and intelligent robots.",
+  "abstract_source": "document",
+  "reported_keywords": [
+   "web crawling",
+   "artificial intelligence",
+   "chatbot",
+   "WeChat public account background development",
+   "network application service deployment",
+   "chatterbot"
+  ],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [
+    "nlp"
+   ],
+   "technology": [
+    "python",
+    "flask"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "wechat",
+     "label": "WeChat public account platform",
+     "status": "used",
+     "evidence": "It is placed in a personal WeChat official account. Users can search and add it directly through the WeChat official account function."
+    }
+   ],
+   "domain": [],
+   "technology": [
+    {
+     "key": "chatterbot",
+     "label": "ChatterBot library",
+     "status": "used",
+     "evidence": "VMS WeChat chatbot is a chatbot for vms Chinese students trained through python's chatterbot library."
+    },
+    {
+     "key": "wechat_api",
+     "label": "WeChat public account API",
+     "status": "used",
+     "evidence": "Finally, the robot's answer was returned to the user through the WeChat API interface."
+    },
+    {
+     "key": "tencent_cloud",
+     "label": "Tencent Cloud server",
+     "status": "used",
+     "evidence": "We use Tencent Cloud as our server to connect to WeChat."
+    },
+    {
+     "key": "ubuntu_server",
+     "label": "Ubuntu Server 20.04 LTS",
+     "status": "used",
+     "evidence": "For the Tencent cloud environment, in our project we chose Ubuntu Server 20.04 LTS."
+    },
+    {
+     "key": "anaconda",
+     "label": "Anaconda",
+     "status": "used",
+     "evidence": "Then set up the anaconda environment and all other required environments and install the library in the administrator mode."
+    },
+    {
+     "key": "xmltodict",
+     "label": "xmltodict",
+     "status": "used",
+     "evidence": "We use the unparse method to convert the dict dictionary data in Python into an xml string, and then return specific xml structure data to respond to the user's POST request."
+    }
+   ]
+  }
+ },
+ {
+  "id": "2132",
+  "canonical_title": "Voice Application: Personal Wine Consultant",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CSX 3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Thitare Nimanong",
+    "student_id": "6210015"
+   },
+   {
+    "name": "Chanatip Kwankeua",
+    "student_id": "6215452"
+   },
+   {
+    "name": "Ornwara Sangthongnirundorn",
+    "student_id": "6215112"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "Asst. Prof. Dr. Benjawan Srisura",
+   "A. Suparwat Charoenvikrom"
+  ],
+  "abstract": "Buying wine is an experience unlike purchasing other foods and beverages. Interaction and service are also key factors in deciding whether or not to purchase an item. Merchants that sell their products in wine cellars must also employ personal consultants (PC) to support and assist customers. To support both PCs and customers, our voice application can also assist customers during their breaks in selecting wines. The customer can interact with the application by speaking or by typing and using the app to select wines. Then, the wine cellar staff will be notified and be able to assist the customer in payments and packaging. After gathering user feedback for our system, we realize that some features require adjustments to better satisfy the user's needs. In the future, given time and resources, we would like to implement these changes.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "android"
+   ],
+   "domain": [
+    "e_commerce"
+   ],
+   "topic": [
+    "nlp",
+    "recommender_system"
+   ],
+   "technology": [
+    "firebase"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "voice_assistant",
+     "label": "Voice Assistant Devices (Google Assistant)",
+     "status": "used",
+     "evidence": "Users must invoke google assistant by saying the application keyword to start using the application (p. 26)."
+    }
+   ],
+   "domain": [
+    {
+     "key": "food_beverage",
+     "label": "Food and Beverage (Wine Retail)",
+     "status": "used",
+     "evidence": "Merchants that sell their products in wine cellars must also employ personal consultants (PC) to support and assist customers (Abstract, p. 3)."
+    }
+   ],
+   "technology": [
+    {
+     "key": "google_assistant",
+     "label": "Google Assistant",
+     "status": "used",
+     "evidence": "after careful consideration, this project will be developed on top of Google Assistant (p. 16)."
+    },
+    {
+     "key": "google_actions",
+     "label": "Actions on Google (Conversational Actions)",
+     "status": "used",
+     "evidence": "The service that is used in this project is also inside GCP and it is called Google Action. Google Action allows developers to create a complex conversation between users and agents (p. 16)."
+    },
+    {
+     "key": "heroku",
+     "label": "Heroku",
+     "status": "used",
+     "evidence": "Tech stack: Fulfillment Server (Heroku server) (p. 26)."
+    },
+    {
+     "key": "line_notify",
+     "label": "LINE Notify",
+     "status": "used",
+     "evidence": "the system will send a notification through Line notify to the store staff (p. 21)."
+    },
+    {
+     "key": "github",
+     "label": "GitHub",
+     "status": "used",
+     "evidence": "We set up a GitHub repository specifically for the project (p. 28)."
+    },
+    {
+     "key": "dialogflow",
+     "label": "Dialogflow",
+     "status": "cited",
+     "evidence": "Google Assistant itself had a voice application service called Dialogflow ... but Google deprecated it to open for Google Action (p. 16)."
+    }
+   ]
+  }
+ },
+ {
+  "id": "2136",
+  "canonical_title": "iLearn",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Pinky Shahi",
+    "student_id": "6135205"
+   },
+   {
+    "name": "Suchawan Chaiworn",
+    "student_id": "6135102"
+   },
+   {
+    "name": "Lipika Baniya",
+    "student_id": "6138108"
+   }
+  ],
+  "advisor": "A. Kiratijuta Bhumichitr",
+  "committee": [
+   "A. Chayapol Moemeng",
+   "A. Tapanan Yeophantong"
+  ],
+  "abstract": "Many companies want to gather data from their customers or users but are unable to do so, because they might be a small company. Big companies like Facebook and Google have enormous amounts of data about all their users but face many privacy issues and concerns. Small companies don't want enormous amounts of data but just enough to help with their research. That is the problem we're going to solve. As a solution, we will build a platform for companies to host surveys on a website and gather user's opinions and data. A web scraper will help gather images to display to the user while a search expansion will help analyze the user's responses and scrape better images to display while also increasing the accuracy. For our senior project, our system will scrape images from the internet, take survey answers from users as well as perform search expansion for higher accuracy and performance.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "mongodb",
+    "firebase",
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "market_research",
+     "label": "Market Research and Survey Data Collection",
+     "status": "used",
+     "evidence": "we will build a platform for companies to host surveys on a website and gather user's opinions and data (Abstract, p. 4)."
+    }
+   ],
+   "technology": [
+    {
+     "key": "selenium",
+     "label": "Selenium",
+     "status": "used",
+     "evidence": "the image scraper will navigate through the pages of a website using Selenium, a tool for browser automation (p. 6)."
+    },
+    {
+     "key": "chromedriver",
+     "label": "ChromeDriver",
+     "status": "used",
+     "evidence": "using Selenium, a tool for browser automation, and ChromeDriver, a tool to control Chrome (p. 6)."
+    },
+    {
+     "key": "beautifulsoup",
+     "label": "BeautifulSoup",
+     "status": "used",
+     "evidence": "With the help of BeautifulSoup, a Python library for pulling data out of HTML and XML files, we can look through the messy HTML data and extract the data we need (p. 7)."
+    },
+    {
+     "key": "scrapy",
+     "label": "Scrapy",
+     "status": "cited",
+     "evidence": "The first part is the web scraping solution which uses Scrapy, an open source and collaborative framework for extracting data from websites written in Python (related work [1], p. 4)."
+    },
+    {
+     "key": "django",
+     "label": "Django",
+     "status": "cited",
+     "evidence": "it developed a web service with Django, a framework for developing web applications using Python as base language (related work [1], p. 4)."
+    },
+    {
+     "key": "keras",
+     "label": "Keras",
+     "status": "cited",
+     "evidence": "The search expansion can be further worked on, for example, we can do image recognition on the existing data using Keras models and the ImageNet dataset (Conclusion, p. 14)."
+    },
+    {
+     "key": "imagenet",
+     "label": "ImageNet",
+     "status": "cited",
+     "evidence": "image recognition on the existing data using Keras models and the ImageNet dataset to find out more related keywords (Conclusion, p. 14)."
+    }
+   ]
+  }
+ },
+ {
+  "id": "2137",
+  "canonical_title": "AU Room Reservation: Smart Room Reservation Management for University",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CSX 3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Navamongkol Tongta",
+    "student_id": "6213387"
+   },
+   {
+    "name": "Voraruethai Chancharung",
+    "student_id": "6210109"
+   },
+   {
+    "name": "Krittin Vetpitak",
+    "student_id": "6213638"
+   }
+  ],
+  "advisor": "Dr. Songsak Channarukul",
+  "committee": [
+   "A. Chayapol Moemeng",
+   "A. Kiratijuta Bhumichitr"
+  ],
+  "abstract": "The purpose of the AU Room Reservation System is to manage booking details such as booking details and room details because, in the past, we discovered that the university used paper for faculty admin to book rooms, but it was quite difficult for ordinary students to book rooms for any study or project discussion, but the AU reservation system makes it easy for staff to book rooms on the website. Room and booking information can be easily recorded, checked, created, modified, and deleted by staff. AU Room Reservation is a smart room reservation management tool for universities that runs on three platforms: iOS, Android, and Web. It focuses on booking each student. An Android kiosk application for showing today's schedule in each room with a kiosk is another platform. The final platform is a web application platform for maintaining and checking any reservations, as well as managing each room and each booking..",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "ios",
+    "android",
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [],
+   "technology": [
+    "swift",
+    "firebase"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "kiosk",
+     "label": "Interactive Kiosk Console",
+     "status": "used",
+     "evidence": "An Android kiosk application for showing today's schedule in each room with a kiosk is another platform (Abstract, p. 3); kiosk displays timeslot and generates a QR Code to check-in (p. 1)."
+    }
+   ],
+   "domain": [],
+   "technology": [
+    {
+     "key": "xcode",
+     "label": "Xcode",
+     "status": "used",
+     "evidence": "The mobile application is developed by Swift 5.5.2 programming language using Xcode 13.2 (p. 11)."
+    },
+    {
+     "key": "android_studio",
+     "label": "Android Studio",
+     "status": "used",
+     "evidence": "Kiosk console is developed from android 10.1 using Android Studio for user part (p. 11)."
+    },
+    {
+     "key": "qr_code",
+     "label": "QR Code Check-In",
+     "status": "used",
+     "evidence": "The check-in function is a function to check if students actually use the room by scanning the QR code (p. 12)."
+    },
+    {
+     "key": "google_forms",
+     "label": "Google Forms",
+     "status": "used",
+     "evidence": "We use a Google form where consumers can rank their satisfaction on a scale of 1 to 5 (p. 30)."
+    },
+    {
+     "key": "meet_in_touch",
+     "label": "Meet In Touch",
+     "status": "cited",
+     "evidence": "One of the famous systems we will compare with is Meet In Touch. It is a reservation system setup in front of meeting rooms (p. 3)."
+    },
+    {
+     "key": "room_minister",
+     "label": "Room Minister",
+     "status": "cited",
+     "evidence": "Another system is Room Minister. It is also a room reservation system (p. 5)."
+    }
+   ]
+  }
+ },
+ {
+  "id": "2138",
+  "canonical_title": "AU Room Reservation: Smart Room Reservation Management for University",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CSX 3010 / ITX 3009",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Nutnisa Thongrussamee",
+    "student_id": "6213106"
+   },
+   {
+    "name": "Kasemdet Soommart",
+    "student_id": "6213639"
+   }
+  ],
+  "advisor": "Dr. Songsak Channarukul",
+  "committee": [
+   "A. Chayapol Moemeng",
+   "A. Kiratijuta Bhumichitr"
+  ],
+  "abstract": "The purpose of the AU Room Reservation System is to manage booking details such as booking details and room details because we discovered that the university used paper for faculty admin to book rooms, but it was quite difficult for students to book rooms for any study or project discussion, but the AU reservation system makes it easy for staff to manage room reservation management system via the web application. Room and booking information can be easily recorded, checked, created, modified, and deleted by staff. AU Room Reservation is the smart room reservation management system for Assumption university. It is used to manage and reserve a room in the university which it uses instead of paper-based reservation. For user platform, it is mainly focused on the student via the iOS and kiosk application. For the staff platform, there is a web application that staff can manage such as creating new rooms, setting rooms, or deleting rooms. Staff also can check the reservation history and manage the admin accounts via this application.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web",
+    "ios",
+    "android"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [],
+   "technology": [
+    "react"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "kiosk",
+     "label": "Kiosk / room-side display terminal",
+     "status": "used",
+     "evidence": "Section 1.1: 'Another platform is an Android kiosk application for displaying today's schedule in each room that has a kiosk.'"
+    }
+   ],
+   "domain": [],
+   "technology": [
+    {
+     "key": "html5",
+     "label": "HTML5",
+     "status": "used",
+     "evidence": "Section 3.2.4: 'built with the React framework 17.0.2 and HTML 5.'"
+    },
+    {
+     "key": "visual_studio",
+     "label": "Visual Studio",
+     "status": "used",
+     "evidence": "Section 3.2.4: 'Visual Studio is used to create the application, which is built with the React framework 17.0.2 and HTML 5.'"
+    },
+    {
+     "key": "qr_code",
+     "label": "QR code check-in",
+     "status": "used",
+     "evidence": "Section 1.4: 'check-in which scans the QR code for using the room. The second is a kiosk application that is generated a QR code for check-in and display timeslot.'"
+    },
+    {
+     "key": "google_forms",
+     "label": "Google Forms",
+     "status": "used",
+     "evidence": "Section 4.2: 'We use the google form that users can rate scored satisfaction from 1 to 5'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2140",
+  "canonical_title": "AU TOKEN: Smart Tokens for Assumption University Using Blockchain",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Sanpawat Sewsuwan",
+    "student_id": "6113187"
+   },
+   {
+    "name": "Saharat Tiewkunupakan",
+    "student_id": "6114520"
+   },
+   {
+    "name": "Thanapol Sopanhari",
+    "student_id": "6113632"
+   }
+  ],
+  "advisor": "A. Kiratijuta Bhumichitr",
+  "committee": [
+   "Dr Songsak Channarukul",
+   "A Chayapol Moemeng"
+  ],
+  "abstract": "Students have an explicit goal in mind when studying. Even so, they are probably lost toward the destination. Besides, they sometimes lose motivation for some subjects or do not fully enjoy the student life due to the excessive focus on the goal. From the institution's perspective, recruiting the staff for some activities is also challenging if students are not wholeheartedly joyful. With all the spotted problems, the virtual currencies that can incentivize students to put more effort and act as a sub-goal to regain the motivation are tremendously necessary.\n\nAU Token, known as ATK, is an education application built on Hyperledger Fabric to establish the infrastructure of permissioned blockchain. It aims to provide the virtual currencies system and serve as a foundation for further applications. ATK has two tokens: Academic token, known as ACA, and lifestyle token, known as LIF. These two can be used to purchase the privilege capable of improving student life experience using the ATK for Student in iOS platform to interact with the blockchain. To fulfill the transparency and trustworthy characteristics, ATK provides ATK Explorer to display transactions happening in the system. Furthermore, for ease of governing, ATK provides ATK Admin to the concerned party of the university to manage the privileges and token distribution.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "ios",
+    "web"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [
+    "gamification"
+   ],
+   "technology": [
+    "swift",
+    "nodejs",
+    "react"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "tokenomics",
+     "label": "Tokenomics / campus virtual economy",
+     "status": "used",
+     "evidence": "Section 3.1: 'ATK is a multi-token system that establishes the virtual economic ecosystem with the intent to be deployed in Assumption University.'"
+    }
+   ],
+   "technology": [
+    {
+     "key": "hyperledger_fabric",
+     "label": "Hyperledger Fabric",
+     "status": "used",
+     "evidence": "Section 1.2: 'ATK stands for AU Token, which is an education application using Hyperledger Fabric as a permissioned blockchain.'"
+    },
+    {
+     "key": "typescript",
+     "label": "TypeScript",
+     "status": "used",
+     "evidence": "Section 4.1: 'The second part is the API services that interact with the blockchain. These components use NodeJS and TypeScript as a tech stack.'"
+    },
+    {
+     "key": "dotnet",
+     "label": ".NET 6",
+     "status": "used",
+     "evidence": "Section 4.1: 'The frameworks used to implement are .NET 6 and SQL Server.'"
+    },
+    {
+     "key": "sql_server",
+     "label": "Microsoft SQL Server",
+     "status": "used",
+     "evidence": "Section 4.4.2: 'ATK uses Microsoft SQL Server as the off-chain database.'"
+    },
+    {
+     "key": "couchdb",
+     "label": "Apache CouchDB",
+     "status": "used",
+     "evidence": "Section 2.2.1.1: 'In spite of that, ATK utilizes CouchDB since the business logic is not simple enough only to use LevelDB.'"
+    },
+    {
+     "key": "raft",
+     "label": "Raft consensus protocol",
+     "status": "used",
+     "evidence": "Section 2.2.2: 'For our blockchain application, we use Raft protocol for the ordering service'"
+    },
+    {
+     "key": "docker",
+     "label": "Docker",
+     "status": "used",
+     "evidence": "Section 5.1.2: 'The performance testing is performed on the docker in localhost.'"
+    },
+    {
+     "key": "leveldb",
+     "label": "LevelDB",
+     "status": "cited",
+     "evidence": "Section 2.2.1.1: 'LevelDB is a fast key-value storage library written at Google... By default, the world state uses this database for storing the state' (evaluated, not adopted; ATK chose CouchDB)"
+    },
+    {
+     "key": "kafka",
+     "label": "Apache Kafka",
+     "status": "cited",
+     "evidence": "Section 2.2: 'they can change the consensus protocols, including Raft or Apache Kafka' (discussed alternative only)"
+    },
+    {
+     "key": "ethereum",
+     "label": "Ethereum / ERC-20",
+     "status": "cited",
+     "evidence": "Section 3.1.1: 'the token has an equivalent standard as an ERC20 token, a fungible token standard of Ethereum base'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2141",
+  "canonical_title": "CV Exercise Coach",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Yuxiao Chen",
+    "student_id": "6118492"
+   },
+   {
+    "name": "Zijian Zhou",
+    "student_id": "6128492"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "A. Tapanan Yeophantong",
+   "A. Pawut Satitsuksanoh"
+  ],
+  "abstract": "In this project, after the camera is connected and recognized, we collect the skeleton point data through OpenPose and compare it with the data of the standard action x. If the difference between the user's skeleton point data and the data of the standard action x is not large, it is determined to be successful and counted successfully. If there is a large gap between the user's skeleton point data and the standard action x's data, it will be judged as failure and the failure will be counted. Users can choose the one they want to try among the 4 sports, enter the target success count, and display the success count and failure count after completing the success counts.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "healthcare"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "python",
+    "opencv",
+    "mysql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "fitness",
+     "label": "Fitness and exercise coaching",
+     "status": "used",
+     "evidence": "Section 1.2: 'The project should contain 4 sports (squat, lunges, bench and push up).'"
+    }
+   ],
+   "technology": [
+    {
+     "key": "openpose",
+     "label": "OpenPose",
+     "status": "used",
+     "evidence": "Section 2.2: 'For skeletal recognition, we choose OpenPose to help us.'"
+    },
+    {
+     "key": "pyqt",
+     "label": "PyQt",
+     "status": "used",
+     "evidence": "Section 2.2: 'For UI, we choose PyQt to help us.'"
+    },
+    {
+     "key": "pyinstaller",
+     "label": "PyInstaller",
+     "status": "used",
+     "evidence": "Section 3.1: 'Package them all with Pyinstaller.'"
+    },
+    {
+     "key": "caffe",
+     "label": "Caffe",
+     "status": "used",
+     "evidence": "Section 3.2: 'Then install pybind, caffe, cuda, and use the visual studio to create an OpenPose demo.'"
+    },
+    {
+     "key": "cuda",
+     "label": "CUDA",
+     "status": "used",
+     "evidence": "Section 3.2: 'Then install pybind, caffe, cuda, and use the visual studio to create an OpenPose demo.'"
+    },
+    {
+     "key": "cmake",
+     "label": "CMake",
+     "status": "used",
+     "evidence": "Section 3.2: 'Then we use the CMake to add environment variables.'"
+    },
+    {
+     "key": "visual_studio",
+     "label": "Visual Studio",
+     "status": "used",
+     "evidence": "Section 3.2: 'use the visual studio to create an OpenPose demo'"
+    },
+    {
+     "key": "mediapipe",
+     "label": "MediaPipe",
+     "status": "cited",
+     "evidence": "Section 2.1.3: 'Use mediapipe and OpenCV that tracks Push-ups with angles' (related work)"
+    },
+    {
+     "key": "st_gcn",
+     "label": "ST-GCN (spatio-temporal graph convolutional network)",
+     "status": "cited",
+     "evidence": "Section 2.1.5: 'Use ST-GCN to do the human realization of human movement recognition' (related work, abandoned)"
+    },
+    {
+     "key": "coco",
+     "label": "COCO dataset",
+     "status": "cited",
+     "evidence": "Section 2.1.2: 'Here he used pose_hrnet_w48_256*192 pretrained on COCO dataset with 17 joints.' (related work)"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2142",
+  "canonical_title": "Thai Fake News Checker Chrome Extension",
+  "aliases": [
+   "Thai Fake News Checker: Chrome Extension",
+   "Thai Fake News Checker"
+  ],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Perawat Wongkrit",
+    "student_id": "6010603"
+   }
+  ],
+  "advisor": "Dr Chayapol Moemeng",
+  "committee": [
+   "Dr Kwankamol Nongpong",
+   "Dr Rachsuda Setthawong"
+  ],
+  "abstract": "Fake news has caused many problems around the world that lead to many people have become a victim of this seemingly uncontrollable problem. What's make fake news so dangerous is that anyone can post it especially in this covid-19 situation where the trend of the increasing of number of people who use internet. Many people tried to prevent these fake news problems and contain it to be as minimal as possible including the Government. Thailand Government's ministry of digital economy and society has created a website called antifakenewscenter.com which contain all fake news and real news that has been confirmed by the Government ministry, but it has some minor problems such as unable to handle fuzzy matching and hard to use. After seeing these problems, I decided to create a solution for people who find it hard to use the service provided by the ministry. My service is an google chrome extension that help checking Thai fake news using the data from antifakenewscenter.com We use google chrome extension because of two reasons. First due to, people can easily install the extension into their chrome client and use our service. And secondly, majority of Thailand population are using google chrome as their main browser.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [
+    "nlp"
+   ],
+   "technology": [
+    "python",
+    "flask",
+    "firebase"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "browser_extension",
+     "label": "Browser extension (Chrome)",
+     "status": "used",
+     "evidence": "\"My service is an google chrome extension that help checking Thai fake news using the data from antifakenewscenter.com\" (Abstract, p.5)"
+    }
+   ],
+   "domain": [],
+   "technology": [
+    {
+     "key": "scikit_learn",
+     "label": "scikit-learn",
+     "status": "used",
+     "evidence": "\"We use sci-kit learn library helping me on this regard. Sci-kit learn allowing me TF-IDF vectorizer and Count vectorizer library to do experiment\" (Section 3.3, p.12)"
+    },
+    {
+     "key": "pythainlp",
+     "label": "PyThaiNLP",
+     "status": "used",
+     "evidence": "\"we use PyThaiNlp to get Thai stop words list and use it to filter out Thai stop words from news headline\" (Section 3.4, p.13)"
+    },
+    {
+     "key": "rapidfuzz",
+     "label": "RapidFuzz",
+     "status": "used",
+     "evidence": "\"we also included others two distance finding algorithms which are Jaccard index and Rapidfuzz\" (Section 3.3, p.12)"
+    },
+    {
+     "key": "heroku",
+     "label": "Heroku",
+     "status": "used",
+     "evidence": "\"For hosting our API, we use Heroku.\" (Section 3.5, p.14)"
+    },
+    {
+     "key": "javascript",
+     "label": "JavaScript",
+     "status": "used",
+     "evidence": "\"Google chrome extension worked by using html with JavaScript to handle front-end.\" (Section 3.7, p.15)"
+    },
+    {
+     "key": "html",
+     "label": "HTML",
+     "status": "used",
+     "evidence": "\"Google chrome extension worked by using html with JavaScript to handle front-end.\" (Section 3.7, p.15)"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2145",
+  "canonical_title": "WiFi-based Occupancy Sensor",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Shizhu Bao",
+    "student_id": "6118444"
+   },
+   {
+    "name": "Suppachai Wongsrinoppakun",
+    "student_id": "6010525"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "Dr. Kwankamol Nongpong",
+   "A. Piyakul Tillapart"
+  ],
+  "abstract": "Real-time estimations of the presence of people in a space can help administrators better manage a space, save unnecessary costs, and provide better services. In this paper, we propose a technique to estimate the number of mobile devices in a certain place at a certain time through the Wi-Fi probe request issued by the device with a wireless network function, so as to judge whether there is a person in the place. Compared with the method using camera detection, the cost of this method is lower, and the privacy of people in the venue can be better protected. We also provide a front-end page that makes it easier for administrators to view real-time or period data reports. It also supports real-time notification of administrators when certain conditions are triggered, such as when the number of people exceeds so that corresponding measures can be carried out.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "hardware_iot"
+   ],
+   "platform": [
+    "raspberry_pi",
+    "embedded_hardware",
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [
+    "geolocation"
+   ],
+   "technology": [
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "scapy",
+     "label": "Scapy",
+     "status": "used",
+     "evidence": "\"we used Scapy, a python program that allows us to probe Wi-Fi networks for packets\" (Section 3.4, p.19)"
+    },
+    {
+     "key": "kali_linux",
+     "label": "Kali Linux",
+     "status": "used",
+     "evidence": "\"we used a Raspberry Pi 4 Model B, running on Kali-Linux ARM 64-bit image\" (Section 2.4, p.13)"
+    },
+    {
+     "key": "tp_link_tl_wn722n",
+     "label": "TP-Link TL-WN722N wireless USB adapter",
+     "status": "used",
+     "evidence": "\"we used the TL-WN722N V.3.20 150Mbps High Gain Wireless USB Adapter by TP-Link\" (Section 2.4, p.13)"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2146",
+  "canonical_title": "IR-Based Occupancy Sensor",
+  "aliases": [
+   "IR Based Occupancy Sensor"
+  ],
+  "phase": "final",
+  "course_code": null,
+  "program": null,
+  "semester": null,
+  "academic_year": null,
+  "students": [
+   {
+    "name": "Vibolrottanak Seng",
+    "student_id": "6118173"
+   },
+   {
+    "name": "Vibolrottana Seng",
+    "student_id": "6217429"
+   }
+  ],
+  "advisor": null,
+  "committee": [],
+  "abstract": "The project designed and built a low-cost occupancy monitoring system using an 8x8 pixel AMG8833 IR thermal sensor, which preserves privacy because it senses people by body heat rather than cameras. Temperature data from the sensor was read with an AMG8833 Python library and saved as JSON, then used to train a machine learning model with scikit-learn. The system runs on a microcontroller with the sensor, visualizes the room as a heatmap, and serves a Flask web interface that records data to Firebase Realtime Database. It displays low, medium, and high occupancy levels and shows an alert when occupancy reaches the maximum. Testing at the Baksters office reported 98 to 100 percent accuracy for indoor temperatures between 21 and 31 degrees Celsius when people passing at average walking speed measured above 35 degrees. The main limitation is that it is still hard to distinguish a human from a moving heat source.",
+  "abstract_source": "generated",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "hardware_iot",
+    "ai_data"
+   ],
+   "platform": [
+    "embedded_hardware",
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "python",
+    "flask",
+    "firebase"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "amg8833",
+     "label": "AMG8833 IR thermal camera sensor",
+     "status": "used",
+     "evidence": "\"IR Thermal Camera Sensor - AMG8833\" (p.11) and \"we tested on the amg8833 python library\" (p.15)"
+    },
+    {
+     "key": "scikit_learn",
+     "label": "scikit-learn",
+     "status": "used",
+     "evidence": "\"use the scikit learn library and call joblib function in order to write data as json file\" (Data Processing, p.16)"
+    },
+    {
+     "key": "joblib",
+     "label": "joblib",
+     "status": "used",
+     "evidence": "\"use the scikit learn library and call joblib function in order to write data as json file\" (Data Processing, p.16)"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2147",
+  "canonical_title": "A New Recipe Discovery Experience",
+  "aliases": [
+   "RecipeDia - A New Recipe Discovery Experience",
+   "Recipedia"
+  ],
+  "phase": "final",
+  "course_code": "IT4291",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Nawaneet Upadhya",
+    "student_id": "6035202"
+   },
+   {
+    "name": "Daniel M. Porter",
+    "student_id": "5837588"
+   }
+  ],
+  "advisor": "Dr. Khaing Sandar Htun",
+  "committee": [
+   "Dr. Paitoon Porntrakoon",
+   "Dr. Darun Kesrarat"
+  ],
+  "abstract": "This project is aimed at developing a website that suggests recipes to the user based on the ingredients the user has indicated that they have. Users can create and log into their own personal accounts and their personal database will be created which contains all the information regarding the ingredients they have selected. Once they have logged in, the user is able to indicate what ingredients they currently have. Once they have finished selecting all the ingredients that they have, the website will then show a list of all the dishes that are able to be made from the ingredients that the user has indicated they have.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [
+    "recommender_system"
+   ],
+   "technology": [
+    "firebase"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "food_and_cooking",
+     "label": "Food and Cooking",
+     "status": "used",
+     "evidence": "Abstract p.4: a website that suggests recipes to the user based on the ingredients the user has; body repeatedly discusses pantry tracking and dish suggestions"
+    }
+   ],
+   "technology": [
+    {
+     "key": "flutter",
+     "label": "Flutter",
+     "status": "used",
+     "evidence": "Chapter 4 p.20: we used the Flutter SDK created by Google"
+    },
+    {
+     "key": "dart",
+     "label": "Dart",
+     "status": "used",
+     "evidence": "Chapter 4 p.20: And Dart Programming language to code in Flutter"
+    },
+    {
+     "key": "cloud_firestore",
+     "label": "Cloud Firestore",
+     "status": "used",
+     "evidence": "Chapter 4 p.20: Firebase Firestore as Database"
+    },
+    {
+     "key": "firebase_auth",
+     "label": "Firebase Authentication",
+     "status": "used",
+     "evidence": "Chapter 4 p.20: Firebase Auth for Login, Signup & Forgot password"
+    },
+    {
+     "key": "adobe_xd",
+     "label": "Adobe XD",
+     "status": "used",
+     "evidence": "Section 5.3.3 p.27: Using AdobeXD, we were able to create a UI model of the website"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2149",
+  "canonical_title": "AU AR World",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CSX 3010",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Sakar Karmacharya",
+    "student_id": "6218332"
+   },
+   {
+    "name": "Saranya Sangsuk-iem",
+    "student_id": "6237407"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "A. Tapanan Yeophantong",
+   "Asst. Prof. Dr. Benjawan Srisura"
+  ],
+  "abstract": "In this report we discuss the purpose behind the project we have chosen, the methods used, the implications applied and the results we have acquired for our senior project 1. Throughout the years, we have seen students of ABAC building many projects for the university, but not all of them have been an engaging project targeting the visitors of ABAC and also realizing very few have used the concept of Augmented Reality, we saw this as an opportunity to build something in this concentration. Using tools such as Lightship Augmented Reality Developer Kit (ARDK), which gives developers the tools they need to create immersive, multiplayer experiences and bring them to life in the real world, and Unity Game Engine, which is a beginner friendly tool that can be used to create three-dimensional (3D) and two-dimensional (2D) games, as well as interactive simulations and other experiences, for this project we created three interactive games which could be played in three different locations of Assumption University, Bangna Campus.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "game"
+   ],
+   "platform": [
+    "android"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [
+    "geolocation"
+   ],
+   "technology": [
+    "unity"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "augmented_reality",
+     "label": "Augmented Reality",
+     "status": "used",
+     "evidence": "Section 4.1.2: Use Lightship ARDK for AR development; Chapter 5 shows the three AR mini-games running at Bangna campus locations"
+    },
+    {
+     "key": "lightship_ardk",
+     "label": "Niantic Lightship ARDK",
+     "status": "used",
+     "evidence": "Section 3.1.2 and 4.1.2: Lightship Augmented Reality Developer Kit (ARDK) ... Use Lightship ARDK for AR development"
+    },
+    {
+     "key": "native_gps_plugin",
+     "label": "Native GPS Plugin (Unity Asset Store)",
+     "status": "used",
+     "evidence": "Section 4.1.2: Use Native GPS Plugin for finding the current position of the player"
+    },
+    {
+     "key": "android_sdk",
+     "label": "Android SDK",
+     "status": "used",
+     "evidence": "Section 3.1.4: we use Android SDK for exporting .aab and upload to google play console for google play store"
+    },
+    {
+     "key": "google_play_console",
+     "label": "Google Play Console",
+     "status": "used",
+     "evidence": "Figure 4.3: Google Play Console shows the game is approved"
+    },
+    {
+     "key": "arkit",
+     "label": "ARKit",
+     "status": "cited",
+     "evidence": "Section 2.2 related work: Alien Invaders is powered by the ARKit framework"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2203",
+  "canonical_title": "Deliverit: An Android Application for Truck Delivery Service.",
+  "aliases": [
+   "Deliverit : An android Application for Truck Delivery Services"
+  ],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Afif Mansib Chowdhury",
+    "student_id": "6028129"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Paitoon Porntrakoon",
+  "committee": [
+   "A. Chayapol Moemeng",
+   "Asst. Prof. Dr. Anilkumar Kothalil"
+  ],
+  "abstract": "Not to mention Nowadays Mobile Applications have become a daily part of our lives. When it comes to delivery of any type, applications have become a necessity. It is pretty common for people to use apps for ordering food, travelling and moving in and out of houses. That's where my app comes in. My App Deliverit is a mobile Application that helps people do deliveries from places. It not only helps people have types of truck services but is a way for private drivers to make an extra income. Big industries can use my application for properly maintaining their vehicles for delivery as well.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "android"
+   ],
+   "domain": [
+    "transportation"
+   ],
+   "topic": [
+    "geolocation"
+   ],
+   "technology": [
+    "java",
+    "firebase"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "logistics",
+     "label": "Logistics and Trucking",
+     "status": "used",
+     "evidence": "Chapter 7: Deliverit is going to change how logistics companies work; the app connects truck drivers with delivery customers"
+    }
+   ],
+   "technology": [
+    {
+     "key": "android_studio",
+     "label": "Android Studio",
+     "status": "used",
+     "evidence": "Chapter 4: I have used Android Studio with Java Throughout the development process"
+    },
+    {
+     "key": "firebase_realtime_database",
+     "label": "Firebase Realtime Database",
+     "status": "used",
+     "evidence": "Section 4.2: The Firebase Realtime Database is a NoSQL Database ... data is stored ... in Firebase Realtime DB and Json objects"
+    },
+    {
+     "key": "firebase_storage",
+     "label": "Firebase Storage",
+     "status": "used",
+     "evidence": "Section 4.2: Firebase Storage is developed to be simple, easy to understand and efficient in the use of bandwidth"
+    },
+    {
+     "key": "google_maps",
+     "label": "Google Maps API",
+     "status": "used",
+     "evidence": "Section 4.1: In the Backend is Also Running my Google Maps API which I use for functionalities inside the application"
+    },
+    {
+     "key": "google_cloud_platform",
+     "label": "Google Cloud Platform",
+     "status": "used",
+     "evidence": "Section 4.2: Deliverit is a cloudDB with NoSQL. It is on Google cloud Platform"
+    },
+    {
+     "key": "gradle",
+     "label": "Gradle",
+     "status": "used",
+     "evidence": "Figure 5.3.7: Gradle Settings File for Firebase Connection"
+    }
+   ]
+  }
+ }
+]

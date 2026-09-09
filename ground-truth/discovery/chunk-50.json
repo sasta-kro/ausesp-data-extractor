@@ -1,0 +1,406 @@
+[
+ {
+  "id": "25105",
+  "canonical_title": "Bankify: Secure Payment and Ledger Platform for Academic Applications",
+  "aliases": [
+   "Bankify: Open payment API and Banking Core System"
+  ],
+  "phase": "final",
+  "course_code": "CSX3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Chanyanut Pumasri",
+    "student_id": "6620025"
+   },
+   {
+    "name": "Phanthira Kositjaroenkul",
+    "student_id": "6630003"
+   },
+   {
+    "name": "Siva Paoren",
+    "student_id": "6630064"
+   }
+  ],
+  "advisor": "Chayapol Moemeng",
+  "committee": [
+   "Asst. Prof. Dr. Paitoon Porntrakoon",
+   "Jinchun Lu"
+  ],
+  "abstract": "Bankify is a banking service platform developed to process transactions securely through a centralized core system built on a double-entry ledger. Each transaction is recorded in a structured and traceable manner, helping maintain financial accuracy and accountability. The project was created in response to a recurring issue in student and small-scale applications, where payment features are often replaced with simple simulations or implemented through third-party gateways that are costly and difficult to access. As a result, many projects lack realistic and secure financial workflows.\n\nThe system functions as an API-driven campus payment core that allows external applications to integrate payment capabilities in a consistent and controlled way. Transaction handling is designed to remain reliable, even when requests are repeated, ensuring stable processing. An administrative dashboard enables transaction monitoring and review of system activity. In addition, a demo ATM interface is included to simulate common banking actions such as deposits, withdrawals, and balance inquiries, all connected through secure API communication to the core system.\n\nThe goal of Bankify is to provide a reusable and auditable payment backbone that reduces the need for each project to build its own financial module. By offering a centralized and standardized infrastructure, the platform improves consistency across applications while supporting hands-on learning in financial technology. Through this approach, Bankify encourages secure development practices and prepares students for real-world banking and payment system environments.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "finance"
+   ],
+   "topic": [],
+   "technology": [
+    "java",
+    "postgresql",
+    "react"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "spring_boot",
+     "label": "Spring Boot",
+     "status": "used",
+     "evidence": "'The backend is built using Spring Boot and uses PostgreSQL for data storage' (Sec 1.2, p.8); Table 13 lists Spring Boot as backend framework"
+    },
+    {
+     "key": "redis",
+     "label": "Redis",
+     "status": "used",
+     "evidence": "'Redis is used to improve performance through caching' (Sec 3.1.3, p.11)"
+    },
+    {
+     "key": "rabbitmq",
+     "label": "RabbitMQ",
+     "status": "used",
+     "evidence": "'RabbitMQ supports asynchronous event processing such as webhook delivery' (Sec 3.1.3, p.11)"
+    },
+    {
+     "key": "docker",
+     "label": "Docker",
+     "status": "used",
+     "evidence": "'Docker was used to run system components such as PostgreSQL, Redis, and RabbitMQ in isolated containers' (Sec 3.1.6, p.13)"
+    },
+    {
+     "key": "tailwind_css",
+     "label": "Tailwind CSS",
+     "status": "used",
+     "evidence": "'The frontend administrative dashboard was developed using React and Tailwind CSS' (Sec 3.1.6, p.13)"
+    },
+    {
+     "key": "amazon_web_services",
+     "label": "Amazon Web Services (AWS)",
+     "status": "used",
+     "evidence": "'The Bankify system follows a layered architecture deployed on AWS cloud infrastructure' (Sec 4.2.2, p.26)"
+    },
+    {
+     "key": "github",
+     "label": "GitHub / Git",
+     "status": "used",
+     "evidence": "'Version control for the project was managed using Git and GitHub' (Sec 3.1.6, p.13)"
+    },
+    {
+     "key": "json_web_token",
+     "label": "JSON Web Token (JWT)",
+     "status": "used",
+     "evidence": "'Secure authentication using JSON Web Tokens (JWT)' and 'Role-based access control' (Sec 3.1.3, p.11)"
+    },
+    {
+     "key": "apache_fineract",
+     "label": "Apache Fineract",
+     "status": "cited",
+     "evidence": "'Apache Fineract is an open-source core banking platform... deployment and configuration are complex' (Related Work 2.3, p.9)"
+    },
+    {
+     "key": "open_banking",
+     "label": "Open Banking APIs",
+     "status": "cited",
+     "evidence": "'Open Banking UK defines secure API standards that licensed institutions must follow' (Related Work 2.1, p.9)"
+    }
+   ]
+  }
+ },
+ {
+  "id": "25113",
+  "canonical_title": "Payme.gg - Streamer Donation Platform",
+  "aliases": [
+   "Payme.gg - Streamer Donation Application"
+  ],
+  "phase": "final",
+  "course_code": "CSX 3011",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Panuphong Burakitphachai",
+    "student_id": "6410521"
+   },
+   {
+    "name": "Nitipoom Aumpitak",
+    "student_id": "6420061"
+   },
+   {
+    "name": "Bhurichaya Thuraphan",
+    "student_id": "6420134"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Darun Kesrarat",
+  "committee": [
+   "A. Jinchun Lu",
+   "Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan"
+  ],
+  "abstract": "The growth of the creator economy in Thailand has increased the demand for platforms that allow content creators to receive viewer support quickly, conveniently, and with low transaction friction. However, existing donation platforms often impose high commission fees, delay payouts, provide limited support for Thai payment methods, and offer weak engagement features for live streaming.\n\nThis project presents Payme, a unified donation and monetization platform designed specifically for Thai content creators and streamers. Payme is developed as a full-stack web platform that supports local payment channels such as PromptPay, TrueMoney and Bank Transfer, allowing streamers to receive payments more directly and with lower friction than traditional global platforms. In addition to payment collection, the platform provides a customizable donation page editor, real-time OBS widgets, animated gift interactions, analytics tools, and interactive stream plugins such as a stream marathon timer. These features are intended to improve both streamer monetization and viewer engagement.\n\nFrom the implementation perspective, the system consists of a web-based dashboard, a public donation page, real-time communication services, and supporting backend services for payment verification and event processing. The project demonstrates how a localized platform can better serve Thai streamers by combining familiar payment methods with modern live-stream engagement tools. The result is a platform concept that aims to reduce platform dependency, shorten payout time, and create a more interactive donation experience for both streamers and viewers.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [],
+   "technology": [
+    "nextjs",
+    "postgresql",
+    "react"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "creator_economy",
+     "label": "Creator Economy / Streaming Monetization",
+     "status": "used",
+     "evidence": "'The growth of the creator economy in Thailand has increased the demand for platforms that allow content creators to receive viewer support' (Abstract, p.3)"
+    }
+   ],
+   "technology": [
+    {
+     "key": "elysia",
+     "label": "ElysiaJS",
+     "status": "used",
+     "evidence": "Reference [12] 'ElysiaJS, Elysia: Ergonomic Framework for Humans' listed among the project's stack references (p.28)"
+    },
+    {
+     "key": "drizzle_orm",
+     "label": "Drizzle ORM",
+     "status": "used",
+     "evidence": "Reference [14] 'Drizzle Team, Drizzle ORM: TypeScript ORM That Lets You Just Write SQL' (p.28)"
+    },
+    {
+     "key": "zustand",
+     "label": "Zustand",
+     "status": "used",
+     "evidence": "Reference [17] 'Zustand: Bear Necessities for State Management in React' (p.28)"
+    },
+    {
+     "key": "better_auth",
+     "label": "BetterAuth",
+     "status": "used",
+     "evidence": "Reference [18] 'BetterAuth: Authentication for the Modern Web' (p.28)"
+    },
+    {
+     "key": "google_cloud_text_to_speech",
+     "label": "Google Cloud Text-to-Speech",
+     "status": "used",
+     "evidence": "Reference [16] 'Google Cloud, Cloud Text-to-Speech: AI-Powered Speech Synthesis'; scope includes 'Text-to-speech (TTS) functionality for donation messages' (p.8)"
+    },
+    {
+     "key": "obs_studio",
+     "label": "OBS Studio widgets",
+     "status": "used",
+     "evidence": "'real-time OBS widgets' and 'OBS-compatible real-time widgets for live stream donation display' (Abstract, p.3; Scope, p.7)"
+    },
+    {
+     "key": "promptpay",
+     "label": "PromptPay",
+     "status": "used",
+     "evidence": "'supports local payment channels such as PromptPay, TrueMoney and Bank Transfer' (Abstract, p.3)"
+    },
+    {
+     "key": "truemoney_wallet",
+     "label": "TrueMoney Wallet",
+     "status": "used",
+     "evidence": "'local payment methods such as PromptPay, TrueMoney and Bank Transfer' (Sec 1.1, p.6)"
+    },
+    {
+     "key": "stripe",
+     "label": "Stripe",
+     "status": "cited",
+     "evidence": "Reference [19] 'Stripe, Stripe API Reference: Online Payment Processing' (p.28)"
+    }
+   ]
+  }
+ },
+ {
+  "id": "25116",
+  "canonical_title": "Kiddee Lab Customer Relationship Management System",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "ITX3010/CSX3011",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Sai Aik Sei Mouk",
+    "student_id": "6520057"
+   },
+   {
+    "name": "Noel Paing Oak Soe",
+    "student_id": "6530183"
+   },
+   {
+    "name": "Khin Myo Aye",
+    "student_id": "6540211"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Darun Kesrarat",
+  "committee": [
+   "A. Tianai Tang",
+   "Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan"
+  ],
+  "abstract": "This project presents the development of a web-based registration management system designed to improve administrative efficiency in class scheduling and operational management at Kiddee Lab Company, a STEAM education center that provides coding, robotics, and technology courses for children. The system aims to reduce manual workload by providing a centralized platform that integrates class scheduling, attendance management, billing processes, and customer relationship management (CRM).\n\nThe application enables registrars to schedule classes automatically without manually verifying classroom availability or instructor schedules. Teachers can record student attendance and provide feedback digitally, replacing traditional paper-based documentation. The system also includes an integrated billing module that supports invoice generation, payment processing, and receipt issuance. Additionally, managerial users are provided with statistical reports to support business performance analysis and revenue monitoring.\n\nTo enhance customer interaction, the system integrates CRM functionality with the LINE application, allowing customers of Kiddee Lab to access class schedules and receive daily feedback conveniently. The implementation of this system reduces scheduling conflicts, improves administrative accuracy, and streamlines operational processes, thereby establishing a scalable and centralized digital foundation for future organizational development at Kiddee Lab Company.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [
+    "ocr"
+   ],
+   "technology": [
+    "nextjs",
+    "nodejs",
+    "postgresql",
+    "react"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "nestjs",
+     "label": "NestJS",
+     "status": "used",
+     "evidence": "'NestJS 11 Backend framework for building scalable Node.js server applications' (Technology Used, Backend, p.54)"
+    },
+    {
+     "key": "typescript",
+     "label": "TypeScript",
+     "status": "used",
+     "evidence": "'TypeScript Enables type-safe development and better maintainability' (Technology Used, p.53)"
+    },
+    {
+     "key": "typeorm",
+     "label": "TypeORM",
+     "status": "used",
+     "evidence": "'TypeORM Object-Relational Mapping tool for interacting with the database' (Technology Used, Backend, p.54)"
+    },
+    {
+     "key": "tailwind_css",
+     "label": "Tailwind CSS",
+     "status": "used",
+     "evidence": "'Tailwind CSS v4 Utility-first CSS framework for responsive UI styling' (Technology Used, Frontend, p.53)"
+    },
+    {
+     "key": "shadcn_ui",
+     "label": "shadcn/ui (Radix UI)",
+     "status": "used",
+     "evidence": "'shadcn/ui (Radix UI) Component library for accessible and customizable UI components' (Technology Used, Frontend, p.53)"
+    },
+    {
+     "key": "tanstack_query",
+     "label": "TanStack Query",
+     "status": "used",
+     "evidence": "'TanStack Query v5 Server-state management and efficient data fetching' (Technology Used, Frontend, p.53)"
+    },
+    {
+     "key": "line_messaging_api",
+     "label": "LINE Messaging API / LINE Bot SDK",
+     "status": "used",
+     "evidence": "'LINE Bot SDK Integration with LINE Messaging API for chatbot and webhook handling' (Technology Used, Backend, p.54)"
+    },
+    {
+     "key": "line_liff",
+     "label": "LINE LIFF (LINE Front-end Framework)",
+     "status": "used",
+     "evidence": "'LINE LIFF SDK Enables integration with LINE's embedded web app platform' (Technology Used, Frontend, p.53)"
+    },
+    {
+     "key": "google_gemini_vision",
+     "label": "Google Gemini Vision",
+     "status": "used",
+     "evidence": "'the final system adopted Google Gemini Vision as the primary extraction engine' (Sec 3.4.2, p.18)"
+    },
+    {
+     "key": "neon",
+     "label": "Neon Serverless PostgreSQL",
+     "status": "used",
+     "evidence": "'Neon Serverless PostgreSQL database hosting' (Infrastructure & DevOps, p.56); 'reading/writing data to a Neon (PostgreSQL) database' (Sec 4.4, p.52)"
+    },
+    {
+     "key": "docker",
+     "label": "Docker",
+     "status": "used",
+     "evidence": "'Docker Containerizes the backend application for consistent deployment' (Infrastructure & DevOps, p.56)"
+    },
+    {
+     "key": "nginx",
+     "label": "Nginx",
+     "status": "used",
+     "evidence": "'Nginx Acts as a reverse proxy and handles HTTPS routing' (Infrastructure & DevOps, p.56)"
+    },
+    {
+     "key": "amazon_web_services",
+     "label": "Amazon Web Services (EC2, S3)",
+     "status": "used",
+     "evidence": "'AWS EC2 Hosts the backend API server' and 'AWS SDK (S3) Uploading and retrieving files from AWS S3 storage' (pp.54-55)"
+    },
+    {
+     "key": "vercel",
+     "label": "Vercel",
+     "status": "used",
+     "evidence": "'Vercel Alternative hosting platform for the frontend application' (Infrastructure & DevOps, p.56)"
+    },
+    {
+     "key": "jest",
+     "label": "Jest",
+     "status": "used",
+     "evidence": "'Jest Framework for unit and integration testing' (Development Tools, p.56)"
+    },
+    {
+     "key": "google_document_ai",
+     "label": "Google Cloud Document AI",
+     "status": "used",
+     "evidence": "'Google Cloud Document AI Advanced document processing and OCR pipeline' listed in Backend Technologies (p.55)"
+    },
+    {
+     "key": "aws_textract",
+     "label": "AWS Textract",
+     "status": "used",
+     "evidence": "'AWS Textract Optical Character Recognition (OCR) for extracting text from documents' listed in Backend Technologies (p.55)"
+    },
+    {
+     "key": "paddle_ocr",
+     "label": "Paddle OCR",
+     "status": "cited",
+     "evidence": "'Paddle OCR, an open-source and locally deployable solution, was first implemented through a persistent Python worker... its accuracy declined substantially when applied to Kiddee Lab's handwritten registration forms' (Sec 3.4.2, pp.17-18; evaluated and replaced)"
+    }
+   ]
+  }
+ }
+]

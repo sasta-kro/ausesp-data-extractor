@@ -1,0 +1,1908 @@
+[
+ {
+  "id": "25117",
+  "canonical_title": "Online ordering system for Feel ABAC Restaurant",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CSX3010 / ITX3009",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Lin Myat Phyo",
+    "student_id": "6530201"
+   },
+   {
+    "name": "Bhone Myint San",
+    "student_id": "6520225"
+   },
+   {
+    "name": "Thet Hnin Eain",
+    "student_id": "6530147"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Darun Kesrarat",
+  "committee": [
+   "Asst. Prof. Dr. AnilKumar Kothalil Gopalakrishnan",
+   "A. Tianai Tang"
+  ],
+  "abstract": "Our Senior Project II is a web-based food ordering system developed for a Burmese restaurant located at Assumption University. The project aims to solve operational problems caused by the current ordering method, where customers place orders through messaging platforms such as Facebook Messenger. This manual process makes it difficult for staff to manage multiple orders, track order status, calculate prices, and coordinate delivery, which often leads to delays and communication errors. The proposed system provides a centralized platform where customers can browse the menu, customize dishes, place orders, and track their order status in real time. The platform supports highly flexible menu customization to match the nature of Burmese cuisine, where customers often choose ingredients, spice levels, and additional options. It also integrates payment through QR PromptPay and provides live order updates for both customers and restaurant staff. On the administrative side, the system includes a dashboard that allows restaurant staff to manage menu items, monitor incoming orders, update order status, and control item availability. This automation reduces manual workload, improves order accuracy, and provides better organization of restaurant operations.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "e_commerce",
+    "campus"
+   ],
+   "topic": [
+    "geolocation"
+   ],
+   "technology": [
+    "nextjs",
+    "react",
+    "nodejs",
+    "postgresql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "food_service",
+     "label": "Food service and restaurant operations",
+     "status": "used",
+     "evidence": "Abstract: \"Our Senior Project II is a web-based food ordering system developed for a Burmese restaurant located at Assumption University.\""
+    }
+   ],
+   "technology": [
+    {
+     "key": "typescript",
+     "label": "TypeScript",
+     "status": "used",
+     "evidence": "Section 4.1.2: \"TypeScript ensures type safety throughout the application, reducing runtime errors.\""
+    },
+    {
+     "key": "tailwind_css",
+     "label": "Tailwind CSS",
+     "status": "used",
+     "evidence": "Section 4.1.3: \"The interface is built using Tailwind CSS 4 for utility-first styling.\""
+    },
+    {
+     "key": "shadcn_ui",
+     "label": "shadcn/ui",
+     "status": "used",
+     "evidence": "Section 4.1.3: \"shadcn/ui components based on Radix UI primitives.\""
+    },
+    {
+     "key": "drizzle_orm",
+     "label": "Drizzle ORM",
+     "status": "used",
+     "evidence": "Section 3.2.3: \"Database access is handled through Drizzle ORM with Neon, providing type-safe queries, transactions, automatic connection pooling.\""
+    },
+    {
+     "key": "neon",
+     "label": "NeonDB (serverless PostgreSQL)",
+     "status": "used",
+     "evidence": "Section 4.2.3: \"The system uses PostgreSQL hosted on NeonDB, with Drizzle ORM providing type-safe database access.\""
+    },
+    {
+     "key": "better_auth",
+     "label": "Better Auth",
+     "status": "used",
+     "evidence": "Section 4.2.2: \"User authentication is managed using Better Auth, supporting email/password login and Google OAuth.\""
+    },
+    {
+     "key": "pusher",
+     "label": "Pusher (real-time messaging)",
+     "status": "used",
+     "evidence": "Section 4.2.5: \"Real-time updates are handled using Pusher WebSocket-based messaging.\""
+    },
+    {
+     "key": "cloudflare_r2",
+     "label": "Cloudflare R2 (object storage)",
+     "status": "used",
+     "evidence": "Section 4.2.6: \"Menu images and payment receipts are stored using Cloudflare R2 object storage with CDN support.\""
+    },
+    {
+     "key": "vercel",
+     "label": "Vercel (hosting)",
+     "status": "used",
+     "evidence": "Section 4.4.3: \"The application is deployed on Vercel, with automatic deployments triggered directly from the GitHub repository.\""
+    },
+    {
+     "key": "google_maps",
+     "label": "Google Maps API",
+     "status": "used",
+     "evidence": "Section 4.3.5: \"Google Maps API is used for delivery location selection and address validation, ensuring accurate delivery fee calculation.\""
+    },
+    {
+     "key": "brevo",
+     "label": "Brevo (transactional email)",
+     "status": "used",
+     "evidence": "Section 4.3.1: \"Brevo is used to send transactional emails such as account verification and system notifications.\""
+    },
+    {
+     "key": "uploadthing",
+     "label": "UploadThing (file uploads)",
+     "status": "used",
+     "evidence": "Section 4.3.2: \"UploadThing is used to manage secure file uploads, enforcing file size limits and allowed file types.\""
+    },
+    {
+     "key": "zustand",
+     "label": "Zustand (state management)",
+     "status": "used",
+     "evidence": "Section 4.4.4: \"Zustand is used for lightweight global client-side state management, such as UI preferences and shared application states.\""
+    },
+    {
+     "key": "zod",
+     "label": "Zod (schema validation)",
+     "status": "used",
+     "evidence": "Section 1.5 Quality Assurance Practices: \"Zod schema validation for inputs.\""
+    },
+    {
+     "key": "promptpay",
+     "label": "PromptPay QR payments",
+     "status": "used",
+     "evidence": "Section 4.3.3: \"The system uses Prompt Pay QR code payments, which are widely adopted in Thailand.\""
+    },
+    {
+     "key": "prisma",
+     "label": "Prisma ORM",
+     "status": "cited",
+     "evidence": "Section 2.2 comparison: \"Prisma is powerful but heavier, with more background complexity and slower build times.\""
+    }
+   ]
+  }
+ },
+ {
+  "id": "25118",
+  "canonical_title": "TrustLoop: Secondhand marketplace for AU students",
+  "aliases": [
+   "TrustLoop"
+  ],
+  "phase": "final",
+  "course_code": "CSX3011/ITX3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Pwint Hmon Nathar",
+    "student_id": "6530230"
+   },
+   {
+    "name": "Min Thant Naing",
+    "student_id": "6530233"
+   },
+   {
+    "name": "MangShang SauYing",
+    "student_id": "6511089"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Paitoon Porntrakoon",
+  "committee": [
+   "A. Jinchun Lu",
+   "A. Athiphat Hirunadisuan"
+  ],
+  "abstract": "TrustLoop is a secure, student-exclusive online marketplace developed for Assumption University (AU) students to buy, sell, donate, and auction items within a trusted environment. The system was developed in collaboration with the administrator of the Assumption University Myanmar Students Facebook Group, where many students currently trade second-hand items through informal posts. However, platforms such as Facebook Marketplace or Facebook group posts often lack proper identity verification, which can lead to scams, fake identities, and unreliable transactions. To address this issue, TrustLoop uses Microsoft Entra ID authentication to ensure that only verified AU students can access and participate in the platform. The system includes features such as item listings, donation and request posts, auction functionality, user ratings and reviews, real-time notifications, and product management tools. TrustLoop is developed using Next.js, MongoDB Atlas, Cloudinary, and Vercel to provide a scalable and responsive web application that supports safe and convenient item exchanges within the university community.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "campus",
+    "e_commerce"
+   ],
+   "topic": [],
+   "technology": [
+    "nextjs",
+    "mongodb"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "secondhand_marketplace",
+     "label": "Second-hand trading and reuse marketplace",
+     "status": "used",
+     "evidence": "Cover title: \"TrustLoop: Secondhand marketplace for AU students\"; abstract: students \"buy, sell, donate, and auction items within a trusted environment.\""
+    }
+   ],
+   "technology": [
+    {
+     "key": "tailwind_css",
+     "label": "Tailwind CSS",
+     "status": "used",
+     "evidence": "Section 3.1: \"Styling: Tailwind CSS is used to create a clean, responsive, and consistent user interface across different devices.\""
+    },
+    {
+     "key": "mongoose",
+     "label": "Mongoose ODM",
+     "status": "used",
+     "evidence": "Section 3.1: \"MongoDB Atlas is used as the cloud database service, with Mongoose as the Object Data Modeling (ODM) library for managing database schemas and queries.\""
+    },
+    {
+     "key": "nextauth",
+     "label": "NextAuth v5",
+     "status": "used",
+     "evidence": "Section 3.1: \"Microsoft Entra ID authentication is implemented using NextAuth v5 to restrict access to verified Assumption University student accounts.\""
+    },
+    {
+     "key": "microsoft_entra_id",
+     "label": "Microsoft Entra ID",
+     "status": "used",
+     "evidence": "Abstract: \"TrustLoop uses Microsoft Entra ID authentication to ensure that only verified AU students can access and participate in the platform.\""
+    },
+    {
+     "key": "stripe",
+     "label": "Stripe payment gateway",
+     "status": "used",
+     "evidence": "Section 3.1: \"Stripe is integrated to handle secure online payments during checkout and to support payment-related transaction processing within the platform.\""
+    },
+    {
+     "key": "cloudinary",
+     "label": "Cloudinary (image hosting)",
+     "status": "used",
+     "evidence": "Phase 3 Implementation: \"Upload and manage product images using Cloudinary for optimized storage and fast delivery.\""
+    },
+    {
+     "key": "vercel",
+     "label": "Vercel (hosting)",
+     "status": "used",
+     "evidence": "Section 3.1: \"The application is deployed on Vercel, which provides automatic builds, continuous integration, and scalable hosting for the platform.\""
+    },
+    {
+     "key": "resend",
+     "label": "Resend (email service)",
+     "status": "used",
+     "evidence": "Section 3.1: \"Resend is used to send transactional email notifications, such as order updates, payment confirmations, and important system alerts to users.\""
+    },
+    {
+     "key": "github",
+     "label": "GitHub (CI/CD)",
+     "status": "used",
+     "evidence": "Phase 5 Deployment: \"Integrate the deployment pipeline with GitHub, where every commit to the main branch automatically triggers a build and deployment.\""
+    },
+    {
+     "key": "openai",
+     "label": "OpenAI GPT models",
+     "status": "cited",
+     "evidence": "References: \"OpenAI. (2024). AI chatbot development with GPT models. https://platform.openai.com/docs/\" cited in connection with the TrustLoop Chatbot feature."
+    }
+   ]
+  }
+ },
+ {
+  "id": "26003",
+  "canonical_title": "Lecture sense: A notebookLM clone for lectures",
+  "aliases": [
+   "LectureSense"
+  ],
+  "phase": "proposal",
+  "course_code": "CSX 3010 / ITX 3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Kanat Khamzin",
+    "student_id": "6530009"
+   },
+   {
+    "name": "Danila Derii",
+    "student_id": "6530154"
+   },
+   {
+    "name": "Ivan Kozanchuk",
+    "student_id": "6510278"
+   }
+  ],
+  "advisor": "A. Tianai Tang",
+  "committee": [
+   "Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan",
+   "Asst. Prof. Dr. Benjawan Srisura"
+  ],
+  "abstract": "students face significant challenges in managing and navigating the vast amount of lecture contents. Traditional methods of reviewing lectures often involve manual processes, such as \"scrubbing\" through hours of course materials to find specific information, which is inherently time-consuming and inefficient. This can lead to fragmented learning, missed deadlines, and a lack of clear visibility for instructors into student struggles. The advent of AI-driven digital solutions offers an opportunity to transform these academic proceses, making them more efficient and personalized. This project focuses on developing LectureSense, a standalone web aplication that serves as a specialized \"NotebookLM clone\" for lectures. The platform is designed to bridge the gap between lecture delivery and student comprehension by automatically mapping transcripts to slides and timestamps The primary objective of this platform is to enhance study efficiency and improve the instructional feedback loop by providing role-based access to tailored dashboards. For students, these dashboards facilitate searchable content, automated sumaries, and flashcard generation with direct citations to source material. For instructors, the platform clusters student questions and provides a \"confusion heatmap\" to identify parts of the material that require further explanation. By integrating OpenAI LLM via API and a RAG pipeline, LectureSense ensures a student-friendly system that streamlines the operational side of academic learning",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [
+    "nlp"
+   ],
+   "technology": [
+    "python",
+    "react",
+    "nextjs",
+    "postgresql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "fastapi",
+     "label": "FastAPI",
+     "status": "used",
+     "evidence": "Section 4.2.2: \"sends HTTP requests to the backend server built with FastAPI\"; Tech Stack: \"for backend we used python with fastapi framework.\""
+    },
+    {
+     "key": "pgvector",
+     "label": "pgvector",
+     "status": "used",
+     "evidence": "Section 3.1.2: \"stored in PostgreSQL with the pgvector extension, enabling similarity search directly in SQL using distance metrics such as cosine or Euclidean distance.\""
+    },
+    {
+     "key": "openai",
+     "label": "OpenAI API (LLM)",
+     "status": "used",
+     "evidence": "Section 4.2.2: \"The system integrates with an external AI model (OpenAI) to generate answers, summaries, and flashcards from lecture content.\""
+    },
+    {
+     "key": "whisper",
+     "label": "Whisper (speech-to-text)",
+     "status": "used",
+     "evidence": "Section 3.1.1: \"transcribed with a two-step strategy: local Whisper (preferred, e.g., \\\"base\\\" model) returning timestamped segments, with an OpenAI Whisper API fallback.\""
+    },
+    {
+     "key": "rag",
+     "label": "Retrieval-Augmented Generation",
+     "status": "used",
+     "evidence": "Chapter 3: \"This project applies a retrieval-augmented pipeline that converts lecture materials into a searchable knowledge base and then answers student questions using only retrieved lecture fragments.\""
+    },
+    {
+     "key": "railway",
+     "label": "Railway (backend hosting)",
+     "status": "used",
+     "evidence": "Section 4.2.3: \"Railway, to host our backend.\""
+    },
+    {
+     "key": "vercel",
+     "label": "Vercel (frontend hosting)",
+     "status": "used",
+     "evidence": "Section 4.2.3: \"Vercel to host our frontend, we picked it to minimize cost since Vercel as a free tier and easy to setup.\""
+    },
+    {
+     "key": "pymupdf",
+     "label": "PyMuPDF",
+     "status": "used",
+     "evidence": "Section 3.1.1: \"extracts text per page using PyMuPDF (fitz) to keep a (page_text, page_number) mapping.\""
+    },
+    {
+     "key": "python_pptx",
+     "label": "python-pptx",
+     "status": "used",
+     "evidence": "Section 3.1.1: \"uses python-pptx to extract text from text-containing shapes per slide, producing (slide_text, slide_number) pairs.\""
+    },
+    {
+     "key": "docling",
+     "label": "Docling (document parsing)",
+     "status": "used",
+     "evidence": "Section 4.1.3: \"The system transcribes audio via Whisper and parses documents via Docling, creating a mapped \\\"Content Core\\\".\""
+    },
+    {
+     "key": "scikit_learn",
+     "label": "scikit-learn",
+     "status": "cited",
+     "evidence": "Reference [14] \"scikit-learn Machine Learning Library Documentation\" supports Section 3.1.5: \"the system clusters similar questions to detect recuring confusion topics.\""
+    }
+   ]
+  }
+ },
+ {
+  "id": "26004",
+  "canonical_title": "MindNest",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "ITX 3009 / CSX 3010",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Ramin Hamewichian",
+    "student_id": "6410883"
+   },
+   {
+    "name": "Marazal Bahrainee Islam",
+    "student_id": "6720051"
+   },
+   {
+    "name": "Waradej Gidmeerasmeeyothin",
+    "student_id": "6410923"
+   }
+  ],
+  "advisor": "A. Tang Tianai",
+  "committee": [
+   "Asst. Prof. Dr. Benjawan Srisura",
+   "A. Chayapol Moemeng"
+  ],
+  "abstract": "Mental health among students in Thailand has become an important concern, yet it is often overlooked due to social stigma and limited access to professional support. According to the Department of Mental Health, many Thai teenagers experience high levels of stress and depression, but a significant number do not seek help because they fear being judged. In addition, students living in rural areas may have difficulty accessing mental health services. This project proposes MindNest, a mobile application designed to provide a safe and judgment-free environment where students can share their thoughts and emotions through an AI-powered chatbot. The system supports both Thai and English languages and is available 24 hours a day, allowing users to access mental health support anytime and anywhere. The chatbot is powered by artificial intelligence to provide empathetic responses, stress management guidance, and helpful coping exercises. MindNest also provides access to important mental health resources such as hotline information and calming techniques including breathing and grounding exercises. The application aims to improve accessibility to mental health support and encourage students to express their feelings in a safe and private environment. Overall, the system helps reduce barriers to seeking help and promotes better mental well-being by creating an accessible digital platform for mental health support among students in Thailand.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "healthcare"
+   ],
+   "topic": [
+    "nlp"
+   ],
+   "technology": [
+    "mongodb",
+    "python",
+    "react"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "mental_health",
+     "label": "Mental Health",
+     "status": "used",
+     "evidence": "\"This project proposes MindNest, a mobile application designed to provide a safe and judgment-free environment where students can share their thoughts and emotions through an AI-powered chatbot\" (Abstract, p.5)"
+    }
+   ],
+   "technology": [
+    {
+     "key": "fastapi",
+     "label": "FastAPI",
+     "status": "used",
+     "evidence": "\"The application is developed using React Native with Expo for the frontend and FastAPI for the backend system\" (Scope of the Project, p.7)"
+    },
+    {
+     "key": "react_native",
+     "label": "React Native",
+     "status": "used",
+     "evidence": "\"The frontend of the MindNest system is developed using React Native with Expo and TypeScript\" (Frontend, p.28)"
+    },
+    {
+     "key": "expo",
+     "label": "Expo (with Expo Router)",
+     "status": "used",
+     "evidence": "\"developed using React Native with Expo and TypeScript, using Expo Router for screen navigation\" (p.28); users tested \"the app on Expo-Go\" (p.34)"
+    },
+    {
+     "key": "typescript",
+     "label": "TypeScript",
+     "status": "used",
+     "evidence": "\"developed using React Native with Expo and TypeScript\" (Frontend, p.28)"
+    },
+    {
+     "key": "google_gemini",
+     "label": "Google Gemini AI (Gemini 2.0 / 2.5 Flash)",
+     "status": "used",
+     "evidence": "\"The chatbot is powered by Google Gemini AI\" (p.7); \"generates a response using a large language model (Gemini 2.5 Flash)\" (p.26); \"sends the retrieved techniques as context to Gemini 2.0 Flash\" (p.29)"
+    },
+    {
+     "key": "rag",
+     "label": "Retrieval-Augmented Generation (RAG)",
+     "status": "used",
+     "evidence": "\"The system uses a Retrieval-Augmented Generation (RAG) pipeline, where each user message is processed for classification, embedding, retrieval, and response generation\" (p.12)"
+    },
+    {
+     "key": "axios",
+     "label": "Axios",
+     "status": "used",
+     "evidence": "\"The frontend communicates with the backend system through API requests using Axios\" (p.28)"
+    },
+    {
+     "key": "supabase",
+     "label": "Supabase (PostgreSQL with pgvector)",
+     "status": "cited",
+     "evidence": "\"Supabase is used for vector storage and retrieval in the RAG pipeline\" (p.13), but \"In the initial system design, Supabase was intended to store vector embeddings... due to time constraints, these components can be consolidated into MongoDB\" (Notice about deployment, p.31) - intended design rather than deployed"
+    },
+    {
+     "key": "railway",
+     "label": "Railway",
+     "status": "cited",
+     "evidence": "\"Railway was selected as the intended platform for backend deployment. However, the backend server remained hosted on localhost during testing\" (Notice about deployment, p.31)"
+    }
+   ]
+  }
+ },
+ {
+  "id": "26005",
+  "canonical_title": "Bakeflow",
+  "aliases": [
+   "BakeFlow"
+  ],
+  "phase": "final",
+  "course_code": "CSX3011",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Meassavrin Savuth",
+    "student_id": "6520177"
+   },
+   {
+    "name": "Min La Wee Chan",
+    "student_id": "6520189"
+   },
+   {
+    "name": "Kaung Sat Linn",
+    "student_id": "6520053"
+   }
+  ],
+  "advisor": "A. Tianai Tang",
+  "committee": [
+   "Asst. Prof. Dr. Benjawan Srisura",
+   "A. Chayapol Moemeng"
+  ],
+  "abstract": "The rapid growth of social commerce has shifted how independent businesses, particularly bakeries, interact with their customers, heavily relying on chat applications for order placement. However, managing orders and verifying payments manually across these chat platforms introduces severe operational inefficiencies, high instances of human error, and delayed order fulfillments. This project presents BakeFlow, an integrated chat and web-based bakery management system designed to automate and streamline both customer ordering and administrative workflows. BakeFlow eliminates the bottlenecks of traditional chat commerce by bridging the gap between customer-facing chat interfaces and backend bakery operations. The system features a seamless Webview Ordering interface for customers—allowing for quick cart management and order submission without leaving their chat application—and a comprehensive Admin Dashboard tailored for efficient order tracking and direct payment slip verification. The platform was engineered using a modern, scalable technology stack, comprising a high-performance Go (Golang) backend for robust API handling, state management, and real-time processing, alongside a responsive Next.js/React frontend for an optimized user experience. BakeFlow demonstrates a significant reduction in the administrative overhead associated with manual order processing, providing bakery owners with a centralized, scalable, and user-friendly platform to manage their online sales efficiently.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "e_commerce"
+   ],
+   "topic": [],
+   "technology": [
+    "go",
+    "nextjs",
+    "react",
+    "postgresql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "food_beverage",
+     "label": "Food and Beverage (Bakery)",
+     "status": "used",
+     "evidence": "\"BakeFlow is a comprehensive, web-based bakery order management system designed to streamline the purchasing process for both consumers and business owners\" (p.21)"
+    },
+    {
+     "key": "social_commerce",
+     "label": "Social Commerce",
+     "status": "used",
+     "evidence": "\"The rapid expansion of social commerce—purchases driven through popular chat platforms like Messenger has created a paradigm shift for independent businesses. Bakeries, in particular, thrive on this conversational commerce model\" (p.8)"
+    }
+   ],
+   "technology": [
+    {
+     "key": "gorilla_mux",
+     "label": "Gorilla Mux",
+     "status": "used",
+     "evidence": "\"Utilizing net/http and gorilla/mux, the API exposes structured endpoints to connect the client to backend services\" (p.23)"
+    },
+    {
+     "key": "jwt",
+     "label": "JSON Web Token (JWT)",
+     "status": "used",
+     "evidence": "\"the server returns a secure JSON Web Token (JWT). The frontend stores this token and includes it in the Authorization header\" (p.18)"
+    },
+    {
+     "key": "cloudinary",
+     "label": "Cloudinary",
+     "status": "used",
+     "evidence": "\"receiving an image upload via Cloudinary, securely storing the URL\" (p.24); \"instant visual rendering of the Cloudinary-hosted slip URLs\" (p.43)"
+    },
+    {
+     "key": "tailwind",
+     "label": "Tailwind CSS",
+     "status": "used",
+     "evidence": "\"The Next.js frontend, styled with Tailwind CSS, provided a native-feeling experience directly within the chat app's webview\" (p.43)"
+    },
+    {
+     "key": "xlsx",
+     "label": "SheetJS xlsx",
+     "status": "used",
+     "evidence": "\"Using the xlsx library, the frontend constructs a dynamic workbook\" for .xlsx financial exports (p.20)"
+    },
+    {
+     "key": "ngrok",
+     "label": "ngrok",
+     "status": "used",
+     "evidence": "\"Secure tunneling software (ngrok) was utilized to expose the local Next.js frontend and Go backend to the public internet\" (p.42)"
+    },
+    {
+     "key": "facebook_messenger",
+     "label": "Facebook Messenger",
+     "status": "used",
+     "evidence": "\"Customers can successfully access the menu via Messenger without a password login\" (p.31); \"leveraging Messenger APIs, the system successfully pushes automated chat messages back to the user\" (p.43)"
+    }
+   ]
+  }
+ },
+ {
+  "id": "26007",
+  "canonical_title": "LotusLIB - Application for scanning MTG cards",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "ITX 3009",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Aleksandr Romanov",
+    "student_id": "6530338"
+   },
+   {
+    "name": "Mya Wut Ye Phoo",
+    "student_id": "6530232"
+   }
+  ],
+  "advisor": "A. Jinchun Lu",
+  "committee": [
+   "Asst. Prof. Dr. Darun Kesrarat",
+   "Asst. Prof. Dr. Thanachai Thumthawatworn"
+  ],
+  "abstract": "LotusLIB is a mobile application for Magic: The Gathering enthusiasts that streamlines card cataloging and collection valuation. The app performs on-device CNN inference using TensorFlow Lite to identify a card from the camera, then shows card details and lets users add it to their collection or perform other tasks. A Node.js/Express API with MongoDB Atlas powers authentication, card search with filters, profile management, file uploads, and a news feed seeded from public MTG sources. The mobile application captures frames using the device camera and detects the card region using OpenCV-based rectangle detection. The cropped image is then processed by a TensorFlow Lite model that performs on-device classification to identify the card. We document scope, related work, methodology, ROI, and a system design covering workflow, architecture, tech stack, UI/UX, and database schema. Results summarize the trained model footprint and mobile inference loop, including evaluations and matrices. We conclude with pragmatic upgrade paths: quantization, transfer learning (MobileNetV3-Small), a lightweight detector front-end, backend extensions for per-user collection sync, as well as semi-automatic Sorting System integration in the future.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "software_application"
+   ],
+   "platform": [
+    "android",
+    "mobile"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "express",
+    "java",
+    "mongodb",
+    "nodejs",
+    "opencv",
+    "tensorflow"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "trading_card_games",
+     "label": "Trading Card Games (Magic: The Gathering)",
+     "status": "used",
+     "evidence": "\"LotusLIB addresses the tedious task of managing physical MTG collections\" (p.1); the whole app scans, prices, and catalogs Magic: The Gathering cards"
+    }
+   ],
+   "technology": [
+    {
+     "key": "tensorflow_lite",
+     "label": "TensorFlow Lite",
+     "status": "used",
+     "evidence": "\"a compact convolutional neural network (CNN) trained for card classification and exported as a TensorFlow Lite model for mobile inference\" (p.8); \"The cropped image is passed to a TensorFlow Lite classifier\" (p.14)"
+    },
+    {
+     "key": "camerax",
+     "label": "Android CameraX",
+     "status": "used",
+     "evidence": "\"The Android application continuously analyzes camera frames using the CameraX library\" (p.14)"
+    },
+    {
+     "key": "mongoose",
+     "label": "Mongoose",
+     "status": "used",
+     "evidence": "\"Node 20 ESM Express server; MongoDB via Mongoose; JWT auth; file uploads via Multer to /uploads\" (p.15)"
+    },
+    {
+     "key": "render",
+     "label": "Render (cloud hosting)",
+     "status": "used",
+     "evidence": "\"The backend API is hosted on Render, enabling the mobile application to communicate with the server through a stable and public API endpoint\" (p.3)"
+    },
+    {
+     "key": "mongodb_atlas",
+     "label": "MongoDB Atlas",
+     "status": "used",
+     "evidence": "\"Database hosted on MongoDB Atlas\" (System Architecture, Hosting and Deployment, p.27)"
+    },
+    {
+     "key": "jsonwebtoken",
+     "label": "jsonwebtoken (JWT)",
+     "status": "used",
+     "evidence": "\"Secures endpoints with authentication middleware based on jsonwebtoken\" (p.3); admin login \"returns 8-hour JWT\" (p.42)"
+    },
+    {
+     "key": "multer",
+     "label": "Multer",
+     "status": "used",
+     "evidence": "\"file uploads via Multer to /uploads (served statically)\" (p.15)"
+    },
+    {
+     "key": "scryfall",
+     "label": "Scryfall API",
+     "status": "used",
+     "evidence": "\"Scryfall API → Card information and prices... called periodically by cron jobs to keep data fresh\" (p.26); \"seeds cards by set+collector_number against Scryfall\" (p.15)"
+    },
+    {
+     "key": "keras",
+     "label": "Keras",
+     "status": "used",
+     "evidence": "\"Best Keras checkpoint saved; converted to TFLite float32\" (p.13); training uses Adam optimiser with ModelCheckpoint and EarlyStopping callbacks (p.12)"
+    },
+    {
+     "key": "mobilenetv3",
+     "label": "MobileNetV3",
+     "status": "cited",
+     "evidence": "Related work only: \"Transfer learning with MobileNetV3 / EfficientNet-B0... Decision now: Deferred\" (p.5)"
+    },
+    {
+     "key": "yolo",
+     "label": "YOLO (YOLO-Nano)",
+     "status": "cited",
+     "evidence": "Related work only: \"One-stage detectors (e.g., YOLO-Nano)... Decision now: Deferred\" (p.6)"
+    }
+   ]
+  }
+ },
+ {
+  "id": "26008",
+  "canonical_title": "Five Two One Cafe",
+  "aliases": [
+   "Five Two One Café",
+   "CafeShop Ordering and Management System"
+  ],
+  "phase": "final",
+  "course_code": "CSX 3011/ITX 3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Hsu Yee Mon",
+    "student_id": "6530339"
+   },
+   {
+    "name": "Kyaw Phone Zaw",
+    "student_id": "6440087"
+   },
+   {
+    "name": "Krisada Chatrachotchawla",
+    "student_id": "6430185"
+   }
+  ],
+  "advisor": "A. Jinchun Lu",
+  "committee": [
+   "Asst. Prof. Dr. Darun Kesrarat",
+   "Asst. Prof. Dr. Thanachai Thumthawatworn"
+  ],
+  "abstract": "The CafeShop Ordering and Management System is developed to address common operational challenges faced by cafés, including inefficient order management, delayed communication between customers and staff, and limited access to real-time business data. Traditional café operations often rely on manual order taking and paper-based processes, which may lead to order inaccuracies, slower service, and difficulties in tracking sales and operational performance.\n\nTo solve these issues, the CafeShop system provides a digital platform that integrates customer ordering, payment processing, and administrative management into a single system. Customers can scan a QR code assigned to each table to access a digital menu through their mobile devices, browse available items, select menu variations such as sizes, and place orders directly through the system. Payments are supported through PromptPay QR code integration using the Omise payment gateway, enabling a secure and convenient cashless payment experience.\n\nFor café staff and administrators, the system provides a web-based dashboard that allows real-time monitoring and management of orders, menu items, tables, and invoices. The system utilizes WebSocket technology to deliver instant notifications when new orders are placed, allowing staff to process orders efficiently. Additionally, administrators can monitor sales data and manage operational activities through a centralized interface.\n\nBy integrating digital ordering, real-time communication, and administrative management tools, the CafeShop system improves operational efficiency, reduces manual workload, minimizes ordering errors, and enhances the overall customer service experience in café environments.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "e_commerce"
+   ],
+   "topic": [],
+   "technology": [
+    "java",
+    "postgresql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "food_beverage_service",
+     "label": "Food and beverage service",
+     "status": "used",
+     "evidence": "Page 10: 'a customized digital ordering platform designed specifically for café operations'"
+    }
+   ],
+   "technology": [
+    {
+     "key": "vue_js",
+     "label": "Vue.js",
+     "status": "used",
+     "evidence": "Page 21 Tech Stack: 'Frontend : Vuejs , Typescript'; page 19: 'The frontend service is developed using Vue.js'"
+    },
+    {
+     "key": "typescript",
+     "label": "TypeScript",
+     "status": "used",
+     "evidence": "Page 21 Tech Stack: 'Frontend : Vuejs , Typescript'"
+    },
+    {
+     "key": "spring_boot",
+     "label": "Spring Boot",
+     "status": "used",
+     "evidence": "Page 21 Tech Stack: 'Backend : Spring boot'; page 19: 'The backend is implemented using Java with the Spring Boot framework'"
+    },
+    {
+     "key": "websocket",
+     "label": "WebSocket",
+     "status": "used",
+     "evidence": "Page 7: 'Provide real-time order notifications using WebSocket technology'"
+    },
+    {
+     "key": "heroku",
+     "label": "Heroku",
+     "status": "used",
+     "evidence": "Page 19: 'cloud-based architecture deployed on the Heroku platform'; page 21: 'Hosting : Herouku platform'"
+    },
+    {
+     "key": "amazon_s3",
+     "label": "Amazon S3",
+     "status": "used",
+     "evidence": "Page 20: 'Amazon S3 is used for storing menu item images'"
+    },
+    {
+     "key": "omise",
+     "label": "Omise payment gateway",
+     "status": "used",
+     "evidence": "Page 11: 'The system integrates PromptPay QR code payments using the Omise payment gateway'"
+    },
+    {
+     "key": "promptpay",
+     "label": "PromptPay",
+     "status": "used",
+     "evidence": "Page 7: 'Support both cash and cashless payment through Prompt Pay QR code integration'"
+    },
+    {
+     "key": "zxing",
+     "label": "ZXing QR Code Library",
+     "status": "cited",
+     "evidence": "References page 41, entry [8]: 'ZXing Project. (n.d.). ZXing QR Code Library.'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "26009",
+  "canonical_title": "NYK Cosmetics Business Management System",
+  "aliases": [
+   "Cosmetics Business Management System"
+  ],
+  "phase": "final",
+  "course_code": "CSX 3011",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Hein Naing Soe",
+    "student_id": "6530070"
+   },
+   {
+    "name": "Kyi Phyu Shin",
+    "student_id": "6530335"
+   }
+  ],
+  "advisor": "A. Jinchun Lu",
+  "committee": [
+   "Asst. Prof. Dr. Paitoon Porntrakoon",
+   "Dr. Phyo Min Tun"
+  ],
+  "abstract": "This project presents the development of a web-based Cosmetics Business Management System designed to improve operational efficiency in sales management and administrative processes at NYK Cosmetics, a retail and wholesale cosmetics business. The system aims to reduce manual workload by providing a centralized platform that integrates sales order management, inventory tracking, customer loan monitoring, and administrative reporting.\n\nThe application enables salespersons to record customer orders digitally through a web-based system, allowing them to access the platform conveniently from tablets or web browsers. The system automatically updates inventory and transaction records in real time after each order submission. Administrators can review, adjust, and manage orders through a centralized web dashboard without relying on manual record books or scattered spreadsheets. In addition, the system includes customer loan management features that allow administrators to track outstanding balances, monitor payment histories, and maintain accurate financial records efficiently. The system also provides statistical dashboards that display sales performance by product, shop, and region, enabling better decision-making and business analysis. By implementing this system, NYK Cosmetics can reduce operational errors and improve overall business management efficiency.\n\nThe system is developed using modern web technologies including Next.js for the frontend, Nest.js for the backend, and PostgreSQL for the database, and deployed on cloud infrastructure to ensure accessibility and scalability. Overall, the proposed system establishes a centralized digital platform that enhances operational management and supports the future growth of NYK Cosmetics.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "nextjs",
+    "react",
+    "postgresql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "retail_wholesale",
+     "label": "Retail and wholesale business",
+     "status": "used",
+     "evidence": "Page 4: 'NYK Cosmetics is a retail and wholesale cosmetics business established in 2013'"
+    },
+    {
+     "key": "inventory_management",
+     "label": "Inventory management",
+     "status": "used",
+     "evidence": "Page 6: 'The system maintains product inventory records and automatically updates stock quantities whenever new orders are submitted or adjusted by administrators'"
+    }
+   ],
+   "technology": [
+    {
+     "key": "nestjs",
+     "label": "NestJS",
+     "status": "used",
+     "evidence": "Page 15: 'For the backend, NestJS was used to build the server-side application'"
+    },
+    {
+     "key": "neon",
+     "label": "Neon managed PostgreSQL",
+     "status": "used",
+     "evidence": "Page 15: 'To support cloud-based database hosting, Neon was used as the managed PostgreSQL service'"
+    },
+    {
+     "key": "vercel",
+     "label": "Vercel",
+     "status": "used",
+     "evidence": "Page 15: 'Vercel was used to deploy the frontend application, providing fast global delivery and seamless integration with the Next.js framework'"
+    },
+    {
+     "key": "heroku",
+     "label": "Heroku",
+     "status": "used",
+     "evidence": "Page 15: 'The backend services were deployed using Heroku, which simplifies server management and application deployment'"
+    },
+    {
+     "key": "amazon_s3",
+     "label": "Amazon S3",
+     "status": "used",
+     "evidence": "Page 15: 'Amazon Web Services (AWS) S3 was used for storing and managing uploaded files such as product images'"
+    },
+    {
+     "key": "istock",
+     "label": "iStock Inventory Management System",
+     "status": "cited",
+     "evidence": "Page 8 Related Work: 'some businesses use software such as the iStock Inventory Management System to manage inventory and sales data'; also sole reference on page 52"
+    }
+   ]
+  }
+ },
+ {
+  "id": "26011",
+  "canonical_title": "Bicycle Fitting Using Computer Vision",
+  "aliases": [],
+  "phase": "proposal",
+  "course_code": "CSX 3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Gulizara Benjapalaporn",
+    "student_id": "6612233"
+   },
+   {
+    "name": "Jatupon Itsara",
+    "student_id": "6610073"
+   },
+   {
+    "name": "Thananya Amornwiriya",
+    "student_id": "6610609"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Dobri Atanassov Batovski",
+  "committee": [
+   "Asst. Prof. Dr. Darun Kesrarat",
+   "A. Tianai Tang"
+  ],
+  "abstract": "Proper road bike fitting is essential for cycling safety, performance, and injury prevention; however, professional bike fitting systems often require specialized equipment and expert assessment, making them costly and inaccessible to many cyclists. This senior project, developed by the First Safe Point team, addresses this problem by investigating a low-cost, vision-based approach for road bike posture analysis using computer vision techniques. The proposed system utilizes MediaPipe Pose Estimation to detect cyclist body landmarks from recorded road cycling videos and computes key joint angles, including knee, hip, elbow, ankle, and back angles. These angles are evaluated against industry-standard road bike fitting ranges to provide visual posture feedback.\n\nThis report presents the initial development phase of the system, focusing on pose detection, joint angle computation, and real-time visualization, as well as the evaluation of cyclists' perceptions of the posture feedback generated by the system.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "research",
+    "ai_data"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "python",
+    "opencv"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "smartphone_camera",
+     "label": "Smartphone camera capture",
+     "status": "used",
+     "evidence": "Page 16: 'Video recordings were captured using the camera of an iPhone 15 Pro smartphone'"
+    }
+   ],
+   "domain": [
+    {
+     "key": "sports_biomechanics",
+     "label": "Sports biomechanics and bike fitting",
+     "status": "used",
+     "evidence": "Page 19: 'These joint angles are important indicators used in cycling biomechanics to assess whether the rider's position is comfortable and efficient during pedaling'"
+    }
+   ],
+   "technology": [
+    {
+     "key": "mediapipe",
+     "label": "MediaPipe",
+     "status": "used",
+     "evidence": "Page 3 Abstract: 'The proposed system utilizes MediaPipe Pose Estimation to detect cyclist body landmarks'; Appendix B page 50: 'Pose Estimation Framework: MediaPipe'"
+    },
+    {
+     "key": "pandas",
+     "label": "pandas",
+     "status": "used",
+     "evidence": "Appendix D page 52 source code: 'import pandas as pd'"
+    },
+    {
+     "key": "scipy",
+     "label": "SciPy",
+     "status": "used",
+     "evidence": "Appendix D pages 52-53 source code: 'from scipy.stats import spearmanr' and 'from scipy.stats import f_oneway'"
+    },
+    {
+     "key": "seaborn",
+     "label": "Seaborn",
+     "status": "used",
+     "evidence": "Appendix D page 52 source code: 'import seaborn as sns'"
+    },
+    {
+     "key": "matplotlib",
+     "label": "Matplotlib",
+     "status": "used",
+     "evidence": "Appendix D page 52 source code: 'import matplotlib.pyplot as plt'"
+    },
+    {
+     "key": "deeplabcut",
+     "label": "DeepLabCut",
+     "status": "cited",
+     "evidence": "Page 12 Related Work: 'Systems such as DeepLabCut allow researchers to track specific body parts in animals and humans without the need for physical markers'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "26012",
+  "canonical_title": "Microplastics Identification Using Computer Vision",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "ITX 3009",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Myo Ko Zin",
+    "student_id": "6520227"
+   },
+   {
+    "name": "Chalida Hiranmateekul",
+    "student_id": "6520180"
+   },
+   {
+    "name": "Lynn Yaung Moe",
+    "student_id": "6520239"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Dobri Atanassov Batovski",
+  "committee": [
+   "Asst. Prof. Dr. Darun Kesrarat",
+   "A. Tianai Tang"
+  ],
+  "abstract": "Invisible but amplifying microplastic pollution represents a major and escalating threat not only to the global ecosystem but also to the long-term health of humanity. Resolving this environmental crisis demands both public awareness and the capacity for early intervention — goals that are severely hampered by the fact that traditional measurement techniques such as Fourier Transform Infrared (FTIR) spectroscopy and Raman spectroscopy are prohibitively expensive for most undergraduate laboratory settings.\n\nThis work proposes a cross-disciplinary iSTEM (integrated Science, Technology, Engineering, and Mathematics) framework designed as a full laboratory learning experience. By grounding the curriculum in the local context of Bang Saen Beach, Thailand, the framework systematically guides undergraduate Information Technology students through four sequential phases: hands-on wet-lab extraction using density separation (Phase 1), low-cost optical digitization using a USB digital microscope (Phase 2), AI model deployment and domain-adapted training (Phase 3), and a novel unified mathematical evaluation pipeline (Phase 4).\n\nIn Phase 3, students deploy and evaluate four complete neural network architectures: Faster R-CNN, YOLOv5, U-Net, and Mask R-CNN. A critical technical innovation of this study is a three-phase training sequence that includes few-shot domain adaptation specifically targeting the optical artifacts (glare, chromatic aberration) introduced by the low-cost microscope. Phase 4 introduces a post-processing pipeline that converts all model outputs — whether bounding boxes or pixel-level segmentation masks — into a standardized bounding-box representation, enabling fair cross-architectural comparison. A novel environmental metric, the Contamination Percentage (Cp), is derived from the unified output to translate raw AI detections into a measurable, physically interpretable scale of local contamination severity.\n\nAll four architectures achieved statistically significant detection performance above random chance under a right-tailed one-sample z-test at α = 0.05. Mask R-CNN achieved the best overall result with an F1-score of 0.8287, instance accuracy of 70.75%, and the highest statistical significance (z = 3.7627, p = 0.000084). Faster R-CNN placed second (F1 = 0.7918), followed by YOLOv5 (F1 = 0.7830) and U-Net (F1 = 0.7423). The results demonstrate that deep learning tools can be successfully deployed in resource-constrained undergraduate classrooms, and that the iSTEM framework provides an accessible, reproducible, and scalable tool for educators to meaningfully embed the global microplastic health crisis into computer science and engineering curricula.",
+  "abstract_source": "document",
+  "reported_keywords": [
+   "microplastics",
+   "image segmentation",
+   "object detection",
+   "deep learning",
+   "domain adaptation",
+   "environmental monitoring",
+   "iSTEM education",
+   "interdisciplinary learning",
+   "low-cost workflows",
+   "Contamination Percentage",
+   "z-test hypothesis testing"
+  ],
+  "classification": {
+   "category": [
+    "ai_data",
+    "research"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "education",
+    "other"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "python",
+    "opencv"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "usb_digital_microscope",
+     "label": "USB digital microscope",
+     "status": "used",
+     "evidence": "Section 1.4 Scope: 'Low-cost digitization using a USB digital microscope at 40× magnification'"
+    }
+   ],
+   "domain": [
+    {
+     "key": "environmental_monitoring",
+     "label": "Environmental monitoring",
+     "status": "used",
+     "evidence": "Objective 1 (p.10): guides students through the full pipeline of environmental microplastic monitoring from sample collection to statistical AI validation"
+    }
+   ],
+   "technology": [
+    {
+     "key": "pytorch",
+     "label": "PyTorch",
+     "status": "used",
+     "evidence": "Section 4.3 Technology Stack: 'PyTorch 1.13 (torchvision for Faster R-CNN and Mask R-CNN backbones)' and custom U-Net implementation in PyTorch"
+    },
+    {
+     "key": "torchvision",
+     "label": "Torchvision",
+     "status": "used",
+     "evidence": "Appendix A.2.2 code: torchvision.models.detection.fasterrcnn_resnet50_fpn and maskrcnn_resnet50_fpn model loaders"
+    },
+    {
+     "key": "faster_r_cnn",
+     "label": "Faster R-CNN",
+     "status": "used",
+     "evidence": "Abstract: students deploy and evaluate four architectures: Faster R-CNN, YOLOv5, U-Net, and Mask R-CNN"
+    },
+    {
+     "key": "mask_r_cnn",
+     "label": "Mask R-CNN",
+     "status": "used",
+     "evidence": "Chapter 5 Table 1: Mask R-CNN achieved the highest F1-score of 0.8287 on the V7 holdout test set"
+    },
+    {
+     "key": "u_net",
+     "label": "U-Net (Attention-ASPP)",
+     "status": "used",
+     "evidence": "Appendix A.4.1: An enhanced Attention-ASPP U-Net is implemented in PyTorch with Focal + Dice Loss"
+    },
+    {
+     "key": "yolov5",
+     "label": "YOLOv5 (Ultralytics)",
+     "status": "used",
+     "evidence": "Section 4.3: Ultralytics YOLOv5 repository (custom-trained v5 weights); Appendix A.3 uses YOLO('yolov5mu.pt')"
+    },
+    {
+     "key": "roboflow",
+     "label": "Roboflow",
+     "status": "used",
+     "evidence": "Section 4.3: Roboflow for dataset hosting, version control, annotation quality review, and export in COCO JSON and YOLOv5 TXT formats"
+    },
+    {
+     "key": "numpy",
+     "label": "NumPy",
+     "status": "used",
+     "evidence": "Section 4.3: NumPy and SciPy (scipy.stats.norm) for z-test computation"
+    },
+    {
+     "key": "scipy",
+     "label": "SciPy",
+     "status": "used",
+     "evidence": "Section 4.3: scipy.stats.norm used for one-tailed p-values in the z-test validation"
+    },
+    {
+     "key": "pandas",
+     "label": "Pandas",
+     "status": "used",
+     "evidence": "Section 4.3: Pandas for per-image data aggregation in the Cp Excel exports"
+    },
+    {
+     "key": "matplotlib",
+     "label": "Matplotlib",
+     "status": "used",
+     "evidence": "Section 4.3: Matplotlib 3.7 for performance bar charts, Cp boxplots, per-image trend lines, and radar charts"
+    },
+    {
+     "key": "openpyxl",
+     "label": "OpenPyXL",
+     "status": "used",
+     "evidence": "Section 4.3: OpenPyXL for Excel export of per-image hypothesis values"
+    },
+    {
+     "key": "cuda",
+     "label": "NVIDIA CUDA",
+     "status": "used",
+     "evidence": "Section 3.2: host laptop running Windows 11 with Anaconda Python 3.9 and CUDA 11.7"
+    }
+   ]
+  }
+ },
+ {
+  "id": "26013",
+  "canonical_title": "CodeFix: Learn Debugging Through Play",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "ITX3009",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Kaung Hsu Thway",
+    "student_id": "6611039"
+   },
+   {
+    "name": "Sein Win Htut",
+    "student_id": "6611040"
+   },
+   {
+    "name": "Phoo Myat Thwe",
+    "student_id": "6611852"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Dobri Atanassov Batovski",
+  "committee": [
+   "Asst. Prof. Dr. Darun Kesrarat",
+   "A. Tianai Tang"
+  ],
+  "abstract": "CodeFix is a Python-based debugging practice platform. It is for beginner programmers to take care of syntax errors and variable errors by doing debugging practice. These days, most beginner programmers spend a lot of their time finding syntax errors and variable errors. This often reduces learning efficiency and negatively affects confidence in coding. To reduce the occurrence of those errors, CodeFix will be practiced with three modes: (i) normal mode, (ii) game mode. In normal mode, students can practice Python debugging problems at easy, medium, and hard levels. CodeFix lets learners test broken code, understand the error messages, and follow gradually stronger hints. They can figure out the correct fix by themselves. By practicing like this, they don't need to use most of their time finding syntax errors and variable errors. In game mode, there is a short storyline game, and users need to solve some problems to win. Game mode is designed to attract people to be interested in programming and not to be afraid of coding languages. CodeFix aims to build confidence, improve error-analysis skills, and strengthen exam performance for beginner programmers. To evaluate the effectiveness of CodeFix, beginner programmers participate in debugging practice sessions using the platform, and their performance is analyzed in terms of error-fixing accuracy, time spent on debugging tasks, and hints used. The expected outcome of this project is to help students develop systematic debugging habits, reduce the time spent finding syntax errors and variable errors, and prepare learners for real-world coding tasks.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application",
+    "game"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [
+    "gamification"
+   ],
+   "technology": [
+    "nextjs",
+    "mongodb",
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "debugging_education",
+     "label": "Debugging education for novice programmers",
+     "status": "used",
+     "evidence": "Abstract: CodeFix is a Python-based debugging practice platform for beginner programmers to practice fixing syntax and variable errors"
+    }
+   ],
+   "technology": [
+    {
+     "key": "fastapi",
+     "label": "FastAPI",
+     "status": "used",
+     "evidence": "Table 2 Tech Stack (p.14): Code Execution Service FastAPI, which safely runs user-submitted Python code"
+    },
+    {
+     "key": "phaser",
+     "label": "Phaser game engine",
+     "status": "used",
+     "evidence": "Table 2 Tech Stack: Game Engine Phaser; Section 4.2.2: the game experience is implemented using Phaser"
+    },
+    {
+     "key": "openai_api",
+     "label": "OpenAI API",
+     "status": "used",
+     "evidence": "Table 2 Tech Stack: AI Hint Generator OpenAI API; Section 3.1.3: uses the OpenAI API to analyze user code and generate hints"
+    },
+    {
+     "key": "gpt_4o",
+     "label": "OpenAI GPT-4o",
+     "status": "used",
+     "evidence": "Appendix C.2 _request_hints: openai_client.chat.completions.create(model='gpt-4o', ...)"
+    },
+    {
+     "key": "scipy",
+     "label": "SciPy",
+     "status": "used",
+     "evidence": "Appendix E: from scipy.stats import shapiro, plus stats.probplot for Q-Q plots"
+    },
+    {
+     "key": "numpy",
+     "label": "NumPy",
+     "status": "used",
+     "evidence": "Appendix D permutation test: rng = np.random.default_rng(seed) over 1,000,000 permutations"
+    },
+    {
+     "key": "pandas",
+     "label": "Pandas",
+     "status": "used",
+     "evidence": "Appendix D: df_normal = pd.read_excel(file_normal) for completion-time analysis"
+    },
+    {
+     "key": "matplotlib",
+     "label": "Matplotlib",
+     "status": "used",
+     "evidence": "Appendix D/E: import matplotlib.pyplot as plt for permutation histograms, box plots, and Q-Q plots"
+    }
+   ]
+  }
+ },
+ {
+  "id": "26016",
+  "canonical_title": "Simplification of Technical Documentation in STEM Education for Neurodivergent Individuals",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CSX 3011",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Min Myint Moh Soe",
+    "student_id": "6530262"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Dobri Atanassov Batovski",
+  "committee": [
+   "Dr. Kwankamol Nongpong",
+   "A. Sakchhi Paudel"
+  ],
+  "abstract": "Technical documentation and user interfaces (UI) in STEM are often designed for a general audience. They are usually filled with dense text, long sentences, and jargon, which can introduce learning difficulties, especially for students with attention deficit hyperactivity disorder or dyslexia. This preliminary study evaluated the effectiveness of a constraint-based prompting framework that was based on standard accessibility guidelines and rules to simplify both documentation and UI microcopy while largely preserving important details from the original content using a large language model. We collected two pilot datasets for this study and simplified the contents using the Gemini-3-Pro-Preview Model. Simplified and original content pairs were evaluated using computed readability/fidelity metrics and a pilot survey measuring perceived understanding and mental effort using Likert scale questions. Readability metrics showed improvements with high retention of technical terms and numeric/format token preservation. For the pilot survey, improvements on results of ease, mental demand, and self-reported main idea understanding of reading passages were significant. Additionally, participants selected optimized UI microcopy more frequently over original versions. Significant benefits for the targeted screened population over the control group, however, were not established in this pilot, motivating further studies on personalization, baseline comparisons, and larger-scale validations.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "research"
+   ],
+   "platform": [
+    "none"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [
+    "nlp"
+   ],
+   "technology": [
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "accessibility",
+     "label": "Accessibility and inclusive design for neurodivergent users",
+     "status": "used",
+     "evidence": "Section 2.1: constraint rules built upon WCAG 2.2, W3C COGA, ISO, and British Dyslexia Association guidelines for ADHD and dyslexia"
+    }
+   ],
+   "technology": [
+    {
+     "key": "gemini_3_pro",
+     "label": "Google Gemini 3 Pro (Preview)",
+     "status": "used",
+     "evidence": "Section 2.3: both prototypes used the Gemini-3-Pro-Preview model (18-November-2025 checkpoint), temperature 0.3, topP 0.9"
+    },
+    {
+     "key": "scipy",
+     "label": "SciPy",
+     "status": "used",
+     "evidence": "Appendix D: from scipy.stats import ttest_rel; wilcoxon and Mann-Whitney U test snippets"
+    },
+    {
+     "key": "numpy",
+     "label": "NumPy",
+     "status": "used",
+     "evidence": "Appendix B: def mean_sd(x: np.ndarray) using np.nanmean and np.nanstd"
+    },
+    {
+     "key": "pandas",
+     "label": "Pandas",
+     "status": "used",
+     "evidence": "Appendix D: df = pd.read_excel(xlsx, sheet_name=SHEET_NAME, engine='openpyxl')"
+    },
+    {
+     "key": "openpyxl",
+     "label": "OpenPyXL",
+     "status": "used",
+     "evidence": "Appendix D: Excel loading via pd.read_excel(..., engine='openpyxl') for survey results"
+    },
+    {
+     "key": "tkinter",
+     "label": "Tkinter",
+     "status": "used",
+     "evidence": "Appendix B: launch_gui() builds a desktop Readability Metrics app with import tkinter as tk"
+    }
+   ]
+  }
+ },
+ {
+  "id": "26017",
+  "canonical_title": "Automation Aspects of Spin-Locked Magnetic Levitation",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT4292",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Ismail Hamdhoon",
+    "student_id": "6420140"
+   },
+   {
+    "name": "Sanzana Tahsin",
+    "student_id": "6138302"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Dobri Atanassov Batovski",
+  "committee": [
+   "Dr. Kwankamol Nongpong",
+   "A. Sakchhi Paudel"
+  ],
+  "abstract": "This project presents the design and implementation of an machine learning magnetic levitation system capable of manipulating lightweight objects through transparent barriers without the use of electromagnets or direct physical contact. The system leverages the repulsive and attractive forces between two permanent magnets one spinning rotor magnet above and one freely suspended floater magnet below it to achieve stable levitation and controlled spatial movement of a target object. A sole purpose of this work is the integration of a real-time pipeline powered by machine learning to close the control loop. Developing a machine learning aspects using Reinforcement learning method on monitors the position, and stability of the levitated object, feeding this data into a trained model that dynamically adjusts the speed, direction, and vertical position of the spinning magnet. This feedback mechanism enables the system to perform precision levitation including lateral translation, rotational control, and active stabilization against instability all without human intervention. Unlike conventional magnetic levitation approaches that rely on electromagnetic coils and complex power electronics, this system is purely passive on the levitation side, reducing hardware complexity while demonstrating that intelligent software control of the spin can compensate for the unstable nature of permanent-magnet equilibria. The result is a compact, low-power, and mechanically simple platform with potential applications in contactless object handling, laboratory automation, educational demonstrations, and manipulation in sealed or sterile environments. This work demonstrates that the combination of Magnetostatics, mechanics and modern machine learning techniques which can allow new ways of contactless manipulation.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "hardware_iot",
+    "ai_data"
+   ],
+   "platform": [
+    "raspberry_pi"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [],
+   "technology": [
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "laboratory_automation",
+     "label": "Laboratory automation",
+     "status": "cited",
+     "evidence": "Abstract: \"potential applications in contactless object handling, laboratory automation, educational demonstrations\""
+    }
+   ],
+   "technology": [
+    {
+     "key": "raspberry_pi_os",
+     "label": "Raspberry Pi OS",
+     "status": "used",
+     "evidence": "Section 3.2.3 Software Environment: \"Operating System: Raspberry Pi OS (Debian-based Linux)\""
+    },
+    {
+     "key": "pigpio",
+     "label": "pigpio",
+     "status": "used",
+     "evidence": "Section 3.2.3: \"Motor Control: RPi.GPIO / pigpio library for PWM signal generation to the ESC\""
+    },
+    {
+     "key": "rpi_gpio",
+     "label": "RPi.GPIO",
+     "status": "used",
+     "evidence": "Section 3.2.3: \"Motor Control: RPi.GPIO / pigpio library for PWM signal generation to the ESC\""
+    },
+    {
+     "key": "lgpio",
+     "label": "lgpio",
+     "status": "used",
+     "evidence": "Appendix A.3: \"the main loop polls the Hall sensor via lgpio at 0.5ms intervals to count rising edges\""
+    },
+    {
+     "key": "sigrok",
+     "label": "sigrok-cli",
+     "status": "used",
+     "evidence": "Appendix A.3: \"reads the UNI-T tachometer output via sigrok-cli\"; Table 7: \"Tachometer interface sigrok-cli, continuous analog mode\""
+    },
+    {
+     "key": "random_forest",
+     "label": "Random Forest regression",
+     "status": "used",
+     "evidence": "Section 5.5.3: \"The Random Forest Regression model was selected as the optimal choice for this experiment\""
+    },
+    {
+     "key": "reinforcement_learning",
+     "label": "Reinforcement learning",
+     "status": "used",
+     "evidence": "Section 4.3: \"The system is formulated as a Markov Decision Process (MDP)\"; Section 5.5.1: \"the experiment transitioned from a Reinforcement Learning approach to a supervised regression framework\""
+    },
+    {
+     "key": "bldc_motor",
+     "label": "Brushless DC motor with ESC",
+     "status": "used",
+     "evidence": "Table 1 Hardware Components: \"Brushless DC Motor - Drives the rotor magnet at controlled RPM\"; \"ESC (Electronic Speed Controller) - Translates PWM signals from the Raspberry Pi into motor drive currents\""
+    }
+   ]
+  }
+ },
+ {
+  "id": "26018",
+  "canonical_title": "DockForge",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CSX/ITX 3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Thiri Htet",
+    "student_id": "6611714"
+   },
+   {
+    "name": "Swan Htet Aung",
+    "student_id": "6611977"
+   },
+   {
+    "name": "Thwin Htoo Aung",
+    "student_id": "6612109"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "Asst. Prof. Dr. Paitoon Porntrakoon",
+   "A. Athiphat Hirunadisuan"
+  ],
+  "abstract": "Docker has become one of the most important tools in modern software development for building, deploying, and managing applications in containerized environments. However, many developers face difficulties when writing Dockerfiles manually, remembering complex syntax, managing multi-stage builds, and executing Docker commands correctly. This project introduces DockForge, a Visual Studio Code extension designed to simplify Dockerfile creation and container management through a graphical user interface. DockForge provides an intuitive development environment that allows developers to visually construct Dockerfiles, validate them in real time, test builds with live logs, and run containers directly from within the VS Code interface. The system integrates Docker CLI functionality, Docker Hub search capabilities, and real-time validation tools into a unified workflow. By reducing complexity and improving usability, DockForge enhances developer productivity and lowers the barrier to adopting Docker in modern software development workflows.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [],
+   "technology": [
+    "react",
+    "nodejs"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "devops",
+     "label": "DevOps / container tooling",
+     "status": "used",
+     "evidence": "Abstract: \"DockForge, a Visual Studio Code extension designed to simplify Dockerfile creation and container management through a graphical user interface\""
+    }
+   ],
+   "technology": [
+    {
+     "key": "docker",
+     "label": "Docker",
+     "status": "used",
+     "evidence": "Section 4.2.2: \"The backend uses Node.js child_process modules (exec and spawn) to interact directly with the host machine's native Docker daemon\""
+    },
+    {
+     "key": "docker_hub",
+     "label": "Docker Hub",
+     "status": "used",
+     "evidence": "Section 3.3: \"The system connects directly to Docker Hub's public API to facilitate base image selection\""
+    },
+    {
+     "key": "typescript",
+     "label": "TypeScript",
+     "status": "used",
+     "evidence": "Section 4.2.3: \"TypeScript is used to add static typing to the JavaScript codebase\""
+    },
+    {
+     "key": "vite",
+     "label": "Vite",
+     "status": "used",
+     "evidence": "Section 4.2.3: \"Vite is utilized as the frontend build tool and bundler\""
+    },
+    {
+     "key": "monaco_editor",
+     "label": "Monaco Editor",
+     "status": "used",
+     "evidence": "Section 4.2.3: \"DockForge integrates the Monaco Editor (the same code editor that powers VS Code itself)\""
+    },
+    {
+     "key": "vscode_extension_api",
+     "label": "VS Code Extension API",
+     "status": "used",
+     "evidence": "Section 3.1: \"The extension utilizes the VS Code Extension API to manage the workspace and relies on a React-based Webview\""
+    },
+    {
+     "key": "vscode_webview_ui_toolkit",
+     "label": "VS Code Webview UI Toolkit",
+     "status": "used",
+     "evidence": "Section 4.2.4: \"By utilizing the VS Code Webview UI Toolkit, the extension maintains visual consistency with the native editor's themes\""
+    },
+    {
+     "key": "kubernetes",
+     "label": "Kubernetes",
+     "status": "cited",
+     "evidence": "Section 1.3 and 6 Future Work: \"Expanding the GUI to support Docker Compose for multi-container applications and Kubernetes configurations\""
+    },
+    {
+     "key": "docker_compose",
+     "label": "Docker Compose",
+     "status": "cited",
+     "evidence": "Future Work: \"Expanding the GUI to support Docker Compose for multi-container applications\""
+    },
+    {
+     "key": "github_actions",
+     "label": "GitHub Actions",
+     "status": "cited",
+     "evidence": "Section 1.3 Out of Scope: \"does not include connections to automatic deployment pipelines (like GitHub Actions or Jenkins)\""
+    },
+    {
+     "key": "jenkins",
+     "label": "Jenkins",
+     "status": "cited",
+     "evidence": "Section 1.3 Out of Scope: \"(like GitHub Actions or Jenkins)\""
+    }
+   ]
+  }
+ },
+ {
+  "id": "26020",
+  "canonical_title": "Orchestronic IDP Part 3",
+  "aliases": [
+   "Orchestronic Internal Developer Platform Part 3"
+  ],
+  "phase": "final",
+  "course_code": "CSX3011/ITX3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Thu Yein",
+    "student_id": "6420169"
+   },
+   {
+    "name": "Hein Thant",
+    "student_id": "6430047"
+   },
+   {
+    "name": "Htet Aung Shine",
+    "student_id": "6530145"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "Asst. Prof. Dr. Darun Kesrarat",
+   "Asst. Prof. Dr. Thanachai Thumthawatworn"
+  ],
+  "abstract": "Cloud infrastructure plays an important role in modern software development. Developers often need servers, databases, and other resources in order to build and test applications. However, in many organizations the process of requesting these resources is slow because developers must wait for operations teams to manually provision them. This delay can slow down development and reduce team productivity. Orchestronic is an Internal Developer Platform (IDP) designed to simplify and automate the process of cloud resource provisioning. The platform allows developers to request infrastructure resources through a self-service interface while maintaining approval and control by project managers and IT personnel. The Orchestronic platform has been developed over multiple senior project phases. In Senior Project 1 (Semester 2/2024), the first team introduced the initial concept and built the foundation of the system, focusing on basic cloud resource provisioning and core system architecture. In Senior Project 2 (Semester 1/2025), the second team improved the system by expanding the platform's capabilities, improving the user interface, and adding support for additional cloud resources and workflow management. This project represents Part 3 of the Orchestronic platform, developed during Senior Project 2 (Semester 2/2025). The goal of this phase is to further enhance the platform by improving automation, expanding infrastructure capabilities, and integrating additional development tools that support modern cloud-based workflows. By continuing the development of Orchestronic, this project aims to create a more complete Internal Developer Platform that helps organizations reduce manual infrastructure management, improve collaboration between development and operations teams, and accelerate software development processes.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [],
+   "technology": [
+    "react",
+    "nodejs",
+    "express",
+    "postgresql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "devops",
+     "label": "DevOps / internal developer platform",
+     "status": "used",
+     "evidence": "Abstract: \"Orchestronic is an Internal Developer Platform (IDP) designed to simplify and automate the process of cloud resource provisioning\""
+    }
+   ],
+   "technology": [
+    {
+     "key": "microsoft_azure",
+     "label": "Microsoft Azure",
+     "status": "used",
+     "evidence": "Section 3.3: \"Orchestronic integrates with both Amazon Web Services and Microsoft Azure to support provisioning of common infrastructure resources\""
+    },
+    {
+     "key": "aws",
+     "label": "Amazon Web Services",
+     "status": "used",
+     "evidence": "Section 1.2: \"integrates with cloud service providers such as Microsoft Azure and Amazon Web Services (AWS) to automatically provision the requested resources\""
+    },
+    {
+     "key": "azure_app_service",
+     "label": "Azure App Service",
+     "status": "used",
+     "evidence": "Section 4.2.2 Tech Stack: \"Hosting: Microsoft Azure App Service for backend hosting and deployment\""
+    },
+    {
+     "key": "azure_ad",
+     "label": "Azure AD",
+     "status": "used",
+     "evidence": "Section 5.1.2: \"The login page implements secure authentication through Azure AD integration\""
+    },
+    {
+     "key": "aws_sdk_javascript",
+     "label": "AWS SDK for JavaScript",
+     "status": "used",
+     "evidence": "Section 4.2.2: \"Cloud SDKs: AWS SDK for JavaScript and Azure SDK for Node.js for cloud provider integrations\""
+    },
+    {
+     "key": "ec2",
+     "label": "Amazon EC2",
+     "status": "used",
+     "evidence": "Limitations 1: \"a fixed set of resource types (For example, EC2 only available t3.micro)\"; 5.1.4: \"EC2 Instance Type\""
+    },
+    {
+     "key": "k3s",
+     "label": "K3s",
+     "status": "used",
+     "evidence": "Section 5.1.4: \"the platform utilizes K3s to deploy a self-managed Kubernetes cluster\""
+    },
+    {
+     "key": "kubernetes",
+     "label": "Kubernetes",
+     "status": "used",
+     "evidence": "Section 5.3.2: \"dynamically route traffic through the Traefik ingress controller to the specific K3s cluster and pod\""
+    },
+    {
+     "key": "gitlab",
+     "label": "GitLab (self-hosted)",
+     "status": "used",
+     "evidence": "Section 5.1.10: \"managing organizational access to the self-hosted GitLab environment\""
+    },
+    {
+     "key": "traefik",
+     "label": "Traefik",
+     "status": "used",
+     "evidence": "Section 5.3.1: \"integrating certificates generated via Traefik's Let's Encrypt automation with Cloudflare\""
+    },
+    {
+     "key": "lets_encrypt",
+     "label": "Let's Encrypt",
+     "status": "used",
+     "evidence": "Section 5.3.1: \"certificates generated via Traefik's Let's Encrypt automation\""
+    },
+    {
+     "key": "cloudflare",
+     "label": "Cloudflare",
+     "status": "used",
+     "evidence": "Section 5.3.1: \"Cloudflare, the platform's DNS provider\""
+    },
+    {
+     "key": "jwt",
+     "label": "JSON Web Tokens",
+     "status": "used",
+     "evidence": "Section 4.2.2: \"Authentication: JSON Web Tokens (JWT) for session management and role-based access control\""
+    },
+    {
+     "key": "tailwind_css",
+     "label": "Tailwind CSS",
+     "status": "used",
+     "evidence": "Section 4.2.2: \"Styling: Tailwind CSS for responsive and consistent UI design\""
+    },
+    {
+     "key": "swagger",
+     "label": "Swagger UI",
+     "status": "used",
+     "evidence": "Section 5.2 Project Resources: \"Swagger UI - Api Docs\""
+    },
+    {
+     "key": "terraform",
+     "label": "Terraform",
+     "status": "cited",
+     "evidence": "Section 2.2.3: \"IaC tools such as Terraform, AWS CloudFormation, and Pulumi\"; Reference [1]"
+    },
+    {
+     "key": "aws_cloudformation",
+     "label": "AWS CloudFormation",
+     "status": "cited",
+     "evidence": "Section 2.2.3 and Reference [2]: \"AWS CloudFormation. AWS Documentation.\""
+    },
+    {
+     "key": "pulumi",
+     "label": "Pulumi",
+     "status": "cited",
+     "evidence": "Section 2.2.3: \"IaC tools such as Terraform, AWS CloudFormation, and Pulumi\""
+    },
+    {
+     "key": "backstage",
+     "label": "Backstage",
+     "status": "cited",
+     "evidence": "Section 2.2.4: \"Backstage (open source, developed by Spotify), Port, and Cortex\""
+    },
+    {
+     "key": "google_cloud_platform",
+     "label": "Google Cloud Platform",
+     "status": "cited",
+     "evidence": "Section 2.2.2: \"AWS, Microsoft Azure, and Google Cloud Platform (GCP) offer web-based management consoles\""
+    },
+    {
+     "key": "aws_eks",
+     "label": "AWS EKS",
+     "status": "cited",
+     "evidence": "Section 5.1.4: \"rather than using the AWS-managed EKS service\""
+    }
+   ]
+  }
+ }
+]

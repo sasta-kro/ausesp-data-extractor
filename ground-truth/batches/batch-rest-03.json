@@ -1,0 +1,2022 @@
+[
+ {
+  "id": "2251",
+  "canonical_title": "The Smart Dry Box",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT 4291",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Jiahui Ouyang",
+    "student_id": "6028009"
+   }
+  ],
+  "advisor": "Pawut Satitsuksanoh",
+  "committee": [
+   "Asst. Prof. Dr. Thanachai Thumthawatworn",
+   "Asst. Prof. Dr. Paitoon Porntrakoon"
+  ],
+  "abstract": "Simple remote control (infrared remote control) has become the past, and products in the present era send instructions to products through connecting to the Internet. People expect that automation can make tasks easy, comfortable, fast and efficient. Here introduces an innovative solution for humidity control and monitoring with the use of an intelligent drying box system. The proposed system utilizes a Peltier dehumidifier, a Blynk-based microcontroller (NodeMCU ESP8266), and a humidity sensor (DHT 11) to maintain a certain humidity environment for storing moisture-sensitive materials such as electronic components, camera lenses, and musical instruments. The Blink application monitors the humidity level remotely through smart phones or computers, allowing users to receive notifications of humidity level fluctuations and make necessary adjustments to the humidity value in the box. The smart drying box system offers several advantages over traditional humidity control methods. Firstly, the system provides an affordable and practical solution to maintain a certain humidity environment, making it suitable for personal or commercial use. Compared to traditional drying boxes that can stabilize humidity values on the market, the proposed system is more cost-effective, making it accessible to a wider range of users. Secondly, the Blynk app enables remote control and monitoring capabilities, allowing users to make necessary adjustments from a distance. This feature makes the system ideal for applications in which constant monitoring is required, such as museums, archives, and galleries.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "hardware_iot"
+   ],
+   "platform": [
+    "embedded_hardware",
+    "web"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [],
+   "technology": []
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "esp8266",
+     "label": "NodeMCU ESP8266",
+     "status": "used",
+     "evidence": "The NodeMCU ESP8266 module in Figure.2(a) is used to enable wireless communication between the IoT cloud (Blynk) and the smart dry box system."
+    }
+   ],
+   "domain": [],
+   "technology": [
+    {
+     "key": "blynk",
+     "label": "Blynk IoT platform",
+     "status": "used",
+     "evidence": "In this project, Blynk is used to enable remote monitoring and control of the dehumidifier."
+    },
+    {
+     "key": "arduino",
+     "label": "Arduino IDE",
+     "status": "used",
+     "evidence": "The Arduino IDE is used in this project to program and upload code to the NodeMCU ESP8266 microcontroller."
+    },
+    {
+     "key": "cplusplus",
+     "label": "C++ (Arduino)",
+     "status": "used",
+     "evidence": "The NodeMCU ESP8266 is programmed using the Arduino IDE, which supports programming languages including C++."
+    },
+    {
+     "key": "mqtt",
+     "label": "MQTT messaging protocol",
+     "status": "used",
+     "evidence": "Blynk is a mobile front-end builder and signaling relay (MQTT); MQTT is a lightweight messaging protocol designed for machine-to-machine (M2M) and Internet of Things (IoT) applications."
+    },
+    {
+     "key": "dht11",
+     "label": "DHT11 temperature/humidity sensor",
+     "status": "used",
+     "evidence": "The DHT 11 in Figure.2(b) is a digital temperature and humidity sensor that can accurately measure and report the temperature and relative humidity of the environment."
+    },
+    {
+     "key": "tec1_12706",
+     "label": "TEC1-12706 Peltier thermoelectric module",
+     "status": "used",
+     "evidence": "In this project, the Tec1-12706 is used as a dehumidifier by cooling one side of the plate to condense moisture from the air."
+    },
+    {
+     "key": "html",
+     "label": "HTML",
+     "status": "used",
+     "evidence": "Design an html page that can know what the user's operation is and submit those values to the ESP8266 microcontroller."
+    }
+   ]
+  }
+ },
+ {
+  "id": "2254",
+  "canonical_title": "Virtual Reality Game Developer “Zurgirial”",
+  "aliases": [
+   "Zurgirial"
+  ],
+  "phase": "final",
+  "course_code": "ITX 3010",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Chanoknon Tangthienkul",
+    "student_id": "6217412"
+   },
+   {
+    "name": "Pakin Charoenchanachai",
+    "student_id": "6210195"
+   },
+   {
+    "name": "Atita Kasemporntaweekit",
+    "student_id": "6211015"
+   }
+  ],
+  "advisor": "Dr. Kwankamol Nongpong",
+  "committee": [
+   "A. Chayapol Moemeng",
+   "A. Tapanan Yeophantong"
+  ],
+  "abstract": "Within this report, we discuss the objective along with the scope of the project, the method that we have been using, the implementation that we have on this project, and the result that we got from Senior Project 2. Throughout the years of study under the Vincent Marry School of Science and Technology at ABAC, there are many projects developed on this ground. We do realize that the Virtual Reality game development concept was used by a few or maybe no one has ever done this before, so we do decide to take this as an opportunity to make something new, based on Virtual Reality technology. Using tools such as Virtual Reality Software Development Kit or the VRSDK, it does give developers the tools which were necessary for this project development, it does helping us to build an immersive experience as the expected result, Unity game engine and Blender, those will be mainly used for game design, whether it is the gameplay, map, and in-game object design, also the Unity game engine is beginner friendly that can be used for creating both three-dimensional (3D), and two-dimensional (2D) object, also it can be used for developing any interactive simulation. For this project, Unity is mainly being used for the map and level design, and blenders for objects and characters design.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "game"
+   ],
+   "platform": [
+    "android",
+    "game"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [],
+   "technology": [
+    "unity",
+    "csharp"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "oculus_quest",
+     "label": "Oculus Quest (Meta VR headset)",
+     "status": "used",
+     "evidence": "we aim to make this project to be available on Oculus platform, the project was made and also designed to be optimized with the Oculus by Meta."
+    }
+   ],
+   "domain": [],
+   "technology": [
+    {
+     "key": "virtual_reality",
+     "label": "Virtual Reality (VR)",
+     "status": "used",
+     "evidence": "the game “Zurgirial” has been developed in Virtual Reality (VR), virtual reality shooting games are a thrilling and immersive way to experience gaming."
+    },
+    {
+     "key": "blender",
+     "label": "Blender 3D",
+     "status": "used",
+     "evidence": "For this project, Unity is mainly being used for the map and level design, and blenders for objects and characters design."
+    },
+    {
+     "key": "android_sdk",
+     "label": "Android SDK",
+     "status": "used",
+     "evidence": "The Android SDK (Software Development Kit) is being used for building the .abb file format, and upload for validation on Oculus Quest."
+    },
+    {
+     "key": "android_ndk",
+     "label": "Android NDK",
+     "status": "used",
+     "evidence": "3.1.9 NDK: The programming is optimized for VR, considering the constraints of the hardware and the need for high-performance graphics."
+    },
+    {
+     "key": "jdk",
+     "label": "Java Development Kit (JDK)",
+     "status": "used",
+     "evidence": "The development of a VR shooting game involves AI NavMesh, Materials system, JDK, SDK, and NDK to complies the build for VR."
+    },
+    {
+     "key": "vr_sdk",
+     "label": "VR Software Development Kit (VRSDK)",
+     "status": "used",
+     "evidence": "Using tools such as Virtual Reality Software Development Kit or the VRSDK, it does give developers the tools which were necessary for this project development."
+    },
+    {
+     "key": "navmesh",
+     "label": "NavMesh AI pathfinding",
+     "status": "used",
+     "evidence": "In this project, a Navigation Mesh can be used to provide pathfinding for enemies or other characters in the game world."
+    },
+    {
+     "key": "fsm",
+     "label": "Finite State Machine (FSM) enemy AI",
+     "status": "used",
+     "evidence": "In this project, a Finite State Machine can be used to control the behavior of enemies or other characters in the game world."
+    },
+    {
+     "key": "il2cpp",
+     "label": "IL2CPP Unity backend",
+     "status": "used",
+     "evidence": "System design table (4.1): Object Design Unity, Blender; Backend ILCPP; Database Unity Collection."
+    }
+   ]
+  }
+ },
+ {
+  "id": "2255",
+  "canonical_title": "VUE MUSIC—a web platform of music",
+  "aliases": [
+   "VUE MUSIC"
+  ],
+  "phase": "final",
+  "course_code": null,
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Huayi Tao",
+    "student_id": "6138425"
+   },
+   {
+    "name": "Xianyun Su",
+    "student_id": "6228443"
+   },
+   {
+    "name": "Jicheng Xu",
+    "student_id": "6117561"
+   }
+  ],
+  "advisor": "Dr. Kwankamol Nongpong",
+  "committee": [
+   "Asst. Prof. Dr. Paitoon Porntrakoon",
+   "Chayapol Moemeng"
+  ],
+  "abstract": "Our project is to design a web music platform, the purpose is to solve the problems some users encounter when using related music software, including music recognition function, music recommendation function and so on. The corresponding algorithms will be used to realize these functions. Finally, after testing, our music platform meets our design purpose and requirements, and all functions are running normally.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [
+    "recommender_system"
+   ],
+   "technology": [
+    "mysql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "music_streaming",
+     "label": "Music streaming and discovery",
+     "status": "used",
+     "evidence": "Our project is to design a web music platform ... including music recognition function, music recommendation function and so on."
+    }
+   ],
+   "technology": [
+    {
+     "key": "spring_boot",
+     "label": "Spring Boot",
+     "status": "used",
+     "evidence": "Development Environment (3.1): Backend Framework: Springboot v2.3.3."
+    },
+    {
+     "key": "vue_js",
+     "label": "Vue.js",
+     "status": "used",
+     "evidence": "Development Environment (3.1): Frontend Framework: VUE v2.9.6."
+    },
+    {
+     "key": "java",
+     "label": "Java",
+     "status": "used",
+     "evidence": "Development Platform: Windows 11, Java 8 (JDK 1.8), Maven v3.6.1, Python3.7; Development Languages: Java, JavaScript, Python."
+    },
+    {
+     "key": "javascript",
+     "label": "JavaScript",
+     "status": "used",
+     "evidence": "Development Languages: Java, JavaScript, Python."
+    },
+    {
+     "key": "python",
+     "label": "Python",
+     "status": "used",
+     "evidence": "Development Platform: Windows 11, Java 8 (JDK 1.8), Maven v3.6.1, Python3.7."
+    },
+    {
+     "key": "scipy",
+     "label": "SciPy",
+     "status": "used",
+     "evidence": "To address this issue, a method was implemented using Scipy library (for detecting local maxima in the spectrum)."
+    },
+    {
+     "key": "maven",
+     "label": "Apache Maven",
+     "status": "used",
+     "evidence": "Development Platform: Windows 11, Java 8 (JDK 1.8), Maven v3.6.1, Python3.7."
+    },
+    {
+     "key": "navicat",
+     "label": "Navicat Premium",
+     "status": "used",
+     "evidence": "Databases and tools: MySQL 5.7, Navicat Premium 16."
+    },
+    {
+     "key": "django",
+     "label": "Django",
+     "status": "used",
+     "evidence": "Another popular Python web framework, Django, connects the back end to the front end ... compatibility with the front-end framework used, Vue, makes Django the most suitable choice for connecting the back."
+    },
+    {
+     "key": "flask",
+     "label": "Flask",
+     "status": "used",
+     "evidence": "Initially, Flask, a popular Python web framework, was utilized to connect the backend to the frontend ... Ultimately, the Flask framework was abandoned due to these challenges."
+    },
+    {
+     "key": "audio_fingerprinting",
+     "label": "Audio fingerprinting",
+     "status": "used",
+     "evidence": "Song recognition is just a kind of audio fingerprint retrieval, and it is the core algorithm of automatic content recognition technology in the field of artificial intelligence."
+    },
+    {
+     "key": "dejavu",
+     "label": "DejaVu audio fingerprinting library",
+     "status": "cited",
+     "evidence": "References [3] https://github.com/worldveil/dejavu."
+    }
+   ]
+  }
+ },
+ {
+  "id": "2593",
+  "canonical_title": "SkillSync: Collaborative Platform",
+  "aliases": [
+   "SkillSync"
+  ],
+  "phase": "final",
+  "course_code": "CSX3011",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Sokty Heng",
+    "student_id": "6530353"
+   },
+   {
+    "name": "Sujit Dityam",
+    "student_id": "6511800"
+   },
+   {
+    "name": "Wai Phyo Oo",
+    "student_id": "6520213"
+   }
+  ],
+  "advisor": "A. Sakchhi Paudel",
+  "committee": [
+   "A. Chayapol Moemeng",
+   "Dr. Phyo Min Tun"
+  ],
+  "abstract": "SkillSync is a comprehensive academic collaboration/networking mobile application on the google play store designed specifically for ABAC students who seek to connect and collaborate on projects, even across different faculties and disciplines. The system addresses the challenges of traditional collaboration methods by providing skill-based discovery, real-time project posting, and seamless communication integration. Built using Flutter for cross-platform compatibility, Firebase for backend services, and published through Professor Chayapol Moemeng's google play store developer account “Rehatcher” for external exposure, SkillSync serves a unified community of ABAC students authenticated exclusively through their institutional Microsoft accounts. The application features real-time direct messaging, project contribution requests, notification management, and an intelligent profile system that showcases each student's skills, major, and academic background to ensure meaningful and complementary team formation.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "android",
+    "mobile"
+   ],
+   "domain": [
+    "campus",
+    "education"
+   ],
+   "topic": [],
+   "technology": [
+    "firebase"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "flutter",
+     "label": "Flutter",
+     "status": "used",
+     "evidence": "Ch. 5: 'The frontend is built using the Flutter framework, which enables cross-platform mobile development'"
+    },
+    {
+     "key": "cloud_firestore",
+     "label": "Cloud Firestore",
+     "status": "used",
+     "evidence": "Sec. 4.3.2: 'the system uses Cloud Firestore, a scalable NoSQL cloud database that supports real-time updates across collections including users, projects, conversations, messages, and notifications'"
+    },
+    {
+     "key": "google_cloud",
+     "label": "Google Cloud Platform",
+     "status": "used",
+     "evidence": "Sec. 4.2: 'leveraging a NoSQL database in the cloud through Google Cloud and Cloud Firestore'"
+    },
+    {
+     "key": "microsoft_oauth",
+     "label": "Microsoft OAuth",
+     "status": "used",
+     "evidence": "Sec. 5.2.2: 'SkillSync implements Microsoft OAuth as its sole authentication method, integrated through Firebase Authentication'"
+    },
+    {
+     "key": "visual_studio_code",
+     "label": "Visual Studio Code",
+     "status": "used",
+     "evidence": "Sec. 4.5 Tech Stack: 'The IDE used throughout development is Visual Studio Code.'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2594",
+  "canonical_title": "AUGo – A campus AR social App",
+  "aliases": [
+   "AUGo – A campus AR social app",
+   "AUGo – A campus AR social media app"
+  ],
+  "phase": "final",
+  "course_code": "CSX 3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Khin Yadanar Moe",
+    "student_id": "6612128"
+   },
+   {
+    "name": "Sam Yati",
+    "student_id": "6611982"
+   },
+   {
+    "name": "Win Yu Maung",
+    "student_id": "6612054"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Thanachai Thumthawatworn",
+  "committee": [
+   "Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan",
+   "A. Mana Tanachan"
+  ],
+  "abstract": "This report includes the detailed development of AUGo, an iOS social campus application that integrates Augmented Reality (AR) with an interactive map. The project addresses low student engagement and inefficient communication at Assumption University by centralizing campus announcements, events, and social interactions into one unified platform. It eliminates the need to monitor scattered social media groups and messaging apps, making campus information easily accessible through an interactive map. AUGo supports three user roles: Students explore campus via AR, collect 3D objects, and discover events; Announcers publish location-based announcements to increase visibility; and Administrators moderate content and user activity. Key features include AR-based collection, real-time notifications, and a social feed with geotagged posts. The iOS app is built using Swift, with MapKit for map integration, and ARKit for AR features. The app is supported by Firebase for handling authentication, database, and notifications. The admin dashboard is developed with TypeScript and deployed on Vercel using a serverless architecture. AUGo demonstrates how combining AR with social and map features can improve campus life, with potential for future expansions to make university events more interactive and engaging.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "ios",
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [
+    "gamification",
+    "geolocation"
+   ],
+   "technology": [
+    "swift",
+    "firebase",
+    "react"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "arkit",
+     "label": "ARKit",
+     "status": "used",
+     "evidence": "Abstract p.3: 'The iOS app is built using Swift, with MapKit for map integration, and ARKit for AR features.'"
+    },
+    {
+     "key": "mapkit",
+     "label": "MapKit",
+     "status": "used",
+     "evidence": "Sec. 3.2 Functional Requirements: 'The system shall display campus locations using MapKit.'"
+    },
+    {
+     "key": "swiftui",
+     "label": "SwiftUI",
+     "status": "used",
+     "evidence": "Sec. 4.3.1 Mobile Application tech stack: 'Swift, ARKit, MapKit, SwiftUI'"
+    },
+    {
+     "key": "typescript",
+     "label": "TypeScript",
+     "status": "used",
+     "evidence": "Sec. 4.2.1: 'Admin Web Dashboard - Built using TypeScript, Hosted on Vercel'"
+    },
+    {
+     "key": "vercel",
+     "label": "Vercel",
+     "status": "used",
+     "evidence": "Sec. 5.1: 'Deployment is achieved using Vercel for web services'; admin dashboard hosted at augo-admin-dashboard.vercel.app"
+    },
+    {
+     "key": "cloud_firestore",
+     "label": "Cloud Firestore",
+     "status": "used",
+     "evidence": "Sec. 3.2: 'The system shall store user data and posts in Firebase Firestore.'"
+    },
+    {
+     "key": "cloud_functions",
+     "label": "Firebase Cloud Functions",
+     "status": "used",
+     "evidence": "Sec. 5.2.3.7: 'High-severity categories ... are automatically handled by the system through Cloud Functions.'"
+    },
+    {
+     "key": "nextjs",
+     "label": "Next.js",
+     "status": "cited",
+     "evidence": "References [1]: Vercel, 'Next.js Documentation.' https://nextjs.org/docs (not explicitly claimed as used in body)"
+    },
+    {
+     "key": "tailwind_css",
+     "label": "Tailwind CSS",
+     "status": "cited",
+     "evidence": "References [4]: Tailwind Labs, 'Tailwind CSS Documentation.' https://tailwindcss.com/docs"
+    },
+    {
+     "key": "nodejs",
+     "label": "Node.js",
+     "status": "cited",
+     "evidence": "References [5]: OpenJS Foundation, 'Node.js Documentation.' https://nodejs.org/en/docs"
+    },
+    {
+     "key": "leaflet",
+     "label": "Leaflet",
+     "status": "cited",
+     "evidence": "References [14]: Leaflet Project, 'Leaflet JavaScript Library Documentation.' https://leafletjs.com/"
+    },
+    {
+     "key": "google_maps",
+     "label": "Google Maps",
+     "status": "cited",
+     "evidence": "Sec. 2.3 Related Work: 'navigation tools like Google Maps provide efficient location-based services'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2595",
+  "canonical_title": "AU Study Group Finder: Connecting students through smarter Study Group Coordination",
+  "aliases": [
+   "AU Study Group Finder"
+  ],
+  "phase": "final",
+  "course_code": "ITX 3009",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Shaun Lai Kyaw San",
+    "student_id": "6540067"
+   },
+   {
+    "name": "Chan Mya Nyein",
+    "student_id": "6540202"
+   },
+   {
+    "name": "Tun Tauk Oo",
+    "student_id": "6611302"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Thanachai Thumthawatworn",
+  "committee": [
+   "Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan",
+   "A. Mana Thanachan"
+  ],
+  "abstract": "Finding and coordinating study groups remains a persistent challenge for university students, often leading to wasted time, missed sessions, and lost peer learning opportunities. This Senior Project presents AU Study Group Finder, a centralized web platform developed to remove the friction from peer collaboration at Assumption University. The system simplifies the process of study group formation, scheduling, and communication by providing a structured environment where students can discover groups based on shared courses, topics, or upcoming examinations. The platform is built using TypeScript and Tailwind CSS for the frontend, with a PHP Laravel backend and PostgreSQL database, deployed on Railway cloud infrastructure. It features a four-tier role system comprising Admin, Moderator, Leader, and Member, each with clearly defined permissions and responsibilities. Key functionalities include group discovery and management, recurring session scheduling with calendar tracking, real-time group chat with smart notifications, a karma-based reward system that incentivizes positive participation, and a comprehensive admin dashboard for platform oversight and engagement analytics. Evaluation of the system demonstrated that AU Study Group Finder effectively addresses the core challenges of peer collaboration by consolidating group formation, communication, and scheduling into a single accessible platform. The system contributes to improved study session attendance, reduced cancellations, and enhanced exam preparation through structured peer learning.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "education",
+    "campus"
+   ],
+   "topic": [
+    "gamification"
+   ],
+   "technology": [
+    "php",
+    "laravel",
+    "postgresql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "typescript",
+     "label": "TypeScript",
+     "status": "used",
+     "evidence": "Sec. 3.9 Tools and Technologies Summary: 'Frontend Language TypeScript - Type-safe UI development'"
+    },
+    {
+     "key": "tailwind_css",
+     "label": "Tailwind CSS",
+     "status": "used",
+     "evidence": "Sec. 3.9: 'Frontend Styling Tailwind CSS - Utility-first responsive styling'"
+    },
+    {
+     "key": "railway",
+     "label": "Railway",
+     "status": "used",
+     "evidence": "Sec. 3.9: 'Deployment Railway - Cloud hosting and CI/CD'; Ch. 6: 'deployed to a live production environment on the Railway cloud platform'"
+    },
+    {
+     "key": "websocket",
+     "label": "WebSockets",
+     "status": "used",
+     "evidence": "Sec. 3.9: 'Real-Time Laravel Echo + WebSockets - Live group chat and notifications'"
+    },
+    {
+     "key": "laravel_echo",
+     "label": "Laravel Echo",
+     "status": "used",
+     "evidence": "Sec. 3.7.2: 'the real-time WebSocket broadcasting system using Laravel Echo'"
+    },
+    {
+     "key": "laravel_sanctum",
+     "label": "Laravel Sanctum",
+     "status": "used",
+     "evidence": "Sec. 3.7.2: 'the authentication and role-based access control system using Laravel Sanctum'"
+    },
+    {
+     "key": "eloquent_orm",
+     "label": "Eloquent ORM",
+     "status": "used",
+     "evidence": "Sec. 3.7.2: 'Laravel's Eloquent ORM was used to interact with the PostgreSQL database'"
+    },
+    {
+     "key": "phpunit",
+     "label": "PHPUnit",
+     "status": "used",
+     "evidence": "Sec. 3.8.1: 'Laravel's built-in PHPUnit testing framework was used to write and execute all unit tests'"
+    },
+    {
+     "key": "figma",
+     "label": "Figma",
+     "status": "used",
+     "evidence": "Sec. 3.9: 'Design Figma - UI wireframing and prototyping'"
+    },
+    {
+     "key": "github",
+     "label": "GitHub",
+     "status": "used",
+     "evidence": "Sec. 3.9: 'Version Control Git / GitHub - Source code management'"
+    },
+    {
+     "key": "ai_assistant",
+     "label": "AI Liveroom assistant",
+     "status": "used",
+     "evidence": "Ch. 5: 'The Liveroom feature provides members with an AI-powered interactive space where users can ask questions related to any course or subject and receive responses in a conversational format.'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2597",
+  "canonical_title": "EduQuest: RPG-Based Learning Management and Quiz Game Platform",
+  "aliases": [
+   "EduQuest"
+  ],
+  "phase": "final",
+  "course_code": "CSX3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "San Lin Htet",
+    "student_id": "6540187"
+   },
+   {
+    "name": "Sai Naing Yi Tun",
+    "student_id": "6540191"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Thanachai Thumthawatworm",
+  "committee": [
+   "A. Lu Jinchun",
+   "A. Sakchhi Paudel"
+  ],
+  "abstract": "EduQuest is a gamified educational web platform designed to improve student engagement in learning through role-playing game (RPG) mechanics. The system combines quiz-based assessment with interactive gameplay, where students answer questions, fight bosses, gain experience points (XP), level up, and collect items. The system supports three user roles: student, teacher, and admin. Teachers can create and manage courses, build quiz quests manually or by CSV import, and monitor student performance. Students can join classes through OTP-based enrollment, complete quests, and track their own growth through profile and inventory systems. Admin users oversee platform operations, including course approval, user management, and report resolution. EduQuest is implemented using React and Phaser for the frontend experience, Node.js/Express for backend services, and MongoDB for persistent storage. Security measures include JWT authentication, password hashing with bcrypt, and rate limiting for sensitive endpoints.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application",
+    "game"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [
+    "gamification"
+   ],
+   "technology": [
+    "react",
+    "express",
+    "nodejs",
+    "mongodb"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "moodle",
+     "label": "Moodle",
+     "status": "cited",
+     "evidence": "p.9 Ch2.2: 'Moodle is one of the most widely used open-source LMS platforms. It provides course creation, student enrollment, grading, forums, and quiz modules.'"
+    },
+    {
+     "key": "google_classroom",
+     "label": "Google Classroom",
+     "status": "cited",
+     "evidence": "p.10 Ch2.2: 'Google Classroom is widely adopted for its simplicity and integration with Google Workspace.'"
+    },
+    {
+     "key": "canvas_lms",
+     "label": "Canvas LMS",
+     "status": "cited",
+     "evidence": "p.11 Ch2.2: 'Canvas is a commercial LMS used by universities. It supports robust grading, assignment modules, and integration with third-party tools.'"
+    },
+    {
+     "key": "kahoot",
+     "label": "Kahoot",
+     "status": "cited",
+     "evidence": "p.12 Ch2.3: 'Kahoot is known for live, competitive quizzes that increase short-term engagement.'"
+    },
+    {
+     "key": "quizizz",
+     "label": "Quizizz",
+     "status": "cited",
+     "evidence": "p.14 Ch2.3: 'Quizizz allows both live and asynchronous quiz gameplay. It has gamified elements (avatars, powerups).'"
+    },
+    {
+     "key": "quizlet",
+     "label": "Quizlet",
+     "status": "cited",
+     "evidence": "p.16 Ch2.3: 'Quizlet supports flashcards, practice sets, and quizzes. It is strong in repetition and memorization.'"
+    },
+    {
+     "key": "duolingo",
+     "label": "Duolingo",
+     "status": "cited",
+     "evidence": "p.18 Ch2.4: 'Duolingo is highly effective in applying gamification to language learning. Features include: XP points, Streaks, Levels and badges.'"
+    },
+    {
+     "key": "classcraft",
+     "label": "Classcraft",
+     "status": "cited",
+     "evidence": "p.21 Ch2.4: 'Classcraft introduces RPG elements into classroom settings. It allows students to earn points and rewards for behaviors and tasks.'"
+    },
+    {
+     "key": "khan_academy",
+     "label": "Khan Academy",
+     "status": "cited",
+     "evidence": "p.21 Ch2.4: 'Khan Academy uses points and streaks to maintain motivation.'"
+    }
+   ],
+   "domain": [],
+   "technology": [
+    {
+     "key": "phaser",
+     "label": "Phaser game engine",
+     "status": "used",
+     "evidence": "p.3 Abstract: 'EduQuest is implemented using React and Phaser for the frontend experience'; p.37 Tech Stack: 'Phaser for 2D game scenes, animations, and time-based interactions.'"
+    },
+    {
+     "key": "mongoose",
+     "label": "Mongoose ODM",
+     "status": "used",
+     "evidence": "p.37 Tech Stack: 'MongoDB with Mongoose for schema validation and data persistence.'"
+    },
+    {
+     "key": "tailwind_css",
+     "label": "Tailwind CSS",
+     "status": "used",
+     "evidence": "p.37 Tech Stack: 'Tailwind CSS for consistent visual styling and responsive layouts.'"
+    },
+    {
+     "key": "bcrypt",
+     "label": "bcrypt",
+     "status": "used",
+     "evidence": "p.36: 'Passwords are hashed with bcrypt.'"
+    },
+    {
+     "key": "jwt",
+     "label": "JSON Web Token",
+     "status": "used",
+     "evidence": "p.36: 'JWT secures protected endpoints and enforces role-based access control.'"
+    },
+    {
+     "key": "vercel",
+     "label": "Vercel",
+     "status": "used",
+     "evidence": "p.36 Cloud deployment: 'Frontend deployed to Vercel.'"
+    },
+    {
+     "key": "render",
+     "label": "Render",
+     "status": "used",
+     "evidence": "p.36 Cloud deployment: 'API deployed to a Node.js runtime with horizontal scaling, Render.'"
+    },
+    {
+     "key": "mongodb_atlas",
+     "label": "MongoDB Atlas",
+     "status": "used",
+     "evidence": "p.36 Cloud deployment: 'MongoDB hosted on a managed service (e.g., MongoDB Atlas).'"
+    },
+    {
+     "key": "cloudinary",
+     "label": "Cloudinary",
+     "status": "used",
+     "evidence": "p.38: 'Cloudinary for media storage and Brevo/Nodemailer for email workflows.'"
+    },
+    {
+     "key": "brevo",
+     "label": "Brevo email API",
+     "status": "used",
+     "evidence": "p.36: 'Email is delivered via Brevo API or SMTP depending on configuration.'"
+    },
+    {
+     "key": "nodemailer",
+     "label": "Nodemailer",
+     "status": "used",
+     "evidence": "p.38: 'Brevo/Nodemailer for email workflows.'"
+    },
+    {
+     "key": "express_rate_limit",
+     "label": "express-rate-limit",
+     "status": "used",
+     "evidence": "p.38: 'express-rate-limit to mitigate abuse on login and OTP endpoints.'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2598",
+  "canonical_title": "Sportify: AI-Supported Fitness Application",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CSX3010/ITX3009",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Nyi Thu Hein",
+    "student_id": "6612080"
+   },
+   {
+    "name": "Aung Myint Myat",
+    "student_id": "6611906"
+   },
+   {
+    "name": "Puran Paodensakul",
+    "student_id": "6611140"
+   }
+  ],
+  "advisor": "Dr. Thanachai Thumthawatworn",
+  "committee": [
+   "A. Jinchun Lu",
+   "A. Sakchhi Paudel"
+  ],
+  "abstract": "Sportify is an AI-supported fitness application developed to address three persistent issues in personal wellness management: fragmented tracking tools, limited personalized guidance, and declining user motivation. The proposed system integrates workout tracking, calorie logging, conversational AI support, and a rule-based achievement system within a single mobile platform. By combining practical self-monitoring functions with a user-friendly multilingual interface, the project aims to help users manage fitness goals more consistently and with less cognitive effort. The system adopts a mobile-first architecture using React Native and Expo for the frontend, Node.js and Express for backend services, Supabase for cloud data storage, JSON Web Token for authentication, and HuggingFace services for natural-language interaction. As a senior project prototype, Sportify demonstrates the feasibility of integrating intelligent assistance and gamification into a practical health application. Although the system still relies on manual data entry and has not yet undergone large-scale user evaluation, it provides a strong foundation for future enhancements such as wearable integration, richer analytics, and more advanced recommendation logic.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "healthcare"
+   ],
+   "topic": [
+    "nlp",
+    "gamification"
+   ],
+   "technology": [
+    "express",
+    "nodejs"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "myfitnesspal",
+     "label": "MyFitnessPal",
+     "status": "cited",
+     "evidence": "p.8 Ch2.2: 'MyFitnessPal is primarily supports calorie tracking, food logging, daily intake targets, and basic activity monitoring.'"
+    },
+    {
+     "key": "nike_training_club",
+     "label": "Nike Training Club",
+     "status": "cited",
+     "evidence": "p.8 Ch2.2: 'Nike Training Club emphasizes guided exercise sessions and professionally designed workouts.'"
+    },
+    {
+     "key": "yazio",
+     "label": "Yazio",
+     "status": "cited",
+     "evidence": "p.8 Ch2.2: 'Yazio focuses on meal planning, calorie control, and weight-management support.'"
+    },
+    {
+     "key": "cronometer",
+     "label": "Cronometer",
+     "status": "cited",
+     "evidence": "p.8 Ch2.2: 'Cronometer emphasizes detailed nutrient tracking and quantitative dietary analysis.'"
+    },
+    {
+     "key": "coachnow",
+     "label": "CoachNow",
+     "status": "cited",
+     "evidence": "p.8 Ch2.2: 'CoachNow supports coach-athlete communication, structured feedback, and performance review.'"
+    },
+    {
+     "key": "trainingpeaks",
+     "label": "TrainingPeaks",
+     "status": "cited",
+     "evidence": "p.9 Ch2.2: 'TrainingPeaks supports training plans, performance analytics, and coaching workflows, especially for endurance athletes.'"
+    }
+   ],
+   "domain": [
+    {
+     "key": "fitness",
+     "label": "Fitness and wellness tracking",
+     "status": "used",
+     "evidence": "p.6 Ch1: 'Sportify, an AI-supported fitness application designed as an integrated digital companion. The system combines workout tracking, calorie monitoring, conversational AI assistance, profile management, and gamified achievement badges in a single mobile environment.'"
+    }
+   ],
+   "technology": [
+    {
+     "key": "react_native",
+     "label": "React Native",
+     "status": "used",
+     "evidence": "p.17 Ch4.2: 'React Native and Expo provide the cross-platform user interface.'"
+    },
+    {
+     "key": "expo",
+     "label": "Expo",
+     "status": "used",
+     "evidence": "p.19 Table 2: 'Mobile Frontend: React Native + Expo, cross-platform mobile interface and navigation.'"
+    },
+    {
+     "key": "supabase",
+     "label": "Supabase",
+     "status": "used",
+     "evidence": "p.19 Table 2: 'Database: Supabase, cloud storage for users, goals, workouts, calories, and badges.'"
+    },
+    {
+     "key": "huggingface",
+     "label": "HuggingFace NLP services",
+     "status": "used",
+     "evidence": "p.17 Ch4.2: 'HuggingFace services support natural-language generation for the chatbot through backend-controlled requests.'"
+    },
+    {
+     "key": "jwt",
+     "label": "JSON Web Token",
+     "status": "used",
+     "evidence": "p.19 Table 2: 'Authentication: JWT, token-based user session control.'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2599",
+  "canonical_title": "Rail Shooter Game With Computer Vision",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CSX3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Mohammad Rahemi",
+    "student_id": "6611695"
+   },
+   {
+    "name": "Mako Mehling",
+    "student_id": "6610028"
+   },
+   {
+    "name": "Kyaw Min Htet",
+    "student_id": "6611242"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Thanachai Thumthawatworn",
+  "committee": [
+   "A. Sakchhi Paudel",
+   "A. Jinchun Lu"
+  ],
+  "abstract": "This project introduces a 3D motion-controlled Rail Shooter Game where players can control the game with their body and hands instead of using traditional devices such as keyboards and mice or external controllers. Developed using the Unity Game Engine and integrated with the MediaPipe Unity Plugin, the system detects real-time body pose via a standard PC webcam, which is then translated into the game to move, aim, and shoot. The core technology stack consists of Unity (C#) for rendering and gameplay logic, and Google's MediaPipe Pose (BlazePose) model for 33-point anatomical landmark detection, bridged through a native C++ interop layer to avoid the latency penalties of network socket communication. The game employs a dual-stream control architecture: the player’s nose landmark (index 0) drives spatial navigation of an in-game spaceship, while wrist landmarks (indices 15 and 16) independently control two aiming crosshairs with an automatic firing system. The system follows a component-based architecture, consistent with Unity’s compound game engine design, where focused MonoBehaviour scripts communicate through C# static events, serialized Inspector references, and singleton services. Multiple layers of smoothing, including Vector3.SmoothDamp, exponential moving averages, velocity dead zones, and DOTween easing, are applied to filter natural human jitter from the tracking data without introducing excessive input lag. The project aims to make motion-controlled gaming, typically associated with expensive VR headsets or specialized controllers like the Nintendo Wii and the Nintendo Switch, more accessible to anyone with a basic computer setup. User evaluation at the Senior Project Exhibition with 42 participants yielded an average experience rating of 8.98 out of 10, with 97.6% of players expressing willingness to play again. The system achieved a stable 60 FPS during active gameplay with sub-100ms input latency, demonstrating that computer vision algorithms can be optimized for real-time, standalone PC gaming applications.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "game"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "unity",
+    "csharp"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "kinect",
+     "label": "Microsoft Kinect",
+     "status": "cited",
+     "evidence": "p.14 Ch2.4: 'The Kinect made it revolutionary when it enabled motion gaming by removing the controller entirely, but it required a dedicated sensor that is no longer in production.'"
+    },
+    {
+     "key": "beat_saber",
+     "label": "Beat Saber",
+     "status": "cited",
+     "evidence": "p.12 Ch2.3: 'Beat Saber being the prime example of this, using high-speed arm movements to slash blocks.'"
+    },
+    {
+     "key": "vrchat",
+     "label": "VRChat",
+     "status": "cited",
+     "evidence": "p.12 Ch2.3: 'VRChat is also another game that utilizes full-body tracking to mirror the user’s in real-life movements.'"
+    },
+    {
+     "key": "project_gameface",
+     "label": "Google Project Gameface",
+     "status": "cited",
+     "evidence": "p.14 Ch2.4: 'Modern accessible solutions such as Project Gameface and MotionInput have begun to address this problem by using standard webcams to track facial expressions and hand gestures.'"
+    },
+    {
+     "key": "motioninput",
+     "label": "MotionInput",
+     "status": "cited",
+     "evidence": "p.14 Ch2.4: cited alongside Project Gameface as webcam-based accessible motion input research."
+    }
+   ],
+   "domain": [],
+   "technology": [
+    {
+     "key": "mediapipe",
+     "label": "Google MediaPipe",
+     "status": "used",
+     "evidence": "p.3 Abstract: 'integrated with the MediaPipe Unity Plugin, the system detects real-time body pose via a standard PC webcam.'"
+    },
+    {
+     "key": "blazepose",
+     "label": "MediaPipe Pose (BlazePose) model",
+     "status": "used",
+     "evidence": "p.3 Abstract: 'Google's MediaPipe Pose (BlazePose) model for 33-point anatomical landmark detection.'"
+    },
+    {
+     "key": "mediapipe_unity_plugin",
+     "label": "MediaPipe Unity Plugin",
+     "status": "used",
+     "evidence": "p.10 Ch2.1.3: 'the project implements the MediaPipe Unity Plugin. This plugin acts as a native C++ interop bridge, allowing the MediaPipe graphs to process webcam frames directly within the Unity application’s memory space.'"
+    },
+    {
+     "key": "dotween",
+     "label": "DOTween",
+     "status": "used",
+     "evidence": "p.45 Ch5.3 Layer 4: 'a new 0.12-second DOTween animation with OutSine easing starts from the current position to the new wrist target.'"
+    },
+    {
+     "key": "cinemachine",
+     "label": "Unity Cinemachine",
+     "status": "used",
+     "evidence": "p.9 Ch2.1.1: 'timeline-based camera animation (via Cinemachine splines) for the automatic forward movement.'"
+    },
+    {
+     "key": "textmeshpro",
+     "label": "TextMeshPro",
+     "status": "used",
+     "evidence": "p.23 Ch3.3: 'The Score Text uses TextMeshPro and is updated by the ScoreManager whenever the score changes.'"
+    },
+    {
+     "key": "unity_splines",
+     "label": "Unity Splines (SplineAnimate/SplineContainer)",
+     "status": "used",
+     "evidence": "p.21 Ch3.3: 'The SplineAnimate component drives the player automatically along a predefined spline track... The SplineContainer holds the actual curve geometry.'"
+    },
+    {
+     "key": "cplusplus",
+     "label": "C++ (native interop)",
+     "status": "used",
+     "evidence": "p.3 Abstract: 'bridged through a native C++ interop layer to avoid the latency penalties of network socket communication.'"
+    },
+    {
+     "key": "openpose",
+     "label": "OpenPose",
+     "status": "cited",
+     "evidence": "p.15 Ch2.5: 'Modern frameworks such as Google's MediaPipe, OpenPose, and Apple's Vision framework have democratized access to real-time pose estimation.'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "25100",
+  "canonical_title": "UltraCare",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Yuun Yamone Aung",
+    "student_id": "6511158"
+   },
+   {
+    "name": "Wyne Nadi",
+    "student_id": "6611919"
+   },
+   {
+    "name": "Sein Tum Tuck",
+    "student_id": "6622152"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Thanachai Thumthawatworn",
+  "committee": [
+   "A. Athipat Cleesuntorn",
+   "A. Sakchhi Paudel"
+  ],
+  "abstract": "UltraCare is a posed-based fall detection and emergency alert system that is designed to improve safety for elderly and high-risked individuals by detecting fall automatically and notifying caregivers in real time. The system processes live video from a CCTV/RTSP camera and uses a human pose estimation model to track key points and movement patterns. To reduce false alarms, it applies a hybrid fall decision method that combines multiple signals such as posture change (from standing to lying), body orientation, sudden head drop, and motion intensity across consecutive frames. Once a fall is detected and confirmed, the system triggers an event notification to a backend server and upload a short video clip as the evidence for faster verification and response. The solution is designed with practical development in mind, supporting continuous monitoring, cooldown control to prevent repeated alerts. Overall, UltraCare provides a reliable and scalable approach to automatic fall detection that helps shorten and quick response time to reduce the risk of severe injury in real-world care environments.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "hardware_iot",
+    "software_application"
+   ],
+   "platform": [
+    "ios",
+    "web",
+    "raspberry_pi"
+   ],
+   "domain": [
+    "healthcare"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "python",
+    "opencv",
+    "nodejs",
+    "express",
+    "nextjs",
+    "swift",
+    "postgresql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "yolov8_pose",
+     "label": "Ultralytics YOLOv8 Pose",
+     "status": "used",
+     "evidence": "Tech stack table (p.37): \"Vision / Inference: Python, Ultralytics YOLOv8 Pose, NumPy\"; \"the YOLOv8 pose estimation model is employed to detect human body keypoints\" (p.16)"
+    },
+    {
+     "key": "swiftui",
+     "label": "SwiftUI",
+     "status": "used",
+     "evidence": "\"The UltraCare mobile application is developed using SwiftUI, Apple's modern declarative framework for building iOS interfaces\" (p.16)"
+    },
+    {
+     "key": "prisma",
+     "label": "Prisma ORM",
+     "status": "used",
+     "evidence": "\"Prisma is used as the ORM to handle communication between the backend and the database\" (p.34)"
+    },
+    {
+     "key": "neon_postgresql",
+     "label": "Neon PostgreSQL",
+     "status": "used",
+     "evidence": "\"Initially used SQLite during development, then migrated the system to Neon PostgreSQL for deployment and better scalability\" (Table 4, p.30)"
+    },
+    {
+     "key": "sqlite",
+     "label": "SQLite",
+     "status": "used",
+     "evidence": "\"Initially used SQLite during development\" (Table 4, p.30)"
+    },
+    {
+     "key": "cloudinary",
+     "label": "Cloudinary",
+     "status": "used",
+     "evidence": "\"Captured media evidence is stored in Cloudinary\" (p.34); \"Cloud Media Storage: Cloudinary\" (Table 8, p.37)"
+    },
+    {
+     "key": "render",
+     "label": "Render cloud hosting",
+     "status": "used",
+     "evidence": "\"the backend hosted on Render and the dashboard on Vercel\" (p.34)"
+    },
+    {
+     "key": "vercel",
+     "label": "Vercel",
+     "status": "used",
+     "evidence": "\"Administrators manage devices and system records through a Next.js dashboard... deployed... the dashboard on Vercel\" (p.34)"
+    },
+    {
+     "key": "ffmpeg",
+     "label": "FFmpeg",
+     "status": "used",
+     "evidence": "\"Clip Encoding: FFmpeg (MP4 H.264 faststart)\" (Table 8, p.37); \"OpenCV (RTSP via FFmpeg backend)\""
+    },
+    {
+     "key": "numpy",
+     "label": "NumPy",
+     "status": "used",
+     "evidence": "\"Vision / Inference: Python, Ultralytics YOLOv8 Pose, NumPy\" (Table 8, p.37)"
+    },
+    {
+     "key": "rtsp",
+     "label": "RTSP streaming protocol",
+     "status": "used",
+     "evidence": "\"streams are accessed through the Real Time Streaming Protocol (RTSP), which allows the system to retrieve live video frames for analysis\" (p.23)"
+    },
+    {
+     "key": "lstm",
+     "label": "Long Short-Term Memory (LSTM)",
+     "status": "cited",
+     "evidence": "Future work only: \"learning-based temporal models such as Long Short-Term Memory (LSTM) or Temporal Convolutional Networks (TCN) could be integrated\" (p.49)"
+    }
+   ]
+  }
+ },
+ {
+  "id": "25101",
+  "canonical_title": "Hotel Reservation and Operational Management System for Convenient Park Sukhumvit Hotel",
+  "aliases": [
+   "Convenient Park Hotel Management System"
+  ],
+  "phase": "final",
+  "course_code": null,
+  "program": null,
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Myo Myat Min",
+    "student_id": "6520054"
+   },
+   {
+    "name": "Bhone Pyae Kyaw",
+    "student_id": "6530327"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Thanachai Thumthawatworn",
+  "committee": [
+   "Asst. Prof. Dr. Darun Kesrarat",
+   "A. Jichun Lu"
+  ],
+  "abstract": "Convenient Park Hotel Management System is developed in collaboration with the hotel to help in managing hotel operations, guest bookings, and internal communication workflows.\n\nIt provides a centralized platform where guests can browse available rooms, make reservations, and submit service requests directly from the website and LINE, while hotel administrators can manage room inventory, track bookings, process payments, and handle guest complaints in real time. The system generates structured booking records, payment confirmations, and notification alerts, complete with real-time status updates across all connected users.\n\nWith a public-facing website, a guest-facing booking application, a comprehensive admin dashboard, and a robust backend API, Convenient Park Hotel Management System ensures that every aspect of hotel operations — from room allocation and meeting room scheduling to guest service request resolution via LINE messaging — is handled accurately and efficiently.\n\nThe system is expected to help the hotel in streamlining front-desk operations, improving guest experience, and maintaining clear and consistent communication between staff and guests, which will significantly reduce the amount of time used up for manual processes and increase the productivity and service quality.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business",
+    "e_commerce"
+   ],
+   "topic": [],
+   "technology": [
+    "nextjs",
+    "nodejs",
+    "react",
+    "postgresql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "hospitality",
+     "label": "Hospitality / hotel operations",
+     "status": "used",
+     "evidence": "Full title names Convenient Park Sukhumvit Hotel; abstract: \"developed in collaboration with the hotel to help in managing hotel operations, guest bookings, and internal communication workflows\" (p.3)"
+    }
+   ],
+   "technology": [
+    {
+     "key": "nestjs",
+     "label": "NestJS",
+     "status": "used",
+     "evidence": "\"NestJS 11 with Modular Architecture... organizes 70+ REST endpoints across feature modules\" (p.22); \"NestJS. A progressive Node.js framework\" (References)"
+    },
+    {
+     "key": "prisma",
+     "label": "Prisma ORM",
+     "status": "used",
+     "evidence": "\"Prisma 6 with PostgreSQL: A type-safe ORM manages 15+ database models with 25+ tracked migrations\" (p.22)"
+    },
+    {
+     "key": "typescript",
+     "label": "TypeScript",
+     "status": "used",
+     "evidence": "\"TypeScript 5: Strongly-typed JavaScript for enhanced code quality\" (p.50)"
+    },
+    {
+     "key": "tailwind_css",
+     "label": "Tailwind CSS",
+     "status": "used",
+     "evidence": "\"Tailwind CSS 4: Utility-first CSS framework for rapid, responsive UI development\" (p.50)"
+    },
+    {
+     "key": "shadcn_ui",
+     "label": "shadcn/ui",
+     "status": "used",
+     "evidence": "\"shadcn/ui: Pre-built accessible component library (new-york style) with Radix UI primitives\" (p.50)"
+    },
+    {
+     "key": "socket_io",
+     "label": "Socket.IO",
+     "status": "used",
+     "evidence": "\"Socket.IO 4: Real-time bidirectional event-based communication across 6 namespaces\" (p.50); \"Socket.IO gateways across 6 namespaces push live updates\" (p.22)"
+    },
+    {
+     "key": "jsonwebtoken",
+     "label": "JWT (jsonwebtoken + bcrypt)",
+     "status": "used",
+     "evidence": "\"jsonwebtoken + bcrypt: JWT token generation/validation and password hashing for dual authentication system\" (p.50)"
+    },
+    {
+     "key": "2c2p",
+     "label": "2C2P payment gateway",
+     "status": "used",
+     "evidence": "\"2C2P Payment Gateway Integration: JWT-signed payment link generation... card and QR code payment channels, and 3DS authentication\" (p.22)"
+    },
+    {
+     "key": "line_messaging_api",
+     "label": "LINE Messaging API",
+     "status": "used",
+     "evidence": "\"LINE Messaging Integration: Webhook processing for LINE events, rich Menu Messages for complaint tracking cards\" (p.22)"
+    },
+    {
+     "key": "liff",
+     "label": "LINE Front-end Framework (LIFF)",
+     "status": "used",
+     "evidence": "\"in-room complaint submission system powered by LINE LIFF integration with photo upload support\" (p.11); \"@line/liff 2.27: LINE Front-end Framework SDK\" (p.50)"
+    },
+    {
+     "key": "cloudinary",
+     "label": "Cloudinary",
+     "status": "used",
+     "evidence": "\"Cloudinary serves as the cloud-based image storage and CDN for room images, user avatars, and complaint photos\" (p.48)"
+    },
+    {
+     "key": "resend",
+     "label": "Resend email service",
+     "status": "used",
+     "evidence": "\"Resend handles all transactional emails with templates covering booking confirmations, cancellations...\" (p.48)"
+    },
+    {
+     "key": "docker",
+     "label": "Docker",
+     "status": "used",
+     "evidence": "\"All three applications (booking frontend, backend, admin) use multi-stage Docker builds to create minimal production images\" (p.26)"
+    },
+    {
+     "key": "nginx",
+     "label": "Nginx",
+     "status": "used",
+     "evidence": "\"Nginx serves as the reverse proxy for SSL termination, traffic routing across the different applications\" (p.26)"
+    },
+    {
+     "key": "digitalocean",
+     "label": "DigitalOcean",
+     "status": "used",
+     "evidence": "\"Digital Ocean Droplet: Cloud hosting environment for all containerized services\" (p.51); \"approximately $24 USD per month\" droplet (p.27)"
+    },
+    {
+     "key": "vercel",
+     "label": "Vercel",
+     "status": "used",
+     "evidence": "\"Public Facing Website: deployed on Vercel\" (p.26)"
+    },
+    {
+     "key": "google_maps",
+     "label": "Google Maps",
+     "status": "used",
+     "evidence": "\"Google Maps: Embedded maps on the marketing website for hotel location display\" (p.51)"
+    }
+   ]
+  }
+ },
+ {
+  "id": "25104",
+  "canonical_title": "DTG FieldLink - Ticket Management for ISP Maintenance Group",
+  "aliases": [
+   "DTG FieldLink",
+   "DTG Ticket Management System"
+  ],
+  "phase": "final",
+  "course_code": "CSX 3011 / ITX 3011",
+  "program": null,
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Zwe La Pyae",
+    "student_id": "6530207"
+   },
+   {
+    "name": "Khant Min Lwin",
+    "student_id": "6530203"
+   },
+   {
+    "name": "Thet Myat Noe Thwin",
+    "student_id": "6530213"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Paitoon Porntrakoon",
+  "committee": [
+   "A. Jinchun Lu",
+   "A. Athiphat Hirunadisuan"
+  ],
+  "abstract": "This report details the design, development, and implementation of DTG FieldLink, a custom-engineered Field Service Management System (FSMS) created for DTG Co. Ltd., a third-party Internet Service Provider (ISP) maintenance company in Myanmar. Historically, the organization's operational workflow relied heavily on unstructured LINE messaging groups for team dispatching and manual Excel spreadsheet entries for record-keeping. This legacy process caused severe administrative bottlenecks, including continuous data duplication, a lack of real-time field coordination, and error-prone manual calculations for monthly ISP material reimbursements.\n\nTo resolve these inefficiencies, a dual-platform digital solution was developed, consisting of a Next.js Admin Web Application for centralized dispatching and a Flutter-based Android Mobile Application for on-site field technicians. Powered by a Node.js backend and a PostgreSQL database hosted on DigitalOcean, the system automates the ticketing lifecycle. It replaces manual chat pings with real-time Firebase push notifications and eliminates the need for manual geographical matching by automatically rendering KMZ/GeoJSON spatial data directly over Google Maps on the technicians' mobile devices.\n\nFurthermore, the system was tailored to fulfill specific client requirements, including precise ticket breaktime tracking to evaluate genuine team efficiency and an automated financial reporting module that exports formatted Excel invoices for seamless ISP reimbursements. Ultimately, DTG FieldLink successfully eradicates manual administrative data duplication, accelerates issue resolution, and provides management with the data-driven analytics necessary for scalable enterprise growth.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web",
+    "android"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [
+    "geolocation"
+   ],
+   "technology": [
+    "nextjs",
+    "nodejs",
+    "postgresql",
+    "firebase"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "telecommunications",
+     "label": "Telecommunications / ISP field maintenance",
+     "status": "used",
+     "evidence": "\"created for DTG Co. Ltd., a third-party Internet Service Provider (ISP) maintenance company in Myanmar\" (abstract, p.3)"
+    }
+   ],
+   "technology": [
+    {
+     "key": "flutter",
+     "label": "Flutter",
+     "status": "used",
+     "evidence": "\"Mobile Client: Developed using the cross-platform Flutter framework... for a native Android experience\" (p.18)"
+    },
+    {
+     "key": "dart",
+     "label": "Dart",
+     "status": "used",
+     "evidence": "\"utilizing the Dart programming language (26.8% of the codebase)\" (p.18)"
+    },
+    {
+     "key": "typescript",
+     "label": "TypeScript",
+     "status": "used",
+     "evidence": "\"The codebase is heavily type-safe, utilizing TypeScript (43.3%) for web and backend environments\" (p.17)"
+    },
+    {
+     "key": "firebase_cloud_messaging",
+     "label": "Firebase Cloud Messaging (FCM)",
+     "status": "used",
+     "evidence": "\"The Node.js backend triggers payloads to Firebase Mobile Services and Firebase Cloud Messaging (FCM) to push immediate, real-time notifications\" (p.18)"
+    },
+    {
+     "key": "digitalocean",
+     "label": "DigitalOcean Droplet",
+     "status": "used",
+     "evidence": "\"The backend and database are hosted on a DigitalOcean Droplet for scalable enterprise performance\" (p.18)"
+    },
+    {
+     "key": "digitalocean_spaces",
+     "label": "DigitalOcean Spaces object storage",
+     "status": "used",
+     "evidence": "\"Photographic evidence and field attachments... persistently stored in DigitalOcean Spaces (DO Spaces), an S3-compatible object storage layer\" (p.18)"
+    },
+    {
+     "key": "google_maps",
+     "label": "Google Maps",
+     "status": "used",
+     "evidence": "\"automatically rendering KMZ/GeoJSON spatial data directly over Google Maps on the technicians' mobile devices\" (abstract, p.3)"
+    },
+    {
+     "key": "geojson_kmz",
+     "label": "KMZ/GeoJSON spatial data",
+     "status": "used",
+     "evidence": "\"Processed KMZ files are securely saved as geojson to and retrieved from DigitalOcean Spaces\" (p.19)"
+    },
+    {
+     "key": "cloudflare",
+     "label": "Cloudflare",
+     "status": "used",
+     "evidence": "\"Traffic is routed through Cloudflare for DNS management, while Resend handles automated transactional emails\" (p.18)"
+    },
+    {
+     "key": "resend",
+     "label": "Resend email service",
+     "status": "used",
+     "evidence": "\"Resend acts as the mail service provider for handling automated transactional emails\" (Table 4.1, p.27)"
+    },
+    {
+     "key": "docker_compose",
+     "label": "Docker Compose",
+     "status": "used",
+     "evidence": "\"a modern, cloud-native technology stack orchestrated via containerized environments using docker-compose\" (p.17)"
+    },
+    {
+     "key": "salesforce_field_service",
+     "label": "Salesforce Field Service",
+     "status": "cited",
+     "evidence": "Related work section: \"Salesforce Field Service is a leading enterprise-grade platform that offers comprehensive workforce management\" (p.14)"
+    },
+    {
+     "key": "servicemax",
+     "label": "ServiceMax",
+     "status": "cited",
+     "evidence": "Related work section: \"ServiceMax is an asset-centric field service application designed specifically for equipment maintenance and tracking\" (p.15)"
+    },
+    {
+     "key": "jobber",
+     "label": "Jobber",
+     "status": "cited",
+     "evidence": "Related work section: \"Jobber is a widely used field service scheduling app tailored for small to medium-sized home service businesses\" (p.15)"
+    }
+   ]
+  }
+ },
+ {
+  "id": "25105",
+  "canonical_title": "Bankify: Secure Payment and Ledger Platform for Academic Applications",
+  "aliases": [
+   "Bankify: Open payment API and Banking Core System"
+  ],
+  "phase": "final",
+  "course_code": "CSX3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Chanyanut Pumasri",
+    "student_id": "6620025"
+   },
+   {
+    "name": "Phanthira Kositjaroenkul",
+    "student_id": "6630003"
+   },
+   {
+    "name": "Siva Paoren",
+    "student_id": "6630064"
+   }
+  ],
+  "advisor": "Chayapol Moemeng",
+  "committee": [
+   "Asst. Prof. Dr. Paitoon Porntrakoon",
+   "Jinchun Lu"
+  ],
+  "abstract": "Bankify is a banking service platform developed to process transactions securely through a centralized core system built on a double-entry ledger. Each transaction is recorded in a structured and traceable manner, helping maintain financial accuracy and accountability. The project was created in response to a recurring issue in student and small-scale applications, where payment features are often replaced with simple simulations or implemented through third-party gateways that are costly and difficult to access. As a result, many projects lack realistic and secure financial workflows.\n\nThe system functions as an API-driven campus payment core that allows external applications to integrate payment capabilities in a consistent and controlled way. Transaction handling is designed to remain reliable, even when requests are repeated, ensuring stable processing. An administrative dashboard enables transaction monitoring and review of system activity. In addition, a demo ATM interface is included to simulate common banking actions such as deposits, withdrawals, and balance inquiries, all connected through secure API communication to the core system.\n\nThe goal of Bankify is to provide a reusable and auditable payment backbone that reduces the need for each project to build its own financial module. By offering a centralized and standardized infrastructure, the platform improves consistency across applications while supporting hands-on learning in financial technology. Through this approach, Bankify encourages secure development practices and prepares students for real-world banking and payment system environments.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "finance"
+   ],
+   "topic": [],
+   "technology": [
+    "java",
+    "postgresql",
+    "react"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "spring_boot",
+     "label": "Spring Boot",
+     "status": "used",
+     "evidence": "'The backend is built using Spring Boot and uses PostgreSQL for data storage' (Sec 1.2, p.8); Table 13 lists Spring Boot as backend framework"
+    },
+    {
+     "key": "redis",
+     "label": "Redis",
+     "status": "used",
+     "evidence": "'Redis is used to improve performance through caching' (Sec 3.1.3, p.11)"
+    },
+    {
+     "key": "rabbitmq",
+     "label": "RabbitMQ",
+     "status": "used",
+     "evidence": "'RabbitMQ supports asynchronous event processing such as webhook delivery' (Sec 3.1.3, p.11)"
+    },
+    {
+     "key": "docker",
+     "label": "Docker",
+     "status": "used",
+     "evidence": "'Docker was used to run system components such as PostgreSQL, Redis, and RabbitMQ in isolated containers' (Sec 3.1.6, p.13)"
+    },
+    {
+     "key": "tailwind_css",
+     "label": "Tailwind CSS",
+     "status": "used",
+     "evidence": "'The frontend administrative dashboard was developed using React and Tailwind CSS' (Sec 3.1.6, p.13)"
+    },
+    {
+     "key": "amazon_web_services",
+     "label": "Amazon Web Services (AWS)",
+     "status": "used",
+     "evidence": "'The Bankify system follows a layered architecture deployed on AWS cloud infrastructure' (Sec 4.2.2, p.26)"
+    },
+    {
+     "key": "github",
+     "label": "GitHub / Git",
+     "status": "used",
+     "evidence": "'Version control for the project was managed using Git and GitHub' (Sec 3.1.6, p.13)"
+    },
+    {
+     "key": "json_web_token",
+     "label": "JSON Web Token (JWT)",
+     "status": "used",
+     "evidence": "'Secure authentication using JSON Web Tokens (JWT)' and 'Role-based access control' (Sec 3.1.3, p.11)"
+    },
+    {
+     "key": "apache_fineract",
+     "label": "Apache Fineract",
+     "status": "cited",
+     "evidence": "'Apache Fineract is an open-source core banking platform... deployment and configuration are complex' (Related Work 2.3, p.9)"
+    },
+    {
+     "key": "open_banking",
+     "label": "Open Banking APIs",
+     "status": "cited",
+     "evidence": "'Open Banking UK defines secure API standards that licensed institutions must follow' (Related Work 2.1, p.9)"
+    }
+   ]
+  }
+ },
+ {
+  "id": "25113",
+  "canonical_title": "Payme.gg - Streamer Donation Platform",
+  "aliases": [
+   "Payme.gg - Streamer Donation Application"
+  ],
+  "phase": "final",
+  "course_code": "CSX 3011",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Panuphong Burakitphachai",
+    "student_id": "6410521"
+   },
+   {
+    "name": "Nitipoom Aumpitak",
+    "student_id": "6420061"
+   },
+   {
+    "name": "Bhurichaya Thuraphan",
+    "student_id": "6420134"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Darun Kesrarat",
+  "committee": [
+   "A. Jinchun Lu",
+   "Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan"
+  ],
+  "abstract": "The growth of the creator economy in Thailand has increased the demand for platforms that allow content creators to receive viewer support quickly, conveniently, and with low transaction friction. However, existing donation platforms often impose high commission fees, delay payouts, provide limited support for Thai payment methods, and offer weak engagement features for live streaming.\n\nThis project presents Payme, a unified donation and monetization platform designed specifically for Thai content creators and streamers. Payme is developed as a full-stack web platform that supports local payment channels such as PromptPay, TrueMoney and Bank Transfer, allowing streamers to receive payments more directly and with lower friction than traditional global platforms. In addition to payment collection, the platform provides a customizable donation page editor, real-time OBS widgets, animated gift interactions, analytics tools, and interactive stream plugins such as a stream marathon timer. These features are intended to improve both streamer monetization and viewer engagement.\n\nFrom the implementation perspective, the system consists of a web-based dashboard, a public donation page, real-time communication services, and supporting backend services for payment verification and event processing. The project demonstrates how a localized platform can better serve Thai streamers by combining familiar payment methods with modern live-stream engagement tools. The result is a platform concept that aims to reduce platform dependency, shorten payout time, and create a more interactive donation experience for both streamers and viewers.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [],
+   "technology": [
+    "nextjs",
+    "postgresql",
+    "react"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "creator_economy",
+     "label": "Creator Economy / Streaming Monetization",
+     "status": "used",
+     "evidence": "'The growth of the creator economy in Thailand has increased the demand for platforms that allow content creators to receive viewer support' (Abstract, p.3)"
+    }
+   ],
+   "technology": [
+    {
+     "key": "elysia",
+     "label": "ElysiaJS",
+     "status": "used",
+     "evidence": "Reference [12] 'ElysiaJS, Elysia: Ergonomic Framework for Humans' listed among the project's stack references (p.28)"
+    },
+    {
+     "key": "drizzle_orm",
+     "label": "Drizzle ORM",
+     "status": "used",
+     "evidence": "Reference [14] 'Drizzle Team, Drizzle ORM: TypeScript ORM That Lets You Just Write SQL' (p.28)"
+    },
+    {
+     "key": "zustand",
+     "label": "Zustand",
+     "status": "used",
+     "evidence": "Reference [17] 'Zustand: Bear Necessities for State Management in React' (p.28)"
+    },
+    {
+     "key": "better_auth",
+     "label": "BetterAuth",
+     "status": "used",
+     "evidence": "Reference [18] 'BetterAuth: Authentication for the Modern Web' (p.28)"
+    },
+    {
+     "key": "google_cloud_text_to_speech",
+     "label": "Google Cloud Text-to-Speech",
+     "status": "used",
+     "evidence": "Reference [16] 'Google Cloud, Cloud Text-to-Speech: AI-Powered Speech Synthesis'; scope includes 'Text-to-speech (TTS) functionality for donation messages' (p.8)"
+    },
+    {
+     "key": "obs_studio",
+     "label": "OBS Studio widgets",
+     "status": "used",
+     "evidence": "'real-time OBS widgets' and 'OBS-compatible real-time widgets for live stream donation display' (Abstract, p.3; Scope, p.7)"
+    },
+    {
+     "key": "promptpay",
+     "label": "PromptPay",
+     "status": "used",
+     "evidence": "'supports local payment channels such as PromptPay, TrueMoney and Bank Transfer' (Abstract, p.3)"
+    },
+    {
+     "key": "truemoney_wallet",
+     "label": "TrueMoney Wallet",
+     "status": "used",
+     "evidence": "'local payment methods such as PromptPay, TrueMoney and Bank Transfer' (Sec 1.1, p.6)"
+    },
+    {
+     "key": "stripe",
+     "label": "Stripe",
+     "status": "cited",
+     "evidence": "Reference [19] 'Stripe, Stripe API Reference: Online Payment Processing' (p.28)"
+    }
+   ]
+  }
+ },
+ {
+  "id": "25116",
+  "canonical_title": "Kiddee Lab Customer Relationship Management System",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "ITX3010/CSX3011",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Sai Aik Sei Mouk",
+    "student_id": "6520057"
+   },
+   {
+    "name": "Noel Paing Oak Soe",
+    "student_id": "6530183"
+   },
+   {
+    "name": "Khin Myo Aye",
+    "student_id": "6540211"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Darun Kesrarat",
+  "committee": [
+   "A. Tianai Tang",
+   "Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan"
+  ],
+  "abstract": "This project presents the development of a web-based registration management system designed to improve administrative efficiency in class scheduling and operational management at Kiddee Lab Company, a STEAM education center that provides coding, robotics, and technology courses for children. The system aims to reduce manual workload by providing a centralized platform that integrates class scheduling, attendance management, billing processes, and customer relationship management (CRM).\n\nThe application enables registrars to schedule classes automatically without manually verifying classroom availability or instructor schedules. Teachers can record student attendance and provide feedback digitally, replacing traditional paper-based documentation. The system also includes an integrated billing module that supports invoice generation, payment processing, and receipt issuance. Additionally, managerial users are provided with statistical reports to support business performance analysis and revenue monitoring.\n\nTo enhance customer interaction, the system integrates CRM functionality with the LINE application, allowing customers of Kiddee Lab to access class schedules and receive daily feedback conveniently. The implementation of this system reduces scheduling conflicts, improves administrative accuracy, and streamlines operational processes, thereby establishing a scalable and centralized digital foundation for future organizational development at Kiddee Lab Company.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [
+    "ocr"
+   ],
+   "technology": [
+    "nextjs",
+    "nodejs",
+    "postgresql",
+    "react"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "nestjs",
+     "label": "NestJS",
+     "status": "used",
+     "evidence": "'NestJS 11 Backend framework for building scalable Node.js server applications' (Technology Used, Backend, p.54)"
+    },
+    {
+     "key": "typescript",
+     "label": "TypeScript",
+     "status": "used",
+     "evidence": "'TypeScript Enables type-safe development and better maintainability' (Technology Used, p.53)"
+    },
+    {
+     "key": "typeorm",
+     "label": "TypeORM",
+     "status": "used",
+     "evidence": "'TypeORM Object-Relational Mapping tool for interacting with the database' (Technology Used, Backend, p.54)"
+    },
+    {
+     "key": "tailwind_css",
+     "label": "Tailwind CSS",
+     "status": "used",
+     "evidence": "'Tailwind CSS v4 Utility-first CSS framework for responsive UI styling' (Technology Used, Frontend, p.53)"
+    },
+    {
+     "key": "shadcn_ui",
+     "label": "shadcn/ui (Radix UI)",
+     "status": "used",
+     "evidence": "'shadcn/ui (Radix UI) Component library for accessible and customizable UI components' (Technology Used, Frontend, p.53)"
+    },
+    {
+     "key": "tanstack_query",
+     "label": "TanStack Query",
+     "status": "used",
+     "evidence": "'TanStack Query v5 Server-state management and efficient data fetching' (Technology Used, Frontend, p.53)"
+    },
+    {
+     "key": "line_messaging_api",
+     "label": "LINE Messaging API / LINE Bot SDK",
+     "status": "used",
+     "evidence": "'LINE Bot SDK Integration with LINE Messaging API for chatbot and webhook handling' (Technology Used, Backend, p.54)"
+    },
+    {
+     "key": "line_liff",
+     "label": "LINE LIFF (LINE Front-end Framework)",
+     "status": "used",
+     "evidence": "'LINE LIFF SDK Enables integration with LINE's embedded web app platform' (Technology Used, Frontend, p.53)"
+    },
+    {
+     "key": "google_gemini_vision",
+     "label": "Google Gemini Vision",
+     "status": "used",
+     "evidence": "'the final system adopted Google Gemini Vision as the primary extraction engine' (Sec 3.4.2, p.18)"
+    },
+    {
+     "key": "neon",
+     "label": "Neon Serverless PostgreSQL",
+     "status": "used",
+     "evidence": "'Neon Serverless PostgreSQL database hosting' (Infrastructure & DevOps, p.56); 'reading/writing data to a Neon (PostgreSQL) database' (Sec 4.4, p.52)"
+    },
+    {
+     "key": "docker",
+     "label": "Docker",
+     "status": "used",
+     "evidence": "'Docker Containerizes the backend application for consistent deployment' (Infrastructure & DevOps, p.56)"
+    },
+    {
+     "key": "nginx",
+     "label": "Nginx",
+     "status": "used",
+     "evidence": "'Nginx Acts as a reverse proxy and handles HTTPS routing' (Infrastructure & DevOps, p.56)"
+    },
+    {
+     "key": "amazon_web_services",
+     "label": "Amazon Web Services (EC2, S3)",
+     "status": "used",
+     "evidence": "'AWS EC2 Hosts the backend API server' and 'AWS SDK (S3) Uploading and retrieving files from AWS S3 storage' (pp.54-55)"
+    },
+    {
+     "key": "vercel",
+     "label": "Vercel",
+     "status": "used",
+     "evidence": "'Vercel Alternative hosting platform for the frontend application' (Infrastructure & DevOps, p.56)"
+    },
+    {
+     "key": "jest",
+     "label": "Jest",
+     "status": "used",
+     "evidence": "'Jest Framework for unit and integration testing' (Development Tools, p.56)"
+    },
+    {
+     "key": "google_document_ai",
+     "label": "Google Cloud Document AI",
+     "status": "used",
+     "evidence": "'Google Cloud Document AI Advanced document processing and OCR pipeline' listed in Backend Technologies (p.55)"
+    },
+    {
+     "key": "aws_textract",
+     "label": "AWS Textract",
+     "status": "used",
+     "evidence": "'AWS Textract Optical Character Recognition (OCR) for extracting text from documents' listed in Backend Technologies (p.55)"
+    },
+    {
+     "key": "paddle_ocr",
+     "label": "Paddle OCR",
+     "status": "cited",
+     "evidence": "'Paddle OCR, an open-source and locally deployable solution, was first implemented through a persistent Python worker... its accuracy declined substantially when applied to Kiddee Lab's handwritten registration forms' (Sec 3.4.2, pp.17-18; evaluated and replaced)"
+    }
+   ]
+  }
+ }
+]

@@ -1,0 +1,327 @@
+[
+ {
+  "id": "2233",
+  "canonical_title": "Bikebuster: Automation System that Detects Motorcycle on Footpaths and Reports to Authority",
+  "aliases": [
+   "Bikebuster: Automation System that detects motorcycle on footpaths and report to Authority"
+  ],
+  "phase": "final",
+  "course_code": "CSX 3010 / ITX 3009",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Jeffrey Zhi Yee Chong",
+    "student_id": "6310023"
+   },
+   {
+    "name": "Michael John Bull",
+    "student_id": "6311203"
+   },
+   {
+    "name": "Aashish Dubey",
+    "student_id": "6313771"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "A. Anilkumar Kothalil Gopalakrishnan",
+   "A. Dobri Atanassov Batovski"
+  ],
+  "abstract": "The Bikebuster project is an automated system designed to detect motorcycles illegally riding on sidewalks and report offenders to the authorities. The primary goal of the project is to enhance safety for pedestrians by reducing the number of motorcycles on sidewalks, which pose a significant safety risk. In addition, the illegal use of sidewalks can cause damage to footpaths, exacerbating the problem. The Bikebuster project is motivated by the need to address these issues and improve enforcement of existing laws and regulations. The system uses a combination of hardware and software components to detect and capture images of offending motorcycles, which are then reported to the authorities via a reporting website. The project has the potential to generate passive income by sharing fines imposed on offenders with the system operator. However, safety remains the top priority in the implementation of this system. Overall, the Bikebuster project aims to improve safety for pedestrians and reduce the damage caused by illegal activity on sidewalks.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "transportation"
+   ],
+   "topic": [
+    "computer_vision",
+    "ocr"
+   ],
+   "technology": [
+    "python",
+    "opencv"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "traffic_enforcement",
+     "label": "Traffic law enforcement",
+     "evidence": "Abstract: 'an automated system designed to detect motorcycles illegally riding on sidewalks and report offenders to the authorities'"
+    }
+   ],
+   "technology": [
+    {
+     "key": "yolov4",
+     "label": "YOLOv4 object detection",
+     "status": "used",
+     "evidence": "Section 1.4: 'training deep learning model to detect motorbikes using YoloV4'"
+    },
+    {
+     "key": "darknet",
+     "label": "Darknet framework",
+     "status": "used",
+     "evidence": "Section 3.3: 'we cloned the darknet git repository to the notebook and built it, in order to use the Darknet framework for our training purpose'"
+    },
+    {
+     "key": "google_colab",
+     "label": "Google Colab",
+     "status": "used",
+     "evidence": "Section 3.3: 'The training for our object detection took place through Google Colab Notebook'"
+    },
+    {
+     "key": "labelimg",
+     "label": "LabelImg annotation tool",
+     "status": "used",
+     "evidence": "Section 3.3: 'motorbikes, bicycles and people which have all been labeled through \"labelimg\"'"
+    },
+    {
+     "key": "pyppeteer",
+     "label": "Pyppeteer",
+     "status": "used",
+     "evidence": "Section 3.7: 'There is a python version of puppeteer called Pyppeteer'; Figure 9 'Automated form filled by Pyppeteer'"
+    },
+    {
+     "key": "puppeteer",
+     "label": "Puppeteer browser automation",
+     "status": "used",
+     "evidence": "Section 1.4: 'automatic reporting on website using puppeteer involves automatic filling the required form and submitting to the authorities'"
+    },
+    {
+     "key": "nodejs",
+     "label": "Node.js",
+     "status": "cited",
+     "evidence": "Section 2.4: 'Puppeteer, a Node.js library for controlling headless Chrome/Chromium browsers' (implementation used the Python port)"
+    },
+    {
+     "key": "platerecognizer",
+     "label": "Plate Recognizer ALPR API",
+     "status": "used",
+     "evidence": "Section 3.5: 'we utilized a third-party service provided by PlateRecognizer (https://platerecognizer.com/)'"
+    },
+    {
+     "key": "line_messaging_api",
+     "label": "LINE Messaging API",
+     "status": "used",
+     "evidence": "Section 3.6: 'we utilized the Line Messaging API which allows us to send messages to users through the app'"
+    },
+    {
+     "key": "tkinter",
+     "label": "Tkinter GUI",
+     "status": "used",
+     "evidence": "Section 3.7, Figure 8: 'Tkinter for easy file upload'"
+    },
+    {
+     "key": "google_drive",
+     "label": "Google Drive storage",
+     "status": "used",
+     "evidence": "Section 2.4: 'Captured images are stored on Google Drive'"
+    },
+    {
+     "key": "hikvision_ip_camera",
+     "label": "Hikvision IP camera (DS-2CV2Q21FD-IW)",
+     "status": "used",
+     "evidence": "Section 2.4: 'captures images using a Hikvision IP camera, specifically the Hikvision ds-2cv2q21fd-iw model'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2239",
+  "canonical_title": "Unity Game: The Grand Collection",
+  "aliases": [
+   "Unity Game: The Grand Collections",
+   "GAME: The Grand Collections",
+   "The Grand Collection"
+  ],
+  "phase": "final",
+  "course_code": "CSX 3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Ekkasith Singmaneechai",
+    "student_id": "6213934"
+   },
+   {
+    "name": "Pancheeva Jantarasuriyakul",
+    "student_id": "6213305"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "A. Benjawan Srisura",
+   "A. Tapanan Yeophantong"
+  ],
+  "abstract": "This paper discusses our unity game project called “The Grand Collection”, a horror game that aims to offer an engaging and challenging experience for players. The game is designed to challenge the player with time-based objectives, making it an exciting and entertaining gaming experience. This paper aims to give readers an understanding of how the game was created and how it challenges players by providing details about the development process of the game, including its design, features, model assets and mechanics.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "game"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [],
+   "technology": [
+    "unity",
+    "csharp"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "blender",
+     "label": "Blender 3D modeling",
+     "status": "used",
+     "evidence": "Chapter 4 tech stack: '3D modeling software - 3D modeling software allows for the creation of detailed 3D models... Blender'"
+    },
+    {
+     "key": "gimp",
+     "label": "GIMP image editor",
+     "status": "used",
+     "evidence": "Chapter 4 tech stack: 'Image Editor - Allows for Modifying the images for texture usage. GIMP'"
+    },
+    {
+     "key": "ps1_retro_graphics",
+     "label": "PS1-era retro graphics style",
+     "status": "used",
+     "evidence": "Section 3.1: 'capture the sense of horror from the environment design points, by using style of the PS1 game era. Its muddy and low resolution textures give the player a sense of vagueness'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2241",
+  "canonical_title": "ECIC: Easy E-commerce Intelligent Center",
+  "aliases": [
+   "ECIC: Easy E-commerce intelligent center"
+  ],
+  "phase": "final",
+  "course_code": "CSX 3011",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Navamongkol Tongta",
+    "student_id": "6213387"
+   },
+   {
+    "name": "Voraruethai Chancharung",
+    "student_id": "6210109"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "Dr. Kwankamol Knongpong",
+   "A. Piyakul Tillapart"
+  ],
+  "abstract": "This report outlines the development of an integrated order management system for online merchants with multiple shops on platforms such as Shopee and Lazada. The system allows merchants to gather all orders from different online platforms into one central system, enabling them to see all their orders in a single view. Additionally, the system provides tools for merchants to create vouchers and coupons that can be redeemed by customers who purchase products from any of their shops, regardless of the platform. Customers can view their point balances and available coupons via a Line Official Account, where they are required to login using their name and phone number. The report concludes that this system can help merchants manage their online sales more effectively and build stronger customer relationships through targeted promotions and rewards.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "e_commerce"
+   ],
+   "topic": [],
+   "technology": [
+    "python",
+    "mongodb",
+    "react"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "crm",
+     "label": "Customer relationship management",
+     "evidence": "Section 1.4: 'We will discuss the CRM web application, the Line Official Account for merchants, and the Customer Line Official Account'"
+    }
+   ],
+   "technology": [
+    {
+     "key": "fastapi",
+     "label": "FastAPI web framework",
+     "status": "used",
+     "evidence": "Section 2.1: 'The Back-End API uses the FastAPI library from Python to create a web service'"
+    },
+    {
+     "key": "aws_ec2",
+     "label": "Amazon EC2",
+     "status": "used",
+     "evidence": "Section 2.1: 'The main system consists of an EC2 instance with five components'; 4.1: 'EC2 AWS is the minimum specification required to run the project, and t2.medium is the recommended minimum'"
+    },
+    {
+     "key": "docker",
+     "label": "Docker containers",
+     "status": "used",
+     "evidence": "Section 3.3: 'The system is deployed using Docker containers, providing easy deployment and scalability'"
+    },
+    {
+     "key": "mui",
+     "label": "MUI (Material-UI)",
+     "status": "used",
+     "evidence": "Section 3.3: 'we used the popular open-source React UI framework, MUI (Material-UI) template'"
+    },
+    {
+     "key": "line_official_account",
+     "label": "LINE Official Account platform",
+     "status": "used",
+     "evidence": "Section 3.5: 'we have integrated with Line Official Account. To make our own Line Official Account, we create Line developer accounts in order to use Line services'"
+    },
+    {
+     "key": "shopee_open_api",
+     "label": "Shopee Open API",
+     "status": "used",
+     "evidence": "Section 2.2: 'fetches the merchant's order from these platforms on an hourly basis'; reference [6] open.shopee.com developer guide"
+    },
+    {
+     "key": "lazada_open_api",
+     "label": "Lazada Open Platform API",
+     "status": "used",
+     "evidence": "Section 3.2: 'collecting merchant's data from Shopee and Lazada using their open API'; reference [7] open.lazada.com apps doc api"
+    },
+    {
+     "key": "google_cloud_functions",
+     "label": "Google Cloud Functions",
+     "status": "used",
+     "evidence": "Section 4.2: 'the cost of using Google Cloud Function can exceed the free tier limitations when running the pipeline frequently' before consolidating into a single EC2 instance"
+    },
+    {
+     "key": "mvc",
+     "label": "Model-View-Controller pattern",
+     "status": "used",
+     "evidence": "Section 3.3: 'The Model-View-Controller (MVC) design pattern is also employed to maintain a clear separation of concerns'"
+    }
+   ]
+  }
+ }
+]

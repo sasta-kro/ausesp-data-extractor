@@ -1,0 +1,330 @@
+[
+ {
+  "id": "2213",
+  "canonical_title": "AU Sport Booking System",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CSX 3011",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Tana Jantayavichit",
+    "student_id": "6211648"
+   },
+   {
+    "name": "Thanchanok Wisuttaporn",
+    "student_id": "6211667"
+   },
+   {
+    "name": "Ravee Virojsirasak",
+    "student_id": "6215204"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "Dr. Songsak Channarukul",
+   "Pawut Satitsuksanoh"
+  ],
+  "abstract": "ABAC John Paul Sport Center has various type of sport facilities available for all teachers and students, so this department have a lot of data of court booking or facilities reservation in per day. From the research about the current reservation system of John Paul Sport Center, our team found that all the data now be collected in paper also we can check the status of all court only at the sport center that is uncomfortable for both user and staff. Our team want to solve this problem by creating the court reservation system on website which can check the court status, make the booking, and show analysis dashboard (available for the staff). Moreover, we want to make the system easier and more comfortable to access by the user and staff.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [],
+   "technology": [
+    "react",
+    "nodejs",
+    "express",
+    "mongodb"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "sports_facility_management",
+     "label": "Sports facility management",
+     "status": "used",
+     "evidence": "Page 7 scope: 'check the status of all court (badminton, tennis, and volleyball court), make the reservation, and check the dashboard report such as amount of reservation by sport type'."
+    }
+   ],
+   "technology": [
+    {
+     "key": "mern_stack",
+     "label": "MERN stack",
+     "status": "used",
+     "evidence": "Page 8: 'So, we decide to follow advisor's advice to develop our application using MERN Stack.'"
+    },
+    {
+     "key": "fullcalendar",
+     "label": "FullCalendar",
+     "status": "used",
+     "evidence": "Page 10: 'we found a library 'Fullcalendar' which can be used in React' and it is the main booking system component."
+    },
+    {
+     "key": "ant_design",
+     "label": "Ant Design",
+     "status": "used",
+     "evidence": "Page 12: 'we use 'ant design' library that we have found on the internet that provide us a lot of component and also the dashboard example'."
+    },
+    {
+     "key": "react_google_login",
+     "label": "react-google-login",
+     "status": "used",
+     "evidence": "Page 11: 'The library is called 'react-google-login'' used on the Login page."
+    },
+    {
+     "key": "google_oauth",
+     "label": "Google OAuth",
+     "status": "used",
+     "evidence": "Page 11: 'react-google login library is React library that use google OAuth when user sign in or Login', whitelisting @au.edu accounts."
+    },
+    {
+     "key": "mongoose",
+     "label": "Mongoose",
+     "status": "used",
+     "evidence": "Page 24: 'For the database connection, we use mongoose library to help us in these tasks.'"
+    },
+    {
+     "key": "axios",
+     "label": "Axios",
+     "status": "used",
+     "evidence": "Page 21: 'This function uses axios library to communicate with the backend in order to send the value to API link'."
+    },
+    {
+     "key": "mongodb_atlas",
+     "label": "MongoDB Atlas",
+     "status": "used",
+     "evidence": "Page 28: 'our database that we use is MongoDB atlas database. We create the cluster and generate the connection string'."
+    },
+    {
+     "key": "heroku",
+     "label": "Heroku",
+     "status": "used",
+     "evidence": "Conclusion page 32: 'we manage to deploy our applications on Free-tiers Heroku platform' (Chapter 3 notes a planned move to a VMS server)."
+    },
+    {
+     "key": "skedda",
+     "label": "Skedda",
+     "status": "cited",
+     "evidence": "Page 6 related work: 'Skedda is the world's leading booking platform with over 12,000 global organizations'."
+    },
+    {
+     "key": "bookado",
+     "label": "Bookado",
+     "status": "cited",
+     "evidence": "Page 7 related work: 'Other applications that we have shown to staff members of John Paul Sport Center is Bookado.'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2216",
+  "canonical_title": "Greenhouse Planting",
+  "aliases": [
+   "Greenhouse Plating"
+  ],
+  "phase": "final",
+  "course_code": "IT4292",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Natapon Taecharoenchai",
+    "student_id": "6037621"
+   },
+   {
+    "name": "Phubodee Kongcharoensukying",
+    "student_id": "6017637"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Benjawan Srisura",
+  "committee": [
+   "A.Piyakul Tillapart",
+   "Asst. Prof. Dr. Paitoon Porntrakoon"
+  ],
+  "abstract": "Greenhouse Plating is a system that help in agriculture and farming. It is monitoring and configurating the variable value such as temperature, light intensity, and soil moisture. The user can register and linked the system to the application, they can config the profile by fingertip. The smart greenhouse is a revolution in agriculture, creating a self-regulating, microclimate suitable for plant growth using sensors, monitoring and control systems that optimize growth conditions and automate the growing process. The user could make configuration and monitoring the crops via smartphone, moreover the system will cover the system notification that will notify the user when the system starts or stop working.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "hardware_iot"
+   ],
+   "platform": [
+    "embedded_hardware",
+    "mobile",
+    "web"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [],
+   "technology": []
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "agriculture",
+     "label": "Agriculture / smart farming",
+     "status": "used",
+     "evidence": "Page 7: 'Greenhouse Planting is the IOT (Internet of Things) project as \"Smart farm\" that help the farmer or the person that interested and worked in agriculture.'"
+    }
+   ],
+   "technology": [
+    {
+     "key": "arduino_ide",
+     "label": "Arduino IDE",
+     "status": "used",
+     "evidence": "Page 13: 'In the implementation phase, we use Arduino IDE to create our system, with C++ language.'"
+    },
+    {
+     "key": "cplusplus",
+     "label": "C++",
+     "status": "used",
+     "evidence": "Page 13 and page 33: 'Programming languages: C++' implemented in Arduino IDE."
+    },
+    {
+     "key": "esp32",
+     "label": "ESP32 (Kidbright board)",
+     "status": "used",
+     "evidence": "Page 16 cost list: 'Micro controller unit (MCU) Kidbright Model ESP32'."
+    },
+    {
+     "key": "blynk",
+     "label": "Blynk IoT platform",
+     "status": "used",
+     "evidence": "Page 9 scope: 'This system project will used \"Blynk\" Application.' Used for monitoring and configuration; Blynk cloud Plus package is the database (page 33)."
+    },
+    {
+     "key": "line_notify",
+     "label": "Line Notify",
+     "status": "used",
+     "evidence": "Page 9 scope: 'The system will send notification to the user when the system is taking action. In this project we used \"Line Notify\" via Line application.'"
+    },
+    {
+     "key": "dht11",
+     "label": "DHT11 temperature and humidity sensor",
+     "status": "used",
+     "evidence": "Page 16 cost list and page 20 specification: 'Temperature and Humidity sensor (DHT11)'."
+    },
+    {
+     "key": "lucidchart",
+     "label": "Lucidchart",
+     "status": "used",
+     "evidence": "Page 12: 'In the logical design, we use Lucidchart to create the Data Flow Diagram, and ER Diagram'."
+    },
+    {
+     "key": "drawio",
+     "label": "draw.io",
+     "status": "cited",
+     "evidence": "Reference [6] on page 50: 'Draw.IO, https://app.diagrams.net/'."
+    }
+   ]
+  }
+ },
+ {
+  "id": "2222",
+  "canonical_title": "Au Tutify - 1:1 Tutoring",
+  "aliases": [
+   "Au Tutify"
+  ],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Chen Yang Hsu",
+    "student_id": "6121200"
+   },
+   {
+    "name": "Phumin Abdul Hameed",
+    "student_id": "6135117"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "Asst. Prof. Dr. Paitoon Porntrakoon",
+   "A. Kiratijuta Bhumichitr"
+  ],
+  "abstract": "As students, one of the biggest hurdles in class is the ineffectiveness to learn the class materials from a classroom setting. Whether it is a problem with the teachers time or method of instruction, or the incapacity of fellow classmates to help. Oftentimes they turn to tutorship, only to find out that the broad offerings from tutors online varies in range and experience, costing them time and money for searches that often ends unsatisfactory. Au Tutify aims to provide students with tutors who have the precise experience that the students need. With Au tutify, the tutees would be able to see the exact course offered and choose only the tutors with the same experience on it.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [],
+   "technology": [
+    "react",
+    "nodejs",
+    "express",
+    "mongodb"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "mern_stack",
+     "label": "MERN stack",
+     "status": "used",
+     "evidence": "Page 16: 'Ultimately for the tech stack we went ahead and chose MERN as our tech stack.'"
+    },
+    {
+     "key": "mongoose",
+     "label": "Mongoose",
+     "status": "used",
+     "evidence": "Page 15: 'The MERN stack consists of React, Express, Mongo/Mongoose, and Nodejs.'"
+    },
+    {
+     "key": "material_ui",
+     "label": "Material UI",
+     "status": "used",
+     "evidence": "Page 15: 'For the front end, we employed Material Ui for the ui elements and styling.'"
+    },
+    {
+     "key": "chatengine",
+     "label": "Chat Engine",
+     "status": "used",
+     "evidence": "Page 17 tech stack table: 'Chat Engine is an API which makes it easy to build chat services' used for the in-app chat."
+    },
+    {
+     "key": "heroku",
+     "label": "Heroku",
+     "status": "cited",
+     "evidence": "Reference [5] page 26: 'Heroku. Dashboard.heroku.com'."
+    },
+    {
+     "key": "netlify",
+     "label": "Netlify",
+     "status": "cited",
+     "evidence": "Reference [6] page 26: 'Netlify. Welcome to Netlify. docs.netlify.com'."
+    }
+   ]
+  }
+ }
+]

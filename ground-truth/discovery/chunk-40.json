@@ -1,0 +1,276 @@
+[
+ {
+  "id": "2147",
+  "canonical_title": "A New Recipe Discovery Experience",
+  "aliases": [
+   "RecipeDia - A New Recipe Discovery Experience",
+   "Recipedia"
+  ],
+  "phase": "final",
+  "course_code": "IT4291",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Nawaneet Upadhya",
+    "student_id": "6035202"
+   },
+   {
+    "name": "Daniel M. Porter",
+    "student_id": "5837588"
+   }
+  ],
+  "advisor": "Dr. Khaing Sandar Htun",
+  "committee": [
+   "Dr. Paitoon Porntrakoon",
+   "Dr. Darun Kesrarat"
+  ],
+  "abstract": "This project is aimed at developing a website that suggests recipes to the user based on the ingredients the user has indicated that they have. Users can create and log into their own personal accounts and their personal database will be created which contains all the information regarding the ingredients they have selected. Once they have logged in, the user is able to indicate what ingredients they currently have. Once they have finished selecting all the ingredients that they have, the website will then show a list of all the dishes that are able to be made from the ingredients that the user has indicated they have.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [
+    "recommender_system"
+   ],
+   "technology": [
+    "firebase"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "food_and_cooking",
+     "label": "Food and Cooking",
+     "status": "used",
+     "evidence": "Abstract p.4: a website that suggests recipes to the user based on the ingredients the user has; body repeatedly discusses pantry tracking and dish suggestions"
+    }
+   ],
+   "technology": [
+    {
+     "key": "flutter",
+     "label": "Flutter",
+     "status": "used",
+     "evidence": "Chapter 4 p.20: we used the Flutter SDK created by Google"
+    },
+    {
+     "key": "dart",
+     "label": "Dart",
+     "status": "used",
+     "evidence": "Chapter 4 p.20: And Dart Programming language to code in Flutter"
+    },
+    {
+     "key": "cloud_firestore",
+     "label": "Cloud Firestore",
+     "status": "used",
+     "evidence": "Chapter 4 p.20: Firebase Firestore as Database"
+    },
+    {
+     "key": "firebase_auth",
+     "label": "Firebase Authentication",
+     "status": "used",
+     "evidence": "Chapter 4 p.20: Firebase Auth for Login, Signup & Forgot password"
+    },
+    {
+     "key": "adobe_xd",
+     "label": "Adobe XD",
+     "status": "used",
+     "evidence": "Section 5.3.3 p.27: Using AdobeXD, we were able to create a UI model of the website"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2149",
+  "canonical_title": "AU AR World",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CSX 3010",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Sakar Karmacharya",
+    "student_id": "6218332"
+   },
+   {
+    "name": "Saranya Sangsuk-iem",
+    "student_id": "6237407"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "A. Tapanan Yeophantong",
+   "Asst. Prof. Dr. Benjawan Srisura"
+  ],
+  "abstract": "In this report we discuss the purpose behind the project we have chosen, the methods used, the implications applied and the results we have acquired for our senior project 1. Throughout the years, we have seen students of ABAC building many projects for the university, but not all of them have been an engaging project targeting the visitors of ABAC and also realizing very few have used the concept of Augmented Reality, we saw this as an opportunity to build something in this concentration. Using tools such as Lightship Augmented Reality Developer Kit (ARDK), which gives developers the tools they need to create immersive, multiplayer experiences and bring them to life in the real world, and Unity Game Engine, which is a beginner friendly tool that can be used to create three-dimensional (3D) and two-dimensional (2D) games, as well as interactive simulations and other experiences, for this project we created three interactive games which could be played in three different locations of Assumption University, Bangna Campus.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "game"
+   ],
+   "platform": [
+    "android"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [
+    "geolocation"
+   ],
+   "technology": [
+    "unity"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "augmented_reality",
+     "label": "Augmented Reality",
+     "status": "used",
+     "evidence": "Section 4.1.2: Use Lightship ARDK for AR development; Chapter 5 shows the three AR mini-games running at Bangna campus locations"
+    },
+    {
+     "key": "lightship_ardk",
+     "label": "Niantic Lightship ARDK",
+     "status": "used",
+     "evidence": "Section 3.1.2 and 4.1.2: Lightship Augmented Reality Developer Kit (ARDK) ... Use Lightship ARDK for AR development"
+    },
+    {
+     "key": "native_gps_plugin",
+     "label": "Native GPS Plugin (Unity Asset Store)",
+     "status": "used",
+     "evidence": "Section 4.1.2: Use Native GPS Plugin for finding the current position of the player"
+    },
+    {
+     "key": "android_sdk",
+     "label": "Android SDK",
+     "status": "used",
+     "evidence": "Section 3.1.4: we use Android SDK for exporting .aab and upload to google play console for google play store"
+    },
+    {
+     "key": "google_play_console",
+     "label": "Google Play Console",
+     "status": "used",
+     "evidence": "Figure 4.3: Google Play Console shows the game is approved"
+    },
+    {
+     "key": "arkit",
+     "label": "ARKit",
+     "status": "cited",
+     "evidence": "Section 2.2 related work: Alien Invaders is powered by the ARKit framework"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2203",
+  "canonical_title": "Deliverit: An Android Application for Truck Delivery Service.",
+  "aliases": [
+   "Deliverit : An android Application for Truck Delivery Services"
+  ],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Afif Mansib Chowdhury",
+    "student_id": "6028129"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Paitoon Porntrakoon",
+  "committee": [
+   "A. Chayapol Moemeng",
+   "Asst. Prof. Dr. Anilkumar Kothalil"
+  ],
+  "abstract": "Not to mention Nowadays Mobile Applications have become a daily part of our lives. When it comes to delivery of any type, applications have become a necessity. It is pretty common for people to use apps for ordering food, travelling and moving in and out of houses. That's where my app comes in. My App Deliverit is a mobile Application that helps people do deliveries from places. It not only helps people have types of truck services but is a way for private drivers to make an extra income. Big industries can use my application for properly maintaining their vehicles for delivery as well.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "android"
+   ],
+   "domain": [
+    "transportation"
+   ],
+   "topic": [
+    "geolocation"
+   ],
+   "technology": [
+    "java",
+    "firebase"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "logistics",
+     "label": "Logistics and Trucking",
+     "status": "used",
+     "evidence": "Chapter 7: Deliverit is going to change how logistics companies work; the app connects truck drivers with delivery customers"
+    }
+   ],
+   "technology": [
+    {
+     "key": "android_studio",
+     "label": "Android Studio",
+     "status": "used",
+     "evidence": "Chapter 4: I have used Android Studio with Java Throughout the development process"
+    },
+    {
+     "key": "firebase_realtime_database",
+     "label": "Firebase Realtime Database",
+     "status": "used",
+     "evidence": "Section 4.2: The Firebase Realtime Database is a NoSQL Database ... data is stored ... in Firebase Realtime DB and Json objects"
+    },
+    {
+     "key": "firebase_storage",
+     "label": "Firebase Storage",
+     "status": "used",
+     "evidence": "Section 4.2: Firebase Storage is developed to be simple, easy to understand and efficient in the use of bandwidth"
+    },
+    {
+     "key": "google_maps",
+     "label": "Google Maps API",
+     "status": "used",
+     "evidence": "Section 4.1: In the Backend is Also Running my Google Maps API which I use for functionalities inside the application"
+    },
+    {
+     "key": "google_cloud_platform",
+     "label": "Google Cloud Platform",
+     "status": "used",
+     "evidence": "Section 4.2: Deliverit is a cloudDB with NoSQL. It is on Google cloud Platform"
+    },
+    {
+     "key": "gradle",
+     "label": "Gradle",
+     "status": "used",
+     "evidence": "Figure 5.3.7: Gradle Settings File for Firebase Connection"
+    }
+   ]
+  }
+ }
+]

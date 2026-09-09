@@ -1,0 +1,371 @@
+[
+ {
+  "id": "26012",
+  "canonical_title": "Microplastics Identification Using Computer Vision",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "ITX 3009",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Myo Ko Zin",
+    "student_id": "6520227"
+   },
+   {
+    "name": "Chalida Hiranmateekul",
+    "student_id": "6520180"
+   },
+   {
+    "name": "Lynn Yaung Moe",
+    "student_id": "6520239"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Dobri Atanassov Batovski",
+  "committee": [
+   "Asst. Prof. Dr. Darun Kesrarat",
+   "A. Tianai Tang"
+  ],
+  "abstract": "Invisible but amplifying microplastic pollution represents a major and escalating threat not only to the global ecosystem but also to the long-term health of humanity. Resolving this environmental crisis demands both public awareness and the capacity for early intervention — goals that are severely hampered by the fact that traditional measurement techniques such as Fourier Transform Infrared (FTIR) spectroscopy and Raman spectroscopy are prohibitively expensive for most undergraduate laboratory settings.\n\nThis work proposes a cross-disciplinary iSTEM (integrated Science, Technology, Engineering, and Mathematics) framework designed as a full laboratory learning experience. By grounding the curriculum in the local context of Bang Saen Beach, Thailand, the framework systematically guides undergraduate Information Technology students through four sequential phases: hands-on wet-lab extraction using density separation (Phase 1), low-cost optical digitization using a USB digital microscope (Phase 2), AI model deployment and domain-adapted training (Phase 3), and a novel unified mathematical evaluation pipeline (Phase 4).\n\nIn Phase 3, students deploy and evaluate four complete neural network architectures: Faster R-CNN, YOLOv5, U-Net, and Mask R-CNN. A critical technical innovation of this study is a three-phase training sequence that includes few-shot domain adaptation specifically targeting the optical artifacts (glare, chromatic aberration) introduced by the low-cost microscope. Phase 4 introduces a post-processing pipeline that converts all model outputs — whether bounding boxes or pixel-level segmentation masks — into a standardized bounding-box representation, enabling fair cross-architectural comparison. A novel environmental metric, the Contamination Percentage (Cp), is derived from the unified output to translate raw AI detections into a measurable, physically interpretable scale of local contamination severity.\n\nAll four architectures achieved statistically significant detection performance above random chance under a right-tailed one-sample z-test at α = 0.05. Mask R-CNN achieved the best overall result with an F1-score of 0.8287, instance accuracy of 70.75%, and the highest statistical significance (z = 3.7627, p = 0.000084). Faster R-CNN placed second (F1 = 0.7918), followed by YOLOv5 (F1 = 0.7830) and U-Net (F1 = 0.7423). The results demonstrate that deep learning tools can be successfully deployed in resource-constrained undergraduate classrooms, and that the iSTEM framework provides an accessible, reproducible, and scalable tool for educators to meaningfully embed the global microplastic health crisis into computer science and engineering curricula.",
+  "abstract_source": "document",
+  "reported_keywords": [
+   "microplastics",
+   "image segmentation",
+   "object detection",
+   "deep learning",
+   "domain adaptation",
+   "environmental monitoring",
+   "iSTEM education",
+   "interdisciplinary learning",
+   "low-cost workflows",
+   "Contamination Percentage",
+   "z-test hypothesis testing"
+  ],
+  "classification": {
+   "category": [
+    "ai_data",
+    "research"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "education",
+    "other"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "python",
+    "opencv"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "usb_digital_microscope",
+     "label": "USB digital microscope",
+     "status": "used",
+     "evidence": "Section 1.4 Scope: 'Low-cost digitization using a USB digital microscope at 40× magnification'"
+    }
+   ],
+   "domain": [
+    {
+     "key": "environmental_monitoring",
+     "label": "Environmental monitoring",
+     "status": "used",
+     "evidence": "Objective 1 (p.10): guides students through the full pipeline of environmental microplastic monitoring from sample collection to statistical AI validation"
+    }
+   ],
+   "technology": [
+    {
+     "key": "pytorch",
+     "label": "PyTorch",
+     "status": "used",
+     "evidence": "Section 4.3 Technology Stack: 'PyTorch 1.13 (torchvision for Faster R-CNN and Mask R-CNN backbones)' and custom U-Net implementation in PyTorch"
+    },
+    {
+     "key": "torchvision",
+     "label": "Torchvision",
+     "status": "used",
+     "evidence": "Appendix A.2.2 code: torchvision.models.detection.fasterrcnn_resnet50_fpn and maskrcnn_resnet50_fpn model loaders"
+    },
+    {
+     "key": "faster_r_cnn",
+     "label": "Faster R-CNN",
+     "status": "used",
+     "evidence": "Abstract: students deploy and evaluate four architectures: Faster R-CNN, YOLOv5, U-Net, and Mask R-CNN"
+    },
+    {
+     "key": "mask_r_cnn",
+     "label": "Mask R-CNN",
+     "status": "used",
+     "evidence": "Chapter 5 Table 1: Mask R-CNN achieved the highest F1-score of 0.8287 on the V7 holdout test set"
+    },
+    {
+     "key": "u_net",
+     "label": "U-Net (Attention-ASPP)",
+     "status": "used",
+     "evidence": "Appendix A.4.1: An enhanced Attention-ASPP U-Net is implemented in PyTorch with Focal + Dice Loss"
+    },
+    {
+     "key": "yolov5",
+     "label": "YOLOv5 (Ultralytics)",
+     "status": "used",
+     "evidence": "Section 4.3: Ultralytics YOLOv5 repository (custom-trained v5 weights); Appendix A.3 uses YOLO('yolov5mu.pt')"
+    },
+    {
+     "key": "roboflow",
+     "label": "Roboflow",
+     "status": "used",
+     "evidence": "Section 4.3: Roboflow for dataset hosting, version control, annotation quality review, and export in COCO JSON and YOLOv5 TXT formats"
+    },
+    {
+     "key": "numpy",
+     "label": "NumPy",
+     "status": "used",
+     "evidence": "Section 4.3: NumPy and SciPy (scipy.stats.norm) for z-test computation"
+    },
+    {
+     "key": "scipy",
+     "label": "SciPy",
+     "status": "used",
+     "evidence": "Section 4.3: scipy.stats.norm used for one-tailed p-values in the z-test validation"
+    },
+    {
+     "key": "pandas",
+     "label": "Pandas",
+     "status": "used",
+     "evidence": "Section 4.3: Pandas for per-image data aggregation in the Cp Excel exports"
+    },
+    {
+     "key": "matplotlib",
+     "label": "Matplotlib",
+     "status": "used",
+     "evidence": "Section 4.3: Matplotlib 3.7 for performance bar charts, Cp boxplots, per-image trend lines, and radar charts"
+    },
+    {
+     "key": "openpyxl",
+     "label": "OpenPyXL",
+     "status": "used",
+     "evidence": "Section 4.3: OpenPyXL for Excel export of per-image hypothesis values"
+    },
+    {
+     "key": "cuda",
+     "label": "NVIDIA CUDA",
+     "status": "used",
+     "evidence": "Section 3.2: host laptop running Windows 11 with Anaconda Python 3.9 and CUDA 11.7"
+    }
+   ]
+  }
+ },
+ {
+  "id": "26013",
+  "canonical_title": "CodeFix: Learn Debugging Through Play",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "ITX3009",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Kaung Hsu Thway",
+    "student_id": "6611039"
+   },
+   {
+    "name": "Sein Win Htut",
+    "student_id": "6611040"
+   },
+   {
+    "name": "Phoo Myat Thwe",
+    "student_id": "6611852"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Dobri Atanassov Batovski",
+  "committee": [
+   "Asst. Prof. Dr. Darun Kesrarat",
+   "A. Tianai Tang"
+  ],
+  "abstract": "CodeFix is a Python-based debugging practice platform. It is for beginner programmers to take care of syntax errors and variable errors by doing debugging practice. These days, most beginner programmers spend a lot of their time finding syntax errors and variable errors. This often reduces learning efficiency and negatively affects confidence in coding. To reduce the occurrence of those errors, CodeFix will be practiced with three modes: (i) normal mode, (ii) game mode. In normal mode, students can practice Python debugging problems at easy, medium, and hard levels. CodeFix lets learners test broken code, understand the error messages, and follow gradually stronger hints. They can figure out the correct fix by themselves. By practicing like this, they don't need to use most of their time finding syntax errors and variable errors. In game mode, there is a short storyline game, and users need to solve some problems to win. Game mode is designed to attract people to be interested in programming and not to be afraid of coding languages. CodeFix aims to build confidence, improve error-analysis skills, and strengthen exam performance for beginner programmers. To evaluate the effectiveness of CodeFix, beginner programmers participate in debugging practice sessions using the platform, and their performance is analyzed in terms of error-fixing accuracy, time spent on debugging tasks, and hints used. The expected outcome of this project is to help students develop systematic debugging habits, reduce the time spent finding syntax errors and variable errors, and prepare learners for real-world coding tasks.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application",
+    "game"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [
+    "gamification"
+   ],
+   "technology": [
+    "nextjs",
+    "mongodb",
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "debugging_education",
+     "label": "Debugging education for novice programmers",
+     "status": "used",
+     "evidence": "Abstract: CodeFix is a Python-based debugging practice platform for beginner programmers to practice fixing syntax and variable errors"
+    }
+   ],
+   "technology": [
+    {
+     "key": "fastapi",
+     "label": "FastAPI",
+     "status": "used",
+     "evidence": "Table 2 Tech Stack (p.14): Code Execution Service FastAPI, which safely runs user-submitted Python code"
+    },
+    {
+     "key": "phaser",
+     "label": "Phaser game engine",
+     "status": "used",
+     "evidence": "Table 2 Tech Stack: Game Engine Phaser; Section 4.2.2: the game experience is implemented using Phaser"
+    },
+    {
+     "key": "openai_api",
+     "label": "OpenAI API",
+     "status": "used",
+     "evidence": "Table 2 Tech Stack: AI Hint Generator OpenAI API; Section 3.1.3: uses the OpenAI API to analyze user code and generate hints"
+    },
+    {
+     "key": "gpt_4o",
+     "label": "OpenAI GPT-4o",
+     "status": "used",
+     "evidence": "Appendix C.2 _request_hints: openai_client.chat.completions.create(model='gpt-4o', ...)"
+    },
+    {
+     "key": "scipy",
+     "label": "SciPy",
+     "status": "used",
+     "evidence": "Appendix E: from scipy.stats import shapiro, plus stats.probplot for Q-Q plots"
+    },
+    {
+     "key": "numpy",
+     "label": "NumPy",
+     "status": "used",
+     "evidence": "Appendix D permutation test: rng = np.random.default_rng(seed) over 1,000,000 permutations"
+    },
+    {
+     "key": "pandas",
+     "label": "Pandas",
+     "status": "used",
+     "evidence": "Appendix D: df_normal = pd.read_excel(file_normal) for completion-time analysis"
+    },
+    {
+     "key": "matplotlib",
+     "label": "Matplotlib",
+     "status": "used",
+     "evidence": "Appendix D/E: import matplotlib.pyplot as plt for permutation histograms, box plots, and Q-Q plots"
+    }
+   ]
+  }
+ },
+ {
+  "id": "26016",
+  "canonical_title": "Simplification of Technical Documentation in STEM Education for Neurodivergent Individuals",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CSX 3011",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Min Myint Moh Soe",
+    "student_id": "6530262"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Dobri Atanassov Batovski",
+  "committee": [
+   "Dr. Kwankamol Nongpong",
+   "A. Sakchhi Paudel"
+  ],
+  "abstract": "Technical documentation and user interfaces (UI) in STEM are often designed for a general audience. They are usually filled with dense text, long sentences, and jargon, which can introduce learning difficulties, especially for students with attention deficit hyperactivity disorder or dyslexia. This preliminary study evaluated the effectiveness of a constraint-based prompting framework that was based on standard accessibility guidelines and rules to simplify both documentation and UI microcopy while largely preserving important details from the original content using a large language model. We collected two pilot datasets for this study and simplified the contents using the Gemini-3-Pro-Preview Model. Simplified and original content pairs were evaluated using computed readability/fidelity metrics and a pilot survey measuring perceived understanding and mental effort using Likert scale questions. Readability metrics showed improvements with high retention of technical terms and numeric/format token preservation. For the pilot survey, improvements on results of ease, mental demand, and self-reported main idea understanding of reading passages were significant. Additionally, participants selected optimized UI microcopy more frequently over original versions. Significant benefits for the targeted screened population over the control group, however, were not established in this pilot, motivating further studies on personalization, baseline comparisons, and larger-scale validations.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "research"
+   ],
+   "platform": [
+    "none"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [
+    "nlp"
+   ],
+   "technology": [
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "accessibility",
+     "label": "Accessibility and inclusive design for neurodivergent users",
+     "status": "used",
+     "evidence": "Section 2.1: constraint rules built upon WCAG 2.2, W3C COGA, ISO, and British Dyslexia Association guidelines for ADHD and dyslexia"
+    }
+   ],
+   "technology": [
+    {
+     "key": "gemini_3_pro",
+     "label": "Google Gemini 3 Pro (Preview)",
+     "status": "used",
+     "evidence": "Section 2.3: both prototypes used the Gemini-3-Pro-Preview model (18-November-2025 checkpoint), temperature 0.3, topP 0.9"
+    },
+    {
+     "key": "scipy",
+     "label": "SciPy",
+     "status": "used",
+     "evidence": "Appendix D: from scipy.stats import ttest_rel; wilcoxon and Mann-Whitney U test snippets"
+    },
+    {
+     "key": "numpy",
+     "label": "NumPy",
+     "status": "used",
+     "evidence": "Appendix B: def mean_sd(x: np.ndarray) using np.nanmean and np.nanstd"
+    },
+    {
+     "key": "pandas",
+     "label": "Pandas",
+     "status": "used",
+     "evidence": "Appendix D: df = pd.read_excel(xlsx, sheet_name=SHEET_NAME, engine='openpyxl')"
+    },
+    {
+     "key": "openpyxl",
+     "label": "OpenPyXL",
+     "status": "used",
+     "evidence": "Appendix D: Excel loading via pd.read_excel(..., engine='openpyxl') for survey results"
+    },
+    {
+     "key": "tkinter",
+     "label": "Tkinter",
+     "status": "used",
+     "evidence": "Appendix B: launch_gui() builds a desktop Readability Metrics app with import tkinter as tk"
+    }
+   ]
+  }
+ }
+]

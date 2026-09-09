@@ -1,0 +1,396 @@
+[
+ {
+  "id": "2205",
+  "canonical_title": "Fitness Center Management System",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT4292",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Kasidit Ploenthamakhun",
+    "student_id": "6016901"
+   }
+  ],
+  "advisor": "Asst.Prof.Dr. Darun Kesrarat",
+  "committee": [
+   "Asst. Prof. Dr. Benjawan Srisura",
+   "Dr. Khaing Sandar Htun"
+  ],
+  "abstract": "This project aims to develop a fitness information management system web application.. By developing according to the existing fitness center management system with the help of technologies such as PHP, MySQL with observation evidence. Which all tasks in the system can be done through a web browser. There are three main users for this system. Firstly, members. Members can search for class schedules, both personal trainer and fitness instructor schedules and can apply for a course.Secondly,trainers. Trainers can edit their personal information and check their own schedules,and accept member's appointments. Lastly, the administrator. The administrator can manage user information,check the payment information, report member's payment,check daily income,collect bad debts,office management,member services,check trainer information,trainer salary information report. The end results of the project showed that the system reduces the time of work, makes the service faster, helps to solve problems, process error work to facilitate the issuance of a summary report.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "php",
+    "mysql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "xampp",
+     "label": "XAMPP",
+     "status": "used",
+     "evidence": "Tech stack p.21: 'Xampp (Apache,MySQL*)' and 'XAMPP is an abbreviation for cross-platform, Apache, MySQL, PHP and Perl, and it allows you to build a web app offline, on a local web server on your computer.'"
+    },
+    {
+     "key": "apache",
+     "label": "Apache HTTP Server",
+     "status": "used",
+     "evidence": "Tech stack p.21 item 8: 'Apache (Web Server)'"
+    },
+    {
+     "key": "phpmyadmin",
+     "label": "phpMyAdmin",
+     "status": "used",
+     "evidence": "Tech stack p.21 item 7: 'phpMyAdmin (Web Hosting Server)'"
+    },
+    {
+     "key": "bootstrap",
+     "label": "Bootstrap 4",
+     "status": "used",
+     "evidence": "Tech stack p.21 item 4: 'Bootstrap 4'; conclusion p.90: 'With the implementation of bootstrap 4, I am able to make the user interface look amazingly good'"
+    },
+    {
+     "key": "javascript",
+     "label": "JavaScript",
+     "status": "used",
+     "evidence": "Tech stack p.21 item 5: 'Javascript'"
+    },
+    {
+     "key": "jquery",
+     "label": "jQuery",
+     "status": "used",
+     "evidence": "Tech stack p.21 item 6: 'JQuery'"
+    },
+    {
+     "key": "html5",
+     "label": "HTML5",
+     "status": "used",
+     "evidence": "Tech stack p.21 item 3: 'HTML5'"
+    },
+    {
+     "key": "github",
+     "label": "GitHub",
+     "status": "used",
+     "evidence": "Tech stack p.21 item 12: 'GitHub (Version Control)'"
+    },
+    {
+     "key": "visual_studio_code",
+     "label": "Visual Studio Code",
+     "status": "used",
+     "evidence": "Tech stack p.21 item 11: 'Visual Studio Code (Source-Code Editor)'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2207",
+  "canonical_title": "Web 3.0 Application - Long-Tail Ride-Sharing Dapp",
+  "aliases": [
+   "Web 3.0 Application",
+   "Crypto Longtails"
+  ],
+  "phase": "final",
+  "course_code": "IT 4291",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2023,
+  "students": [
+   {
+    "name": "Morgan Kieffer",
+    "student_id": "6135229"
+   },
+   {
+    "name": "Setthanant Tetanonsakul",
+    "student_id": "6115269"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "A. Kiratijuta Bhumichitr",
+   "Asst. Prof. Dr. Paitoon Porntrakoon"
+  ],
+  "abstract": "With the new industrial revolution looming over our generation, the rise of emerging technology is a common occurrence in our age. These many fascinating innovations may seem that they are still early in their development cycle yet their potential to reach the heights to impact history is always present. One of these is Web 3.0, a group of technologies that once combined, contributes to the third generation of the internet. The main constituents are blockchain where it acts as a digital ledger, smart contracts that are programmable to provide functionality, and cryptocurrencies where it provides value towards this technology. We take all these properties into consideration when we are building our Web 3.0 decentralized application.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "transportation"
+   ],
+   "topic": [],
+   "technology": [
+    "react",
+    "nextjs",
+    "nodejs"
+   ]
+  },
+  "discoveries": {
+   "category": [
+    {
+     "key": "blockchain",
+     "label": "Blockchain / Web3",
+     "status": "used",
+     "evidence": "Abstract p.3: 'The main constituents are blockchain where it acts as a digital ledger, smart contracts that are programmable to provide functionality, and cryptocurrencies'"
+    }
+   ],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "solidity",
+     "label": "Solidity",
+     "status": "used",
+     "evidence": "Tech stack table: 'Solidity is the backbone of the entire project as this programming language allowed us to implement smart contracts on the Ethereum network.'"
+    },
+    {
+     "key": "ethereum",
+     "label": "Ethereum",
+     "status": "used",
+     "evidence": "Product perspective p.7: 'The interactions and transactions between stakeholders are signed, sent and received through the Ethereum network.'"
+    },
+    {
+     "key": "metamask",
+     "label": "MetaMask",
+     "status": "used",
+     "evidence": "dApp System Architecture p.26: 'MetaMask is a key component in making the dApp functions as it allows the users to carry out transactions from their own account'"
+    },
+    {
+     "key": "web3_js",
+     "label": "Web3.js",
+     "status": "used",
+     "evidence": "Tech stack Other Tools: 'Web3.js is a collection of libraries for the sole purpose of allowing you to interact with the Ethereum Blockchain'"
+    },
+    {
+     "key": "infura",
+     "label": "Infura",
+     "status": "used",
+     "evidence": "dApp System Architecture p.26: 'we use infura API to create an infrastructure between the decentralized applications'"
+    },
+    {
+     "key": "remix_ide",
+     "label": "Remix IDE",
+     "status": "used",
+     "evidence": "Tech stack Other Tools: 'Remix IDE allows for development and testing of smart contracts for Solidity'"
+    },
+    {
+     "key": "vercel",
+     "label": "Vercel",
+     "status": "used",
+     "evidence": "Chapter 5.3 Front-End: 'the front end folder is uploaded to the vercel hosting platform'"
+    },
+    {
+     "key": "rinkeby_testnet",
+     "label": "Ethereum Rinkeby testnet",
+     "status": "used",
+     "evidence": "Chapter 4.2 figure caption p.23: 'Dapp deployment and testing on Rinkeby testnet diagram'"
+    },
+    {
+     "key": "javascript",
+     "label": "JavaScript",
+     "status": "used",
+     "evidence": "Tech stack Programming Languages: 'Javascript helps us express the functionality of the web page as it allows us to make dynamic/interactive content within the web page.'"
+    },
+    {
+     "key": "html",
+     "label": "HTML",
+     "status": "used",
+     "evidence": "Tech stack Programming Languages: 'HTML is the standard language used for the creation of web pages.'"
+    },
+    {
+     "key": "css",
+     "label": "CSS",
+     "status": "used",
+     "evidence": "Tech stack Programming Languages: 'CSS is used to describe how the content should be presented.'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2211",
+  "canonical_title": "Air quality measuring station",
+  "aliases": [
+   "Air Quality Measuring Station"
+  ],
+  "phase": "final",
+  "course_code": "CSX 3010",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Rattanapol Wattanatanasup",
+    "student_id": "6211515"
+   },
+   {
+    "name": "Thanadon Na Lampang",
+    "student_id": "6213930"
+   },
+   {
+    "name": "Kittiphop Jitlerdwilai",
+    "student_id": "6216916"
+   }
+  ],
+  "advisor": "Pawut Satitsuksanoh",
+  "committee": [
+   "Kwankamol Nongpong",
+   "Tapanan Yeophantong"
+  ],
+  "abstract": "The Air Quality Measuring Station is a tool created to keep track of numerous environmental factors that have an impact on a certain area's air quality. It has sensors that can monitor the amount of carbon monoxide (CO), humidity, temperature, and particulate matter with sizes of 2.5 and 10 micrometers (PM2.5 and PM10). These factors are crucial in determining a location's air quality and any potential health dangers for people. The station delivers real-time data that can be accessed remotely and makes reliable measurements of these parameters. Policymakers, health professionals, and the general public can utilize the gathered data to guide their decisions about how to lessen air pollution and enhance overall air quality.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "hardware_iot"
+   ],
+   "platform": [
+    "embedded_hardware",
+    "web"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [],
+   "technology": []
+  },
+  "discoveries": {
+   "category": [
+    {
+     "key": "iot",
+     "label": "Internet of Things",
+     "status": "used",
+     "evidence": "Background p.3: 'NETPIE is a cloud-based platform that enables developers to quickly construct Internet of Things (IoT) applications'"
+    }
+   ],
+   "platform": [],
+   "domain": [
+    {
+     "key": "environmental_monitoring",
+     "label": "Environmental monitoring",
+     "status": "used",
+     "evidence": "Abstract p.3: 'The Air Quality Measuring Station is a tool created to keep track of numerous environmental factors that have an impact on a certain area's air quality.'"
+    }
+   ],
+   "technology": [
+    {
+     "key": "arduino_ide",
+     "label": "Arduino IDE",
+     "status": "used",
+     "evidence": "Scope 1.2 p.2: 'The goal of the project is to create an Air Quality Measuring Station using the Arduino IDE and the C++ programming language for every sensor module.'"
+    },
+    {
+     "key": "cpp",
+     "label": "C++",
+     "status": "used",
+     "evidence": "Scope 1.2 p.2: 'using the Arduino IDE and the C++ programming language for every sensor module'"
+    },
+    {
+     "key": "esp8266_nodemcu",
+     "label": "ESP8266 NodeMCU V3",
+     "status": "used",
+     "evidence": "Section 3.1.1 p.6: 'Popular development board based on the ESP8266 Wi-Fi module is the ESP8266 NodeMCU V3.'"
+    },
+    {
+     "key": "netpie",
+     "label": "NETPIE-2020 (IoT cloud platform)",
+     "status": "used",
+     "evidence": "Scope 1.2 p.2: 'The Air Quality Measuring Station will use the Netpie platform to communicate the data it has collected to the website.'"
+    },
+    {
+     "key": "mqtt",
+     "label": "MQTT",
+     "status": "used",
+     "evidence": "Section 4.1.4 p.28: 'the microcontroller sends the information to a cloud-based service using MQTT'"
+    },
+    {
+     "key": "json",
+     "label": "JSON",
+     "status": "used",
+     "evidence": "Scope 1.2 p.2: 'JSON will be used as the data format for the website'"
+    },
+    {
+     "key": "pms7003",
+     "label": "PlanTower PMS7003 G7 laser dust sensor",
+     "status": "used",
+     "evidence": "Chapter 1 p.1: 'A very precise sensor that monitors the amount of PM2.5 and PM10 in the air is the PlanTower Laser Dust Sensor PM2.5 PMS7003 G7.'"
+    },
+    {
+     "key": "mq7",
+     "label": "MQ-7 carbon monoxide gas sensor",
+     "status": "used",
+     "evidence": "Chapter 1 p.1: 'Carbon Monoxide (CO) is a gas that may be found in the air, and the MQ-7 Gas Sensor Module is an extremely sensitive sensor that can find it.'"
+    },
+    {
+     "key": "dht11",
+     "label": "DHT11 humidity and temperature sensor",
+     "status": "used",
+     "evidence": "Chapter 1 p.1: 'The relative humidity and temperature of the environment are measured using the DHT11 Humidity and Temperature Sensor.'"
+    },
+    {
+     "key": "visual_studio_code",
+     "label": "Visual Studio Code",
+     "status": "used",
+     "evidence": "Scope 1.2 p.2: 'which will be created using Visual Studio Code'"
+    },
+    {
+     "key": "html",
+     "label": "HTML",
+     "status": "used",
+     "evidence": "Chapter 5 p.43: 'The website, which shows the real-time data acquired by the sensors, was developed using HTML, CSS, and JavaScript.'"
+    },
+    {
+     "key": "css",
+     "label": "CSS",
+     "status": "used",
+     "evidence": "Chapter 5 p.43: 'developed using HTML, CSS, and JavaScript'"
+    },
+    {
+     "key": "javascript",
+     "label": "JavaScript",
+     "status": "used",
+     "evidence": "Chapter 5 p.43: 'developed using HTML, CSS, and JavaScript'"
+    },
+    {
+     "key": "freeboard",
+     "label": "Freeboard",
+     "status": "cited",
+     "evidence": "Section 4.1.2 p.25: 'reasons why we would decide to make our own local HTML rather than utilizing a program like Freeboard'"
+    },
+    {
+     "key": "iqair_airvisual_pro",
+     "label": "IQAir AirVisual Pro",
+     "status": "cited",
+     "evidence": "Section 4.1 p.19: comparison chapter 'DIY vs. IQAir AirVisual Pro Air Quality Monitor'"
+    },
+    {
+     "key": "ifttt",
+     "label": "IFTTT",
+     "status": "cited",
+     "evidence": "Section 4.1 p.20: 'The IQAir AirVisual Pro may also be connected to the IFTTT (If This Then That) platform'"
+    }
+   ]
+  }
+ }
+]

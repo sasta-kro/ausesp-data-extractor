@@ -1,0 +1,1389 @@
+[
+ {
+  "id": "26021",
+  "canonical_title": "Shortenit – URL Shortener & Link Management Platform",
+  "aliases": [
+   "Shortenit"
+  ],
+  "phase": "final",
+  "course_code": "CSX 3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Khine Khant",
+    "student_id": "6611718"
+   },
+   {
+    "name": "Hein Oke Soe",
+    "student_id": "6611717"
+   },
+   {
+    "name": "Thant Si Thu Naing",
+    "student_id": "6611720"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "Asst. Prof. Dr. Paitoon Porntrakoon",
+   "A. Athiphat Hirunadisuan"
+  ],
+  "abstract": "URL management remains a critical challenge for organizations and individuals who rely on sharing links across platforms. Long, unwieldy URLs are difficult to share, track, and manage, particularly in institutional settings where link performance analytics and access control are essential. Existing URL shortening services such as Bitly and TinyURL are cloud-hosted, raising concerns about data privacy, institutional branding, and limited customization. Shortenit is designed to address these challenges by providing a comprehensive, self-hosted URL shortener and link management platform tailored for Assumption University. It enables authenticated users to shorten URLs with custom aliases, track click analytics with geographic and device breakdowns, generate QR codes, and manage links through both a web dashboard and a command-line interface (CLI). With features such as Microsoft OAuth2 authentication restricted to AU email domains, role-based access control (user and admin roles), API key management for programmatic access, and full click analytics with geolocation, Shortenit reduces the dependency on third-party services while maintaining institutional privacy. The system runs as a self-hosted platform deployed via Docker, with a Nginx reverse proxy for production, ensuring that all data remains under institutional control. The project is tailored to the real link management needs of universities and organizations requiring privacy-preserving, customizable URL shortening workflows.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [
+    "geolocation"
+   ],
+   "technology": [
+    "java",
+    "nextjs",
+    "nodejs",
+    "postgresql",
+    "react"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "spring_boot",
+     "label": "Spring Boot",
+     "status": "used",
+     "evidence": "Backend (Spring Boot 4 / Java 17), Tech Stack section page 22"
+    },
+    {
+     "key": "docker",
+     "label": "Docker",
+     "status": "used",
+     "evidence": "Containerization Docker, Multi-stage builds for both frontend and backend (Table 1 Tech Stack, page 23)"
+    },
+    {
+     "key": "nginx",
+     "label": "Nginx",
+     "status": "used",
+     "evidence": "Reverse Proxy Nginx, HTTPS termination, routing, caching, and security header enforcement (Table 1, page 23)"
+    },
+    {
+     "key": "tailwind_css",
+     "label": "Tailwind CSS",
+     "status": "used",
+     "evidence": "Styling Tailwind CSS 4, Utility-first CSS framework (Table 1, page 23)"
+    },
+    {
+     "key": "radix_ui",
+     "label": "Radix UI",
+     "status": "used",
+     "evidence": "Provides responsive layouts with Radix UI components and Tailwind CSS (page 21)"
+    },
+    {
+     "key": "recharts",
+     "label": "Recharts",
+     "status": "used",
+     "evidence": "Renders analytics visualizations using Recharts (page 21)"
+    },
+    {
+     "key": "qrcode_react",
+     "label": "qrcode.react",
+     "status": "used",
+     "evidence": "The frontend implements a comprehensive QR code generator using the qrcode.react library (page 16)"
+    },
+    {
+     "key": "maxmind_geolite2",
+     "label": "MaxMind GeoLite2",
+     "status": "used",
+     "evidence": "MaxMind GeoLite2, Local IP geolocation database for resolving click locations without external API calls (Table 1, page 23)"
+    },
+    {
+     "key": "hibernate_jpa",
+     "label": "Hibernate / JPA",
+     "status": "used",
+     "evidence": "ORM Hibernate / JPA, Object-relational mapping for database interactions with Spring Data JPA repositories (Table 1, page 23)"
+    },
+    {
+     "key": "typescript",
+     "label": "TypeScript",
+     "status": "used",
+     "evidence": "The Shortenit CLI is a Node.js/TypeScript application published on NPM (shortenit-cli) (page 16)"
+    },
+    {
+     "key": "microsoft_azure_ad",
+     "label": "Microsoft Azure Active Directory",
+     "status": "used",
+     "evidence": "integrates with the university's Microsoft Azure Active Directory for authentication (page 6)"
+    },
+    {
+     "key": "commander_js",
+     "label": "Commander.js",
+     "status": "used",
+     "evidence": "commander for CLI framework and argument parsing (Key Libraries, page 17)"
+    },
+    {
+     "key": "bitly",
+     "label": "Bitly",
+     "status": "cited",
+     "evidence": "Bitly: One of the most popular URL shorteners, offering link management, branded short domains, and analytics (Related Work, page 9)"
+    },
+    {
+     "key": "kutt",
+     "label": "Kutt",
+     "status": "cited",
+     "evidence": "Kutt: An open-source, modern URL shortener built with Node.js and React (Related Work, page 10)"
+    },
+    {
+     "key": "yourls",
+     "label": "YOURLS",
+     "status": "cited",
+     "evidence": "YOURLS (Your Own URL Shortener): A PHP-based self-hosted solution with plugin support (Related Work, page 9)"
+    }
+   ]
+  }
+ },
+ {
+  "id": "26022",
+  "canonical_title": "SafeAs: Smart Safe Intelligent Cash Management System",
+  "aliases": [
+   "Smart Safe: Intelligent Cash Management System",
+   "Smart Safe"
+  ],
+  "phase": "final",
+  "course_code": "CSX 3010 / ITX 3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Sirapat Sukawatanangkul",
+    "student_id": "6310112"
+   },
+   {
+    "name": "Paponwat Watanajitsaree",
+    "student_id": "6311039"
+   }
+  ],
+  "advisor": "Asst. Prof. Chayapol Moemeng",
+  "committee": [],
+  "abstract": "Smart Safe is an intelligent cash management system designed to improve the security and monitoring of physical money storage in small businesses such as convenience stores, gas stations, and retail shops. Traditional safes only provide physical protection but lack monitoring and automation features. Smart Safe integrates IoT technology, embedded systems, and web monitoring to provide real-time security and operational management. The system is built using Raspberry Pi, which connects to multiple hardware components such as:Camera module for monitoring, Solenoid electronic lock, Bill counter The Smart Safe system also includes a Kiosk web-based dashboard where administrators can monitor transactions, control locking mechanisms, and review camera footage from Line platform. The main objective of this project is to design a secure, intelligent, and automated safe system that reduces theft risk and improves financial tracking for businesses.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "hardware_iot"
+   ],
+   "platform": [
+    "embedded_hardware",
+    "raspberry_pi",
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "flask",
+    "mysql",
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "socket_io",
+     "label": "Socket.IO",
+     "status": "used",
+     "evidence": "Real-time communication using Socket.IO (Scope of the Project, page 7)"
+    },
+    {
+     "key": "line_messaging_api",
+     "label": "LINE Messaging API",
+     "status": "used",
+     "evidence": "The system uses the LINE Messaging API as the communication platform to send real-time notifications to administrators (page 17)"
+    },
+    {
+     "key": "ict_bill_acceptor",
+     "label": "ICT bill acceptor",
+     "status": "used",
+     "evidence": "ICT bill acceptor for banknote detection (Scope of the Project, page 7)"
+    },
+    {
+     "key": "mqtt",
+     "label": "MQTT",
+     "status": "cited",
+     "evidence": "Reference [3] A. Banks and R. Gupta, MQTT Version 3.1.1, OASIS Standard, 2014 (page 24)"
+    }
+   ]
+  }
+ },
+ {
+  "id": "26024",
+  "canonical_title": "AU Connect: networking platform for AU",
+  "aliases": [
+   "AU Connect"
+  ],
+  "phase": "final",
+  "course_code": "CSX 3010/ITX 3009",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Si Thu Naung",
+    "student_id": "6530287"
+   },
+   {
+    "name": "Thant Zin Min",
+    "student_id": "6611968"
+   },
+   {
+    "name": "Min Thant",
+    "student_id": "6612012"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "A. Tang Tianai",
+   "A. Benjawan Srisura"
+  ],
+  "abstract": "At Assumption University, many students would like to learn from alumni or seek advice from professors about careers and industry experience. However, there is no single platform where these groups can easily communicate and share opportunities. Most existing social networking platforms are built for a broad audience and are not designed specifically for a university environment. Because of this, connections between students, alumni, and professors often remain limited. This project presents AU Connect; a responsive web-based networking platform created for the Assumption University community. The system supports three types of users: students, alumni, and professors. It allows users to create profiles, share posts, connect with others, exchange messages, and discover job opportunities within the network. The platform is built using Next.js, React, TypeScript, Prisma ORM, and MongoDB, with Azure Blob Storage used for storing media files and Vercel used for deployment.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [],
+   "technology": [
+    "mongodb",
+    "nextjs",
+    "nodejs",
+    "react"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "typescript",
+     "label": "TypeScript",
+     "status": "used",
+     "evidence": "TypeScript, Ensures type safety and improves code reliability during development (Tech Stack, page 29)"
+    },
+    {
+     "key": "prisma_orm",
+     "label": "Prisma ORM",
+     "status": "used",
+     "evidence": "Prisma ORM, Provides an abstraction layer for database access, allowing structured queries and type-safe data operations (Tech Stack, page 28)"
+    },
+    {
+     "key": "azure_blob_storage",
+     "label": "Azure Blob Storage",
+     "status": "used",
+     "evidence": "Azure Blob Storage, Used to store media files such as profile images and post attachments (Tech Stack, page 29)"
+    },
+    {
+     "key": "vercel",
+     "label": "Vercel",
+     "status": "used",
+     "evidence": "The platform is deployed on Vercel, which provides optimized hosting for Next.js applications (Tech Stack, page 29)"
+    },
+    {
+     "key": "nextauth_js",
+     "label": "NextAuth.js",
+     "status": "used",
+     "evidence": "NextAuth.js with Prisma Adapter, Manages user authentication and session handling (Tech Stack, page 28)"
+    },
+    {
+     "key": "docker",
+     "label": "Docker",
+     "status": "used",
+     "evidence": "the entire application is containerized using Docker (Deployment Strategy, page 15)"
+    },
+    {
+     "key": "tailwind_css",
+     "label": "Tailwind CSS",
+     "status": "used",
+     "evidence": "Tailwind CSS 4, Used for responsive and consistent styling across the platform (Tech Stack, page 28)"
+    },
+    {
+     "key": "react_query",
+     "label": "React Query",
+     "status": "used",
+     "evidence": "React Query, Handles efficient server state management, caching, and API data synchronization (Tech Stack, page 29)"
+    },
+    {
+     "key": "zustand",
+     "label": "Zustand",
+     "status": "used",
+     "evidence": "Zustand, Provides lightweight client-side state management for managing UI-related states (Tech Stack, page 29)"
+    },
+    {
+     "key": "zod",
+     "label": "Zod",
+     "status": "used",
+     "evidence": "Zod, Used for runtime data validation and schema validation (Tech Stack, page 29)"
+    },
+    {
+     "key": "nodemailer",
+     "label": "Nodemailer",
+     "status": "used",
+     "evidence": "Nodemailer, Used for sending system emails (Tech Stack, page 29)"
+    },
+    {
+     "key": "bcrypt",
+     "label": "bcrypt",
+     "status": "used",
+     "evidence": "bcrypt, Used for password hashing and protecting sensitive user credentials (Tech Stack, page 28)"
+    }
+   ]
+  }
+ },
+ {
+  "id": "26026",
+  "canonical_title": "A Hybrid AI System for Personalized MG Car Recommendation",
+  "aliases": [
+   "MGnition",
+   "MGNITION"
+  ],
+  "phase": "final",
+  "course_code": "CSX 3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Khaing Zaw Lin",
+    "student_id": "6611924"
+   },
+   {
+    "name": "Lamin Thiri",
+    "student_id": "6611929"
+   },
+   {
+    "name": "Sai Kyaw Zin Ye Tun",
+    "student_id": "6611978"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Benjawin Srisura",
+  "committee": [
+   "Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan",
+   "A. Tianai Tang"
+  ],
+  "abstract": "Choosing a suitable car can be challenging due to the large number of available models, specifications, and features in the automotive market. Customers often struggle to identify vehicles that match their personal preferences, budget, and lifestyle while underlying traditional automotive websites mainly rely on manual filtering and browsing. This project presents MGNITION, an AI-driven vehicle recommendation and showroom booking system designed to assist users in selecting suitable MG cars. The system applies a hybrid recommendation approach combining rule-based filtering, cosine similarity ranking, and regression-based score refinement to generate personalized vehicle recommendations. User preferences such as budget, seating capacity, fuel type, lifestyle, and driving needs are analyzed to produce the top recommended cars with explanation factors. The system also includes comparison of cars, showroom discovery, and consultation booking features. MGNITION is implemented using React, Flask, PostgreSQL, and Scikit-learn, demonstrating how AI can improve vehicle selection and enhance the car recommendation and booking experience.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "transportation"
+   ],
+   "topic": [
+    "recommender_system"
+   ],
+   "technology": [
+    "python",
+    "react",
+    "flask",
+    "postgresql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "automotive",
+     "label": "Automotive / Car Sales",
+     "status": "used",
+     "evidence": "\"This project proposes MGNITION, an AI-driven car recommendation system designed for MG vehicles available in Thailand.\" (Chapter 1, Background)"
+    }
+   ],
+   "technology": [
+    {
+     "key": "scikit_learn",
+     "label": "Scikit-learn",
+     "status": "used",
+     "evidence": "Tech stack (section 4.2.4): \"Machine Learning: Python, Scikit-learn\""
+    },
+    {
+     "key": "material_ui",
+     "label": "Material UI",
+     "status": "used",
+     "evidence": "\"Develop an intuitive web application using React and Material UI\" (Objectives, Chapter 1)"
+    },
+    {
+     "key": "vite",
+     "label": "Vite",
+     "status": "used",
+     "evidence": "Tech stack (section 4.2.4): \"Frontend: React, Vite, JavaScript, CSS\""
+    },
+    {
+     "key": "javascript",
+     "label": "JavaScript",
+     "status": "used",
+     "evidence": "Tech stack (section 4.2.4): \"Frontend: React, Vite, JavaScript, CSS\""
+    },
+    {
+     "key": "google_maps_api",
+     "label": "Google Maps JavaScript API",
+     "status": "used",
+     "evidence": "\"The system uses Google Maps API to display showroom locations, map markers, and showroom-focused navigation features.\" (section 4.2.3, External Services)"
+    },
+    {
+     "key": "gmail_smtp",
+     "label": "Gmail SMTP",
+     "status": "used",
+     "evidence": "\"It also uses Gmail SMTP to send booking-related and password-reset emails.\" (section 4.2.3, External Services)"
+    },
+    {
+     "key": "figma",
+     "label": "Figma",
+     "status": "used",
+     "evidence": "\"Design Tools: Figma - UI/UX design and prototyping\" (section 4.2.5)"
+    }
+   ]
+  }
+ },
+ {
+  "id": "26027",
+  "canonical_title": "MCG Care 2.0 (Air Conditioning Service Management System)",
+  "aliases": [
+   "MCG Care"
+  ],
+  "phase": "final",
+  "course_code": "CSX3011/ITX3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Khaing Thin Zar Sein",
+    "student_id": "6530381"
+   },
+   {
+    "name": "Pyae Phyo Aung",
+    "student_id": "6530069"
+   },
+   {
+    "name": "Phyu Thandar Khin",
+    "student_id": "6520271"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Benjawan Srisura",
+  "committee": [
+   "Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan",
+   "A. Tianai Tang"
+  ],
+  "abstract": "This report presents the design, development, and implementation of MCG Care, a digital platform created to streamline operations for an air conditioning sales and service company. The system addresses key challenges in service management, including inefficient booking processes, fragmented customer communication, limited-service history tracking, and manual scheduling. MCG Care integrates two platforms into a unified system: an iOS mobile application for customers and technicians, and a web-based admin dashboard for administrators. Its main features include automated technician assignment based on availability, skills, and location, QR code–based service history tracking, intelligent scheduling, and a community forum for customer support and knowledge sharing. Customers can register their air conditioning units, book maintenance services, participate in discussions, and provide feedback after service completion. Technicians use the mobile app to view assignments, scan QR codes to access service records, update job statuses, create service logs, and create time-off requests. Administrators manage products, services, technicians, bookings, timeslots, and forum activities through the dashboard. The system was developed using modern web technologies, employing NestJS for the backend API, Supabase with Drizzle ORM for database management, Next.js with React and TypeScript for the admin dashboard, and native iOS development for mobile applications. Automated scheduling algorithms and maintenance reminder systems ensure efficient operations and enhanced customer satisfaction. MCG Care's value lies in its ability to automate complex scheduling logic, provide transparent service tracking through QR codes, facilitate community-driven support, and enable comprehensive administrative control. The system bridges the gap between traditional service management approaches and modern digital solutions, providing a scalable foundation for service-based businesses in the HVAC industry.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "ios",
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "nextjs",
+    "nodejs",
+    "postgresql",
+    "react",
+    "swift"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "hvac",
+     "label": "HVAC / Air Conditioning Services",
+     "status": "used",
+     "evidence": "\"providing a scalable foundation for service-based businesses in the HVAC industry\" (Abstract) and \"air conditioning sales and service company\" (Chapter 1)"
+    }
+   ],
+   "technology": [
+    {
+     "key": "nestjs",
+     "label": "NestJS",
+     "status": "used",
+     "evidence": "\"The backend is built using NestJS, a Node.js framework that supports modular and scalable application design.\" (section 4.1.1)"
+    },
+    {
+     "key": "supabase",
+     "label": "Supabase",
+     "status": "used",
+     "evidence": "\"All persistent data is stored in a PostgreSQL database hosted on Supabase.\" (section 3.2.1)"
+    },
+    {
+     "key": "drizzle_orm",
+     "label": "Drizzle ORM",
+     "status": "used",
+     "evidence": "\"Data is stored in a PostgreSQL database hosted on Supabase, accessed via Drizzle ORM for type-safe queries and schema management.\" (section 3.2.1)"
+    },
+    {
+     "key": "typescript",
+     "label": "TypeScript",
+     "status": "used",
+     "evidence": "\"employing NestJS for the backend API, Supabase with Drizzle ORM for database management, Next.js with React and TypeScript for the admin dashboard\" (Abstract)"
+    },
+    {
+     "key": "shadcn_ui",
+     "label": "shadcn/ui",
+     "status": "used",
+     "evidence": "\"The admin dashboard was developed using Next.js and shadcn/ui.\" (section 1.5, Phase 4)"
+    },
+    {
+     "key": "tailwind_css",
+     "label": "Tailwind CSS",
+     "status": "used",
+     "evidence": "\"Tailwind CSS provides utility-first styling with dark mode support via next-themes.\" (section 3.2.3)"
+    },
+    {
+     "key": "tanstack_query",
+     "label": "TanStack Query",
+     "status": "used",
+     "evidence": "\"TanStack Query handles server state with caching, background refetching, and optimistic updates.\" (section 3.2.3)"
+    },
+    {
+     "key": "supabase_edge_functions",
+     "label": "Supabase Edge Functions (cron jobs)",
+     "status": "used",
+     "evidence": "\"Using Supabase Edge Functions, daily cron jobs maintain technician availability by removing expired timeslots and generating new ones for the upcoming 30 days.\" (section 3.2.2)"
+    },
+    {
+     "key": "avfoundation",
+     "label": "AVFoundation",
+     "status": "used",
+     "evidence": "\"QR Code Scanning: Implemented using the AVFoundation framework, QR codes are validated against the backend to retrieve service history.\" (section 3.2.4)"
+    },
+    {
+     "key": "render",
+     "label": "Render",
+     "status": "used",
+     "evidence": "\"The backend API was deployed on Render\" (section 1.5, Deployment Strategy)"
+    },
+    {
+     "key": "vercel",
+     "label": "Vercel",
+     "status": "used",
+     "evidence": "\"The web dashboard is deployed separately on Vercel.\" (section 4.5.2)"
+    },
+    {
+     "key": "jwt",
+     "label": "JSON Web Token (JWT)",
+     "status": "used",
+     "evidence": "\"the system issues a JSON Web Token (JWT) that contains the user's identity and role\" (section 4.1.3)"
+    },
+    {
+     "key": "figma",
+     "label": "Figma",
+     "status": "used",
+     "evidence": "\"Wireframes and prototypes were developed using Figma to visualize system functionality prior to implementation.\" (section 3.4.2)"
+    }
+   ]
+  }
+ },
+ {
+  "id": "26030",
+  "canonical_title": "OCR-Based Accounting Automation for Odoo",
+  "aliases": [
+   "Clario",
+   "Clario OCR"
+  ],
+  "phase": "final",
+  "course_code": "ITX3009, CSX3010",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Thu Ya Myint Myat Thein",
+    "student_id": "6530227"
+   },
+   {
+    "name": "Hein Htet Moe Tun",
+    "student_id": "6530394"
+   },
+   {
+    "name": "S Harry Lynn Oo",
+    "student_id": "6530241"
+   }
+  ],
+  "advisor": "Dr. Kwankamol Nongpong",
+  "committee": [
+   "A. Sakchhi Paudel",
+   "Asst. Prof. Dr. Dobri Atanassov Batovski"
+  ],
+  "abstract": "This report presents the development of Clario OCR, an enterprise resource planning (ERP) extension designed to automate the processing of receipts and invoices using Optical Character Recognition (OCR) technology. The system aims to eliminate the need for manual data entry by automatically extracting financial and transactional information from uploaded documents and converting it into structured accounting data. By integrating intelligent document processing with business management software, Clario improves efficiency, accuracy, and productivity in financial record management. The system is developed as a module for Odoo 17, an open-source ERP platform widely used by businesses for accounting, inventory, and operational management. When a user uploads a receipt or invoice, the document is processed using Microsoft Azure Document Intelligence, which performs OCR to extract textual and structural data from the image or PDF file. The extracted information is then analyzed and organized by the Clario parsing system to identify important fields such as vendor name, invoice number, reference number, tax identification number, product descriptions, quantities, prices, and VAT information. The extracted data is automatically converted into a structured vendor bill within the Odoo accounting system, allowing businesses to review, edit, and confirm the information before saving it into the database. This automation significantly reduces the time required for bookkeeping tasks and minimizes human errors associated with manual data entry. Clario also ensures secure system integration and reliable data processing through its modular architecture within the Odoo framework. The system is designed to support multiple receipt formats and adapt to different invoice layouts using Azure's intelligent document analysis capabilities combined with rule-based data parsing techniques. Overall, Clario OCR demonstrates how the integration of OCR technology, intelligent document processing, and ERP systems can streamline financial workflows and modernize traditional document handling processes. The system provides a practical and scalable solution for businesses seeking to automate invoice processing and improve the efficiency of their accounting operations.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "finance"
+   ],
+   "topic": [
+    "ocr"
+   ],
+   "technology": [
+    "python",
+    "postgresql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "erp",
+     "label": "Enterprise Resource Planning (ERP)",
+     "status": "used",
+     "evidence": "\"an enterprise resource planning (ERP) extension designed to automate the processing of receipts and invoices\" (Abstract)"
+    }
+   ],
+   "technology": [
+    {
+     "key": "odoo",
+     "label": "Odoo ERP",
+     "status": "used",
+     "evidence": "\"The system is developed as a module for Odoo 17, an open-source ERP platform widely used by businesses for accounting, inventory, and operational management.\" (Abstract; Tech stack Table 4.4)"
+    },
+    {
+     "key": "azure_document_intelligence",
+     "label": "Microsoft Azure Document Intelligence",
+     "status": "used",
+     "evidence": "\"the document is processed using Microsoft Azure Document Intelligence, which performs OCR to extract textual and structural data from the image or PDF file\" (Abstract; Tech stack Table 4.4)"
+    },
+    {
+     "key": "docker",
+     "label": "Docker",
+     "status": "used",
+     "evidence": "\"The deployment environment also utilizes Docker containers, which help maintain consistent system configuration and simplify deployment across development and production environments.\" (section 4.6)"
+    },
+    {
+     "key": "xml",
+     "label": "XML (Odoo views)",
+     "status": "used",
+     "evidence": "\"The module is developed using the Odoo framework, which is based on Python for backend logic, XML for user interface definitions, and PostgreSQL for database management.\" (section 3.5)"
+    },
+    {
+     "key": "odoo_marketplace",
+     "label": "Odoo Marketplace",
+     "status": "used",
+     "evidence": "\"the Clario OCR module was deployed to the Odoo Marketplace, which is the official distribution platform for Odoo applications\" (section 5.3)"
+    }
+   ]
+  }
+ },
+ {
+  "id": "26031",
+  "canonical_title": "GamoRaX",
+  "aliases": [
+   "GAMORAX"
+  ],
+  "phase": "final",
+  "course_code": "CSX 3011",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Min Thuka",
+    "student_id": "6530143"
+   },
+   {
+    "name": "Naw Tulip",
+    "student_id": "6530181"
+   },
+   {
+    "name": "Shwan Myat Nay Chi",
+    "student_id": "6530187"
+   }
+  ],
+  "advisor": "Dr Kwankamol Nongpong",
+  "committee": [
+   "Dr Dobri Atanassov Batovski",
+   "Sakchhi Paudel"
+  ],
+  "abstract": "In modern classrooms, maintaining student engagement and evaluating learning progress during lectures remain significant challenges. Traditional teaching approaches often rely on passive learning, making it difficult for lecturers to assess student understanding in real time. Although existing digital learning platforms such as Learning Management Systems (LMS) and collaboration tools support course management and assignment submission, they generally lack efficient mechanisms for real-time interactive assessments during lectures.\n\nThis project presents GamoRaX, a web-based real-time quiz and assignment platform designed to enhance classroom interaction between lecturers and students. The system enables lecturers to create quizzes using multiple question templates, including multiple choice, true/false, matching, and input-based questions. Lecturers can conduct live quiz sessions through QR code or PIN-based access and generate detailed performance reports for learning evaluation. Students can join quizzes instantly, answer questions in real time, and receive immediate feedback on their performance.\n\nThe platform supports both live classroom quizzes and take-home assignments with configurable deadlines and durations. Real-time features such as live leaderboards, automatic score calculation, and participation monitoring help lecturers evaluate student engagement during lectures. In addition, the system provides analytical reports including minimum, average, and maximum score statistics to assist lecturers in assessing student performance and adjusting teaching strategies.\n\nGamoRaX is implemented using modern web technologies including Next.js, React, TypeScript, Node.js, Express, Socket.IO, and Supabase. Real-time communication is achieved through WebSocket-based interaction using Socket.IO, enabling instant synchronization between lecturers and students. The frontend is deployed on Vercel, while the real-time server is hosted on Railway, allowing scalable and efficient web deployment.\n\nThe results demonstrate that GamoRaX improves classroom interaction, simplifies quiz preparation for lecturers, and provides meaningful analytics for teaching decisions. The platform demonstrates the potential of real-time interactive assessment systems to support more engaging and effective learning environments in higher education.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [
+    "gamification"
+   ],
+   "technology": [
+    "nextjs",
+    "react",
+    "nodejs",
+    "express",
+    "postgresql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "typescript",
+     "label": "TypeScript",
+     "status": "used",
+     "evidence": "Table 3 Tech Stack: 'Frontend TypeScript Provides static typing to improve code reliability and maintainability' (p.11)"
+    },
+    {
+     "key": "socket_io",
+     "label": "Socket.IO",
+     "status": "used",
+     "evidence": "'Real-time communication between lecturers and students is enabled through Socket.IO' (Chapter 3, p.5)"
+    },
+    {
+     "key": "supabase",
+     "label": "Supabase",
+     "status": "used",
+     "evidence": "'All quiz responses and session data are stored in a PostgreSQL database through Supabase' (p.5); tech stack row 'Supabase Provides database management, authentication, and backend services' (p.11)"
+    },
+    {
+     "key": "tailwind_css",
+     "label": "Tailwind CSS",
+     "status": "used",
+     "evidence": "Table 3: 'Tailwind CSS Utility-first CSS framework used to design responsive and modern user interfaces' (p.11)"
+    },
+    {
+     "key": "vercel",
+     "label": "Vercel",
+     "status": "used",
+     "evidence": "'The frontend application is deployed on Vercel' (p.44, section 5.5 System Deployment)"
+    },
+    {
+     "key": "railway",
+     "label": "Railway",
+     "status": "used",
+     "evidence": "'the real-time server is hosted on Railway, enabling scalable and reliable web deployment' (p.44)"
+    },
+    {
+     "key": "read_excel_file",
+     "label": "read-excel-file (npm)",
+     "status": "used",
+     "evidence": "'Excel bulk upload with read-excel-file npm module [4], allowing lecturers to import multiple questions simultaneously' (p.5)"
+    },
+    {
+     "key": "github",
+     "label": "GitHub",
+     "status": "used",
+     "evidence": "Table 3: 'Version Control GitHub Collaborate on development and maintain version tracking' (p.11-12)"
+    },
+    {
+     "key": "kahoot",
+     "label": "Kahoot",
+     "status": "cited",
+     "evidence": "'Interactive quiz platforms such as Kahoot have demonstrated the effectiveness of gamification in education' (Chapter 2, p.4)"
+    },
+    {
+     "key": "moodle",
+     "label": "Moodle",
+     "status": "cited",
+     "evidence": "'Learning Management Systems (LMS) such as Moodle and institutional LMS platforms are widely used in universities' (Chapter 2, p.4)"
+    }
+   ]
+  }
+ },
+ {
+  "id": "26032",
+  "canonical_title": "EduTrack",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CSX3011",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Somavatey Heng",
+    "student_id": "6530354"
+   },
+   {
+    "name": "Moe Myint Mo San",
+    "student_id": "6530173"
+   },
+   {
+    "name": "Sai Thaw Zin Aung",
+    "student_id": "6520152"
+   }
+  ],
+  "advisor": "Dr. Kwankamol Nongpong",
+  "committee": [
+   "Asst. Prof. Dr. Dobri Atanassov Batovski",
+   "A. Sakchhi Paudel"
+  ],
+  "abstract": "This project aims to develop EduTrack, a web-based application designed to assist students at Assumption University of Thailand (AU) in managing course auditing and academic planning more effectively. Students often face challenges in tracking academic progress, understanding prerequisite requirements, and planning future semesters, which can lead to missed courses, delayed graduation, and increased academic stress. At the same time, academic chairpersons face difficulties managing curricula, preparing tentative schedules, and handling graduation checklist submissions due to the lack of centralized tools. \nEduTrack provides a structured platform that enables students to monitor academic progress, review completed and remaining courses, and plan future semesters, while allowing chairpersons to manage curricula and academic rules more efficiently. As a continuation of the Senior Project 1, the system has been further refined and expanded with additional features to transform EduTrack into a complete and more comprehensive course auditing system. \nBy integrating these improvements into a centralized platform, EduTrack aims to enhance transparency in academic planning and reduce administrative complexity in course auditing and graduation verification. The system supports students in making informed academic decisions while enabling chairpersons to manage academic processes more efficiently, ultimately improving the reliability and effectiveness of academic management at the university.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [],
+   "technology": [
+    "nextjs",
+    "react",
+    "php",
+    "laravel",
+    "postgresql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "typescript",
+     "label": "TypeScript",
+     "status": "used",
+     "evidence": "'The frontend layer is implemented using Next.js with TypeScript' (p.53); feasibility lists 'Next.js, React, TypeScript, PHP Laravel, and PostgreSQL' (p.34)"
+    },
+    {
+     "key": "tailwind_css",
+     "label": "Tailwind CSS",
+     "status": "used",
+     "evidence": "Table 1: 'TailwindCSS ... For styling components in the system, ensuring a responsive design for both desktop and mobile users' (p.26)"
+    },
+    {
+     "key": "laravel_sanctum",
+     "label": "Laravel Sanctum",
+     "status": "used",
+     "evidence": "'Authentication for authenticated users such as chairpersons and administrators is managed using Laravel Sanctum, which provides secure session-based authentication' (p.53)"
+    },
+    {
+     "key": "eloquent_orm",
+     "label": "Eloquent ORM",
+     "status": "used",
+     "evidence": "'Laravel uses the Eloquent ORM (Object-Relational Mapping) framework to interact with the database' (p.53)"
+    },
+    {
+     "key": "digitalocean",
+     "label": "DigitalOcean",
+     "status": "used",
+     "evidence": "'All system components are deployed on a Digital Ocean Droplet, which serves as the hosting infrastructure' (p.54); Table 1 Deployment row Digital Ocean (p.27)"
+    },
+    {
+     "key": "figma",
+     "label": "Figma",
+     "status": "used",
+     "evidence": "Table 1: 'Figma ... Used to design and identify the UI/UX of the system' (p.26)"
+    },
+    {
+     "key": "dbeaver",
+     "label": "DBeaver",
+     "status": "used",
+     "evidence": "Table 1: 'DBeaver ... Used to manage and interact with the PostgreSQL database during development' (p.27)"
+    },
+    {
+     "key": "github",
+     "label": "GitHub",
+     "status": "used",
+     "evidence": "Table 1: 'GitHub ... Used for version control, tracking code changes, managing branches, and deploying code via CI/CD pipeline' (p.27)"
+    },
+    {
+     "key": "agile_scrum",
+     "label": "Agile Scrum",
+     "status": "used",
+     "evidence": "'the Agile (Scrum) framework is adopted to ensure rapid development, continuous student and advisor feedback, and structured iterations' (p.20)"
+    }
+   ]
+  }
+ },
+ {
+  "id": "26034",
+  "canonical_title": "SHORES – Speed Boat Booking Webapp",
+  "aliases": [
+   "Shores – Speedboat booking webapp",
+   "Shores"
+  ],
+  "phase": "proposal",
+  "course_code": "IT 3200",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2026,
+  "students": [
+   {
+    "name": "Ismail Hamdhoon",
+    "student_id": "6420140"
+   }
+  ],
+  "advisor": "Dr Phyo Min Tun",
+  "committee": [
+   "Asst. Prof. Dr. Dobri Atanassov Batovski",
+   "Mana Tanachan"
+  ],
+  "abstract": "Transportation between islands is a fundamental part of daily life and tourism in the Maldives. Speedboats are one of the fastest and most widely used transportation methods for traveling between islands. However, the current process for arranging speedboat transfers is largely manual and unstructured. Travelers often rely on hotel reception desks, travel agents, or direct phone communication with operators to arrange transportation. This process lacks transparency, does not provide real-time schedule information, and makes it difficult to compare prices or check seat availability. This project proposes Shores, a web-based platform designed to centralize speedboat booking services in the Maldives. The system allows travelers to search routes between islands, view available schedules, compare prices, and make bookings online. Speedboat operators can publish schedules, manage seat availability, and confirm bookings through the platform. The system is developed using modern web technologies including React for the frontend, Node.js and Express for the backend, and MongoDB as the database. Leaflet is used to display interactive maps and visualize travel routes between islands. By digitizing the booking process, Shores aims to improve transportation accessibility, transparency, and operational efficiency for both travelers and speedboat operators.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "transportation"
+   ],
+   "topic": [
+    "geolocation"
+   ],
+   "technology": [
+    "react",
+    "nodejs",
+    "express",
+    "mongodb"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "tourism",
+     "label": "Tourism",
+     "status": "used",
+     "evidence": "'Tourists visiting the Maldives can easily plan inter-island travel using a digital platform, improving their overall travel experience' (Expected Benefits, Tourism Support, p.12)"
+    }
+   ],
+   "technology": [
+    {
+     "key": "leaflet",
+     "label": "Leaflet",
+     "status": "used",
+     "evidence": "'The system will include an interactive map using Leaflet to display island locations and travel routes' (p.7); abstract: 'Leaflet is used to display interactive maps'"
+    },
+    {
+     "key": "react_leaflet",
+     "label": "React-Leaflet",
+     "status": "used",
+     "evidence": "Tech Stack Frontend: 'Leaflet / React-Leaflet for map visualization' (p.18); appendix imports MapContainer, TileLayer, Marker, Popup from 'react-leaflet' (p.48)"
+    },
+    {
+     "key": "vite",
+     "label": "Vite",
+     "status": "used",
+     "evidence": "Tech Stack Frontend: 'React.js, Vite' (p.18); reference [6] Vite: Next Generation Frontend Tooling (p.36)"
+    },
+    {
+     "key": "mongoose",
+     "label": "Mongoose ODM",
+     "status": "used",
+     "evidence": "Tech Stack Database: 'MongoDB, Mongoose ODM' (p.18)"
+    },
+    {
+     "key": "jwt",
+     "label": "JSON Web Token (JWT)",
+     "status": "used",
+     "evidence": "Other Technologies: 'JWT authentication' (p.18); reference [11] RFC 7519: JSON Web Token (JWT) (p.36)"
+    },
+    {
+     "key": "bcrypt",
+     "label": "bcrypt",
+     "status": "used",
+     "evidence": "Other Technologies: 'bcrypt password hashing' (p.18)"
+    },
+    {
+     "key": "react_router",
+     "label": "React Router",
+     "status": "used",
+     "evidence": "Tech Stack Frontend: 'React Router' (p.18); reference [8] React Router Documentation (p.36)"
+    },
+    {
+     "key": "chart_js",
+     "label": "Chart.js",
+     "status": "used",
+     "evidence": "'Made from chart.js, the most common routes, total revenue, total bookings, approval rate, capacity used and other stats are displayed in the page' (Figure 14, p.25); appendix 'import { Chart as ChartJS ... } from chart.js' (p.37)"
+    },
+    {
+     "key": "react_chartjs_2",
+     "label": "react-chartjs-2",
+     "status": "used",
+     "evidence": "Appendix code: \"import { Doughnut, Line, Bar } from 'react-chartjs-2'\" (p.37)"
+    },
+    {
+     "key": "react_hot_toast",
+     "label": "react-hot-toast",
+     "status": "used",
+     "evidence": "Appendix code: \"import toast from 'react-hot-toast'\" (Boat Tracking snippet, p.48)"
+    },
+    {
+     "key": "nodemailer",
+     "label": "Nodemailer",
+     "status": "used",
+     "evidence": "'Nodemailer is used for sending email notifications' (System Architecture, p.17)"
+    },
+    {
+     "key": "openstreetmap",
+     "label": "OpenStreetMap",
+     "status": "used",
+     "evidence": "'External services such as OpenStreetMap are used with Leaflet for map visualization' (p.17); reference [9] (p.36)"
+    },
+    {
+     "key": "arcgis_tiles",
+     "label": "ArcGIS World Imagery tiles",
+     "status": "used",
+     "evidence": "Appendix map code TileLayer url 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}' (p.50, p.55)"
+    },
+    {
+     "key": "google_maps_api",
+     "label": "Google Maps JavaScript API",
+     "status": "cited",
+     "evidence": "References [10] 'Google LLC. Maps JavaScript API Documentation' (p.36); listed as reference only, Leaflet/OpenStreetMap are the implemented stack"
+    }
+   ]
+  }
+ },
+ {
+  "id": "26035",
+  "canonical_title": "TestHive",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CSX3010/ITX3009",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Wai Yan Mya Thaung",
+    "student_id": "6611932"
+   },
+   {
+    "name": "Soe Min Min Latt",
+    "student_id": "6611938"
+   },
+   {
+    "name": "Aung Khant Zaw",
+    "student_id": "6611947"
+   }
+  ],
+  "advisor": "Dr. Phyo Min Tun",
+  "committee": [
+   "Asst. Prof. Dr. Benjawan Srisura",
+   "Arjan Manan Tanachan"
+  ],
+  "abstract": "TestHive is an AI-powered web-based learning platform designed to enhance interactive studying through automated quiz generation and gamified engagement. Traditional learning methods frequently rely on static materials such as lecture slides, textbooks, and PDF documents. While these materials provide valuable information, they often lack interactive mechanisms that actively engage students in knowledge recall and self-assessment. TestHive addresses this limitation by allowing users to upload PDF learning materials or input study topics, after which the system automatically generates quizzes using artificial intelligence. The platform supports multiple question types, including multiple-choice questions, flashcards, and matching exercises. The system integrates modern web technologies such as React, Node.js, and AI APIs to provide an interactive and engaging learning environment. Gamified interface elements, real-time quiz sessions, and automated scoring mechanisms are incorporated to enhance user motivation and learning efficiency. By combining artificial intelligence, modern web development technologies, and gamification concepts, TestHive provides a scalable and efficient platform that transforms static study materials into interactive learning experiences.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [
+    "nlp",
+    "gamification"
+   ],
+   "technology": [
+    "react",
+    "nodejs",
+    "express",
+    "mongodb"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "tailwind_css",
+     "label": "Tailwind CSS",
+     "status": "used",
+     "evidence": "Chapter 3: 'the frontend was developed using React and Tailwind CSS'; Table 1 Tech Stack lists Tailwind CSS for styling"
+    },
+    {
+     "key": "three_js",
+     "label": "Three.js",
+     "status": "used",
+     "evidence": "Chapter 3: 'Three.js was used to incorporate interactive visual elements'"
+    },
+    {
+     "key": "anthropic_claude_api",
+     "label": "Anthropic Claude API",
+     "status": "used",
+     "evidence": "Table 1 Tech Stack: 'AI Anthropic API Quiz generation'; reference [7] Anthropic Claude API documentation"
+    },
+    {
+     "key": "vercel",
+     "label": "Vercel",
+     "status": "used",
+     "evidence": "Table 1 Tech Stack: 'Deployment Vercel Hosting'"
+    },
+    {
+     "key": "github",
+     "label": "GitHub",
+     "status": "used",
+     "evidence": "Table 1 Tech Stack: 'Version Control GitHub Code management'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "26036",
+  "canonical_title": "APSARA: Souvenir Online Shop",
+  "aliases": [
+   "APSARA"
+  ],
+  "phase": "final",
+  "course_code": "CSX3011",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Leanghour Ly",
+    "student_id": "6530342"
+   }
+  ],
+  "advisor": "Dr. Phyo Min Tun",
+  "committee": [
+   "Asst. Prof. Dr. Benjawan Srisura",
+   "Ajarn. Mana Tanachan"
+  ],
+  "abstract": "APSARA is an ecommerce website designed for customers who are looking to purchase souvenirs or gifts for others. The system addresses the challenges of traditionally needing to visit the store and buy the product or asking the price on social media when one can look up the product themselves with the price being shown, product size displayed, and pay all in one platform at home without the need to transport to the location. Built using React.js and Firebase for backend services. APSARA serves 2 key stakeholders: customers and admin. The application features real-time customization, Stripe payment integration, and customization requests of the client that eradicate the issue of the client from the need to visit the store.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "e_commerce"
+   ],
+   "topic": [],
+   "technology": [
+    "react",
+    "firebase",
+    "nodejs"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "stripe",
+     "label": "Stripe",
+     "status": "used",
+     "evidence": "Section 4.5: 'Secure payment and refund processing are integrated using the Stripe API via custom server-side cloud functions'"
+    },
+    {
+     "key": "tailwind_css",
+     "label": "Tailwind CSS",
+     "status": "used",
+     "evidence": "Section 4.5: 'built with React.js (Vite), modern JavaScript, and Tailwind CSS for a responsive, mobile-friendly frontend'"
+    },
+    {
+     "key": "vite",
+     "label": "Vite",
+     "status": "used",
+     "evidence": "Chapter 5: 'The frontend is built using React.js with Vite for fast development and optimized performance'"
+    },
+    {
+     "key": "cloud_firestore",
+     "label": "Cloud Firestore",
+     "status": "used",
+     "evidence": "Section 4.2: 'The APSARA App uses Cloud Firestore, a scalable NoSQL document database on Google Cloud Platform, to store all application data'"
+    },
+    {
+     "key": "google_cloud",
+     "label": "Google Cloud Platform",
+     "status": "used",
+     "evidence": "Section 4.3.2: 'serverless backend on Google Cloud Platform'; 'Stripe API keys are stored in Google Cloud Secret Manager'"
+    },
+    {
+     "key": "emailjs",
+     "label": "EmailJS",
+     "status": "used",
+     "evidence": "Section 6.2: 'EmailJS was used for transactional emails, ensuring timely communication with users'"
+    },
+    {
+     "key": "recaptcha",
+     "label": "reCAPTCHA",
+     "status": "used",
+     "evidence": "Section 4.4.1.k customization form: 'a recaptcha to check if the user is a bot or not before making the request'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "26038",
+  "canonical_title": "Bangkok Buddy: An Intelligent Trip Planner for Foreign Tourists",
+  "aliases": [
+   "Bangkok Buddy"
+  ],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Swan Htet Aung",
+    "student_id": "6530275"
+   },
+   {
+    "name": "Aung Aung Khant Paing",
+    "student_id": "6530361"
+   },
+   {
+    "name": "Kyawt Thit Sar Tun",
+    "student_id": "6520095"
+   }
+  ],
+  "advisor": "Dr. Phyo Min Tun",
+  "committee": [
+   "A. Sakchhi Paudel",
+   "A. Atthipat"
+  ],
+  "abstract": "Bangkok Buddy is a mobile app designed to help international tourists plan their trips to Bangkok more easily and personally. Tourists often struggle with scattered travel information, not enough time to plan, and a lack of details about entry fees, opening hours, and preparation requirements. Our app handles these problems by bringing together attraction data and automatically creating personalized travel itineraries based on user preferences and available travel days. The app uses Flutter for its frontend interface and Firebase for backend services and data management. It also works with Google Maps API and Google Places API for precise location data and map visuals. A rule-based itinerary generator sorts attractions based on user interests, groups nearby locations, and sets visit times based on daily travel limits. By merging organized attraction data with automated itinerary planning, the app cuts down on planning time, makes itineraries more practical, and improves the overall travel experience for tourists in Bangkok.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [
+    "geolocation",
+    "recommender_system"
+   ],
+   "technology": [
+    "firebase"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "travel_tourism",
+     "label": "Travel and Tourism",
+     "status": "used",
+     "evidence": "Abstract: 'Bangkok Buddy is a mobile app designed to help international tourists plan their trips to Bangkok'"
+    }
+   ],
+   "technology": [
+    {
+     "key": "flutter",
+     "label": "Flutter",
+     "status": "used",
+     "evidence": "Section 6.1: 'Bangkok Buddy is developed using Flutter, Google's open-source UI toolkit for building cross-platform mobile applications from a single Dart codebase'"
+    },
+    {
+     "key": "dart",
+     "label": "Dart",
+     "status": "used",
+     "evidence": "Section 6.1: cross-platform apps built 'from a single Dart codebase'; Dart SDK version 3.10.3 or later in Table 6.1"
+    },
+    {
+     "key": "google_gemini",
+     "label": "Google Gemini API",
+     "status": "used",
+     "evidence": "Section 6.1: 'AI-powered features are driven by the Google Gemini 2.5 Flash Lite model'"
+    },
+    {
+     "key": "google_places_api",
+     "label": "Google Places API",
+     "status": "used",
+     "evidence": "Section 6.1: 'location data is sourced from the Google Places API Text Search endpoint'"
+    },
+    {
+     "key": "google_maps_api",
+     "label": "Google Maps API",
+     "status": "used",
+     "evidence": "Abstract: 'It also works with Google Maps API and Google Places API for precise location data and map visuals'"
+    },
+    {
+     "key": "cloud_firestore",
+     "label": "Cloud Firestore",
+     "status": "used",
+     "evidence": "Section 5.1: 'Firebase Cloud Firestore serves as the primary database, structured under per-user collections (users/{uid}/trips and users/{uid}/visited)'"
+    },
+    {
+     "key": "wikipedia_api",
+     "label": "Wikipedia REST API",
+     "status": "used",
+     "evidence": "Section 6.4.1: 'the service falls back to the Wikipedia REST API' for place images when Google Places images are unavailable"
+    }
+   ]
+  }
+ }
+]

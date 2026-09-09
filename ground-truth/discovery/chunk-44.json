@@ -1,0 +1,338 @@
+[
+ {
+  "id": "2224",
+  "canonical_title": "Smart Home Interface",
+  "aliases": [
+   "Smart Home Application"
+  ],
+  "phase": "final",
+  "course_code": "CS 4200 / CSX3011",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Ornwara Sangthongnirundorn",
+    "student_id": "6215112"
+   },
+   {
+    "name": "Nguyen Huy Tung",
+    "student_id": "6128110"
+   },
+   {
+    "name": "Nguyen Ha Duong",
+    "student_id": "6128301"
+   }
+  ],
+  "advisor": "A. Pawut Satitsuksanoh",
+  "committee": [
+   "Asst. Prof. Dr. Dobri Atanassov Batovski",
+   "A. Chayapol Moemeng"
+  ],
+  "abstract": "Smart home systems have been widespread and in high demand. However, the seemingly sky-high prices and commitment to certain brands make them accessible to a few households. To serve our client's request for a smart home system within a low-mid budget, we implemented a system using the existing WIFI network, microcontroller units, and conventional home appliances. The system is complete with smart light bulbs, door sensors, gas sensors, and temperature sensors. The users interact with the system via a web application interface deployed and hosted locally. While we have also successfully deployed the application using Heroku, we recommended that the client use the local version for security reasons. In the future, we would seek additional guidance to implement greater security measures to safeguard the client's home so we can deploy the system online. There are also many improvements and adjustments we would like to make for the future, all of which are discussed later in this report.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "hardware_iot",
+    "software_application"
+   ],
+   "platform": [
+    "web",
+    "embedded_hardware"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [],
+   "technology": [
+    "mongodb",
+    "nextjs",
+    "react"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "smart_home",
+     "label": "Smart home",
+     "status": "used",
+     "evidence": "Chapter 1: \"we decided to build a smart home system using wi-fi enabled microcontrollers and conventional household appliances.\""
+    }
+   ],
+   "technology": [
+    {
+     "key": "mqtt",
+     "label": "MQTT protocol",
+     "status": "used",
+     "evidence": "Section 3.1.1: \"For communicating between the host and sensor, we decided to use the MQTT protocol.\""
+    },
+    {
+     "key": "node_red",
+     "label": "Node-RED",
+     "status": "used",
+     "evidence": "Section 3.1.1: \"There are 3 separate parts included in the host/backend, which are node-red, database, and MQTT broker.\""
+    },
+    {
+     "key": "eclipse_mosquitto",
+     "label": "Eclipse Mosquitto",
+     "status": "used",
+     "evidence": "Section 3.1.1: \"we decided to use Eclipse Mosquitto, an open-source MQTT broker.\""
+    },
+    {
+     "key": "esp8266_nodemcu",
+     "label": "NodeMCU (ESP8266)",
+     "status": "used",
+     "evidence": "Section 3.2.3: \"we decided to modify them and connect them to the NodeMCU\"; reference [7] \"NodeMcu -- an Open-source Firmware Based on ESP8266 Wifi-soc\""
+    },
+    {
+     "key": "arduino",
+     "label": "Arduino",
+     "status": "used",
+     "evidence": "Section 1.2: \"we started experimenting with microcontrollers such as Arduino Uno R3 and NodeMCU\"; Appendices A-F contain the Arduino code for sensors and WiFi"
+    },
+    {
+     "key": "tasmota",
+     "label": "Tasmota firmware",
+     "status": "used",
+     "evidence": "Section 3.3.2: \"Our team modified this device to work with our application using other libraries (Tasmota open-source firmware for ESP devices)\""
+    },
+    {
+     "key": "sonoff",
+     "label": "Sonoff Mini R2 smart switch",
+     "status": "used",
+     "evidence": "Section 3.2.1: \"Sonoff Mini R2, a small and portable DIY smart switch utilized for various switch boxes, will be used for this project.\""
+    },
+    {
+     "key": "broadlink",
+     "label": "Broadlink IR remote",
+     "status": "used",
+     "evidence": "Section 4.2.1: \"This BroadLink device is an open device, which can be unlocked and controlled by another source of the command.\""
+    },
+    {
+     "key": "heroku",
+     "label": "Heroku",
+     "status": "used",
+     "evidence": "Abstract: \"While we have also successfully deployed the application using Heroku\""
+    },
+    {
+     "key": "figma",
+     "label": "Figma",
+     "status": "used",
+     "evidence": "Section 1.2: \"We produced a low-fidelity prototype using Figma.\""
+    },
+    {
+     "key": "sass",
+     "label": "Sass",
+     "status": "used",
+     "evidence": "Section 3.1.2: \"We also used SASS for extra functionalities.\""
+    },
+    {
+     "key": "apple_homekit",
+     "label": "Apple HomeKit",
+     "status": "cited",
+     "evidence": "Section 2.1 related work: \"One of the largest smart home systems, Apple HomeKit is compatible with over 50 brands worldwide\"; used only as UI inspiration"
+    },
+    {
+     "key": "xiaomi_mi_home",
+     "label": "Xiaomi Mi Home",
+     "status": "cited",
+     "evidence": "Section 2.2 related work: \"Mi has its own communication protocol, known as miio, which it uses to connect to its smart devices\"; team evaluated then decided against building on Mi devices"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2226",
+  "canonical_title": "Avalon Online Game",
+  "aliases": [
+   "Online Avalon Game"
+  ],
+  "phase": "proposal",
+  "course_code": "CSX 3010",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Tana Jantayavichit",
+    "student_id": "6211648"
+   },
+   {
+    "name": "Thanchanok Wisuttaporn",
+    "student_id": "6211667"
+   },
+   {
+    "name": "Ravee Virojsirasak",
+    "student_id": "6215204"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "Asst. Prof. Dr. Benjawan Srisura",
+   "Kiratijuta Bhumichitr"
+  ],
+  "abstract": "There are many boardgame in the real world. Some could be played in a cooperative way or competitive way. For the old styles, we could gather up and play the game on the table and have some fun. Now, technology has changed the world. We can now play board games online. So, we don't need to meet each other to play the game. Our team wants to develop one of them to play with friends too. The game that we selected to develop is 'Avalon'. We want to create this to be an online web application that anybody can play. The point of developing this project is to use WebSocket to send the right information to the right person since each role comes up with different task to do.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "game"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [],
+   "technology": [
+    "nodejs",
+    "express"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "board_game",
+     "label": "Board games and social deduction",
+     "status": "used",
+     "evidence": "Section 2.1: \"This is the board game that we would like to make into our own website game\"; \"Our project will follow the game rule that they have set up before\""
+    },
+    {
+     "key": "the_resistance_avalon",
+     "label": "The Resistance: Avalon",
+     "status": "cited",
+     "evidence": "Section 2.1.1 related work: \"'The Resistance: Avalon,' is a board game of social deduction\""
+    }
+   ],
+   "technology": [
+    {
+     "key": "socket_io",
+     "label": "Socket.IO",
+     "status": "used",
+     "evidence": "Section 3.1: \"the most appropriate library that we could use is Socket io because our application's scale is small, and the library is very simple and newbie friendly\""
+    },
+    {
+     "key": "websocket",
+     "label": "WebSocket",
+     "status": "used",
+     "evidence": "Abstract: \"The point of developing this project is to use WebSocket to send the right information to the right person\""
+    },
+    {
+     "key": "heroku",
+     "label": "Heroku",
+     "status": "used",
+     "evidence": "Section 4.1.2: \"In our case, we deploy the application on Heroku.\""
+    },
+    {
+     "key": "jquery",
+     "label": "jQuery",
+     "status": "used",
+     "evidence": "Section 4.1.2: \"we have improved our app using jquery.min.js to lower the performance that will be used from client\""
+    },
+    {
+     "key": "html",
+     "label": "HTML",
+     "status": "used",
+     "evidence": "Section 3.1: \"Our project use Node js (express) as the backend and for the front end we only use html\""
+    },
+    {
+     "key": "css",
+     "label": "CSS",
+     "status": "used",
+     "evidence": "Section 3.1: \"We just use CSS to make the application to be more attractive.\""
+    },
+    {
+     "key": "discord",
+     "label": "Discord",
+     "status": "cited",
+     "evidence": "Section 1.1: \"players who play together and chat via communication app such as Discord, or TeamSpeak3\""
+    }
+   ]
+  }
+ },
+ {
+  "id": "2231",
+  "canonical_title": "Education Agency Support System",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CSX 3011 / ITX 3009",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Thitare Nimanong",
+    "student_id": "6210015"
+   },
+   {
+    "name": "Nutnisa Thongrussamee",
+    "student_id": "6213106"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "Asst. Prof. Dr. Paitoon Porntrakoon",
+   "Asst. Prof. Dr. Benjawan Srisura"
+  ],
+  "abstract": "The Education Agency Support System is a web application aimed at addressing the challenges faced by Hearts & Minds International Education Co., Ltd. in generating cost estimations. The system provides a comprehensive solution that streamlines the agency's processes and makes it easier for staff to do their jobs. All features are cost estimation, expenses list, setup information, visa management, exchange rate management, and the ability to include a company banner on PDF files. The web application platform offers a user-friendly interface. The Education Agency Support System project is designed to help the agency generate cost estimations efficiently.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "education",
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "nextjs",
+    "react",
+    "mysql",
+    "express"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "study_abroad",
+     "label": "Study abroad education consultancy",
+     "status": "used",
+     "evidence": "Chapter 1: \"Hearts & Minds International Education Co. provides guidance and counseling for students interested in studying abroad.\""
+    }
+   ],
+   "technology": [
+    {
+     "key": "visual_studio",
+     "label": "Visual Studio",
+     "status": "used",
+     "evidence": "Section 3.5 Tech Stack: \"Visual Studio is used to create the application, which is built with Next.js which is a React framework for the front-end.\""
+    },
+    {
+     "key": "rest_api",
+     "label": "REST API",
+     "status": "used",
+     "evidence": "Section 3.5 Tech Stack: \"we use MySQL as our database and use the Express.js framework to implement REST API.\""
+    },
+    {
+     "key": "google_sheets",
+     "label": "Google Sheets",
+     "status": "cited",
+     "evidence": "Section 2.1 Old flow: \"each cost must be manually entered and computed on Google Sheets\" (the manual process the system replaces)"
+    }
+   ]
+  }
+ }
+]

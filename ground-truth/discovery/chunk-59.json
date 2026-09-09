@@ -1,0 +1,294 @@
+[
+ {
+  "id": "26035",
+  "canonical_title": "TestHive",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CSX3010/ITX3009",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Wai Yan Mya Thaung",
+    "student_id": "6611932"
+   },
+   {
+    "name": "Soe Min Min Latt",
+    "student_id": "6611938"
+   },
+   {
+    "name": "Aung Khant Zaw",
+    "student_id": "6611947"
+   }
+  ],
+  "advisor": "Dr. Phyo Min Tun",
+  "committee": [
+   "Asst. Prof. Dr. Benjawan Srisura",
+   "Arjan Manan Tanachan"
+  ],
+  "abstract": "TestHive is an AI-powered web-based learning platform designed to enhance interactive studying through automated quiz generation and gamified engagement. Traditional learning methods frequently rely on static materials such as lecture slides, textbooks, and PDF documents. While these materials provide valuable information, they often lack interactive mechanisms that actively engage students in knowledge recall and self-assessment. TestHive addresses this limitation by allowing users to upload PDF learning materials or input study topics, after which the system automatically generates quizzes using artificial intelligence. The platform supports multiple question types, including multiple-choice questions, flashcards, and matching exercises. The system integrates modern web technologies such as React, Node.js, and AI APIs to provide an interactive and engaging learning environment. Gamified interface elements, real-time quiz sessions, and automated scoring mechanisms are incorporated to enhance user motivation and learning efficiency. By combining artificial intelligence, modern web development technologies, and gamification concepts, TestHive provides a scalable and efficient platform that transforms static study materials into interactive learning experiences.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [
+    "nlp",
+    "gamification"
+   ],
+   "technology": [
+    "react",
+    "nodejs",
+    "express",
+    "mongodb"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "tailwind_css",
+     "label": "Tailwind CSS",
+     "status": "used",
+     "evidence": "Chapter 3: 'the frontend was developed using React and Tailwind CSS'; Table 1 Tech Stack lists Tailwind CSS for styling"
+    },
+    {
+     "key": "three_js",
+     "label": "Three.js",
+     "status": "used",
+     "evidence": "Chapter 3: 'Three.js was used to incorporate interactive visual elements'"
+    },
+    {
+     "key": "anthropic_claude_api",
+     "label": "Anthropic Claude API",
+     "status": "used",
+     "evidence": "Table 1 Tech Stack: 'AI Anthropic API Quiz generation'; reference [7] Anthropic Claude API documentation"
+    },
+    {
+     "key": "vercel",
+     "label": "Vercel",
+     "status": "used",
+     "evidence": "Table 1 Tech Stack: 'Deployment Vercel Hosting'"
+    },
+    {
+     "key": "github",
+     "label": "GitHub",
+     "status": "used",
+     "evidence": "Table 1 Tech Stack: 'Version Control GitHub Code management'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "26036",
+  "canonical_title": "APSARA: Souvenir Online Shop",
+  "aliases": [
+   "APSARA"
+  ],
+  "phase": "final",
+  "course_code": "CSX3011",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Leanghour Ly",
+    "student_id": "6530342"
+   }
+  ],
+  "advisor": "Dr. Phyo Min Tun",
+  "committee": [
+   "Asst. Prof. Dr. Benjawan Srisura",
+   "Ajarn. Mana Tanachan"
+  ],
+  "abstract": "APSARA is an ecommerce website designed for customers who are looking to purchase souvenirs or gifts for others. The system addresses the challenges of traditionally needing to visit the store and buy the product or asking the price on social media when one can look up the product themselves with the price being shown, product size displayed, and pay all in one platform at home without the need to transport to the location. Built using React.js and Firebase for backend services. APSARA serves 2 key stakeholders: customers and admin. The application features real-time customization, Stripe payment integration, and customization requests of the client that eradicate the issue of the client from the need to visit the store.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "e_commerce"
+   ],
+   "topic": [],
+   "technology": [
+    "react",
+    "firebase",
+    "nodejs"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "stripe",
+     "label": "Stripe",
+     "status": "used",
+     "evidence": "Section 4.5: 'Secure payment and refund processing are integrated using the Stripe API via custom server-side cloud functions'"
+    },
+    {
+     "key": "tailwind_css",
+     "label": "Tailwind CSS",
+     "status": "used",
+     "evidence": "Section 4.5: 'built with React.js (Vite), modern JavaScript, and Tailwind CSS for a responsive, mobile-friendly frontend'"
+    },
+    {
+     "key": "vite",
+     "label": "Vite",
+     "status": "used",
+     "evidence": "Chapter 5: 'The frontend is built using React.js with Vite for fast development and optimized performance'"
+    },
+    {
+     "key": "cloud_firestore",
+     "label": "Cloud Firestore",
+     "status": "used",
+     "evidence": "Section 4.2: 'The APSARA App uses Cloud Firestore, a scalable NoSQL document database on Google Cloud Platform, to store all application data'"
+    },
+    {
+     "key": "google_cloud",
+     "label": "Google Cloud Platform",
+     "status": "used",
+     "evidence": "Section 4.3.2: 'serverless backend on Google Cloud Platform'; 'Stripe API keys are stored in Google Cloud Secret Manager'"
+    },
+    {
+     "key": "emailjs",
+     "label": "EmailJS",
+     "status": "used",
+     "evidence": "Section 6.2: 'EmailJS was used for transactional emails, ensuring timely communication with users'"
+    },
+    {
+     "key": "recaptcha",
+     "label": "reCAPTCHA",
+     "status": "used",
+     "evidence": "Section 4.4.1.k customization form: 'a recaptcha to check if the user is a bot or not before making the request'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "26038",
+  "canonical_title": "Bangkok Buddy: An Intelligent Trip Planner for Foreign Tourists",
+  "aliases": [
+   "Bangkok Buddy"
+  ],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Swan Htet Aung",
+    "student_id": "6530275"
+   },
+   {
+    "name": "Aung Aung Khant Paing",
+    "student_id": "6530361"
+   },
+   {
+    "name": "Kyawt Thit Sar Tun",
+    "student_id": "6520095"
+   }
+  ],
+  "advisor": "Dr. Phyo Min Tun",
+  "committee": [
+   "A. Sakchhi Paudel",
+   "A. Atthipat"
+  ],
+  "abstract": "Bangkok Buddy is a mobile app designed to help international tourists plan their trips to Bangkok more easily and personally. Tourists often struggle with scattered travel information, not enough time to plan, and a lack of details about entry fees, opening hours, and preparation requirements. Our app handles these problems by bringing together attraction data and automatically creating personalized travel itineraries based on user preferences and available travel days. The app uses Flutter for its frontend interface and Firebase for backend services and data management. It also works with Google Maps API and Google Places API for precise location data and map visuals. A rule-based itinerary generator sorts attractions based on user interests, groups nearby locations, and sets visit times based on daily travel limits. By merging organized attraction data with automated itinerary planning, the app cuts down on planning time, makes itineraries more practical, and improves the overall travel experience for tourists in Bangkok.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [
+    "geolocation",
+    "recommender_system"
+   ],
+   "technology": [
+    "firebase"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "travel_tourism",
+     "label": "Travel and Tourism",
+     "status": "used",
+     "evidence": "Abstract: 'Bangkok Buddy is a mobile app designed to help international tourists plan their trips to Bangkok'"
+    }
+   ],
+   "technology": [
+    {
+     "key": "flutter",
+     "label": "Flutter",
+     "status": "used",
+     "evidence": "Section 6.1: 'Bangkok Buddy is developed using Flutter, Google's open-source UI toolkit for building cross-platform mobile applications from a single Dart codebase'"
+    },
+    {
+     "key": "dart",
+     "label": "Dart",
+     "status": "used",
+     "evidence": "Section 6.1: cross-platform apps built 'from a single Dart codebase'; Dart SDK version 3.10.3 or later in Table 6.1"
+    },
+    {
+     "key": "google_gemini",
+     "label": "Google Gemini API",
+     "status": "used",
+     "evidence": "Section 6.1: 'AI-powered features are driven by the Google Gemini 2.5 Flash Lite model'"
+    },
+    {
+     "key": "google_places_api",
+     "label": "Google Places API",
+     "status": "used",
+     "evidence": "Section 6.1: 'location data is sourced from the Google Places API Text Search endpoint'"
+    },
+    {
+     "key": "google_maps_api",
+     "label": "Google Maps API",
+     "status": "used",
+     "evidence": "Abstract: 'It also works with Google Maps API and Google Places API for precise location data and map visuals'"
+    },
+    {
+     "key": "cloud_firestore",
+     "label": "Cloud Firestore",
+     "status": "used",
+     "evidence": "Section 5.1: 'Firebase Cloud Firestore serves as the primary database, structured under per-user collections (users/{uid}/trips and users/{uid}/visited)'"
+    },
+    {
+     "key": "wikipedia_api",
+     "label": "Wikipedia REST API",
+     "status": "used",
+     "evidence": "Section 6.4.1: 'the service falls back to the Wikipedia REST API' for place images when Google Places images are unavailable"
+    }
+   ]
+  }
+ }
+]

@@ -1,0 +1,461 @@
+[
+ {
+  "id": "2597",
+  "canonical_title": "EduQuest: RPG-Based Learning Management and Quiz Game Platform",
+  "aliases": [
+   "EduQuest"
+  ],
+  "phase": "final",
+  "course_code": "CSX3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "San Lin Htet",
+    "student_id": "6540187"
+   },
+   {
+    "name": "Sai Naing Yi Tun",
+    "student_id": "6540191"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Thanachai Thumthawatworm",
+  "committee": [
+   "A. Lu Jinchun",
+   "A. Sakchhi Paudel"
+  ],
+  "abstract": "EduQuest is a gamified educational web platform designed to improve student engagement in learning through role-playing game (RPG) mechanics. The system combines quiz-based assessment with interactive gameplay, where students answer questions, fight bosses, gain experience points (XP), level up, and collect items. The system supports three user roles: student, teacher, and admin. Teachers can create and manage courses, build quiz quests manually or by CSV import, and monitor student performance. Students can join classes through OTP-based enrollment, complete quests, and track their own growth through profile and inventory systems. Admin users oversee platform operations, including course approval, user management, and report resolution. EduQuest is implemented using React and Phaser for the frontend experience, Node.js/Express for backend services, and MongoDB for persistent storage. Security measures include JWT authentication, password hashing with bcrypt, and rate limiting for sensitive endpoints.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application",
+    "game"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [
+    "gamification"
+   ],
+   "technology": [
+    "react",
+    "express",
+    "nodejs",
+    "mongodb"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "moodle",
+     "label": "Moodle",
+     "status": "cited",
+     "evidence": "p.9 Ch2.2: 'Moodle is one of the most widely used open-source LMS platforms. It provides course creation, student enrollment, grading, forums, and quiz modules.'"
+    },
+    {
+     "key": "google_classroom",
+     "label": "Google Classroom",
+     "status": "cited",
+     "evidence": "p.10 Ch2.2: 'Google Classroom is widely adopted for its simplicity and integration with Google Workspace.'"
+    },
+    {
+     "key": "canvas_lms",
+     "label": "Canvas LMS",
+     "status": "cited",
+     "evidence": "p.11 Ch2.2: 'Canvas is a commercial LMS used by universities. It supports robust grading, assignment modules, and integration with third-party tools.'"
+    },
+    {
+     "key": "kahoot",
+     "label": "Kahoot",
+     "status": "cited",
+     "evidence": "p.12 Ch2.3: 'Kahoot is known for live, competitive quizzes that increase short-term engagement.'"
+    },
+    {
+     "key": "quizizz",
+     "label": "Quizizz",
+     "status": "cited",
+     "evidence": "p.14 Ch2.3: 'Quizizz allows both live and asynchronous quiz gameplay. It has gamified elements (avatars, powerups).'"
+    },
+    {
+     "key": "quizlet",
+     "label": "Quizlet",
+     "status": "cited",
+     "evidence": "p.16 Ch2.3: 'Quizlet supports flashcards, practice sets, and quizzes. It is strong in repetition and memorization.'"
+    },
+    {
+     "key": "duolingo",
+     "label": "Duolingo",
+     "status": "cited",
+     "evidence": "p.18 Ch2.4: 'Duolingo is highly effective in applying gamification to language learning. Features include: XP points, Streaks, Levels and badges.'"
+    },
+    {
+     "key": "classcraft",
+     "label": "Classcraft",
+     "status": "cited",
+     "evidence": "p.21 Ch2.4: 'Classcraft introduces RPG elements into classroom settings. It allows students to earn points and rewards for behaviors and tasks.'"
+    },
+    {
+     "key": "khan_academy",
+     "label": "Khan Academy",
+     "status": "cited",
+     "evidence": "p.21 Ch2.4: 'Khan Academy uses points and streaks to maintain motivation.'"
+    }
+   ],
+   "domain": [],
+   "technology": [
+    {
+     "key": "phaser",
+     "label": "Phaser game engine",
+     "status": "used",
+     "evidence": "p.3 Abstract: 'EduQuest is implemented using React and Phaser for the frontend experience'; p.37 Tech Stack: 'Phaser for 2D game scenes, animations, and time-based interactions.'"
+    },
+    {
+     "key": "mongoose",
+     "label": "Mongoose ODM",
+     "status": "used",
+     "evidence": "p.37 Tech Stack: 'MongoDB with Mongoose for schema validation and data persistence.'"
+    },
+    {
+     "key": "tailwind_css",
+     "label": "Tailwind CSS",
+     "status": "used",
+     "evidence": "p.37 Tech Stack: 'Tailwind CSS for consistent visual styling and responsive layouts.'"
+    },
+    {
+     "key": "bcrypt",
+     "label": "bcrypt",
+     "status": "used",
+     "evidence": "p.36: 'Passwords are hashed with bcrypt.'"
+    },
+    {
+     "key": "jwt",
+     "label": "JSON Web Token",
+     "status": "used",
+     "evidence": "p.36: 'JWT secures protected endpoints and enforces role-based access control.'"
+    },
+    {
+     "key": "vercel",
+     "label": "Vercel",
+     "status": "used",
+     "evidence": "p.36 Cloud deployment: 'Frontend deployed to Vercel.'"
+    },
+    {
+     "key": "render",
+     "label": "Render",
+     "status": "used",
+     "evidence": "p.36 Cloud deployment: 'API deployed to a Node.js runtime with horizontal scaling, Render.'"
+    },
+    {
+     "key": "mongodb_atlas",
+     "label": "MongoDB Atlas",
+     "status": "used",
+     "evidence": "p.36 Cloud deployment: 'MongoDB hosted on a managed service (e.g., MongoDB Atlas).'"
+    },
+    {
+     "key": "cloudinary",
+     "label": "Cloudinary",
+     "status": "used",
+     "evidence": "p.38: 'Cloudinary for media storage and Brevo/Nodemailer for email workflows.'"
+    },
+    {
+     "key": "brevo",
+     "label": "Brevo email API",
+     "status": "used",
+     "evidence": "p.36: 'Email is delivered via Brevo API or SMTP depending on configuration.'"
+    },
+    {
+     "key": "nodemailer",
+     "label": "Nodemailer",
+     "status": "used",
+     "evidence": "p.38: 'Brevo/Nodemailer for email workflows.'"
+    },
+    {
+     "key": "express_rate_limit",
+     "label": "express-rate-limit",
+     "status": "used",
+     "evidence": "p.38: 'express-rate-limit to mitigate abuse on login and OTP endpoints.'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2598",
+  "canonical_title": "Sportify: AI-Supported Fitness Application",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CSX3010/ITX3009",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Nyi Thu Hein",
+    "student_id": "6612080"
+   },
+   {
+    "name": "Aung Myint Myat",
+    "student_id": "6611906"
+   },
+   {
+    "name": "Puran Paodensakul",
+    "student_id": "6611140"
+   }
+  ],
+  "advisor": "Dr. Thanachai Thumthawatworn",
+  "committee": [
+   "A. Jinchun Lu",
+   "A. Sakchhi Paudel"
+  ],
+  "abstract": "Sportify is an AI-supported fitness application developed to address three persistent issues in personal wellness management: fragmented tracking tools, limited personalized guidance, and declining user motivation. The proposed system integrates workout tracking, calorie logging, conversational AI support, and a rule-based achievement system within a single mobile platform. By combining practical self-monitoring functions with a user-friendly multilingual interface, the project aims to help users manage fitness goals more consistently and with less cognitive effort. The system adopts a mobile-first architecture using React Native and Expo for the frontend, Node.js and Express for backend services, Supabase for cloud data storage, JSON Web Token for authentication, and HuggingFace services for natural-language interaction. As a senior project prototype, Sportify demonstrates the feasibility of integrating intelligent assistance and gamification into a practical health application. Although the system still relies on manual data entry and has not yet undergone large-scale user evaluation, it provides a strong foundation for future enhancements such as wearable integration, richer analytics, and more advanced recommendation logic.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "healthcare"
+   ],
+   "topic": [
+    "nlp",
+    "gamification"
+   ],
+   "technology": [
+    "express",
+    "nodejs"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "myfitnesspal",
+     "label": "MyFitnessPal",
+     "status": "cited",
+     "evidence": "p.8 Ch2.2: 'MyFitnessPal is primarily supports calorie tracking, food logging, daily intake targets, and basic activity monitoring.'"
+    },
+    {
+     "key": "nike_training_club",
+     "label": "Nike Training Club",
+     "status": "cited",
+     "evidence": "p.8 Ch2.2: 'Nike Training Club emphasizes guided exercise sessions and professionally designed workouts.'"
+    },
+    {
+     "key": "yazio",
+     "label": "Yazio",
+     "status": "cited",
+     "evidence": "p.8 Ch2.2: 'Yazio focuses on meal planning, calorie control, and weight-management support.'"
+    },
+    {
+     "key": "cronometer",
+     "label": "Cronometer",
+     "status": "cited",
+     "evidence": "p.8 Ch2.2: 'Cronometer emphasizes detailed nutrient tracking and quantitative dietary analysis.'"
+    },
+    {
+     "key": "coachnow",
+     "label": "CoachNow",
+     "status": "cited",
+     "evidence": "p.8 Ch2.2: 'CoachNow supports coach-athlete communication, structured feedback, and performance review.'"
+    },
+    {
+     "key": "trainingpeaks",
+     "label": "TrainingPeaks",
+     "status": "cited",
+     "evidence": "p.9 Ch2.2: 'TrainingPeaks supports training plans, performance analytics, and coaching workflows, especially for endurance athletes.'"
+    }
+   ],
+   "domain": [
+    {
+     "key": "fitness",
+     "label": "Fitness and wellness tracking",
+     "status": "used",
+     "evidence": "p.6 Ch1: 'Sportify, an AI-supported fitness application designed as an integrated digital companion. The system combines workout tracking, calorie monitoring, conversational AI assistance, profile management, and gamified achievement badges in a single mobile environment.'"
+    }
+   ],
+   "technology": [
+    {
+     "key": "react_native",
+     "label": "React Native",
+     "status": "used",
+     "evidence": "p.17 Ch4.2: 'React Native and Expo provide the cross-platform user interface.'"
+    },
+    {
+     "key": "expo",
+     "label": "Expo",
+     "status": "used",
+     "evidence": "p.19 Table 2: 'Mobile Frontend: React Native + Expo, cross-platform mobile interface and navigation.'"
+    },
+    {
+     "key": "supabase",
+     "label": "Supabase",
+     "status": "used",
+     "evidence": "p.19 Table 2: 'Database: Supabase, cloud storage for users, goals, workouts, calories, and badges.'"
+    },
+    {
+     "key": "huggingface",
+     "label": "HuggingFace NLP services",
+     "status": "used",
+     "evidence": "p.17 Ch4.2: 'HuggingFace services support natural-language generation for the chatbot through backend-controlled requests.'"
+    },
+    {
+     "key": "jwt",
+     "label": "JSON Web Token",
+     "status": "used",
+     "evidence": "p.19 Table 2: 'Authentication: JWT, token-based user session control.'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2599",
+  "canonical_title": "Rail Shooter Game With Computer Vision",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CSX3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Mohammad Rahemi",
+    "student_id": "6611695"
+   },
+   {
+    "name": "Mako Mehling",
+    "student_id": "6610028"
+   },
+   {
+    "name": "Kyaw Min Htet",
+    "student_id": "6611242"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Thanachai Thumthawatworn",
+  "committee": [
+   "A. Sakchhi Paudel",
+   "A. Jinchun Lu"
+  ],
+  "abstract": "This project introduces a 3D motion-controlled Rail Shooter Game where players can control the game with their body and hands instead of using traditional devices such as keyboards and mice or external controllers. Developed using the Unity Game Engine and integrated with the MediaPipe Unity Plugin, the system detects real-time body pose via a standard PC webcam, which is then translated into the game to move, aim, and shoot. The core technology stack consists of Unity (C#) for rendering and gameplay logic, and Google's MediaPipe Pose (BlazePose) model for 33-point anatomical landmark detection, bridged through a native C++ interop layer to avoid the latency penalties of network socket communication. The game employs a dual-stream control architecture: the player’s nose landmark (index 0) drives spatial navigation of an in-game spaceship, while wrist landmarks (indices 15 and 16) independently control two aiming crosshairs with an automatic firing system. The system follows a component-based architecture, consistent with Unity’s compound game engine design, where focused MonoBehaviour scripts communicate through C# static events, serialized Inspector references, and singleton services. Multiple layers of smoothing, including Vector3.SmoothDamp, exponential moving averages, velocity dead zones, and DOTween easing, are applied to filter natural human jitter from the tracking data without introducing excessive input lag. The project aims to make motion-controlled gaming, typically associated with expensive VR headsets or specialized controllers like the Nintendo Wii and the Nintendo Switch, more accessible to anyone with a basic computer setup. User evaluation at the Senior Project Exhibition with 42 participants yielded an average experience rating of 8.98 out of 10, with 97.6% of players expressing willingness to play again. The system achieved a stable 60 FPS during active gameplay with sub-100ms input latency, demonstrating that computer vision algorithms can be optimized for real-time, standalone PC gaming applications.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "game"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "unity",
+    "csharp"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "kinect",
+     "label": "Microsoft Kinect",
+     "status": "cited",
+     "evidence": "p.14 Ch2.4: 'The Kinect made it revolutionary when it enabled motion gaming by removing the controller entirely, but it required a dedicated sensor that is no longer in production.'"
+    },
+    {
+     "key": "beat_saber",
+     "label": "Beat Saber",
+     "status": "cited",
+     "evidence": "p.12 Ch2.3: 'Beat Saber being the prime example of this, using high-speed arm movements to slash blocks.'"
+    },
+    {
+     "key": "vrchat",
+     "label": "VRChat",
+     "status": "cited",
+     "evidence": "p.12 Ch2.3: 'VRChat is also another game that utilizes full-body tracking to mirror the user’s in real-life movements.'"
+    },
+    {
+     "key": "project_gameface",
+     "label": "Google Project Gameface",
+     "status": "cited",
+     "evidence": "p.14 Ch2.4: 'Modern accessible solutions such as Project Gameface and MotionInput have begun to address this problem by using standard webcams to track facial expressions and hand gestures.'"
+    },
+    {
+     "key": "motioninput",
+     "label": "MotionInput",
+     "status": "cited",
+     "evidence": "p.14 Ch2.4: cited alongside Project Gameface as webcam-based accessible motion input research."
+    }
+   ],
+   "domain": [],
+   "technology": [
+    {
+     "key": "mediapipe",
+     "label": "Google MediaPipe",
+     "status": "used",
+     "evidence": "p.3 Abstract: 'integrated with the MediaPipe Unity Plugin, the system detects real-time body pose via a standard PC webcam.'"
+    },
+    {
+     "key": "blazepose",
+     "label": "MediaPipe Pose (BlazePose) model",
+     "status": "used",
+     "evidence": "p.3 Abstract: 'Google's MediaPipe Pose (BlazePose) model for 33-point anatomical landmark detection.'"
+    },
+    {
+     "key": "mediapipe_unity_plugin",
+     "label": "MediaPipe Unity Plugin",
+     "status": "used",
+     "evidence": "p.10 Ch2.1.3: 'the project implements the MediaPipe Unity Plugin. This plugin acts as a native C++ interop bridge, allowing the MediaPipe graphs to process webcam frames directly within the Unity application’s memory space.'"
+    },
+    {
+     "key": "dotween",
+     "label": "DOTween",
+     "status": "used",
+     "evidence": "p.45 Ch5.3 Layer 4: 'a new 0.12-second DOTween animation with OutSine easing starts from the current position to the new wrist target.'"
+    },
+    {
+     "key": "cinemachine",
+     "label": "Unity Cinemachine",
+     "status": "used",
+     "evidence": "p.9 Ch2.1.1: 'timeline-based camera animation (via Cinemachine splines) for the automatic forward movement.'"
+    },
+    {
+     "key": "textmeshpro",
+     "label": "TextMeshPro",
+     "status": "used",
+     "evidence": "p.23 Ch3.3: 'The Score Text uses TextMeshPro and is updated by the ScoreManager whenever the score changes.'"
+    },
+    {
+     "key": "unity_splines",
+     "label": "Unity Splines (SplineAnimate/SplineContainer)",
+     "status": "used",
+     "evidence": "p.21 Ch3.3: 'The SplineAnimate component drives the player automatically along a predefined spline track... The SplineContainer holds the actual curve geometry.'"
+    },
+    {
+     "key": "cplusplus",
+     "label": "C++ (native interop)",
+     "status": "used",
+     "evidence": "p.3 Abstract: 'bridged through a native C++ interop layer to avoid the latency penalties of network socket communication.'"
+    },
+    {
+     "key": "openpose",
+     "label": "OpenPose",
+     "status": "cited",
+     "evidence": "p.15 Ch2.5: 'Modern frameworks such as Google's MediaPipe, OpenPose, and Apple's Vision framework have democratized access to real-time pose estimation.'"
+    }
+   ]
+  }
+ }
+]

@@ -1,0 +1,363 @@
+[
+ {
+  "id": "26021",
+  "canonical_title": "Shortenit – URL Shortener & Link Management Platform",
+  "aliases": [
+   "Shortenit"
+  ],
+  "phase": "final",
+  "course_code": "CSX 3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Khine Khant",
+    "student_id": "6611718"
+   },
+   {
+    "name": "Hein Oke Soe",
+    "student_id": "6611717"
+   },
+   {
+    "name": "Thant Si Thu Naing",
+    "student_id": "6611720"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "Asst. Prof. Dr. Paitoon Porntrakoon",
+   "A. Athiphat Hirunadisuan"
+  ],
+  "abstract": "URL management remains a critical challenge for organizations and individuals who rely on sharing links across platforms. Long, unwieldy URLs are difficult to share, track, and manage, particularly in institutional settings where link performance analytics and access control are essential. Existing URL shortening services such as Bitly and TinyURL are cloud-hosted, raising concerns about data privacy, institutional branding, and limited customization. Shortenit is designed to address these challenges by providing a comprehensive, self-hosted URL shortener and link management platform tailored for Assumption University. It enables authenticated users to shorten URLs with custom aliases, track click analytics with geographic and device breakdowns, generate QR codes, and manage links through both a web dashboard and a command-line interface (CLI). With features such as Microsoft OAuth2 authentication restricted to AU email domains, role-based access control (user and admin roles), API key management for programmatic access, and full click analytics with geolocation, Shortenit reduces the dependency on third-party services while maintaining institutional privacy. The system runs as a self-hosted platform deployed via Docker, with a Nginx reverse proxy for production, ensuring that all data remains under institutional control. The project is tailored to the real link management needs of universities and organizations requiring privacy-preserving, customizable URL shortening workflows.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [
+    "geolocation"
+   ],
+   "technology": [
+    "java",
+    "nextjs",
+    "nodejs",
+    "postgresql",
+    "react"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "spring_boot",
+     "label": "Spring Boot",
+     "status": "used",
+     "evidence": "Backend (Spring Boot 4 / Java 17), Tech Stack section page 22"
+    },
+    {
+     "key": "docker",
+     "label": "Docker",
+     "status": "used",
+     "evidence": "Containerization Docker, Multi-stage builds for both frontend and backend (Table 1 Tech Stack, page 23)"
+    },
+    {
+     "key": "nginx",
+     "label": "Nginx",
+     "status": "used",
+     "evidence": "Reverse Proxy Nginx, HTTPS termination, routing, caching, and security header enforcement (Table 1, page 23)"
+    },
+    {
+     "key": "tailwind_css",
+     "label": "Tailwind CSS",
+     "status": "used",
+     "evidence": "Styling Tailwind CSS 4, Utility-first CSS framework (Table 1, page 23)"
+    },
+    {
+     "key": "radix_ui",
+     "label": "Radix UI",
+     "status": "used",
+     "evidence": "Provides responsive layouts with Radix UI components and Tailwind CSS (page 21)"
+    },
+    {
+     "key": "recharts",
+     "label": "Recharts",
+     "status": "used",
+     "evidence": "Renders analytics visualizations using Recharts (page 21)"
+    },
+    {
+     "key": "qrcode_react",
+     "label": "qrcode.react",
+     "status": "used",
+     "evidence": "The frontend implements a comprehensive QR code generator using the qrcode.react library (page 16)"
+    },
+    {
+     "key": "maxmind_geolite2",
+     "label": "MaxMind GeoLite2",
+     "status": "used",
+     "evidence": "MaxMind GeoLite2, Local IP geolocation database for resolving click locations without external API calls (Table 1, page 23)"
+    },
+    {
+     "key": "hibernate_jpa",
+     "label": "Hibernate / JPA",
+     "status": "used",
+     "evidence": "ORM Hibernate / JPA, Object-relational mapping for database interactions with Spring Data JPA repositories (Table 1, page 23)"
+    },
+    {
+     "key": "typescript",
+     "label": "TypeScript",
+     "status": "used",
+     "evidence": "The Shortenit CLI is a Node.js/TypeScript application published on NPM (shortenit-cli) (page 16)"
+    },
+    {
+     "key": "microsoft_azure_ad",
+     "label": "Microsoft Azure Active Directory",
+     "status": "used",
+     "evidence": "integrates with the university's Microsoft Azure Active Directory for authentication (page 6)"
+    },
+    {
+     "key": "commander_js",
+     "label": "Commander.js",
+     "status": "used",
+     "evidence": "commander for CLI framework and argument parsing (Key Libraries, page 17)"
+    },
+    {
+     "key": "bitly",
+     "label": "Bitly",
+     "status": "cited",
+     "evidence": "Bitly: One of the most popular URL shorteners, offering link management, branded short domains, and analytics (Related Work, page 9)"
+    },
+    {
+     "key": "kutt",
+     "label": "Kutt",
+     "status": "cited",
+     "evidence": "Kutt: An open-source, modern URL shortener built with Node.js and React (Related Work, page 10)"
+    },
+    {
+     "key": "yourls",
+     "label": "YOURLS",
+     "status": "cited",
+     "evidence": "YOURLS (Your Own URL Shortener): A PHP-based self-hosted solution with plugin support (Related Work, page 9)"
+    }
+   ]
+  }
+ },
+ {
+  "id": "26022",
+  "canonical_title": "SafeAs: Smart Safe Intelligent Cash Management System",
+  "aliases": [
+   "Smart Safe: Intelligent Cash Management System",
+   "Smart Safe"
+  ],
+  "phase": "final",
+  "course_code": "CSX 3010 / ITX 3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Sirapat Sukawatanangkul",
+    "student_id": "6310112"
+   },
+   {
+    "name": "Paponwat Watanajitsaree",
+    "student_id": "6311039"
+   }
+  ],
+  "advisor": "Asst. Prof. Chayapol Moemeng",
+  "committee": [],
+  "abstract": "Smart Safe is an intelligent cash management system designed to improve the security and monitoring of physical money storage in small businesses such as convenience stores, gas stations, and retail shops. Traditional safes only provide physical protection but lack monitoring and automation features. Smart Safe integrates IoT technology, embedded systems, and web monitoring to provide real-time security and operational management. The system is built using Raspberry Pi, which connects to multiple hardware components such as:Camera module for monitoring, Solenoid electronic lock, Bill counter The Smart Safe system also includes a Kiosk web-based dashboard where administrators can monitor transactions, control locking mechanisms, and review camera footage from Line platform. The main objective of this project is to design a secure, intelligent, and automated safe system that reduces theft risk and improves financial tracking for businesses.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "hardware_iot"
+   ],
+   "platform": [
+    "embedded_hardware",
+    "raspberry_pi",
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "flask",
+    "mysql",
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "socket_io",
+     "label": "Socket.IO",
+     "status": "used",
+     "evidence": "Real-time communication using Socket.IO (Scope of the Project, page 7)"
+    },
+    {
+     "key": "line_messaging_api",
+     "label": "LINE Messaging API",
+     "status": "used",
+     "evidence": "The system uses the LINE Messaging API as the communication platform to send real-time notifications to administrators (page 17)"
+    },
+    {
+     "key": "ict_bill_acceptor",
+     "label": "ICT bill acceptor",
+     "status": "used",
+     "evidence": "ICT bill acceptor for banknote detection (Scope of the Project, page 7)"
+    },
+    {
+     "key": "mqtt",
+     "label": "MQTT",
+     "status": "cited",
+     "evidence": "Reference [3] A. Banks and R. Gupta, MQTT Version 3.1.1, OASIS Standard, 2014 (page 24)"
+    }
+   ]
+  }
+ },
+ {
+  "id": "26024",
+  "canonical_title": "AU Connect: networking platform for AU",
+  "aliases": [
+   "AU Connect"
+  ],
+  "phase": "final",
+  "course_code": "CSX 3010/ITX 3009",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Si Thu Naung",
+    "student_id": "6530287"
+   },
+   {
+    "name": "Thant Zin Min",
+    "student_id": "6611968"
+   },
+   {
+    "name": "Min Thant",
+    "student_id": "6612012"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "A. Tang Tianai",
+   "A. Benjawan Srisura"
+  ],
+  "abstract": "At Assumption University, many students would like to learn from alumni or seek advice from professors about careers and industry experience. However, there is no single platform where these groups can easily communicate and share opportunities. Most existing social networking platforms are built for a broad audience and are not designed specifically for a university environment. Because of this, connections between students, alumni, and professors often remain limited. This project presents AU Connect; a responsive web-based networking platform created for the Assumption University community. The system supports three types of users: students, alumni, and professors. It allows users to create profiles, share posts, connect with others, exchange messages, and discover job opportunities within the network. The platform is built using Next.js, React, TypeScript, Prisma ORM, and MongoDB, with Azure Blob Storage used for storing media files and Vercel used for deployment.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [],
+   "technology": [
+    "mongodb",
+    "nextjs",
+    "nodejs",
+    "react"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "typescript",
+     "label": "TypeScript",
+     "status": "used",
+     "evidence": "TypeScript, Ensures type safety and improves code reliability during development (Tech Stack, page 29)"
+    },
+    {
+     "key": "prisma_orm",
+     "label": "Prisma ORM",
+     "status": "used",
+     "evidence": "Prisma ORM, Provides an abstraction layer for database access, allowing structured queries and type-safe data operations (Tech Stack, page 28)"
+    },
+    {
+     "key": "azure_blob_storage",
+     "label": "Azure Blob Storage",
+     "status": "used",
+     "evidence": "Azure Blob Storage, Used to store media files such as profile images and post attachments (Tech Stack, page 29)"
+    },
+    {
+     "key": "vercel",
+     "label": "Vercel",
+     "status": "used",
+     "evidence": "The platform is deployed on Vercel, which provides optimized hosting for Next.js applications (Tech Stack, page 29)"
+    },
+    {
+     "key": "nextauth_js",
+     "label": "NextAuth.js",
+     "status": "used",
+     "evidence": "NextAuth.js with Prisma Adapter, Manages user authentication and session handling (Tech Stack, page 28)"
+    },
+    {
+     "key": "docker",
+     "label": "Docker",
+     "status": "used",
+     "evidence": "the entire application is containerized using Docker (Deployment Strategy, page 15)"
+    },
+    {
+     "key": "tailwind_css",
+     "label": "Tailwind CSS",
+     "status": "used",
+     "evidence": "Tailwind CSS 4, Used for responsive and consistent styling across the platform (Tech Stack, page 28)"
+    },
+    {
+     "key": "react_query",
+     "label": "React Query",
+     "status": "used",
+     "evidence": "React Query, Handles efficient server state management, caching, and API data synchronization (Tech Stack, page 29)"
+    },
+    {
+     "key": "zustand",
+     "label": "Zustand",
+     "status": "used",
+     "evidence": "Zustand, Provides lightweight client-side state management for managing UI-related states (Tech Stack, page 29)"
+    },
+    {
+     "key": "zod",
+     "label": "Zod",
+     "status": "used",
+     "evidence": "Zod, Used for runtime data validation and schema validation (Tech Stack, page 29)"
+    },
+    {
+     "key": "nodemailer",
+     "label": "Nodemailer",
+     "status": "used",
+     "evidence": "Nodemailer, Used for sending system emails (Tech Stack, page 29)"
+    },
+    {
+     "key": "bcrypt",
+     "label": "bcrypt",
+     "status": "used",
+     "evidence": "bcrypt, Used for password hashing and protecting sensitive user credentials (Tech Stack, page 28)"
+    }
+   ]
+  }
+ }
+]

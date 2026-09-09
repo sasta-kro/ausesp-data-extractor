@@ -1,0 +1,1669 @@
+[
+ {
+  "id": "2205",
+  "canonical_title": "Fitness Center Management System",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT4292",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Kasidit Ploenthamakhun",
+    "student_id": "6016901"
+   }
+  ],
+  "advisor": "Asst.Prof.Dr. Darun Kesrarat",
+  "committee": [
+   "Asst. Prof. Dr. Benjawan Srisura",
+   "Dr. Khaing Sandar Htun"
+  ],
+  "abstract": "This project aims to develop a fitness information management system web application.. By developing according to the existing fitness center management system with the help of technologies such as PHP, MySQL with observation evidence. Which all tasks in the system can be done through a web browser. There are three main users for this system. Firstly, members. Members can search for class schedules, both personal trainer and fitness instructor schedules and can apply for a course.Secondly,trainers. Trainers can edit their personal information and check their own schedules,and accept member's appointments. Lastly, the administrator. The administrator can manage user information,check the payment information, report member's payment,check daily income,collect bad debts,office management,member services,check trainer information,trainer salary information report. The end results of the project showed that the system reduces the time of work, makes the service faster, helps to solve problems, process error work to facilitate the issuance of a summary report.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "php",
+    "mysql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "xampp",
+     "label": "XAMPP",
+     "status": "used",
+     "evidence": "Tech stack p.21: 'Xampp (Apache,MySQL*)' and 'XAMPP is an abbreviation for cross-platform, Apache, MySQL, PHP and Perl, and it allows you to build a web app offline, on a local web server on your computer.'"
+    },
+    {
+     "key": "apache",
+     "label": "Apache HTTP Server",
+     "status": "used",
+     "evidence": "Tech stack p.21 item 8: 'Apache (Web Server)'"
+    },
+    {
+     "key": "phpmyadmin",
+     "label": "phpMyAdmin",
+     "status": "used",
+     "evidence": "Tech stack p.21 item 7: 'phpMyAdmin (Web Hosting Server)'"
+    },
+    {
+     "key": "bootstrap",
+     "label": "Bootstrap 4",
+     "status": "used",
+     "evidence": "Tech stack p.21 item 4: 'Bootstrap 4'; conclusion p.90: 'With the implementation of bootstrap 4, I am able to make the user interface look amazingly good'"
+    },
+    {
+     "key": "javascript",
+     "label": "JavaScript",
+     "status": "used",
+     "evidence": "Tech stack p.21 item 5: 'Javascript'"
+    },
+    {
+     "key": "jquery",
+     "label": "jQuery",
+     "status": "used",
+     "evidence": "Tech stack p.21 item 6: 'JQuery'"
+    },
+    {
+     "key": "html5",
+     "label": "HTML5",
+     "status": "used",
+     "evidence": "Tech stack p.21 item 3: 'HTML5'"
+    },
+    {
+     "key": "github",
+     "label": "GitHub",
+     "status": "used",
+     "evidence": "Tech stack p.21 item 12: 'GitHub (Version Control)'"
+    },
+    {
+     "key": "visual_studio_code",
+     "label": "Visual Studio Code",
+     "status": "used",
+     "evidence": "Tech stack p.21 item 11: 'Visual Studio Code (Source-Code Editor)'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2207",
+  "canonical_title": "Web 3.0 Application - Long-Tail Ride-Sharing Dapp",
+  "aliases": [
+   "Web 3.0 Application",
+   "Crypto Longtails"
+  ],
+  "phase": "final",
+  "course_code": "IT 4291",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2023,
+  "students": [
+   {
+    "name": "Morgan Kieffer",
+    "student_id": "6135229"
+   },
+   {
+    "name": "Setthanant Tetanonsakul",
+    "student_id": "6115269"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "A. Kiratijuta Bhumichitr",
+   "Asst. Prof. Dr. Paitoon Porntrakoon"
+  ],
+  "abstract": "With the new industrial revolution looming over our generation, the rise of emerging technology is a common occurrence in our age. These many fascinating innovations may seem that they are still early in their development cycle yet their potential to reach the heights to impact history is always present. One of these is Web 3.0, a group of technologies that once combined, contributes to the third generation of the internet. The main constituents are blockchain where it acts as a digital ledger, smart contracts that are programmable to provide functionality, and cryptocurrencies where it provides value towards this technology. We take all these properties into consideration when we are building our Web 3.0 decentralized application.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "transportation"
+   ],
+   "topic": [],
+   "technology": [
+    "react",
+    "nextjs",
+    "nodejs"
+   ]
+  },
+  "discoveries": {
+   "category": [
+    {
+     "key": "blockchain",
+     "label": "Blockchain / Web3",
+     "status": "used",
+     "evidence": "Abstract p.3: 'The main constituents are blockchain where it acts as a digital ledger, smart contracts that are programmable to provide functionality, and cryptocurrencies'"
+    }
+   ],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "solidity",
+     "label": "Solidity",
+     "status": "used",
+     "evidence": "Tech stack table: 'Solidity is the backbone of the entire project as this programming language allowed us to implement smart contracts on the Ethereum network.'"
+    },
+    {
+     "key": "ethereum",
+     "label": "Ethereum",
+     "status": "used",
+     "evidence": "Product perspective p.7: 'The interactions and transactions between stakeholders are signed, sent and received through the Ethereum network.'"
+    },
+    {
+     "key": "metamask",
+     "label": "MetaMask",
+     "status": "used",
+     "evidence": "dApp System Architecture p.26: 'MetaMask is a key component in making the dApp functions as it allows the users to carry out transactions from their own account'"
+    },
+    {
+     "key": "web3_js",
+     "label": "Web3.js",
+     "status": "used",
+     "evidence": "Tech stack Other Tools: 'Web3.js is a collection of libraries for the sole purpose of allowing you to interact with the Ethereum Blockchain'"
+    },
+    {
+     "key": "infura",
+     "label": "Infura",
+     "status": "used",
+     "evidence": "dApp System Architecture p.26: 'we use infura API to create an infrastructure between the decentralized applications'"
+    },
+    {
+     "key": "remix_ide",
+     "label": "Remix IDE",
+     "status": "used",
+     "evidence": "Tech stack Other Tools: 'Remix IDE allows for development and testing of smart contracts for Solidity'"
+    },
+    {
+     "key": "vercel",
+     "label": "Vercel",
+     "status": "used",
+     "evidence": "Chapter 5.3 Front-End: 'the front end folder is uploaded to the vercel hosting platform'"
+    },
+    {
+     "key": "rinkeby_testnet",
+     "label": "Ethereum Rinkeby testnet",
+     "status": "used",
+     "evidence": "Chapter 4.2 figure caption p.23: 'Dapp deployment and testing on Rinkeby testnet diagram'"
+    },
+    {
+     "key": "javascript",
+     "label": "JavaScript",
+     "status": "used",
+     "evidence": "Tech stack Programming Languages: 'Javascript helps us express the functionality of the web page as it allows us to make dynamic/interactive content within the web page.'"
+    },
+    {
+     "key": "html",
+     "label": "HTML",
+     "status": "used",
+     "evidence": "Tech stack Programming Languages: 'HTML is the standard language used for the creation of web pages.'"
+    },
+    {
+     "key": "css",
+     "label": "CSS",
+     "status": "used",
+     "evidence": "Tech stack Programming Languages: 'CSS is used to describe how the content should be presented.'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2211",
+  "canonical_title": "Air quality measuring station",
+  "aliases": [
+   "Air Quality Measuring Station"
+  ],
+  "phase": "final",
+  "course_code": "CSX 3010",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Rattanapol Wattanatanasup",
+    "student_id": "6211515"
+   },
+   {
+    "name": "Thanadon Na Lampang",
+    "student_id": "6213930"
+   },
+   {
+    "name": "Kittiphop Jitlerdwilai",
+    "student_id": "6216916"
+   }
+  ],
+  "advisor": "Pawut Satitsuksanoh",
+  "committee": [
+   "Kwankamol Nongpong",
+   "Tapanan Yeophantong"
+  ],
+  "abstract": "The Air Quality Measuring Station is a tool created to keep track of numerous environmental factors that have an impact on a certain area's air quality. It has sensors that can monitor the amount of carbon monoxide (CO), humidity, temperature, and particulate matter with sizes of 2.5 and 10 micrometers (PM2.5 and PM10). These factors are crucial in determining a location's air quality and any potential health dangers for people. The station delivers real-time data that can be accessed remotely and makes reliable measurements of these parameters. Policymakers, health professionals, and the general public can utilize the gathered data to guide their decisions about how to lessen air pollution and enhance overall air quality.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "hardware_iot"
+   ],
+   "platform": [
+    "embedded_hardware",
+    "web"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [],
+   "technology": []
+  },
+  "discoveries": {
+   "category": [
+    {
+     "key": "iot",
+     "label": "Internet of Things",
+     "status": "used",
+     "evidence": "Background p.3: 'NETPIE is a cloud-based platform that enables developers to quickly construct Internet of Things (IoT) applications'"
+    }
+   ],
+   "platform": [],
+   "domain": [
+    {
+     "key": "environmental_monitoring",
+     "label": "Environmental monitoring",
+     "status": "used",
+     "evidence": "Abstract p.3: 'The Air Quality Measuring Station is a tool created to keep track of numerous environmental factors that have an impact on a certain area's air quality.'"
+    }
+   ],
+   "technology": [
+    {
+     "key": "arduino_ide",
+     "label": "Arduino IDE",
+     "status": "used",
+     "evidence": "Scope 1.2 p.2: 'The goal of the project is to create an Air Quality Measuring Station using the Arduino IDE and the C++ programming language for every sensor module.'"
+    },
+    {
+     "key": "cpp",
+     "label": "C++",
+     "status": "used",
+     "evidence": "Scope 1.2 p.2: 'using the Arduino IDE and the C++ programming language for every sensor module'"
+    },
+    {
+     "key": "esp8266_nodemcu",
+     "label": "ESP8266 NodeMCU V3",
+     "status": "used",
+     "evidence": "Section 3.1.1 p.6: 'Popular development board based on the ESP8266 Wi-Fi module is the ESP8266 NodeMCU V3.'"
+    },
+    {
+     "key": "netpie",
+     "label": "NETPIE-2020 (IoT cloud platform)",
+     "status": "used",
+     "evidence": "Scope 1.2 p.2: 'The Air Quality Measuring Station will use the Netpie platform to communicate the data it has collected to the website.'"
+    },
+    {
+     "key": "mqtt",
+     "label": "MQTT",
+     "status": "used",
+     "evidence": "Section 4.1.4 p.28: 'the microcontroller sends the information to a cloud-based service using MQTT'"
+    },
+    {
+     "key": "json",
+     "label": "JSON",
+     "status": "used",
+     "evidence": "Scope 1.2 p.2: 'JSON will be used as the data format for the website'"
+    },
+    {
+     "key": "pms7003",
+     "label": "PlanTower PMS7003 G7 laser dust sensor",
+     "status": "used",
+     "evidence": "Chapter 1 p.1: 'A very precise sensor that monitors the amount of PM2.5 and PM10 in the air is the PlanTower Laser Dust Sensor PM2.5 PMS7003 G7.'"
+    },
+    {
+     "key": "mq7",
+     "label": "MQ-7 carbon monoxide gas sensor",
+     "status": "used",
+     "evidence": "Chapter 1 p.1: 'Carbon Monoxide (CO) is a gas that may be found in the air, and the MQ-7 Gas Sensor Module is an extremely sensitive sensor that can find it.'"
+    },
+    {
+     "key": "dht11",
+     "label": "DHT11 humidity and temperature sensor",
+     "status": "used",
+     "evidence": "Chapter 1 p.1: 'The relative humidity and temperature of the environment are measured using the DHT11 Humidity and Temperature Sensor.'"
+    },
+    {
+     "key": "visual_studio_code",
+     "label": "Visual Studio Code",
+     "status": "used",
+     "evidence": "Scope 1.2 p.2: 'which will be created using Visual Studio Code'"
+    },
+    {
+     "key": "html",
+     "label": "HTML",
+     "status": "used",
+     "evidence": "Chapter 5 p.43: 'The website, which shows the real-time data acquired by the sensors, was developed using HTML, CSS, and JavaScript.'"
+    },
+    {
+     "key": "css",
+     "label": "CSS",
+     "status": "used",
+     "evidence": "Chapter 5 p.43: 'developed using HTML, CSS, and JavaScript'"
+    },
+    {
+     "key": "javascript",
+     "label": "JavaScript",
+     "status": "used",
+     "evidence": "Chapter 5 p.43: 'developed using HTML, CSS, and JavaScript'"
+    },
+    {
+     "key": "freeboard",
+     "label": "Freeboard",
+     "status": "cited",
+     "evidence": "Section 4.1.2 p.25: 'reasons why we would decide to make our own local HTML rather than utilizing a program like Freeboard'"
+    },
+    {
+     "key": "iqair_airvisual_pro",
+     "label": "IQAir AirVisual Pro",
+     "status": "cited",
+     "evidence": "Section 4.1 p.19: comparison chapter 'DIY vs. IQAir AirVisual Pro Air Quality Monitor'"
+    },
+    {
+     "key": "ifttt",
+     "label": "IFTTT",
+     "status": "cited",
+     "evidence": "Section 4.1 p.20: 'The IQAir AirVisual Pro may also be connected to the IFTTT (If This Then That) platform'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2213",
+  "canonical_title": "AU Sport Booking System",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CSX 3011",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Tana Jantayavichit",
+    "student_id": "6211648"
+   },
+   {
+    "name": "Thanchanok Wisuttaporn",
+    "student_id": "6211667"
+   },
+   {
+    "name": "Ravee Virojsirasak",
+    "student_id": "6215204"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "Dr. Songsak Channarukul",
+   "Pawut Satitsuksanoh"
+  ],
+  "abstract": "ABAC John Paul Sport Center has various type of sport facilities available for all teachers and students, so this department have a lot of data of court booking or facilities reservation in per day. From the research about the current reservation system of John Paul Sport Center, our team found that all the data now be collected in paper also we can check the status of all court only at the sport center that is uncomfortable for both user and staff. Our team want to solve this problem by creating the court reservation system on website which can check the court status, make the booking, and show analysis dashboard (available for the staff). Moreover, we want to make the system easier and more comfortable to access by the user and staff.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [],
+   "technology": [
+    "react",
+    "nodejs",
+    "express",
+    "mongodb"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "sports_facility_management",
+     "label": "Sports facility management",
+     "status": "used",
+     "evidence": "Page 7 scope: 'check the status of all court (badminton, tennis, and volleyball court), make the reservation, and check the dashboard report such as amount of reservation by sport type'."
+    }
+   ],
+   "technology": [
+    {
+     "key": "mern_stack",
+     "label": "MERN stack",
+     "status": "used",
+     "evidence": "Page 8: 'So, we decide to follow advisor's advice to develop our application using MERN Stack.'"
+    },
+    {
+     "key": "fullcalendar",
+     "label": "FullCalendar",
+     "status": "used",
+     "evidence": "Page 10: 'we found a library 'Fullcalendar' which can be used in React' and it is the main booking system component."
+    },
+    {
+     "key": "ant_design",
+     "label": "Ant Design",
+     "status": "used",
+     "evidence": "Page 12: 'we use 'ant design' library that we have found on the internet that provide us a lot of component and also the dashboard example'."
+    },
+    {
+     "key": "react_google_login",
+     "label": "react-google-login",
+     "status": "used",
+     "evidence": "Page 11: 'The library is called 'react-google-login'' used on the Login page."
+    },
+    {
+     "key": "google_oauth",
+     "label": "Google OAuth",
+     "status": "used",
+     "evidence": "Page 11: 'react-google login library is React library that use google OAuth when user sign in or Login', whitelisting @au.edu accounts."
+    },
+    {
+     "key": "mongoose",
+     "label": "Mongoose",
+     "status": "used",
+     "evidence": "Page 24: 'For the database connection, we use mongoose library to help us in these tasks.'"
+    },
+    {
+     "key": "axios",
+     "label": "Axios",
+     "status": "used",
+     "evidence": "Page 21: 'This function uses axios library to communicate with the backend in order to send the value to API link'."
+    },
+    {
+     "key": "mongodb_atlas",
+     "label": "MongoDB Atlas",
+     "status": "used",
+     "evidence": "Page 28: 'our database that we use is MongoDB atlas database. We create the cluster and generate the connection string'."
+    },
+    {
+     "key": "heroku",
+     "label": "Heroku",
+     "status": "used",
+     "evidence": "Conclusion page 32: 'we manage to deploy our applications on Free-tiers Heroku platform' (Chapter 3 notes a planned move to a VMS server)."
+    },
+    {
+     "key": "skedda",
+     "label": "Skedda",
+     "status": "cited",
+     "evidence": "Page 6 related work: 'Skedda is the world's leading booking platform with over 12,000 global organizations'."
+    },
+    {
+     "key": "bookado",
+     "label": "Bookado",
+     "status": "cited",
+     "evidence": "Page 7 related work: 'Other applications that we have shown to staff members of John Paul Sport Center is Bookado.'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2216",
+  "canonical_title": "Greenhouse Planting",
+  "aliases": [
+   "Greenhouse Plating"
+  ],
+  "phase": "final",
+  "course_code": "IT4292",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Natapon Taecharoenchai",
+    "student_id": "6037621"
+   },
+   {
+    "name": "Phubodee Kongcharoensukying",
+    "student_id": "6017637"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Benjawan Srisura",
+  "committee": [
+   "A.Piyakul Tillapart",
+   "Asst. Prof. Dr. Paitoon Porntrakoon"
+  ],
+  "abstract": "Greenhouse Plating is a system that help in agriculture and farming. It is monitoring and configurating the variable value such as temperature, light intensity, and soil moisture. The user can register and linked the system to the application, they can config the profile by fingertip. The smart greenhouse is a revolution in agriculture, creating a self-regulating, microclimate suitable for plant growth using sensors, monitoring and control systems that optimize growth conditions and automate the growing process. The user could make configuration and monitoring the crops via smartphone, moreover the system will cover the system notification that will notify the user when the system starts or stop working.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "hardware_iot"
+   ],
+   "platform": [
+    "embedded_hardware",
+    "mobile",
+    "web"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [],
+   "technology": []
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "agriculture",
+     "label": "Agriculture / smart farming",
+     "status": "used",
+     "evidence": "Page 7: 'Greenhouse Planting is the IOT (Internet of Things) project as \"Smart farm\" that help the farmer or the person that interested and worked in agriculture.'"
+    }
+   ],
+   "technology": [
+    {
+     "key": "arduino_ide",
+     "label": "Arduino IDE",
+     "status": "used",
+     "evidence": "Page 13: 'In the implementation phase, we use Arduino IDE to create our system, with C++ language.'"
+    },
+    {
+     "key": "cplusplus",
+     "label": "C++",
+     "status": "used",
+     "evidence": "Page 13 and page 33: 'Programming languages: C++' implemented in Arduino IDE."
+    },
+    {
+     "key": "esp32",
+     "label": "ESP32 (Kidbright board)",
+     "status": "used",
+     "evidence": "Page 16 cost list: 'Micro controller unit (MCU) Kidbright Model ESP32'."
+    },
+    {
+     "key": "blynk",
+     "label": "Blynk IoT platform",
+     "status": "used",
+     "evidence": "Page 9 scope: 'This system project will used \"Blynk\" Application.' Used for monitoring and configuration; Blynk cloud Plus package is the database (page 33)."
+    },
+    {
+     "key": "line_notify",
+     "label": "Line Notify",
+     "status": "used",
+     "evidence": "Page 9 scope: 'The system will send notification to the user when the system is taking action. In this project we used \"Line Notify\" via Line application.'"
+    },
+    {
+     "key": "dht11",
+     "label": "DHT11 temperature and humidity sensor",
+     "status": "used",
+     "evidence": "Page 16 cost list and page 20 specification: 'Temperature and Humidity sensor (DHT11)'."
+    },
+    {
+     "key": "lucidchart",
+     "label": "Lucidchart",
+     "status": "used",
+     "evidence": "Page 12: 'In the logical design, we use Lucidchart to create the Data Flow Diagram, and ER Diagram'."
+    },
+    {
+     "key": "drawio",
+     "label": "draw.io",
+     "status": "cited",
+     "evidence": "Reference [6] on page 50: 'Draw.IO, https://app.diagrams.net/'."
+    }
+   ]
+  }
+ },
+ {
+  "id": "2222",
+  "canonical_title": "Au Tutify - 1:1 Tutoring",
+  "aliases": [
+   "Au Tutify"
+  ],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Chen Yang Hsu",
+    "student_id": "6121200"
+   },
+   {
+    "name": "Phumin Abdul Hameed",
+    "student_id": "6135117"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "Asst. Prof. Dr. Paitoon Porntrakoon",
+   "A. Kiratijuta Bhumichitr"
+  ],
+  "abstract": "As students, one of the biggest hurdles in class is the ineffectiveness to learn the class materials from a classroom setting. Whether it is a problem with the teachers time or method of instruction, or the incapacity of fellow classmates to help. Oftentimes they turn to tutorship, only to find out that the broad offerings from tutors online varies in range and experience, costing them time and money for searches that often ends unsatisfactory. Au Tutify aims to provide students with tutors who have the precise experience that the students need. With Au tutify, the tutees would be able to see the exact course offered and choose only the tutors with the same experience on it.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [],
+   "technology": [
+    "react",
+    "nodejs",
+    "express",
+    "mongodb"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "mern_stack",
+     "label": "MERN stack",
+     "status": "used",
+     "evidence": "Page 16: 'Ultimately for the tech stack we went ahead and chose MERN as our tech stack.'"
+    },
+    {
+     "key": "mongoose",
+     "label": "Mongoose",
+     "status": "used",
+     "evidence": "Page 15: 'The MERN stack consists of React, Express, Mongo/Mongoose, and Nodejs.'"
+    },
+    {
+     "key": "material_ui",
+     "label": "Material UI",
+     "status": "used",
+     "evidence": "Page 15: 'For the front end, we employed Material Ui for the ui elements and styling.'"
+    },
+    {
+     "key": "chatengine",
+     "label": "Chat Engine",
+     "status": "used",
+     "evidence": "Page 17 tech stack table: 'Chat Engine is an API which makes it easy to build chat services' used for the in-app chat."
+    },
+    {
+     "key": "heroku",
+     "label": "Heroku",
+     "status": "cited",
+     "evidence": "Reference [5] page 26: 'Heroku. Dashboard.heroku.com'."
+    },
+    {
+     "key": "netlify",
+     "label": "Netlify",
+     "status": "cited",
+     "evidence": "Reference [6] page 26: 'Netlify. Welcome to Netlify. docs.netlify.com'."
+    }
+   ]
+  }
+ },
+ {
+  "id": "2224",
+  "canonical_title": "Smart Home Interface",
+  "aliases": [
+   "Smart Home Application"
+  ],
+  "phase": "final",
+  "course_code": "CS 4200 / CSX3011",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Ornwara Sangthongnirundorn",
+    "student_id": "6215112"
+   },
+   {
+    "name": "Nguyen Huy Tung",
+    "student_id": "6128110"
+   },
+   {
+    "name": "Nguyen Ha Duong",
+    "student_id": "6128301"
+   }
+  ],
+  "advisor": "A. Pawut Satitsuksanoh",
+  "committee": [
+   "Asst. Prof. Dr. Dobri Atanassov Batovski",
+   "A. Chayapol Moemeng"
+  ],
+  "abstract": "Smart home systems have been widespread and in high demand. However, the seemingly sky-high prices and commitment to certain brands make them accessible to a few households. To serve our client's request for a smart home system within a low-mid budget, we implemented a system using the existing WIFI network, microcontroller units, and conventional home appliances. The system is complete with smart light bulbs, door sensors, gas sensors, and temperature sensors. The users interact with the system via a web application interface deployed and hosted locally. While we have also successfully deployed the application using Heroku, we recommended that the client use the local version for security reasons. In the future, we would seek additional guidance to implement greater security measures to safeguard the client's home so we can deploy the system online. There are also many improvements and adjustments we would like to make for the future, all of which are discussed later in this report.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "hardware_iot",
+    "software_application"
+   ],
+   "platform": [
+    "web",
+    "embedded_hardware"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [],
+   "technology": [
+    "mongodb",
+    "nextjs",
+    "react"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "smart_home",
+     "label": "Smart home",
+     "status": "used",
+     "evidence": "Chapter 1: \"we decided to build a smart home system using wi-fi enabled microcontrollers and conventional household appliances.\""
+    }
+   ],
+   "technology": [
+    {
+     "key": "mqtt",
+     "label": "MQTT protocol",
+     "status": "used",
+     "evidence": "Section 3.1.1: \"For communicating between the host and sensor, we decided to use the MQTT protocol.\""
+    },
+    {
+     "key": "node_red",
+     "label": "Node-RED",
+     "status": "used",
+     "evidence": "Section 3.1.1: \"There are 3 separate parts included in the host/backend, which are node-red, database, and MQTT broker.\""
+    },
+    {
+     "key": "eclipse_mosquitto",
+     "label": "Eclipse Mosquitto",
+     "status": "used",
+     "evidence": "Section 3.1.1: \"we decided to use Eclipse Mosquitto, an open-source MQTT broker.\""
+    },
+    {
+     "key": "esp8266_nodemcu",
+     "label": "NodeMCU (ESP8266)",
+     "status": "used",
+     "evidence": "Section 3.2.3: \"we decided to modify them and connect them to the NodeMCU\"; reference [7] \"NodeMcu -- an Open-source Firmware Based on ESP8266 Wifi-soc\""
+    },
+    {
+     "key": "arduino",
+     "label": "Arduino",
+     "status": "used",
+     "evidence": "Section 1.2: \"we started experimenting with microcontrollers such as Arduino Uno R3 and NodeMCU\"; Appendices A-F contain the Arduino code for sensors and WiFi"
+    },
+    {
+     "key": "tasmota",
+     "label": "Tasmota firmware",
+     "status": "used",
+     "evidence": "Section 3.3.2: \"Our team modified this device to work with our application using other libraries (Tasmota open-source firmware for ESP devices)\""
+    },
+    {
+     "key": "sonoff",
+     "label": "Sonoff Mini R2 smart switch",
+     "status": "used",
+     "evidence": "Section 3.2.1: \"Sonoff Mini R2, a small and portable DIY smart switch utilized for various switch boxes, will be used for this project.\""
+    },
+    {
+     "key": "broadlink",
+     "label": "Broadlink IR remote",
+     "status": "used",
+     "evidence": "Section 4.2.1: \"This BroadLink device is an open device, which can be unlocked and controlled by another source of the command.\""
+    },
+    {
+     "key": "heroku",
+     "label": "Heroku",
+     "status": "used",
+     "evidence": "Abstract: \"While we have also successfully deployed the application using Heroku\""
+    },
+    {
+     "key": "figma",
+     "label": "Figma",
+     "status": "used",
+     "evidence": "Section 1.2: \"We produced a low-fidelity prototype using Figma.\""
+    },
+    {
+     "key": "sass",
+     "label": "Sass",
+     "status": "used",
+     "evidence": "Section 3.1.2: \"We also used SASS for extra functionalities.\""
+    },
+    {
+     "key": "apple_homekit",
+     "label": "Apple HomeKit",
+     "status": "cited",
+     "evidence": "Section 2.1 related work: \"One of the largest smart home systems, Apple HomeKit is compatible with over 50 brands worldwide\"; used only as UI inspiration"
+    },
+    {
+     "key": "xiaomi_mi_home",
+     "label": "Xiaomi Mi Home",
+     "status": "cited",
+     "evidence": "Section 2.2 related work: \"Mi has its own communication protocol, known as miio, which it uses to connect to its smart devices\"; team evaluated then decided against building on Mi devices"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2226",
+  "canonical_title": "Avalon Online Game",
+  "aliases": [
+   "Online Avalon Game"
+  ],
+  "phase": "proposal",
+  "course_code": "CSX 3010",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Tana Jantayavichit",
+    "student_id": "6211648"
+   },
+   {
+    "name": "Thanchanok Wisuttaporn",
+    "student_id": "6211667"
+   },
+   {
+    "name": "Ravee Virojsirasak",
+    "student_id": "6215204"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "Asst. Prof. Dr. Benjawan Srisura",
+   "Kiratijuta Bhumichitr"
+  ],
+  "abstract": "There are many boardgame in the real world. Some could be played in a cooperative way or competitive way. For the old styles, we could gather up and play the game on the table and have some fun. Now, technology has changed the world. We can now play board games online. So, we don't need to meet each other to play the game. Our team wants to develop one of them to play with friends too. The game that we selected to develop is 'Avalon'. We want to create this to be an online web application that anybody can play. The point of developing this project is to use WebSocket to send the right information to the right person since each role comes up with different task to do.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "game"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [],
+   "technology": [
+    "nodejs",
+    "express"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "board_game",
+     "label": "Board games and social deduction",
+     "status": "used",
+     "evidence": "Section 2.1: \"This is the board game that we would like to make into our own website game\"; \"Our project will follow the game rule that they have set up before\""
+    },
+    {
+     "key": "the_resistance_avalon",
+     "label": "The Resistance: Avalon",
+     "status": "cited",
+     "evidence": "Section 2.1.1 related work: \"'The Resistance: Avalon,' is a board game of social deduction\""
+    }
+   ],
+   "technology": [
+    {
+     "key": "socket_io",
+     "label": "Socket.IO",
+     "status": "used",
+     "evidence": "Section 3.1: \"the most appropriate library that we could use is Socket io because our application's scale is small, and the library is very simple and newbie friendly\""
+    },
+    {
+     "key": "websocket",
+     "label": "WebSocket",
+     "status": "used",
+     "evidence": "Abstract: \"The point of developing this project is to use WebSocket to send the right information to the right person\""
+    },
+    {
+     "key": "heroku",
+     "label": "Heroku",
+     "status": "used",
+     "evidence": "Section 4.1.2: \"In our case, we deploy the application on Heroku.\""
+    },
+    {
+     "key": "jquery",
+     "label": "jQuery",
+     "status": "used",
+     "evidence": "Section 4.1.2: \"we have improved our app using jquery.min.js to lower the performance that will be used from client\""
+    },
+    {
+     "key": "html",
+     "label": "HTML",
+     "status": "used",
+     "evidence": "Section 3.1: \"Our project use Node js (express) as the backend and for the front end we only use html\""
+    },
+    {
+     "key": "css",
+     "label": "CSS",
+     "status": "used",
+     "evidence": "Section 3.1: \"We just use CSS to make the application to be more attractive.\""
+    },
+    {
+     "key": "discord",
+     "label": "Discord",
+     "status": "cited",
+     "evidence": "Section 1.1: \"players who play together and chat via communication app such as Discord, or TeamSpeak3\""
+    }
+   ]
+  }
+ },
+ {
+  "id": "2231",
+  "canonical_title": "Education Agency Support System",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CSX 3011 / ITX 3009",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Thitare Nimanong",
+    "student_id": "6210015"
+   },
+   {
+    "name": "Nutnisa Thongrussamee",
+    "student_id": "6213106"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "Asst. Prof. Dr. Paitoon Porntrakoon",
+   "Asst. Prof. Dr. Benjawan Srisura"
+  ],
+  "abstract": "The Education Agency Support System is a web application aimed at addressing the challenges faced by Hearts & Minds International Education Co., Ltd. in generating cost estimations. The system provides a comprehensive solution that streamlines the agency's processes and makes it easier for staff to do their jobs. All features are cost estimation, expenses list, setup information, visa management, exchange rate management, and the ability to include a company banner on PDF files. The web application platform offers a user-friendly interface. The Education Agency Support System project is designed to help the agency generate cost estimations efficiently.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "education",
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "nextjs",
+    "react",
+    "mysql",
+    "express"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "study_abroad",
+     "label": "Study abroad education consultancy",
+     "status": "used",
+     "evidence": "Chapter 1: \"Hearts & Minds International Education Co. provides guidance and counseling for students interested in studying abroad.\""
+    }
+   ],
+   "technology": [
+    {
+     "key": "visual_studio",
+     "label": "Visual Studio",
+     "status": "used",
+     "evidence": "Section 3.5 Tech Stack: \"Visual Studio is used to create the application, which is built with Next.js which is a React framework for the front-end.\""
+    },
+    {
+     "key": "rest_api",
+     "label": "REST API",
+     "status": "used",
+     "evidence": "Section 3.5 Tech Stack: \"we use MySQL as our database and use the Express.js framework to implement REST API.\""
+    },
+    {
+     "key": "google_sheets",
+     "label": "Google Sheets",
+     "status": "cited",
+     "evidence": "Section 2.1 Old flow: \"each cost must be manually entered and computed on Google Sheets\" (the manual process the system replaces)"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2233",
+  "canonical_title": "Bikebuster: Automation System that Detects Motorcycle on Footpaths and Reports to Authority",
+  "aliases": [
+   "Bikebuster: Automation System that detects motorcycle on footpaths and report to Authority"
+  ],
+  "phase": "final",
+  "course_code": "CSX 3010 / ITX 3009",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Jeffrey Zhi Yee Chong",
+    "student_id": "6310023"
+   },
+   {
+    "name": "Michael John Bull",
+    "student_id": "6311203"
+   },
+   {
+    "name": "Aashish Dubey",
+    "student_id": "6313771"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "A. Anilkumar Kothalil Gopalakrishnan",
+   "A. Dobri Atanassov Batovski"
+  ],
+  "abstract": "The Bikebuster project is an automated system designed to detect motorcycles illegally riding on sidewalks and report offenders to the authorities. The primary goal of the project is to enhance safety for pedestrians by reducing the number of motorcycles on sidewalks, which pose a significant safety risk. In addition, the illegal use of sidewalks can cause damage to footpaths, exacerbating the problem. The Bikebuster project is motivated by the need to address these issues and improve enforcement of existing laws and regulations. The system uses a combination of hardware and software components to detect and capture images of offending motorcycles, which are then reported to the authorities via a reporting website. The project has the potential to generate passive income by sharing fines imposed on offenders with the system operator. However, safety remains the top priority in the implementation of this system. Overall, the Bikebuster project aims to improve safety for pedestrians and reduce the damage caused by illegal activity on sidewalks.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "transportation"
+   ],
+   "topic": [
+    "computer_vision",
+    "ocr"
+   ],
+   "technology": [
+    "python",
+    "opencv"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "traffic_enforcement",
+     "label": "Traffic law enforcement",
+     "evidence": "Abstract: 'an automated system designed to detect motorcycles illegally riding on sidewalks and report offenders to the authorities'"
+    }
+   ],
+   "technology": [
+    {
+     "key": "yolov4",
+     "label": "YOLOv4 object detection",
+     "status": "used",
+     "evidence": "Section 1.4: 'training deep learning model to detect motorbikes using YoloV4'"
+    },
+    {
+     "key": "darknet",
+     "label": "Darknet framework",
+     "status": "used",
+     "evidence": "Section 3.3: 'we cloned the darknet git repository to the notebook and built it, in order to use the Darknet framework for our training purpose'"
+    },
+    {
+     "key": "google_colab",
+     "label": "Google Colab",
+     "status": "used",
+     "evidence": "Section 3.3: 'The training for our object detection took place through Google Colab Notebook'"
+    },
+    {
+     "key": "labelimg",
+     "label": "LabelImg annotation tool",
+     "status": "used",
+     "evidence": "Section 3.3: 'motorbikes, bicycles and people which have all been labeled through \"labelimg\"'"
+    },
+    {
+     "key": "pyppeteer",
+     "label": "Pyppeteer",
+     "status": "used",
+     "evidence": "Section 3.7: 'There is a python version of puppeteer called Pyppeteer'; Figure 9 'Automated form filled by Pyppeteer'"
+    },
+    {
+     "key": "puppeteer",
+     "label": "Puppeteer browser automation",
+     "status": "used",
+     "evidence": "Section 1.4: 'automatic reporting on website using puppeteer involves automatic filling the required form and submitting to the authorities'"
+    },
+    {
+     "key": "nodejs",
+     "label": "Node.js",
+     "status": "cited",
+     "evidence": "Section 2.4: 'Puppeteer, a Node.js library for controlling headless Chrome/Chromium browsers' (implementation used the Python port)"
+    },
+    {
+     "key": "platerecognizer",
+     "label": "Plate Recognizer ALPR API",
+     "status": "used",
+     "evidence": "Section 3.5: 'we utilized a third-party service provided by PlateRecognizer (https://platerecognizer.com/)'"
+    },
+    {
+     "key": "line_messaging_api",
+     "label": "LINE Messaging API",
+     "status": "used",
+     "evidence": "Section 3.6: 'we utilized the Line Messaging API which allows us to send messages to users through the app'"
+    },
+    {
+     "key": "tkinter",
+     "label": "Tkinter GUI",
+     "status": "used",
+     "evidence": "Section 3.7, Figure 8: 'Tkinter for easy file upload'"
+    },
+    {
+     "key": "google_drive",
+     "label": "Google Drive storage",
+     "status": "used",
+     "evidence": "Section 2.4: 'Captured images are stored on Google Drive'"
+    },
+    {
+     "key": "hikvision_ip_camera",
+     "label": "Hikvision IP camera (DS-2CV2Q21FD-IW)",
+     "status": "used",
+     "evidence": "Section 2.4: 'captures images using a Hikvision IP camera, specifically the Hikvision ds-2cv2q21fd-iw model'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2239",
+  "canonical_title": "Unity Game: The Grand Collection",
+  "aliases": [
+   "Unity Game: The Grand Collections",
+   "GAME: The Grand Collections",
+   "The Grand Collection"
+  ],
+  "phase": "final",
+  "course_code": "CSX 3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Ekkasith Singmaneechai",
+    "student_id": "6213934"
+   },
+   {
+    "name": "Pancheeva Jantarasuriyakul",
+    "student_id": "6213305"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "A. Benjawan Srisura",
+   "A. Tapanan Yeophantong"
+  ],
+  "abstract": "This paper discusses our unity game project called “The Grand Collection”, a horror game that aims to offer an engaging and challenging experience for players. The game is designed to challenge the player with time-based objectives, making it an exciting and entertaining gaming experience. This paper aims to give readers an understanding of how the game was created and how it challenges players by providing details about the development process of the game, including its design, features, model assets and mechanics.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "game"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [],
+   "technology": [
+    "unity",
+    "csharp"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "blender",
+     "label": "Blender 3D modeling",
+     "status": "used",
+     "evidence": "Chapter 4 tech stack: '3D modeling software - 3D modeling software allows for the creation of detailed 3D models... Blender'"
+    },
+    {
+     "key": "gimp",
+     "label": "GIMP image editor",
+     "status": "used",
+     "evidence": "Chapter 4 tech stack: 'Image Editor - Allows for Modifying the images for texture usage. GIMP'"
+    },
+    {
+     "key": "ps1_retro_graphics",
+     "label": "PS1-era retro graphics style",
+     "status": "used",
+     "evidence": "Section 3.1: 'capture the sense of horror from the environment design points, by using style of the PS1 game era. Its muddy and low resolution textures give the player a sense of vagueness'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2241",
+  "canonical_title": "ECIC: Easy E-commerce Intelligent Center",
+  "aliases": [
+   "ECIC: Easy E-commerce intelligent center"
+  ],
+  "phase": "final",
+  "course_code": "CSX 3011",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Navamongkol Tongta",
+    "student_id": "6213387"
+   },
+   {
+    "name": "Voraruethai Chancharung",
+    "student_id": "6210109"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "Dr. Kwankamol Knongpong",
+   "A. Piyakul Tillapart"
+  ],
+  "abstract": "This report outlines the development of an integrated order management system for online merchants with multiple shops on platforms such as Shopee and Lazada. The system allows merchants to gather all orders from different online platforms into one central system, enabling them to see all their orders in a single view. Additionally, the system provides tools for merchants to create vouchers and coupons that can be redeemed by customers who purchase products from any of their shops, regardless of the platform. Customers can view their point balances and available coupons via a Line Official Account, where they are required to login using their name and phone number. The report concludes that this system can help merchants manage their online sales more effectively and build stronger customer relationships through targeted promotions and rewards.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "e_commerce"
+   ],
+   "topic": [],
+   "technology": [
+    "python",
+    "mongodb",
+    "react"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "crm",
+     "label": "Customer relationship management",
+     "evidence": "Section 1.4: 'We will discuss the CRM web application, the Line Official Account for merchants, and the Customer Line Official Account'"
+    }
+   ],
+   "technology": [
+    {
+     "key": "fastapi",
+     "label": "FastAPI web framework",
+     "status": "used",
+     "evidence": "Section 2.1: 'The Back-End API uses the FastAPI library from Python to create a web service'"
+    },
+    {
+     "key": "aws_ec2",
+     "label": "Amazon EC2",
+     "status": "used",
+     "evidence": "Section 2.1: 'The main system consists of an EC2 instance with five components'; 4.1: 'EC2 AWS is the minimum specification required to run the project, and t2.medium is the recommended minimum'"
+    },
+    {
+     "key": "docker",
+     "label": "Docker containers",
+     "status": "used",
+     "evidence": "Section 3.3: 'The system is deployed using Docker containers, providing easy deployment and scalability'"
+    },
+    {
+     "key": "mui",
+     "label": "MUI (Material-UI)",
+     "status": "used",
+     "evidence": "Section 3.3: 'we used the popular open-source React UI framework, MUI (Material-UI) template'"
+    },
+    {
+     "key": "line_official_account",
+     "label": "LINE Official Account platform",
+     "status": "used",
+     "evidence": "Section 3.5: 'we have integrated with Line Official Account. To make our own Line Official Account, we create Line developer accounts in order to use Line services'"
+    },
+    {
+     "key": "shopee_open_api",
+     "label": "Shopee Open API",
+     "status": "used",
+     "evidence": "Section 2.2: 'fetches the merchant's order from these platforms on an hourly basis'; reference [6] open.shopee.com developer guide"
+    },
+    {
+     "key": "lazada_open_api",
+     "label": "Lazada Open Platform API",
+     "status": "used",
+     "evidence": "Section 3.2: 'collecting merchant's data from Shopee and Lazada using their open API'; reference [7] open.lazada.com apps doc api"
+    },
+    {
+     "key": "google_cloud_functions",
+     "label": "Google Cloud Functions",
+     "status": "used",
+     "evidence": "Section 4.2: 'the cost of using Google Cloud Function can exceed the free tier limitations when running the pipeline frequently' before consolidating into a single EC2 instance"
+    },
+    {
+     "key": "mvc",
+     "label": "Model-View-Controller pattern",
+     "status": "used",
+     "evidence": "Section 3.3: 'The Model-View-Controller (MVC) design pattern is also employed to maintain a clear separation of concerns'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2242",
+  "canonical_title": "EDU Ratings",
+  "aliases": [
+   "EDU Rating",
+   "EDU RATINGS"
+  ],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Yuxiao Chen",
+    "student_id": "6118492"
+   },
+   {
+    "name": "Zijian Zhou",
+    "student_id": "6128492"
+   },
+   {
+    "name": "Shizhu Bao",
+    "student_id": "6118444"
+   }
+  ],
+  "advisor": "Dr Tapanan Yeophantong",
+  "committee": [
+   "Dr Piyakul Tillapart",
+   "Dr Kwankamol Nongpong"
+  ],
+  "abstract": "In our project, we have created a standalone website where anyone can log in and access the ratings and evaluations of teachers for each course offered at our school. Additionally, students can register their own accounts, which can be used to link to their enrolled courses and provide weekly evaluations and ratings for their teachers. Each school will also be given an administrator account, allowing administrators to register teacher accounts and create courses. Teachers can create new courses and view student evaluations of their performance using their unique email-based accounts. Our website also includes systems for filtering inappropriate language and dynamic character displays, making it more sophisticated and polished. We think that a teacher evaluation system is an essential tool for educational institutions to ensure high-quality instruction and effective learning outcomes.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [],
+   "technology": [
+    "react",
+    "mysql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "ant_design",
+     "label": "Ant Design (Antd)",
+     "status": "used",
+     "evidence": "Page 26: \"We use Antd Design [20] to create the mobile and tablet versions. Antd Design is a popular UI library for building React-based web applications.\""
+    },
+    {
+     "key": "sqlite",
+     "label": "SQLite",
+     "status": "used",
+     "evidence": "Page 23: \"For database, we choose SQLite, Redis, MySQL.\""
+    },
+    {
+     "key": "redis",
+     "label": "Redis",
+     "status": "used",
+     "evidence": "Page 23: \"For database, we choose SQLite, Redis, MySQL.\""
+    },
+    {
+     "key": "elasticsearch",
+     "label": "Elasticsearch",
+     "status": "used",
+     "evidence": "Page 20: \"Implement search functionality: To implement search functionality, we use Elasticsearch.\""
+    },
+    {
+     "key": "d3_js",
+     "label": "D3.js",
+     "status": "used",
+     "evidence": "Page 20: \"Implement data visualization: we use chart libraries, D3.js) to visualize rating and commenting data.\""
+    },
+    {
+     "key": "oauth_2",
+     "label": "OAuth 2.0",
+     "status": "used",
+     "evidence": "Page 20: \"Implement user authentication: To implement rating and commenting functionality, user authentication needs to be carried out. We use OAuth 2.0.\""
+    },
+    {
+     "key": "bootstrap",
+     "label": "Bootstrap",
+     "status": "used",
+     "evidence": "Page 20: \"Design and implement frontend UI: Use React and Bootstrap to implement frontend UI, including login, registration, search, rating, comment, and other functions.\""
+    },
+    {
+     "key": "vultr",
+     "label": "Vultr cloud",
+     "status": "used",
+     "evidence": "Page 27: \"We use VULTR[21] for our system testing.\""
+    }
+   ]
+  }
+ },
+ {
+  "id": "2248",
+  "canonical_title": "A Smart Garden for Thai Plants",
+  "aliases": [
+   "IoT Smart Garden for Thai Plant"
+  ],
+  "phase": "final",
+  "course_code": "CSX 3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Burapa Jerdnapapornpun",
+    "student_id": "6113143"
+   },
+   {
+    "name": "Phatbophit Wonganan",
+    "student_id": "6211018"
+   },
+   {
+    "name": "Phuthanet Khumbamrung",
+    "student_id": "6211148"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Dobri Atanassov Batovski",
+  "committee": [
+   "Pawut Satitsuksanoh",
+   "Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan"
+  ],
+  "abstract": "This research aims to design and develop a smart garden system for Thai plants. The system incorporates sensors, automation, and data analysis to optimize the growth and health of selected Thai plants. The study investigates the use of available low-cost sensors to monitor soil moisture, temperature, humidity, as well as the use of automation for watering. Data collected from the sensors is further analyzed. The goal of this study is to improve the efficiency and productivity of Thai plant cultivation while reducing the labor and resources required.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "hardware_iot"
+   ],
+   "platform": [
+    "embedded_hardware"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [],
+   "technology": []
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "agriculture",
+     "label": "Agriculture and smart farming",
+     "status": "used",
+     "evidence": "Page 6: \"The use of Internet of Things (IoT) technology in agriculture, also known as precision agriculture, has been an active area of research in recent years.\" The whole system targets Thai plant cultivation."
+    }
+   ],
+   "technology": [
+    {
+     "key": "esp8266",
+     "label": "ESP8266 (NodeMCU V3)",
+     "status": "used",
+     "evidence": "Page 15: \"Figure 4-5 is Node MCU V3 ESP8266 WiFi are used for connecting and power IoT device and sensors\""
+    },
+    {
+     "key": "mcp3008",
+     "label": "MCP3008 ADC chip",
+     "status": "used",
+     "evidence": "Page 22: \"It starts by including two libraries: \\\"MCP3008.h\\\" and \\\"DHT.h\\\". The MCP3008 library is used to communicate with an MCP3008 analog-to-digital converter chip\""
+    },
+    {
+     "key": "dht22",
+     "label": "DHT22 temperature and humidity sensor",
+     "status": "used",
+     "evidence": "Page 21: \"This is the board that we connected with eight soil moisture sensors and one DHT22 to check temperature and humidity.\""
+    },
+    {
+     "key": "cpp",
+     "label": "C++",
+     "status": "used",
+     "evidence": "Page 24: \"Figure 4-16 show the source code which is written in C++ and is intended to be run on an ESP8266 microcontroller.\""
+    },
+    {
+     "key": "arduino",
+     "label": "Arduino platform",
+     "status": "used",
+     "evidence": "Page 24: \"The MCP3008 library is used to communicate with an MCP3008 analog-to-digital converter chip, which is connected to the Arduino board through four pins\""
+    },
+    {
+     "key": "coolterm",
+     "label": "CoolTerm serial terminal",
+     "status": "used",
+     "evidence": "Page 34: \"we used third party program (Cool term) to capture the data into a text file and used it for the analysis\""
+    },
+    {
+     "key": "mqtt",
+     "label": "MQTT protocol",
+     "status": "cited",
+     "evidence": "Reference [2]: \"Smart Garden with IoT Based Real Time Communication using MQTT Protocol\""
+    }
+   ]
+  }
+ },
+ {
+  "id": "2250",
+  "canonical_title": "Cinemo: Bookings, Ratings, and Reviews",
+  "aliases": [
+   "Cinemo"
+  ],
+  "phase": "final",
+  "course_code": "CS3200 / IT 4291",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Rohit Kumar Setthachok",
+    "student_id": "5915356"
+   },
+   {
+    "name": "Haiao Ji",
+    "student_id": "6138009"
+   },
+   {
+    "name": "Ha Ngoc Bao Linh",
+    "student_id": "6138310"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan",
+  "committee": [
+   "Asst. Prof. Dr. Benjawan Srisura",
+   "Asst. Prof. Dr. Dobri Atanassov Batovski"
+  ],
+  "abstract": "A lot of customers are currently facing many problems regarding booking a movie in a cinema hall. So therefore we created a plan to ease all of the problems by creating a web application and with this kind of an idea the customers will no longer have to physically go to the cinema to reserve a movie ticket.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [],
+   "technology": [
+    "php",
+    "mysql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "javascript",
+     "label": "JavaScript",
+     "status": "used",
+     "evidence": "Page 10, Tech Stack: \"a. Front-End: CSS and Javascript\""
+    },
+    {
+     "key": "css",
+     "label": "CSS",
+     "status": "used",
+     "evidence": "Page 10, Tech Stack: \"a. Front-End: CSS and Javascript\""
+    },
+    {
+     "key": "github",
+     "label": "GitHub",
+     "status": "used",
+     "evidence": "Reference [1]: \"Github Link: https://github.com/rohitks1997/Cinemo\""
+    }
+   ]
+  }
+ }
+]

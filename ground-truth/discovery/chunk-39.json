@@ -1,0 +1,244 @@
+[
+ {
+  "id": "2142",
+  "canonical_title": "Thai Fake News Checker Chrome Extension",
+  "aliases": [
+   "Thai Fake News Checker: Chrome Extension",
+   "Thai Fake News Checker"
+  ],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Perawat Wongkrit",
+    "student_id": "6010603"
+   }
+  ],
+  "advisor": "Dr Chayapol Moemeng",
+  "committee": [
+   "Dr Kwankamol Nongpong",
+   "Dr Rachsuda Setthawong"
+  ],
+  "abstract": "Fake news has caused many problems around the world that lead to many people have become a victim of this seemingly uncontrollable problem. What's make fake news so dangerous is that anyone can post it especially in this covid-19 situation where the trend of the increasing of number of people who use internet. Many people tried to prevent these fake news problems and contain it to be as minimal as possible including the Government. Thailand Government's ministry of digital economy and society has created a website called antifakenewscenter.com which contain all fake news and real news that has been confirmed by the Government ministry, but it has some minor problems such as unable to handle fuzzy matching and hard to use. After seeing these problems, I decided to create a solution for people who find it hard to use the service provided by the ministry. My service is an google chrome extension that help checking Thai fake news using the data from antifakenewscenter.com We use google chrome extension because of two reasons. First due to, people can easily install the extension into their chrome client and use our service. And secondly, majority of Thailand population are using google chrome as their main browser.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [
+    "nlp"
+   ],
+   "technology": [
+    "python",
+    "flask",
+    "firebase"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "browser_extension",
+     "label": "Browser extension (Chrome)",
+     "status": "used",
+     "evidence": "\"My service is an google chrome extension that help checking Thai fake news using the data from antifakenewscenter.com\" (Abstract, p.5)"
+    }
+   ],
+   "domain": [],
+   "technology": [
+    {
+     "key": "scikit_learn",
+     "label": "scikit-learn",
+     "status": "used",
+     "evidence": "\"We use sci-kit learn library helping me on this regard. Sci-kit learn allowing me TF-IDF vectorizer and Count vectorizer library to do experiment\" (Section 3.3, p.12)"
+    },
+    {
+     "key": "pythainlp",
+     "label": "PyThaiNLP",
+     "status": "used",
+     "evidence": "\"we use PyThaiNlp to get Thai stop words list and use it to filter out Thai stop words from news headline\" (Section 3.4, p.13)"
+    },
+    {
+     "key": "rapidfuzz",
+     "label": "RapidFuzz",
+     "status": "used",
+     "evidence": "\"we also included others two distance finding algorithms which are Jaccard index and Rapidfuzz\" (Section 3.3, p.12)"
+    },
+    {
+     "key": "heroku",
+     "label": "Heroku",
+     "status": "used",
+     "evidence": "\"For hosting our API, we use Heroku.\" (Section 3.5, p.14)"
+    },
+    {
+     "key": "javascript",
+     "label": "JavaScript",
+     "status": "used",
+     "evidence": "\"Google chrome extension worked by using html with JavaScript to handle front-end.\" (Section 3.7, p.15)"
+    },
+    {
+     "key": "html",
+     "label": "HTML",
+     "status": "used",
+     "evidence": "\"Google chrome extension worked by using html with JavaScript to handle front-end.\" (Section 3.7, p.15)"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2145",
+  "canonical_title": "WiFi-based Occupancy Sensor",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Shizhu Bao",
+    "student_id": "6118444"
+   },
+   {
+    "name": "Suppachai Wongsrinoppakun",
+    "student_id": "6010525"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "Dr. Kwankamol Nongpong",
+   "A. Piyakul Tillapart"
+  ],
+  "abstract": "Real-time estimations of the presence of people in a space can help administrators better manage a space, save unnecessary costs, and provide better services. In this paper, we propose a technique to estimate the number of mobile devices in a certain place at a certain time through the Wi-Fi probe request issued by the device with a wireless network function, so as to judge whether there is a person in the place. Compared with the method using camera detection, the cost of this method is lower, and the privacy of people in the venue can be better protected. We also provide a front-end page that makes it easier for administrators to view real-time or period data reports. It also supports real-time notification of administrators when certain conditions are triggered, such as when the number of people exceeds so that corresponding measures can be carried out.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "hardware_iot"
+   ],
+   "platform": [
+    "raspberry_pi",
+    "embedded_hardware",
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [
+    "geolocation"
+   ],
+   "technology": [
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "scapy",
+     "label": "Scapy",
+     "status": "used",
+     "evidence": "\"we used Scapy, a python program that allows us to probe Wi-Fi networks for packets\" (Section 3.4, p.19)"
+    },
+    {
+     "key": "kali_linux",
+     "label": "Kali Linux",
+     "status": "used",
+     "evidence": "\"we used a Raspberry Pi 4 Model B, running on Kali-Linux ARM 64-bit image\" (Section 2.4, p.13)"
+    },
+    {
+     "key": "tp_link_tl_wn722n",
+     "label": "TP-Link TL-WN722N wireless USB adapter",
+     "status": "used",
+     "evidence": "\"we used the TL-WN722N V.3.20 150Mbps High Gain Wireless USB Adapter by TP-Link\" (Section 2.4, p.13)"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2146",
+  "canonical_title": "IR-Based Occupancy Sensor",
+  "aliases": [
+   "IR Based Occupancy Sensor"
+  ],
+  "phase": "final",
+  "course_code": null,
+  "program": null,
+  "semester": null,
+  "academic_year": null,
+  "students": [
+   {
+    "name": "Vibolrottanak Seng",
+    "student_id": "6118173"
+   },
+   {
+    "name": "Vibolrottana Seng",
+    "student_id": "6217429"
+   }
+  ],
+  "advisor": null,
+  "committee": [],
+  "abstract": "The project designed and built a low-cost occupancy monitoring system using an 8x8 pixel AMG8833 IR thermal sensor, which preserves privacy because it senses people by body heat rather than cameras. Temperature data from the sensor was read with an AMG8833 Python library and saved as JSON, then used to train a machine learning model with scikit-learn. The system runs on a microcontroller with the sensor, visualizes the room as a heatmap, and serves a Flask web interface that records data to Firebase Realtime Database. It displays low, medium, and high occupancy levels and shows an alert when occupancy reaches the maximum. Testing at the Baksters office reported 98 to 100 percent accuracy for indoor temperatures between 21 and 31 degrees Celsius when people passing at average walking speed measured above 35 degrees. The main limitation is that it is still hard to distinguish a human from a moving heat source.",
+  "abstract_source": "generated",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "hardware_iot",
+    "ai_data"
+   ],
+   "platform": [
+    "embedded_hardware",
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "python",
+    "flask",
+    "firebase"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "amg8833",
+     "label": "AMG8833 IR thermal camera sensor",
+     "status": "used",
+     "evidence": "\"IR Thermal Camera Sensor - AMG8833\" (p.11) and \"we tested on the amg8833 python library\" (p.15)"
+    },
+    {
+     "key": "scikit_learn",
+     "label": "scikit-learn",
+     "status": "used",
+     "evidence": "\"use the scikit learn library and call joblib function in order to write data as json file\" (Data Processing, p.16)"
+    },
+    {
+     "key": "joblib",
+     "label": "joblib",
+     "status": "used",
+     "evidence": "\"use the scikit learn library and call joblib function in order to write data as json file\" (Data Processing, p.16)"
+    }
+   ]
+  }
+ }
+]

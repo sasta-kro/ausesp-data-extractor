@@ -1,0 +1,459 @@
+[
+ {
+  "id": "25100",
+  "canonical_title": "UltraCare",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Yuun Yamone Aung",
+    "student_id": "6511158"
+   },
+   {
+    "name": "Wyne Nadi",
+    "student_id": "6611919"
+   },
+   {
+    "name": "Sein Tum Tuck",
+    "student_id": "6622152"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Thanachai Thumthawatworn",
+  "committee": [
+   "A. Athipat Cleesuntorn",
+   "A. Sakchhi Paudel"
+  ],
+  "abstract": "UltraCare is a posed-based fall detection and emergency alert system that is designed to improve safety for elderly and high-risked individuals by detecting fall automatically and notifying caregivers in real time. The system processes live video from a CCTV/RTSP camera and uses a human pose estimation model to track key points and movement patterns. To reduce false alarms, it applies a hybrid fall decision method that combines multiple signals such as posture change (from standing to lying), body orientation, sudden head drop, and motion intensity across consecutive frames. Once a fall is detected and confirmed, the system triggers an event notification to a backend server and upload a short video clip as the evidence for faster verification and response. The solution is designed with practical development in mind, supporting continuous monitoring, cooldown control to prevent repeated alerts. Overall, UltraCare provides a reliable and scalable approach to automatic fall detection that helps shorten and quick response time to reduce the risk of severe injury in real-world care environments.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "hardware_iot",
+    "software_application"
+   ],
+   "platform": [
+    "ios",
+    "web",
+    "raspberry_pi"
+   ],
+   "domain": [
+    "healthcare"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "python",
+    "opencv",
+    "nodejs",
+    "express",
+    "nextjs",
+    "swift",
+    "postgresql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "yolov8_pose",
+     "label": "Ultralytics YOLOv8 Pose",
+     "status": "used",
+     "evidence": "Tech stack table (p.37): \"Vision / Inference: Python, Ultralytics YOLOv8 Pose, NumPy\"; \"the YOLOv8 pose estimation model is employed to detect human body keypoints\" (p.16)"
+    },
+    {
+     "key": "swiftui",
+     "label": "SwiftUI",
+     "status": "used",
+     "evidence": "\"The UltraCare mobile application is developed using SwiftUI, Apple's modern declarative framework for building iOS interfaces\" (p.16)"
+    },
+    {
+     "key": "prisma",
+     "label": "Prisma ORM",
+     "status": "used",
+     "evidence": "\"Prisma is used as the ORM to handle communication between the backend and the database\" (p.34)"
+    },
+    {
+     "key": "neon_postgresql",
+     "label": "Neon PostgreSQL",
+     "status": "used",
+     "evidence": "\"Initially used SQLite during development, then migrated the system to Neon PostgreSQL for deployment and better scalability\" (Table 4, p.30)"
+    },
+    {
+     "key": "sqlite",
+     "label": "SQLite",
+     "status": "used",
+     "evidence": "\"Initially used SQLite during development\" (Table 4, p.30)"
+    },
+    {
+     "key": "cloudinary",
+     "label": "Cloudinary",
+     "status": "used",
+     "evidence": "\"Captured media evidence is stored in Cloudinary\" (p.34); \"Cloud Media Storage: Cloudinary\" (Table 8, p.37)"
+    },
+    {
+     "key": "render",
+     "label": "Render cloud hosting",
+     "status": "used",
+     "evidence": "\"the backend hosted on Render and the dashboard on Vercel\" (p.34)"
+    },
+    {
+     "key": "vercel",
+     "label": "Vercel",
+     "status": "used",
+     "evidence": "\"Administrators manage devices and system records through a Next.js dashboard... deployed... the dashboard on Vercel\" (p.34)"
+    },
+    {
+     "key": "ffmpeg",
+     "label": "FFmpeg",
+     "status": "used",
+     "evidence": "\"Clip Encoding: FFmpeg (MP4 H.264 faststart)\" (Table 8, p.37); \"OpenCV (RTSP via FFmpeg backend)\""
+    },
+    {
+     "key": "numpy",
+     "label": "NumPy",
+     "status": "used",
+     "evidence": "\"Vision / Inference: Python, Ultralytics YOLOv8 Pose, NumPy\" (Table 8, p.37)"
+    },
+    {
+     "key": "rtsp",
+     "label": "RTSP streaming protocol",
+     "status": "used",
+     "evidence": "\"streams are accessed through the Real Time Streaming Protocol (RTSP), which allows the system to retrieve live video frames for analysis\" (p.23)"
+    },
+    {
+     "key": "lstm",
+     "label": "Long Short-Term Memory (LSTM)",
+     "status": "cited",
+     "evidence": "Future work only: \"learning-based temporal models such as Long Short-Term Memory (LSTM) or Temporal Convolutional Networks (TCN) could be integrated\" (p.49)"
+    }
+   ]
+  }
+ },
+ {
+  "id": "25101",
+  "canonical_title": "Hotel Reservation and Operational Management System for Convenient Park Sukhumvit Hotel",
+  "aliases": [
+   "Convenient Park Hotel Management System"
+  ],
+  "phase": "final",
+  "course_code": null,
+  "program": null,
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Myo Myat Min",
+    "student_id": "6520054"
+   },
+   {
+    "name": "Bhone Pyae Kyaw",
+    "student_id": "6530327"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Thanachai Thumthawatworn",
+  "committee": [
+   "Asst. Prof. Dr. Darun Kesrarat",
+   "A. Jichun Lu"
+  ],
+  "abstract": "Convenient Park Hotel Management System is developed in collaboration with the hotel to help in managing hotel operations, guest bookings, and internal communication workflows.\n\nIt provides a centralized platform where guests can browse available rooms, make reservations, and submit service requests directly from the website and LINE, while hotel administrators can manage room inventory, track bookings, process payments, and handle guest complaints in real time. The system generates structured booking records, payment confirmations, and notification alerts, complete with real-time status updates across all connected users.\n\nWith a public-facing website, a guest-facing booking application, a comprehensive admin dashboard, and a robust backend API, Convenient Park Hotel Management System ensures that every aspect of hotel operations — from room allocation and meeting room scheduling to guest service request resolution via LINE messaging — is handled accurately and efficiently.\n\nThe system is expected to help the hotel in streamlining front-desk operations, improving guest experience, and maintaining clear and consistent communication between staff and guests, which will significantly reduce the amount of time used up for manual processes and increase the productivity and service quality.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business",
+    "e_commerce"
+   ],
+   "topic": [],
+   "technology": [
+    "nextjs",
+    "nodejs",
+    "react",
+    "postgresql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "hospitality",
+     "label": "Hospitality / hotel operations",
+     "status": "used",
+     "evidence": "Full title names Convenient Park Sukhumvit Hotel; abstract: \"developed in collaboration with the hotel to help in managing hotel operations, guest bookings, and internal communication workflows\" (p.3)"
+    }
+   ],
+   "technology": [
+    {
+     "key": "nestjs",
+     "label": "NestJS",
+     "status": "used",
+     "evidence": "\"NestJS 11 with Modular Architecture... organizes 70+ REST endpoints across feature modules\" (p.22); \"NestJS. A progressive Node.js framework\" (References)"
+    },
+    {
+     "key": "prisma",
+     "label": "Prisma ORM",
+     "status": "used",
+     "evidence": "\"Prisma 6 with PostgreSQL: A type-safe ORM manages 15+ database models with 25+ tracked migrations\" (p.22)"
+    },
+    {
+     "key": "typescript",
+     "label": "TypeScript",
+     "status": "used",
+     "evidence": "\"TypeScript 5: Strongly-typed JavaScript for enhanced code quality\" (p.50)"
+    },
+    {
+     "key": "tailwind_css",
+     "label": "Tailwind CSS",
+     "status": "used",
+     "evidence": "\"Tailwind CSS 4: Utility-first CSS framework for rapid, responsive UI development\" (p.50)"
+    },
+    {
+     "key": "shadcn_ui",
+     "label": "shadcn/ui",
+     "status": "used",
+     "evidence": "\"shadcn/ui: Pre-built accessible component library (new-york style) with Radix UI primitives\" (p.50)"
+    },
+    {
+     "key": "socket_io",
+     "label": "Socket.IO",
+     "status": "used",
+     "evidence": "\"Socket.IO 4: Real-time bidirectional event-based communication across 6 namespaces\" (p.50); \"Socket.IO gateways across 6 namespaces push live updates\" (p.22)"
+    },
+    {
+     "key": "jsonwebtoken",
+     "label": "JWT (jsonwebtoken + bcrypt)",
+     "status": "used",
+     "evidence": "\"jsonwebtoken + bcrypt: JWT token generation/validation and password hashing for dual authentication system\" (p.50)"
+    },
+    {
+     "key": "2c2p",
+     "label": "2C2P payment gateway",
+     "status": "used",
+     "evidence": "\"2C2P Payment Gateway Integration: JWT-signed payment link generation... card and QR code payment channels, and 3DS authentication\" (p.22)"
+    },
+    {
+     "key": "line_messaging_api",
+     "label": "LINE Messaging API",
+     "status": "used",
+     "evidence": "\"LINE Messaging Integration: Webhook processing for LINE events, rich Menu Messages for complaint tracking cards\" (p.22)"
+    },
+    {
+     "key": "liff",
+     "label": "LINE Front-end Framework (LIFF)",
+     "status": "used",
+     "evidence": "\"in-room complaint submission system powered by LINE LIFF integration with photo upload support\" (p.11); \"@line/liff 2.27: LINE Front-end Framework SDK\" (p.50)"
+    },
+    {
+     "key": "cloudinary",
+     "label": "Cloudinary",
+     "status": "used",
+     "evidence": "\"Cloudinary serves as the cloud-based image storage and CDN for room images, user avatars, and complaint photos\" (p.48)"
+    },
+    {
+     "key": "resend",
+     "label": "Resend email service",
+     "status": "used",
+     "evidence": "\"Resend handles all transactional emails with templates covering booking confirmations, cancellations...\" (p.48)"
+    },
+    {
+     "key": "docker",
+     "label": "Docker",
+     "status": "used",
+     "evidence": "\"All three applications (booking frontend, backend, admin) use multi-stage Docker builds to create minimal production images\" (p.26)"
+    },
+    {
+     "key": "nginx",
+     "label": "Nginx",
+     "status": "used",
+     "evidence": "\"Nginx serves as the reverse proxy for SSL termination, traffic routing across the different applications\" (p.26)"
+    },
+    {
+     "key": "digitalocean",
+     "label": "DigitalOcean",
+     "status": "used",
+     "evidence": "\"Digital Ocean Droplet: Cloud hosting environment for all containerized services\" (p.51); \"approximately $24 USD per month\" droplet (p.27)"
+    },
+    {
+     "key": "vercel",
+     "label": "Vercel",
+     "status": "used",
+     "evidence": "\"Public Facing Website: deployed on Vercel\" (p.26)"
+    },
+    {
+     "key": "google_maps",
+     "label": "Google Maps",
+     "status": "used",
+     "evidence": "\"Google Maps: Embedded maps on the marketing website for hotel location display\" (p.51)"
+    }
+   ]
+  }
+ },
+ {
+  "id": "25104",
+  "canonical_title": "DTG FieldLink - Ticket Management for ISP Maintenance Group",
+  "aliases": [
+   "DTG FieldLink",
+   "DTG Ticket Management System"
+  ],
+  "phase": "final",
+  "course_code": "CSX 3011 / ITX 3011",
+  "program": null,
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Zwe La Pyae",
+    "student_id": "6530207"
+   },
+   {
+    "name": "Khant Min Lwin",
+    "student_id": "6530203"
+   },
+   {
+    "name": "Thet Myat Noe Thwin",
+    "student_id": "6530213"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Paitoon Porntrakoon",
+  "committee": [
+   "A. Jinchun Lu",
+   "A. Athiphat Hirunadisuan"
+  ],
+  "abstract": "This report details the design, development, and implementation of DTG FieldLink, a custom-engineered Field Service Management System (FSMS) created for DTG Co. Ltd., a third-party Internet Service Provider (ISP) maintenance company in Myanmar. Historically, the organization's operational workflow relied heavily on unstructured LINE messaging groups for team dispatching and manual Excel spreadsheet entries for record-keeping. This legacy process caused severe administrative bottlenecks, including continuous data duplication, a lack of real-time field coordination, and error-prone manual calculations for monthly ISP material reimbursements.\n\nTo resolve these inefficiencies, a dual-platform digital solution was developed, consisting of a Next.js Admin Web Application for centralized dispatching and a Flutter-based Android Mobile Application for on-site field technicians. Powered by a Node.js backend and a PostgreSQL database hosted on DigitalOcean, the system automates the ticketing lifecycle. It replaces manual chat pings with real-time Firebase push notifications and eliminates the need for manual geographical matching by automatically rendering KMZ/GeoJSON spatial data directly over Google Maps on the technicians' mobile devices.\n\nFurthermore, the system was tailored to fulfill specific client requirements, including precise ticket breaktime tracking to evaluate genuine team efficiency and an automated financial reporting module that exports formatted Excel invoices for seamless ISP reimbursements. Ultimately, DTG FieldLink successfully eradicates manual administrative data duplication, accelerates issue resolution, and provides management with the data-driven analytics necessary for scalable enterprise growth.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web",
+    "android"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [
+    "geolocation"
+   ],
+   "technology": [
+    "nextjs",
+    "nodejs",
+    "postgresql",
+    "firebase"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "telecommunications",
+     "label": "Telecommunications / ISP field maintenance",
+     "status": "used",
+     "evidence": "\"created for DTG Co. Ltd., a third-party Internet Service Provider (ISP) maintenance company in Myanmar\" (abstract, p.3)"
+    }
+   ],
+   "technology": [
+    {
+     "key": "flutter",
+     "label": "Flutter",
+     "status": "used",
+     "evidence": "\"Mobile Client: Developed using the cross-platform Flutter framework... for a native Android experience\" (p.18)"
+    },
+    {
+     "key": "dart",
+     "label": "Dart",
+     "status": "used",
+     "evidence": "\"utilizing the Dart programming language (26.8% of the codebase)\" (p.18)"
+    },
+    {
+     "key": "typescript",
+     "label": "TypeScript",
+     "status": "used",
+     "evidence": "\"The codebase is heavily type-safe, utilizing TypeScript (43.3%) for web and backend environments\" (p.17)"
+    },
+    {
+     "key": "firebase_cloud_messaging",
+     "label": "Firebase Cloud Messaging (FCM)",
+     "status": "used",
+     "evidence": "\"The Node.js backend triggers payloads to Firebase Mobile Services and Firebase Cloud Messaging (FCM) to push immediate, real-time notifications\" (p.18)"
+    },
+    {
+     "key": "digitalocean",
+     "label": "DigitalOcean Droplet",
+     "status": "used",
+     "evidence": "\"The backend and database are hosted on a DigitalOcean Droplet for scalable enterprise performance\" (p.18)"
+    },
+    {
+     "key": "digitalocean_spaces",
+     "label": "DigitalOcean Spaces object storage",
+     "status": "used",
+     "evidence": "\"Photographic evidence and field attachments... persistently stored in DigitalOcean Spaces (DO Spaces), an S3-compatible object storage layer\" (p.18)"
+    },
+    {
+     "key": "google_maps",
+     "label": "Google Maps",
+     "status": "used",
+     "evidence": "\"automatically rendering KMZ/GeoJSON spatial data directly over Google Maps on the technicians' mobile devices\" (abstract, p.3)"
+    },
+    {
+     "key": "geojson_kmz",
+     "label": "KMZ/GeoJSON spatial data",
+     "status": "used",
+     "evidence": "\"Processed KMZ files are securely saved as geojson to and retrieved from DigitalOcean Spaces\" (p.19)"
+    },
+    {
+     "key": "cloudflare",
+     "label": "Cloudflare",
+     "status": "used",
+     "evidence": "\"Traffic is routed through Cloudflare for DNS management, while Resend handles automated transactional emails\" (p.18)"
+    },
+    {
+     "key": "resend",
+     "label": "Resend email service",
+     "status": "used",
+     "evidence": "\"Resend acts as the mail service provider for handling automated transactional emails\" (Table 4.1, p.27)"
+    },
+    {
+     "key": "docker_compose",
+     "label": "Docker Compose",
+     "status": "used",
+     "evidence": "\"a modern, cloud-native technology stack orchestrated via containerized environments using docker-compose\" (p.17)"
+    },
+    {
+     "key": "salesforce_field_service",
+     "label": "Salesforce Field Service",
+     "status": "cited",
+     "evidence": "Related work section: \"Salesforce Field Service is a leading enterprise-grade platform that offers comprehensive workforce management\" (p.14)"
+    },
+    {
+     "key": "servicemax",
+     "label": "ServiceMax",
+     "status": "cited",
+     "evidence": "Related work section: \"ServiceMax is an asset-centric field service application designed specifically for equipment maintenance and tracking\" (p.15)"
+    },
+    {
+     "key": "jobber",
+     "label": "Jobber",
+     "status": "cited",
+     "evidence": "Related work section: \"Jobber is a widely used field service scheduling app tailored for small to medium-sized home service businesses\" (p.15)"
+    }
+   ]
+  }
+ }
+]

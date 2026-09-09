@@ -1,0 +1,368 @@
+[
+ {
+  "id": "26004",
+  "canonical_title": "MindNest",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "ITX 3009 / CSX 3010",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Ramin Hamewichian",
+    "student_id": "6410883"
+   },
+   {
+    "name": "Marazal Bahrainee Islam",
+    "student_id": "6720051"
+   },
+   {
+    "name": "Waradej Gidmeerasmeeyothin",
+    "student_id": "6410923"
+   }
+  ],
+  "advisor": "A. Tang Tianai",
+  "committee": [
+   "Asst. Prof. Dr. Benjawan Srisura",
+   "A. Chayapol Moemeng"
+  ],
+  "abstract": "Mental health among students in Thailand has become an important concern, yet it is often overlooked due to social stigma and limited access to professional support. According to the Department of Mental Health, many Thai teenagers experience high levels of stress and depression, but a significant number do not seek help because they fear being judged. In addition, students living in rural areas may have difficulty accessing mental health services. This project proposes MindNest, a mobile application designed to provide a safe and judgment-free environment where students can share their thoughts and emotions through an AI-powered chatbot. The system supports both Thai and English languages and is available 24 hours a day, allowing users to access mental health support anytime and anywhere. The chatbot is powered by artificial intelligence to provide empathetic responses, stress management guidance, and helpful coping exercises. MindNest also provides access to important mental health resources such as hotline information and calming techniques including breathing and grounding exercises. The application aims to improve accessibility to mental health support and encourage students to express their feelings in a safe and private environment. Overall, the system helps reduce barriers to seeking help and promotes better mental well-being by creating an accessible digital platform for mental health support among students in Thailand.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "healthcare"
+   ],
+   "topic": [
+    "nlp"
+   ],
+   "technology": [
+    "mongodb",
+    "python",
+    "react"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "mental_health",
+     "label": "Mental Health",
+     "status": "used",
+     "evidence": "\"This project proposes MindNest, a mobile application designed to provide a safe and judgment-free environment where students can share their thoughts and emotions through an AI-powered chatbot\" (Abstract, p.5)"
+    }
+   ],
+   "technology": [
+    {
+     "key": "fastapi",
+     "label": "FastAPI",
+     "status": "used",
+     "evidence": "\"The application is developed using React Native with Expo for the frontend and FastAPI for the backend system\" (Scope of the Project, p.7)"
+    },
+    {
+     "key": "react_native",
+     "label": "React Native",
+     "status": "used",
+     "evidence": "\"The frontend of the MindNest system is developed using React Native with Expo and TypeScript\" (Frontend, p.28)"
+    },
+    {
+     "key": "expo",
+     "label": "Expo (with Expo Router)",
+     "status": "used",
+     "evidence": "\"developed using React Native with Expo and TypeScript, using Expo Router for screen navigation\" (p.28); users tested \"the app on Expo-Go\" (p.34)"
+    },
+    {
+     "key": "typescript",
+     "label": "TypeScript",
+     "status": "used",
+     "evidence": "\"developed using React Native with Expo and TypeScript\" (Frontend, p.28)"
+    },
+    {
+     "key": "google_gemini",
+     "label": "Google Gemini AI (Gemini 2.0 / 2.5 Flash)",
+     "status": "used",
+     "evidence": "\"The chatbot is powered by Google Gemini AI\" (p.7); \"generates a response using a large language model (Gemini 2.5 Flash)\" (p.26); \"sends the retrieved techniques as context to Gemini 2.0 Flash\" (p.29)"
+    },
+    {
+     "key": "rag",
+     "label": "Retrieval-Augmented Generation (RAG)",
+     "status": "used",
+     "evidence": "\"The system uses a Retrieval-Augmented Generation (RAG) pipeline, where each user message is processed for classification, embedding, retrieval, and response generation\" (p.12)"
+    },
+    {
+     "key": "axios",
+     "label": "Axios",
+     "status": "used",
+     "evidence": "\"The frontend communicates with the backend system through API requests using Axios\" (p.28)"
+    },
+    {
+     "key": "supabase",
+     "label": "Supabase (PostgreSQL with pgvector)",
+     "status": "cited",
+     "evidence": "\"Supabase is used for vector storage and retrieval in the RAG pipeline\" (p.13), but \"In the initial system design, Supabase was intended to store vector embeddings... due to time constraints, these components can be consolidated into MongoDB\" (Notice about deployment, p.31) - intended design rather than deployed"
+    },
+    {
+     "key": "railway",
+     "label": "Railway",
+     "status": "cited",
+     "evidence": "\"Railway was selected as the intended platform for backend deployment. However, the backend server remained hosted on localhost during testing\" (Notice about deployment, p.31)"
+    }
+   ]
+  }
+ },
+ {
+  "id": "26005",
+  "canonical_title": "Bakeflow",
+  "aliases": [
+   "BakeFlow"
+  ],
+  "phase": "final",
+  "course_code": "CSX3011",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Meassavrin Savuth",
+    "student_id": "6520177"
+   },
+   {
+    "name": "Min La Wee Chan",
+    "student_id": "6520189"
+   },
+   {
+    "name": "Kaung Sat Linn",
+    "student_id": "6520053"
+   }
+  ],
+  "advisor": "A. Tianai Tang",
+  "committee": [
+   "Asst. Prof. Dr. Benjawan Srisura",
+   "A. Chayapol Moemeng"
+  ],
+  "abstract": "The rapid growth of social commerce has shifted how independent businesses, particularly bakeries, interact with their customers, heavily relying on chat applications for order placement. However, managing orders and verifying payments manually across these chat platforms introduces severe operational inefficiencies, high instances of human error, and delayed order fulfillments. This project presents BakeFlow, an integrated chat and web-based bakery management system designed to automate and streamline both customer ordering and administrative workflows. BakeFlow eliminates the bottlenecks of traditional chat commerce by bridging the gap between customer-facing chat interfaces and backend bakery operations. The system features a seamless Webview Ordering interface for customers—allowing for quick cart management and order submission without leaving their chat application—and a comprehensive Admin Dashboard tailored for efficient order tracking and direct payment slip verification. The platform was engineered using a modern, scalable technology stack, comprising a high-performance Go (Golang) backend for robust API handling, state management, and real-time processing, alongside a responsive Next.js/React frontend for an optimized user experience. BakeFlow demonstrates a significant reduction in the administrative overhead associated with manual order processing, providing bakery owners with a centralized, scalable, and user-friendly platform to manage their online sales efficiently.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "e_commerce"
+   ],
+   "topic": [],
+   "technology": [
+    "go",
+    "nextjs",
+    "react",
+    "postgresql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "food_beverage",
+     "label": "Food and Beverage (Bakery)",
+     "status": "used",
+     "evidence": "\"BakeFlow is a comprehensive, web-based bakery order management system designed to streamline the purchasing process for both consumers and business owners\" (p.21)"
+    },
+    {
+     "key": "social_commerce",
+     "label": "Social Commerce",
+     "status": "used",
+     "evidence": "\"The rapid expansion of social commerce—purchases driven through popular chat platforms like Messenger has created a paradigm shift for independent businesses. Bakeries, in particular, thrive on this conversational commerce model\" (p.8)"
+    }
+   ],
+   "technology": [
+    {
+     "key": "gorilla_mux",
+     "label": "Gorilla Mux",
+     "status": "used",
+     "evidence": "\"Utilizing net/http and gorilla/mux, the API exposes structured endpoints to connect the client to backend services\" (p.23)"
+    },
+    {
+     "key": "jwt",
+     "label": "JSON Web Token (JWT)",
+     "status": "used",
+     "evidence": "\"the server returns a secure JSON Web Token (JWT). The frontend stores this token and includes it in the Authorization header\" (p.18)"
+    },
+    {
+     "key": "cloudinary",
+     "label": "Cloudinary",
+     "status": "used",
+     "evidence": "\"receiving an image upload via Cloudinary, securely storing the URL\" (p.24); \"instant visual rendering of the Cloudinary-hosted slip URLs\" (p.43)"
+    },
+    {
+     "key": "tailwind",
+     "label": "Tailwind CSS",
+     "status": "used",
+     "evidence": "\"The Next.js frontend, styled with Tailwind CSS, provided a native-feeling experience directly within the chat app's webview\" (p.43)"
+    },
+    {
+     "key": "xlsx",
+     "label": "SheetJS xlsx",
+     "status": "used",
+     "evidence": "\"Using the xlsx library, the frontend constructs a dynamic workbook\" for .xlsx financial exports (p.20)"
+    },
+    {
+     "key": "ngrok",
+     "label": "ngrok",
+     "status": "used",
+     "evidence": "\"Secure tunneling software (ngrok) was utilized to expose the local Next.js frontend and Go backend to the public internet\" (p.42)"
+    },
+    {
+     "key": "facebook_messenger",
+     "label": "Facebook Messenger",
+     "status": "used",
+     "evidence": "\"Customers can successfully access the menu via Messenger without a password login\" (p.31); \"leveraging Messenger APIs, the system successfully pushes automated chat messages back to the user\" (p.43)"
+    }
+   ]
+  }
+ },
+ {
+  "id": "26007",
+  "canonical_title": "LotusLIB - Application for scanning MTG cards",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "ITX 3009",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Aleksandr Romanov",
+    "student_id": "6530338"
+   },
+   {
+    "name": "Mya Wut Ye Phoo",
+    "student_id": "6530232"
+   }
+  ],
+  "advisor": "A. Jinchun Lu",
+  "committee": [
+   "Asst. Prof. Dr. Darun Kesrarat",
+   "Asst. Prof. Dr. Thanachai Thumthawatworn"
+  ],
+  "abstract": "LotusLIB is a mobile application for Magic: The Gathering enthusiasts that streamlines card cataloging and collection valuation. The app performs on-device CNN inference using TensorFlow Lite to identify a card from the camera, then shows card details and lets users add it to their collection or perform other tasks. A Node.js/Express API with MongoDB Atlas powers authentication, card search with filters, profile management, file uploads, and a news feed seeded from public MTG sources. The mobile application captures frames using the device camera and detects the card region using OpenCV-based rectangle detection. The cropped image is then processed by a TensorFlow Lite model that performs on-device classification to identify the card. We document scope, related work, methodology, ROI, and a system design covering workflow, architecture, tech stack, UI/UX, and database schema. Results summarize the trained model footprint and mobile inference loop, including evaluations and matrices. We conclude with pragmatic upgrade paths: quantization, transfer learning (MobileNetV3-Small), a lightweight detector front-end, backend extensions for per-user collection sync, as well as semi-automatic Sorting System integration in the future.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "software_application"
+   ],
+   "platform": [
+    "android",
+    "mobile"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "express",
+    "java",
+    "mongodb",
+    "nodejs",
+    "opencv",
+    "tensorflow"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "trading_card_games",
+     "label": "Trading Card Games (Magic: The Gathering)",
+     "status": "used",
+     "evidence": "\"LotusLIB addresses the tedious task of managing physical MTG collections\" (p.1); the whole app scans, prices, and catalogs Magic: The Gathering cards"
+    }
+   ],
+   "technology": [
+    {
+     "key": "tensorflow_lite",
+     "label": "TensorFlow Lite",
+     "status": "used",
+     "evidence": "\"a compact convolutional neural network (CNN) trained for card classification and exported as a TensorFlow Lite model for mobile inference\" (p.8); \"The cropped image is passed to a TensorFlow Lite classifier\" (p.14)"
+    },
+    {
+     "key": "camerax",
+     "label": "Android CameraX",
+     "status": "used",
+     "evidence": "\"The Android application continuously analyzes camera frames using the CameraX library\" (p.14)"
+    },
+    {
+     "key": "mongoose",
+     "label": "Mongoose",
+     "status": "used",
+     "evidence": "\"Node 20 ESM Express server; MongoDB via Mongoose; JWT auth; file uploads via Multer to /uploads\" (p.15)"
+    },
+    {
+     "key": "render",
+     "label": "Render (cloud hosting)",
+     "status": "used",
+     "evidence": "\"The backend API is hosted on Render, enabling the mobile application to communicate with the server through a stable and public API endpoint\" (p.3)"
+    },
+    {
+     "key": "mongodb_atlas",
+     "label": "MongoDB Atlas",
+     "status": "used",
+     "evidence": "\"Database hosted on MongoDB Atlas\" (System Architecture, Hosting and Deployment, p.27)"
+    },
+    {
+     "key": "jsonwebtoken",
+     "label": "jsonwebtoken (JWT)",
+     "status": "used",
+     "evidence": "\"Secures endpoints with authentication middleware based on jsonwebtoken\" (p.3); admin login \"returns 8-hour JWT\" (p.42)"
+    },
+    {
+     "key": "multer",
+     "label": "Multer",
+     "status": "used",
+     "evidence": "\"file uploads via Multer to /uploads (served statically)\" (p.15)"
+    },
+    {
+     "key": "scryfall",
+     "label": "Scryfall API",
+     "status": "used",
+     "evidence": "\"Scryfall API → Card information and prices... called periodically by cron jobs to keep data fresh\" (p.26); \"seeds cards by set+collector_number against Scryfall\" (p.15)"
+    },
+    {
+     "key": "keras",
+     "label": "Keras",
+     "status": "used",
+     "evidence": "\"Best Keras checkpoint saved; converted to TFLite float32\" (p.13); training uses Adam optimiser with ModelCheckpoint and EarlyStopping callbacks (p.12)"
+    },
+    {
+     "key": "mobilenetv3",
+     "label": "MobileNetV3",
+     "status": "cited",
+     "evidence": "Related work only: \"Transfer learning with MobileNetV3 / EfficientNet-B0... Decision now: Deferred\" (p.5)"
+    },
+    {
+     "key": "yolo",
+     "label": "YOLO (YOLO-Nano)",
+     "status": "cited",
+     "evidence": "Related work only: \"One-stage detectors (e.g., YOLO-Nano)... Decision now: Deferred\" (p.6)"
+    }
+   ]
+  }
+ }
+]

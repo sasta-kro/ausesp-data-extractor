@@ -1,0 +1,332 @@
+[
+ {
+  "id": "2138",
+  "canonical_title": "AU Room Reservation: Smart Room Reservation Management for University",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CSX 3010 / ITX 3009",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Nutnisa Thongrussamee",
+    "student_id": "6213106"
+   },
+   {
+    "name": "Kasemdet Soommart",
+    "student_id": "6213639"
+   }
+  ],
+  "advisor": "Dr. Songsak Channarukul",
+  "committee": [
+   "A. Chayapol Moemeng",
+   "A. Kiratijuta Bhumichitr"
+  ],
+  "abstract": "The purpose of the AU Room Reservation System is to manage booking details such as booking details and room details because we discovered that the university used paper for faculty admin to book rooms, but it was quite difficult for students to book rooms for any study or project discussion, but the AU reservation system makes it easy for staff to manage room reservation management system via the web application. Room and booking information can be easily recorded, checked, created, modified, and deleted by staff. AU Room Reservation is the smart room reservation management system for Assumption university. It is used to manage and reserve a room in the university which it uses instead of paper-based reservation. For user platform, it is mainly focused on the student via the iOS and kiosk application. For the staff platform, there is a web application that staff can manage such as creating new rooms, setting rooms, or deleting rooms. Staff also can check the reservation history and manage the admin accounts via this application.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web",
+    "ios",
+    "android"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [],
+   "technology": [
+    "react"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "kiosk",
+     "label": "Kiosk / room-side display terminal",
+     "status": "used",
+     "evidence": "Section 1.1: 'Another platform is an Android kiosk application for displaying today's schedule in each room that has a kiosk.'"
+    }
+   ],
+   "domain": [],
+   "technology": [
+    {
+     "key": "html5",
+     "label": "HTML5",
+     "status": "used",
+     "evidence": "Section 3.2.4: 'built with the React framework 17.0.2 and HTML 5.'"
+    },
+    {
+     "key": "visual_studio",
+     "label": "Visual Studio",
+     "status": "used",
+     "evidence": "Section 3.2.4: 'Visual Studio is used to create the application, which is built with the React framework 17.0.2 and HTML 5.'"
+    },
+    {
+     "key": "qr_code",
+     "label": "QR code check-in",
+     "status": "used",
+     "evidence": "Section 1.4: 'check-in which scans the QR code for using the room. The second is a kiosk application that is generated a QR code for check-in and display timeslot.'"
+    },
+    {
+     "key": "google_forms",
+     "label": "Google Forms",
+     "status": "used",
+     "evidence": "Section 4.2: 'We use the google form that users can rate scored satisfaction from 1 to 5'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2140",
+  "canonical_title": "AU TOKEN: Smart Tokens for Assumption University Using Blockchain",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Sanpawat Sewsuwan",
+    "student_id": "6113187"
+   },
+   {
+    "name": "Saharat Tiewkunupakan",
+    "student_id": "6114520"
+   },
+   {
+    "name": "Thanapol Sopanhari",
+    "student_id": "6113632"
+   }
+  ],
+  "advisor": "A. Kiratijuta Bhumichitr",
+  "committee": [
+   "Dr Songsak Channarukul",
+   "A Chayapol Moemeng"
+  ],
+  "abstract": "Students have an explicit goal in mind when studying. Even so, they are probably lost toward the destination. Besides, they sometimes lose motivation for some subjects or do not fully enjoy the student life due to the excessive focus on the goal. From the institution's perspective, recruiting the staff for some activities is also challenging if students are not wholeheartedly joyful. With all the spotted problems, the virtual currencies that can incentivize students to put more effort and act as a sub-goal to regain the motivation are tremendously necessary.\n\nAU Token, known as ATK, is an education application built on Hyperledger Fabric to establish the infrastructure of permissioned blockchain. It aims to provide the virtual currencies system and serve as a foundation for further applications. ATK has two tokens: Academic token, known as ACA, and lifestyle token, known as LIF. These two can be used to purchase the privilege capable of improving student life experience using the ATK for Student in iOS platform to interact with the blockchain. To fulfill the transparency and trustworthy characteristics, ATK provides ATK Explorer to display transactions happening in the system. Furthermore, for ease of governing, ATK provides ATK Admin to the concerned party of the university to manage the privileges and token distribution.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "ios",
+    "web"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [
+    "gamification"
+   ],
+   "technology": [
+    "swift",
+    "nodejs",
+    "react"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "tokenomics",
+     "label": "Tokenomics / campus virtual economy",
+     "status": "used",
+     "evidence": "Section 3.1: 'ATK is a multi-token system that establishes the virtual economic ecosystem with the intent to be deployed in Assumption University.'"
+    }
+   ],
+   "technology": [
+    {
+     "key": "hyperledger_fabric",
+     "label": "Hyperledger Fabric",
+     "status": "used",
+     "evidence": "Section 1.2: 'ATK stands for AU Token, which is an education application using Hyperledger Fabric as a permissioned blockchain.'"
+    },
+    {
+     "key": "typescript",
+     "label": "TypeScript",
+     "status": "used",
+     "evidence": "Section 4.1: 'The second part is the API services that interact with the blockchain. These components use NodeJS and TypeScript as a tech stack.'"
+    },
+    {
+     "key": "dotnet",
+     "label": ".NET 6",
+     "status": "used",
+     "evidence": "Section 4.1: 'The frameworks used to implement are .NET 6 and SQL Server.'"
+    },
+    {
+     "key": "sql_server",
+     "label": "Microsoft SQL Server",
+     "status": "used",
+     "evidence": "Section 4.4.2: 'ATK uses Microsoft SQL Server as the off-chain database.'"
+    },
+    {
+     "key": "couchdb",
+     "label": "Apache CouchDB",
+     "status": "used",
+     "evidence": "Section 2.2.1.1: 'In spite of that, ATK utilizes CouchDB since the business logic is not simple enough only to use LevelDB.'"
+    },
+    {
+     "key": "raft",
+     "label": "Raft consensus protocol",
+     "status": "used",
+     "evidence": "Section 2.2.2: 'For our blockchain application, we use Raft protocol for the ordering service'"
+    },
+    {
+     "key": "docker",
+     "label": "Docker",
+     "status": "used",
+     "evidence": "Section 5.1.2: 'The performance testing is performed on the docker in localhost.'"
+    },
+    {
+     "key": "leveldb",
+     "label": "LevelDB",
+     "status": "cited",
+     "evidence": "Section 2.2.1.1: 'LevelDB is a fast key-value storage library written at Google... By default, the world state uses this database for storing the state' (evaluated, not adopted; ATK chose CouchDB)"
+    },
+    {
+     "key": "kafka",
+     "label": "Apache Kafka",
+     "status": "cited",
+     "evidence": "Section 2.2: 'they can change the consensus protocols, including Raft or Apache Kafka' (discussed alternative only)"
+    },
+    {
+     "key": "ethereum",
+     "label": "Ethereum / ERC-20",
+     "status": "cited",
+     "evidence": "Section 3.1.1: 'the token has an equivalent standard as an ERC20 token, a fungible token standard of Ethereum base'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2141",
+  "canonical_title": "CV Exercise Coach",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Yuxiao Chen",
+    "student_id": "6118492"
+   },
+   {
+    "name": "Zijian Zhou",
+    "student_id": "6128492"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "A. Tapanan Yeophantong",
+   "A. Pawut Satitsuksanoh"
+  ],
+  "abstract": "In this project, after the camera is connected and recognized, we collect the skeleton point data through OpenPose and compare it with the data of the standard action x. If the difference between the user's skeleton point data and the data of the standard action x is not large, it is determined to be successful and counted successfully. If there is a large gap between the user's skeleton point data and the standard action x's data, it will be judged as failure and the failure will be counted. Users can choose the one they want to try among the 4 sports, enter the target success count, and display the success count and failure count after completing the success counts.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "healthcare"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "python",
+    "opencv",
+    "mysql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "fitness",
+     "label": "Fitness and exercise coaching",
+     "status": "used",
+     "evidence": "Section 1.2: 'The project should contain 4 sports (squat, lunges, bench and push up).'"
+    }
+   ],
+   "technology": [
+    {
+     "key": "openpose",
+     "label": "OpenPose",
+     "status": "used",
+     "evidence": "Section 2.2: 'For skeletal recognition, we choose OpenPose to help us.'"
+    },
+    {
+     "key": "pyqt",
+     "label": "PyQt",
+     "status": "used",
+     "evidence": "Section 2.2: 'For UI, we choose PyQt to help us.'"
+    },
+    {
+     "key": "pyinstaller",
+     "label": "PyInstaller",
+     "status": "used",
+     "evidence": "Section 3.1: 'Package them all with Pyinstaller.'"
+    },
+    {
+     "key": "caffe",
+     "label": "Caffe",
+     "status": "used",
+     "evidence": "Section 3.2: 'Then install pybind, caffe, cuda, and use the visual studio to create an OpenPose demo.'"
+    },
+    {
+     "key": "cuda",
+     "label": "CUDA",
+     "status": "used",
+     "evidence": "Section 3.2: 'Then install pybind, caffe, cuda, and use the visual studio to create an OpenPose demo.'"
+    },
+    {
+     "key": "cmake",
+     "label": "CMake",
+     "status": "used",
+     "evidence": "Section 3.2: 'Then we use the CMake to add environment variables.'"
+    },
+    {
+     "key": "visual_studio",
+     "label": "Visual Studio",
+     "status": "used",
+     "evidence": "Section 3.2: 'use the visual studio to create an OpenPose demo'"
+    },
+    {
+     "key": "mediapipe",
+     "label": "MediaPipe",
+     "status": "cited",
+     "evidence": "Section 2.1.3: 'Use mediapipe and OpenCV that tracks Push-ups with angles' (related work)"
+    },
+    {
+     "key": "st_gcn",
+     "label": "ST-GCN (spatio-temporal graph convolutional network)",
+     "status": "cited",
+     "evidence": "Section 2.1.5: 'Use ST-GCN to do the human realization of human movement recognition' (related work, abandoned)"
+    },
+    {
+     "key": "coco",
+     "label": "COCO dataset",
+     "status": "cited",
+     "evidence": "Section 2.1.2: 'Here he used pose_hrnet_w48_256*192 pretrained on COCO dataset with 17 joints.' (related work)"
+    }
+   ]
+  }
+ }
+]

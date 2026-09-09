@@ -1,0 +1,325 @@
+[
+ {
+  "id": "2128",
+  "canonical_title": "Pro Timer",
+  "aliases": [
+   "ProTimer"
+  ],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "PhonePyaeKyawSwar",
+    "student_id": "6118156"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "Paitoon Porntrakoon",
+   "Suparwat Charoenvikrom"
+  ],
+  "abstract": "Shooting ranges in Thailand needed a simple tool for measuring shooting speed, but existing shot timer applications were complicated, not user friendly, and often paid. The project built Pro Timer, an Android application that records shot time and split time by detecting the sound of each shot. It was developed in Android Studio with Kotlin and uses Firebase for authentication, profile data, profile pictures, and shooting history. Users can adjust sound sensitivity in decibels and save up to 40 rounds per session with dated history. Testing on a real device led to fixes such as a single button design, UI adjustment to the target device, and a decibel value option converted from amplitude.",
+  "abstract_source": "generated",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "android"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [],
+   "technology": [
+    "kotlin",
+    "firebase"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "shooting_sports",
+     "label": "Shooting sports training",
+     "status": "used",
+     "evidence": "This application will be used by shooting range trainers and trainees when they are training."
+    }
+   ],
+   "technology": [
+    {
+     "key": "android_studio",
+     "label": "Android Studio",
+     "status": "used",
+     "evidence": "For tech stack, I use android studio with kotlin and use firebase as a backend."
+    },
+    {
+     "key": "firestore",
+     "label": "Cloud Firestore",
+     "status": "used",
+     "evidence": "In firebase firestore, I store user profile data such as age and name."
+    },
+    {
+     "key": "firebase_auth",
+     "label": "Firebase Authentication",
+     "status": "used",
+     "evidence": "Authentication stores email addresses and generates UID for each user."
+    },
+    {
+     "key": "firebase_storage",
+     "label": "Firebase Storage",
+     "status": "used",
+     "evidence": "I use firebase storage to store the profile pictures."
+    }
+   ]
+  }
+ },
+ {
+  "id": "2130",
+  "canonical_title": "Video Analytics from IP Cameras for Smart Homes",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Sochivoath Chiv",
+    "student_id": "6128304"
+   },
+   {
+    "name": "Dao Trung Kien",
+    "student_id": "6128302"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "Dr. Kwankamol Nongpong",
+   "A. Piyakul Tillpart"
+  ],
+  "abstract": "Medical Alert systems are in high demand in the healthcare industry. Furthermore, with a generally ageing population, medical alert systems that assist family members and caretakers in nursing homes are extremely sought after. Fall detection systems have been a hot topic of research over the past two decades as fall accidents are one of the most fatal yet frequent occurrences an elderly person may experience. The goal of our project is to create a robust and accurate fall detection system as well as a portable demonstration kit for the management of BAKSTERS to demonstrate our system to the stakeholders and potential customers. By utilising PoseNet's pose estimation model to extract skeletal data from image frames, our system analyses a series of skeletal information through Deep Learning to identify the event of a fall. Through this methodology, our model in conjunction with the demo kit was able to perform with over 94% accuracy when detecting and notifying the user of fall events. Having tested in multiple different environments, we have produced a highly reliable fall detection system that is robust and accurate when utilising the portable demonstration kit.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "desktop",
+    "web"
+   ],
+   "domain": [
+    "healthcare"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "python",
+    "opencv",
+    "tensorflow",
+    "flask"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "hikvision_camera",
+     "label": "HikVision IP camera",
+     "status": "used",
+     "evidence": "Table 4.1 List of Demo Kit Equipment and Prices: HikVision Camera with protective box."
+    }
+   ],
+   "domain": [
+    {
+     "key": "elderly_care",
+     "label": "Elderly care and fall detection",
+     "status": "used",
+     "evidence": "The goal of our project is to create a robust and accurate fall detection system... fall accidents are one of the most fatal yet frequent occurrences an elderly person may experience."
+    },
+    {
+     "key": "smart_home",
+     "label": "Smart home monitoring",
+     "status": "used",
+     "evidence": "Produce a robust, automated, indoor home monitoring and fall detection system (title: Video Analytics from IP Cameras for Smart Homes)."
+    }
+   ],
+   "technology": [
+    {
+     "key": "posenet",
+     "label": "PoseNet pose estimation",
+     "status": "used",
+     "evidence": "Our approach analyses a series of the subject's skeletal information obtained from PoseNet's pose estimation model to determine the event of a fall."
+    },
+    {
+     "key": "keras",
+     "label": "Keras",
+     "status": "used",
+     "evidence": "The creation, training and utilisation of our deep learning model was done through the use of Tensorflow and Keras."
+    },
+    {
+     "key": "lstm",
+     "label": "LSTM recurrent layer",
+     "status": "used",
+     "evidence": "The deep learning model combines convolutional neural networks (CNN) to perform feature extraction on each skeletal instance with an LSTM layer to extract temporal information."
+    },
+    {
+     "key": "kalman_filter",
+     "label": "Kalman tracker",
+     "status": "used",
+     "evidence": "PoseNet itself works as a pseudo-person detector and can therefore be combined with a distance-based Kalman Tracker to produce a custom PoseNet-based tracking algorithm."
+    },
+    {
+     "key": "line_messaging_api",
+     "label": "LINE Messaging API",
+     "status": "used",
+     "evidence": "The main module used for notification is the official Line API SDK."
+    },
+    {
+     "key": "google_drive_api",
+     "label": "Google Drive API v3",
+     "status": "used",
+     "evidence": "To access the google drive, the system used the Drive API v3 module for developers."
+    },
+    {
+     "key": "bootstrap",
+     "label": "Bootstrap",
+     "status": "used",
+     "evidence": "The web UI was coded using Bootstraps open source framework with custom CSS, HTML and Javascript scripts where necessary."
+    },
+    {
+     "key": "numpy",
+     "label": "NumPy",
+     "status": "used",
+     "evidence": "Other notable modules used in the system: Numpy - data manipulation and processing."
+    },
+    {
+     "key": "openpose",
+     "label": "OpenPose",
+     "status": "cited",
+     "evidence": "Although PoseNet may be less accurate than other pose estimation models such as OpenPose, PoseNet was intended to run on mobile devices."
+    },
+    {
+     "key": "movenet",
+     "label": "MoveNet",
+     "status": "cited",
+     "evidence": "Future works include... it might prove interesting to experiment with other types of pose estimation models such as MoveNet and OpenPose."
+    }
+   ]
+  }
+ },
+ {
+  "id": "2131",
+  "canonical_title": "VMS Chatbot - Chinese WeChat Auto Reply Bot",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CSX3010/ITX3009",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Hao Ye",
+    "student_id": "6238023"
+   },
+   {
+    "name": "Zheqi Shen",
+    "student_id": "6238426"
+   },
+   {
+    "name": "Dawei Song",
+    "student_id": "6228447"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "A. Chayapol Moemeng",
+   "Asst. Prof. Dr. Benjawan Srisura"
+  ],
+  "abstract": "Nowadays, artificial intelligence is increasingly prosperous, and there are many related technical practices and products. Based on information retrieval related technologies, combined with crawler, text analysis, natural language processing and other related technologies to form intelligent chatbots, although chatbots are not particularly complex and core in nature However, as an interaction point of scientific research applications and an important way of human-computer interaction, its significance is self-evident. This experiment is based on web crawler technology, basic ideas of information retrieval, basic natural language processing knowledge, network application deployment, Server configuration and deployment, WeChat platform application external connection and other related theoretical knowledge and technical means, completely independently realize the construction of WeChat public account background chat robot, and realize convenient and effective communication between users and intelligent robots.",
+  "abstract_source": "document",
+  "reported_keywords": [
+   "web crawling",
+   "artificial intelligence",
+   "chatbot",
+   "WeChat public account background development",
+   "network application service deployment",
+   "chatterbot"
+  ],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [
+    "nlp"
+   ],
+   "technology": [
+    "python",
+    "flask"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "wechat",
+     "label": "WeChat public account platform",
+     "status": "used",
+     "evidence": "It is placed in a personal WeChat official account. Users can search and add it directly through the WeChat official account function."
+    }
+   ],
+   "domain": [],
+   "technology": [
+    {
+     "key": "chatterbot",
+     "label": "ChatterBot library",
+     "status": "used",
+     "evidence": "VMS WeChat chatbot is a chatbot for vms Chinese students trained through python's chatterbot library."
+    },
+    {
+     "key": "wechat_api",
+     "label": "WeChat public account API",
+     "status": "used",
+     "evidence": "Finally, the robot's answer was returned to the user through the WeChat API interface."
+    },
+    {
+     "key": "tencent_cloud",
+     "label": "Tencent Cloud server",
+     "status": "used",
+     "evidence": "We use Tencent Cloud as our server to connect to WeChat."
+    },
+    {
+     "key": "ubuntu_server",
+     "label": "Ubuntu Server 20.04 LTS",
+     "status": "used",
+     "evidence": "For the Tencent cloud environment, in our project we chose Ubuntu Server 20.04 LTS."
+    },
+    {
+     "key": "anaconda",
+     "label": "Anaconda",
+     "status": "used",
+     "evidence": "Then set up the anaconda environment and all other required environments and install the library in the administrator mode."
+    },
+    {
+     "key": "xmltodict",
+     "label": "xmltodict",
+     "status": "used",
+     "evidence": "We use the unparse method to convert the dict dictionary data in Python into an xml string, and then return specific xml structure data to respond to the user's POST request."
+    }
+   ]
+  }
+ }
+]

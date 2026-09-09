@@ -1,0 +1,286 @@
+[
+ {
+  "id": "2242",
+  "canonical_title": "EDU Ratings",
+  "aliases": [
+   "EDU Rating",
+   "EDU RATINGS"
+  ],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Yuxiao Chen",
+    "student_id": "6118492"
+   },
+   {
+    "name": "Zijian Zhou",
+    "student_id": "6128492"
+   },
+   {
+    "name": "Shizhu Bao",
+    "student_id": "6118444"
+   }
+  ],
+  "advisor": "Dr Tapanan Yeophantong",
+  "committee": [
+   "Dr Piyakul Tillapart",
+   "Dr Kwankamol Nongpong"
+  ],
+  "abstract": "In our project, we have created a standalone website where anyone can log in and access the ratings and evaluations of teachers for each course offered at our school. Additionally, students can register their own accounts, which can be used to link to their enrolled courses and provide weekly evaluations and ratings for their teachers. Each school will also be given an administrator account, allowing administrators to register teacher accounts and create courses. Teachers can create new courses and view student evaluations of their performance using their unique email-based accounts. Our website also includes systems for filtering inappropriate language and dynamic character displays, making it more sophisticated and polished. We think that a teacher evaluation system is an essential tool for educational institutions to ensure high-quality instruction and effective learning outcomes.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [],
+   "technology": [
+    "react",
+    "mysql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "ant_design",
+     "label": "Ant Design (Antd)",
+     "status": "used",
+     "evidence": "Page 26: \"We use Antd Design [20] to create the mobile and tablet versions. Antd Design is a popular UI library for building React-based web applications.\""
+    },
+    {
+     "key": "sqlite",
+     "label": "SQLite",
+     "status": "used",
+     "evidence": "Page 23: \"For database, we choose SQLite, Redis, MySQL.\""
+    },
+    {
+     "key": "redis",
+     "label": "Redis",
+     "status": "used",
+     "evidence": "Page 23: \"For database, we choose SQLite, Redis, MySQL.\""
+    },
+    {
+     "key": "elasticsearch",
+     "label": "Elasticsearch",
+     "status": "used",
+     "evidence": "Page 20: \"Implement search functionality: To implement search functionality, we use Elasticsearch.\""
+    },
+    {
+     "key": "d3_js",
+     "label": "D3.js",
+     "status": "used",
+     "evidence": "Page 20: \"Implement data visualization: we use chart libraries, D3.js) to visualize rating and commenting data.\""
+    },
+    {
+     "key": "oauth_2",
+     "label": "OAuth 2.0",
+     "status": "used",
+     "evidence": "Page 20: \"Implement user authentication: To implement rating and commenting functionality, user authentication needs to be carried out. We use OAuth 2.0.\""
+    },
+    {
+     "key": "bootstrap",
+     "label": "Bootstrap",
+     "status": "used",
+     "evidence": "Page 20: \"Design and implement frontend UI: Use React and Bootstrap to implement frontend UI, including login, registration, search, rating, comment, and other functions.\""
+    },
+    {
+     "key": "vultr",
+     "label": "Vultr cloud",
+     "status": "used",
+     "evidence": "Page 27: \"We use VULTR[21] for our system testing.\""
+    }
+   ]
+  }
+ },
+ {
+  "id": "2248",
+  "canonical_title": "A Smart Garden for Thai Plants",
+  "aliases": [
+   "IoT Smart Garden for Thai Plant"
+  ],
+  "phase": "final",
+  "course_code": "CSX 3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Burapa Jerdnapapornpun",
+    "student_id": "6113143"
+   },
+   {
+    "name": "Phatbophit Wonganan",
+    "student_id": "6211018"
+   },
+   {
+    "name": "Phuthanet Khumbamrung",
+    "student_id": "6211148"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Dobri Atanassov Batovski",
+  "committee": [
+   "Pawut Satitsuksanoh",
+   "Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan"
+  ],
+  "abstract": "This research aims to design and develop a smart garden system for Thai plants. The system incorporates sensors, automation, and data analysis to optimize the growth and health of selected Thai plants. The study investigates the use of available low-cost sensors to monitor soil moisture, temperature, humidity, as well as the use of automation for watering. Data collected from the sensors is further analyzed. The goal of this study is to improve the efficiency and productivity of Thai plant cultivation while reducing the labor and resources required.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "hardware_iot"
+   ],
+   "platform": [
+    "embedded_hardware"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [],
+   "technology": []
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "agriculture",
+     "label": "Agriculture and smart farming",
+     "status": "used",
+     "evidence": "Page 6: \"The use of Internet of Things (IoT) technology in agriculture, also known as precision agriculture, has been an active area of research in recent years.\" The whole system targets Thai plant cultivation."
+    }
+   ],
+   "technology": [
+    {
+     "key": "esp8266",
+     "label": "ESP8266 (NodeMCU V3)",
+     "status": "used",
+     "evidence": "Page 15: \"Figure 4-5 is Node MCU V3 ESP8266 WiFi are used for connecting and power IoT device and sensors\""
+    },
+    {
+     "key": "mcp3008",
+     "label": "MCP3008 ADC chip",
+     "status": "used",
+     "evidence": "Page 22: \"It starts by including two libraries: \\\"MCP3008.h\\\" and \\\"DHT.h\\\". The MCP3008 library is used to communicate with an MCP3008 analog-to-digital converter chip\""
+    },
+    {
+     "key": "dht22",
+     "label": "DHT22 temperature and humidity sensor",
+     "status": "used",
+     "evidence": "Page 21: \"This is the board that we connected with eight soil moisture sensors and one DHT22 to check temperature and humidity.\""
+    },
+    {
+     "key": "cpp",
+     "label": "C++",
+     "status": "used",
+     "evidence": "Page 24: \"Figure 4-16 show the source code which is written in C++ and is intended to be run on an ESP8266 microcontroller.\""
+    },
+    {
+     "key": "arduino",
+     "label": "Arduino platform",
+     "status": "used",
+     "evidence": "Page 24: \"The MCP3008 library is used to communicate with an MCP3008 analog-to-digital converter chip, which is connected to the Arduino board through four pins\""
+    },
+    {
+     "key": "coolterm",
+     "label": "CoolTerm serial terminal",
+     "status": "used",
+     "evidence": "Page 34: \"we used third party program (Cool term) to capture the data into a text file and used it for the analysis\""
+    },
+    {
+     "key": "mqtt",
+     "label": "MQTT protocol",
+     "status": "cited",
+     "evidence": "Reference [2]: \"Smart Garden with IoT Based Real Time Communication using MQTT Protocol\""
+    }
+   ]
+  }
+ },
+ {
+  "id": "2250",
+  "canonical_title": "Cinemo: Bookings, Ratings, and Reviews",
+  "aliases": [
+   "Cinemo"
+  ],
+  "phase": "final",
+  "course_code": "CS3200 / IT 4291",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Rohit Kumar Setthachok",
+    "student_id": "5915356"
+   },
+   {
+    "name": "Haiao Ji",
+    "student_id": "6138009"
+   },
+   {
+    "name": "Ha Ngoc Bao Linh",
+    "student_id": "6138310"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan",
+  "committee": [
+   "Asst. Prof. Dr. Benjawan Srisura",
+   "Asst. Prof. Dr. Dobri Atanassov Batovski"
+  ],
+  "abstract": "A lot of customers are currently facing many problems regarding booking a movie in a cinema hall. So therefore we created a plan to ease all of the problems by creating a web application and with this kind of an idea the customers will no longer have to physically go to the cinema to reserve a movie ticket.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [],
+   "technology": [
+    "php",
+    "mysql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "javascript",
+     "label": "JavaScript",
+     "status": "used",
+     "evidence": "Page 10, Tech Stack: \"a. Front-End: CSS and Javascript\""
+    },
+    {
+     "key": "css",
+     "label": "CSS",
+     "status": "used",
+     "evidence": "Page 10, Tech Stack: \"a. Front-End: CSS and Javascript\""
+    },
+    {
+     "key": "github",
+     "label": "GitHub",
+     "status": "used",
+     "evidence": "Reference [1]: \"Github Link: https://github.com/rohitks1997/Cinemo\""
+    }
+   ]
+  }
+ }
+]

@@ -1,0 +1,352 @@
+[
+ {
+  "id": "2251",
+  "canonical_title": "The Smart Dry Box",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT 4291",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Jiahui Ouyang",
+    "student_id": "6028009"
+   }
+  ],
+  "advisor": "Pawut Satitsuksanoh",
+  "committee": [
+   "Asst. Prof. Dr. Thanachai Thumthawatworn",
+   "Asst. Prof. Dr. Paitoon Porntrakoon"
+  ],
+  "abstract": "Simple remote control (infrared remote control) has become the past, and products in the present era send instructions to products through connecting to the Internet. People expect that automation can make tasks easy, comfortable, fast and efficient. Here introduces an innovative solution for humidity control and monitoring with the use of an intelligent drying box system. The proposed system utilizes a Peltier dehumidifier, a Blynk-based microcontroller (NodeMCU ESP8266), and a humidity sensor (DHT 11) to maintain a certain humidity environment for storing moisture-sensitive materials such as electronic components, camera lenses, and musical instruments. The Blink application monitors the humidity level remotely through smart phones or computers, allowing users to receive notifications of humidity level fluctuations and make necessary adjustments to the humidity value in the box. The smart drying box system offers several advantages over traditional humidity control methods. Firstly, the system provides an affordable and practical solution to maintain a certain humidity environment, making it suitable for personal or commercial use. Compared to traditional drying boxes that can stabilize humidity values on the market, the proposed system is more cost-effective, making it accessible to a wider range of users. Secondly, the Blynk app enables remote control and monitoring capabilities, allowing users to make necessary adjustments from a distance. This feature makes the system ideal for applications in which constant monitoring is required, such as museums, archives, and galleries.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "hardware_iot"
+   ],
+   "platform": [
+    "embedded_hardware",
+    "web"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [],
+   "technology": []
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "esp8266",
+     "label": "NodeMCU ESP8266",
+     "status": "used",
+     "evidence": "The NodeMCU ESP8266 module in Figure.2(a) is used to enable wireless communication between the IoT cloud (Blynk) and the smart dry box system."
+    }
+   ],
+   "domain": [],
+   "technology": [
+    {
+     "key": "blynk",
+     "label": "Blynk IoT platform",
+     "status": "used",
+     "evidence": "In this project, Blynk is used to enable remote monitoring and control of the dehumidifier."
+    },
+    {
+     "key": "arduino",
+     "label": "Arduino IDE",
+     "status": "used",
+     "evidence": "The Arduino IDE is used in this project to program and upload code to the NodeMCU ESP8266 microcontroller."
+    },
+    {
+     "key": "cplusplus",
+     "label": "C++ (Arduino)",
+     "status": "used",
+     "evidence": "The NodeMCU ESP8266 is programmed using the Arduino IDE, which supports programming languages including C++."
+    },
+    {
+     "key": "mqtt",
+     "label": "MQTT messaging protocol",
+     "status": "used",
+     "evidence": "Blynk is a mobile front-end builder and signaling relay (MQTT); MQTT is a lightweight messaging protocol designed for machine-to-machine (M2M) and Internet of Things (IoT) applications."
+    },
+    {
+     "key": "dht11",
+     "label": "DHT11 temperature/humidity sensor",
+     "status": "used",
+     "evidence": "The DHT 11 in Figure.2(b) is a digital temperature and humidity sensor that can accurately measure and report the temperature and relative humidity of the environment."
+    },
+    {
+     "key": "tec1_12706",
+     "label": "TEC1-12706 Peltier thermoelectric module",
+     "status": "used",
+     "evidence": "In this project, the Tec1-12706 is used as a dehumidifier by cooling one side of the plate to condense moisture from the air."
+    },
+    {
+     "key": "html",
+     "label": "HTML",
+     "status": "used",
+     "evidence": "Design an html page that can know what the user's operation is and submit those values to the ESP8266 microcontroller."
+    }
+   ]
+  }
+ },
+ {
+  "id": "2254",
+  "canonical_title": "Virtual Reality Game Developer “Zurgirial”",
+  "aliases": [
+   "Zurgirial"
+  ],
+  "phase": "final",
+  "course_code": "ITX 3010",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Chanoknon Tangthienkul",
+    "student_id": "6217412"
+   },
+   {
+    "name": "Pakin Charoenchanachai",
+    "student_id": "6210195"
+   },
+   {
+    "name": "Atita Kasemporntaweekit",
+    "student_id": "6211015"
+   }
+  ],
+  "advisor": "Dr. Kwankamol Nongpong",
+  "committee": [
+   "A. Chayapol Moemeng",
+   "A. Tapanan Yeophantong"
+  ],
+  "abstract": "Within this report, we discuss the objective along with the scope of the project, the method that we have been using, the implementation that we have on this project, and the result that we got from Senior Project 2. Throughout the years of study under the Vincent Marry School of Science and Technology at ABAC, there are many projects developed on this ground. We do realize that the Virtual Reality game development concept was used by a few or maybe no one has ever done this before, so we do decide to take this as an opportunity to make something new, based on Virtual Reality technology. Using tools such as Virtual Reality Software Development Kit or the VRSDK, it does give developers the tools which were necessary for this project development, it does helping us to build an immersive experience as the expected result, Unity game engine and Blender, those will be mainly used for game design, whether it is the gameplay, map, and in-game object design, also the Unity game engine is beginner friendly that can be used for creating both three-dimensional (3D), and two-dimensional (2D) object, also it can be used for developing any interactive simulation. For this project, Unity is mainly being used for the map and level design, and blenders for objects and characters design.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "game"
+   ],
+   "platform": [
+    "android",
+    "game"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [],
+   "technology": [
+    "unity",
+    "csharp"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "oculus_quest",
+     "label": "Oculus Quest (Meta VR headset)",
+     "status": "used",
+     "evidence": "we aim to make this project to be available on Oculus platform, the project was made and also designed to be optimized with the Oculus by Meta."
+    }
+   ],
+   "domain": [],
+   "technology": [
+    {
+     "key": "virtual_reality",
+     "label": "Virtual Reality (VR)",
+     "status": "used",
+     "evidence": "the game “Zurgirial” has been developed in Virtual Reality (VR), virtual reality shooting games are a thrilling and immersive way to experience gaming."
+    },
+    {
+     "key": "blender",
+     "label": "Blender 3D",
+     "status": "used",
+     "evidence": "For this project, Unity is mainly being used for the map and level design, and blenders for objects and characters design."
+    },
+    {
+     "key": "android_sdk",
+     "label": "Android SDK",
+     "status": "used",
+     "evidence": "The Android SDK (Software Development Kit) is being used for building the .abb file format, and upload for validation on Oculus Quest."
+    },
+    {
+     "key": "android_ndk",
+     "label": "Android NDK",
+     "status": "used",
+     "evidence": "3.1.9 NDK: The programming is optimized for VR, considering the constraints of the hardware and the need for high-performance graphics."
+    },
+    {
+     "key": "jdk",
+     "label": "Java Development Kit (JDK)",
+     "status": "used",
+     "evidence": "The development of a VR shooting game involves AI NavMesh, Materials system, JDK, SDK, and NDK to complies the build for VR."
+    },
+    {
+     "key": "vr_sdk",
+     "label": "VR Software Development Kit (VRSDK)",
+     "status": "used",
+     "evidence": "Using tools such as Virtual Reality Software Development Kit or the VRSDK, it does give developers the tools which were necessary for this project development."
+    },
+    {
+     "key": "navmesh",
+     "label": "NavMesh AI pathfinding",
+     "status": "used",
+     "evidence": "In this project, a Navigation Mesh can be used to provide pathfinding for enemies or other characters in the game world."
+    },
+    {
+     "key": "fsm",
+     "label": "Finite State Machine (FSM) enemy AI",
+     "status": "used",
+     "evidence": "In this project, a Finite State Machine can be used to control the behavior of enemies or other characters in the game world."
+    },
+    {
+     "key": "il2cpp",
+     "label": "IL2CPP Unity backend",
+     "status": "used",
+     "evidence": "System design table (4.1): Object Design Unity, Blender; Backend ILCPP; Database Unity Collection."
+    }
+   ]
+  }
+ },
+ {
+  "id": "2255",
+  "canonical_title": "VUE MUSIC—a web platform of music",
+  "aliases": [
+   "VUE MUSIC"
+  ],
+  "phase": "final",
+  "course_code": null,
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Huayi Tao",
+    "student_id": "6138425"
+   },
+   {
+    "name": "Xianyun Su",
+    "student_id": "6228443"
+   },
+   {
+    "name": "Jicheng Xu",
+    "student_id": "6117561"
+   }
+  ],
+  "advisor": "Dr. Kwankamol Nongpong",
+  "committee": [
+   "Asst. Prof. Dr. Paitoon Porntrakoon",
+   "Chayapol Moemeng"
+  ],
+  "abstract": "Our project is to design a web music platform, the purpose is to solve the problems some users encounter when using related music software, including music recognition function, music recommendation function and so on. The corresponding algorithms will be used to realize these functions. Finally, after testing, our music platform meets our design purpose and requirements, and all functions are running normally.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [
+    "recommender_system"
+   ],
+   "technology": [
+    "mysql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "music_streaming",
+     "label": "Music streaming and discovery",
+     "status": "used",
+     "evidence": "Our project is to design a web music platform ... including music recognition function, music recommendation function and so on."
+    }
+   ],
+   "technology": [
+    {
+     "key": "spring_boot",
+     "label": "Spring Boot",
+     "status": "used",
+     "evidence": "Development Environment (3.1): Backend Framework: Springboot v2.3.3."
+    },
+    {
+     "key": "vue_js",
+     "label": "Vue.js",
+     "status": "used",
+     "evidence": "Development Environment (3.1): Frontend Framework: VUE v2.9.6."
+    },
+    {
+     "key": "java",
+     "label": "Java",
+     "status": "used",
+     "evidence": "Development Platform: Windows 11, Java 8 (JDK 1.8), Maven v3.6.1, Python3.7; Development Languages: Java, JavaScript, Python."
+    },
+    {
+     "key": "javascript",
+     "label": "JavaScript",
+     "status": "used",
+     "evidence": "Development Languages: Java, JavaScript, Python."
+    },
+    {
+     "key": "python",
+     "label": "Python",
+     "status": "used",
+     "evidence": "Development Platform: Windows 11, Java 8 (JDK 1.8), Maven v3.6.1, Python3.7."
+    },
+    {
+     "key": "scipy",
+     "label": "SciPy",
+     "status": "used",
+     "evidence": "To address this issue, a method was implemented using Scipy library (for detecting local maxima in the spectrum)."
+    },
+    {
+     "key": "maven",
+     "label": "Apache Maven",
+     "status": "used",
+     "evidence": "Development Platform: Windows 11, Java 8 (JDK 1.8), Maven v3.6.1, Python3.7."
+    },
+    {
+     "key": "navicat",
+     "label": "Navicat Premium",
+     "status": "used",
+     "evidence": "Databases and tools: MySQL 5.7, Navicat Premium 16."
+    },
+    {
+     "key": "django",
+     "label": "Django",
+     "status": "used",
+     "evidence": "Another popular Python web framework, Django, connects the back end to the front end ... compatibility with the front-end framework used, Vue, makes Django the most suitable choice for connecting the back."
+    },
+    {
+     "key": "flask",
+     "label": "Flask",
+     "status": "used",
+     "evidence": "Initially, Flask, a popular Python web framework, was utilized to connect the backend to the frontend ... Ultimately, the Flask framework was abandoned due to these challenges."
+    },
+    {
+     "key": "audio_fingerprinting",
+     "label": "Audio fingerprinting",
+     "status": "used",
+     "evidence": "Song recognition is just a kind of audio fingerprint retrieval, and it is the core algorithm of automatic content recognition technology in the field of artificial intelligence."
+    },
+    {
+     "key": "dejavu",
+     "label": "DejaVu audio fingerprinting library",
+     "status": "cited",
+     "evidence": "References [3] https://github.com/worldveil/dejavu."
+    }
+   ]
+  }
+ }
+]
