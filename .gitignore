@@ -12,3 +12,5 @@ all-senior-projects/
 .venv/
 output/
 __pycache__/
+
+.tmp-prepared/
