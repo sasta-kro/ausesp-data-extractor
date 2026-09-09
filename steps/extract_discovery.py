@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Pull the final JSON array from an agent transcript JSONL into ground-truth/discovery/.
+"""Pull the final JSON array from a recorded reading-session log into ground-truth/discovery/.
 
 Usage: python3 steps/extract_discovery.py <output-file> <chunk-number>
 Validates the array, drops placeholder records (empty title or non-numeric id),

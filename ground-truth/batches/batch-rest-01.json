@@ -22,7 +22,6 @@
    "Suparwat Charoenvikrom"
   ],
   "abstract": "Shooting ranges in Thailand needed a simple tool for measuring shooting speed, but existing shot timer applications were complicated, not user friendly, and often paid. The project built Pro Timer, an Android application that records shot time and split time by detecting the sound of each shot. It was developed in Android Studio with Kotlin and uses Firebase for authentication, profile data, profile pictures, and shooting history. Users can adjust sound sensitivity in decibels and save up to 40 rounds per session with dated history. Testing on a real device led to fixes such as a single button design, UI adjustment to the target device, and a decibel value option converted from amplitude.",
-  "abstract_source": "generated",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -104,7 +103,6 @@
    "A. Piyakul Tillpart"
   ],
   "abstract": "Medical Alert systems are in high demand in the healthcare industry. Furthermore, with a generally ageing population, medical alert systems that assist family members and caretakers in nursing homes are extremely sought after. Fall detection systems have been a hot topic of research over the past two decades as fall accidents are one of the most fatal yet frequent occurrences an elderly person may experience. The goal of our project is to create a robust and accurate fall detection system as well as a portable demonstration kit for the management of BAKSTERS to demonstrate our system to the stakeholders and potential customers. By utilising PoseNet's pose estimation model to extract skeletal data from image frames, our system analyses a series of skeletal information through Deep Learning to identify the event of a fall. Through this methodology, our model in conjunction with the demo kit was able to perform with over 94% accuracy when detecting and notifying the user of fall events. Having tested in multiple different environments, we have produced a highly reliable fall detection system that is robust and accurate when utilising the portable demonstration kit.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -244,7 +242,6 @@
    "Asst. Prof. Dr. Benjawan Srisura"
   ],
   "abstract": "Nowadays, artificial intelligence is increasingly prosperous, and there are many related technical practices and products. Based on information retrieval related technologies, combined with crawler, text analysis, natural language processing and other related technologies to form intelligent chatbots, although chatbots are not particularly complex and core in nature However, as an interaction point of scientific research applications and an important way of human-computer interaction, its significance is self-evident. This experiment is based on web crawler technology, basic ideas of information retrieval, basic natural language processing knowledge, network application deployment, Server configuration and deployment, WeChat platform application external connection and other related theoretical knowledge and technical means, completely independently realize the construction of WeChat public account background chat robot, and realize convenient and effective communication between users and intelligent robots.",
-  "abstract_source": "document",
   "reported_keywords": [
    "web crawling",
    "artificial intelligence",
@@ -351,7 +348,6 @@
    "A. Suparwat Charoenvikrom"
   ],
   "abstract": "Buying wine is an experience unlike purchasing other foods and beverages. Interaction and service are also key factors in deciding whether or not to purchase an item. Merchants that sell their products in wine cellars must also employ personal consultants (PC) to support and assist customers. To support both PCs and customers, our voice application can also assist customers during their breaks in selecting wines. The customer can interact with the application by speaking or by typing and using the app to select wines. Then, the wine cellar staff will be notified and be able to assist the customer in payments and packaging. After gathering user feedback for our system, we realize that some features require adjustments to better satisfy the user's needs. In the future, given time and resources, we would like to implement these changes.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -458,7 +454,6 @@
    "A. Tapanan Yeophantong"
   ],
   "abstract": "Many companies want to gather data from their customers or users but are unable to do so, because they might be a small company. Big companies like Facebook and Google have enormous amounts of data about all their users but face many privacy issues and concerns. Small companies don't want enormous amounts of data but just enough to help with their research. That is the problem we're going to solve. As a solution, we will build a platform for companies to host surveys on a website and gather user's opinions and data. A web scraper will help gather images to display to the user while a search expansion will help analyze the user's responses and scrape better images to display while also increasing the accuracy. For our senior project, our system will scrape images from the internet, take survey answers from users as well as perform search expansion for higher accuracy and performance.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -563,7 +558,6 @@
    "A. Kiratijuta Bhumichitr"
   ],
   "abstract": "The purpose of the AU Room Reservation System is to manage booking details such as booking details and room details because, in the past, we discovered that the university used paper for faculty admin to book rooms, but it was quite difficult for ordinary students to book rooms for any study or project discussion, but the AU reservation system makes it easy for staff to book rooms on the website. Room and booking information can be easily recorded, checked, created, modified, and deleted by staff. AU Room Reservation is a smart room reservation management tool for universities that runs on three platforms: iOS, Android, and Web. It focuses on booking each student. An Android kiosk application for showing today's schedule in each room with a kiosk is another platform. The final platform is a web application platform for maintaining and checking any reservations, as well as managing each room and each booking..",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -659,7 +653,6 @@
    "A. Kiratijuta Bhumichitr"
   ],
   "abstract": "The purpose of the AU Room Reservation System is to manage booking details such as booking details and room details because we discovered that the university used paper for faculty admin to book rooms, but it was quite difficult for students to book rooms for any study or project discussion, but the AU reservation system makes it easy for staff to manage room reservation management system via the web application. Room and booking information can be easily recorded, checked, created, modified, and deleted by staff. AU Room Reservation is the smart room reservation management system for Assumption university. It is used to manage and reserve a room in the university which it uses instead of paper-based reservation. For user platform, it is mainly focused on the student via the iOS and kiosk application. For the staff platform, there is a web application that staff can manage such as creating new rooms, setting rooms, or deleting rooms. Staff also can check the reservation history and manage the admin accounts via this application.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -746,7 +739,6 @@
    "A Chayapol Moemeng"
   ],
   "abstract": "Students have an explicit goal in mind when studying. Even so, they are probably lost toward the destination. Besides, they sometimes lose motivation for some subjects or do not fully enjoy the student life due to the excessive focus on the goal. From the institution's perspective, recruiting the staff for some activities is also challenging if students are not wholeheartedly joyful. With all the spotted problems, the virtual currencies that can incentivize students to put more effort and act as a sub-goal to regain the motivation are tremendously necessary.\n\nAU Token, known as ATK, is an education application built on Hyperledger Fabric to establish the infrastructure of permissioned blockchain. It aims to provide the virtual currencies system and serve as a foundation for further applications. ATK has two tokens: Academic token, known as ACA, and lifestyle token, known as LIF. These two can be used to purchase the privilege capable of improving student life experience using the ATK for Student in iOS platform to interact with the blockchain. To fulfill the transparency and trustworthy characteristics, ATK provides ATK Explorer to display transactions happening in the system. Furthermore, for ease of governing, ATK provides ATK Admin to the concerned party of the university to manage the privileges and token distribution.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -868,7 +860,6 @@
    "A. Pawut Satitsuksanoh"
   ],
   "abstract": "In this project, after the camera is connected and recognized, we collect the skeleton point data through OpenPose and compare it with the data of the standard action x. If the difference between the user's skeleton point data and the data of the standard action x is not large, it is determined to be successful and counted successfully. If there is a large gap between the user's skeleton point data and the standard action x's data, it will be judged as failure and the failure will be counted. Users can choose the one they want to try among the 4 sports, enter the target success count, and display the success count and failure count after completing the success counts.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -988,7 +979,6 @@
    "Dr Rachsuda Setthawong"
   ],
   "abstract": "Fake news has caused many problems around the world that lead to many people have become a victim of this seemingly uncontrollable problem. What's make fake news so dangerous is that anyone can post it especially in this covid-19 situation where the trend of the increasing of number of people who use internet. Many people tried to prevent these fake news problems and contain it to be as minimal as possible including the Government. Thailand Government's ministry of digital economy and society has created a website called antifakenewscenter.com which contain all fake news and real news that has been confirmed by the Government ministry, but it has some minor problems such as unable to handle fuzzy matching and hard to use. After seeing these problems, I decided to create a solution for people who find it hard to use the service provided by the ministry. My service is an google chrome extension that help checking Thai fake news using the data from antifakenewscenter.com We use google chrome extension because of two reasons. First due to, people can easily install the extension into their chrome client and use our service. And secondly, majority of Thailand population are using google chrome as their main browser.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -1086,7 +1076,6 @@
    "A. Piyakul Tillapart"
   ],
   "abstract": "Real-time estimations of the presence of people in a space can help administrators better manage a space, save unnecessary costs, and provide better services. In this paper, we propose a technique to estimate the number of mobile devices in a certain place at a certain time through the Wi-Fi probe request issued by the device with a wireless network function, so as to judge whether there is a person in the place. Compared with the method using camera detection, the cost of this method is lower, and the privacy of people in the venue can be better protected. We also provide a front-end page that makes it easier for administrators to view real-time or period data reports. It also supports real-time notification of administrators when certain conditions are triggered, such as when the number of people exceeds so that corresponding measures can be carried out.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -1157,7 +1146,6 @@
   "advisor": null,
   "committee": [],
   "abstract": "The project designed and built a low-cost occupancy monitoring system using an 8x8 pixel AMG8833 IR thermal sensor, which preserves privacy because it senses people by body heat rather than cameras. Temperature data from the sensor was read with an AMG8833 Python library and saved as JSON, then used to train a machine learning model with scikit-learn. The system runs on a microcontroller with the sensor, visualizes the room as a heatmap, and serves a Flask web interface that records data to Firebase Realtime Database. It displays low, medium, and high occupancy levels and shows an alert when occupancy reaches the maximum. Testing at the Baksters office reported 98 to 100 percent accuracy for indoor temperatures between 21 and 31 degrees Celsius when people passing at average walking speed measured above 35 degrees. The main limitation is that it is still hard to distinguish a human from a moving heat source.",
-  "abstract_source": "generated",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -1234,7 +1222,6 @@
    "Dr. Darun Kesrarat"
   ],
   "abstract": "This project is aimed at developing a website that suggests recipes to the user based on the ingredients the user has indicated that they have. Users can create and log into their own personal accounts and their personal database will be created which contains all the information regarding the ingredients they have selected. Once they have logged in, the user is able to indicate what ingredients they currently have. Once they have finished selecting all the ingredients that they have, the website will then show a list of all the dishes that are able to be made from the ingredients that the user has indicated they have.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -1323,7 +1310,6 @@
    "Asst. Prof. Dr. Benjawan Srisura"
   ],
   "abstract": "In this report we discuss the purpose behind the project we have chosen, the methods used, the implications applied and the results we have acquired for our senior project 1. Throughout the years, we have seen students of ABAC building many projects for the university, but not all of them have been an engaging project targeting the visitors of ABAC and also realizing very few have used the concept of Augmented Reality, we saw this as an opportunity to build something in this concentration. Using tools such as Lightship Augmented Reality Developer Kit (ARDK), which gives developers the tools they need to create immersive, multiplayer experiences and bring them to life in the real world, and Unity Game Engine, which is a beginner friendly tool that can be used to create three-dimensional (3D) and two-dimensional (2D) games, as well as interactive simulations and other experiences, for this project we created three interactive games which could be played in three different locations of Assumption University, Bangna Campus.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -1409,7 +1395,6 @@
    "Asst. Prof. Dr. Anilkumar Kothalil"
   ],
   "abstract": "Not to mention Nowadays Mobile Applications have become a daily part of our lives. When it comes to delivery of any type, applications have become a necessity. It is pretty common for people to use apps for ordering food, travelling and moving in and out of houses. That's where my app comes in. My App Deliverit is a mobile Application that helps people do deliveries from places. It not only helps people have types of truck services but is a way for private drivers to make an extra income. Big industries can use my application for properly maintaining their vehicles for delivery as well.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [

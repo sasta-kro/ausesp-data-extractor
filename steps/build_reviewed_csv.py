@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Build the reviewed import CSV from agent-read ground truth.
+"""Build the reviewed import CSV from the hand-transcribed ground truth.
 
-Inputs: ground-truth/sample.json (first reviewed batch) plus every JSON file
-in ground-truth/batches/. Output: output/reviewed-import.csv in the exact
-AUSE Discovery import schema. Records missing an abstract or a title are
-dropped and reported; the application rejects such rows anyway.
+Inputs: every JSON file in ground-truth/batches/. Output:
+output/reviewed-import.csv in the exact AUSE Discovery import schema.
+Records missing an abstract or a title are dropped and reported; the
+application rejects such rows anyway.
 
 Usage: python3 steps/build_reviewed_csv.py [--taxonomy <values.yaml>]
 """

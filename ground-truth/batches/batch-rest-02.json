@@ -20,7 +20,6 @@
    "Dr. Khaing Sandar Htun"
   ],
   "abstract": "This project aims to develop a fitness information management system web application.. By developing according to the existing fitness center management system with the help of technologies such as PHP, MySQL with observation evidence. Which all tasks in the system can be done through a web browser. There are three main users for this system. Firstly, members. Members can search for class schedules, both personal trainer and fitness instructor schedules and can apply for a course.Secondly,trainers. Trainers can edit their personal information and check their own schedules,and accept member's appointments. Lastly, the administrator. The administrator can manage user information,check the payment information, report member's payment,check daily income,collect bad debts,office management,member services,check trainer information,trainer salary information report. The end results of the project showed that the system reduces the time of work, makes the service faster, helps to solve problems, process error work to facilitate the issuance of a summary report.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -128,7 +127,6 @@
    "Asst. Prof. Dr. Paitoon Porntrakoon"
   ],
   "abstract": "With the new industrial revolution looming over our generation, the rise of emerging technology is a common occurrence in our age. These many fascinating innovations may seem that they are still early in their development cycle yet their potential to reach the heights to impact history is always present. One of these is Web 3.0, a group of technologies that once combined, contributes to the third generation of the internet. The main constituents are blockchain where it acts as a digital ledger, smart contracts that are programmable to provide functionality, and cryptocurrencies where it provides value towards this technology. We take all these properties into consideration when we are building our Web 3.0 decentralized application.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -259,7 +257,6 @@
    "Tapanan Yeophantong"
   ],
   "abstract": "The Air Quality Measuring Station is a tool created to keep track of numerous environmental factors that have an impact on a certain area's air quality. It has sensors that can monitor the amount of carbon monoxide (CO), humidity, temperature, and particulate matter with sizes of 2.5 and 10 micrometers (PM2.5 and PM10). These factors are crucial in determining a location's air quality and any potential health dangers for people. The station delivers real-time data that can be accessed remotely and makes reliable measurements of these parameters. Policymakers, health professionals, and the general public can utilize the gathered data to guide their decisions about how to lessen air pollution and enhance overall air quality.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -422,7 +419,6 @@
    "Pawut Satitsuksanoh"
   ],
   "abstract": "ABAC John Paul Sport Center has various type of sport facilities available for all teachers and students, so this department have a lot of data of court booking or facilities reservation in per day. From the research about the current reservation system of John Paul Sport Center, our team found that all the data now be collected in paper also we can check the status of all court only at the sport center that is uncomfortable for both user and staff. Our team want to solve this problem by creating the court reservation system on website which can check the court status, make the booking, and show analysis dashboard (available for the staff). Moreover, we want to make the system easier and more comfortable to access by the user and staff.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -550,7 +546,6 @@
    "Asst. Prof. Dr. Paitoon Porntrakoon"
   ],
   "abstract": "Greenhouse Plating is a system that help in agriculture and farming. It is monitoring and configurating the variable value such as temperature, light intensity, and soil moisture. The user can register and linked the system to the application, they can config the profile by fingertip. The smart greenhouse is a revolution in agriculture, creating a self-regulating, microclimate suitable for plant growth using sensors, monitoring and control systems that optimize growth conditions and automate the growing process. The user could make configuration and monitoring the crops via smartphone, moreover the system will cover the system notification that will notify the user when the system starts or stop working.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -657,7 +652,6 @@
    "A. Kiratijuta Bhumichitr"
   ],
   "abstract": "As students, one of the biggest hurdles in class is the ineffectiveness to learn the class materials from a classroom setting. Whether it is a problem with the teachers time or method of instruction, or the incapacity of fellow classmates to help. Oftentimes they turn to tutorship, only to find out that the broad offerings from tutors online varies in range and experience, costing them time and money for searches that often ends unsatisfactory. Au Tutify aims to provide students with tutors who have the precise experience that the students need. With Au tutify, the tutees would be able to see the exact course offered and choose only the tutors with the same experience on it.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -752,7 +746,6 @@
    "A. Chayapol Moemeng"
   ],
   "abstract": "Smart home systems have been widespread and in high demand. However, the seemingly sky-high prices and commitment to certain brands make them accessible to a few households. To serve our client's request for a smart home system within a low-mid budget, we implemented a system using the existing WIFI network, microcontroller units, and conventional home appliances. The system is complete with smart light bulbs, door sensors, gas sensors, and temperature sensors. The users interact with the system via a web application interface deployed and hosted locally. While we have also successfully deployed the application using Heroku, we recommended that the client use the local version for security reasons. In the future, we would seek additional guidance to implement greater security measures to safeguard the client's home so we can deploy the system online. There are also many improvements and adjustments we would like to make for the future, all of which are discussed later in this report.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -897,7 +890,6 @@
    "Kiratijuta Bhumichitr"
   ],
   "abstract": "There are many boardgame in the real world. Some could be played in a cooperative way or competitive way. For the old styles, we could gather up and play the game on the table and have some fun. Now, technology has changed the world. We can now play board games online. So, we don't need to meet each other to play the game. Our team wants to develop one of them to play with friends too. The game that we selected to develop is 'Avalon'. We want to create this to be an online web application that anybody can play. The point of developing this project is to use WebSocket to send the right information to the right person since each role comes up with different task to do.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -1003,7 +995,6 @@
    "Asst. Prof. Dr. Benjawan Srisura"
   ],
   "abstract": "The Education Agency Support System is a web application aimed at addressing the challenges faced by Hearts & Minds International Education Co., Ltd. in generating cost estimations. The system provides a comprehensive solution that streamlines the agency's processes and makes it easier for staff to do their jobs. All features are cost estimation, expenses list, setup information, visa management, exchange rate management, and the ability to include a company banner on PDF files. The web application platform offers a user-friendly interface. The Education Agency Support System project is designed to help the agency generate cost estimations efficiently.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -1088,7 +1079,6 @@
    "A. Dobri Atanassov Batovski"
   ],
   "abstract": "The Bikebuster project is an automated system designed to detect motorcycles illegally riding on sidewalks and report offenders to the authorities. The primary goal of the project is to enhance safety for pedestrians by reducing the number of motorcycles on sidewalks, which pose a significant safety risk. In addition, the illegal use of sidewalks can cause damage to footpaths, exacerbating the problem. The Bikebuster project is motivated by the need to address these issues and improve enforcement of existing laws and regulations. The system uses a combination of hardware and software components to detect and capture images of offending motorcycles, which are then reported to the authorities via a reporting website. The project has the potential to generate passive income by sharing fines imposed on offenders with the system operator. However, safety remains the top priority in the implementation of this system. Overall, the Bikebuster project aims to improve safety for pedestrians and reduce the damage caused by illegal activity on sidewalks.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -1224,7 +1214,6 @@
    "A. Tapanan Yeophantong"
   ],
   "abstract": "This paper discusses our unity game project called “The Grand Collection”, a horror game that aims to offer an engaging and challenging experience for players. The game is designed to challenge the player with time-based objectives, making it an exciting and entertaining gaming experience. This paper aims to give readers an understanding of how the game was created and how it challenges players by providing details about the development process of the game, including its design, features, model assets and mechanics.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -1295,7 +1284,6 @@
    "A. Piyakul Tillapart"
   ],
   "abstract": "This report outlines the development of an integrated order management system for online merchants with multiple shops on platforms such as Shopee and Lazada. The system allows merchants to gather all orders from different online platforms into one central system, enabling them to see all their orders in a single view. Additionally, the system provides tools for merchants to create vouchers and coupons that can be redeemed by customers who purchase products from any of their shops, regardless of the platform. Customers can view their point balances and available coupons via a Line Official Account, where they are required to login using their name and phone number. The report concludes that this system can help merchants manage their online sales more effectively and build stronger customer relationships through targeted promotions and rewards.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -1414,7 +1402,6 @@
    "Dr Kwankamol Nongpong"
   ],
   "abstract": "In our project, we have created a standalone website where anyone can log in and access the ratings and evaluations of teachers for each course offered at our school. Additionally, students can register their own accounts, which can be used to link to their enrolled courses and provide weekly evaluations and ratings for their teachers. Each school will also be given an administrator account, allowing administrators to register teacher accounts and create courses. Teachers can create new courses and view student evaluations of their performance using their unique email-based accounts. Our website also includes systems for filtering inappropriate language and dynamic character displays, making it more sophisticated and polished. We think that a teacher evaluation system is an essential tool for educational institutions to ensure high-quality instruction and effective learning outcomes.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -1519,7 +1506,6 @@
    "Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan"
   ],
   "abstract": "This research aims to design and develop a smart garden system for Thai plants. The system incorporates sensors, automation, and data analysis to optimize the growth and health of selected Thai plants. The study investigates the use of available low-cost sensors to monitor soil moisture, temperature, humidity, as well as the use of automation for watering. Data collected from the sensors is further analyzed. The goal of this study is to improve the efficiency and productivity of Thai plant cultivation while reducing the labor and resources required.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -1622,7 +1608,6 @@
    "Asst. Prof. Dr. Dobri Atanassov Batovski"
   ],
   "abstract": "A lot of customers are currently facing many problems regarding booking a movie in a cinema hall. So therefore we created a plan to ease all of the problems by creating a web application and with this kind of an idea the customers will no longer have to physically go to the cinema to reserve a movie ticket.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [

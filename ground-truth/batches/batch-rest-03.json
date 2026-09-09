@@ -20,7 +20,6 @@
    "Asst. Prof. Dr. Paitoon Porntrakoon"
   ],
   "abstract": "Simple remote control (infrared remote control) has become the past, and products in the present era send instructions to products through connecting to the Internet. People expect that automation can make tasks easy, comfortable, fast and efficient. Here introduces an innovative solution for humidity control and monitoring with the use of an intelligent drying box system. The proposed system utilizes a Peltier dehumidifier, a Blynk-based microcontroller (NodeMCU ESP8266), and a humidity sensor (DHT 11) to maintain a certain humidity environment for storing moisture-sensitive materials such as electronic components, camera lenses, and musical instruments. The Blink application monitors the humidity level remotely through smart phones or computers, allowing users to receive notifications of humidity level fluctuations and make necessary adjustments to the humidity value in the box. The smart drying box system offers several advantages over traditional humidity control methods. Firstly, the system provides an affordable and practical solution to maintain a certain humidity environment, making it suitable for personal or commercial use. Compared to traditional drying boxes that can stabilize humidity values on the market, the proposed system is more cost-effective, making it accessible to a wider range of users. Secondly, the Blynk app enables remote control and monitoring capabilities, allowing users to make necessary adjustments from a distance. This feature makes the system ideal for applications in which constant monitoring is required, such as museums, archives, and galleries.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -124,7 +123,6 @@
    "A. Tapanan Yeophantong"
   ],
   "abstract": "Within this report, we discuss the objective along with the scope of the project, the method that we have been using, the implementation that we have on this project, and the result that we got from Senior Project 2. Throughout the years of study under the Vincent Marry School of Science and Technology at ABAC, there are many projects developed on this ground. We do realize that the Virtual Reality game development concept was used by a few or maybe no one has ever done this before, so we do decide to take this as an opportunity to make something new, based on Virtual Reality technology. Using tools such as Virtual Reality Software Development Kit or the VRSDK, it does give developers the tools which were necessary for this project development, it does helping us to build an immersive experience as the expected result, Unity game engine and Blender, those will be mainly used for game design, whether it is the gameplay, map, and in-game object design, also the Unity game engine is beginner friendly that can be used for creating both three-dimensional (3D), and two-dimensional (2D) object, also it can be used for developing any interactive simulation. For this project, Unity is mainly being used for the map and level design, and blenders for objects and characters design.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -243,7 +241,6 @@
    "Chayapol Moemeng"
   ],
   "abstract": "Our project is to design a web music platform, the purpose is to solve the problems some users encounter when using related music software, including music recognition function, music recommendation function and so on. The corresponding algorithms will be used to realize these functions. Finally, after testing, our music platform meets our design purpose and requirements, and all functions are running normally.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -380,7 +377,6 @@
    "Dr. Phyo Min Tun"
   ],
   "abstract": "SkillSync is a comprehensive academic collaboration/networking mobile application on the google play store designed specifically for ABAC students who seek to connect and collaborate on projects, even across different faculties and disciplines. The system addresses the challenges of traditional collaboration methods by providing skill-based discovery, real-time project posting, and seamless communication integration. Built using Flutter for cross-platform compatibility, Firebase for backend services, and published through Professor Chayapol Moemeng's google play store developer account “Rehatcher” for external exposure, SkillSync serves a unified community of ABAC students authenticated exclusively through their institutional Microsoft accounts. The application features real-time direct messaging, project contribution requests, notification management, and an intelligent profile system that showcases each student's skills, major, and academic background to ensure meaningful and complementary team formation.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -469,7 +465,6 @@
    "A. Mana Tanachan"
   ],
   "abstract": "This report includes the detailed development of AUGo, an iOS social campus application that integrates Augmented Reality (AR) with an interactive map. The project addresses low student engagement and inefficient communication at Assumption University by centralizing campus announcements, events, and social interactions into one unified platform. It eliminates the need to monitor scattered social media groups and messaging apps, making campus information easily accessible through an interactive map. AUGo supports three user roles: Students explore campus via AR, collect 3D objects, and discover events; Announcers publish location-based announcements to increase visibility; and Administrators moderate content and user activity. Key features include AR-based collection, real-time notifications, and a social feed with geotagged posts. The iOS app is built using Swift, with MapKit for map integration, and ARKit for AR features. The app is supported by Firebase for handling authentication, database, and notifications. The admin dashboard is developed with TypeScript and deployed on Vercel using a serverless architecture. AUGo demonstrates how combining AR with social and map features can improve campus life, with potential for future expansions to make university events more interactive and engaging.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -603,7 +598,6 @@
    "A. Mana Thanachan"
   ],
   "abstract": "Finding and coordinating study groups remains a persistent challenge for university students, often leading to wasted time, missed sessions, and lost peer learning opportunities. This Senior Project presents AU Study Group Finder, a centralized web platform developed to remove the friction from peer collaboration at Assumption University. The system simplifies the process of study group formation, scheduling, and communication by providing a structured environment where students can discover groups based on shared courses, topics, or upcoming examinations. The platform is built using TypeScript and Tailwind CSS for the frontend, with a PHP Laravel backend and PostgreSQL database, deployed on Railway cloud infrastructure. It features a four-tier role system comprising Admin, Moderator, Leader, and Member, each with clearly defined permissions and responsibilities. Key functionalities include group discovery and management, recurring session scheduling with calendar tracking, real-time group chat with smart notifications, a karma-based reward system that incentivizes positive participation, and a comprehensive admin dashboard for platform oversight and engagement analytics. Evaluation of the system demonstrated that AU Study Group Finder effectively addresses the core challenges of peer collaboration by consolidating group formation, communication, and scheduling into a single accessible platform. The system contributes to improved study session attendance, reduced cancellations, and enhanced exam preparation through structured peer learning.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -726,7 +720,6 @@
    "A. Sakchhi Paudel"
   ],
   "abstract": "EduQuest is a gamified educational web platform designed to improve student engagement in learning through role-playing game (RPG) mechanics. The system combines quiz-based assessment with interactive gameplay, where students answer questions, fight bosses, gain experience points (XP), level up, and collect items. The system supports three user roles: student, teacher, and admin. Teachers can create and manage courses, build quiz quests manually or by CSV import, and monitor student performance. Students can join classes through OTP-based enrollment, complete quests, and track their own growth through profile and inventory systems. Admin users oversee platform operations, including course approval, user management, and report resolution. EduQuest is implemented using React and Phaser for the frontend experience, Node.js/Express for backend services, and MongoDB for persistent storage. Security measures include JWT authentication, password hashing with bcrypt, and rate limiting for sensitive endpoints.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -913,7 +906,6 @@
    "A. Sakchhi Paudel"
   ],
   "abstract": "Sportify is an AI-supported fitness application developed to address three persistent issues in personal wellness management: fragmented tracking tools, limited personalized guidance, and declining user motivation. The proposed system integrates workout tracking, calorie logging, conversational AI support, and a rule-based achievement system within a single mobile platform. By combining practical self-monitoring functions with a user-friendly multilingual interface, the project aims to help users manage fitness goals more consistently and with less cognitive effort. The system adopts a mobile-first architecture using React Native and Expo for the frontend, Node.js and Express for backend services, Supabase for cloud data storage, JSON Web Token for authentication, and HuggingFace services for natural-language interaction. As a senior project prototype, Sportify demonstrates the feasibility of integrating intelligent assistance and gamification into a practical health application. Although the system still relies on manual data entry and has not yet undergone large-scale user evaluation, it provides a strong foundation for future enhancements such as wearable integration, richer analytics, and more advanced recommendation logic.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -1045,7 +1037,6 @@
    "A. Jinchun Lu"
   ],
   "abstract": "This project introduces a 3D motion-controlled Rail Shooter Game where players can control the game with their body and hands instead of using traditional devices such as keyboards and mice or external controllers. Developed using the Unity Game Engine and integrated with the MediaPipe Unity Plugin, the system detects real-time body pose via a standard PC webcam, which is then translated into the game to move, aim, and shoot. The core technology stack consists of Unity (C#) for rendering and gameplay logic, and Google's MediaPipe Pose (BlazePose) model for 33-point anatomical landmark detection, bridged through a native C++ interop layer to avoid the latency penalties of network socket communication. The game employs a dual-stream control architecture: the player’s nose landmark (index 0) drives spatial navigation of an in-game spaceship, while wrist landmarks (indices 15 and 16) independently control two aiming crosshairs with an automatic firing system. The system follows a component-based architecture, consistent with Unity’s compound game engine design, where focused MonoBehaviour scripts communicate through C# static events, serialized Inspector references, and singleton services. Multiple layers of smoothing, including Vector3.SmoothDamp, exponential moving averages, velocity dead zones, and DOTween easing, are applied to filter natural human jitter from the tracking data without introducing excessive input lag. The project aims to make motion-controlled gaming, typically associated with expensive VR headsets or specialized controllers like the Nintendo Wii and the Nintendo Switch, more accessible to anyone with a basic computer setup. User evaluation at the Senior Project Exhibition with 42 participants yielded an average experience rating of 8.98 out of 10, with 97.6% of players expressing willingness to play again. The system achieved a stable 60 FPS during active gameplay with sub-100ms input latency, demonstrating that computer vision algorithms can be optimized for real-time, standalone PC gaming applications.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -1187,7 +1178,6 @@
    "A. Sakchhi Paudel"
   ],
   "abstract": "UltraCare is a posed-based fall detection and emergency alert system that is designed to improve safety for elderly and high-risked individuals by detecting fall automatically and notifying caregivers in real time. The system processes live video from a CCTV/RTSP camera and uses a human pose estimation model to track key points and movement patterns. To reduce false alarms, it applies a hybrid fall decision method that combines multiple signals such as posture change (from standing to lying), body orientation, sudden head drop, and motion intensity across consecutive frames. Once a fall is detected and confirmed, the system triggers an event notification to a backend server and upload a short video clip as the evidence for faster verification and response. The solution is designed with practical development in mind, supporting continuous monitoring, cooldown control to prevent repeated alerts. Overall, UltraCare provides a reliable and scalable approach to automatic fall detection that helps shorten and quick response time to reduce the risk of severe injury in real-world care environments.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -1323,7 +1313,6 @@
    "A. Jichun Lu"
   ],
   "abstract": "Convenient Park Hotel Management System is developed in collaboration with the hotel to help in managing hotel operations, guest bookings, and internal communication workflows.\n\nIt provides a centralized platform where guests can browse available rooms, make reservations, and submit service requests directly from the website and LINE, while hotel administrators can manage room inventory, track bookings, process payments, and handle guest complaints in real time. The system generates structured booking records, payment confirmations, and notification alerts, complete with real-time status updates across all connected users.\n\nWith a public-facing website, a guest-facing booking application, a comprehensive admin dashboard, and a robust backend API, Convenient Park Hotel Management System ensures that every aspect of hotel operations — from room allocation and meeting room scheduling to guest service request resolution via LINE messaging — is handled accurately and efficiently.\n\nThe system is expected to help the hotel in streamlining front-desk operations, improving guest experience, and maintaining clear and consistent communication between staff and guests, which will significantly reduce the amount of time used up for manual processes and increase the productivity and service quality.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -1493,7 +1482,6 @@
    "A. Athiphat Hirunadisuan"
   ],
   "abstract": "This report details the design, development, and implementation of DTG FieldLink, a custom-engineered Field Service Management System (FSMS) created for DTG Co. Ltd., a third-party Internet Service Provider (ISP) maintenance company in Myanmar. Historically, the organization's operational workflow relied heavily on unstructured LINE messaging groups for team dispatching and manual Excel spreadsheet entries for record-keeping. This legacy process caused severe administrative bottlenecks, including continuous data duplication, a lack of real-time field coordination, and error-prone manual calculations for monthly ISP material reimbursements.\n\nTo resolve these inefficiencies, a dual-platform digital solution was developed, consisting of a Next.js Admin Web Application for centralized dispatching and a Flutter-based Android Mobile Application for on-site field technicians. Powered by a Node.js backend and a PostgreSQL database hosted on DigitalOcean, the system automates the ticketing lifecycle. It replaces manual chat pings with real-time Firebase push notifications and eliminates the need for manual geographical matching by automatically rendering KMZ/GeoJSON spatial data directly over Google Maps on the technicians' mobile devices.\n\nFurthermore, the system was tailored to fulfill specific client requirements, including precise ticket breaktime tracking to evaluate genuine team efficiency and an automated financial reporting module that exports formatted Excel invoices for seamless ISP reimbursements. Ultimately, DTG FieldLink successfully eradicates manual administrative data duplication, accelerates issue resolution, and provides management with the data-driven analytics necessary for scalable enterprise growth.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -1646,7 +1634,6 @@
    "Jinchun Lu"
   ],
   "abstract": "Bankify is a banking service platform developed to process transactions securely through a centralized core system built on a double-entry ledger. Each transaction is recorded in a structured and traceable manner, helping maintain financial accuracy and accountability. The project was created in response to a recurring issue in student and small-scale applications, where payment features are often replaced with simple simulations or implemented through third-party gateways that are costly and difficult to access. As a result, many projects lack realistic and secure financial workflows.\n\nThe system functions as an API-driven campus payment core that allows external applications to integrate payment capabilities in a consistent and controlled way. Transaction handling is designed to remain reliable, even when requests are repeated, ensuring stable processing. An administrative dashboard enables transaction monitoring and review of system activity. In addition, a demo ATM interface is included to simulate common banking actions such as deposits, withdrawals, and balance inquiries, all connected through secure API communication to the core system.\n\nThe goal of Bankify is to provide a reusable and auditable payment backbone that reduces the need for each project to build its own financial module. By offering a centralized and standardized infrastructure, the platform improves consistency across applications while supporting hands-on learning in financial technology. Through this approach, Bankify encourages secure development practices and prepares students for real-world banking and payment system environments.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -1764,7 +1751,6 @@
    "Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan"
   ],
   "abstract": "The growth of the creator economy in Thailand has increased the demand for platforms that allow content creators to receive viewer support quickly, conveniently, and with low transaction friction. However, existing donation platforms often impose high commission fees, delay payouts, provide limited support for Thai payment methods, and offer weak engagement features for live streaming.\n\nThis project presents Payme, a unified donation and monetization platform designed specifically for Thai content creators and streamers. Payme is developed as a full-stack web platform that supports local payment channels such as PromptPay, TrueMoney and Bank Transfer, allowing streamers to receive payments more directly and with lower friction than traditional global platforms. In addition to payment collection, the platform provides a customizable donation page editor, real-time OBS widgets, animated gift interactions, analytics tools, and interactive stream plugins such as a stream marathon timer. These features are intended to improve both streamer monetization and viewer engagement.\n\nFrom the implementation perspective, the system consists of a web-based dashboard, a public donation page, real-time communication services, and supporting backend services for payment verification and event processing. The project demonstrates how a localized platform can better serve Thai streamers by combining familiar payment methods with modern live-stream engagement tools. The result is a platform concept that aims to reduce platform dependency, shorten payout time, and create a more interactive donation experience for both streamers and viewers.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -1881,7 +1867,6 @@
    "Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan"
   ],
   "abstract": "This project presents the development of a web-based registration management system designed to improve administrative efficiency in class scheduling and operational management at Kiddee Lab Company, a STEAM education center that provides coding, robotics, and technology courses for children. The system aims to reduce manual workload by providing a centralized platform that integrates class scheduling, attendance management, billing processes, and customer relationship management (CRM).\n\nThe application enables registrars to schedule classes automatically without manually verifying classroom availability or instructor schedules. Teachers can record student attendance and provide feedback digitally, replacing traditional paper-based documentation. The system also includes an integrated billing module that supports invoice generation, payment processing, and receipt issuance. Additionally, managerial users are provided with statistical reports to support business performance analysis and revenue monitoring.\n\nTo enhance customer interaction, the system integrates CRM functionality with the LINE application, allowing customers of Kiddee Lab to access class schedules and receive daily feedback conveniently. The implementation of this system reduces scheduling conflicts, improves administrative accuracy, and streamlines operational processes, thereby establishing a scalable and centralized digital foundation for future organizational development at Kiddee Lab Company.",
-  "abstract_source": "document",
   "reported_keywords": [],
   "classification": {
    "category": [
