@@ -23,7 +23,7 @@
    "Asst. Prof. Titida Nochai",
    "Benjawan Srisura, Ph.D."
   ],
-  "abstract": null,
+  "abstract": "This senior project built a smart home model that automates seven zones of a house, including the living room, kitchen, bedroom, toilet, garden, entrance, and hallway. NodeMCU ESP8266 boards connect sensors and relays to the internet and send real time data to Firebase, while an Anto.io dashboard lets users monitor and control the devices. The system detects flame and gas in the kitchen, controls the bedroom fan with a DHT11 temperature sensor, responds to clap commands in the toilet, and waters the garden automatically based on soil moisture. Lights in the living room can be switched by voice through Google Assistant and IFTTT. Testing equipment, development tools, and the completed model are budgeted at a total of 5,000 baht.",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -143,7 +143,7 @@
    "A. Pawut Satitsuksanoh",
    "Dr. Kwankamol Nongpong"
   ],
-  "abstract": null,
+  "abstract": "The ISL Room Sensor is a sensor box built to detect the state of a room and reduce wasted electricity. It uses a Raspberry Pi with Arduino and Grove Pi together with temperature and humidity, light, sound, thermopile, and motion sensors. The Raspberry Pi streams sensor data into Firebase where a filtering module applies a Kalman filter, then an SVM predicts room occupancy while threshold and rule based models detect the light and air conditioner states. The system also flags anomalies such as lights or air conditioning left on in an empty room and displays results on admin and user screens. Trained on data recorded in a room at Assumption University Hua Mak campus, it reached perfect precision and recall for light detection and near 96 percent accuracy for occupancy detection.",
   "reported_keywords": [],
   "classification": {
    "category": [

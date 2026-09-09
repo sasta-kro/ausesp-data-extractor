@@ -1,6 +1,210 @@
 [
-{"id":"26002","canonical_title":"FiscAi Application","aliases":["FiscAI Application","FISCAI APPLICATION"],"phase":"proposal","course_code":"CS 3200","program":"computer_science","semester":"2","academic_year":2025,"students":[{"name":"Humam Khurram","student_id":"6611680"},{"name":"Mankirat Kaur","student_id":"6611585"},{"name":"Anuson Khawnsakun","student_id":"6610789"}],"advisor":"A. Tianai Tang","committee":["AnilKumar Kothalil Gopalakrishnan","Benjawan Sirsura"],"abstract":"FiscAI is a personal finance management application that is designed to simplify and make it convenient to track expenses. Some of the individuals find it hard and time-consuming to write down their daily costs manually particularly where they have a lot of receipts. FiscAI is meant to address this issue by applying Large Language Models (LLMs) with Optical Character Recognition (OCR) to scan and extract receipts into information. The system can identify important details such as the store name, purchased items, and tax information, which helps reduce the need for manual data entry. The application is developed using a modern full-stack approach, where the frontend is built with React and the backend is powered by Deno. This structure allows the system to run efficiently while maintaining a responsive user experience. One of the key features of FiscAI is its support for multiple languages, including English and Thai, which makes the application more accessible to different users. In addition, the system also provides real-time financial forecasting, allowing users to better understand their spending habits and plan their finances effectively. FiscAI combines AI-based automation with traditional data management features to create a practical and user-friendly tool for managing personal finances.","reported_keywords":[],"classification":{"category":["ai_data","software_application"],"platform":["web"],"domain":["finance"],"topic":["ocr","nlp"],"technology":["react"]}},
-{"id":"26014","canonical_title":"Using PCG to Explore Data Augmentation Strategies for Robust Classifiers","aliases":[],"phase":"final","course_code":"CSX 3011","program":"computer_science","semester":"2","academic_year":2025,"students":[{"name":"Aye Nyein Moe","student_id":"6530089"},{"name":"Aung Sett Hpone","student_id":"6530122"},{"name":"Htoo Kyaw Kyaw Sint","student_id":"6530129"}],"advisor":"Asst. Prof. Dr. Dobri Atanassov Batovski","committee":["Dr. Kwankamol Nongpong","A. Sakchhi Paudel"],"abstract":"This senior project examines data augmentation as a design variable for robustness-oriented image classification rather than as a routine preprocessing step. The study focuses on handwritten equation recognition from whiteboard images collected in a low-resource classroom-style setting. A balanced dataset of 240 images was organized into four classes: linear equations, quadratic equations, rational expressions, and inequalities, and split into fixed training, validation, and test partitions. Two convolutional neural network models were trained under matched conditions, including the same dataset split, model architecture, and training schedule. The only controlled difference was the augmentation strategy. The baseline model used a generic library-style augmentation workflow, while the proposed condition used a scenario-aware procedural content generation (PCG) pipeline designed to simulate classroom capture effects such as lighting variation, blur, noise, perspective change, and partial occlusion. Evaluation was conducted on both a standard held-out test set and a shared shifted test set. The generic model achieved 67.5% accuracy on the standard test and 65.0% on the shifted test, while the PCG model achieved 80.0% and 72.5%, respectively. The corresponding confusion matrices show that both models recognized linear equations reliably, but the PCG pipeline reduced some of the most severe class confusions, especially under shift, for quadratic and rational forms. At the same time, the generic model exhibited a smaller clean-to-shift drop, indicating a trade-off between absolute accuracy and relative stability. Taken together, the results show that augmentation design materially changes error behavior and robustness outcomes. For classroom-oriented computer vision, scenario-aware augmentation can therefore be a practical and interpretable strategy when deployment conditions differ from the clean training distribution. The proposed system is designed for smart classroom environments, where automated recognition of hand written educational content can support lecture capture and digital learning tools.","reported_keywords":[],"classification":{"category":["research","ai_data"],"platform":[],"domain":["education"],"topic":["computer_vision"],"technology":[]}},
-{"id":"26019","canonical_title":"AI Insurance LLM chatbot","aliases":[],"phase":"final","course_code":"CSX 3011","program":"computer_science","semester":"2","academic_year":2025,"students":[{"name":"Thapana Dermbangchon","student_id":"6511252"},{"name":"Krit Japhong","student_id":"6511407"},{"name":"Boonyarit Thongma","student_id":"6530371"}],"advisor":"A. Chayapol Moemeng","committee":["Asst. Prof. Dr. Paitoon Porntrakoon","A. Atthipat Hirunadisuan"],"abstract":"The main aim of our project is to address the problem of inherent complexity associated with insurance policy documents, which are generally described by complex legal terminologies, numerous policy conditions, and complex benefits tables. The complexity associated with insurance policy documents is considered a major obstacle in assisting the policyholders in understanding the insurance policies they have purchased and creates a huge workload for insurance agents in handling the day-to-day policy-related queries. The main aim of the current study is to develop an \"AI Insurance Agent\" for the automatic interpretation of insurance policy documents. The methodology of the current study includes the implementation of a hybrid Artificial Intelligence model in which Typhoon OCR is implemented for the accurate extraction of text and data from the tables in the insurance policy documents in various formats such as PDF, JPG, and PNG. Furthermore, the current study has implemented Typhoon 2.5 30B Large Language Model for the accurate reasoning and analysis of the data extracted from the insurance policy documents. The implementation of the Retrieval-Augmented Generation of text model has also ensured the accurate answers provided by the system based on the insurance policy documents uploaded by the user, thus eliminating the possibility of AI hallucinations.","reported_keywords":[],"classification":{"category":["ai_data","software_application"],"platform":["web"],"domain":["finance"],"topic":["nlp","ocr"],"technology":[]}},
-{"id":"26023","canonical_title":"iRC-NewsGen","aliases":["iRc-Newsgen","Automatically Generated News Content"],"phase":"final","course_code":"CSX 3011","program":"computer_science","semester":"2","academic_year":2025,"students":[{"name":"Chatchai Bumrungsak","student_id":"6510550"},{"name":"Jilamika Lalae","student_id":"6511063"},{"name":"Titaporn Tienanansuk","student_id":"6511420"}],"advisor":"A. Chayapol Moemeng","committee":["Asst. Prof. Dr. Darun Kesrarat","Asst. Prof. Dr. Thanachai Thumthawatworn"],"abstract":"iRC-NewsGen is a web-based admin dashboard designed to streamline the news production workflow for small editorial teams. The system integrates n8n workflow automation with the Google Gemini AI API to handle the repetitive stages of news production, including web scraping, article drafting, keyword extraction, and bilingual translation between Thai and English. The platform is configured to generate 10 articles per week, which are then presented to editors through a centralized dashboard for review and approval. Once an editor verifies an article, it can be published directly to a Sanity content database with a single action.","reported_keywords":[],"classification":{"category":["software_application","ai_data"],"platform":["web"],"domain":["other"],"topic":["nlp"],"technology":["mongodb"]}}
+ {
+  "id": "26002",
+  "canonical_title": "FiscAi Application",
+  "aliases": [
+   "FiscAI Application",
+   "FISCAI APPLICATION"
+  ],
+  "phase": "proposal",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Humam Khurram",
+    "student_id": "6611680"
+   },
+   {
+    "name": "Mankirat Kaur",
+    "student_id": "6611585"
+   },
+   {
+    "name": "Anuson Khawnsakun",
+    "student_id": "6610789"
+   }
+  ],
+  "advisor": "A. Tianai Tang",
+  "committee": [
+   "AnilKumar Kothalil Gopalakrishnan",
+   "Benjawan Sirsura"
+  ],
+  "abstract": "FiscAI is a personal finance management application that is designed to simplify and make it convenient to track expenses. Some of the individuals find it hard and time-consuming to write down their daily costs manually particularly where they have a lot of receipts. FiscAI is meant to address this issue by applying Large Language Models (LLMs) with Optical Character Recognition (OCR) to scan and extract receipts into information. The system can identify important details such as the store name, purchased items, and tax information, which helps reduce the need for manual data entry. The application is developed using a modern full-stack approach, where the frontend is built with React and the backend is powered by Deno. This structure allows the system to run efficiently while maintaining a responsive user experience. One of the key features of FiscAI is its support for multiple languages, including English and Thai, which makes the application more accessible to different users. In addition, the system also provides real-time financial forecasting, allowing users to better understand their spending habits and plan their finances effectively. FiscAI combines AI-based automation with traditional data management features to create a practical and user-friendly tool for managing personal finances.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "finance"
+   ],
+   "topic": [
+    "nlp",
+    "ocr"
+   ],
+   "technology": [
+    "react"
+   ]
+  }
+ },
+ {
+  "id": "26014",
+  "canonical_title": "Using PCG to Explore Data Augmentation Strategies for Robust Classifiers",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CSX 3011",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Aye Nyein Moe",
+    "student_id": "6530089"
+   },
+   {
+    "name": "Aung Sett Hpone",
+    "student_id": "6530122"
+   },
+   {
+    "name": "Htoo Kyaw Kyaw Sint",
+    "student_id": "6530129"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Dobri Atanassov Batovski",
+  "committee": [
+   "Dr. Kwankamol Nongpong",
+   "A. Sakchhi Paudel"
+  ],
+  "abstract": "This senior project examines data augmentation as a design variable for robustness-oriented image classification rather than as a routine preprocessing step. The study focuses on handwritten equation recognition from whiteboard images collected in a low-resource classroom-style setting. A balanced dataset of 240 images was organized into four classes: linear equations, quadratic equations, rational expressions, and inequalities, and split into fixed training, validation, and test partitions. Two convolutional neural network models were trained under matched conditions, including the same dataset split, model architecture, and training schedule. The only controlled difference was the augmentation strategy. The baseline model used a generic library-style augmentation workflow, while the proposed condition used a scenario-aware procedural content generation (PCG) pipeline designed to simulate classroom capture effects such as lighting variation, blur, noise, perspective change, and partial occlusion. Evaluation was conducted on both a standard held-out test set and a shared shifted test set. The generic model achieved 67.5% accuracy on the standard test and 65.0% on the shifted test, while the PCG model achieved 80.0% and 72.5%, respectively. The corresponding confusion matrices show that both models recognized linear equations reliably, but the PCG pipeline reduced some of the most severe class confusions, especially under shift, for quadratic and rational forms. At the same time, the generic model exhibited a smaller clean-to-shift drop, indicating a trade-off between absolute accuracy and relative stability. Taken together, the results show that augmentation design materially changes error behavior and robustness outcomes. For classroom-oriented computer vision, scenario-aware augmentation can therefore be a practical and interpretable strategy when deployment conditions differ from the clean training distribution. The proposed system is designed for smart classroom environments, where automated recognition of hand written educational content can support lecture capture and digital learning tools.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "research"
+   ],
+   "platform": [
+    "none"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "opencv",
+    "python"
+   ]
+  }
+ },
+ {
+  "id": "26019",
+  "canonical_title": "AI Insurance LLM chatbot",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CSX 3011",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Thapana Dermbangchon",
+    "student_id": "6511252"
+   },
+   {
+    "name": "Krit Japhong",
+    "student_id": "6511407"
+   },
+   {
+    "name": "Boonyarit Thongma",
+    "student_id": "6530371"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "Asst. Prof. Dr. Paitoon Porntrakoon",
+   "A. Atthipat Hirunadisuan"
+  ],
+  "abstract": "The main aim of our project is to address the problem of inherent complexity associated with insurance policy documents, which are generally described by complex legal terminologies, numerous policy conditions, and complex benefits tables. The complexity associated with insurance policy documents is considered a major obstacle in assisting the policyholders in understanding the insurance policies they have purchased and creates a huge workload for insurance agents in handling the day-to-day policy-related queries. The main aim of the current study is to develop an \"AI Insurance Agent\" for the automatic interpretation of insurance policy documents. The methodology of the current study includes the implementation of a hybrid Artificial Intelligence model in which Typhoon OCR is implemented for the accurate extraction of text and data from the tables in the insurance policy documents in various formats such as PDF, JPG, and PNG. Furthermore, the current study has implemented Typhoon 2.5 30B Large Language Model for the accurate reasoning and analysis of the data extracted from the insurance policy documents. The implementation of the Retrieval-Augmented Generation of text model has also ensured the accurate answers provided by the system based on the insurance policy documents uploaded by the user, thus eliminating the possibility of AI hallucinations.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "finance"
+   ],
+   "topic": [
+    "nlp",
+    "ocr"
+   ],
+   "technology": [
+    "mongodb",
+    "nodejs",
+    "react"
+   ]
+  }
+ },
+ {
+  "id": "26023",
+  "canonical_title": "iRC-NewsGen",
+  "aliases": [
+   "iRc-Newsgen",
+   "Automatically Generated News Content"
+  ],
+  "phase": "final",
+  "course_code": "CSX 3011",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Chatchai Bumrungsak",
+    "student_id": "6510550"
+   },
+   {
+    "name": "Jilamika Lalae",
+    "student_id": "6511063"
+   },
+   {
+    "name": "Titaporn Tienanansuk",
+    "student_id": "6511420"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "Asst. Prof. Dr. Darun Kesrarat",
+   "Asst. Prof. Dr. Thanachai Thumthawatworn"
+  ],
+  "abstract": "iRC-NewsGen is a web-based admin dashboard designed to streamline the news production workflow for small editorial teams. The system integrates n8n workflow automation with the Google Gemini AI API to handle the repetitive stages of news production, including web scraping, article drafting, keyword extraction, and bilingual translation between Thai and English. The platform is configured to generate 10 articles per week, which are then presented to editors through a centralized dashboard for review and approval. Once an editor verifies an article, it can be published directly to a Sanity content database with a single action.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [
+    "nlp"
+   ],
+   "technology": [
+    "mongodb",
+    "react"
+   ]
+  }
+ }
 ]

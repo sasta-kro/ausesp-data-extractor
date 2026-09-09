@@ -1,6 +1,182 @@
 [
-{"id":"2121","canonical_title":"Development of a Wearable Biosensing Device for Programmers","aliases":[],"phase":"final","course_code":"CS 3200","program":"computer_science","semester":"1","academic_year":2021,"students":[{"name":"Minn Moe Yan Oo","student_id":"6017540"},{"name":"Aung Hlaing Moe","student_id":"5745402"}],"advisor":"Asst. Prof. Dr. Dobri Atanassov Batovski","committee":["A. Piyakul Tillapart","Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan"],"abstract":"The proposed biosensing configuration can evaluate the stress levels when doing different coding tasks and issue health-related notifications. The hardware implementation is based on a Raspberry Pi single-board computer, parallel processing accelerator and a limited set of biosensors.","reported_keywords":[],"classification":{"category":["hardware_iot"],"platform":["embedded_hardware"],"domain":["healthcare"],"topic":[],"technology":[]}},
-{"id":"2129","canonical_title":"Vincent Mary School of Science and Technology Website","aliases":["VMS Website"],"phase":"final","course_code":"ITX 3009","program":"information_technology","semester":"2","academic_year":2022,"students":[{"name":"Chanoknon Tangthienkul","student_id":"6217412"},{"name":"Kasidit Ploenthamakhun","student_id":"6016901"},{"name":"Atita Kasemporntaweekit","student_id":"6211015"}],"advisor":"A. Chayapol Moemeng","committee":["A. Tapanan Yeophantong","Asst. Prof. Dr. Paitoon Porntrakoon"],"abstract":"This is a web-oriented application that allows us to access the data of Vincent Mary School (VMS) of Science and Technology, which contains the basic information of faculty such as the future path of technology or career of tech. This website is designed for assisting the students at an institute regarding the information in the faculty. The present study aims to start that we are going to make a faculty-related website that will provide all information regarding our faculty and have the purpose of the website is to improve the website with the new template design. Now it is of vital thing in the present scenario of any college which, the student can get all information before taking admission. This site provides the all information like students can easily get all information regarding their syllabus.","reported_keywords":[],"classification":{"category":["software_application"],"platform":["web"],"domain":["campus"],"topic":[],"technology":["nextjs","react","wordpress"]}},
-{"id":"2134","canonical_title":"Estimation of Possible Shoplifting from Video Frames","aliases":[],"phase":"final","course_code":"CSX 3011/CS 4200","program":"computer_science","semester":"2","academic_year":2021,"students":[{"name":"Minn Moe Yan Oo","student_id":"6017540"},{"name":"Chanatip Kwankeua","student_id":"6215452"}],"advisor":"Asst. Prof. Dr. Dobri Atanassov Batovski","committee":["A. Piyakul Tillapart","Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan"],"abstract":"Both individuals and companies suffer significant financial and time losses as a result of crime. Surveillance cameras create so much data that it's difficult to analyze it all in real time. Although the human eye has its limitations, one of the significant considerations in surveillance is visual concentration. A crime may take place in another section of the screen or on a separate monitor and the staff may fail to catch it. Due to the advancements in computer vision and machine learning technology, there are a variety of applications that can be implemented to solve many customers' pain points. Shop owners, for example, are subjected to theft because the most effective method of preventing it necessitates extensive manual labor in reviewing CCTV feeds, and most of the time the act has already occurred. The goal of this project is to eliminate the need for human intervention by using real-time computer vision to detect shoplifting and to provide immediate feedback or alerts. It was decided to develop a deep learning model that would be able to detect items in the shop and identify malicious activity. Aside from that, the model was implemented into a Raspberry Pi unit, which was used to perform real-time computation. By ensuring proper installation of the device, shoplifting can be detected accurately and quickly in real time.","reported_keywords":[],"classification":{"category":["ai_data"],"platform":["embedded_hardware"],"domain":["security"],"topic":["computer_vision"],"technology":["opencv","python"]}},
-{"id":"2139","canonical_title":"XAM: Examination System","aliases":[],"phase":"final","course_code":"CS 4200","program":"computer_science","semester":"2","academic_year":2021,"students":[{"name":"Chayapam Suesawatwanich","student_id":"6016930"},{"name":"Phanuwat Sikharestrakul","student_id":"6115218"}],"advisor":"Dr. Songsak Channarukul","committee":["A. Chayapol Moemeng","A. Kiratijuta Bhumichitr"],"abstract":"In universities in Thailand, an examination is the main point to measure what students understand in the courses. Instructors have the opportunity to monitor and evaluate their teaching strategies according to their students' progress. The examination has multiple-choice questions and written questions. The examination standard is separated to the quiz, mid-term, and final examinations. Next, the students can improve their knowledge and skills. They can learn more. All knowledge in each course is helpful to adapt to use after graduation. XAM is an examination system application for Assumption University built on two platforms. First, it is an iOS that focuses on the use case of students who must take the examination and submit it. Proctors can scan and check the students in the examination room. Another is a web application platform for managing the system on the users and courses for the admin staff. In the last role, Instructors can create, edit, remove the examination for their courses. They can also check the class members and the students' submissions in each examination.","reported_keywords":[],"classification":{"category":["software_application"],"platform":["mobile","web"],"domain":["education"],"topic":[],"technology":[]}}
+ {
+  "id": "2121",
+  "canonical_title": "Development of a Wearable Biosensing Device for Programmers",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Minn Moe Yan Oo",
+    "student_id": "6017540"
+   },
+   {
+    "name": "Aung Hlaing Moe",
+    "student_id": "5745402"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Dobri Atanassov Batovski",
+  "committee": [
+   "A. Piyakul Tillapart",
+   "Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan"
+  ],
+  "abstract": "The proposed biosensing configuration can evaluate the stress levels when doing different coding tasks and issue health-related notifications. The hardware implementation is based on a Raspberry Pi single-board computer, parallel processing accelerator and a limited set of biosensors.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "hardware_iot"
+   ],
+   "platform": [
+    "embedded_hardware"
+   ],
+   "domain": [
+    "healthcare"
+   ],
+   "topic": [],
+   "technology": [
+    "python"
+   ]
+  }
+ },
+ {
+  "id": "2129",
+  "canonical_title": "Vincent Mary School of Science and Technology Website",
+  "aliases": [
+   "VMS Website"
+  ],
+  "phase": "final",
+  "course_code": "ITX 3009",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Chanoknon Tangthienkul",
+    "student_id": "6217412"
+   },
+   {
+    "name": "Kasidit Ploenthamakhun",
+    "student_id": "6016901"
+   },
+   {
+    "name": "Atita Kasemporntaweekit",
+    "student_id": "6211015"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "A. Tapanan Yeophantong",
+   "Asst. Prof. Dr. Paitoon Porntrakoon"
+  ],
+  "abstract": "This is a web-oriented application that allows us to access the data of Vincent Mary School (VMS) of Science and Technology, which contains the basic information of faculty such as the future path of technology or career of tech. This website is designed for assisting the students at an institute regarding the information in the faculty. The present study aims to start that we are going to make a faculty-related website that will provide all information regarding our faculty and have the purpose of the website is to improve the website with the new template design. Now it is of vital thing in the present scenario of any college which, the student can get all information before taking admission. This site provides the all information like students can easily get all information regarding their syllabus.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [],
+   "technology": [
+    "nextjs",
+    "react",
+    "wordpress"
+   ]
+  }
+ },
+ {
+  "id": "2134",
+  "canonical_title": "Estimation of Possible Shoplifting from Video Frames",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CSX 3011/CS 4200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Minn Moe Yan Oo",
+    "student_id": "6017540"
+   },
+   {
+    "name": "Chanatip Kwankeua",
+    "student_id": "6215452"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Dobri Atanassov Batovski",
+  "committee": [
+   "A. Piyakul Tillapart",
+   "Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan"
+  ],
+  "abstract": "Both individuals and companies suffer significant financial and time losses as a result of crime. Surveillance cameras create so much data that it's difficult to analyze it all in real time. Although the human eye has its limitations, one of the significant considerations in surveillance is visual concentration. A crime may take place in another section of the screen or on a separate monitor and the staff may fail to catch it. Due to the advancements in computer vision and machine learning technology, there are a variety of applications that can be implemented to solve many customers' pain points. Shop owners, for example, are subjected to theft because the most effective method of preventing it necessitates extensive manual labor in reviewing CCTV feeds, and most of the time the act has already occurred. The goal of this project is to eliminate the need for human intervention by using real-time computer vision to detect shoplifting and to provide immediate feedback or alerts. It was decided to develop a deep learning model that would be able to detect items in the shop and identify malicious activity. Aside from that, the model was implemented into a Raspberry Pi unit, which was used to perform real-time computation. By ensuring proper installation of the device, shoplifting can be detected accurately and quickly in real time.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "embedded_hardware"
+   ],
+   "domain": [
+    "security"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "opencv",
+    "python"
+   ]
+  }
+ },
+ {
+  "id": "2139",
+  "canonical_title": "XAM: Examination System",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Chayapam Suesawatwanich",
+    "student_id": "6016930"
+   },
+   {
+    "name": "Phanuwat Sikharestrakul",
+    "student_id": "6115218"
+   }
+  ],
+  "advisor": "Dr. Songsak Channarukul",
+  "committee": [
+   "A. Chayapol Moemeng",
+   "A. Kiratijuta Bhumichitr"
+  ],
+  "abstract": "In universities in Thailand, an examination is the main point to measure what students understand in the courses. Instructors have the opportunity to monitor and evaluate their teaching strategies according to their students' progress. The examination has multiple-choice questions and written questions. The examination standard is separated to the quiz, mid-term, and final examinations. Next, the students can improve their knowledge and skills. They can learn more. All knowledge in each course is helpful to adapt to use after graduation. XAM is an examination system application for Assumption University built on two platforms. First, it is an iOS that focuses on the use case of students who must take the examination and submit it. Proctors can scan and check the students in the examination room. Another is a web application platform for managing the system on the users and courses for the admin staff. In the last role, Instructors can create, edit, remove the examination for their courses. They can also check the class members and the students' submissions in each examination.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile",
+    "web"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [],
+   "technology": [
+    "react"
+   ]
+  }
+ }
 ]

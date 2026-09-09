@@ -1,6 +1,180 @@
 [
-{"id":"2238","canonical_title":"Chassy: A Car Service Management System","aliases":["Chassy: Car Service Management System"],"phase":"final","course_code":"ITX 3010/CSX 3011","program":"information_technology","semester":"2","academic_year":2023,"students":[{"name":"Suja Subedi","student_id":"6218323"},{"name":"Zhenli Zhang","student_id":"6218016"},{"name":"Mushi Sonthliwal","student_id":"6213102"}],"advisor":"A. Chayapol Moemeng","committee":["Asst. Prof. Dr. Paitoon Porntrakoon","A. Benjawan Srisura"],"abstract":"In this digital age, technology has transformed almost every aspect of our lives, from ordering food to cleaning. And the service industry is no exception. Thanks to innovative applications and websites, businesses can easily keep track of their clients, services, inventories, and more. That's why Chassy was created. Chassy is a mobile and desktop-based web application designed to streamline the operations of car service companies. With Chassy, businesses can efficiently manage customer information, vehicle details, employee data, service records, monthly and daily transactions, revenue, and more. Chassy empowers car service companies to work smarter, not harder.","reported_keywords":[],"classification":{"category":["software_application"],"platform":["web"],"domain":["business","transportation"],"topic":[],"technology":[]}},
-{"id":"2252","canonical_title":"Scholarship Keeper System","aliases":[],"phase":"proposal","course_code":"CSX 3010","program":"computer_science","semester":"2","academic_year":2022,"students":[{"name":"Vibolrottana Seng","student_id":"6217429"}],"advisor":"Asst. Prof. Dr. Darun Kesrarat","committee":["Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan","Asst. Prof. Dr. Dobri Atanassov Batovski"],"abstract":"Assumption University (ABAC) is one of the universities that provides scholarship to students who have a good academic background therefore when student receive scholarship from the university students also need to work for the university in some limited amount of time as well. Furthermore, for staff to manage the student's work hour and also posted work that available for students and for student convenience to find the work that suitable for their leisure time scholarship keeper system has come in that act as an event management for staffs and a work seeker for scholarship student. In order for staff to record the complete working hours of a student in one session they still use paper. To eliminate the use of paper scholarship keeper system is created as web application that offer a convenient and efficient way for staffs to update the working hours of each student immediately after working session has done. Moreover, students can also check their accumulated working hours anytime at their convenience as well. Especially, students can also check the history of their work and apply for the work wherever they are. By applying some web application knowledge, I will explain the process of creating scholarship keeper system and utilize it efficiently for the user further in this paper.","reported_keywords":[],"classification":{"category":["software_application"],"platform":["web"],"domain":["campus"],"topic":[],"technology":["react"]}},
-{"id":"25115","canonical_title":"Battle of Talingchan","aliases":[],"phase":"final","course_code":"CSX 3011/ITX 3010","program":"computer_science","semester":"2","academic_year":2025,"students":[{"name":"Ayyada Kriangkaisak","student_id":"6610608"},{"name":"Chinnapat Premudomkit","student_id":"6520238"}],"advisor":"Asst. Prof. Dr. Darun Kesrarat","committee":["Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan","A. Tianai Tang"],"abstract":"This project is the proof-of-concept game development of a digital trading card game \"Battle of Talingchan\" which is transformed from a physical card to online multiplayer game experience. This game is developed using Unity engine, the game features a 1v1 matchmaking system that is powered by Photon to ensure the real time interactions between players. The final product is deployed online via itch.io. The gameplay is according to the rule sets of the original physical card game along with Thai themed characters which include in all cards. This game structured included four distinct phases which are Draw phase, Main phase, Battle phase and End phase. Detailed project specifications and guidance were provided by TOYLAXY (LION HOUSE CO., LTD.).","reported_keywords":[],"classification":{"category":["game"],"platform":["game"],"domain":["entertainment"],"topic":[],"technology":["unity"]}},
-{"id":"2579","canonical_title":"NYK Cosmetics Business Management System","aliases":["Cosmetics Business Management System"],"phase":"final","course_code":"CSX 3011","program":"computer_science","semester":"2","academic_year":2025,"students":[{"name":"Hein Naing Soe","student_id":"6530070"},{"name":"Kyi Phyu Shin","student_id":"6530335"}],"advisor":"A. Jinchun Lu","committee":["Asst. Prof. Dr. Paitoon Porntrakoon","Dr. Phyo Min Tun"],"abstract":"This project presents the development of a web-based Cosmetics Business Management System designed to improve operational efficiency in sales management and administrative processes at NYK Cosmetics, a retail and wholesale cosmetics business. The system aims to reduce manual workload by providing a centralized platform that integrates sales order management, inventory tracking, customer loan monitoring, and administrative reporting. The application enables salespersons to record customer orders digitally through a web-based system, allowing them to access the platform conveniently from tablets or web browsers. The system automatically updates inventory and transaction records in real time after each order submission. Administrators can review, adjust, and manage orders through a centralized web dashboard without relying on manual record books or scattered spreadsheets. In addition, the system includes customer loan management features that allow administrators to track outstanding balances, monitor payment histories, and maintain accurate financial records efficiently. The system also provides statistical dashboards that display sales performance by product, shop, and region, enabling better decision-making and business analysis. By implementing this system, NYK Cosmetics can reduce operational errors and improve overall business management efficiency. The system is developed using modern web technologies including Next.js for the frontend, Nest.js for the backend, and PostgreSQL for the database, and deployed on cloud infrastructure to ensure accessibility and scalability. Overall, the proposed system establishes a centralized digital platform that enhances operational management and supports the future growth of NYK Cosmetics.","reported_keywords":[],"classification":{"category":["software_application"],"platform":["web"],"domain":["business"],"topic":[],"technology":["nextjs","nodejs","postgresql"]}}
+ {
+  "id": "2238",
+  "canonical_title": "Chassy: A Car Service Management System",
+  "aliases": [
+   "Chassy: Car Service Management System"
+  ],
+  "phase": "final",
+  "course_code": "ITX 3010/CSX 3011",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2023,
+  "students": [
+   {
+    "name": "Suja Subedi",
+    "student_id": "6218323"
+   },
+   {
+    "name": "Zhenli Zhang",
+    "student_id": "6218016"
+   },
+   {
+    "name": "Mushi Sonthliwal",
+    "student_id": "6213102"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "Asst. Prof. Dr. Paitoon Porntrakoon",
+   "A. Benjawan Srisura"
+  ],
+  "abstract": "In this digital age, technology has transformed almost every aspect of our lives, from ordering food to cleaning. And the service industry is no exception. Thanks to innovative applications and websites, businesses can easily keep track of their clients, services, inventories, and more. That's why Chassy was created. Chassy is a mobile and desktop-based web application designed to streamline the operations of car service companies. With Chassy, businesses can efficiently manage customer information, vehicle details, employee data, service records, monthly and daily transactions, revenue, and more. Chassy empowers car service companies to work smarter, not harder.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "mongodb",
+    "nextjs",
+    "react"
+   ]
+  }
+ },
+ {
+  "id": "2252",
+  "canonical_title": "Scholarship Keeper System",
+  "aliases": [],
+  "phase": "proposal",
+  "course_code": "CSX 3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Vibolrottana Seng",
+    "student_id": "6217429"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Darun Kesrarat",
+  "committee": [
+   "Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan",
+   "Asst. Prof. Dr. Dobri Atanassov Batovski"
+  ],
+  "abstract": "Assumption University (ABAC) is one of the universities that provides scholarship to students who have a good academic background therefore when student receive scholarship from the university students also need to work for the university in some limited amount of time as well. Furthermore, for staff to manage the student's work hour and also posted work that available for students and for student convenience to find the work that suitable for their leisure time scholarship keeper system has come in that act as an event management for staffs and a work seeker for scholarship student. In order for staff to record the complete working hours of a student in one session they still use paper. To eliminate the use of paper scholarship keeper system is created as web application that offer a convenient and efficient way for staffs to update the working hours of each student immediately after working session has done. Moreover, students can also check their accumulated working hours anytime at their convenience as well. Especially, students can also check the history of their work and apply for the work wherever they are. By applying some web application knowledge, I will explain the process of creating scholarship keeper system and utilize it efficiently for the user further in this paper.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [],
+   "technology": [
+    "react",
+    "firebase"
+   ]
+  }
+ },
+ {
+  "id": "25115",
+  "canonical_title": "Battle of Talingchan",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CSX 3011/ITX 3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Ayyada Kriangkaisak",
+    "student_id": "6610608"
+   },
+   {
+    "name": "Chinnapat Premudomkit",
+    "student_id": "6520238"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Darun Kesrarat",
+  "committee": [
+   "Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan",
+   "A. Tianai Tang"
+  ],
+  "abstract": "This project is the proof-of-concept game development of a digital trading card game \"Battle of Talingchan\" which is transformed from a physical card to online multiplayer game experience. This game is developed using Unity engine, the game features a 1v1 matchmaking system that is powered by Photon to ensure the real time interactions between players. The final product is deployed online via itch.io. The gameplay is according to the rule sets of the original physical card game along with Thai themed characters which include in all cards. This game structured included four distinct phases which are Draw phase, Main phase, Battle phase and End phase. Detailed project specifications and guidance were provided by TOYLAXY (LION HOUSE CO., LTD.).",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "game"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [],
+   "technology": [
+    "firebase",
+    "unity"
+   ]
+  }
+ },
+ {
+  "id": "2579",
+  "canonical_title": "NYK Cosmetics Business Management System",
+  "aliases": [
+   "Cosmetics Business Management System"
+  ],
+  "phase": "final",
+  "course_code": "CSX 3011",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Hein Naing Soe",
+    "student_id": "6530070"
+   },
+   {
+    "name": "Kyi Phyu Shin",
+    "student_id": "6530335"
+   }
+  ],
+  "advisor": "A. Jinchun Lu",
+  "committee": [
+   "Asst. Prof. Dr. Paitoon Porntrakoon",
+   "Dr. Phyo Min Tun"
+  ],
+  "abstract": "This project presents the development of a web-based Cosmetics Business Management System designed to improve operational efficiency in sales management and administrative processes at NYK Cosmetics, a retail and wholesale cosmetics business. The system aims to reduce manual workload by providing a centralized platform that integrates sales order management, inventory tracking, customer loan monitoring, and administrative reporting. The application enables salespersons to record customer orders digitally through a web-based system, allowing them to access the platform conveniently from tablets or web browsers. The system automatically updates inventory and transaction records in real time after each order submission. Administrators can review, adjust, and manage orders through a centralized web dashboard without relying on manual record books or scattered spreadsheets. In addition, the system includes customer loan management features that allow administrators to track outstanding balances, monitor payment histories, and maintain accurate financial records efficiently. The system also provides statistical dashboards that display sales performance by product, shop, and region, enabling better decision-making and business analysis. By implementing this system, NYK Cosmetics can reduce operational errors and improve overall business management efficiency. The system is developed using modern web technologies including Next.js for the frontend, Nest.js for the backend, and PostgreSQL for the database, and deployed on cloud infrastructure to ensure accessibility and scalability. Overall, the proposed system establishes a centralized digital platform that enhances operational management and supports the future growth of NYK Cosmetics.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "nextjs",
+    "postgresql",
+    "react"
+   ]
+  }
+ }
 ]

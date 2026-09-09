@@ -29,7 +29,7 @@
     "web"
    ],
    "domain": [
-    "education"
+    "campus"
    ],
    "topic": [
     "recommender_system"
@@ -67,10 +67,12 @@
     "web"
    ],
    "domain": [
-    "campus"
+    "campus",
+    "e_commerce"
    ],
    "topic": [],
    "technology": [
+    "php",
     "mysql"
    ]
   }
@@ -99,7 +101,7 @@
    "Asst. Prof. Dr. Thotsapon Sortrakul",
    "Asst. Prof. Titida Nochai"
   ],
-  "abstract": null,
+  "abstract": "The Information Technology department of Vincent Mary School of Science and Technology managed its program information manually, which made updating the program website slow, inconsistent and dependent on staff with specific coding skills. The team developed a web-based Program Management Information System with an administrative backend for managing programs, curriculums, plans, courses, instructors, students and news, together with a public website for prospects. The system was analyzed and designed with data flow diagrams, an entity relationship diagram and a data dictionary, and it automatically publishes the managed program information to the website. It was implemented with PHP and MySQL on hosted web servers and validates curriculum and student graduation constraints while letting prospects search and view study plans and curriculum details.",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -113,6 +115,7 @@
    ],
    "topic": [],
    "technology": [
+    "php",
     "mysql"
    ]
   }
@@ -145,7 +148,7 @@
    "Asst. Prof. Dr. Darun Kesrarat",
    "Dr. Benjawan Srisura"
   ],
-  "abstract": null,
+  "abstract": "Hotels relied on phone calls, paper menus and printed brochures, which made problem reporting inconvenient and service slow. The team developed a web-based Hotel Management System for customers, staff and a manager, built with PHP, HTML and CSS, with phpMyAdmin for the database and hosting on 000webhost. Customers scan a QR code and log in with an ID and password to report problems, order food and drinks from an online menu, view nearby places and call security. The manager receives problems and orders, assigns them to staff roles such as technician, housekeeping, kitchen, bar, waiter, security and reception, and tracks their status until completion. The system was designed with the Waterfall model using ER diagrams, data flow diagrams and a data dictionary.",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -159,7 +162,7 @@
    ],
    "topic": [],
    "technology": [
-    "mysql"
+    "php"
    ]
   }
  },
@@ -193,7 +196,7 @@
    "Asst. Prof. Titida Nochai",
    "Asst. Prof. Dr. Benjawan Srisura"
   ],
-  "abstract": null,
+  "abstract": "Assumption University tracked lost and found items on paper, bulletin boards and scattered social media groups, so students often missed relevant information and item owners were hard to identify. The team built a web-based Lost and Found Management System where students log in with their student ID to post lost or found items with pictures and descriptions, search items and message the lost and found department. Admins manage posts, review multiple claimants and register the verified owner of each completed item. The system was developed with the Waterfall methodology using PHP, HTML, CSS, JavaScript, React, Node.js and a MySQL database configured through phpMyAdmin, styled with Bootstrap and hosted on 000webhost.",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -209,6 +212,7 @@
    "technology": [
     "mysql",
     "nodejs",
+    "php",
     "react"
    ]
   }

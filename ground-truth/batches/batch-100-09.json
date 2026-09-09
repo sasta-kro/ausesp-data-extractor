@@ -27,11 +27,10 @@
    "Mr. Tapanan Yeophantong",
    "Asst. Prof. Paitoon Porntrakoon, Ph.D."
   ],
-  "abstract": null,
+  "abstract": "Finding a free space is a huge problem for outdoor parking lots in Thailand and no obvious solution exists yet. The team built a video detection system that uses a Logitech HD C270 webcam and computer vision to monitor an outdoor parking area. Users draw rectangles over the camera feed to define parking slots, and the system marks each slot green when it is available or red when a car occupies it. A monitor screen summarizes the total, available and unavailable spaces and keeps a history log for each rectangle. The system stores hourly counts in a Google Firebase realtime database and was implemented in Python with OpenCV and NumPy on Google Colab. Eight test runs produced detection accuracy between 80 and 100 percent.",
   "reported_keywords": [],
   "classification": {
    "category": [
-    "ai_data",
     "software_application"
    ],
    "platform": [
@@ -44,9 +43,9 @@
     "computer_vision"
    ],
    "technology": [
-    "python",
+    "firebase",
     "opencv",
-    "firebase"
+    "python"
    ]
   }
  },
@@ -118,8 +117,7 @@
   "reported_keywords": [],
   "classification": {
    "category": [
-    "hardware_iot",
-    "software_application"
+    "hardware_iot"
    ],
    "platform": [
     "embedded_hardware",
@@ -130,7 +128,7 @@
    ],
    "topic": [],
    "technology": [
-    "python"
+    "firebase"
    ]
   }
  },
@@ -164,7 +162,7 @@
    "Asst. Prof. Dr. Adtha Lawanna",
    "Dr. Benjawan Srisura"
   ],
-  "abstract": null,
+  "abstract": "Homeless dogs taken into animal shelters are difficult to match with suitable adopters, and shelter staff often keep adopter records as paper copies. The team built the Animal Adoption website, where adopters register, browse animals in a shelter, and send adoption requests that administrators approve or reject through automatic email notifications. A questionnaire built on eight dog breed characteristics recommends appropriate dogs to each adopter, and a follow up tracking function reminds administrators to check the status of adopted dogs twice a year. The system was written in C#, HTML, CSS, and JavaScript with Visual Studio, stores data and pictures in SQL Server and FireStorage, sends email through SendGrid, and runs on Microsoft Azure.",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -207,7 +205,7 @@
   ],
   "advisor": "A. Darun",
   "committee": [],
-  "abstract": null,
+  "abstract": "SAMT Master is the administration section of an education platform developed for The Good Shepherd Company Limited, a company that connects teachers and students in sports, arts, music, and technology. The team extended the platform with a web based admin system covering five features. Administrators can review teacher applications with uploaded documents, create and manage job posts, track and assign error reports, and create searchable receipts for deposits, payment invoices, and withdrawals. A marketing heat map shows where potential customers are concentrated. It uses a scraping bot to collect leads from websites and the Google API to resolve each province and county into latitude and longitude for Google Maps pins. The design covers twenty database tables and the team plans to continue the project in senior project 2.",
   "reported_keywords": [],
   "classification": {
    "category": [

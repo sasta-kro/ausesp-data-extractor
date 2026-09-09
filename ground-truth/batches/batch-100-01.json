@@ -74,7 +74,7 @@
    "A. Tapanan Yeophantong",
    "Dr. AnilKumar Kothalil Gopalakrishnan"
   ],
-  "abstract": null,
+  "abstract": "This project applies machine learning to predict exchange rate movements in the foreign exchange market. The team first replicated a deep neural network case study from Nagoya University, training a five layer DNN classifier on hourly USD and Thai Baht data provided by the Dukascopy broker and matching the case study with 50.50 to 54.75 percent accuracy. The group then ran systematic experiments in TensorFlow, optimizing the number of neurons, training instances, and training parameters, and found accuracy above 80 percent for predictions made at specific hours of the day. A hybrid mobile application was built with an Ionic front end and a Python backend to show currency charts, a currency calculator, and trend predictions for five currency pairs, with Firebase handling storage, authentication, and hosting.",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -112,12 +112,12 @@
     "student_id": "5918422"
    }
   ],
-  "advisor": "Mr. Chayapol",
+  "advisor": "Mr. Chayapol Moemeng",
   "committee": [
-   "Dr. Paitoon",
-   "Dr. Benjawan"
+   "Dr. Paitoon Porntrakoon",
+   "Dr. Benjawan Srisura"
   ],
-  "abstract": null,
+  "abstract": "The university campus has no efficient way to track the hundreds of vehicles entering each day, since blacklisted vehicles are recorded by hand in a log book and guards must rely on the naked eye. The team built AU Car Checker, a license plate recognition system for the ABAC Bangna campus that scans plates with a camera and checks them against a list of invalid plates. OpenALPR and OpenCV running in Python perform the recognition, an Electron desktop interface displays the results, and Firebase stores detections, alerts, and plate images in real time. Testing on video of Thai license plates showed mostly correct readings, and the system notifies security officials when a blacklisted vehicle is recognized.",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -161,7 +161,7 @@
   ],
   "advisor": null,
   "committee": [],
-  "abstract": null,
+  "abstract": "This project evaluates how the choice of membership function affects a fuzzy based network selection algorithm for heterogeneous wireless mobile networks. Five fuzzy systems were built in MATLAB using triangle and trapezoidal, generalized bell, Gaussian, sigmoidal, and difference of sigmoidal membership functions, and compared with the Simple Additive Weighting and Analytic Hierarchy Process methods. Simulations used randomly generated data rate, latency, and packet loss values for 3G, 4G, and Wi-Fi networks, weighted against the quality of service needs of VoIP applications. The fuzzy systems reached about 93 to 96 percent selection success compared with about 92 percent for AHP and about 80 percent for SAW, with the Gaussian and difference of sigmoidal functions performing best, at the cost of higher execution time.",
   "reported_keywords": [],
   "classification": {
    "category": [

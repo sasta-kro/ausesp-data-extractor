@@ -1,0 +1,508 @@
+[
+ {
+  "id": "2007",
+  "canonical_title": "Online Customer Behavior Analysis",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "Siyu Han",
+    "student_id": "6118516"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Paitoon Porntrakoon",
+  "committee": [
+   "Asst. Prof. Benjawan Srisura",
+   "A. Chayapol Moemeng"
+  ],
+  "abstract": "In recent times, online shopping is growing on a large scale. Predicting user behavior in the context of e-commerce gains importance as it enables business to understand consumer needs. As online shopping is increasing, large amounts of data on consumers’ online behavior have become available on the web. JD.com is one of the largest online retailers in China that can collect massive user behavior data. In this paper, I’m going to build a website that can simulate user shopping behavior; and based on the imbalanced shopping data of real users from JD.com (https://jdata.jd.com/html/detail.html?id=1)[1], the paper will predict what product the user will purchase with comparison of several machine learning algorithms.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "e_commerce"
+   ],
+   "topic": [
+    "recommender_system"
+   ],
+   "technology": [
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "flask",
+     "label": "Flask",
+     "status": "used",
+     "evidence": "The website will be based on Flask and python and the related database will be built and stored with SQLAlchemy (Section 1.2 Scope); the conclusion confirms a Flask based website has been built"
+    },
+    {
+     "key": "sqlalchemy",
+     "label": "SQLAlchemy",
+     "status": "used",
+     "evidence": "The website will be based on Flask and python and the related database will be built and stored with SQLAlchemy; the databases are integrated into models through SQLAlchemy embedded in Flask (Chapter 5)"
+    },
+    {
+     "key": "xgboost",
+     "label": "XGBoost",
+     "status": "used",
+     "evidence": "The model that I used to make prediction is XGBT, with tuned parameters n_estimetor 3000, max_depth 5 (Table 3.2)"
+    },
+    {
+     "key": "stripe",
+     "label": "Stripe",
+     "status": "used",
+     "evidence": "Once the order is confirmed, users can make payment through credit card using Stripe, a payment processing platform (Figures 5.7 and 5.8)"
+    },
+    {
+     "key": "rnn",
+     "label": "Recurrent neural networks",
+     "status": "cited",
+     "evidence": "Reference [4] proposed a session-based recommendation model by using the basic RNN to predict what a user will buy in the next step (literature review)"
+    },
+    {
+     "key": "cnn_lstm",
+     "label": "CNN-LSTM",
+     "status": "cited",
+     "evidence": "Reference [8] is a Prediction Model of User Buying Behavior Based on CNN-LSTM, Computer Applications and Software, Vol.37 No.6, 2020"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2008",
+  "canonical_title": "Cloud Gaming: Cloud Café",
+  "aliases": [
+   "Cloud Gaming"
+  ],
+  "phase": "final",
+  "course_code": null,
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "Taranjit Singh",
+    "student_id": "6011149"
+   },
+   {
+    "name": "Shiv Dechasakphan",
+    "student_id": "6011552"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "A. Suparwat Charoenvikrom",
+   "Asst. Prof. Dr. Paitoon Porntrakoon"
+  ],
+  "abstract": "Nowadays there is a huge rise in the number of online games, as technology is getting better the games are starting to look more and more realistic. This brings a huge problem for people who cannot upgrade their computers every time a new game release that requires more ram or video memory. Then there is the problem of hardware compatibility and driver’s problem that can be hard for a person with a less technological background. So, at Cloud Café we provide an alternative to getting your computer and keeping it up to date. We provide a cloud gaming platform where users can play games on any Mac or Windows computer that can run Microsoft teams.\n\nWe accomplish this with AWS provided cloud compute instances and allow users to play games over the network. This has been made possible due to the increasing internet speeds all over Thailand as well as the low latency RDP provided using Parsec. At Cloud Café we make the experience of starting a game on an AWS instance all done in a single click therefore making the complex process fully automated.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "game"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [],
+   "technology": []
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "cloud",
+     "label": "Cloud-hosted service",
+     "status": "used",
+     "evidence": "We accomplish this with AWS provided cloud compute instances and allow users to play games over the network"
+    }
+   ],
+   "domain": [
+    {
+     "key": "cloud_gaming",
+     "label": "Cloud gaming",
+     "status": "used",
+     "evidence": "We provide a cloud gaming platform where users can play games on any Mac or Windows computer that can run Microsoft teams"
+    }
+   ],
+   "technology": [
+    {
+     "key": "csharp",
+     "label": "C#",
+     "status": "used",
+     "evidence": "Cloud Café is a cross-platform application made with Dotnet Electron, using CsHtml, Js, CSS to build a web application (Chapter 4 System Architecture)"
+    },
+    {
+     "key": "dotnet",
+     "label": ".NET / ASP.NET Core",
+     "status": "used",
+     "evidence": "Electron.NET is a wrapper around a normal Electron application with an embedded ASP.NET Core application; a dotnet server with MVC controllers runs inside the Electron application"
+    },
+    {
+     "key": "electron",
+     "label": "Electron (Electron.NET)",
+     "status": "used",
+     "evidence": "Electron is a framework that supports the development of desktop applications using the Chromium rendering engine; the app uses the Electron API to create a Chromium application over the web app"
+    },
+    {
+     "key": "nodejs",
+     "label": "Node.js",
+     "status": "used",
+     "evidence": "Electron.NET requires the prior installation of the following software: Node.js and .NET Core 3.1"
+    },
+    {
+     "key": "aws",
+     "label": "Amazon Web Services",
+     "status": "used",
+     "evidence": "The application is based on AWS: EC2 G4dn.xlarge instances with NVIDIA T4 Tensor Core GPUs, 500 GB EBS volumes, snapshots, AMIs and RDS for the database"
+    },
+    {
+     "key": "parsec",
+     "label": "Parsec",
+     "status": "used",
+     "evidence": "Parsec provides us with the SDK to implement this in our project; connection needs Session-Id, peer id and two-factor authentication, and the low latency RDP is provided using Parsec"
+    },
+    {
+     "key": "microsoft_sql_server",
+     "label": "Microsoft SQL Server",
+     "status": "used",
+     "evidence": "Auth: The application uses a Microsoft SQL server hosted on AWS to get the information and to perform authentication"
+    },
+    {
+     "key": "docker",
+     "label": "Docker",
+     "status": "used",
+     "evidence": "To start we started by creating a local database hosted on docker off a local system"
+    },
+    {
+     "key": "google_cloud",
+     "label": "Google Cloud",
+     "status": "cited",
+     "evidence": "Motivation chapter describes how Shiv used Google Cloud to compute Big Data in an earlier course and rented a Windows instance there"
+    },
+    {
+     "key": "google_stadia",
+     "label": "Google Stadia",
+     "status": "cited",
+     "evidence": "Related work reviews Stadia, a cloud gaming service developed and operated by Google, streaming games up to 4K at 60 FPS"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2010",
+  "canonical_title": "Advance Hotel Management System",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT 4292/CS 4200",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "Mungyeong Kim",
+    "student_id": "5911116"
+   },
+   {
+    "name": "Anawil Chumphun",
+    "student_id": "5912087"
+   },
+   {
+    "name": "Tasnia Rehnuma Mahmud",
+    "student_id": "5748008"
+   }
+  ],
+  "advisor": "Asst.Prof.Dr. Adtha Lawanna",
+  "committee": [
+   "Asst.Prof.Dr. Darun Kesrarat",
+   "Asst.Prof.Dr. Benjawan Srisura"
+  ],
+  "abstract": "Tourism is a significant part of this land of smiles - Thailand. And one business that goes hand in hand with tourism, is the hotel business. A good hotel management system of any hotel impacts positively on the customer and gives a very good impression about the hotel. A proper hotel management system, having all the proper information, also shows the customer that the hotel is convenient, trustworthy and safe. A good hotel management system is also extremely helpful, for the manager and staff of the hotel as well. It also makes the interaction with customers easier for them as well. Our project is aimed at researching an existing hotel management system - Ipower Chiang Rai Hotel, find its weaknesses and then ultimately developing an improved version of the system. The goal is to create a system that helps all of its users view and access the hotel in a better and easier way.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "mysql",
+    "php"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "hospitality",
+     "label": "Hospitality / hotel management",
+     "status": "used",
+     "evidence": "The project develops an improved hotel management system for Ipower Chiang Rai Hotel covering reservations, problem reports, food ordering and rentals"
+    },
+    {
+     "key": "tourism",
+     "label": "Tourism and local attraction information",
+     "status": "used",
+     "evidence": "The system will be providing better Chiang Rai trips for the customers with information about interesting places, and souvenir shops to the customers"
+    }
+   ],
+   "technology": [
+    {
+     "key": "aws",
+     "label": "Amazon Web Services",
+     "status": "used",
+     "evidence": "Cost of Software table lists Cloud server(AWS - EC2) as the hosting cost of the proposed system"
+    },
+    {
+     "key": "html_css",
+     "label": "HTML and CSS",
+     "status": "used",
+     "evidence": "For the coding, we mainly used PHP,HTML and CSS to develop our project’s website (Chapter 7 Methodology)"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2014",
+  "canonical_title": "Vehicle Analytics",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT4292/CS4200",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "Mustavi Sarker",
+    "student_id": "6018145"
+   },
+   {
+    "name": "Sorasit Arsirapongphisit",
+    "student_id": "6017564"
+   },
+   {
+    "name": "Chawalit Khotwong",
+    "student_id": "6014085"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "Asst. Prof. Dr. Darun Kesrarat",
+   "Dr. Kwankamol Nongpong"
+  ],
+  "abstract": "Vehicle detection and classification has become a major trend over the last few years due to the advent of self-driving cars. This drove towards the development of advanced traffic monitoring systems which use computer vision powered by various machine learning techniques to detect, classify and track moving vehicles. Even just a decade ago, this was completely unheard of. Although machine learning algorithms existed at the time, the computers were not powerful enough to run inference using those machine learning algorithms.\n\nIf we look at the history of object detection and classification, we can reminisce about how digital cameras in the early 2000s detected faces even without powerful hardware capable of parallel processing. Although it was a very basic form of object detection, far from the advanced neural network powered object detection methods we have now, it still did what it was supposed to do and paved the way towards more advanced neural network powered detection methods we have now. Image classification and object detection has come a long way since the days of the early digital cameras. Now thanks to more powerful machines and neural networks, we can train them to detect and classify at a level never before seen in the past. How we use object detection has also changed greatly as well. There’s now support for more applications, where we can use these classifiers to detect more types of objects and also multiple objects at the same time.\n\nTraffic monitoring has been a field that greatly lacked innovation. Traditionally, companies would use cameras and a team of personnel to monitor the incoming and ongoing traffic on the roads. This can prove as a tedious task for humans to perform, and expenses can also add up. Early traffic monitoring systems [1] consisted of systems that used sensors to measure the road usage for a short period of time. This problem with using traffic counters is that there are various factors that affect the data collection of the traffic counting sensors. One of the major challenges [2] with Automatic Traffic Counters (ATR) is that there needs to be a sufficient number of ATRs present on the road to accurately measure the traffic flow, also lack of data accuracy on roads where they have multiple traffic signals where they have high volume traffic. Compared to traditional sensors to count vehicles, using computer vision for vehicle counting can provide greater detail and accuracy on traffic congestion and also, reduce the cost greatly, as the number of sensors required decreases by a significant margin.\n\nIn this article, we talk about how we developed a scalable traffic monitoring system powered by computer vision which was specifically designed to be implemented at the Stadium One shopping center. The moving object detector in the system is capable of handling the following situations: counting, classifying and tracking vehicles using only computer vision, monitoring the density of the traffic with great accuracy comparable to Automatic Traffic Counters and tracking parked vehicles in Stadium One’s parking lot.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "transportation"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "firebase",
+    "opencv",
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "traffic_monitoring",
+     "label": "Traffic monitoring",
+     "status": "used",
+     "evidence": "A scalable traffic monitoring system powered by computer vision designed for the Stadium One shopping center, counting and classifying vehicles on Rama I, Bun Thud Thong and Chula Soi 5 roads"
+    },
+    {
+     "key": "smart_parking",
+     "label": "Smart parking",
+     "status": "used",
+     "evidence": "Parking lot tracking detects how long a car has been inside the parking lot and which parking lots are taken in real time, streamed through Firebase RTDB"
+    }
+   ],
+   "technology": [
+    {
+     "key": "tensorflow",
+     "label": "TensorFlow",
+     "status": "used",
+     "evidence": "We are using Tensorflow 2.2 Object Detection API for object detection using our custom trained ResNet50 model"
+    },
+    {
+     "key": "resnet",
+     "label": "ResNet (ResNet50 CNN)",
+     "status": "used",
+     "evidence": "Our custom ResNet50 model was trained using the Tensorflow library over the pre-trained neural network; ResNet50 was chosen as the best balance of performance and accuracy"
+    },
+    {
+     "key": "vue_js",
+     "label": "Vue.js",
+     "status": "used",
+     "evidence": "Vue.js - A main progressive framework for building our user interfaces. The version we use is the latest version 2.6.11"
+    },
+    {
+     "key": "nuxt_js",
+     "label": "Nuxt.js",
+     "status": "used",
+     "evidence": "Nuxt.js, a progressive framework based on Vue.js to create modern web applications, is listed in the frontend software specifications"
+    },
+    {
+     "key": "vuetify",
+     "label": "Vuetify",
+     "status": "used",
+     "evidence": "Vuetify, a reusable semantic component framework for Vue.js; most of UI in our web app is created from Vuetify"
+    },
+    {
+     "key": "chart_js",
+     "label": "Chart.js",
+     "status": "used",
+     "evidence": "Chart.Js - A Vue.js library that we use to construct the chart in our web application"
+    },
+    {
+     "key": "axios",
+     "label": "Axios",
+     "status": "used",
+     "evidence": "Axios, a lightweight HTTP client; all of API in the project are post, delete, and request by Axios"
+    },
+    {
+     "key": "nginx",
+     "label": "Nginx",
+     "status": "used",
+     "evidence": "Nginx is listed among the 4 key backend technologies: For hosting API server"
+    },
+    {
+     "key": "aws",
+     "label": "Amazon Web Services",
+     "status": "used",
+     "evidence": "Vehicle Analytics uses the non-relational database AWS DynamoDB for storing data, and an AWS EC2 server runs the REST API server"
+    },
+    {
+     "key": "pandas",
+     "label": "Pandas",
+     "status": "used",
+     "evidence": "We use the Pandas library to calculate the time series of each vehicle type passing by our frame and the traffic density"
+    },
+    {
+     "key": "apache_kafka",
+     "label": "Apache Kafka",
+     "status": "cited",
+     "evidence": "Initially we tried using Apache Kafka as a message queue to divide the data collection and the data processing, but replaced it with Python’s built-in queue data structure"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2015",
+  "canonical_title": "Keyword Analysis for Market Research",
+  "aliases": [
+   "Keyword Analytics for Market Research"
+  ],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "Farial Azmain",
+    "student_id": "5916886"
+   },
+   {
+    "name": "Noorul Zumana Shajahan",
+    "student_id": "5916887"
+   },
+   {
+    "name": "Raqia Ali Nur",
+    "student_id": "5926802"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "Dr. Kwankamol Nongpong",
+   "A. Piyakul Tillapart"
+  ],
+  "abstract": "This market research is aimed to gain understanding and get insights on the customers and the potential customers of ABAC. The main need of our research is customer data, for that we conducted 2 rounds of surveys to gather the responses from the customers and the potential customers. The gathered data was then given to ISL Lab to be processed. The processed data were analysed and made into meaningful information and made into this report. From our analysis, we discovered that the major problems that the current customers and the past customers had was regarding the teaching, expense and the management at ABAC. As for the needs of the potential customers, they want their education to be more practical, that can be used in real life work and fit with the modern time. This market research will be very useful to understand the pain points and the needs of the customers and the potential customers. We will be able to get the view of students, alumni and faculty/staff members at ABAC on ABAC. Furthermore, we will be able to gain understanding on what the modern generation of students are expecting regarding bachelor degree programs. We hope this report can give you the understanding and the insights that you need.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "other"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [
+    "nlp"
+   ],
+   "technology": []
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "market_research",
+     "label": "Market research",
+     "status": "used",
+     "evidence": "This market research is aimed to gain understanding and get insights on the customers and the potential customers of ABAC, based on two rounds of surveys of students, alumni, faculty and staff"
+    }
+   ],
+   "technology": [
+    {
+     "key": "smartdigest",
+     "label": "SmartDigest Framework",
+     "status": "used",
+     "evidence": "For this project we collaborated with Intelligent Systems Lab (ISL) and used their SmartDigest Framework to run our responses, with its Content Processing Model"
+    },
+    {
+     "key": "power_bi",
+     "label": "Microsoft Power BI",
+     "status": "used",
+     "evidence": "With those files we were able to successfully use Power BI to visualize the responses and get a clear diagram to analyse the responses"
+    },
+    {
+     "key": "hadoop",
+     "label": "Hadoop",
+     "status": "cited",
+     "evidence": "Machine learning framework such as Hadoop is used by companies to process, mine, integrate, store, track, index and report business insights from raw unstructured data (background section, not used in the project)"
+    }
+   ]
+  }
+ }
+]

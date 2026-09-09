@@ -85,7 +85,9 @@
     "campus"
    ],
    "topic": [],
-   "technology": []
+   "technology": [
+    "react"
+   ]
   }
  },
  {
@@ -179,6 +181,8 @@
    "topic": [],
    "technology": [
     "mysql",
+    "php",
+    "postgresql",
     "python",
     "wordpress"
    ]

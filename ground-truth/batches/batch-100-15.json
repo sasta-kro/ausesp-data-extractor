@@ -69,7 +69,7 @@
   "advisor": "A. Chayapol Moemeng",
   "committee": [
    "A. Suparwat Charoenvikrom",
-   "Asst. Prof. Dr. Paitoon"
+   "Asst. Prof. Dr. Paitoon Porntrakoon"
   ],
   "abstract": "Document flow for Human Resources is an automatic flow with Microsoft Office software to help the HR and authorised people to handle staff’s leave requests in ABAC online.\n\nThis project aims to eliminate the paperwork for the leave requests, make it possible to submit the leave requests at anywhere, anytime with the network. With this project, AU’s staff will no longer need to come to the university to take the paper form and submit it manually and the HR personnel will not need to record each request’s information manually. All the request information will be saved automatically. The HR personnel can also use MS Power BI to access the data and make it visualization. It is easy to view the summary of each specific staff in a specific date interval.",
   "reported_keywords": [],
@@ -78,14 +78,15 @@
     "software_application"
    ],
    "platform": [
-    "other"
+    "web"
    ],
    "domain": [
     "campus"
    ],
    "topic": [],
    "technology": [
-    "mysql"
+    "mysql",
+    "php"
    ]
   }
  },
@@ -205,7 +206,9 @@
    "category": [
     "ai_data"
    ],
-   "platform": [],
+   "platform": [
+    "none"
+   ],
    "domain": [
     "business"
    ],

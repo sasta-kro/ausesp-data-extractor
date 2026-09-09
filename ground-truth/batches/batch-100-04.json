@@ -85,6 +85,7 @@
    ],
    "topic": [],
    "technology": [
+    "php",
     "mysql"
    ]
   }
@@ -115,8 +116,12 @@
    "category": [
     "research"
    ],
-   "platform": [],
-   "domain": [],
+   "platform": [
+    "none"
+   ],
+   "domain": [
+    "other"
+   ],
    "topic": [],
    "technology": []
   }
@@ -151,7 +156,7 @@
    "Dr. Dobri Atanassov Batovski",
    "A. Paitoon Porntrakoon"
   ],
-  "abstract": null,
+  "abstract": "Crowd Analytic is a people counting program built with Python and OpenCV. It processes video from a stationary downward angled camera and separates moving people from the background using background subtraction with the MOG2 subtractor. Each person is tracked with an identifier and counted when crossing lines in four directions. The counts and timestamps are written to a text file for later analysis. Tests on videos recorded at Mega Bangna reached about 85 percent accuracy compared with manual counting.",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -167,7 +172,8 @@
     "computer_vision"
    ],
    "technology": [
-    "opencv"
+    "opencv",
+    "python"
    ]
   }
  },

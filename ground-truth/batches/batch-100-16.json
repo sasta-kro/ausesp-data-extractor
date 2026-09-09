@@ -123,7 +123,8 @@
    ],
    "topic": [],
    "technology": [
-    "mysql"
+    "mysql",
+    "php"
    ]
   }
  },
@@ -201,7 +202,7 @@
    "Asst.Prof. Titida Nochai",
    "Asst.Prof. Dr. Benjawan Srisura"
   ],
-  "abstract": null,
+  "abstract": "Changnoi dental clinic in Lamphun, Thailand relies only on a Facebook page, so patients cannot register, view detailed services, or book appointments online. This project designed and built a dental management system as a web application for the clinic. Patients can register and log in, browse services and prices, request bookings, and send messages, and their requests reach the dentist and admin by email. An admin site lets the clinic manage registered users and appointments. The system was implemented with HTML, CSS, PHP, Python, MySQL and Django, tested locally first, and then uploaded to an online server.",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -216,6 +217,7 @@
    "topic": [],
    "technology": [
     "mysql",
+    "php",
     "python"
    ]
   }

@@ -1,0 +1,512 @@
+[
+ {
+  "id": "1646",
+  "canonical_title": "Piano Score Sheet with Pitch Alphabets Generator using Optical Music Recognition",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "Menh Keo",
+    "student_id": "6038302"
+   },
+   {
+    "name": "Aung Khant Oo",
+    "student_id": "6118154"
+   }
+  ],
+  "advisor": "A. Kiratijuta Bhumichitr",
+  "committee": [
+   "Asst. Prof. Dr. Paitoon Porntrakoon",
+   "A. Tapanan Yeophantong"
+  ],
+  "abstract": "For beginners who learn to play piano, recognizing the pitch alphabet of each music note and their position has always been handy stuff. That’s the main problem that we’re going to solve in this senior project I. In order to solve that problem, we are going to build a platform that end users can upload their sheets and then we will apply Haar-like feature to adopt to Optical Music Recognition process to print the pitch alphabet on top of each music note that is going to help the users be able to read the sheet music easily. For our senior project I, our system will be able to detect both PDF and digital image format of sheet music and convert them into some digital format printed upon each music note.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application",
+    "research"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [
+    "computer_vision",
+    "ocr"
+   ],
+   "technology": [
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "music",
+     "label": "Music and sheet reading",
+     "status": "used",
+     "evidence": "The system prints the pitch alphabet of each note on piano sheet music to help beginners who have a hard time reading sheet music (Chapter 1 and Chapter 6)."
+    }
+   ],
+   "technology": [
+    {
+     "key": "flask",
+     "label": "Flask",
+     "status": "used",
+     "evidence": "Chapter 4: 'In the application part, we create a website by using the Flask web application framework' and the uploaded file 'will be received via the flask application framework'."
+    },
+    {
+     "key": "wand",
+     "label": "Wand (Python image library)",
+     "status": "used",
+     "evidence": "Chapter 4: PDF pages are divided into images 'by using the library of Python call \"Wand\"'."
+    },
+    {
+     "key": "pypdf2",
+     "label": "PyPDF2",
+     "status": "used",
+     "evidence": "Chapter 4: 'we use \"PyPDF2\" as the external library' to merge result sheets into one downloadable PDF."
+    },
+    {
+     "key": "opencv",
+     "label": "OpenCV",
+     "status": "cited",
+     "evidence": "Reference [7] 'Understanding and Implementing Shape Detection using Hough Transform with OpenCV and Python by Juan Cruz Martinez'; the project implements Hough Line Transform, morphological operations and Haar cascade detection, which are OpenCV algorithms, but OpenCV itself is only named in the reference."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1650",
+  "canonical_title": "2D side action game",
+  "aliases": [
+   "Digitized Dimension"
+  ],
+  "phase": "final",
+  "course_code": "IT4299",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Worachit Into",
+    "student_id": "5614787"
+   },
+   {
+    "name": "Ratnaphorn Champi",
+    "student_id": "5645108"
+   },
+   {
+    "name": "Woranat Swangswai",
+    "student_id": "5837619"
+   }
+  ],
+  "advisor": "A. Pawut Satitsuksanoh",
+  "committee": [
+   "A. Tapanan Yeophantong",
+   "Asst. Prof. Paitoon Porntrakoon"
+  ],
+  "abstract": "In our childhood, we grew up playing computer games. Computer game is the most common source of entertainment because it makes the player feel involved since they can interact with the game to achieve some goals of the game. Unlike watching movies or listening to music, with games players get the change of interacting and bring out their emotions while playing like killing, fighting, competing and many more. So, the concept of this project comes up with the games that remind us of our childhood. Therefore, we try to design a 2D game into 8 bit resolution like the old ones that we are familiar with. The story of the game is based on university life combine with some Sci-Fi theme.\n\nTo make our game fun and challenging we have different stages with different level of difficulty. The first stage is rather simple and easy so novice players can begin to play and get used to how to play. Once they move to next level it gets harder and more killing, jumping, being aware of the fire is required. We show the score on the screen to make it more interesting and keep count of the score by increasing the number of the score as the player kills a monster and collect the scores until the player dies or reaches the end of level.\n\nWe hope our game can make people enjoy playing and find the challenges interesting and want to play more.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "game"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [],
+   "technology": []
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "gamemaker_studio_2",
+     "label": "GameMaker Studio 2",
+     "status": "used",
+     "evidence": "Development tool section: 'Game Maker Studio 2 ... GameMaker accommodates the creation of cross-platform and multi-genre video games' chosen because it 'is primarily intended for making games with 2D graphics'."
+    },
+    {
+     "key": "game_maker_language",
+     "label": "Game Maker Language (GML)",
+     "status": "used",
+     "evidence": "Project milestone: 'we spend almost 3 months to learning about Game Maker Language' before and during the coding phase."
+    },
+    {
+     "key": "photoshop",
+     "label": "Adobe Photoshop",
+     "status": "used",
+     "evidence": "Operating cost table lists a monthly 'Photoshop subscription fee' of 356 Baht alongside the artwork design cost."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1651",
+  "canonical_title": "Low Cost RFID Laundry Management System",
+  "aliases": [],
+  "phase": "final",
+  "course_code": null,
+  "program": null,
+  "semester": null,
+  "academic_year": null,
+  "students": [
+   {
+    "name": "Chawan Vattanalap",
+    "student_id": "5737444"
+   },
+   {
+    "name": "Artisd Chanyawadee",
+    "student_id": "5712266"
+   }
+  ],
+  "advisor": null,
+  "committee": [],
+  "abstract": "Small laundry shops identify, check, and record customer orders manually, which is slow and error prone for owners with limited budget, manpower, and technology knowledge. The project built a low cost RFID laundry management system that maps the RFID tag of a washing bag to a customer's telephone number or email together with the order details. Staff use an Angular web application to add customers, add orders, and update order status, and an Android application written in Kotlin lets the owner track and update orders on a phone. Data is stored in a Firebase NoSQL database and Firebase Cloud Functions send an automatic email notification when an order is ready to pick up. Interviews showed the application helps with tracking orders, identifying orders, notifying customers, and calculating profit, and the low frequency RFID option was chosen because it fit the users' limited budget.",
+  "abstract_source": "generated",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "hardware_iot",
+    "software_application"
+   ],
+   "platform": [
+    "mobile",
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "firebase",
+    "kotlin"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "angular",
+     "label": "Angular",
+     "status": "used",
+     "evidence": "Section 3.2.1: 'It is a platform provided to develop a single-page application by using HTML, Typescript, and CSS language' used for the web application."
+    },
+    {
+     "key": "typescript",
+     "label": "TypeScript",
+     "status": "used",
+     "evidence": "Section 3.2.1 lists TypeScript as one of the languages the Angular web application is developed with."
+    },
+    {
+     "key": "firebase_cloud_functions",
+     "label": "Firebase Cloud Functions",
+     "status": "used",
+     "evidence": "Section 3.2.1: 'Cloud Function ... provides functions in response of trigger services of Firebase at the server side'."
+    },
+    {
+     "key": "android_studio",
+     "label": "Android Studio",
+     "status": "used",
+     "evidence": "Section 3.2.2: 'Android Studio is the official Integrated Development Environment (IDE) for Android app development' used for the Android application."
+    },
+    {
+     "key": "visual_studio_code",
+     "label": "Visual Studio Code",
+     "status": "used",
+     "evidence": "Section 3.2.1 lists Visual Studio Code as the editor used to code the web application."
+    },
+    {
+     "key": "rfid",
+     "label": "RFID (Radio Frequency Identification)",
+     "status": "used",
+     "evidence": "Chapter 1: 'Radio Frequency Identification (RFID) technology is brought into solution to provide identification for each order', with low frequency 13.56 MHz tags and readers chosen over UHF to keep costs low."
+    },
+    {
+     "key": "arduino",
+     "label": "Arduino",
+     "status": "cited",
+     "evidence": "Future work only: implementing lockers automatically 'using microprocessors like Arduino, plus modules' is planned, not built."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1653",
+  "canonical_title": "A Case Study of the Indoor Performance of Bluetooth Smart with Raspberry Pi",
+  "aliases": [
+   "A Case Study of the Indoor Performance of Bluetooth Smart with Raspberry Pi 3"
+  ],
+  "phase": "final",
+  "course_code": "TS 4299",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Mara Alyssa Dalisay",
+    "student_id": "5645451"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Dobri Atanassov Batovski",
+  "committee": [
+   "A. Piyakul Tillapart",
+   "Asst. Prof. Dr. Thanachai Thumthawatworn"
+  ],
+  "abstract": "This project deals with the results of an experimental study of the indoor transmission performance of Bluetooth low energy (BLE, also known as Bluetooth Smart) using Raspberry Pi 3 and Raspberry Pi Zero W. The l2ping link layer tool is used to send multiple consecutive packets between two connected Bluetooth devices in order to study how the transmission latency varies with the increase of the distance between said devices in corridor and room configurations. Packets of two different sizes, 44 bytes and 200 bytes, are chosen for the transmission experiments. Experimental results with the use of power banks are also obtained.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "hardware_iot",
+    "research"
+   ],
+   "platform": [
+    "embedded_hardware"
+   ],
+   "domain": [],
+   "topic": [],
+   "technology": []
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "telecommunications",
+     "label": "Telecommunications and wireless networking",
+     "status": "used",
+     "evidence": "The whole study measures BLE transmission latency and RSSI indoors, and the degree earned is 'Bachelor of Science in Telecommunications Science'."
+    },
+    {
+     "key": "internet_of_things",
+     "label": "Internet of Things",
+     "status": "cited",
+     "evidence": "Conclusion frames the results for IoT: 'the Internet of Things (IoT) devices using PRi modules would have error-free data transmission', but the experiments themselves only benchmark BLE links."
+    }
+   ],
+   "technology": [
+    {
+     "key": "raspberry_pi",
+     "label": "Raspberry Pi",
+     "status": "used",
+     "evidence": "Section 4.1 equipment list: '3 RPi units, one RPi 3 and two RPi Zero W units' run all experiments."
+    },
+    {
+     "key": "bluetooth_low_energy",
+     "label": "Bluetooth Low Energy (BLE / Bluetooth Smart)",
+     "status": "used",
+     "evidence": "Abstract: 'an experimental study of the indoor transmission performance of Bluetooth low energy (BLE, also known as Bluetooth Smart)'."
+    },
+    {
+     "key": "raspbian",
+     "label": "Raspbian",
+     "status": "used",
+     "evidence": "Section 4.2: 'The Raspbian Stretch OS can be installed on the microSD cards' on each RPi."
+    },
+    {
+     "key": "l2ping",
+     "label": "l2ping",
+     "status": "used",
+     "evidence": "Section 4.4: 'The l2ping tool simply sends the logical link control and adaptation layer protocol (L2CAP) echo request' to measure latency, with commands in Appendix A."
+    },
+    {
+     "key": "bluez",
+     "label": "BlueZ",
+     "status": "used",
+     "evidence": "Section 4.4 and Appendix A: 'sudo apt-get install Bluetooth bluez blueman' and 'bluetoothctl is a command-line interface to the BlueZ'."
+    },
+    {
+     "key": "hcitool",
+     "label": "hcitool",
+     "status": "used",
+     "evidence": "Section 4.5: RSSI readings obtained 'with sudo hcitool rssi xx:xx:xx:xx:xx:xx'."
+    },
+    {
+     "key": "minicom",
+     "label": "Minicom",
+     "status": "used",
+     "evidence": "Section 4.4: 'A minicom has also to be installed in the RPi which is a serial communication program', install command in Appendix A."
+    },
+    {
+     "key": "etcher",
+     "label": "Etcher",
+     "status": "used",
+     "evidence": "Section 4.2: 'The Raspbian Stretch OS can be installed on the microSD cards with the so-called Etcher software' downloaded from etcher.io."
+    },
+    {
+     "key": "devcpp",
+     "label": "Dev-C++",
+     "status": "used",
+     "evidence": "Section 4.5: latency values are extracted from TXT files into DAT files 'using the custom DevC++ source code shown in Appendix B'."
+    },
+    {
+     "key": "cplusplus",
+     "label": "C++",
+     "status": "used",
+     "evidence": "Appendix B contains the custom C++ program '// Extraction of latency values from l2ping terminal strings' with iostream, fstream and std includes."
+    },
+    {
+     "key": "debian",
+     "label": "Debian",
+     "status": "cited",
+     "evidence": "Chapter 1 background: 'Raspbian is based on Debian, which is a version of the Linux OS'."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1657",
+  "canonical_title": "UIP: Unified University Information System for Prospective Students on Mobile Devices",
+  "aliases": [
+   "AU Admission"
+  ],
+  "phase": "final",
+  "course_code": "SC4299",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Chotikar Phoophaphimukthum",
+    "student_id": "5613032"
+   },
+   {
+    "name": "Pitiwat Arunruviwat",
+    "student_id": "5613739"
+   },
+   {
+    "name": "Kornkamol Kiatopas",
+    "student_id": "5615959"
+   }
+  ],
+  "advisor": "Dr. Songsak Channarukul",
+  "committee": [
+   "Asst. Prof. Paitoon Porntrakoon",
+   "A. Piyakul Tillapart"
+  ],
+  "abstract": "In this project, we present you an Unified University Information System for Prospective Students on Mobile Devices (UIP) that will be used by prospective student and staff or program concealer. UIP have 3 main features are program recommendation, chat and apply.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile",
+    "web"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [
+    "recommender_system"
+   ],
+   "technology": [
+    "firebase"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "signalr",
+     "label": "SignalR",
+     "status": "used",
+     "evidence": "Section 3.1: 'we use SignalR to be a library for websocket to build real-time chat application', with a ChatHub class and OWIN Startup shown in Figures 3.3 to 3.5."
+    },
+    {
+     "key": "csharp",
+     "label": "C#",
+     "status": "used",
+     "evidence": "Figures 3.3 to 3.5: 'Example C# for start map SignalR with client and hub' and C# hub methods such as StaffJoinRoom and Sent."
+    },
+    {
+     "key": "asp_net",
+     "label": "ASP.NET",
+     "status": "used",
+     "evidence": "Section 3.2.1 installs 'Microsoft.AspNet.SignalR - A meta package that brings in everything that use to run it on IIS and ASP.NET'."
+    },
+    {
+     "key": "microsoft_azure",
+     "label": "Microsoft Azure",
+     "status": "used",
+     "evidence": "Section 3.1: 'use Microsoft Azure Server to manage web service' for the information exchange system."
+    },
+    {
+     "key": "sql_server",
+     "label": "Microsoft SQL Server",
+     "status": "used",
+     "evidence": "Section 3.1: 'we create web service in server and keep data in database SQL server'."
+    },
+    {
+     "key": "swift",
+     "label": "Swift",
+     "status": "used",
+     "evidence": "The iOS client code in Figures 3.6 to 3.12 is Swift, for example 'Connection = SignalR(\"http://supanattoy.com:92/\")' with closure callbacks."
+    },
+    {
+     "key": "swiftr",
+     "label": "SwiftR",
+     "status": "used",
+     "evidence": "Figure 3.6 'SwiftR for connect client and hub' and the SwiftR connection lifecycle handlers in Figures 3.8 to 3.12."
+    },
+    {
+     "key": "ios",
+     "label": "iOS",
+     "status": "used",
+     "evidence": "Section 2.2.2: 'Since our application bases on iOS platform. Hence, we are using APNs (Apple Push Notification Service)'."
+    },
+    {
+     "key": "firebase_cloud_messaging",
+     "label": "Firebase Cloud Messaging (FCM)",
+     "status": "used",
+     "evidence": "Conclusion: 'we use Firebase Cloud Messaging (FCM) to send notification to mobile device' when users get new chat messages."
+    },
+    {
+     "key": "firebase",
+     "label": "Firebase Realtime Database",
+     "status": "cited",
+     "evidence": "Section 2.2.1 describes the Firebase realtime platform as an option for real-time chat, but the team chose SignalR because 'it’s scalability more than Firebase realtime database because firebase organized data in a tree shape'."
+    },
+    {
+     "key": "javascript",
+     "label": "JavaScript",
+     "status": "used",
+     "evidence": "Section 3.1: 'Server will change raw data to be programming language by our application base on JavaScript'."
+    },
+    {
+     "key": "jquery",
+     "label": "jQuery",
+     "status": "used",
+     "evidence": "Section 3.2.2: 'The SignalR JavaScript client (Persistent Connection) comes in the form of a jQuery plugin and running in a hidden webview'."
+    },
+    {
+     "key": "google_maps",
+     "label": "Google Maps",
+     "status": "used",
+     "evidence": "Map feature: 'user can use navigator to navigate them to the university because our application use Google map base'."
+    }
+   ]
+  }
+ }
+]

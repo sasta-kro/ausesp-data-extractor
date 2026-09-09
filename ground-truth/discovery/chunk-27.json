@@ -1,0 +1,530 @@
+[
+ {
+  "id": "2244",
+  "canonical_title": "AUVR: A Virtual Guide to Assumption University Campus through 360-Degree Videos",
+  "aliases": [
+   "AUVR"
+  ],
+  "phase": "final",
+  "course_code": "CSX 3011",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2023,
+  "students": [
+   {
+    "name": "Morgan Kieffer",
+    "student_id": "6135229"
+   },
+   {
+    "name": "Sethanant Tetanonsakul",
+    "student_id": "6115269"
+   }
+  ],
+  "advisor": "Tapanan Yeophantong",
+  "committee": [
+   "Benjawan Srisura",
+   "Chayapol Moemeng"
+  ],
+  "abstract": "This project aims to develop a web application that offers a virtual guide to a university campus through a series of 360-degree videos, with the goal of enhancing the University's attractiveness and international reputation. The web application will be designed to provide an engaging user experience, and its content will be organized into categories that can be managed by an appointed admin user through a Content Management System (CMS). The virtual guide will be built using cutting-edge technology such as Next.js, MongoDB, NextAuth, Bootstrap, Material UI, and a CDN. The report will detail the development process, system design, and implementation of the virtual guide web application, along with potential future improvements and expansions. The project's scope and limitation will be discussed, with an emphasis on using Vimeo or YouTube as a CDN to host and stream 360-degree videos. The report will also cover the framework and methodology used to develop the web application, including the frontend development using Next.js, backend development using Node.js API routes, database management using MongoDB, video CDN integration, and authentication implementation using NextAuth.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [],
+   "technology": [
+    "nextjs",
+    "mongodb",
+    "nodejs",
+    "react"
+   ]
+  },
+  "discoveries": {
+   "category": [
+    {
+     "key": "virtual_reality",
+     "label": "Immersive 360-degree / VR media",
+     "status": "used",
+     "evidence": "The virtual guide offers 'a series of 360-degree videos' filmed with a 360 camera, and future work explores the A-Frame web framework for VR experiences with cardboard VR headsets."
+    }
+   ],
+   "platform": [],
+   "domain": [
+    {
+     "key": "virtual_tour",
+     "label": "Virtual campus tour",
+     "status": "used",
+     "evidence": "Chapter 1: 'this project aims to develop a web application that offers a virtual guide to the University campus through a series of 360-degree videos', focused on the Huamak and Suvarnabhumi campuses."
+    }
+   ],
+   "technology": [
+    {
+     "key": "next_auth",
+     "label": "NextAuth",
+     "status": "used",
+     "evidence": "Section 2.1.5: 'NextAuth will handle authentication for the admin user, ensuring secure access to the admin page and CMS.'"
+    },
+    {
+     "key": "bootstrap",
+     "label": "Bootstrap",
+     "status": "used",
+     "evidence": "Chapter 2: 'the frontend will be styled using Bootstrap and Material UI.'"
+    },
+    {
+     "key": "material_ui",
+     "label": "Material UI",
+     "status": "used",
+     "evidence": "Section 3.4: 'we utilized a mix of Bootstrap and Material UI frameworks that offer ready-to-go components.'"
+    },
+    {
+     "key": "vimeo",
+     "label": "Vimeo (video CDN)",
+     "status": "used",
+     "evidence": "Section 2.1.4: 'Videos will be stored on Vimeo, which will serve as a Content Delivery Network (CDN) for hosting and streaming video files.'"
+    },
+    {
+     "key": "youtube",
+     "label": "YouTube (video CDN)",
+     "status": "used",
+     "evidence": "Conclusion: 'we have successfully developed a functional Next.js app with a MongoDB database, Vimeo and YouTube as CDN for video streaming.'"
+    },
+    {
+     "key": "vercel",
+     "label": "Vercel hosting",
+     "status": "used",
+     "evidence": "Table 4.2 operational costs lists 'Vercel Hosting service, Cloud solution, 20$ / month, $140 / year'."
+    },
+    {
+     "key": "lighthouse",
+     "label": "Lighthouse",
+     "status": "used",
+     "evidence": "Section 3.5: 'Performance report was done using LightHouse browser developer tool.'"
+    },
+    {
+     "key": "aframe",
+     "label": "A-Frame",
+     "status": "cited",
+     "evidence": "Future work: 'we would explore the use of the A-frame video player. A-frame is a web framework for building virtual and augmented reality experiences.'"
+    },
+    {
+     "key": "ai_voice_generator",
+     "label": "AI voice generator (Speakatoo)",
+     "status": "cited",
+     "evidence": "Table 4.4 Optional lists 'AI voice generator, Content creation tool, A realistic AI text to speech generator, Speakatoo'."
+    }
+   ]
+  }
+ },
+ {
+  "id": "2252",
+  "canonical_title": "Scholarship Keeper System",
+  "aliases": [],
+  "phase": "proposal",
+  "course_code": "CSX 3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Vibolrottana Seng",
+    "student_id": "6217429"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Darun Kesrarat",
+  "committee": [
+   "Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan",
+   "Asst. Prof. Dr. Dobri Atanassov Batovski"
+  ],
+  "abstract": "Assumption University (ABAC) is one of the universities that provides scholarship to students who have a good academic background therefore when student receive scholarship from the university students also need to work for the university in some limited amount of time as well. Furthermore, for staff to manage the student’s work hour and also posted work that available for students and for student convenience to find the work that suitable for their leisure time scholarship keeper system has come in that act as an event management for staffs and a work seeker for scholarship student.\n\nIn order for staff to record the complete working hours of a student in one session they still use paper. To eliminate the use of paper scholarship keeper system is created as web application that offer a convenient and efficient way for staffs to update the working hours of each student immediately after working session has done. Moreover, students can also check their accumulated working hours anytime at their convenience as well. Especially, students can also check the history of their work and apply for the work wherever they are. By applying some web application knowledge, I will explain the process of creating scholarship keeper system and utilize it efficiently for the user further in this paper.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [],
+   "technology": [
+    "react",
+    "firebase"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "scholarship_management",
+     "label": "Scholarship student work management",
+     "status": "used",
+     "evidence": "Abstract: 'scholarship keeper system has come in that act as an event management for staffs and a work seeker for scholarship student', replacing paper records of student working hours at Assumption University."
+    }
+   ],
+   "technology": [
+    {
+     "key": "firestore",
+     "label": "Cloud Firestore",
+     "status": "used",
+     "evidence": "Section 3.2.4: 'In this project I use fire[store] as my database. Firestore is a flexible, scalable, and real-time NoSQL database service provided by Google as part of the Firebase platform.'"
+    },
+    {
+     "key": "jquery",
+     "label": "jQuery",
+     "status": "used",
+     "evidence": "Section 4.2: 'I use react js as a frame work together with JQuery.'"
+    },
+    {
+     "key": "css_preprocessor",
+     "label": "CSS preprocessor",
+     "status": "used",
+     "evidence": "Section 4.2: 'I use CSS preprocessor to help with CSS syntax advancement like nested variables, nesting, imports, mixins, inheritance, etc, all in a CSS-compatible syntax.'"
+    },
+    {
+     "key": "npm",
+     "label": "npm",
+     "status": "used",
+     "evidence": "Section 4.2: 'On the javascript side I use NPM as package manager in order to install some necessary packages.'"
+    },
+    {
+     "key": "redux",
+     "label": "Redux",
+     "status": "cited",
+     "evidence": "Section 3.2.3: React 'has spawned an ecosystem of libraries and tools, such as Redux for state management, React Router for navigation, and many others.'"
+    },
+    {
+     "key": "react_router",
+     "label": "React Router",
+     "status": "cited",
+     "evidence": "Section 3.2.3: React ecosystem mention of 'React Router for navigation'."
+    }
+   ]
+  }
+ },
+ {
+  "id": "2579",
+  "canonical_title": "NYK Cosmetics Business Management System",
+  "aliases": [
+   "Cosmetics Business Management System"
+  ],
+  "phase": "final",
+  "course_code": "CSX 3011",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Hein Naing Soe",
+    "student_id": "6530070"
+   },
+   {
+    "name": "Kyi Phyu Shin",
+    "student_id": "6530335"
+   }
+  ],
+  "advisor": "A. Jinchun Lu",
+  "committee": [
+   "Asst. Prof. Dr. Paitoon Porntrakoon",
+   "Dr. Phyo Min Tun"
+  ],
+  "abstract": "This project presents the development of a web-based Cosmetics Business Management System designed to improve operational efficiency in sales management and administrative processes at NYK Cosmetics, a retail and wholesale cosmetics business. The system aims to reduce manual workload by providing a centralized platform that integrates sales order management, inventory tracking, customer loan monitoring, and administrative reporting.\n\nThe application enables salespersons to record customer orders digitally through a web-based system, allowing them to access the platform conveniently from tablets or web browsers. The system automatically updates inventory and transaction records in real time after each order submission. Administrators can review, adjust, and manage orders through a centralized web dashboard without relying on manual record books or scattered spreadsheets. In addition, the system includes customer loan management features that allow administrators to track outstanding balances, monitor payment histories, and maintain accurate financial records efficiently. The system also provides statistical dashboards that display sales performance by product, shop, and region, enabling better decision-making and business analysis. By implementing this system, NYK Cosmetics can reduce operational errors and improve overall business management efficiency.\n\nThe system is developed using modern web technologies including Next.js for the frontend, Nest.js for the backend, and PostgreSQL for the database, and deployed on cloud infrastructure to ensure accessibility and scalability. Overall, the proposed system establishes a centralized digital platform that enhances operational management and supports the future growth of NYK Cosmetics.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "nextjs",
+    "postgresql",
+    "react"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "inventory_management",
+     "label": "Inventory management",
+     "status": "used",
+     "evidence": "Section 1.3.1: 'The system maintains product inventory records and automatically updates stock quantities whenever new orders are submitted or adjusted by administrators.'"
+    },
+    {
+     "key": "customer_loan_management",
+     "label": "Customer credit and loan management",
+     "status": "used",
+     "evidence": "Section 1.3.1: 'customer loan management features that allow administrators to track outstanding balances, monitor payment histories, and maintain accurate financial records.'"
+    }
+   ],
+   "technology": [
+    {
+     "key": "nestjs",
+     "label": "NestJS",
+     "status": "used",
+     "evidence": "Section 4.2.2: 'For the backend, NestJS was used to build the server-side application.'"
+    },
+    {
+     "key": "neon",
+     "label": "Neon (managed PostgreSQL)",
+     "status": "used",
+     "evidence": "Section 4.2.2: 'To support cloud-based database hosting, Neon was used as the managed PostgreSQL service.'"
+    },
+    {
+     "key": "vercel",
+     "label": "Vercel hosting",
+     "status": "used",
+     "evidence": "Section 4.2.2: 'For deployment and hosting, Vercel was used to deploy the frontend application.'"
+    },
+    {
+     "key": "heroku",
+     "label": "Heroku",
+     "status": "used",
+     "evidence": "Section 4.2.2: 'The backend services were deployed using Heroku, which simplifies server management and application deployment.'"
+    },
+    {
+     "key": "aws_s3",
+     "label": "Amazon S3",
+     "status": "used",
+     "evidence": "Section 4.2.2: 'Amazon Web Services (AWS) S3 was used for storing and managing uploaded files such as product images.'"
+    },
+    {
+     "key": "istock",
+     "label": "iStock Inventory Management System",
+     "status": "cited",
+     "evidence": "Chapter 2: 'In Myanmar, some businesses use software such as the iStock Inventory Management System to manage inventory and sales data.'"
+    },
+    {
+     "key": "microsoft_excel",
+     "label": "Microsoft Excel",
+     "status": "cited",
+     "evidence": "Chapter 2: 'Some small businesses also rely on spreadsheet tools like Microsoft Excel to record sales and inventory information.'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2596",
+  "canonical_title": "AU Timeout: Sports Court Booking and Equipment Rental System for Assumption University",
+  "aliases": [
+   "AU Timeout",
+   "AU Timeout SuperApp",
+   "AU SuperApp"
+  ],
+  "phase": "proposal",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Mi Mi Zaw",
+    "student_id": "6540153"
+   },
+   {
+    "name": "Min Aung Kyaw",
+    "student_id": "6238126"
+   },
+   {
+    "name": "Hsu Shwe Yaung",
+    "student_id": "6611665"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Thanachai Thumthawatworn",
+  "committee": [],
+  "abstract": "The rapid advancement of mobile technology and cloud computing has significantly transformed the way organizations manage operational processes. In educational institutions, digital solutions are increasingly adopted to improve administrative efficiency and enhance user experience. At Assumption University, the current sports court booking and equipment rental process is primarily manual or semi-digital, resulting in inefficiencies, scheduling conflicts, limited transparency, and increased administrative workload.\n\nThis senior project presents the design and development of AU Timeout – AU SuperApp, a centralized iOS mobile application developed to digitalize sports court reservations and equipment rental management for Assumption University students. The system enables students to check real-time court availability, book sports facilities, rent sports equipment (including both free and paid items), and manage booking history directly through a mobile application. In addition, a matchmaking feature is introduced, allowing students to create sports matches for specific activities and enabling other users to join, thereby promoting community engagement and organized sports participation.\n\nThe system includes an administrative web-based dashboard that allows staff members to manage courts, set equipment pricing, monitor bookings and rentals, and track revenue. The backend infrastructure is implemented using Firebase services, including Firebase Authentication for secure user login, Firebase Firestore as a real-time cloud database, and Firebase Hosting for web deployment. The system architecture ensures real-time synchronization, scalability, and secure data management.\n\nThe system is developed using Firebase services including Firebase Authentication and Cloud Firestore to provide secure user management, real-time data synchronization, and scalable cloud-based storage.\n\nThe implementation of AU Timeout transforms a manual operational process into a structured digital system, improving efficiency, reducing human error, and enhancing transparency. The proposed solution contributes to the digital transformation initiative of Assumption University and supports the development of a smart campus environment.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile",
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [],
+   "technology": [
+    "firebase"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "sports_facility_management",
+     "label": "Sports facility booking and equipment rental",
+     "status": "used",
+     "evidence": "Chapter 1: the project 'digitizes the sports court booking and equipment rental process at Assumption University' with a matchmaking feature for sports matches."
+    },
+    {
+     "key": "smart_campus",
+     "label": "Smart campus",
+     "status": "used",
+     "evidence": "Abstract: 'The proposed solution contributes to the digital transformation initiative of Assumption University and supports the development of a smart campus environment.'"
+    }
+   ],
+   "technology": [
+    {
+     "key": "firebase_authentication",
+     "label": "Firebase Authentication",
+     "status": "used",
+     "evidence": "Objectives: 'To integrate secure authentication using Firebase Authentication'; used to differentiate student and administrative users."
+    },
+    {
+     "key": "cloud_firestore",
+     "label": "Cloud Firestore",
+     "status": "used",
+     "evidence": "Objectives: 'To utilize Firebase Firestore as a cloud-based real-time database'; collections include Users, Courts, Bookings, Equipment, Rentals, and Matches."
+    },
+    {
+     "key": "firebase_hosting",
+     "label": "Firebase Hosting",
+     "status": "used",
+     "evidence": "Section 2.4.3: 'Firebase Hosting is used to deploy the administrative dashboard, enabling staff members to access the system through a web interface.'"
+    },
+    {
+     "key": "ios",
+     "label": "iOS",
+     "status": "used",
+     "evidence": "Section 3.4: 'iOS mobile development tools used to build the student application interface'; the abstract describes 'a centralized iOS mobile application'."
+    }
+   ]
+  }
+ },
+ {
+  "id": "25102",
+  "canonical_title": "AU CANTEEN: AU Student Food Ordering Platform",
+  "aliases": [
+   "AU CANTEEN",
+   "AU Canteen System",
+   "AU Canteen Ordering System"
+  ],
+  "phase": "proposal",
+  "course_code": "CSX 3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Nang Hsi Wan Inn",
+    "student_id": "6520255"
+   },
+   {
+    "name": "Thu Thu Win",
+    "student_id": "6520277"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan",
+  "committee": [
+   "Dr. Paitoon Porntrakoon",
+   "Dr. Phyo Min Tun"
+  ],
+  "abstract": "Campus dining is important for daily life of university students. However, many students still find it difficult to explore food options on campus. At Assumption University, there is currently no main platform where students can easily view the information about canteen shops, menus, prices, or opening hours. Because of this, students, especially new students often need to walk around the canteen area to see what food is available. This can take time and may cause confusion when trying to decide what to eat. During busy hours, this situation can also contribute to long queues.\n\nTo improve this problem, this project develops the AU Canteen System, which is a web-based platform designed to help students explore food options in the campus canteen more easily. Through the system, students can browse different shops, check menus and prices, and see available food before going to the canteen. Having this information online allows students to decide what they want in advance and can help reduce waiting time during peak periods.\n\nThe platform uses a role-based structure with three types of users: students, shop owners, and administrators. Students can browse menus and place orders through a simple interface. Shop owners have access to a dashboard where they can manage their menus, receive orders, and update the status of each order. Administrators manage the overall system and monitor important data to ensure the platform operates properly.\n\nThe AU Canteen System is developed using several web technologies. The front-end is built with Next.js, which helps create an interactive and responsive user interface. The backend services are implemented using Node.js APIs. PostgreSQL, hosted on Neon, is used for storing system data, while Cloudinary is used to store and manage all the food images and transaction receipts. User authentication is handled using JSON Web Tokens (JWT) to ensure secure access. The application is deployed on Vercel, allowing users to access the system online.\n\nIn summary, the AU Canteen System provides a centralized platform that improves access to canteen information and supports better food discovery for students. By organizing menus, shop information, and ordering functions in one system, the platform helps make the campus dining experience more convenient and efficient for everyone.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "campus",
+    "e_commerce"
+   ],
+   "topic": [],
+   "technology": [
+    "nextjs",
+    "nodejs",
+    "postgresql",
+    "react"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "food_ordering",
+     "label": "Campus canteen food ordering",
+     "status": "used",
+     "evidence": "Chapter 1: 'the AU Canteen System, a web-based platform designed to organize and centralize canteen information' where students browse stalls, view menus, place orders, and pick a pickup time slot."
+    }
+   ],
+   "technology": [
+    {
+     "key": "neon",
+     "label": "Neon (managed PostgreSQL)",
+     "status": "used",
+     "evidence": "Chapter 1: 'PostgreSQL, hosted on Neon, is used for storing system data.'"
+    },
+    {
+     "key": "cloudinary",
+     "label": "Cloudinary",
+     "status": "used",
+     "evidence": "Abstract: 'Cloudinary is used to store and manage all the food images and transaction receipts.'"
+    },
+    {
+     "key": "tailwind_css",
+     "label": "Tailwind CSS",
+     "status": "used",
+     "evidence": "Section 2.4: 'Tailwind CSS is used to create a clean and consistent visual design for the AU Canteen System.'"
+    },
+    {
+     "key": "jwt",
+     "label": "JSON Web Tokens",
+     "status": "used",
+     "evidence": "Section 3.1.3: 'User authentication is implemented using JSON Web Tokens (JWT) to manage secure login sessions.'"
+    },
+    {
+     "key": "vercel",
+     "label": "Vercel hosting",
+     "status": "used",
+     "evidence": "Section 5.5.1: 'Frontend and backend deployed on Vercel', with automatic deployment from the GitHub repository."
+    },
+    {
+     "key": "github",
+     "label": "GitHub",
+     "status": "used",
+     "evidence": "Section 5.5.1: 'Vercel provides scalable hosting and automatic deployment from the GitHub repository.'"
+    },
+    {
+     "key": "grab",
+     "label": "Grab (GrabFood)",
+     "status": "cited",
+     "evidence": "Related work section 2.1 reviews Grab and Grab Food as an existing food ordering platform with delivery fees and no campus-specific features."
+    },
+    {
+     "key": "line_man",
+     "label": "LINE MAN",
+     "status": "cited",
+     "evidence": "Related work section 2.2 reviews LINE MAN, an on-demand food delivery platform widely used in Thailand."
+    }
+   ]
+  }
+ }
+]

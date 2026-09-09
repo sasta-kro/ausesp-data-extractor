@@ -1,0 +1,514 @@
+[
+ {
+  "id": "1726",
+  "canonical_title": "Cloud Property Fields Inspection System",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Serhii Bielik",
+    "student_id": "5748106"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "Asst. Prof. Paitoon Porntrakoon",
+   "Dr. Benjawan Srisura"
+  ],
+  "abstract": "Presale property inspection relied on a manual and paper based process in which sales agents prepared documentation, inspected each field of a unit by hand, recorded issues, and wrote an inspection report afterwards. This project built a web application that partially automates that process with Autodesk cloud products. The system imports Revit models from the Autodesk BIM 360 document system through the Forge API, extracts the property fields to be checked, and lets an administrator assign models to sales agents who then run guided inspections. Issues found during an inspection are created with attached photos and committed back to BIM 360, and the system automatically generates a PDF report that is emailed to the customer and the sales agent. The application was developed in PHP 7 with the Yii 2 framework, uses MariaDB, and was deployed to a live web server.",
+  "abstract_source": "generated",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "php"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "real_estate",
+     "label": "Real Estate and Property",
+     "status": "used",
+     "evidence": "The general idea is to simplify the presale process for the constrictors by partially automatize the presale inspection of the property (condo unit)."
+    }
+   ],
+   "technology": [
+    {
+     "key": "autodesk_forge",
+     "label": "Autodesk Forge API",
+     "status": "used",
+     "evidence": "For this project mainly I am going to use the Autodesk forge API. This project requires two APIs: BIM 360 and Model Derivative API."
+    },
+    {
+     "key": "bim_360",
+     "label": "Autodesk BIM 360 Docs",
+     "status": "used",
+     "evidence": "Models must be prepared by contractor and uploaded to the Project Files Directory in the Autodesk BIM 360 Document system."
+    },
+    {
+     "key": "revit",
+     "label": "Autodesk Revit",
+     "status": "used",
+     "evidence": "In this project property will be also represented as Autodesk Revit Model *.rvt."
+    },
+    {
+     "key": "yii2",
+     "label": "Yii 2 PHP Framework",
+     "status": "used",
+     "evidence": "For the development part I chose the PHP 7 and Yii 2 Framework in particular."
+    },
+    {
+     "key": "mariadb",
+     "label": "MariaDB",
+     "status": "used",
+     "evidence": "Software: CentOS 7 x64, MariaDB, Nginx, PHP 7, Yii 2 Framework."
+    },
+    {
+     "key": "nginx",
+     "label": "Nginx",
+     "status": "used",
+     "evidence": "Software: CentOS 7 x64, MariaDB, Nginx, PHP 7, Yii 2 Framework."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1727",
+  "canonical_title": "Trax: Task and Resource Tracking System for Agile Software Development Teams",
+  "aliases": [
+   "Task and Resource Tracking System for Agile Software Development Teams"
+  ],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Jarukorn Thuengjitvilas",
+    "student_id": "5810228"
+   },
+   {
+    "name": "Thanawadee Khemasrisuwan",
+    "student_id": "5810127"
+   }
+  ],
+  "advisor": "Dr. Songsak Channarukul",
+  "committee": [
+   "Dr. Kwankamol Nongpong",
+   "A. Chayapol Moemeng"
+  ],
+  "abstract": "Software companies usually work on multiple projects by using more than one teams. Most of the time, members in these teams could be assigned to several projects concurrently. This project aims to implement a system called 'Trax' which is integrated to an existing task repository system. It allows team members to input their daily scrum report. Team leads are able to monitor their agile team progresses on a day-to-day basis while the top management could track the resource usages by individual projects, personnels, and teams.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": []
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "ios",
+     "label": "iOS",
+     "status": "used",
+     "evidence": "Trax is a software project management application that runs on iOS devices. Our application only supports iOS platform."
+    }
+   ],
+   "domain": [
+    {
+     "key": "project_management",
+     "label": "Project Management",
+     "status": "used",
+     "evidence": "Trax is a software project management application that runs on iOS devices."
+    }
+   ],
+   "technology": [
+    {
+     "key": "csharp",
+     "label": "C#",
+     "status": "used",
+     "evidence": "We have implemented RESTful API using C# programming language to make requests to Visual Studio Team Services REST API."
+    },
+    {
+     "key": "swift",
+     "label": "Swift",
+     "status": "used",
+     "evidence": "The iOS front end uses CocoaPods with Alamofire, a library for HTTP networking written in Swift Language for iOS and MacOS."
+    },
+    {
+     "key": "vsts",
+     "label": "Visual Studio Team Services",
+     "status": "used",
+     "evidence": "We chose Visual Studio Team Services (VSTS) as a task repository system."
+    },
+    {
+     "key": "cocoapods",
+     "label": "CocoaPods",
+     "status": "used",
+     "evidence": "Our system uses CocoaPods as a library dependency specific for iOS and MacOS development only."
+    },
+    {
+     "key": "alamofire",
+     "label": "Alamofire",
+     "status": "used",
+     "evidence": "There are two dependencies use to implement this system named Alamofire and VBPieChart. Alamofire is a library for HTTP networking."
+    },
+    {
+     "key": "vbpiechart",
+     "label": "VBPieChart",
+     "status": "used",
+     "evidence": "VBPieChart is a very easy to use library to generate a pie charts from existing information."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1728",
+  "canonical_title": "Task Assistant",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Silapin Narthasilpa",
+    "student_id": "5710944"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "Dr. Kwankamol Nongpong",
+   "Asst. Prof. Dr. Darun Kesrarat"
+  ],
+  "abstract": "ISL members have been using Scrum Methodology for software development. Sometimes, using just Excel files to keep track of things going on, who is doing what tasks, who has effort left to do incoming tasks, and what the status of the task is in right now, in each sprint is a painful thing and there is no tools to aid them. So, we decided to find a way and develop one thing that can help them, which is Task Assistant, planning and keeping track of things in an efficient way. Also, we foresee that daily task planning is useful for personal use. So, we provided not only team assistance but also personal assistance to aid all types of users.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "firebase",
+    "mysql",
+    "nodejs"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "android",
+     "label": "Android",
+     "status": "used",
+     "evidence": "We develop a mobile application in Android platform using Java language and Android Studio as an IDE."
+    }
+   ],
+   "domain": [
+    {
+     "key": "project_management",
+     "label": "Project Management",
+     "status": "used",
+     "evidence": "In this project, we create a system, Task Assistant, in Android platform to aid people in software development based on Scrum Methodology in ISL."
+    }
+   ],
+   "technology": [
+    {
+     "key": "java",
+     "label": "Java",
+     "status": "used",
+     "evidence": "We develop a mobile application in Android platform using Java language and Android Studio as an IDE."
+    },
+    {
+     "key": "android_studio",
+     "label": "Android Studio",
+     "status": "used",
+     "evidence": "We develop a mobile application in Android platform using Java language and Android Studio as an IDE."
+    },
+    {
+     "key": "retrofit",
+     "label": "Retrofit",
+     "status": "used",
+     "evidence": "We use 3rd party libraries named Retrofit to help make API calls."
+    },
+    {
+     "key": "gson",
+     "label": "Gson",
+     "status": "used",
+     "evidence": "And Gson to help convert Java Objects into their JSON representation."
+    },
+    {
+     "key": "fcm",
+     "label": "Firebase Cloud Messaging",
+     "status": "used",
+     "evidence": "To send notification messages to users, we use FCM (Firebase Cloud Messaging) and a device token."
+    },
+    {
+     "key": "linux",
+     "label": "Linux",
+     "status": "used",
+     "evidence": "The server platform hosting the system is Linux."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1730",
+  "canonical_title": "AU Connect (A Mobile Application for AU Library Services)",
+  "aliases": [
+   "AU Connect"
+  ],
+  "phase": "final",
+  "course_code": "IT 4292",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Kwanchanok Sitthivej",
+    "student_id": "5710380"
+   },
+   {
+    "name": "Krittiyaporn Plodpiyakun",
+    "student_id": "5711100"
+   },
+   {
+    "name": "Titi Chanpoom",
+    "student_id": "5715095"
+   }
+  ],
+  "advisor": "Dr. Kwankamol Nongpong",
+  "committee": [
+   "A. Tapanan Yeophantong",
+   "A. Pawut Satitsuksanoh"
+  ],
+  "abstract": "AU Connect is the system provides the library service for AU members via mobile application and web application. The core features for mobile application are browse book, book reservation, request book and journal to purchase, event with content management discovery and user transaction. Meanwhile, librarians can view and manage reserved book's information and information for request to purchase.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile",
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [],
+   "technology": [
+    "mysql",
+    "php"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "ios",
+     "label": "iOS",
+     "status": "used",
+     "evidence": "We desire to create an iOS mobile application called \"AU Connect\" for AU members as a front end. iOS platform is selected to be developed in the first release."
+    }
+   ],
+   "domain": [
+    {
+     "key": "library_services",
+     "label": "Library Services",
+     "status": "used",
+     "evidence": "AU Connect is the system provides the library service for AU members via mobile application and web application."
+    }
+   ],
+   "technology": [
+    {
+     "key": "codeigniter",
+     "label": "CodeIgniter",
+     "status": "used",
+     "evidence": "CodeIgniter is a program tool that helps developer to code PHP language conveniently."
+    },
+    {
+     "key": "lumen",
+     "label": "Lumen",
+     "status": "used",
+     "evidence": "Lumen is an open-source PHP based micro-framework designed for building lightning fast micro-services and APIs."
+    },
+    {
+     "key": "phpmyadmin",
+     "label": "phpMyAdmin",
+     "status": "used",
+     "evidence": "It is the program developed using the PHP language in order to manage MySQL database."
+    },
+    {
+     "key": "bootstrap",
+     "label": "Bootstrap",
+     "status": "used",
+     "evidence": "Many useful technologies and programing languages are applied such as PHP, SQL, Bootstrap, Swift, and RESTful API."
+    },
+    {
+     "key": "javascript",
+     "label": "JavaScript",
+     "status": "used",
+     "evidence": "JavaScript is a programming language which is used to generate web pages."
+    },
+    {
+     "key": "swift",
+     "label": "Swift",
+     "status": "used",
+     "evidence": "Many useful technologies and programing languages are applied such as PHP, SQL, Bootstrap, Swift, and RESTful API."
+    },
+    {
+     "key": "xcode",
+     "label": "Xcode",
+     "status": "used",
+     "evidence": "It is an integrated development environment (IDE) for macOS containing a suite of software development tools developed by Apple."
+    },
+    {
+     "key": "cocoapods",
+     "label": "CocoaPods",
+     "status": "used",
+     "evidence": "It is a library or framework which is added to your project by using CocoaPods for dynamic frameworks."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1800",
+  "canonical_title": "Radio Frequency Identification for Counting Lap-Based Running",
+  "aliases": [],
+  "phase": "final",
+  "course_code": null,
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Chawan V.",
+    "student_id": "5737444"
+   },
+   {
+    "name": "Artisd C.",
+    "student_id": "5712266"
+   }
+  ],
+  "advisor": null,
+  "committee": [],
+  "abstract": "Fit for Run activity is a daily running activity, which needed several staffs and take a long time to pay attention in operation. Lap counting, and summarization of runners were operated by staffs manually. In traditional solution, several hours are required for giving a plastic brand for a lap then summarize those runners' records into papers at the end of the day. Moreover, all those records could not deliver to runners instantly. Our project brought some technologies to solve the problems using a combination of technologies. Normally, this kind of event is usually a small local community event, which only has little budget and manpower that could be allocated in the management of the event. Therefore, expenditure should be primary sector that we need to concern about it. Also, its specification should be sufficient to improve the operation of this event. Due to the lack of cost-effective solution for the problem domain, this study proposes a cost-effective interactive platform that is based on low-frequency (LF) RFID devices instead of using ultra-high frequency (UHF) RFID because their costs are totally different. The proposed platforms help manage the running events, log runner specifics, manages data through a centralized database, and show participants' data such as lap counting and result in real time. The proposed system web application was deployed on cloud web server including database server and been used at the Fit for Run Event at Assumption University on 1-22 February 2017.",
+  "abstract_source": "document",
+  "reported_keywords": [
+   "RFID",
+   "HTML",
+   "Web Application",
+   "Cloud Server",
+   "NoSQL",
+   "Firebase"
+  ],
+  "classification": {
+   "category": [
+    "hardware_iot",
+    "software_application"
+   ],
+   "platform": [
+    "desktop",
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [],
+   "technology": [
+    "firebase"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "sports_event_management",
+     "label": "Sports Event Management",
+     "status": "used",
+     "evidence": "The proposed platforms help manage the running events, log runner specifics, manages data through a centralized database, and been used at the Fit for Run Event at Assumption University."
+    }
+   ],
+   "technology": [
+    {
+     "key": "rfid",
+     "label": "RFID (LF)",
+     "status": "used",
+     "evidence": "A generic LF RFID contactless proximity sensor smart ID card reader was used, due to the low cost, and that it could be powered by a USB device."
+    },
+    {
+     "key": "html",
+     "label": "HTML",
+     "status": "used",
+     "evidence": "Web Application is built by using HTML Language, which is a common platform compatible for most of devices."
+    },
+    {
+     "key": "nosql",
+     "label": "Firebase NoSQL Database",
+     "status": "used",
+     "evidence": "Second, NoSQL Database Firebase which is also running on cloud provided by Google."
+    },
+    {
+     "key": "qr_code",
+     "label": "QR Code",
+     "status": "used",
+     "evidence": "The runners first need to sign up an account themselves by using their smartphone to get an URL link from the QR Code in our poster."
+    },
+    {
+     "key": "gps",
+     "label": "GPS",
+     "status": "cited",
+     "evidence": "GPS-Based solution is also another viable approach. By using smartphones with GPS applications, it is possible to log the run of each participants."
+    },
+    {
+     "key": "uhf_rfid",
+     "label": "UHF RFID",
+     "status": "cited",
+     "evidence": "The best solution for lap-based competition is to use commercial interactive solutions. These solutions typically utilize UHF RFID technology."
+    },
+    {
+     "key": "mysql",
+     "label": "MySQL",
+     "status": "cited",
+     "evidence": "MySQL Database is one of the popular a local database, commonly used in several types of application platforms, discussed and rejected in the literature review."
+    }
+   ]
+  }
+ }
+]

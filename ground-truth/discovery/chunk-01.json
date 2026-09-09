@@ -1,0 +1,405 @@
+[
+ {
+  "id": "1616",
+  "canonical_title": "Web-based Seoul Travel Guide",
+  "aliases": [
+   "Seoul Diary"
+  ],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Nathanan Pornprapee",
+    "student_id": null
+   },
+   {
+    "name": "Nattalie Shinkoi",
+    "student_id": null
+   },
+   {
+    "name": "Kamonchanok Arttanate",
+    "student_id": null
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "Dr. Kwankamol Nongpong",
+   "A. Piyakul Tillapart"
+  ],
+  "abstract": "The number of people traveling without a tour guide has increased, and Seoul, South Korea is one of the popular destinations that people often visit. So, we decided to create this project, which is a Seoul travel guide, a web application for providing travel information about Seoul, and the provided information of the places, come from our experience, so we would say that some of the places are the local place which popular in those specific area, and might not be in any of others travel guide. We designed our website base on separating the users into two types, the group of people who have gone and never have gone to Seoul. We provided both of the user types with our three main features, browsing which allow the user to search by category, searching, which allow user to type in the specific keyword that they want to look for, and exploring, which allow both group of users to explore Seoul by our provided functions. We also evaluated our system by asking a sample group of people about the feedback after experience our website.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [
+    "geolocation",
+    "nlp"
+   ],
+   "technology": []
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "travel_tourism",
+     "label": "Travel and Tourism",
+     "status": "used",
+     "evidence": "The web application is a Seoul travel guide providing attraction and restaurant information, recommended one-day trips, events, and a Seoul map for independent tourists."
+    }
+   ],
+   "technology": [
+    {
+     "key": "agoda",
+     "label": "Agoda",
+     "status": "used",
+     "evidence": "The homepage includes an Agoda hotel search box and test case F-013 Hotel verifies that a user finds a hotel with Agoda."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1621",
+  "canonical_title": "Exchange rate prediction",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT 4291, CS 3200",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Kasperi Reinikainen",
+    "student_id": "5818014"
+   },
+   {
+    "name": "Hein Htet Naing",
+    "student_id": "5818035"
+   },
+   {
+    "name": "Asnai Narang",
+    "student_id": "5815228"
+   }
+  ],
+  "advisor": "Dr. Thitipong Tanprasert",
+  "committee": [
+   "A. Tapanan Yeophantong",
+   "Dr. AnilKumar Kothalil Gopalakrishnan"
+  ],
+  "abstract": "This project applies machine learning to predict exchange rate movements in the foreign exchange market. The team first replicated a deep neural network case study from Nagoya University, training a five layer DNN classifier on hourly USD and Thai Baht data provided by the Dukascopy broker and matching the case study with 50.50 to 54.75 percent accuracy. The group then ran systematic experiments in TensorFlow, optimizing the number of neurons, training instances, and training parameters, and found accuracy above 80 percent for predictions made at specific hours of the day. A hybrid mobile application was built with an Ionic front end and a Python backend to show currency charts, a currency calculator, and trend predictions for five currency pairs, with Firebase handling storage, authentication, and hosting.",
+  "abstract_source": "generated",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "finance"
+   ],
+   "topic": [],
+   "technology": [
+    "firebase",
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [
+    {
+     "key": "deep_learning",
+     "label": "Deep Learning",
+     "status": "used",
+     "evidence": "The project trains Deep Neural Networks for forex prediction and states that with the widespread use of Deep Neural Networks like in our work the optimizer algorithms vary."
+    }
+   ],
+   "platform": [],
+   "domain": [
+    {
+     "key": "forex_trading",
+     "label": "Foreign Exchange Trading",
+     "status": "used",
+     "evidence": "The assigned task was to build an application that would utilize Machine Learning techniques to predict movements in currency exchange (Forex) markets, using hourly USD and THB data."
+    }
+   ],
+   "technology": [
+    {
+     "key": "tensorflow",
+     "label": "TensorFlow",
+     "status": "used",
+     "evidence": "To begin with, we built the model by using Estimators from TensorFlow. tensorflow.estimator is a high level API for machine learning programming and the classifier used was DNNClassifier."
+    },
+    {
+     "key": "ionic",
+     "label": "Ionic Framework",
+     "status": "used",
+     "evidence": "The front of our application is built on top of Ionic framework that is meant for hybrid mobile application development."
+    },
+    {
+     "key": "pandas",
+     "label": "Pandas",
+     "status": "cited",
+     "evidence": "The references list Pandas 0.21.0 retrieved from pypi.python.org."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1627",
+  "canonical_title": "AU Car Checker",
+  "aliases": [],
+  "phase": "final",
+  "course_code": null,
+  "program": null,
+  "semester": "2",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Brighton T. Shanji",
+    "student_id": "5748131"
+   },
+   {
+    "name": "Sonam Choejur Tshering",
+    "student_id": "5918422"
+   }
+  ],
+  "advisor": "Mr. Chayapol",
+  "committee": [
+   "Dr. Paitoon",
+   "Dr. Benjawan"
+  ],
+  "abstract": "The university campus has no efficient way to track the hundreds of vehicles entering each day, since blacklisted vehicles are recorded by hand in a log book and guards must rely on the naked eye. The team built AU Car Checker, a license plate recognition system for the ABAC Bangna campus that scans plates with a camera and checks them against a list of invalid plates. OpenALPR and OpenCV running in Python perform the recognition, an Electron desktop interface displays the results, and Firebase stores detections, alerts, and plate images in real time. Testing on video of Thai license plates showed mostly correct readings, and the system notifies security officials when a blacklisted vehicle is recognized.",
+  "abstract_source": "generated",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "software_application"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "campus",
+    "security"
+   ],
+   "topic": [
+    "computer_vision",
+    "ocr"
+   ],
+   "technology": [
+    "firebase",
+    "mysql",
+    "nodejs",
+    "opencv",
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "openalpr",
+     "label": "OpenALPR",
+     "status": "used",
+     "evidence": "The image is then analyzed using OpenALPR libraries to determine what plate numbers the image entails, using the OpenALPR open source Python binding."
+    },
+    {
+     "key": "electron",
+     "label": "Electron",
+     "status": "used",
+     "evidence": "This is where the switch to ElectronJS was made. ElectronJS is able to create simple and modern looking GUI using just plain HTML and CSS."
+    },
+    {
+     "key": "eel",
+     "label": "Eel (Python library)",
+     "status": "used",
+     "evidence": "Eel Python library was used to create a simple GUI with HTML and CSS in Version 2 of the app."
+    },
+    {
+     "key": "javascript",
+     "label": "JavaScript",
+     "status": "used",
+     "evidence": "For retrieving from the database to be displayed in the app, we used Javascript to communicate and handle the database."
+    },
+    {
+     "key": "jquery",
+     "label": "jQuery",
+     "status": "used",
+     "evidence": "Then jQuery can select the ID from HTML to add data retrieved into it."
+    },
+    {
+     "key": "php",
+     "label": "PHP",
+     "status": "used",
+     "evidence": "Version 2 used PHP for communicating with the MySQL database, and the report notes they later stopped using PHP as it was not compatible with ElectronJS."
+    },
+    {
+     "key": "tesseract_ocr",
+     "label": "Tesseract OCR",
+     "status": "cited",
+     "evidence": "The references list a tesseract-ocr GitHub issue used while researching OCR training."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1628",
+  "canonical_title": "Performance Evaluation of Different Membership Functions for Fuzzy-based Network Selection Algorithm for Heterogeneous Wireless Mobile Network",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CSX3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Pakin Charoenchanachai",
+    "student_id": "6210195"
+   }
+  ],
+  "advisor": null,
+  "committee": [],
+  "abstract": "This project evaluates how the choice of membership function affects a fuzzy based network selection algorithm for heterogeneous wireless mobile networks. Five fuzzy systems were built in MATLAB using triangle and trapezoidal, generalized bell, Gaussian, sigmoidal, and difference of sigmoidal membership functions, and compared with the Simple Additive Weighting and Analytic Hierarchy Process methods. Simulations used randomly generated data rate, latency, and packet loss values for 3G, 4G, and Wi-Fi networks, weighted against the quality of service needs of VoIP applications. The fuzzy systems reached about 93 to 96 percent selection success compared with about 92 percent for AHP and about 80 percent for SAW, with the Gaussian and difference of sigmoidal functions performing best, at the cost of higher execution time.",
+  "abstract_source": "generated",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "research"
+   ],
+   "platform": [],
+   "domain": [
+    "other"
+   ],
+   "topic": [],
+   "technology": []
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "wireless_networking",
+     "label": "Wireless Networking",
+     "status": "used",
+     "evidence": "The whole study is a fuzzy-based network selection algorithm for heterogeneous wireless mobile networks, deciding handover between 3G (UMTS), 4G (LTE), and Wi-Fi (802.11g)."
+    },
+    {
+     "key": "cellular_networks",
+     "label": "Cellular Networks",
+     "status": "cited",
+     "evidence": "Chapter 2 background surveys 3G, 4G, LTE, LTE-Advanced Pro, 5G, and WiMAX cellular technologies as related work."
+    }
+   ],
+   "technology": [
+    {
+     "key": "matlab",
+     "label": "MATLAB",
+     "status": "used",
+     "evidence": "The simulation platform that is being used is MATLAB software (version 2021a) since the MATLAB language itself has a low learning curve."
+    },
+    {
+     "key": "fuzzy_logic_toolbox",
+     "label": "MATLAB Fuzzy Logic Toolbox",
+     "status": "used",
+     "evidence": "MATLAB has provided various toolboxes which include the fuzzy toolbox, which is required for this project, and the appendix includes the FIS configuration files."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1636",
+  "canonical_title": "Body Weight Balancing",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "SC 4299",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Yilin Wang",
+    "student_id": "5638021"
+   },
+   {
+    "name": "Mohamed Kaba",
+    "student_id": "5618141"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan",
+  "committee": [
+   "Asst. Prof. Dr. Dobri Atanassov Batovski",
+   "A. Chayapol Moemeng"
+  ],
+  "abstract": "This project presents a Body Weight Balancing system to be used in predicting the number of days needed for a person to get to a normal weight state based on his or her Body Mass Index (BMI), Basal Metabolic Rate (BMR), and Daily Food Intake Calorie (DIFC). By using BMI value, the system estimates the weight value of a person, where the individual with a normal BMI has a weight value of zero. Based on BMR, the Daily Needed Calorie (DNC) of a person is calculated, and from the DNC, the weight value and the DIFC, the number of days needed for a person to get a normal BMI state could be predicted. And also the presented system would recommend needed food items for a person based on his/her weight value.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "healthcare"
+   ],
+   "topic": [
+    "recommender_system"
+   ],
+   "technology": []
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "nutrition",
+     "label": "Nutrition and Diet",
+     "status": "used",
+     "evidence": "The system automatically recommends food from a database of about 1,000 kinds of food and drink, arranged as breakfast, lunch, dinner, and fruit-snack over a 7-day cycle."
+    }
+   ],
+   "technology": [
+    {
+     "key": "csharp",
+     "label": "C#",
+     "status": "used",
+     "evidence": "The appendix source code is C#, for example the class FormSelectFoodAndPredictDays inheriting from Form."
+    },
+    {
+     "key": "dotnet",
+     "label": ".NET",
+     "status": "used",
+     "evidence": "The appendix code uses .NET APIs such as SqlDataAdapter, ConfigurationManager, and DataTable."
+    },
+    {
+     "key": "windows_forms",
+     "label": "Windows Forms",
+     "status": "used",
+     "evidence": "The client application is a Windows Forms UI with InitializeComponent and dataGridViewResult showing the food recommendation table."
+    },
+    {
+     "key": "microsoft_sql_server",
+     "label": "Microsoft SQL Server",
+     "status": "used",
+     "evidence": "The food, beverage, snack, and fast food tables were put onto Microsoft SQL Server 2008."
+    }
+   ]
+  }
+ }
+]

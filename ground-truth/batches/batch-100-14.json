@@ -63,7 +63,7 @@
    "Asst. Dean Suparwat Charoenvikrom",
    "A. Pawut Satitsuksanoh"
   ],
-  "abstract": null,
+  "abstract": "Opinion mining tools help analysts check whether products get good reviews, but surveys are expensive, slow to collect, and often out of date. This project develops a standalone system that classifies tweets from Twitter as fact or opinion and as positive or negative sentiment, focused on the movie domain. Around 30,000 movie related tweets were retrieved with the Twitter API, manually labelled, and preprocessed by removing URLs, mentions, hashtags, non alphabetic characters and stop words, and by Snowball stemming. Three classification algorithms, Decision Tree, Naive Bayes, and k Nearest Neighbors, were compared in Weka using accuracy, precision, recall, and F measure with 10 fold cross validation. Naive Bayes performed best and was implemented in the final system, which lets the user train, evaluate, search Twitter, and test single sentences.",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -193,8 +193,8 @@
   "reported_keywords": [],
   "classification": {
    "category": [
-    "ai_data",
-    "hardware_iot"
+    "hardware_iot",
+    "ai_data"
    ],
    "platform": [
     "embedded_hardware",

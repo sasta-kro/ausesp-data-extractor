@@ -1,0 +1,393 @@
+[
+ {
+  "id": "1914",
+  "canonical_title": "AU Canteen Food Ordering System",
+  "aliases": [
+   "Au Canteen"
+  ],
+  "phase": "proposal",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Rubina Shrestha",
+    "student_id": "6018194"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Rachsuda Setthawong",
+  "committee": [
+   "A. Pawut Satitsuksanoh",
+   "Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan"
+  ],
+  "abstract": "This project focuses on ordering food online from the ABAC cafeteria. It is a web-based system that is fully responsive. The shop owners can add the food items in the menu and the customers (students, faculty members, staffs) can easily place an order simply through the website. Customers can top-up balance in their e-wallet provided by the system and use it to order food anytime. This system can be very useful mainly for the customers and shop owners. It eliminates all the hassles of having to use coupons. Furthermore, it also reduces the problem of having the go to the canteen every time to see the food menu by providing the service of viewing food menu beforehand in the website itself. Finally, this system is anticipated to be useful for everybody in Assumption University.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "campus",
+    "e_commerce"
+   ],
+   "topic": [],
+   "technology": [
+    "php",
+    "mysql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "bootstrap",
+     "label": "Bootstrap",
+     "status": "used",
+     "evidence": "For the frontend, I have used CSS... I have used the CSS framework Bootstrap with which I easily designed the website interface."
+    },
+    {
+     "key": "phpmyadmin",
+     "label": "phpMyAdmin",
+     "status": "used",
+     "evidence": "For the data storage I have used phpMyAdmin. It is a free and open-source administration tool for MySQL."
+    },
+    {
+     "key": "hostgator",
+     "label": "HostGator",
+     "status": "used",
+     "evidence": "For the domain and web hosting, I have used a web-hosting provider called Hostgator which provides affordable domain registration and shared servers for web hosting."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1916",
+  "canonical_title": "Program Management Information System",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT 4292",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Parun Sirisopa",
+    "student_id": "5715283"
+   },
+   {
+    "name": "Settasuk Kongsithiseth",
+    "student_id": "5714011"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Benjawan Srisura",
+  "committee": [
+   "Asst. Prof. Dr. Thotsapon Sorttrakul",
+   "Asst. Prof. Titida Nochai"
+  ],
+  "abstract": "The Information Technology department of Vincent Mary School of Science and Technology managed its program information manually, which made updating the program website slow, inconsistent and dependent on staff with specific coding skills. The team developed a web-based Program Management Information System with an administrative backend for managing programs, curriculums, plans, courses, instructors, students and news, together with a public website for prospects. The system was analyzed and designed with data flow diagrams, an entity relationship diagram and a data dictionary, and it automatically publishes the managed program information to the website. It was implemented with PHP and MySQL on hosted web servers and validates curriculum and student graduation constraints while letting prospects search and view study plans and curriculum details.",
+  "abstract_source": "generated",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [],
+   "technology": [
+    "php",
+    "mysql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "windows",
+     "label": "Microsoft Windows",
+     "status": "used",
+     "evidence": "Development cost table lists Microsoft Window 10 Professional 64 bits at 1 license, 8,999 Baht."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1917",
+  "canonical_title": "Hotel Management System",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT 4299/CS 3200",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Sakar KC",
+    "student_id": "5738029"
+   },
+   {
+    "name": "Sujan Gurung",
+    "student_id": "5918127"
+   },
+   {
+    "name": "Raghunand Chaudhary",
+    "student_id": "5738009"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Adtha Lawanna",
+  "committee": [
+   "Asst. Prof. Dr. Darun Kesrarat",
+   "Dr. Benjawan Srisura"
+  ],
+  "abstract": "Hotels relied on phone calls, paper menus and printed brochures, which made problem reporting inconvenient and service slow. The team developed a web-based Hotel Management System for customers, staff and a manager, built with PHP, HTML and CSS, with phpMyAdmin for the database and hosting on 000webhost. Customers scan a QR code and log in with an ID and password to report problems, order food and drinks from an online menu, view nearby places and call security. The manager receives problems and orders, assigns them to staff roles such as technician, housekeeping, kitchen, bar, waiter, security and reception, and tracks their status until completion. The system was designed with the Waterfall model using ER diagrams, data flow diagrams and a data dictionary.",
+  "abstract_source": "generated",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "php"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "qrcode_entry",
+     "label": "QR code entry",
+     "status": "used",
+     "evidence": "Customers scan a QR code to access the web application login page."
+    }
+   ],
+   "domain": [
+    {
+     "key": "hospitality",
+     "label": "Hospitality and hotel services",
+     "status": "used",
+     "evidence": "Hotel Management System is targeted for hotels so that they can provide a better customer service by providing a problem reporting interface, food and drinks online menu, information about places nearby and direct contact to security."
+    }
+   ],
+   "technology": [
+    {
+     "key": "phpmyadmin",
+     "label": "phpMyAdmin",
+     "status": "used",
+     "evidence": "We used the ER diagram to create the database in phpmyadmin."
+    },
+    {
+     "key": "bootstrap",
+     "label": "Bootstrap",
+     "status": "used",
+     "evidence": "We used many styles from the bootstrap library to implement in our design."
+    },
+    {
+     "key": "html",
+     "label": "HTML",
+     "status": "used",
+     "evidence": "The programming is based on PHP, HTML and CSS for the development."
+    },
+    {
+     "key": "css",
+     "label": "CSS",
+     "status": "used",
+     "evidence": "The programming is based on PHP, HTML and CSS for the development."
+    },
+    {
+     "key": "sublime_text",
+     "label": "Sublime Text",
+     "status": "used",
+     "evidence": "We coded the web application using Sublime Text."
+    },
+    {
+     "key": "000webhost",
+     "label": "000webhost",
+     "status": "used",
+     "evidence": "The host for the server is 000webhost which provides service for storing files and database, listed at 220 THB per month in implementation costs."
+    },
+    {
+     "key": "qr_code",
+     "label": "QR code",
+     "status": "used",
+     "evidence": "The customers will be provided with a QR code to access the web application, and they scan the QR code to open the login page."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1919",
+  "canonical_title": "Lost & Found Management System",
+  "aliases": [
+   "Lost and Found Management System"
+  ],
+  "phase": "final",
+  "course_code": "IT 4292/CS 4200",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "Sakar KC",
+    "student_id": "5738029"
+   },
+   {
+    "name": "Sujan Gurung",
+    "student_id": "5918127"
+   },
+   {
+    "name": "Raghunand Chaudhary",
+    "student_id": "5738009"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Darun Kesrarat",
+  "committee": [
+   "Asst. Prof. Titida Nochai",
+   "Asst. Prof. Dr. Benjawan Srisura"
+  ],
+  "abstract": "Assumption University tracked lost and found items on paper, bulletin boards and scattered social media groups, so students often missed relevant information and item owners were hard to identify. The team built a web-based Lost and Found Management System where students log in with their student ID to post lost or found items with pictures and descriptions, search items and message the lost and found department. Admins manage posts, review multiple claimants and register the verified owner of each completed item. The system was developed with the Waterfall methodology using PHP, HTML, CSS, JavaScript, React, Node.js and a MySQL database configured through phpMyAdmin, styled with Bootstrap and hosted on 000webhost.",
+  "abstract_source": "generated",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [],
+   "technology": [
+    "mysql",
+    "nodejs",
+    "php",
+    "react"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "javascript",
+     "label": "JavaScript",
+     "status": "used",
+     "evidence": "The programming is based on PHP, HTML, CSS. We also used javascript and REACT as our framework, and the development platform list includes Javascript."
+    },
+    {
+     "key": "phpmyadmin",
+     "label": "phpMyAdmin",
+     "status": "used",
+     "evidence": "To configure the database we have used phpMyAdmin."
+    },
+    {
+     "key": "bootstrap",
+     "label": "Bootstrap",
+     "status": "used",
+     "evidence": "We used many styles from the bootstrap library to implement in our design."
+    },
+    {
+     "key": "visual_studio_code",
+     "label": "Visual Studio Code",
+     "status": "used",
+     "evidence": "We coded the web application using Visual Studio Code."
+    },
+    {
+     "key": "000webhost",
+     "label": "000webhost",
+     "status": "used",
+     "evidence": "Implementation cost table lists 000webhosting at 220 THB per month and the references include https://www.000webhost.com/."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1920",
+  "canonical_title": "SAMT Master",
+  "aliases": [
+   "SAMT MASTER"
+  ],
+  "phase": "final",
+  "course_code": "CS 4200/IT 4292",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Nuzhat Sarwar",
+    "student_id": "5838433"
+   },
+   {
+    "name": "Puja Karmacharya",
+    "student_id": "5818313"
+   },
+   {
+    "name": "Aye Myat Mon",
+    "student_id": "5818026"
+   }
+  ],
+  "advisor": "A. Darun",
+  "committee": [],
+  "abstract": "Good Shepherd Pvt LTD operates SAMT, a tutoring platform connecting students and teachers in fields such as music, sports, arts and technology. Individual one-to-one classes were expensive, teachers had no place to advertise group classes, students wanted to study with friends, and property owners had unused facilitated spaces. The team developed SAMT Master, a web-based administration and teacher application that manages learning hubs whose rooms are selected from a map by preferred location, creates teacher course groups that multiple students can join, and handles course group enrollment. It includes an online ticketing system where students pay by cash, credit card or internet banking, join classes using QR codes, and receive full or partial refunds when courses are canceled. The design covers a swim lane flowchart, data flow diagrams, an entity relationship diagram and a 16-table database, and the company plans to integrate the code into its application and a future mobile version.",
+  "abstract_source": "generated",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "education",
+    "business"
+   ],
+   "topic": [
+    "geolocation"
+   ],
+   "technology": []
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "private_tutoring",
+     "label": "Private tutoring marketplace",
+     "status": "used",
+     "evidence": "The goal of SAMT is to be able to help provide support in the fields of sports, arts, music and technology for both students and teachers, matching students with teachers for group and individual lessons."
+    }
+   ],
+   "technology": [
+    {
+     "key": "qr_code",
+     "label": "QR code",
+     "status": "used",
+     "evidence": "The online ticketing system allows a student or a group of students to participate in classes using QRcode, attendance is checked by scanning the QRcode, and the teacher receives the money only if the students scan the QRcode."
+    }
+   ]
+  }
+ }
+]

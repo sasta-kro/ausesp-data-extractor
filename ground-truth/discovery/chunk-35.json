@@ -1,0 +1,162 @@
+[
+ {
+  "id": "2118",
+  "canonical_title": "VitriApp-Aufträge - Mobile application for checklists in a computer-aided facility management context",
+  "aliases": [
+   "VitriApp-Aufträge",
+   "AUAPP",
+   "Order app"
+  ],
+  "phase": "final",
+  "course_code": "CS4200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Jan Duldhardt",
+    "student_id": "6118135"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "Dr. Songsak Channarukul",
+   "Dr. Kwankamol Nongpong"
+  ],
+  "abstract": "Checklists are everywhere, they help us to reduce failure by compensating for potential limits of human memory and attention. Especially when it comes to facility management, checklists are a good tool for the people who feed the system with data such that every time there is a routine to be followed, the person can just use a checklist to not forget anything. Similar to when we go grocery shopping and do not prepare a list, often we buy unnecessary things, and worse we forgot things that we urgently need. This is the reason EBCsoft GmbH is developing Vormula Editor, Vormula App and VitriApp-Aufträge. With the Vormula Editor, the customer can create custom checklists with endless possibilities. To use these checklists, the customer has two choices: Vormula App, a simple mobile application where the user can download checklists from the Vormula Editor, fill them out, and export them via email. Second, the VitriApp-Aufträge, which also has all the features of the Vormula-App but can connect with the Vitricon CAFM. Both of these applications are already in production and available for Android, iOS, and UWP. After an initial proof of concept prototype at the beginning of 2020, I began working on developing both applications in April 2021. Even though both applications are already in use by our customers, the applications are still in active development, as customers require more and more features. Because of this, it was and still is very important to keep the code quality at high standards such that new features and changes can be implemented quickly. This is reached by using design patterns and principles like Clean Code, Clean Architecture, and SOLID principles.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [
+    "geolocation"
+   ],
+   "technology": []
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "android",
+     "label": "Android",
+     "status": "used",
+     "evidence": "Both of these applications are already in production and available for Android, iOS, and UWP."
+    },
+    {
+     "key": "ios",
+     "label": "iOS",
+     "status": "used",
+     "evidence": "The main goal is to develop a mobile application for iOS, Android and UWP with the main functionality to fill out checklists and export the result."
+    },
+    {
+     "key": "uwp",
+     "label": "UWP (Universal Windows Platform)",
+     "status": "used",
+     "evidence": "Xamarin.Forms allows us to write Android, iOS and UWP in C# and with tools from the dotnet framework."
+    }
+   ],
+   "domain": [
+    {
+     "key": "facility_management",
+     "label": "Facility Management (CAFM)",
+     "status": "used",
+     "evidence": "In the CAFM system, all topics related to the maintenance, care and modernization of buildings are managed. This includes a number of services that need to be performed."
+    }
+   ],
+   "technology": [
+    {
+     "key": "xamarin_forms",
+     "label": "Xamarin.Forms",
+     "status": "used",
+     "evidence": "The mobile application is implemented with Xamarin.Forms, a cross-platform framework from Microsoft."
+    },
+    {
+     "key": "csharp",
+     "label": "C#",
+     "status": "used",
+     "evidence": "Xamarin.Forms allows us to write Android, iOS and UWP in C# and with tools from the dotnet framework."
+    },
+    {
+     "key": "dotnet",
+     "label": ".NET",
+     "status": "used",
+     "evidence": "Xamarin.Forms allows us to write Android, iOS and UWP in C# and with tools from the dotnet framework."
+    },
+    {
+     "key": "entity_framework_core",
+     "label": "Entity Framework Core 3.1",
+     "status": "used",
+     "evidence": "The application is using entity framework core 3.1 (EF) to handle the responsibility for both layers."
+    },
+    {
+     "key": "sqlite",
+     "label": "SQLite",
+     "status": "used",
+     "evidence": "This storage model is then saved in an SQLite database on the device itself. EF is using SQL for all interactions with the local database."
+    },
+    {
+     "key": "graphql",
+     "label": "GraphQL",
+     "status": "used",
+     "evidence": "I am responsible for the mobile application, GraphQL service and involved in all stages of the development process."
+    },
+    {
+     "key": "spring_boot",
+     "label": "Spring Boot",
+     "status": "used",
+     "evidence": "The backbone of the Vitricon-mode synchronization is implemented with GraphQL Spring Boot application."
+    },
+    {
+     "key": "prism",
+     "label": "Prism",
+     "status": "used",
+     "evidence": "we have another library, called prism, which supports auto injection via the constructor."
+    },
+    {
+     "key": "dynamic_expresso",
+     "label": "DynamicExpresso",
+     "status": "used",
+     "evidence": "The above figure shows how we are using DynamicExpresso library in order to convert our condition strings into functions."
+    },
+    {
+     "key": "xaml",
+     "label": "XAML",
+     "status": "used",
+     "evidence": "UI can also be written in C# and XAML and the code can be shared, but often we need to make adjustment on each platform."
+    },
+    {
+     "key": "jwt",
+     "label": "JWT (JSON Web Token)",
+     "status": "used",
+     "evidence": "When the user clicks on the download button, the client sends a JWT request to the Vormula Editor. The JWT is then used for further communication with the Vormula Editor API."
+    },
+    {
+     "key": "appcenter",
+     "label": "Visual Studio App Center",
+     "status": "used",
+     "evidence": "One tool that is primarily being used for the investigation of any kind of issues is the AppCenter from Microsoft."
+    },
+    {
+     "key": "rest_api",
+     "label": "REST API",
+     "status": "used",
+     "evidence": "The Vormula Editor provides simple REST APIs such as: GetAllReleasedChecklists(), GetLatestReleasedVersion(string checklistUuid)"
+    },
+    {
+     "key": "qr_code",
+     "label": "QR code scanning",
+     "status": "used",
+     "evidence": "the air conditioning system has already been inventoried with a QR code and the company knows exactly which air conditioning system it has to check. If there are multiple order items in one order, scanning the inventory QR code will uniquely identify the correct item."
+    }
+   ]
+  }
+ }
+]

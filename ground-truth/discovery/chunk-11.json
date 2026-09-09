@@ -1,0 +1,554 @@
+[
+ {
+  "id": "1826",
+  "canonical_title": "Animal Adoption Management System",
+  "aliases": [
+   "Animal Adoption Website",
+   "Animal Adoption System"
+  ],
+  "phase": "final",
+  "course_code": "SC4299/IT4291",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Emanuele Ambrosini",
+    "student_id": "5625104"
+   },
+   {
+    "name": "Montakant Panyasing",
+    "student_id": "5711068"
+   },
+   {
+    "name": "Sunthorn Phanakunakorn",
+    "student_id": "5713743"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Darun Kesrarat",
+  "committee": [
+   "Asst. Prof. Dr. Adtha Lawanna",
+   "Dr. Benjawan Srisura"
+  ],
+  "abstract": "Homeless dogs taken into animal shelters are difficult to match with suitable adopters, and shelter staff often keep adopter records as paper copies. The team built the Animal Adoption website, where adopters register, browse animals in a shelter, and send adoption requests that administrators approve or reject through automatic email notifications. A questionnaire built on eight dog breed characteristics recommends appropriate dogs to each adopter, and a follow up tracking function reminds administrators to check the status of adopted dogs twice a year. The system was written in C#, HTML, CSS, and JavaScript with Visual Studio, stores data and pictures in SQL Server and FireStorage, sends email through SendGrid, and runs on Microsoft Azure.",
+  "abstract_source": "generated",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [
+    "recommender_system"
+   ],
+   "technology": []
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "animal_welfare",
+     "label": "Animal welfare and pet adoption",
+     "status": "used",
+     "evidence": "The project creates an online adoption platform where adopters view homeless animals kept in shelters, send adoption requests, and administrators follow up adopted dogs."
+    }
+   ],
+   "technology": [
+    {
+     "key": "csharp",
+     "label": "C#",
+     "status": "used",
+     "evidence": "Chapter 4 Architecture, Programming language: C#, CSS, HTML, JavaScript."
+    },
+    {
+     "key": "sql_server",
+     "label": "Microsoft SQL Server",
+     "status": "used",
+     "evidence": "Chapter 4 lists Database: SQL Server, FireStorage, and the cost table lists SQL Server at 300 Baht per month."
+    },
+    {
+     "key": "microsoft_azure",
+     "label": "Microsoft Azure",
+     "status": "used",
+     "evidence": "Chapter 4 lists Web server: Azure, and the cost table lists Microsoft Azure."
+    },
+    {
+     "key": "visual_studio",
+     "label": "Visual Studio",
+     "status": "used",
+     "evidence": "Chapter 4 lists Tools management: Visual Studio, and development was done using Visual Studio written in C#, CSS, HTML and JavaScript."
+    },
+    {
+     "key": "sendgrid",
+     "label": "SendGrid",
+     "status": "used",
+     "evidence": "The cost analysis table lists Sendgrid, and reference [6] is the Azure SendGrid dotnet how-to-send-email documentation used for the email notifications."
+    },
+    {
+     "key": "firebase_storage",
+     "label": "Firebase Storage (printed as FireStorage)",
+     "status": "used",
+     "evidence": "Chapter 4 Architecture lists Database: SQL Server, FireStorage, and Firestorage appears in the monthly cost table for storing pictures."
+    },
+    {
+     "key": "asp_net_core",
+     "label": "ASP.NET Core",
+     "status": "cited",
+     "evidence": "Reference [5] is the article publish-asp-net-core-2-0-application-on-azure-with-sql-services used for deployment."
+    },
+    {
+     "key": "entity_framework_core",
+     "label": "Entity Framework Core",
+     "status": "cited",
+     "evidence": "Reference [2] is the Microsoft EF Core get-started with an existing database documentation."
+    },
+    {
+     "key": "datatables",
+     "label": "DataTables",
+     "status": "cited",
+     "evidence": "Reference [3] is https://datatables.net/."
+    },
+    {
+     "key": "filepond",
+     "label": "FilePond",
+     "status": "cited",
+     "evidence": "Reference [4] is https://pqina.nl/filepond/docs/."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1827",
+  "canonical_title": "SAMT Master",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS3200/IT4291",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Aye Myat Mon",
+    "student_id": "5818026"
+   },
+   {
+    "name": "Puja Karmacharya",
+    "student_id": "5818313"
+   },
+   {
+    "name": "Nuzhat Sarwar",
+    "student_id": "5838433"
+   }
+  ],
+  "advisor": "A. Darun",
+  "committee": [],
+  "abstract": "SAMT Master is the administration section of an education platform developed for The Good Shepherd Company Limited, a company that connects teachers and students in sports, arts, music, and technology. The team extended the platform with a web based admin system covering five features. Administrators can review teacher applications with uploaded documents, create and manage job posts, track and assign error reports, and create searchable receipts for deposits, payment invoices, and withdrawals. A marketing heat map shows where potential customers are concentrated. It uses a scraping bot to collect leads from websites and the Google API to resolve each province and county into latitude and longitude for Google Maps pins. The design covers twenty database tables and the team plans to continue the project in senior project 2.",
+  "abstract_source": "generated",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [
+    "geolocation"
+   ],
+   "technology": []
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "tutoring_marketplace",
+     "label": "Tutoring and teacher marketplace",
+     "status": "used",
+     "evidence": "SAMT master focuses on improving the Thai education system by connecting teachers who are looking for job and students who are looking for teachers, initially in the field of music."
+    }
+   ],
+   "technology": [
+    {
+     "key": "google_maps_api",
+     "label": "Google Maps API",
+     "status": "used",
+     "evidence": "In order for us to retrieve the latitude and longitude we then use the google API tools... in return will be giving us back the latitude and longitude in json format, then the heat map pinpoints hits to the google map."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1828",
+  "canonical_title": "AU Network Profiler",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS3200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Ms. Tadsawan Tansuwan",
+    "student_id": "5936910"
+   },
+   {
+    "name": "Mr. Soravis Varayuththasawad",
+    "student_id": "5913094"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "A. Pawut Satitsuksanoh",
+   "A. Piyakul Tillapart"
+  ],
+  "abstract": "This paper introduces the platform - AU Network Profiler - in which it explores user's behavior within the Assumption university's network and produce insights relating to those group of users. The platform combines the knowledge of network to preprocess incoming flow of packets into structural dataset, k-means clustering algorithm to produce user segmentation and later analyze those cohorts. The client-application includes the web interface which virtualized the cohort analysis and network utilization for the possible user to have the ability to understand the overview of their network. With its functionality to find user's behavior groups present in the network, AU Network Profiler has the ability to produce insights of the characteristic of each segment. Overall, to conclude about the AU Network Profiler, it is network analytic tools with a goal to understand the behavioristic of the user within the network.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [],
+   "technology": [
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "network_monitoring",
+     "label": "Network monitoring and analytics",
+     "status": "used",
+     "evidence": "AU Network Profiler is created with mainly focusing on the network technician as a monitoring system to provide useful information regarding the network, including utilization, activity, and user cohorts."
+    }
+   ],
+   "technology": [
+    {
+     "key": "google_cloud_platform",
+     "label": "Google Cloud Platform (GCP)",
+     "status": "used",
+     "evidence": "This is performed in Dataproc platform in Google Cloud Platform (GCP), and preprocessing, storage, and clustering all run on GCP services."
+    },
+    {
+     "key": "google_bigquery",
+     "label": "Google BigQuery",
+     "status": "used",
+     "evidence": "The results of the big data preprocessing are stored into Bigquery platform, and Bigquery scripts query and group connections into users and activities."
+    },
+    {
+     "key": "google_dataproc",
+     "label": "Google Cloud Dataproc",
+     "status": "used",
+     "evidence": "Dataproc is one of the services from GCP which is where clustering is performed, ingesting data from Bigquery and storing results back."
+    },
+    {
+     "key": "google_dataprep",
+     "label": "Google Cloud Dataprep",
+     "status": "used",
+     "evidence": "Dataprep platform is the main service that is used to perform preprocessing, serving filtering and transformation of the raw data."
+    },
+    {
+     "key": "pyspark",
+     "label": "PySpark",
+     "status": "used",
+     "evidence": "The local server provokes Dataproc by submitting job through Google Dataflow API and use PySpark framework to perform clustering."
+    },
+    {
+     "key": "flask",
+     "label": "Flask",
+     "status": "used",
+     "evidence": "The endpoint of the platform application is the API which is running in AWS elastic beanstalk service - implemented using Flask framework to build a REST API."
+    },
+    {
+     "key": "aws",
+     "label": "Amazon Web Services (Elastic Beanstalk)",
+     "status": "used",
+     "evidence": "Three components compose the structure of the client-side application and running in Amazon Web Service (AWS) platform; the API runs in AWS Elastic Beanstalk."
+    },
+    {
+     "key": "wireshark",
+     "label": "Wireshark / TShark",
+     "status": "used",
+     "evidence": "Wireshark in command line interface (known as T-Shark) is used to retrieve captured data from the switch and convert the data into CSV."
+    },
+    {
+     "key": "pandas",
+     "label": "pandas (Google BigQuery query library)",
+     "status": "used",
+     "evidence": "The API is created using mainly Flask, Google Bigquery API and third-party query library called Pandas Google Bigquery."
+    },
+    {
+     "key": "linux",
+     "label": "Linux",
+     "status": "used",
+     "evidence": "The local server needs to run in Linux operating system to allow LAN connection and wireless connection simultaneously."
+    },
+    {
+     "key": "scikit_learn",
+     "label": "scikit-learn",
+     "status": "cited",
+     "evidence": "Reference [7] is the scikit-learn sklearn.metrics.silhouette_score documentation used for the clustering validation."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1829",
+  "canonical_title": "Stampz: A Mobile Application for Collecting Stamps on Visited Tourist Destination",
+  "aliases": [
+   "Stampz"
+  ],
+  "phase": "final",
+  "course_code": "CS4200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Jarukorn Theungjitvilas"
+   },
+   {
+    "name": "Nattalie Shinkoi"
+   },
+   {
+    "name": "Thanawadee Khemasrisuwan"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "A. Piyakul Tillapart",
+   "A. Chayapol Moemeng"
+  ],
+  "abstract": "The number of people traveling without a tour guide has been increased recently, so the handy travel guide becomes an important tool for the traveler. Plus travelers nowadays are seeking for new place to visit and more exciting traveling. According to those problems, we had an idea and decided to create this project. Stampz is the iOS application which has three main features designed to greatly fit current traveler's trends and lifestyles. The first feature is discover, the application allows the user to discover places and their informations by browsing, searching, and exploring through stamp books in the system which will be provided by the admin using content-management web application. The second one is collect. The application allows the user to easily collect stamps from attractions in the list of each stamp book with their own mobile devices. The application relies on location-based services or GPS for deciding whether the user is close to the specified location. The last feature is share. The user will be able to share their interested stamp book and location through their own social media accounts. We have also evaluated our system by performing User Acceptance Test with Praram Nine Technology's representative which is the company who gave us the requirement and give back the feedback after experiencing our both mobile application and web application.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile",
+    "web"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [
+    "geolocation",
+    "gamification"
+   ],
+   "technology": [
+    "nodejs"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "ios",
+     "label": "iOS",
+     "status": "used",
+     "evidence": "Our mobile application runs on iOS, supports iOS version 12.1 and above, targeting all iPhone devices from iPhone 6 to iPhone XS Max."
+    }
+   ],
+   "domain": [
+    {
+     "key": "tourism",
+     "label": "Tourism and travel",
+     "status": "used",
+     "evidence": "The application helps independent travelers discover and collect stamps at visited tourist destinations and can be used to promote local attractions under the Amazing Thailand, Go Local campaign."
+    }
+   ],
+   "technology": [
+    {
+     "key": "vue_js",
+     "label": "Vue.js",
+     "status": "used",
+     "evidence": "The admin will be the one who manage the content CRUD through admin web-application we provided. The website is created using Vue.js."
+    },
+    {
+     "key": "express",
+     "label": "Express",
+     "status": "used",
+     "evidence": "Platform Application lists Framework: Express, Server: Node.js, Language: Javascript."
+    },
+    {
+     "key": "javascript",
+     "label": "JavaScript",
+     "status": "used",
+     "evidence": "Platform Application lists Language: Javascript, and Axios is a Javascript library used to make HTTP requests."
+    },
+    {
+     "key": "google_maps_api",
+     "label": "Google Maps API",
+     "status": "used",
+     "evidence": "GoogleMaps, GooglePlaces initialise from latitude longitude mapping to location, and Figure 3.3 shows the client sending latitude and longitude to the Google Map API."
+    },
+    {
+     "key": "google_places",
+     "label": "Google Places",
+     "status": "used",
+     "evidence": "Libraries / Dependencies list GoogleMaps, GooglePlaces initialise from latitude longitude mapping to location."
+    },
+    {
+     "key": "facebook_sdk",
+     "label": "Facebook SDK (Login)",
+     "status": "used",
+     "evidence": "Facebook including FacebookLogin, FacebookCore - authentication of user, and reference [11] is the Facebook SDK for Swift documentation."
+    },
+    {
+     "key": "alamofire",
+     "label": "Alamofire / AlamofireImage",
+     "status": "used",
+     "evidence": "Networking stuff: Loading image, Alamofire including AlamofireImage."
+    },
+    {
+     "key": "swiftyjson",
+     "label": "SwiftyJSON",
+     "status": "used",
+     "evidence": "SwiftyJSON: mapping JSON."
+    },
+    {
+     "key": "objectmapper",
+     "label": "ObjectMapper",
+     "status": "used",
+     "evidence": "ObjectMapper: mapping the JSON to Object."
+    },
+    {
+     "key": "journey_api",
+     "label": "Journey API platform",
+     "status": "used",
+     "evidence": "It is built on top of Journey API platform provided by Intelligence System Laboratory, and Stampz API passes authorisation tokens to Journey API."
+    },
+    {
+     "key": "axios",
+     "label": "Axios",
+     "status": "used",
+     "evidence": "Axios: A Javascript library used to make HTTP requests from node.js or XMLHttpRequests from the browser that also supports the ES6 Promise API."
+    },
+    {
+     "key": "multer",
+     "label": "Multer",
+     "status": "used",
+     "evidence": "Multer: node.js middleware for handling multipart/form-data, which is primarily used for uploading files."
+    },
+    {
+     "key": "body_parser",
+     "label": "Body-parser",
+     "status": "used",
+     "evidence": "Body-parser: extract the entire body portion of an incoming request stream and exposes it on req.body."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1836",
+  "canonical_title": "PeerShare: An Expense Sharing Mobile Application",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS3200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Mr. Rachatha Pramualsuk",
+    "student_id": "5911694"
+   },
+   {
+    "name": "Mr. Prutchakorn Ngamsuanplu",
+    "student_id": "5913262"
+   },
+   {
+    "name": "Mr. Poom Penghiran",
+    "student_id": "5913873"
+   }
+  ],
+  "advisor": "Dr. Songsak Channarukul",
+  "committee": [
+   "Dr. Kwankamol Nongpong",
+   "Asst. Prof. Dr. Thitipong Tanprasert"
+  ],
+  "abstract": "Nowadays, convenience has become one of the necessities that govern a decision in expending money, especially in transactions done with many peers. Said transactions often are complicated and time-consuming as each peer would have to pass around a single receipt to calculate how much each of them owes the person who had paid on behalf of them. This scenario happened in almost every transaction we shared. PeerShare is an expense sharing mobile application proposes a more convenient solution for bill splitting. By taking a snapshot of the receipt then crop the part which contains item prices. Then, the owner of the bill (the person who paid first) sends a request asking money to each peer. Each peer can repay the amount owed back to the owner via AU Spark E-wallet. This step of the transaction happens within PeerShare application in which each peer has registered his or her E-wallet account.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "finance"
+   ],
+   "topic": [
+    "ocr"
+   ],
+   "technology": []
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "ios",
+     "label": "iOS",
+     "status": "used",
+     "evidence": "For this project, the mobile application will be created for the iOS platform only, since more than 50% of Assumption University students use iOS devices."
+    }
+   ],
+   "domain": [
+    {
+     "key": "e_wallet_payments",
+     "label": "Mobile payments and e-wallet",
+     "status": "used",
+     "evidence": "PeerShare will operate on AU Spark E- Wallet and integrate fully into AU Spark E- Wallet system based on Bank of Ayudhya's infrastructure, with payments completed inside the E-wallet environment."
+    }
+   ],
+   "technology": [
+    {
+     "key": "amazon_rekognition",
+     "label": "Amazon Rekognition",
+     "status": "used",
+     "evidence": "The text detection part of PeerShare is implemented using Amazon Rekognition, and the web service uses Amazon's Rekognition API to identify text in receipt images."
+    },
+    {
+     "key": "aws",
+     "label": "Amazon Web Services (AWS Elastic Beanstalk)",
+     "status": "used",
+     "evidence": "PeerShare web service is deployed using AWS Elastic Beanstalk, which handles capacity provisioning, load balancing, scaling, and health monitoring."
+    },
+    {
+     "key": "asp_net_core",
+     "label": "ASP.NET Core",
+     "status": "used",
+     "evidence": "PeerShare will use ASP.NET core to create the web service to access and retrieve the data from the database, following the MVC architectural pattern."
+    },
+    {
+     "key": "swift",
+     "label": "Swift",
+     "status": "used",
+     "evidence": "The mobile application will use Apple's official programming language to develop Swift, with the Model-View-Controller method widely used in iOS development."
+    }
+   ]
+  }
+ }
+]

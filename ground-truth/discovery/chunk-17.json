@@ -1,0 +1,482 @@
+[
+ {
+  "id": "1949",
+  "canonical_title": "On-My-Way Parcel Delivery",
+  "aliases": [
+   "On-My-Way"
+  ],
+  "phase": "final",
+  "course_code": "IT4292",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Leopold Yangane Faye",
+    "student_id": "5818008"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Paitoon Porntrakoon",
+  "committee": [
+   "Asst. Prof. Dr. Benjawan Srisura",
+   "A. Chayapol Moemeng"
+  ],
+  "abstract": "In this project, we have tried to create and implement a system from scratch. The knowledge and resources needed for such work have been gathered throughout the process.\n\nThe system we have attempted to make is one that comes at its right time with the use of technologies nowadays in almost every domain of our lives. Taking as example the revolutionary model of Uber, our goal was to show an environment where casual individuals could engage in a relation of offer and demand without going through much struggle.\n\nConceptually, the On-My-Way application is basically one platform that offers a delivery service between one customer and a potential nearby driver. It is a system where the primary users can create their profile, create a delivery to be picked up by another registered user and track the delivery of their parcel on the map.\n\nThe usual parcel deliveries are usually time consuming, involving a few paperwork and can be money and effort wise challenging.\n\nOur application aims to help better the delivery processes by putting the two main involved users at the center of the process while helping the reduce the amount of money and time they are to spend on the traditional delivery services. Among many benefits, we offer to the driver the possibility to work any time at will, to control which task to choose and which to decline. To the customer we give the opportunity to start a request any time without suffering constraints such as bad weather or traffic keeping one from getting to a postal service agency, the ease of mind resulting from the possibility to know where the delivery process is at.\n\nThis system deals with 2 users mainly and 3 to the complete end. A customer who requests a parcel to be delivered; a carrier who is available and ready to fulfil the customer's task, and accessorily a recipient at the very end of the process.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "transportation"
+   ],
+   "topic": [
+    "geolocation"
+   ],
+   "technology": [
+    "firebase"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "android",
+     "label": "Android",
+     "status": "used",
+     "evidence": "The text calls it 'this mobile application' with map activities and device permissions, and the references are Google Maps Android SDK and developer.android.com guides."
+    }
+   ],
+   "domain": [
+    {
+     "key": "logistics",
+     "label": "Logistics and parcel delivery",
+     "status": "used",
+     "evidence": "The application offers a delivery service between a customer and a nearby driver, with parcel pickup, tracking on the map, fare collection, and delivery history."
+    }
+   ],
+   "technology": [
+    {
+     "key": "google_maps",
+     "label": "Google Maps SDK",
+     "status": "used",
+     "evidence": "Section 4.2 states Google services were key to location recognition, location updates and access permissions; references cite the Google Maps Android SDK."
+    },
+    {
+     "key": "geofire",
+     "label": "GeoFire",
+     "status": "cited",
+     "evidence": "Reference 10 lists firebaseopensource.com/projects/firebase/geofire-android/."
+    },
+    {
+     "key": "namecheap",
+     "label": "Namecheap hosting",
+     "status": "used",
+     "evidence": "Section 4.1 says a dedicated server was rented for the application files and APIs, shown as 'Figure 4.1: Namecheap server'."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1950",
+  "canonical_title": "ARMS: Assumption University Room Management System",
+  "aliases": [
+   "ARMS"
+  ],
+  "phase": "final",
+  "course_code": "CS3200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Grid Kornsutatipkul",
+    "student_id": "6013732"
+   },
+   {
+    "name": "Thanathas Chawengvorakul",
+    "student_id": "6014586"
+   },
+   {
+    "name": "Sokvathara Lin",
+    "student_id": "6018002"
+   }
+  ],
+  "advisor": "Dr. Songsak Channarukul",
+  "committee": [
+   "A. Chayapol Moemeng",
+   "Asst. Prof. Dr. Paitoon Porntrakoon"
+  ],
+  "abstract": "Nowadays, automated systems are taking roles in assisting human life. It can perform many tasks in various kinds of field base on what it has programmed. Assumption University Room Management System or in short called ARMS. It can dramatically improve the performance of examination seat arrangement and as a result of saving more time and cost consumed. Moreover, it also diminishes the human errors which might occur during the process. In many universities' rooms, buildings, papers, documents, and electricity are heavily consumed during the examination period. Without proper management and allocating these resources, it might further raise the unnecessary expense of the university.\n\nARMS is a kind of automated system, which can automatically perform an examination seating arrangement. It provides the necessary features to automatically arrange all the eligible students to the specific seats in examination rooms easily. Moreover, the useful insights and reports of how the system arranged will also be provided. Furthermore, users can also modify and manually arrange some specialized courses of their desire. In conclusion, the ARMS system is almost a one-stop-solution for the examination seating management.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [],
+   "technology": []
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "csharp",
+     "label": "C#",
+     "status": "used",
+     "evidence": "Section 5.5 notes it is challenging not to write spaghetti code in C#, and the frontend requires languages and frameworks like Nuget, NPM, JSON, C#, and JavaScript."
+    },
+    {
+     "key": "dotnet",
+     "label": ".NET Core",
+     "status": "used",
+     "evidence": "Section 3.4.2 states the frontend was first implemented in Dotnet core 2.2 and the whole project migrated into Dotnet 3.1 to fix Electron.Net SDK issues."
+    },
+    {
+     "key": "electron_net",
+     "label": "Electron.NET",
+     "status": "used",
+     "evidence": "Section 5.6 says the frontend unit needs the Electron.Net framework to encapsulate it into a container to run as a Chromium desktop app."
+    },
+    {
+     "key": "entity_framework",
+     "label": "Entity Framework",
+     "status": "used",
+     "evidence": "Section 5.6 states Entity Framework is used to ease the workload with data communication to replace 'SQL String.'"
+    },
+    {
+     "key": "jquery",
+     "label": "jQuery",
+     "status": "used",
+     "evidence": "Section 5.6 lists jQuery, the JavaScript framework to ease the frontend workload, as an open source used by the project."
+    },
+    {
+     "key": "bootstrap",
+     "label": "Bootstrap",
+     "status": "used",
+     "evidence": "Section 5.6 names Bootstrap as the CSS framework used to style components in the web frontend."
+    },
+    {
+     "key": "javascript",
+     "label": "JavaScript",
+     "status": "used",
+     "evidence": "Section 3.4.2 lists JavaScript among the languages the frontend unit requires."
+    },
+    {
+     "key": "nodejs",
+     "label": "Node.js",
+     "status": "used",
+     "evidence": "Section 5.6 explains Electron.NET combines the workspace with the Chromium rendering engine and the Node.js runtime, and NPM is listed among the required frontend tools."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1952",
+  "canonical_title": "Smart Residence",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Zheng Wang",
+    "student_id": "5826905"
+   },
+   {
+    "name": "Kitipong Sillathum",
+    "student_id": "5717607"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "Asst. Prof. Dr. Dobri Atanassov Batovski",
+   "A. Piyakul Tillpart"
+  ],
+  "abstract": "Internet of Things (IoT) is a system of interconnected and interrelated computing devices where they can transfer data over a network that is ever-growing in recent years. With the proliferation of IoT devices and the development of AI technologies, a smart environmental monitoring and control system is able to be built and may change the way of people's life and work style in the near future. This project aims on deploying a sensor-embedded environment to monitor the area occupancy and event occurrences, where models would be trained and used to detect the area occupancy status through the sensors' data in real-time. The prototype built in this project can be utilized for nursing home or elderly house, to assist the work of nursing staff in a nonintrusive way.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "hardware_iot",
+    "ai_data"
+   ],
+   "platform": [
+    "embedded_hardware",
+    "web"
+   ],
+   "domain": [
+    "healthcare"
+   ],
+   "topic": [],
+   "technology": [
+    "firebase",
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "esp8266",
+     "label": "ESP8266 / NodeMCU",
+     "status": "used",
+     "evidence": "Section 3.2.1 describes the NodeMCU V3 CH340 Lua WIFI ESP8266-12E board running firmware on the ESP8266 Wi-Fi SoC from Espressif Systems, with two boards controlling the sensors."
+    }
+   ],
+   "domain": [
+    {
+     "key": "elderly_care",
+     "label": "Elderly care",
+     "status": "used",
+     "evidence": "The system is a prototype for nursing home or elderly house to assist nursing staff taking care of patients or elderlies in a nonintrusive way."
+    },
+    {
+     "key": "smart_home",
+     "label": "Smart home",
+     "status": "used",
+     "evidence": "Section 1.1 calls Smart Residence an IoT-based solution for smart home, with future use cases like Smart Home or Smart Workspace."
+    }
+   ],
+   "technology": [
+    {
+     "key": "arduino",
+     "label": "Arduino IDE",
+     "status": "used",
+     "evidence": "Section 3.2.2 states Arduino IDE is used to program the NodeMCU boards."
+    },
+    {
+     "key": "flask",
+     "label": "Flask",
+     "status": "used",
+     "evidence": "Section 3.2.2 states Flask and Flask-SocketIO libraries are used for the Python backend and website frontend connecting."
+    },
+    {
+     "key": "flask_socketio",
+     "label": "Flask-SocketIO",
+     "status": "used",
+     "evidence": "Section 3.2.2 states Flask-SocketIO handles routing and web-socket data transformation, letting the backend push prediction results to the frontend UI in real time."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1953",
+  "canonical_title": "Content Discovery Platform for AU Spark",
+  "aliases": [
+   "Course Discovery"
+  ],
+  "phase": "final",
+  "course_code": "CS4200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Tadsawan Tansuwan",
+    "student_id": "5936910"
+   },
+   {
+    "name": "Prutchakorn Ngamsuanplu",
+    "student_id": "5912046"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "Dr. Songsak Channarukul",
+   "Asst. Prof. Dr. Benjawan Srisura"
+  ],
+  "abstract": "With the increase of different academic interests and depleting of academic advising resources, the importance of exploring data-assisted methods to support student decision making has become even higher than before. We have researched the potentiality of building a recommendation system for Assumption University students based on AU Spark dataset. The system implements a hybrid approach recommendation system to personalize course suggestions to each student cohorts with prior knowledge on student enrollments from the academic year of 2013 to 2018. Models are validated by using tests of whether the recommended courses with the lecturers are enrolled in the particular semester. While not proof of casual effectiveness, the evaluation perspectives on the performance of the recommender will help to lead the development of a recommendation system for Assumption University to another potential and offer to personalize course assistance with ease.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [
+    "recommender_system"
+   ],
+   "technology": []
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "scikit_learn",
+     "label": "scikit-learn",
+     "status": "used",
+     "evidence": "Training implements LASSO and Random Forest Regression with exhaustive grid search over estimator parameters (alpha 1e-15 to 10, 10 to 1000 trees) and K-fold cross-validation, and reference [8] cites 'Scikit-learn: Machine Learning in Python'."
+    },
+    {
+     "key": "au_spark",
+     "label": "AU Spark platform",
+     "status": "used",
+     "evidence": "AU Spark provided the student and course datasets from academic years 2012 through 2019, and the API is established for the readiness of implementing the recommender system for AU Spark."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1954",
+  "canonical_title": "Keyword Analytics",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT4291/CS3200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Mustavi Sarker",
+    "student_id": "6018145"
+   },
+   {
+    "name": "Sorasit Arsirapongphisit",
+    "student_id": "6017564"
+   },
+   {
+    "name": "Chawalit Khotwong",
+    "student_id": "6014085"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "Asst. Prof. Dr. Darun Kesrarat",
+   "Dr. Kwankamol Nongpong"
+  ],
+  "abstract": "Over the years, the rise in the use of social media platforms such as Twitter, Facebook and Instagram have created vast amounts of data. One of the key indicators of segregation and performance of this data in these social media platforms is usually associated with a \"hashtag\" or a keyword, which in this article we will refer to as \"topic\".\n\nOne of the greatest challenges today is being able to mine and process this vast amount of data (also known as \"Big Data\") based on some of these topics and extract useful information out of them. This article explores the idea of extracting live data and processing them near real-time to create indicators such as time-series, sentiment analysis and trend prediction. These indicators will help users analyze and understand patterns in the latest social media trends and make decisions to support their business or marketing goals.\n\nThis article will focus on the aforementioned aspects through analysis and processing of data by using our very own big data analytics engine that extracts live Tweets from the popular social media platform Twitter and provides basic data analytics of that data intelligently and near real time with great accuracy. The highlight of this engine is the Time Series indicator as it produces graphs based on the most popular Twitter trends, so the users of the software product have an overview of what is going on in social media as it happens live. This enables the end-user to analyze the patterns of the hashtag or topic's lifespan, adding to that, end-users will be able to have the engine track a particular hashtag or topic of their choice and see the performance of it.\n\nAnother major challenge to mining real-time social network data is the noise, which can be caused due to various factors, so we have a Kalman Filter in place to filter to smooth out the noise in the time series data. Using the Kalman Filter also helps us forecast the trending probability of a particular based on the moving average of the data being streamed.\n\nSo as a general result, we produced a big data processing engine which leverages twitter data to handling multiple data streams, and later can be retrofitted to support other social media platform, depending on how the data is delivered.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [
+    "nlp"
+   ],
+   "technology": [
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "social_media",
+     "label": "Social media analytics",
+     "status": "used",
+     "evidence": "Keyword Analytics is described as a social media monitoring tool and platform that helps users monitor and track ongoing trends or specific keywords in near real time."
+    }
+   ],
+   "technology": [
+    {
+     "key": "vue_js",
+     "label": "Vue.js",
+     "status": "used",
+     "evidence": "Section 3.1.2 lists Vue.js 2.6.11 as the main progressive framework for building the user interfaces."
+    },
+    {
+     "key": "bootstrap",
+     "label": "Bootstrap",
+     "status": "used",
+     "evidence": "Section 3.1.2 states most components in the web application are done with Bootstrap 3."
+    },
+    {
+     "key": "coreui",
+     "label": "CoreUI",
+     "status": "used",
+     "evidence": "Section 3.1.2 lists CoreUI as the Vue.js template library used for the main web application template."
+    },
+    {
+     "key": "axios",
+     "label": "Axios",
+     "status": "used",
+     "evidence": "Section 3.1.2 states all API requests in the project are posted, deleted and requested by Axios."
+    },
+    {
+     "key": "chart_js",
+     "label": "Chart.js",
+     "status": "used",
+     "evidence": "Section 3.1.2 lists Chart.Js as the Vue.js library used to construct the charts in the web application."
+    },
+    {
+     "key": "apache_kafka",
+     "label": "Apache Kafka",
+     "status": "used",
+     "evidence": "Section 2.1 states the Twitter Streaming API was implemented with the stream processing platform Apache Kafka, used as a message queue."
+    },
+    {
+     "key": "confluent_platform",
+     "label": "Confluent Platform",
+     "status": "used",
+     "evidence": "Section 3.1.2 lists the Confluent Platform for Kafka data stream processing as a critical backend component acting as the message queue."
+    },
+    {
+     "key": "aws",
+     "label": "Amazon Web Services",
+     "status": "used",
+     "evidence": "Objectives include a serverless architecture using AWS microservices, and the system architecture uses AWS cloud infrastructure with S3, Lambda, EC2 and DynamoDB."
+    },
+    {
+     "key": "dynamodb",
+     "label": "AWS DynamoDB",
+     "status": "used",
+     "evidence": "Section 3.1.2 states Keyword Analytics uses the non-relational database AWS DynamoDB for storing data."
+    },
+    {
+     "key": "nginx",
+     "label": "Nginx",
+     "status": "used",
+     "evidence": "Section 3.1.2 lists Nginx for hosting the API server."
+    },
+    {
+     "key": "pykalman",
+     "label": "pykalman",
+     "status": "used",
+     "evidence": "Section 3.4.1 states the Kalman filter was implemented through the use of the pykalman library, with transition matrices tuned for the project."
+    },
+    {
+     "key": "nltk",
+     "label": "NLTK",
+     "status": "used",
+     "evidence": "Section 2.1 describes the Levenshtein edit distance framework used for keyword spelling correction, with reference [5] pointing to the NLTK edit distance library."
+    },
+    {
+     "key": "twitter_api",
+     "label": "Twitter API",
+     "status": "used",
+     "evidence": "Section 2.1 describes collecting raw data round the clock using Twitter's Streaming API after rewriting from the Search API."
+    }
+   ]
+  }
+ }
+]

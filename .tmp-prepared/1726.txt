@@ -1,0 +1,1060 @@
+[]
+
+Vincent Mary School of Science and Technology
+
+CS 3200
+
+Senior Project I
+
+Cloud Property Fields Inspection System [1726]
+
+Submitted to
+
+Project Advisor: A. Chayapol Moemeng
+
+Project Committee: Asst. Prof. Paitoon Porntrakoon
+
+  Dr. Benjawan Srisura
+
+Submitted by
+
+Serhii Bielik 5748106
+
+Semester 2/2017
+
+ASSUMPTION UNIVERSITY
+
+Vincent Mary School of Science and Technology
+
+Department of Information Technology
+
+Project Title: Cloud Property Fields Inspection System
+
+Members: Serhii Bielik 5748106
+
+Project Advisor: A. Chayapol Moemeng
+
+Academic Year: 2/2017
+
+The Senior Project committees of the Department of Information
+Technology, Vincent Mary School of Science and Technology, Assumption
+University had approved this Senior Project. The Senior Project
+submitted in partial fulfillment of the requirements for the degree of
+Bachelor of Science in Information Technology.
+
+Approval Committees:
+
+__________________________
+
+(A. Chayapol Moemeng)
+
+Project Advisor
+
+__________________________ _________________________
+
+(Asst. Prof. Paitoon Porntrakoon) (Dr. Benjawan Srisura)
+
+Committee Member Committee Member
+
+Table of Contents
+
+Page
+
+1. Introduction …………………………………………………………………. 1-2
+
+2. General Important Definitions …….………………………………………... 3-4
+
+3. BIM and Autodesk products ………………………………………………… 5-7
+
+4. Statement of the Problem ……..…………………………………………….. 8-9
+
+5. Objectives …………………………………………………………………….. 10
+
+6. User Requirements ………………………………………………………….... 11
+
+7. Scope of the Project ……………………………………………………….. 12-13
+
+8. Cost and Benefits Analysis ……………………………………………….. 14-15
+
+9. Methodology ……………………………………………………………… 16-18
+
+10. Autodesk Forge challenges ……………………………………………… 19-24
+
+11. Logical Design of the System …………………………………………… 25-42
+
+11.1 Data Flow Diagram – Context Diagram ……………………………. 25
+
+11.2 Data Flow Diagram – Level 0 …………………………………… 26-27
+
+11.3 Entity Relationship Diagram (ERD) ………………………………... 28
+
+11.4 Data Dictionary ………………………………………………….. 29-32
+
+11.5 Interface design 30-30 …………………………………………… 33-42
+
+12. Reference ……………………………………………………………………. 43
+
+1.  Introduction
+
+Initially, I would like to express thanks to my project advisor A.
+Chayapol Moemeng for the creating interesting topic, for the explaining
+the completely new “construction-property-sales” processes for me, for
+recommending the proper Autodesk products and for the overall guidance
+through the project.
+
+Furthermore, I would like to thank to the Autodesk for providing
+software, services, additional access to the Forge API and for the great
+support via email.
+
+When I looked for senior project topic, I tried to find something
+interesting and at the same time challenging for the implementation. And
+in general, I got what I expected.
+
+As we can see form the title of this project the general idea is to
+simplify the presale process for the constrictors by partially
+automatize the presale inspection of the property (condo unit).
+
+Nowadays it is become more easy because cloud technologies become more
+available and friendly even for enthusiasts not only for the big
+corporations.
+
+In this project I going to use the cloud products of Autodesk in order
+to achieve project goals. Autodesk is one of the leader software
+corporation that makes software for the architecture, engineering,
+construction, manufacturing, media, and entertainment industries.
+Fortunately, they understand the importance of education and easily
+provides numerous of their products for a long term for the academic
+purposes. Apart from that there are available documentation and customer
+support via email and stackoverflow.com
+
+For this project mainly I am going to use Autodesk forge API:
+
+- Autodesk Forge https://forge.autodesk.com/
+
+- Autodesk BIM 360 https://bim360.autodesk.com/
+
+- Autodesk Revit https://www.autodesk.com/products/revit/overview
+
+The main challenge will be to combine all of this products into one
+system that will help to solve problem of businesses.
+
+2.  General Important Definitions
+
+First of all, let me introduce few definitions in order to avoid further
+confusions:
+
+[C:\Users\WD\Desktop\Revit-model-2-Bed-Room-House.png]Property (Model
+*.rvt) – building, condo unit. The goal of sales agent is to inspect and
+sell a property. In this project property will be also represented as
+Autodesk Revit Model *.rvt. which is a fully virtual representation of a
+property that contains all information about it.
+
+Figure 2.1 Example of Revit Model
+
+Fields – the array of fields and their characteristics and attributes
+that describes a property (Autodesk Revit Model *.rvt). In general, they
+show which equipment the property (model) has, their materials and the
+other types of constructional features.
+
+[]
+
+Figure 2.2 Example of fields in Autodesk Revit Model
+
+Inspection – the presale process in which a sales agent and a customer
+who intend to buy a property are inspecting the fields of that property
+in order to find potential problems of fields.
+
+Issue – the problem with the fields of a property that was detected
+during the presale inspection. Issues are discovering by a customer and
+must be described by a sales agent and submitted into the system for
+further investigation and fixing.
+
+Issue Report – the pdf document that automatically created by system
+after the presale inspection. This document will contain information
+about customer and conclusion about inspection.
+
+3.  BIM and Autodesk products
+
+In this part I will try to briefly cover the specific technologies
+involved in this project.
+
+- Building information modeling (BIM)
+  “is an intelligent 3D model-based process that gives architecture,
+  engineering, and construction (AEC) professionals the insight and
+  tools to more efficiently plan, design, construct, and manage
+  buildings and infrastructure”.
+  [b5297149-8dcc-49ca-9a2a-75cb65625c21]
+
+Figure 3.1 BIM cycle
+
+  As you can see BIM covers every single stage of the project from
+  Programming to Demolition. Because of electronically maintained
+  documents, computer predictions, efficient collaboration among
+  contractors the advantages of using BIM in construction projects are
+  wide and obvious.
+
+  [C:\Users\WD\Desktop\400px-BIMbenefits.png]
+
+  Figure 3.2 BIM advantages
+
+  Thus, it is rapidly conquering the market. At some countries more, in
+  some countries less.
+
+- Autodesk BIM 360
+  Currently there are many software products on the market that
+  implement BIM processes. However, Autodesk BIM 360 is a strong leader
+  of the market which provides newest features and high quality
+  products.
+  [Похожее изображение]
+
+  Figure 3.3 Autodesk BIM 360 products
+
+  For the scope of this project is enough to use only BIM 360 Docs.
+
+- BIM 360 Docs
+  This product was designed to maintain all documentation about the
+  project and help different companies involved in this project
+  collaborate and work with documentation.
+
+[C:\Users\WD\Desktop\dim-360-docs2.jpg]
+
+Figure 3.4 Autodesk BIM 360 Docs
+
+One of the part of project documentation is Revit models.
+
+- Autodesk Revit
+  Revit keeps an idea from conceptual design to construction
+  documentation within a single software environment. With Revit
+  worksharing, multiple team members can work on a project at the same
+  time using a centrally shared model. Basically, Revit model contains
+  all detailed information about itself in a single file.
+
+[C:\Users\WD\Desktop\Arch2O-Revit-01-1170x608.jpg]
+
+Figure 3.5 Autodesk Revit
+
+Now we have all information about the project the only difficulty is how
+to automatize extraction of details form Docs 360 and Revit files. To
+solve this problem Autodesk in the end of 2015 created Autodesk Forge
+with its API.
+
+Autodesk Forge
+Forge features numerous application program interfaces (APIs) and
+software development kits (SDKs) that allow software developers to build
+innovative cloud-powered applications, from viewing and presenting 3D
+models to transforming 2D images into 3D models.
+
+4.  Statement of the Problem
+
+Currently, property market is highly competitive. Every construction
+company intends to provide better way to satisfy potential buyers. There
+are many ways to approach this goal:
+
+- Better service and customer support
+
+- Higher quality of materials
+
+- Extended guaranty
+
+- Units customizations
+
+- Various bonuses
+
+- Discounts
+
+One of the easiest and, more importantly, more cheapest ways is
+providing better service and customer support. As long as the scope of
+this project is presale inspection I am going to concentrate only on
+this part of customer service.
+
+When we think about traditional approach of presale inspection we may
+face these difficulties:
+
+- Pre inspection preparation – before the actual inspection the agent
+  has to prepare documentation about the project. This task requires
+  communication with the project construction and massive project
+  documentation management.
+
+- Inspection process – during this process the sales agent has to
+  inspect property according to the prepared documentation in the first
+  step. All process is manually paper based as a result the inspection
+  is longer. Moreover, in case of occurring issues with the property the
+  sales agent has to prepare documents describing them and in the end
+  submit those document for the contractor for investigation and fixing.
+  The progress of fixing issues is closed or at least associated with
+  difficulties for the customer.
+
+- After inspection report – after inspection the sales agent has to
+  prepare document that describes inspection process and issues if they
+  were found for the customer. This takes time and effort.
+
+- Human factor – because of human involved in many processes it is
+  higher risk to make mistake of forger about something important. It is
+  not bad, but it is fact that humans make mistakes.
+
+- Difficulties with the paper based documentation – this is common
+  drawback for all types of paper based documentation. It takes space,
+  it is hard to find something, it may be easily destroyed.
+
+5.  Objectives
+
+The goal of this project is minimize problems that were described in
+previous section and to make process of presale inspection smooth and
+seamless.
+
+The main objectives of this project can be described as follows:
+
+- To develop a system that will allow to simplify the pre inspection
+  preparation utilizing data from Building Information Modeling (BIM).
+
+- To maintain sales agent information.
+
+- To assign specific data for the inspection for the sales agents.
+
+- To provide convenient way of inspection process via web application.
+
+- In case of issues to simplify the issue creation and maintenance.
+
+- To keep issues information of related models.
+
+- To generate presale inspection reports.
+
+- To inform customers about updated related to their units.
+
+6.  User Requirements
+
+This system will have two types of accounts: Administrator and Sales
+Agents.
+
+The administrator account only one and created “out of box” and
+specialized on the managing of whole system.
+
+The sales agent accounts will be created by administrator and their main
+goal is presale inspections.
+
+The user requirements are considered as follows:
+
+Administrator:
+
+- Creating, and managing sale agents accounts.
+
+- Importing information from the models (Autodesk Revit *.rvt) from
+  Autodesk BIM 360 Document System.
+
+- Specifying the fields of the model that has to be checked during
+  presale inspection by sales agents.
+
+- Assign models to the sales agents.
+
+- Review results of all presale inspections completed by sales agents
+  and download reports.
+
+- Review of all issues that were created during inspections.
+
+Sales Agent:
+
+- Update his own profile.
+
+- Conduct inspections of assigned models.
+
+- Create issues and attach photos to them.
+
+- See his previous inspections results and download reports.
+
+- See issues initiated by him.
+
+7.  Scope of the Project
+
+The system functions and features will include the following:
+
+- Sales Agent Management
+  The administrator will be able to create sales agent accounts by
+  specifying their email, password, first and last name. The
+  administrator will be able to edit and remove accounts. Also,
+  administrator will be able to assign imported models for sales person.
+  This will allow sales person to inspect this model.
+
+- Models import
+  The administrator will be able to import models data to the system via
+  Forge API, as well as delete those models from the system. I assumed
+  that models must be prepared by contractor and uploaded to the Project
+  Files Directory in the Autodesk BIM 360 Document system.
+  []
+
+  Figure 7.1 The folder for Revit Models in Autodesk BIM 360
+
+- Fields management
+  The administrator will be able to select the fields of the model that
+  sales agent has to check during presale inspection. The fields must be
+  extracted from the Revit file (that uploaded to the BIM 360) via Forge
+  API. I assumed that model must be properly prepared by constractor.
+
+- Inspections.
+  The administrator will be able to check all inspection in the system.
+  The system must provide convenient way for the sales agent to conduct
+  model inspection. Sales manager has to be able to go through every
+  field and confirm that it is ok or create issue with description about
+  this issue.
+
+- Issues.
+  The administrator will be able to check all issues in the system.
+  All confirmed issues with photos will be committed to the BIM 360 via
+  Forge API. I assume that issues fixing and status updates will be done
+  by constructor. The system will automatically update the issues
+  statuses from the BIM 360.
+
+8.  Cost and Benefit Analysis
+
+- Cost Analysis
+  For the commercial projects in the property field is important the
+  quality of hosting provider rather that saving budget. Therefore, good
+  solution is to use Cloud Servers or Dedicated Servers. Virtual
+  hostings and virtual servers are significantly cheaper, however, their
+  performance and accessibility might be affected by neighborhood
+  projects that located on the same hardware.
+
+  For this project I selected the dedicated server EX41-SSD in Hetzner
+  provider. Even though this is the cheapest server, it will provide
+  super redundant performance.
+
++---------------------------------------------------------------------------------------------+
+| Server Hardware And Software Configuration                                                  |
++=====================================+=======================================================+
+| CPU:                                | Intel® Core™ i7-6700                                  |
++-------------------------------------+-------------------------------------------------------+
+| RAM:                                | 32 GB DDR4 RAM                                        |
++-------------------------------------+-------------------------------------------------------+
+| SSD:                                | 2 x 500 GB                                            |
++-------------------------------------+-------------------------------------------------------+
+| Connection:                         | 1 GBit/s                                              |
++-------------------------------------+-------------------------------------------------------+
+| Traffic:                            | 30 TB + Unlimited internal                            |
++-------------------------------------+-------------------------------------------------------+
+| Price:                              | 34 euro monthly and 79 euro setup fee.                |
++-------------------------------------+-------------------------------------------------------+
+| Software:                           | CentOS 7 x64, MariaDB, Nginx, PHP 7, Yii 2 Framework  |
++-------------------------------------+-------------------------------------------------------+
+| Administration:                     | ISPmanager Lite (optionally) 4 euro monthly           |
++-------------------------------------+-------------------------------------------------------+
+| Forge API:                          | 100 credits free (or 12 months which comes first)     |
+|                                     | (then 100 credit for 100$)                            |
++-------------------------------------+-------------------------------------------------------+
+| BIM 360:                            | Free for one project (then 30$ monthly per account)   |
++-------------------------------------+-------------------------------------------------------+
+| Domain name:                        | Free one year                                         |
++-------------------------------------+-------------------------------------------------------+
+| CDN:                                | Cloudflare free package                               |
++-------------------------------------+-------------------------------------------------------+
+
+- Benefits Analysis
+
+  a.  The system will help to improve quality service for the property
+      sales process.
+
+  b.  The pre inspection process will be simplifies by automatized
+      extraction fields from the Revit models. And once administrator
+      selects fields, the pre inspection process will be done instantly.
+
+  c.  The system will allow to manage access rights for the sales
+      agents. They will have access to the models that allowed by
+      administrator. Security will be impoved.
+
+  d.  The inspection process will be simplified for the sales agent. The
+      interface will lead agent though all fields and will not allow to
+      complete inspection without checking all fields.
+
+  e.  The sales agent will be able to create issues directly from the
+      inspection process. The newly created issues will be transferred
+      to the BIM 360 system automatically.
+
+  f.  The system will track the updates on the issues and notify all
+      people involved in it via email in case of updates of progress
+      changes.
+
+  g.  The system will create inspection reports automatically once
+      inspection is done and send them to the email of customer and
+      sales agent. This will allow to clarify the situation in case of
+      various misunderstandings after inspection.
+
+9.  Methodology
+
+1.  Project Identification and Selection
+
+The goal of this project is to create system that will simplify the
+presale property inspection by utilizing the new cloud technologies,
+such as Autodesk Forge, Autodesk BIM 360 and Autodesk Revit.
+
+2.  Project Initiation and Planning
+
+First of all, before starting this project I have to understand and
+prepare the project scope, objectives and limitations. The second step
+was to determine the cost and benefits. Finally, I had to understand the
+approximate interface for the project.
+
+3.  System Needs Analysis
+
+In order to understand system needs I had to learn about the whole
+process of selling property and all communication processes between
+contractors, sales agents and customers who intend to buy property unit.
+Moreover, it was important to briefly understand some BIM utilities such
+as Autodesk Revit. Finally, in this stage I had to prepare Data Flow
+Diagram.
+
+4.  Design the Proposed System
+
+The next step was the creation of ER model with data dictionary for the
+database and the draft for the user interface based on the previous
+researches.
+
+5.  Development of the Proposed System
+
+For the development part I chose the PHP 7 and Yii 2 Framework in
+particular. This choice was influenced by personal experience and
+simplicity of development and deployment of projects on PHP. In
+addition, with the correct configuration on the web server and
+environments, PHP 7 shows fairly competitive performance compare to the
+other languages. In addition, I had to understand how to work with Forge
+API in the scope of the project. Finally, I had to find a REST Clint for
+Yii2 which allowed me to work with Forge API more easily.
+
+For the development I used the Open Server, that helps emulate server
+with various software on the Windows. I used this development
+environment configuration:
+
+[]
+
+Figure 9.1 Open Server Configuration
+
+The exploring Forge API was quite tedious at some point I discovered
+Postman which significantly simplified my life with great functionality
+designed for working with heavy APIs.
+
+[]
+
+Figure 9.2 Postman and Forge API
+
+6.  Testing the Proposed System
+
+In this step was important to check the possible bugs in the project.
+Unfortunately, there was not enough time to cover project with unit
+tests. Therefore, project was manually tested in different scenarios.
+
+As to the performance, this project relies on the Autodesk Forge API in
+all heavy requests. However, the database performance was tested via
+standard profiler of Yii Famemork. In addition, the system uses basic
+file cache to reduce frequent request to the Forge API. This cache
+storage easily can be replaced by the Memcahced server by simple
+modification of the main config file.
+
+7.  Implementing the Proposed System
+
+Finally, the system was deployed to the real server and now it is
+possible to access it on this domain: https://inspect.cf/
+
+10. Autodesk Forge Challenges
+
+  During this project I faced some expected difficulties with Forge API.
+
+  First of all, important to realize that Forge API is a rapidly
+  grooving product of a big corporation that always improving. I believe
+  that I could avoid some difficulties if I had more experience with
+  such products.
+
+  First step was creating Autodesk account under educational license.
+  This account will open access to a variety of products, but as I
+  mentioned before this project scope requires only three of them: BIM
+  360 Docs, Forge and Revit.
+
+  The forge account has 100 free credits (for hard tasks as models
+  conversion, etc.) and 1 year of usage.
+
+  []
+
+  Figure 10.1 Forge account information
+
+  The next step was a creation of Forge application. This application
+  opens access to various Autodesk APIs.
+
+  []
+
+  Figure 10.2 Forge application APIs
+
+  This project requires two APIs:
+
+- BIM 360
+
+For accessing the project documentation and submitting issues.
+
+- Model Derivative API
+  For extracting fields from the Revit files that uploaded to the cloud
+  BIM 360 Docs.
+
+After creation of application Forge provides you a Client ID and Client
+Secret codes for authorization.
+
+[]
+
+Figure 10.3 Forge application information
+
+The next step was not really straightforward for me, but it was
+important to activate developer functionality for BIM 360 Docs. This
+requires to send email to the Autodesk.
+
+[]
+
+Figure 10.4 Activation request
+
+Shortly, my account was activated.
+
+[]
+
+Figure 10.5 Successful activation
+
+After that API started to work and I started to experiment with it.
+However, at some point of development I faced new issues with Issues API
+(how ironically ☺).
+Basically when I tried to send requests the I got error:
+
+Connection #0 to host developer.api.autodesk.com left intact
+{fault.name} - The client_id specified does not have access to the api
+product
+
+So seems like this part of API was developing. Even documentation of
+Issues API was hidden from the documentation website (still was possible
+to google it). And later on the stackoverflow I found this message from
+one of Autodesk developers:
+
+[]
+
+Figure 10.6 Issues API status
+
+After discussing this problem with project adviser A. Chayapol we
+decided to try to ask for access by sending request to Autodesk because
+this was a key functionality for the project.
+Eventually, the Issues API was activated.
+
+[]
+
+Figure 10.7 Successful activation of Issues API
+
+Next challenge was again with the Issues API. Because of the draft
+documentation I had a problem with authorization.
+
+[]
+
+Figure 10.8 Issues API Documentation
+
+I used two-legged auth token because it was much easier to work with it.
+However, Issues API requires three-legged token. Luckily, that Autodesk
+has a great support so they explain my problem (same developer from
+stackoverflow).
+
+[]
+
+Figure 10.9 Issues API auth problem
+
+[]
+
+Figure 10.10 3-Legged Token with Authorization Code Grant
+
+The next difficulty was with attaching photos to the issues. This
+process requires several steps before file can be bounded with the
+issue:
+
+a.  Step 1: Finding the hub that has a project
+
+b.  Step 2: Finding the target project
+
+c.  Step 3: Creation of a storage location
+
+d.  Step 4: Uploading a file to the storage location
+
+e.  Step 5: Creating the first version of the uploaded file
+
+f.  Step 6: Finding the issues container of the project.
+
+g.  Step 7: Finding the target issue.
+
+h.  Step 8: The assigning the uploaded file as an attachment of the
+    issue.
+
+It looks a lot but some of the steps can be avoided, for instance I save
+issue id and issues container id in the local database so steps 6-7 can
+be skipped. Also as long as this project has target of only one project
+in BIM 360 Doc steps 1-2 has to be done only once during development and
+then the project id will be stored in the application configuration.
+However, steps 3-5 and 8 cannot be omitted and has to be done for every
+file.
+
+But this is the typical process, the issue was in confusion with
+documentation where was an inaccuracy with extension types for API
+request in step 5. In documentation was example that uses "type":
+"items:autodesk.core:File", but request with this type will end with API
+responce:
+
+"status":"400","code":"BAD_INPUT","title":"One or more input values in
+the request were bad","detail":"Request input is invalid for this
+operation."
+
+The error is quite confusing, but luckily there was solution on some
+blog:
+
+[]
+
+Figure 10.11 Solution for issue with uploading files to the BIM 360 Doc
+
+I think it happened because of constant updates of API and variety of
+products.
+
+11. Logical Design of the System
+
+11.1 Data Flow Diagram – Context Diagram
+
+[]
+
+Figure 11.1 Context diagram of the system
+
+11.2 Data Flow Diagram – Level 0 (Admin)
+
+[C:\Users\WD\AppData\Local\Microsoft\Windows\INetCache\Content.Word\Admin
+DF.PNG]
+
+Figure 11.2 DFD for Admin
+
+Data Flow Diagram – Level 0 (Sales Agent)
+
+[]
+
+Figure 11.2 DFD for Sales Agent
+
+11.3 Entity Relationship Diagram (ERD)
+
+Some of the data is requested from BIM 360 “on the fly” and don’t have
+to be stored in the local database.
+
+[]
+
+Figure 11.3 Entity Relationship Diagram (ERD)
+
+11.4 Data Dictionary
+
+Color notation for further usage:
+
+  something_id - primary key
+
+  something_id - foreigner key
+
+  something_id- part of the primary and a foreigner key
+
+users – stores user’s information (Admin and Sales Agents)
+
++:--------------:+:-------------:+:------:+:----------------:+:-------------:+:--------------:+
+|   Column       |   Type        |   Null |   Default        |   Description |   Example      |
++----------------+---------------+--------+------------------+---------------+----------------+
+|   id           |   int(11)     |   no   |   AUTO_INCREMENT |   System user |   1            |
+|                |               |        |                  |   id          |                |
++----------------+---------------+--------+------------------+---------------+----------------+
+|   fname        |   varchar     |   no   |   No default     |   First name  |   John         |
+|                |   (100)       |        |                  |               |                |
++----------------+---------------+--------+------------------+---------------+----------------+
+|   lanme        |   varchar     |   no   |   No default     |   Last name   |   Doe          |
+|                |   (100)       |        |                  |               |                |
++----------------+---------------+--------+------------------+---------------+----------------+
+|   email        |   varchar     |   no   |   No default     |   Email       |   john@doe.com |
+|                |   (100)       |        |                  |               |                |
++----------------+---------------+--------+------------------+---------------+----------------+
+|   password     |   varchar(60) |   no   |   No default     |   Hashed      |   $2y$13$vBB…  |
+|                |               |        |                  |   password    |                |
+|                |               |        |                  |   string      |                |
++----------------+---------------+--------+------------------+---------------+----------------+
+|   is_admin     |   varchar(1)  |   no   |   0              |   Flag for    |   1 or 0       |
+|                |               |        |                  |   admin       |                |
++----------------+---------------+--------+------------------+---------------+----------------+
+|   is_suspended |   varchar(1)  |   no   |   0              |   Flag for    |   1 or 0       |
+|                |               |        |                  |   ban         |                |
++----------------+---------------+--------+------------------+---------------+----------------+
+
+models – stores information about Revit Files imported from BIM 360
+
++:-------------:+:--------------:+:------:+:-------------------:+:-------------:+:---------------:+
+|   Column      |   Type         |   Null |   Default           |   Description |   Example       |
++---------------+----------------+--------+---------------------+---------------+-----------------+
+|   id          |   int(11)      |   no   |   AUTO_INCREMENT    |   System      |   1             |
+|               |                |        |                     |   model id    |                 |
++---------------+----------------+--------+---------------------+---------------+-----------------+
+|   guid        |   varchar(100) |   no   |   No default        |   Autodesk id |   b00b4bcc-2d…  |
++---------------+----------------+--------+---------------------+---------------+-----------------+
+|   urn         |   varchar(500) |   no   |   No default        |   Encoded     |   dXJuOmFkc…    |
+|               |                |        |                     |   Autodesk    |                 |
+|               |                |        |                     |   address     |                 |
++---------------+----------------+--------+---------------------+---------------+-----------------+
+|   urn_decoded |   varchar(500) |   no   |   No default        |   Autodesk    |   urn:adsk.wip… |
+|               |                |        |                     |   address     |                 |
++---------------+----------------+--------+---------------------+---------------+-----------------+
+|   fileName    |   varchar(500) |   no   |   No default        |   Revit file  |   P01.rvt       |
+|               |                |        |                     |   name        |                 |
++---------------+----------------+--------+---------------------+---------------+-----------------+
+|   createdTime |   datetime     |   no   |   CURRENT_TIMESTAMP |   Date        |   2018-06-03    |
+|               |                |        |                     |   creation of |   12:42:02      |
+|               |                |        |                     |   file        |                 |
++---------------+----------------+--------+---------------------+---------------+-----------------+
+|   owner       |   varchar(500) |   no   |   No default        |   File owner  |   John Doe      |
++---------------+----------------+--------+---------------------+---------------+-----------------+
+
+users_models – stores information about relation users and models in the
+system.
+
++:----------:+:---------:+:------:+:---------:+:-------------:+:----------:+
+|   Column   |   Type    |   Null |   Default |   Description |   Example  |
++------------+-----------+--------+-----------+---------------+------------+
+|   user_id  |   int(11) |   no   |   No      |   User id     |   1        |
+|            |           |        |   default |               |            |
++------------+-----------+--------+-----------+---------------+------------+
+|   model_id |   int(11) |   no   |   No      |   Model id    |   1        |
+|            |           |        |   default |               |            |
++------------+-----------+--------+-----------+---------------+------------+
+
+fields – stores information about fields from a model (Revit file) that
+have to be inspected.
+
++:-----------:+:--------------:+:------:+:----------------:+:-------------:+:---------------:+
+|   Column    |   Type         |   Null |   Default        |   Description |   Example       |
++-------------+----------------+--------+------------------+---------------+-----------------+
+|   id        |   int(11)      |   no   |   AUTO_INCREMENT |   Field id    |   1             |
++-------------+----------------+--------+------------------+---------------+-----------------+
+|   model_id  |   int(11)      |   no   |   No default     |   Model id    |   1             |
++-------------+----------------+--------+------------------+---------------+-----------------+
+|   object_id |   varchar(100) |   no   |   No default     |   Field id in |   9999          |
+|             |                |        |                  |   Autodesk    |                 |
+|             |                |        |                  |   system      |                 |
++-------------+----------------+--------+------------------+---------------+-----------------+
+|   name      |   varchar(500) |   no   |   No default     |   Name of the |   Entertainment |
+|             |                |        |                  |   item        |   Center        |
+|             |                |        |                  |               |   [293421]      |
++-------------+----------------+--------+------------------+---------------+-----------------+
+
+inspections – stores information about inspections conducted by the
+sales agents.
+
++:-----------:+:-------------:+:------:+:-------------------:+:-------------:+:--------------:+
+|   Column    |   Type        |   Null |   Default           |   Description |   Example      |
++-------------+---------------+--------+---------------------+---------------+----------------+
+|   id        |   int(11)     |   no   |   AUTO_INCREMENT    |   Inspection  |   1            |
+|             |               |        |                     |   id          |                |
++-------------+---------------+--------+---------------------+---------------+----------------+
+|   user_id   |   int(11)     |   no   |   No default        |   System user |   1            |
+|             |               |        |                     |   id          |                |
++-------------+---------------+--------+---------------------+---------------+----------------+
+|   model_id  |   int(11)     |   no   |   No default        |   Model id    |   1            |
++-------------+---------------+--------+---------------------+---------------+----------------+
+|   customer_ |   varchar     |   no   |   No default        |   Customer    |   John Doe     |
+|   name      |   (300)       |        |                     |   name        |                |
++-------------+---------------+--------+---------------------+---------------+----------------+
+|   customer_ |   varchar     |   no   |   No default        |   Customer    |   john@doe.com |
+|   email     |   (100)       |        |                     |   email       |                |
++-------------+---------------+--------+---------------------+---------------+----------------+
+|   customer_ |   varchar(10) |   no   |   No default        |   Customer    |   0999111888   |
+|   phone     |               |        |                     |   phone       |                |
++-------------+---------------+--------+---------------------+---------------+----------------+
+|   date      |   datetime    |   no   |   CURRENT_TIMESTAMP |   Date of     |   2018-06-13   |
+|             |               |        |                     |   inspection  |   18:52:40     |
++-------------+---------------+--------+---------------------+---------------+----------------+
+
+issues – stores information about inspections conducted by the sales
+agents.
+
++:---------------:+:-------------:+:------:+:-------------------:+:-------------:+:--------------:+
+|   Column        |   Type        |   Null |   Default           |   Description |   Example      |
++-----------------+---------------+--------+---------------------+---------------+----------------+
+|   id            |   int(11)     |   no   |   AUTO_INCREMENT    |   Issue id    |   1            |
++-----------------+---------------+--------+---------------------+---------------+----------------+
+|   bim_id        |   varchar(50) |   no   |   No default        |   Issue id in |   abe46915-f7… |
+|                 |               |        |                     |   the         |                |
+|                 |               |        |                     |   Autodesk    |                |
+|                 |               |        |                     |   system      |                |
++-----------------+---------------+--------+---------------------+---------------+----------------+
+|   date_add      |   datetime    |   no   |   CURRENT_TIMESTAMP |   Date of     |   2018-06-13   |
+|                 |               |        |                     |   creating    |   18:52:35     |
+|                 |               |        |                     |   issue       |                |
++-----------------+---------------+--------+---------------------+---------------+----------------+
+|   date_update   |   datetime    |   no   |   CURRENT_TIMESTAMP |   Date of     |   2018-06-13   |
+|                 |               |        |   ON UPDATE         |   updating    |   19:42:26     |
+|                 |               |        |   CURRENT_TIMESTAMP |   issue       |                |
++-----------------+---------------+--------+---------------------+---------------+----------------+
+|   inspection_id |   int(11)     |   yes  |   null              |   Inspection  |   1            |
+|                 |               |        |                     |   in which    |                |
+|                 |               |        |                     |   issue was   |                |
+|                 |               |        |                     |   discovered  |                |
++-----------------+---------------+--------+---------------------+---------------+----------------+
+|   user_id       |   int(11)     |   no   |   No default        |   Agent id    |   1            |
+|                 |               |        |                     |   who conduct |                |
+|                 |               |        |                     |   inspection  |                |
++-----------------+---------------+--------+---------------------+---------------+----------------+
+|   field_id      |   int(11)     |   no   |   No default        |   Which field |   1            |
+|                 |               |        |                     |   related to  |                |
+|                 |               |        |                     |   the issue   |                |
++-----------------+---------------+--------+---------------------+---------------+----------------+
+|   status_id     |   int(11)     |   no   |   1                 |   Which model |   1            |
+|                 |               |        |                     |   related to  |                |
+|                 |               |        |                     |   problem     |                |
++-----------------+---------------+--------+---------------------+---------------+----------------+
+|   title         |   varchar     |   no   |   No default        |   Main title  |   Wrong color  |
+|                 |   (150)       |        |                     |   of the      |                |
+|                 |               |        |                     |   issue       |                |
++-----------------+---------------+--------+---------------------+---------------+----------------+
+|   description   |   varchar     |   no   |   No default        |   Description |   Wall has     |
+|                 |   (3000)      |        |                     |   of the      |   wrong color  |
+|                 |               |        |                     |   issue       |                |
++-----------------+---------------+--------+---------------------+---------------+----------------+
+|   location_     |   varchar     |   no   |   No default        |   Description |   Near the     |
+|   description   |   (1000)      |        |                     |   of the      |   stairs       |
+|                 |               |        |                     |   issue       |                |
+|                 |               |        |                     |   location    |                |
++-----------------+---------------+--------+---------------------+---------------+----------------+
+
+issue_status – stores information about issue statuses. Predefined
+statuses:
+
+- Unconfirmed – issue just was created. It requires to be approved by
+  administrator and sent to the BIM 360 Issues.
+
+- Pending – issue was approved by administrator and sent to the BIM 360.
+
+- Resolved – issue was closed in BIM 360. Should be resolved.
+
+- Rejected – issue was rejected by administrator. Maybe it is a feature
+  not an issue or some misunderstanding occurred. It will not be sent to
+  the BIM 360.
+
++:---------:+:--------------:+:------:+:----------------:+:-------------:+:----------:+
+|   Column  |   Type         |   Null |   Default        |   Description |   Example  |
++-----------+----------------+--------+------------------+---------------+------------+
+|   id      |   int(11)      |   no   |   AUTO_INCREMENT |   Status id   |   1        |
++-----------+----------------+--------+------------------+---------------+------------+
+|   title   |   varchar(256) |   no   |   No default     |   Description |   Resolved |
+|           |                |        |                  |   of the      |            |
+|           |                |        |                  |   status      |            |
++-----------+----------------+--------+------------------+---------------+------------+
+
+files – stores information about uploaded photos of the issues.
+
++:-----------:+:--------------:+:------:+:----------------:+:-------------:+:--------------------:+
+|   Column    |   Type         |   Null |   Default        |   Description |   Example            |
++-------------+----------------+--------+------------------+---------------+----------------------+
+|   id        |   int(11)      |   no   |   AUTO_INCREMENT |   File id     |   1                  |
++-------------+----------------+--------+------------------+---------------+----------------------+
+|   issue_id  |   int(11)      |   no   |   No default     |   Issue that  |   1                  |
+|             |                |        |                  |   contains    |                      |
+|             |                |        |                  |   this file   |                      |
++-------------+----------------+--------+------------------+---------------+----------------------+
+|   urn       |   varchar(256) |   yes  |   null           |   ID of the   |   urn:adsk.obj…      |
+|             |                |        |                  |   file in BIM |                      |
+|             |                |        |                  |   360 Doc     |                      |
++-------------+----------------+--------+------------------+---------------+----------------------+
+|   file_name |   varchar(256) |   no   |   No default     |   The file    |   img-1529587761.jpg |
+|             |                |        |                  |   name in the |                      |
+|             |                |        |                  |   local file  |                      |
+|             |                |        |                  |   system      |                      |
++-------------+----------------+--------+------------------+---------------+----------------------+
+
+11.5 Interface design
+
+Some of the interface layouts:
+
+[]
+
+Figure 11.5.1 Sales agents’ management
+
+[]
+
+Figure 11.5.2 Revit models management
+
+[]
+
+Figure 11.5.3 Fields extracted from a Revit model via Autodesk Forge
+
+[C:\Users\WD\AppData\Local\Microsoft\Windows\INetCache\Content.Word\2018-06-14_04-11-38.png]
+
+Figure 11.5.4 Inspection process
+
+[2018-06-14_04-11-20]
+
+Figure 11.5.5 Detailed Information about particular field of the model
+
+[]
+
+Figure 11.5.6 Issue creation form
+
+[]
+
+Figure 11.5.7 Issue has been created
+
+[]
+
+Figure 11.5.8 Inspection completed
+
+[]
+
+Figure 11.5.9 Inspections management
+
+[]
+
+Figure 11.5.10 PDF inspection report
+
+[]
+
+Figure 11.5.11 Issues management
+
+[]
+
+Figure 11.5.12 Issue management
+
+[]
+
+Figure 11.5.13 Issue management
+
+[]
+
+Figure 11.5.14 Images was uploaded to the BIM 360 Document Management
+
+[]
+
+Figure 11.5.15 Issue was submitted to the BIM 360 Document Management
+
+[]
+
+Figure 11.5.16 The image was attached to the issue.
+
+12. Reference
+
+- https://docs.b360.autodesk.com/
+
+- https://forge.autodesk.com/
+
+- https://www.autodesk.com/products/revit/overview
+
+- https://developer.autodesk.com/en/docs/
+
+- https://stackoverflow.com/questions/48259437/forbidden-status-on-getting-issue-or-rfi-from-bim360-project
+
+- https://autodesk-forge.github.io/?GettingStarted
+
+- https://developer.autodesk.com/en/docs/bim360/v1/tutorials/get-access-to-account/
+
+- https://fieldofviewblog.wordpress.com/2017/01/19/bim-360-activating-api-access-to-docs/
+
+- https://fieldofviewblog.wordpress.com/2017/02/07/bim-360-docs-api-update/
+
+- https://www.mediafire.com/folder/1k8f3da36y3b3/PROJECTS
+
+- https://www.youtube.com/watch?v=zMSmONsK_60
+
+- https://www.youtube.com/watch?v=U9wAS7O309U
+
+- https://www.youtube.com/watch?v=k0AL60JfRas
+
+- https://www.youtube.com/watch?v=I2cn8TlBGFc
+
+- https://www.yiiframework.com/doc/api/2.0
+
+- https://www.yiiframework.com/doc/guide/2.0/en

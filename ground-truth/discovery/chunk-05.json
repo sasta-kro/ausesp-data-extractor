@@ -1,0 +1,379 @@
+[
+ {
+  "id": "1709",
+  "canonical_title": "Design of Quantum Computing Algorithms for Combinatorial Problems",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Xiaohan Yu",
+    "student_id": "5718303"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Dobri Atanassov Batovski",
+  "committee": [
+   "A. Chayapol Moemeng",
+   "Asst. Prof. Dr. Paitoon Porntrakoon"
+  ],
+  "abstract": "Existing quantum computing algorithms for combinatorial optimization are applied in testing the rearrangeability of individual permutations in the circuit-switched hypercube. This work is an initial step in designing future hybrid configurations of classical and quantum computers for exhaustive computations related to NP hard network topology problems.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "research"
+   ],
+   "platform": [
+    "none"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [],
+   "technology": []
+  },
+  "discoveries": {
+   "category": [
+    {
+     "key": "quantum_computing",
+     "label": "Quantum Computing",
+     "status": "used",
+     "evidence": "Cover title is Design of Quantum Computing Algorithms for Combinatorial Problems; the project implements Deutch-Jozsa, Shor and Grover algorithms and QUBO combinatorial optimization with quantum annealing."
+    }
+   ],
+   "platform": [],
+   "domain": [
+    {
+     "key": "networking",
+     "label": "Computer Networks",
+     "status": "used",
+     "evidence": "Work targets testing the rearrangeability of individual permutations in the circuit-switched hypercube and NP hard network topology problems such as Szymanski's conjecture."
+    }
+   ],
+   "technology": [
+    {
+     "key": "ibm_q_experience",
+     "label": "IBM Q Experience",
+     "status": "used",
+     "evidence": "Section 4.5 Computational Experiments Using the IBM Q Experience Composer; simulated results come from the Quantum Composer."
+    },
+    {
+     "key": "d_wave",
+     "label": "D-Wave Quantum Annealing System",
+     "status": "used",
+     "evidence": "The alternative 2,048-qubit D-Wave quantum annealing system was used to verify the efficiency of quantum computations based on QUBO."
+    },
+    {
+     "key": "qasm",
+     "label": "Quantum Assembly Language (QASM)",
+     "status": "used",
+     "evidence": "Algorithm listings begin with include \"qelib1.inc\"; qreg q[3]; creg c[3]; and use gates h, z, cx with measure q[0] -> c[0]."
+    },
+    {
+     "key": "qbsolv",
+     "label": "qbsolv",
+     "status": "cited",
+     "evidence": "The subsequent embedding can be done with the default qbsolv approach of the D-Wave system, following reference [47]."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1710",
+  "canonical_title": "Crowd Analytic",
+  "aliases": [
+   "Crowd Analytics"
+  ],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Pannachet L",
+    "student_id": "5715280"
+   },
+   {
+    "name": "Sai Kham Sheng",
+    "student_id": "5717607"
+   },
+   {
+    "name": "Chinnawat W.",
+    "student_id": "5811398"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "Dr. Dobri Atanassov Batovski",
+   "A. Paitoon Porntrakoon"
+  ],
+  "abstract": "Crowd Analytic is a people counting program built with Python and OpenCV. It processes video from a stationary downward angled camera and separates moving people from the background using background subtraction with the MOG2 subtractor. Each person is tracked with an identifier and counted when crossing lines in four directions. The counts and timestamps are written to a text file for later analysis. Tests on videos recorded at Mega Bangna reached about 85 percent accuracy compared with manual counting.",
+  "abstract_source": "generated",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "opencv",
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "numpy",
+     "label": "NumPy",
+     "status": "used",
+     "evidence": "Methodology lists the installed tools: Python (version 3.6), OpenCV (3.4), Pip (get-pip.py), Numpy (64-bit version)."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1711",
+  "canonical_title": "Restaurant Management System",
+  "aliases": [
+   "Amalia Restaurant Management System",
+   "AMALIA Restaurant System"
+  ],
+  "phase": "final",
+  "course_code": "IT 4299",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Aniceto Manuel Moreira Belo",
+    "student_id": "5538432"
+   },
+   {
+    "name": "Agostinho de Sousa Gama da Costa",
+    "student_id": "5538429"
+   },
+   {
+    "name": "Sai Than Htike",
+    "student_id": "5618394"
+   }
+  ],
+  "advisor": "Dr. Chokdee Liopanich",
+  "committee": [
+   "A. Chayapol Moemeng",
+   "Dr. Benjawan Srisura"
+  ],
+  "abstract": "Today, the restaurant business has been growing rapidly. Every restaurant tries to present something new and unique to its customers. Many successful restaurants attract customers, but many of them fail. A contributing factor in addition to food, the more important is the service that is offered. The system integrates restaurant management, or simply called restaurant management system, will greatly helping restaurants to provide faster and better service to its customers, at the same time providing reliable control for the management of the restaurant. that's why we want to try to apply an online-based system to facilitate transactions and provide convenience for customers. Restaurant management system can handle the overall operations of the restaurant, from the moment customers arrive, order a meal, food preparation, up until customers make a payment and left the restaurant.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": []
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "hospitality",
+     "label": "Hospitality and Food Service",
+     "status": "used",
+     "evidence": "The report designs a web-based restaurant management system for the AMALIA Restaurant covering table check-in, digital menu ordering, kitchen order status, checkout, billing and sales reports."
+    }
+   ],
+   "technology": [
+    {
+     "key": "csharp",
+     "label": "C#",
+     "status": "used",
+     "evidence": "For the Back end we use Microsoft SQL and C# as the programming language."
+    },
+    {
+     "key": "microsoft_azure",
+     "label": "Microsoft Azure",
+     "status": "used",
+     "evidence": "From Microsoft Azure, we use App Service and SQL Database."
+    },
+    {
+     "key": "microsoft_sql_server",
+     "label": "Microsoft SQL Server",
+     "status": "used",
+     "evidence": "Back end uses Microsoft SQL; the operational cost table lists SQL Server (1,000/month)."
+    },
+    {
+     "key": "visual_studio",
+     "label": "Visual Studio",
+     "status": "used",
+     "evidence": "Tools that we use for developing this system is Visual Studio ... Azure; software cost lists Visual Studio Professional."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1715",
+  "canonical_title": "Detection of Natural and Artificial Light Sources from Photographs",
+  "aliases": [
+   "Detection of Natural and Artificial Light Sources from Photographs Problems"
+  ],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Jian Pan",
+    "student_id": "5728309"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Dobri Atanassov Batovski",
+  "committee": [
+   "A. Chayapol Moemeng",
+   "Asst. Prof. Dr. Paitoon Porntrakoon"
+  ],
+  "abstract": "Over decades, researchers have provided many algorithms on Color constancy, light source detection, spectral power distribution and color temperature. But nearly no algorithm has said clearly that the algorithm can be used for figuring out the difference between illumination scene under artificial light source and illumination scene under natural light source. This project provides a macro description of possible algorithms about distinguish of natural light source and artificial light source and finally using CCT as this project’s algorithm and method.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "research"
+   ],
+   "platform": [
+    "none"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": []
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "wolfram_language",
+     "label": "Wolfram Language (Mathematica)",
+     "status": "used",
+     "evidence": "The experiment was deployed by Mathematica; Appendix B contains the Mathematica CCT-Duv algorithm source using ImageData, ColorConvert and While loops."
+    },
+    {
+     "key": "matlab",
+     "label": "MATLAB",
+     "status": "used",
+     "evidence": "Appendix B includes MATLAB source for the Grey-World algorithm using rgb2lin, illumgray and chromadapt."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1716",
+  "canonical_title": "Text Enhancement of Photographs Taken with a Moving Smartphone",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Xiaohan Yu",
+    "student_id": "5718303"
+   },
+   {
+    "name": "Jian Pan",
+    "student_id": "5728309"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Dobri Atanassov Batovski",
+  "committee": [
+   "A. Chayapol Moemeng",
+   "Asst. Prof. Paitoon Porntrakoon"
+  ],
+  "abstract": "The enhancement of blurred photographs is a challenging task in digital image processing. In some cases, the motion blur can be reduced in order to recognize symbolic content, which is of particular interest in investigative journalism and forensic science. An algorithm for selected practical cases is designed and tested for further implementation in a smartphone app for real-time deblurring.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "research",
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "opencv"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "ios",
+     "label": "iOS",
+     "status": "used",
+     "evidence": "Section 5.3 Implementation on iOS shows the developed iOS app enhancing the blurred CNN image, with source code in Appendix C."
+    }
+   ],
+   "domain": [],
+   "technology": [
+    {
+     "key": "swift",
+     "label": "Swift",
+     "status": "used",
+     "evidence": "A smart phone app written in Swift with OpenCV has been developed; the implementation is in Swift and Objective-C."
+    },
+    {
+     "key": "objective_c",
+     "label": "Objective-C",
+     "status": "used",
+     "evidence": "The programming language implementation is in Swift and Objective-C."
+    },
+    {
+     "key": "wolfram_language",
+     "label": "Wolfram Language (Mathematica)",
+     "status": "used",
+     "evidence": "The project investigates the efficiency of known classic algorithms for some basic restoration criteria using the Wolfram programming language; Appendix B holds the Wolfram source code."
+    },
+    {
+     "key": "matlab",
+     "label": "MATLAB",
+     "status": "cited",
+     "evidence": "Most existing works lack practical experiments about real-life image deblurring with smartphone apps and use proprietary software tools mainly for performance testing such as Matlab, Mathematica, etc."
+    }
+   ]
+  }
+ }
+]

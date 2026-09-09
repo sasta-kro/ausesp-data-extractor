@@ -25,7 +25,9 @@
    "category": [
     "research"
    ],
-   "platform": [],
+   "platform": [
+    "none"
+   ],
    "domain": [
     "other"
    ],
@@ -63,6 +65,7 @@
   "reported_keywords": [],
   "classification": {
    "category": [
+    "research",
     "software_application"
    ],
    "platform": [
@@ -107,7 +110,7 @@
    "Asst. Prof. Dr. Adtha Lawanna",
    "Dr. Benjawan Srisura"
   ],
-  "abstract": null,
+  "abstract": "Manual identity checking methods such as name calling and card stamping are slow and easy to cheat. This project developed an Android application that lets people clock in anywhere using the fingerprint scanner on their own smartphone. A creator places a location pin for a specific area and time window, attenders check in with fingerprint scanning inside that pinned area, and an administrator registers accounts and grants user status. The system was developed following the System Development Life Cycle and documented with data flow diagrams, an entity relationship diagram, data dictionaries, and interface designs. It was implemented with Java, PHP, HTML, and Bootstrap, using Android Studio and Brackets as the main tools, and hosted on Google Cloud Platform.",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -122,7 +125,9 @@
    "topic": [
     "geolocation"
    ],
-   "technology": []
+   "technology": [
+    "php"
+   ]
   }
  },
  {
@@ -166,18 +171,21 @@
   ],
   "classification": {
    "category": [
-    "ai_data"
+    "ai_data",
+    "software_application"
    ],
    "platform": [
     "mobile"
    ],
    "domain": [
-    "other"
+    "healthcare"
    ],
    "topic": [
     "computer_vision"
    ],
-   "technology": []
+   "technology": [
+    "python"
+   ]
   }
  },
  {
@@ -213,8 +221,8 @@
     "software_application"
    ],
    "platform": [
-    "desktop",
-    "mobile"
+    "mobile",
+    "desktop"
    ],
    "domain": [
     "business"

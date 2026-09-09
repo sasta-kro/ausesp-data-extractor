@@ -1,0 +1,943 @@
+SENIOR PROJECT I FINAL REPORT
+
+  Advisor: CHAYAPOL MOEMENG
+
++---------------------+-----------------------------------+---------+
+| Submitted By:       | Mr. Taranjit Singh                |         |
++==========+==========+===================================+=========+
+|                     | Mr. Shiv Dechasakphan             |         |
++----------+----------+-----------------------------------+---------+
+|          |          |                                   |         |
++----------+----------+-----------------------------------+---------+
+
+: Cloud Gaming : Cloud Café
+
+Senior Project Approval
+
+Project title: Cloud Gaming
+
+Academic Year: 1/2020
+
+Authors: Taranjit Singh (601-1149)
+
+Shiv Dechasakphan (601-1552)
+
+  Project Advisor: Chayapol Moemeng
+
+------------------------------------------------------------------------
+
+The Senior Project committee’s cooperation between the Department of
+Computer Science and Information Technology, Vincent Mary School of
+Science and Technology, Assumption University had approved this Senior
+Project. The Senior Project in partial fulfillment of the requirement
+for the degree of Bachelor of Science in Computer Science and
+Information technology.
+
+Approval Committee:
+
++-------------------------------+--+------------------------------------+
+| …………………………..                  |  |                                    |
+|                               |  |                                    |
+| A.  CHAYAPOL MOEMENG)         |  |                                    |
+|                               |  |                                    |
+| Project Advisor               |  |                                    |
++:=============================:+==+:==================================:+
+| …………………………..                  |  | …………………………..                       |
+|                               |  |                                    |
+| A.  SUPARWAT CHAROENVIKROM)   |  | (ASST. PROF. DR. PAITOON           |
+|                               |  | PORNTRAKOON)                       |
+| Committee Member              |  |                                    |
+|                               |  | Committee Member                   |
++-------------------------------+--+------------------------------------+
+
+Abstract
+
+Nowadays there is a huge rise in the number of online games, as
+technology is getting better the games are starting to look more and
+more realistic. This brings a huge problem for people who cannot upgrade
+their computers every time a new game release that requires more ram or
+video memory. Then there is the problem of hardware compatibility and
+driver’s problem that can be hard for a person with a less technological
+background. So, at Cloud Café we provide an alternative to getting your
+computer and keeping it up to date. We provide a cloud gaming platform
+where users can play games on any Mac or Windows computer that can run
+Microsoft teams.
+
+We accomplish this with AWS provided cloud compute instances and allow
+users to play games over the network. This has been made possible due to
+the increasing internet speeds all over Thailand as well as the low
+latency RDP provided using Parsec. At Cloud Café we make the experience
+of starting a game on an AWS instance all done in a single click
+therefore making the complex process fully automated.
+
+TABLE OF CONTENTS
+
+Chapter 1 : Introduction 5
+
+Motivation 5
+
+Overview of Cloud Café 6
+
+Scope 6
+
+limitations 6
+
+Chapter 2 : Related Work 7
+
+Chapter 3 : Proposed Methodology 10
+
+Methodology 10
+
+Electron.Net 10
+
+Information about AWS 11
+
+Parsec 14
+
+ROI analysis 17
+
+Chapter 4 : Design of The System 18
+
+System Architecture 18
+
+Database Design 21
+
+UI/UX 22
+
+Chapter 5 : Conclusion 27
+
+Future works 27
+
+Table of figures
+
+Figure 1.1 PS4 5
+
+Figure 2.1 Vortex Cloud Gaming 7
+
+Figure 2.2 Pricing structure 7
+
+Figure 2.3 Google Stadia 8
+
+Figure 2.4 Ais Cloud Gaming 9
+
+Figure 2.5 Ais Cost structure 9
+
+Figure 3.1 Electron .Net Source 10
+
+Figure 3.2 AWS Services 12
+
+Figure 3.3Sub CATEGORIES 13
+
+Figure 3.4 Instances type 13
+
+Figure 3.5 AWS G4dn.xlarge Instance 13
+
+Figure 3.6AWs Instance Operating system 13
+
+Figure 3.7 Aws EBS Storage 14
+
+Figure 3.8 Parsec in Cloud café 15
+
+Figure 3.9 Api call to get Session ID 16
+
+Figure 3.10 An sample Api call to obtain peer id 17
+
+Figure 4.1 System Architecture 19
+
+Figure 4.2 Aws Sdk's Used in Cloud Cafe 20
+
+Figure 4.3 AWS Request object 21
+
+Figure 4.4Er Diagram Design 22
+
+Figure 4.5 Login Page 23
+
+Figure 4.6 Browse Page 24
+
+Figure 4.7 GamePlay 25
+
+Figure 4.8 My Account 26
+
+Figure 4.9 FAQ Page 27
+
+: Introduction
+
+Motivation 
+
+Back in 2018, one of our team members Shiv chose the subject
+Introduction to Big Data Analytics in the first semester of the academic
+year of 2018. In this subject, Shiv was introduced to Cloud Computing
+services providers to use for computing Big Data. From that subject, he
+got to understand new concepts of not computing from the local machine
+but alternately rent computing capacities from other hardware which is
+called other name Cloud Computing.
+
+[Sony PlayStation 4 500GB Console (Black): 1: Amazon.co.uk: PC & Video
+Games]
+
+In the period, Shiv was spending his free time enjoying playing games on
+his PS4 gaming console. On the hands, Shiv friends were playing games on
+PC or Gaming Laptop. This makes Shiv unable to spends gaming time with
+his friends due to the difference between gaming consoles and PC are not
+supporting cross-platform gaming experience.
+
+While nearing the end of the first semester of 2018, Shiv tried to find
+the solution for playing PC games. But buying a Gaming PC or Gaming
+Laptop is not a worthy option due to the already owns a PS4 Gaming
+console and everyday use Laptop which its hardware is not powerful
+enough to play top of the games but still supply the demand of his
+programming works.
+
+In his term project for Introduction to Big Data Analytics, Shiv used
+Google Cloud to compute the Big Data. Then Shiv tried to rent the
+Windows Instance and that was the first time when Shiv felt that there
+was another use case as well for instance that is provided by the public
+cloud provider.
+
+Once, Shiv submits his term project for Introduction to Big Data
+Analytics. He was very curious. What can be another use case of it, then
+he tried to play the game on the cloud instance. And it works in an
+acceptable condition. So, by that, Shiv decides to start making research
+on the Cloud Gaming Project.
+
+Overview of Cloud Café
+
+Cloud Café is a software that will make playing games as easy as
+watching movies on streaming platforms. In the present date. The only
+way to play a top-level game or in another name is called “AAA listed
+game “. You need to spend around 20 to 30 thousand baht to just to be in
+entry-level hardware that top-level games are just playable. But not
+just that,
+
+So, the method that Cloud Café is using to solve this problem is by
+combining Cloud computing technology with streaming technology that lets
+every game that real-time communication will be required happened.
+Because gaming is not like watching a movie on a streaming platform,
+movies nature of the use is that it doesn’t need input from the user in
+real-time to decide on what happens next. But on the other hand, games
+don’t work like that. Games do require your real-time input to decide
+what happens next.
+
+Therefore, in Cloud Café you can play games by don’t need the best
+hardware to run AAA games. Cloud Café lets you choose the game that is
+installed in our cloud and you can play right away. Last, Cloud Café
+will do all of the auto-saving of the progress you make in the game you
+can start right away from where you left it. All of this just requires a
+computer with either a Windows OS or Mac OS and a minimum internet speed
+of 30 Mbps with minimal latency.
+
+Scope
+
+Our scope for this senior project 1 will be to achieve a minimum
+valuable software. To enlarge the scope, we set our target to be able to
+play a game by using our cloud gaming platform. The first target, to let
+users choose the game from the store first. The second target, after
+choosing it our user clicks the play button and it will start the game
+by using the systems that we have designed. By starting the AWS instance
+and in that machine running our design steps and automatically launch
+the game. And in the backend process the streaming process working to
+create Sever-Clint architect. Input coming from users’ sides and
+processed by AWS EC2 Instances. And all of this happens in milliseconds
+time frame to deliver the best gaming experience.
+
+limitations 
+
+Our limitations during the making were coming from different sides.
+Therefore, I would divide it into two parts.
+
+First, we need to pay to use the services of cloud service providers
+such as AWS which are an important part of our project. This means our
+project requires funds to start developing.
+
+Second, is that the network latency and minimum device specks are still
+unknown. The latency is highly dependent on the internet upload and
+download speed. The latency in our case includes
+
+The latency of input from the client to AWS instance in Singapore +
+video/audio encoding and decoding at client end + Video/audio decoding
+at host + network latency from Host to client. All these need to be
+opalized in order to ensure smooth gameplay but most of these can be
+controlled.
+
+: Related Work
+
+[Vortex Cloud Gaming - แอปพลิเคชันใน Google Play]
+
+[Vortex Cloud Gaming 1.5.0 ดาวโหลด APK ของแอนดรอยด์ | Aptoide]
+
+Vortex
+
+Vortex is an cloud gaming service provider that started their services
+since 2017. And provides there services in European countries. They also
+support several devices including
+
+- MacBook / Windows
+
+- Android/ IOS
+
+- I-pad / Tablets
+
+[Graphical user interface Description automatically generated]
+
+They have quite low prices which might be due to their partnership with
+big tech companies such as IBM, MCI, Path-Finder, OVH.com. These are
+major players in their field backing Vortex.
+
+(vortex)
+
+Google Stadia
+
+[Testing the Google Stadia: Is Game Streaming the Future? - EarlyGame]
+
+Figure 2.3 Google Stadia
+
+Stadia is a cloud gaming service developed and operated by Google. It is
+advertised to be capable of streaming video games up to 4K resolution at
+60 frames per second (8K at 120 FPS in the future) with support for
+high-dynamic-range, to players via the company's numerous data centers
+across the globe, provided they are using a sufficiently high-speed
+internet connection. It is accessible through the Google Chrome web
+browser on personal computers
+
+(Wikipedia)
+
+Stadia currently provides its services in.
+
+- Canada
+
+- Denmark
+
+- Finland
+
+- France
+
+- Germany
+
+- Ireland
+
+- Italy
+
+- Netherlands
+
+- Norway
+
+- Spain
+
+- Sweden
+
+- United Kingdom
+
+- United States (except Guam, Hawaii, and the U.S. Virgin Islands)
+
+The provide low cost of 9.99 USD per month due to having a lot of
+resources by Google.
+
+(Google)
+
+AIS Cloud Gaming 
+
+[A picture containing text Description automatically generated]
+
+Ais cloud gaming is a new platform of Gameloft named Blacknut. They
+launched their service on 1^(st) October in Thailand providing an cloud
+gaming service to android devices only using an ais operator. Their game
+library mainly includes games by Gameloft. As Gameloft mainly produces
+many mobile games, they currently have an game library of over 360
+games.
+
+[A picture containing text Description automatically generated]
+
+With this price they provide unlimited playtime. Their services are
+currently exclusive to android users and their games are 80% mobile
+games by Gameloft.
+
+: Proposed Methodology
+
+ Methodology 
+
+To start we started by creating a local database hosted on docker off a
+local system. This was done after the er design and the system architect
+was all thought of. The first step was to create a proof of concept
+application that would connect us to a local computer with a single
+click. The motive was to check if parsec was stable enough and the
+result was good enough to play games on.
+
+Electron.Net
+
+The first question was to build a Cross-platform application with
+capabilities to access the system files which was the platform to build
+on. By doing a little recherché we found that here were the options.
+
+[Electron.NET – Create a minimal MusicPlayer App with ASP.NET Core 2 -
+Codelp]
+
+Figure 3.1 Electron .Net Source
+
+What is Electron?
+
+Electron is a framework that supports the development of desktop
+applications using web technologies such as the Chromium rendering
+engine and the Node.js runtime. Supported operating systems include
+Windows, macOS, and Linux. Chances are you have used at least one of
+these applications, which were all developed using Electron: Visual
+Studio Code, Slack, Discord, Skype, GitHub Desktop, Twitch. So, the
+platform was famous and provided us with the native capabilities we
+require to perform the necessary tasks.
+
+What is Electron.Net?
+
+Electron.NET is a wrapper around a "normal" Electron application with an
+embedded ASP. NET Core application. It is an open-source project that
+allows .NET developers to invoke native Electron APIs using C#.
+Electron.NET consists of two components:
+
+1.  NuGet package that adds Electron APIs to an ASP. NET Core project
+
+2.  .NET Core command-line extension that builds and launches
+    applications for Windows, macOS, and Linux platforms.
+
+Electron.NET requires the prior installation of the following software:
+
+- Node.js
+
+- .NET Core 3.1
+
+This was a good fit for our project as our team had previous experience
+with .Net core during website building classes. Ans we were ready to
+learn Electron as it had a good track record of being easy to use.
+
+(Juback)
+
+Information about AWS
+
+[Screen of a cell phone screen with text Description automatically
+generated]
+
+Amazon web services. It is a cloud service platform that provides
+on-demand computational services, databases, storage space, and many
+more services. We have based our Application on AWS services. AWS is one
+of the biggest Public Cloud providers in the market. With the immense
+numbers of services are being provided at the cost that makes you are
+the one being in control by offering pay as you go billing.
+
+Before we jump into the services that we have used. We will remind you
+that our application is using server to client architecture. So, the
+services that we going to use in AWS will be related to it. Here are
+some of the technologies we used to implement the project.
+
+EC2: Amazon Elastic Compute Cloud (Amazon EC2) provides scalable
+computing capacity in the Amazon Web Services (AWS) Cloud. You can use
+Amazon EC2 to launch as many or as few virtual servers as you need,
+configure security and networking, and manage storage. The type of EC2
+is in different categories. And, the list is down below:
+
+- General Purpose
+
+- Compute Optimized
+
+- Memory-Optimized
+
+- Accelerated Computing
+
+- Storage Optimized
+
+- Instance Features
+
+- Measuring Instance Performance
+
+Future more, every category will have its sub-category. These
+sub-categories are designed from use case-based. For example, every type
+in sub-categories under General Purpose will be for instances that are
+ideal for applications that use computing resources in equal proportions
+such as web servers and code repositories.
+
+[Graphical user interface, text, application Description automatically
+generated]
+
+Figure 3.3Sub CATEGORIES
+
+As you see, these are the option if you want to you it for General
+Purpose. In these sub-categories, AWS EC2 offer different use case of
+General Purpose as well. For example. C6g is a sub-category of
+General-Purpose types, which are C6g instances are powered by and
+feature are EBS-optimized by default and many more. Once you understand
+which instance category type matches your work, then you need to choose
+the instance type itself.
+
+[Table Description automatically generated]
+
+[Graphical user interface, application Description automatically
+generated]
+
+There are many different types of instance sizes that you need to choose
+it from, every instance type will have different hardware allocation.
+You need to choose on your own. As now you understand the process of
+choosing the instances now, I will talk about the instance type that we
+are currently using for computing games for our users.
+
+[]
+
+G4dn.xlarge is the one that we are using. This instance type is under
+the sub-category of Accelerated Computing. This type of instance is good
+for use of hardware accelerators, or co-processors, to perform
+functions, such as floating-point number calculations, graphics
+processing, or data pattern matching, more efficiently than is possible
+in software running on CPUs. Our use case is for graphics processing for
+gaming purposes and for the graphics it is using NVIDIA T4 Tensor Core
+GPUs, which is more than enough for gaming. If we look at hardware
+specifications from the above figure, it's just like a PC that is for
+gaming. After choosing the hardware, we need to select the OS as well.
+
+In the figure above, we currently using Windows Server 2019. The reason
+is that in AWS, they provide you Windows version for standard PC like
+Pro and Enterprise. Therefore, we need to use the Server. Then, we need
+to setup the storage as well.
+
+[Graphical user interface, text, application Description automatically
+generated]
+
+1.1 EBS: An Amazon EBS volume is a durable, block-level storage device
+that you can attach to your instances. After you attach a volume to an
+instance, you can use it as you would use a physical hard drive. EBS
+volumes are flexible. You choose it every time, otherwise, your OS won't
+launch.
+
+In this option, you can choose to add storage as well for you. For our
+design, we went with one storage that is in the size of 500 GB. The
+reason is we need to store about 4 AAA games, and, the average game size
+of those is around 100 GB per game. EBS cost will charge excluding the
+instance cost.
+
+After you instance you are launch, you as enter it though Parsec then
+you install all the game that you must choose to be in this EBS.
+
+1.2 Snapshot: An EBS snapshot is a point-in-time copy of your Amazon EBS
+volume, which is lazily copied to Amazon Simple Storage Service (Amazon
+S3). In simple language is, you can create a point-in-time save for your
+hard drive. For us, this is required because we needed to save games
+into a hard drive so that we don’t need to install it again. And,
+another advantage is to make many copies of snapshots into EBS in order
+to be connected with other instances.
+
+1.3 AMI: An Amazon Machine Image (AMI) provides the information required
+to launch an instance. You must specify an AMI when you launch an
+instance. You can launch multiple instances from a single AMI
+
+2. RDB: Amazon Relational Database Service (Amazon RDS) is a web service
+that makes it easier to set up, operate, and scale a relational database
+in the AWS Cloud. We are currently using AWS RDB to host our database as
+well.
+
+To conclude, when users choose a game from our store. Then, we will
+deploy AMI on a G4 instance with a pre-installed game. And, this all
+happens in a few minutes.
+
+(AWS)
+
+Parsec
+
+Parsec connects people to their favorite technology, providing access to
+games, work, and friends from anywhere. Parsec is fine-tuned for the
+needs of games & gamers so that people can focus on the experiences
+they're sharing. Their proprietary, industry-defining low latency,
+high-frame-rate streaming technology, and near-perfect input management
+make it feels like you're in the same room, sharing the same screen.
+Parsec uses this technology to power a host of cross-platform
+applications and services that are used by a community of players,
+developers, and creatives.
+
+How we are using parsec :
+
+[How to: Create a Remote Gaming Server using Parsec on AWS - tech, life
+& music.]
+
+Figure 3.8 Parsec in Cloud café
+
+Parsec provides us with the SDK to implement this in our project. The
+SDK includes the client file which requires 3 inputs to connect to the
+host computer which are Session-Id, peer id, and Two-factor
+authentication. But to reach that step we need to do some setup on both
+sides.
+
+In client :
+
+- Need to install the SDK and compile the c code to create an
+  executable.
+
+- Generate a session Id
+
+To generate Session-Id, we need to request it from the parsec server
+through an API provided on the GitHub page. The API requires 3 inputs
+username, password, and two-factor authentications. We can get these by
+registering on the parsec website. And the 2 factor is done by an
+authenticator application on our mobile.
+
+[]
+
+[Text Description automatically generated]
+
+Figure above is a result of an example call made bypassing the 3
+arguments. Once we have done these steps, we have completed the client
+setup. Now we need a host to connect to. To get a host to connect to we
+need the peer id of the host.
+
+This peer id is also obtained through another API call which needs 1
+argument which is the session id we obtained in the previous API call.
+
+[Text Description automatically generated][]
+
+Figure 3.10 An sample Api call to obtain peer id
+
+The client can only see the Peer-Id of its friends’ computers that have
+been shared or the clients own shared devices. In figure II.4 you can
+see that we got one response that was shivkool40 which is added as a
+friend and has shared his device. We also get an important piece of
+information that is the peer_id. Which will be used to connect to the
+pc.
+
+Issues in Client setup
+
+1.  We need to be able to use tfa codes that need to be generated by the
+    authenticator.
+
+2.  We need to compile the parsec SDK to make use of the executable to
+    connect to pc.
+
+3.  As AWS takes some time to boot up and setup the client pc needs to
+    wait a right amount of time before requesting a peer id list or the
+    list would be empty.
+
+4.  Parsec supports 20 people using the same computer at once. But we
+    only want one person to use the device at a given moment. We need to
+    check for that before we connect.
+
+In Host
+
+1.  The host needs to have downloaded the parsec application from the
+    official website.
+
+2.  The host also needs to be the friend of the client in order to show
+    up in the peer id list.
+
+3.  The latest graphics drivers are needed to support the encoding and
+    decoding of the video stream.
+
+Issues in host setup
+
+1.  Login into parsec needs to be automated.
+
+2.  Opening parsec during startup.
+
+3.  Setting up the graphical drivers.
+
+The issues regarding parsec can all be solved by obtaining their
+Enterprise License which costs 100,000$ per year. Which is around
+320,000 ฿ per year. With the license, we get the capability to manage
+our own user-id and generate our own session id. This will remove the
+need to depending on the tfa and shall remove the player limit. But to
+pay this amount we will first require a constant flow of cash and better
+infrastructure to handle the number of users.
+
+ROI analysis 
+
+To start with ROI. First, our main expenditure is coming from AWS
+costing. AWS charges for every service that it gives. All costs will be
+from per hour and user.
+
+1. EC2: G4dn.xlarge on per hour ( On-Demand Billing ) = 0.92$
+
+2. EBS : 500 GB Cold HHD per hour = 0.0208$
+
+3.Snapshot : 20 Games( 100 GB per game ) per month ( Static cost ) = 100
+$
+
+Total: 500 User = 29.16 Baht per Hour And 6.2 Per Month ( Service Fee )
+
+Therefore, the best course of action would be to switch to AWS spot
+instance :
+
+- EC2: G4dn.xlarge on per hour ( On Spot Billing ) = 0.408$
+
+Note: This does not include the parsec Enterprise license of 300,000
+Baht/year
+
+If, we use Spot instance the cost per hour will reduce by half. This is
+what are we planning to implement in the second Senior Project.
+
+: Design of The System
+
+The system design of the current Cloud café is aimed to be easy to
+develop. Therefore, does not have many components.
+
+System Architecture
+
+[Diagram Description automatically generated]
+
+The figure above shows the overall structure of Cloud Café it also shows
+the main features that our application has.
+
+Cloud Café is a cross-platform application made with Dotnet Electron.
+API which constitutes using CsHtml, Js, CSS to build a web application
+then using Electron API to create a Chromium application over top. So
+that the application can access all the system features.
+
+The Cloud Café application has the following features :
+
+1.  Auth: The application uses a Microsoft SQL server hosted on AWS. To
+    get the information and to perform authentication.
+
+2.  User profile: The user profile can be viewed and can be updated on
+    my account page in the application.
+
+3.  Game list: The game list quires the database for info shown in Er
+    Diagram the images are loaded using the URL. This can be done on the
+    Browse page. The browse page also allows the user to add/remove free
+    games to its library.
+
+4.  Game Launcher: The game launcher or the gameplay page allows user to
+    play the chosen game from the browse page by doing the following :
+
+    a.  The Game launcher request the server to launch a new AWS
+        instance
+
+    b.  It also generates a new parsec session id which will be used to
+        connect the host to the client.
+
+    c.  It waits for the instance to be set up and ready to play then
+        launches a new RDP window which allows the user to play the
+        game.
+
+5.  RDP by Parsec: This requires 3 input to connect the user system to
+    host namely (Session Id, Peer Id, Tfa)
+
+    a.  Session Id: This is an identification of the client computer it
+        tells the host computer who is the person connecting. In our
+        project, the client system has the id of Taranjit Singh with the
+        handle Jeet0007.
+
+    b.  Peer id: This is a list of computers available to connect – They
+        are being shared with the client by the host. In our project, as
+        Shiv has added Taranjit as a friend all system logged in by Shiv
+        id will automatically be shared to Taranjit and will show up as
+        peer ids when we use parsec API.
+
+    c.  Tfa: Two-factor authentication is required by parsec to prevent
+        bots and other misuses of the RDP.
+
+Server
+
+In the Electron application, we also have a dotnet server running which
+acts as a server between the application, and outer communications are
+all handled through the server. In the server, we have several
+controllers that handle a single view. As we are using the MVC that we
+have adapted to fit our implementation.
+
+Cloud AWS
+
+The functionalities that are required to launch/terminate the instances
+are achieved through the dotnet SDK of AWS which were provided by AWS
+through their official website.
+
+[Graphical user interface, application Description automatically
+generated]
+
+The AWS EC2 SDK comes with the following features.
+
+1.  [Text Description automatically generated]Launch instance: To launch
+    an instance we need 2 arguments first is an AWS credentials object
+    which includes the Access Key and Secret Key which is acquired
+    through the AWS admin console. The second is a request object which
+    includes
+
+Figure 4.3 AWS Request object
+
+Once we have launched the instance, we get an instance id in return
+which we can then use to perform other tasks.
+
+2.  Check State: An AWS instance usually takes some time to launch,
+    initialize, and to complete its setup. So, in order to check the
+    status of the instance, we can use this function which tells us
+    whether the instance has finished initializing. This function also
+    takes in 2 arguments first being the credentials and the second is a
+    list of instance id.
+
+3.  Terminate instance: This function is used to terminate the instance
+    when the user is done playing. This is an important function as if
+    the instance is not closed, we will be continuously be charged.
+
+[Diagram Description automatically generated]
+
+Database Design
+
+The figure above shows that the database design has a total of 7 tables.
+
+The database design supports :
+
+- Multiple Users and multiple games in their libraries
+
+- Tracks game time and keeps track of which instance in AWS was being
+  used
+
+- Dynamic addition of new providers.
+
+- Custom instances for games.
+
+The tfa table was added to update the backup codes once all codes have
+been used as one code can only be used to obtain one session id
+
+UI/UX
+
+We have been inspired by gaming-based UI. First, tried to look at top
+games. But, most of others international Cloud Gaming Companies have
+taken that color already. So then move on to Dark Red color. First,
+
+[]
+
+The login page includes login by either entering your email or by
+entering your username followed by the password. The Sign-up button
+takes you to the registration page. Currently there is no functionality
+added to forgot password button.
+
+[]
+
+There is an header with several functions
+
+- There is search which you can search games by their name
+
+- There is speed test which allows you to do a speed test before using
+  the services.
+
+- There is your username which can be clicked to show an drop down menu
+  which has options to logout, My account and FAQs.
+
+Spot on top is for an advertiser to advertise the game. Spots on the
+down part all the games. Can also filter by options. You can also filter
+the games by the options in the tab bar
+
+- All : All available games
+
+- My Games : Games that have been added to your library.
+
+- Free : Games that are free to play
+
+You can add free to play games to your library by clicking + My Games
+once clicked it will change to – Remove which you can click again to
+remove from your library.
+
+[]
+
+The background image shows a snapshot of the game. The Game name is
+shown in large font with the game tags. These tags tell us what kind of
+game it is. We have the mouse and keyboard symbols that show that
+currently, we support this game being played using mouse and keyboard.
+On the right side, we have the providers logo that tells that you must
+own the game through that provider to play this game. Then we have the
+play button once clicked does a one-click connection to the host
+computer. Lastly, we have the synopsis of the game that gives a brief
+summary of the story.
+
+[]
+
+This is the setting part of my account. You can change Username, First
+Name, Last Name, Email, and password. Currently we don’t support the
+profile picture feature so the default image cannot be changed. You can
+change your password by entering your current password and confirming
+your new password. At the bottom we have the subscribe button which will
+be used once we have added features such as payment.
+
+[]
+
+[] This is the frequently asked questions page. Covering the basic
+question like what it is, how it works, and, minimum requirements. At
+the top the sign in button takes you to the sign in page if not
+currently signed in otherwise it will take you to the browse page.
+
+Figure IV.9 GAMEPLAY
+
+This is the real gameplay of our product Cloud Cafe. The current game is
+GTA V. This game was launched using our software as you can see at the
+top left conner.
+
+: Conclusion 
+
+Yes, we have been able to connect the client to the host on request. But
+the current solution is incomplete as it overlooks the cost that is
+being used to launch the AWS instances therefore is currently not being
+the best option to use as a daily driver. It also faces several other
+issues such as.
+
+1.  To obtain a session id, we need to use the backup tfa codes which
+    are generated on Parsec website. We can only generate 10 backup
+    codes at a given time one’s new codes are generated the old codes
+    are no longer valid and one code can only be used once. This is a
+    huge obstacle as this means that at a given time there can be only
+    10 players.
+
+2.  The AWS instance takes a lot of time to launch and to perform the
+    setup. This considering from an end-user standpoint can be
+    considered as bad UX.
+
+3.  There is no queue system during the launching of a new instance or
+    connecting a user to an instance. This leads to problems such as one
+    user being connected to an instance launched by another user.
+
+4.  The limited amounts of games are also a huge issue as to get a
+    bigger game library we need to pre-install a lot of games on the AWS
+    instance this requires a lot of capital. And will not be viable
+    unless there are a lot of paying users.
+
+ Future works
+
+The project currently is just a trial run to get the necessary expertise
+in order to develop a better experience for the end-user. So, here are
+the features or changes that we might do in the foreseeable future.
+
+1.  Redesign the User interface for the native application by moving the
+    features such as register, edit account detail, to the website
+    instead of the native application.
+
+2.  Creating a website to download the latest update for our
+    application. And to purchase in-app currency which will be used to
+    play games.
+
+3.  Adding time-related features to the native application to keep track
+    of in-app currency.
+
+4.  Creating a way to add payment on the website to buy currency.
+
+5.  Increasing the security of the native application to prevent misuse
+    of the features.
+
+6.  Adding a queue mechanism while launching a new AWS instance in the
+    server-side implementation.
+
+7.  Separating the Native app and Server-side to divide the load and
+    optimize the speed of the application.
+
+8.  Updating the user interface to match a native application style.
+
+9.  Trying out Moonlight which is a Parsec alternative but is open
+    source. To massively reduce our cost.
+
+10. Switching to AWS spot instance to further reduce our costs down to
+    an affordable price.
+
+BIBLIOGRAPHY
+
+Biswanger, Gregor. "ElectronNET / Electron.NET." 07 August 2020. Github.
+<https://github.com/ElectronNET/Electron.NET#:~:text=Electron.NET%20is%20a%20wrapper,and%20start%20Electron.NET%20applications.>.
+
+Juback, John. "Building Cross-Platform Desktop Apps with Electron.NET."
+21 August 2020. Grapecity.
+<https://www.grapecity.com/blogs/building-cross-platform-desktop-apps-with-electron-dot-net>.
+
+vortex. "vortex." - - 2007. vortex. October 2020.
+<https://vortex.gg/about-us>.
+
+AWS. "AWS." 21 Jan 2020. AWS. 14 October 2020.
+<https://aws.amazon.com/?nc2=h_lg>.
+
+Google. "Stadia." 19 November 2019. stadia.google. 14 October 2020.
+
+Wikipedia. "Google Stadia." 15 October 2020. Wikipedia. 14 October 2020.
+<https://en.wikipedia.org/wiki/Google_Stadia>.

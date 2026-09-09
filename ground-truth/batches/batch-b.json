@@ -1,6 +1,182 @@
 [
-{"id":"1925","canonical_title":"People Analytics at AU Library","aliases":[],"phase":"final","course_code":"CS 3200/IT 4291","program":"computer_science","semester":"1","academic_year":2019,"students":[{"name":"William Sivutha Poch","student_id":null},{"name":"Navin Singh","student_id":null},{"name":"Tasnia Rehnuma Mahmud","student_id":null}],"advisor":"A. Tapanan Yeophantong","committee":["A. Chayapol Moemeng","A. Pawut Satitsuksanoh"],"abstract":"The AU library will go through a transformation. This is because a lot of the human resources and efforts are being wasted on simple tasks that can be done by the technology. For instance, there is a staff member who sits at the door of the library and keeps a count of the people going in and out of the library. Our project is aimed at developing and implementing a system that can be used to automate this task within the library. Specifically, we will focus on tracking people entering the library. The goal is to create an automated system which can record the number of visitors in the library each day. And provide a website to display this information. Doing this would allow the staff to engage in more meaningful and valuable tasks. The staff could be employed to assist students, manage the library inventory, or be employed elsewhere within the school. The library would be able to operate more efficiently and for longer every day. Also, the data and statistics collected from the system could be used to make more informed decisions about the library.","reported_keywords":[],"classification":{"category":["ai_data"],"platform":["web"],"domain":["campus"],"topic":["computer_vision"],"technology":[]}},
-{"id":"1934","canonical_title":"August Witcher of the Grand House","aliases":[],"phase":"final","course_code":"IT 4291/CS 3200","program":"information_technology","semester":"1","academic_year":2019,"students":[{"name":"Mungyeong Kim","student_id":"5911116"},{"name":"Anawil Chumphun","student_id":"5912087"}],"advisor":"A. Chayapol Moemeng","committee":["A. Tapanan Yeophantong","Asst. Prof. Dr. Paitoon Porntrakoon"],"abstract":"Nowadays, many people like playing games and E-sports has been popular, side-scrolling game is defined as a game that game playing action is viewed from a side-view camera angle, and the onscreen characters can only move to the left or rights to reach the end of the game. Moreover, many people are interested in ghost stories and Thailand is well known for scary stories and some mysterious places so we decided to combine both game and Thai ghost story to make an interesting single game. August Witcher of the Grand House is a side-scrolling game which is designed to attract people who loves playing game with ghost story. In this game, a player will be playing from outside to inside a mysterious house to get through there with some weapons from stage and fight with Thai ghosts. The game is mainly playable on PCs. Our goal is to successfully design and implement our own design of the game on PCs based, and the game more interesting and enjoyable.","reported_keywords":[],"classification":{"category":["game"],"platform":["desktop"],"domain":["entertainment"],"topic":[],"technology":["unreal_engine"]}},
-{"id":"1941","canonical_title":"BabyDev","aliases":[],"phase":"final","course_code":"CS 4200/IT 4291","program":"computer_science","semester":"2","academic_year":2019,"students":[{"name":"Noorul Zumana Shajahan","student_id":"5916887"},{"name":"Raqia Ali Nur","student_id":"5926802"}],"advisor":"Asst. Prof. Dr. Paitoon Porntrakoon","committee":["Asst. Prof. Titida Nochai","A. Chayapol Meomong"],"abstract":"This project is aimed for keeping records of a kid from newborn infants to around 18 years is common everywhere around the world. This application is being developed to help the mothers of children to keep track of the medical and physical record of their child. This is a mobile-based application. The users can record the body development, vaccination, allergies of their kids. Moreover, they can also record notes regarding their kids. It also provides notification to remind the user of the time for their child to take vaccination. This can be very helpful to the users who are busy with their work and want to keep track of their child medical record and physical record. Finally, this system is anticipated to be very useful to the users who want to record everything in their child's life.","reported_keywords":[],"classification":{"category":["software_application"],"platform":["mobile"],"domain":["healthcare"],"topic":[],"technology":[]}},
-{"id":"1953","canonical_title":"Content Discovery Platform for AU Spark","aliases":["Course Discovery"],"phase":"final","course_code":"CS 4200","program":"computer_science","semester":"2","academic_year":2019,"students":[{"name":"Tadsawan Tansuwan","student_id":"5936910"},{"name":"Prutchakorn Ngamsuanplu","student_id":"5912046"}],"advisor":"A. Tapanan Yeophantong","committee":["Dr. Songsak Channarukul","Asst. Prof. Dr. Benjawan Srisura"],"abstract":"With the increase of different academic interests and depleting of academic advising resources, the importance of exploring data-assisted methods to support student decision making has become even higher than before. We have researched the potentiality of building a recommendation system for Assumption University students based on AU Spark dataset. The system implements a hybrid approach recommendation system to personalize course suggestions to each student cohorts with prior knowledge on student enrollments from the academic year of 2013 to 2018. Models are validated by using tests of whether the recommended courses with the lecturers are enrolled in the particular semester. While not proof of casual effectiveness, the evaluation perspectives on the performance of the recommender will help to lead the development of a recommendation system for Assumption University to another potential and offer to personalize course assistance with ease.","reported_keywords":[],"classification":{"category":["ai_data"],"platform":["other"],"domain":["education"],"topic":["recommender_system"],"technology":[]}}
+ {
+  "id": "1925",
+  "canonical_title": "People Analytics at AU Library",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 3200/IT 4291",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "William Sivutha Poch",
+    "student_id": null
+   },
+   {
+    "name": "Navin Singh",
+    "student_id": null
+   },
+   {
+    "name": "Tasnia Rehnuma Mahmud",
+    "student_id": null
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "A. Chayapol Moemeng",
+   "A. Pawut Satitsuksanoh"
+  ],
+  "abstract": "The AU library will go through a transformation. This is because a lot of the human resources and efforts are being wasted on simple tasks that can be done by the technology. For instance, there is a staff member who sits at the door of the library and keeps a count of the people going in and out of the library. Our project is aimed at developing and implementing a system that can be used to automate this task within the library. Specifically, we will focus on tracking people entering the library. The goal is to create an automated system which can record the number of visitors in the library each day. And provide a website to display this information. Doing this would allow the staff to engage in more meaningful and valuable tasks. The staff could be employed to assist students, manage the library inventory, or be employed elsewhere within the school. The library would be able to operate more efficiently and for longer every day. Also, the data and statistics collected from the system could be used to make more informed decisions about the library.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "software_application"
+   ],
+   "platform": [
+    "desktop",
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "opencv",
+    "python"
+   ]
+  }
+ },
+ {
+  "id": "1934",
+  "canonical_title": "August Witcher of the Grand House",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT 4291/CS 3200",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Mungyeong Kim",
+    "student_id": "5911116"
+   },
+   {
+    "name": "Anawil Chumphun",
+    "student_id": "5912087"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "A. Tapanan Yeophantong",
+   "Asst. Prof. Dr. Paitoon Porntrakoon"
+  ],
+  "abstract": "Nowadays, many people like playing games and E-sports has been popular, side-scrolling game is defined as a game that game playing action is viewed from a side-view camera angle, and the onscreen characters can only move to the left or rights to reach the end of the game. Moreover, many people are interested in ghost stories and Thailand is well known for scary stories and some mysterious places so we decided to combine both game and Thai ghost story to make an interesting single game. August Witcher of the Grand House is a side-scrolling game which is designed to attract people who loves playing game with ghost story. In this game, a player will be playing from outside to inside a mysterious house to get through there with some weapons from stage and fight with Thai ghosts. The game is mainly playable on PCs. Our goal is to successfully design and implement our own design of the game on PCs based, and the game more interesting and enjoyable.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "game"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [],
+   "technology": [
+    "unreal_engine"
+   ]
+  }
+ },
+ {
+  "id": "1941",
+  "canonical_title": "BabyDev",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 4200/IT 4291",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Noorul Zumana Shajahan",
+    "student_id": "5916887"
+   },
+   {
+    "name": "Raqia Ali Nur",
+    "student_id": "5926802"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Paitoon Porntrakoon",
+  "committee": [
+   "Asst. Prof. Titida Nochai",
+   "A. Chayapol Meomong"
+  ],
+  "abstract": "This project is aimed for keeping records of a kid from newborn infants to around 18 years is common everywhere around the world. This application is being developed to help the mothers of children to keep track of the medical and physical record of their child. This is a mobile-based application. The users can record the body development, vaccination, allergies of their kids. Moreover, they can also record notes regarding their kids. It also provides notification to remind the user of the time for their child to take vaccination. This can be very helpful to the users who are busy with their work and want to keep track of their child medical record and physical record. Finally, this system is anticipated to be very useful to the users who want to record everything in their child's life.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "healthcare"
+   ],
+   "topic": [],
+   "technology": [
+    "php",
+    "mysql"
+   ]
+  }
+ },
+ {
+  "id": "1953",
+  "canonical_title": "Content Discovery Platform for AU Spark",
+  "aliases": [
+   "Course Discovery"
+  ],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Tadsawan Tansuwan",
+    "student_id": "5936910"
+   },
+   {
+    "name": "Prutchakorn Ngamsuanplu",
+    "student_id": "5912046"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "Dr. Songsak Channarukul",
+   "Asst. Prof. Dr. Benjawan Srisura"
+  ],
+  "abstract": "With the increase of different academic interests and depleting of academic advising resources, the importance of exploring data-assisted methods to support student decision making has become even higher than before. We have researched the potentiality of building a recommendation system for Assumption University students based on AU Spark dataset. The system implements a hybrid approach recommendation system to personalize course suggestions to each student cohorts with prior knowledge on student enrollments from the academic year of 2013 to 2018. Models are validated by using tests of whether the recommended courses with the lecturers are enrolled in the particular semester. While not proof of casual effectiveness, the evaluation perspectives on the performance of the recommender will help to lead the development of a recommendation system for Assumption University to another potential and offer to personalize course assistance with ease.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [
+    "recommender_system"
+   ],
+   "technology": []
+  }
+ }
 ]

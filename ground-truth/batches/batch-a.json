@@ -1,6 +1,195 @@
 [
-{"id":"1727","canonical_title":"Trax: Task and Resource Tracking System for Agile Software Development Teams","aliases":["Task and Resource Tracking System for Agile Software Development Teams"],"phase":"final","course_code":"CS 3200","program":"computer_science","semester":"2","academic_year":2017,"students":[{"name":"Jarukorn Thuengjitvilas","student_id":"5810228"},{"name":"Thanawadee Khemasrisuwan","student_id":"5810127"}],"advisor":"Dr. Songsak Channarukul","committee":["Dr. Kwankamol Nongpong","A. Chayapol Moemeng"],"abstract":"Software companies usually work on multiple projects by using more than one teams. Most of the time, members in these teams could be assigned to several projects concurrently. This project aims to implement a system called 'Trax' which is integrated to an existing task repository system. It allows team members to input their daily scrum report. Team leads are able to monitor their agile team progresses on a day-to-day basis while the top management could track the resource usages by individual projects, personnels, and teams.","reported_keywords":[],"classification":{"category":["software_application"],"platform":["mobile"],"domain":["business"],"topic":[],"technology":[]}},
-{"id":"1816","canonical_title":"Aspect-Based Sentiment Analysis on Hotel Reviews","aliases":[],"phase":"final","course_code":"CS 4200","program":"computer_science","semester":"1","academic_year":2020,"students":[{"name":"William Sivutha Poch","student_id":"5983122"},{"name":"Navin Singh","student_id":"5935221"},{"name":"Jiadong Jiao","student_id":"5918459"}],"advisor":"A. Kwankamol Nongpong","committee":["A. Tapanan Yeophantong","A. Pawut Satitsuksanoh"],"abstract":"More and more companies and enterprises begin to attach importance to the user experience. They try to know the customers' views on their services or products through various ways, especially the hotel should attach great importance to the customer's feelings and comments. Today, most hotels have their own channels for customers to share their experiences. But if you encounter a large number of comments, it is very time and labor consuming just through human effort. Therefore, our team has developed a web application to analyze user comments using aspect-based sentiment analysis. In this project, the procedure is not limited to analyzing whether the overall comments are negative, positive or neutral but the sentiment analysis will be on finer details in which aspects the customers are expressing their attitudes on. As the domain of this work is hotel, we focus on detecting and analyzing sentiment on four aspects, which are service, amenities, conditions and the hotel cleanliness. The application provides visualization, which could help hotel managers to better understand the feedbacks from their customers.","reported_keywords":[],"classification":{"category":["ai_data"],"platform":["web"],"domain":["business"],"topic":["nlp"],"technology":[]}},
-{"id":"1825","canonical_title":"VMS Advising Scheduling System","aliases":["Advising Scheduling System"],"phase":"final","course_code":"IT 4291","program":"information_technology","semester":"2","academic_year":2018,"students":[{"name":"Kwangmin Kim","student_id":"5738001"},{"name":"Serhii Bielik","student_id":"5748106"},{"name":"Kaori Saito","student_id":"5828406"}],"advisor":"Asst. Prof. Dr. Rachsuda Setthawong","committee":["A. Pawut Satitsuksanoh","A. Suparwat Charoenvikrom"],"abstract":"This project is aimed at making an appointment for academic advising. The system is designed and developed based on use case at Vincent Mary School of Science and Technology (VMS). This is a web-based system, which can be interactive to mobile platform as well. Advisors can provide an advising schedule, and advisees can make an appointment through the mobile phone. Facility to communicate by using messenger and notification for both advisors and advisees are also available. Advising system can be a very helpful system within advisors, advisees and administration. It provides services for not only advisors and advisees, but also program directors to simply reduce their current work by this system such as assign advisors to new students, and modification of appointment is available for both advisors and advisees by limited times. Furthermore, it can also reduce the problems of time conflict and standardize the way of making appointment as a whole school with notification as reminder of any events. Finally, this system is anticipated to be useful not only for VMS students but also for all students at any school.","reported_keywords":[],"classification":{"category":["software_application"],"platform":["web","mobile"],"domain":["campus"],"topic":[],"technology":[]}},
-{"id":"1829","canonical_title":"Stampz: A Mobile Application for Collecting Stamps on Visited Tourist Destination","aliases":["Stampz"],"phase":"final","course_code":"CS 4200","program":"computer_science","semester":"2","academic_year":2018,"students":[{"name":"Jarukorn Theungjitvilas","student_id":"5810228"},{"name":"Nattalie Shinkoi","student_id":"5810127"},{"name":"Thanawadee Khemasrisuwan","student_id":null}],"advisor":"A. Tapanan Yeophantong","committee":["A. Piyakul Tillapart","A. Chayapol Moemeng"],"abstract":"The number of people traveling without a tour guide has been increased recently, so the handy travel guide becomes an important tool for the traveler. Plus travelers nowadays are seeking for new place to visit and more exciting traveling. According to those problems, we had an idea and decided to create this project. Stampz is the iOS application which has three main features designed to greatly fit current traveler's trends and lifestyles. The first feature is discover, the application allows the user to discover places and their informations by browsing, searching, and exploring through stamp books in the system which will be provided by the admin using content-management web application. The second one is collect. The application allows the user to easily collect stamps from attractions in the list of each stamp book with their own mobile devices. The application relies on location-based services or GPS for deciding whether the user is close to the specified location. The last feature is share. The user will be able to share their interested stamp book and location through their own social media accounts. We have also evaluated our system by performing User Acceptance Test with Praram Nine Technology's representative which is the company who gave us the requirement and give back the feedback after experiencing our both mobile application and web application.","reported_keywords":[],"classification":{"category":["software_application"],"platform":["mobile","web"],"domain":["entertainment"],"topic":["geolocation","gamification"],"technology":[]}}
+ {
+  "id": "1727",
+  "canonical_title": "Trax: Task and Resource Tracking System for Agile Software Development Teams",
+  "aliases": [
+   "Task and Resource Tracking System for Agile Software Development Teams"
+  ],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Jarukorn Thuengjitvilas",
+    "student_id": "5810228"
+   },
+   {
+    "name": "Thanawadee Khemasrisuwan",
+    "student_id": "5810127"
+   }
+  ],
+  "advisor": "Dr. Songsak Channarukul",
+  "committee": [
+   "Dr. Kwankamol Nongpong",
+   "A. Chayapol Moemeng"
+  ],
+  "abstract": "Software companies usually work on multiple projects by using more than one teams. Most of the time, members in these teams could be assigned to several projects concurrently. This project aims to implement a system called 'Trax' which is integrated to an existing task repository system. It allows team members to input their daily scrum report. Team leads are able to monitor their agile team progresses on a day-to-day basis while the top management could track the resource usages by individual projects, personnels, and teams.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": []
+  }
+ },
+ {
+  "id": "1816",
+  "canonical_title": "Aspect-Based Sentiment Analysis on Hotel Reviews",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "William Sivutha Poch",
+    "student_id": "5983122"
+   },
+   {
+    "name": "Navin Singh",
+    "student_id": "5935221"
+   },
+   {
+    "name": "Jiadong Jiao",
+    "student_id": "5918459"
+   }
+  ],
+  "advisor": "A. Kwankamol Nongpong",
+  "committee": [
+   "A. Tapanan Yeophantong",
+   "A. Pawut Satitsuksanoh"
+  ],
+  "abstract": "More and more companies and enterprises begin to attach importance to the user experience. They try to know the customers' views on their services or products through various ways, especially the hotel should attach great importance to the customer's feelings and comments. Today, most hotels have their own channels for customers to share their experiences. But if you encounter a large number of comments, it is very time and labor consuming just through human effort. Therefore, our team has developed a web application to analyze user comments using aspect-based sentiment analysis. In this project, the procedure is not limited to analyzing whether the overall comments are negative, positive or neutral but the sentiment analysis will be on finer details in which aspects the customers are expressing their attitudes on. As the domain of this work is hotel, we focus on detecting and analyzing sentiment on four aspects, which are service, amenities, conditions and the hotel cleanliness. The application provides visualization, which could help hotel managers to better understand the feedbacks from their customers.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [
+    "nlp"
+   ],
+   "technology": [
+    "firebase",
+    "python"
+   ]
+  }
+ },
+ {
+  "id": "1825",
+  "canonical_title": "VMS Advising Scheduling System",
+  "aliases": [
+   "Advising Scheduling System"
+  ],
+  "phase": "final",
+  "course_code": "IT 4291",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Kwangmin Kim",
+    "student_id": "5738001"
+   },
+   {
+    "name": "Serhii Bielik",
+    "student_id": "5748106"
+   },
+   {
+    "name": "Kaori Saito",
+    "student_id": "5828406"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Rachsuda Setthawong",
+  "committee": [
+   "A. Pawut Satitsuksanoh",
+   "A. Suparwat Charoenvikrom"
+  ],
+  "abstract": "This project is aimed at making an appointment for academic advising. The system is designed and developed based on use case at Vincent Mary School of Science and Technology (VMS). This is a web-based system, which can be interactive to mobile platform as well. Advisors can provide an advising schedule, and advisees can make an appointment through the mobile phone. Facility to communicate by using messenger and notification for both advisors and advisees are also available. Advising system can be a very helpful system within advisors, advisees and administration. It provides services for not only advisors and advisees, but also program directors to simply reduce their current work by this system such as assign advisors to new students, and modification of appointment is available for both advisors and advisees by limited times. Furthermore, it can also reduce the problems of time conflict and standardize the way of making appointment as a whole school with notification as reminder of any events. Finally, this system is anticipated to be useful not only for VMS students but also for all students at any school.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [],
+   "technology": [
+    "laravel",
+    "php"
+   ]
+  }
+ },
+ {
+  "id": "1829",
+  "canonical_title": "Stampz: A Mobile Application for Collecting Stamps on Visited Tourist Destination",
+  "aliases": [
+   "Stampz"
+  ],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Jarukorn Theungjitvilas",
+    "student_id": "5810228"
+   },
+   {
+    "name": "Nattalie Shinkoi",
+    "student_id": "5810127"
+   },
+   {
+    "name": "Thanawadee Khemasrisuwan",
+    "student_id": null
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "A. Piyakul Tillapart",
+   "A. Chayapol Moemeng"
+  ],
+  "abstract": "The number of people traveling without a tour guide has been increased recently, so the handy travel guide becomes an important tool for the traveler. Plus travelers nowadays are seeking for new place to visit and more exciting traveling. According to those problems, we had an idea and decided to create this project. Stampz is the iOS application which has three main features designed to greatly fit current traveler's trends and lifestyles. The first feature is discover, the application allows the user to discover places and their informations by browsing, searching, and exploring through stamp books in the system which will be provided by the admin using content-management web application. The second one is collect. The application allows the user to easily collect stamps from attractions in the list of each stamp book with their own mobile devices. The application relies on location-based services or GPS for deciding whether the user is close to the specified location. The last feature is share. The user will be able to share their interested stamp book and location through their own social media accounts. We have also evaluated our system by performing User Acceptance Test with Praram Nine Technology's representative which is the company who gave us the requirement and give back the feedback after experiencing our both mobile application and web application.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile",
+    "web"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [
+    "geolocation",
+    "gamification"
+   ],
+   "technology": [
+    "nodejs"
+   ]
+  }
+ }
 ]

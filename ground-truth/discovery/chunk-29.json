@@ -1,0 +1,613 @@
+[
+ {
+  "id": "26019",
+  "canonical_title": "AI Insurance LLM chatbot",
+  "aliases": [
+   "AI Insurance Agent"
+  ],
+  "phase": "final",
+  "course_code": "CSX 3011",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Thapana Dermbangchon",
+    "student_id": "6511252"
+   },
+   {
+    "name": "Krit Japhong",
+    "student_id": "6511407"
+   },
+   {
+    "name": "Boonyarit Thongma",
+    "student_id": "6530371"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "Asst. Prof. Dr. Paitoon Porntrakoon",
+   "A. Atthipat Hirunadisuan"
+  ],
+  "abstract": "The main aim of our project is to address the problem of inherent complexity associated with insurance policy documents, which are generally described by complex legal terminologies, numerous policy conditions, and complex benefits tables. The complexity associated with insurance policy documents is considered a major obstacle in assisting the policyholders in understanding the insurance policies they have purchased and creates a huge workload for insurance agents in handling the day-to-day policy-related queries. The main aim of the current study is to develop an \"AI Insurance Agent\" for the automatic interpretation of insurance policy documents. The methodology of the current study includes the implementation of a hybrid Artificial Intelligence model in which Typhoon OCR is implemented for the accurate extraction of text and data from the tables in the insurance policy documents in various formats such as PDF, JPG, and PNG. Furthermore, the current study has implemented Typhoon 2.5 30B Large Language Model for the accurate reasoning and analysis of the data extracted from the insurance policy documents. The implementation of the Retrieval-Augmented Generation of text model has also ensured the accurate answers provided by the system based on the insurance policy documents uploaded by the user, thus eliminating the possibility of AI hallucinations.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "finance"
+   ],
+   "topic": [
+    "nlp",
+    "ocr"
+   ],
+   "technology": [
+    "mongodb",
+    "nodejs",
+    "react"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "insurance",
+     "label": "Insurance",
+     "status": "used",
+     "evidence": "The whole report addresses insurance policy documents, insurance agents, and insurance customers, and the system was tested with a real insurance policy booklet."
+    }
+   ],
+   "technology": [
+    {
+     "key": "typhoon",
+     "label": "Open Typhoon LLM API (typhoon-v2.5-30b-a3b-instruct)",
+     "status": "used",
+     "evidence": "The model that we are using for the contextual reasoning answer is typhoon-v2.5-30b-a3b-instruct, accessed through the free Open Typhoon API."
+    },
+    {
+     "key": "typhoon_ocr",
+     "label": "Typhoon OCR",
+     "status": "used",
+     "evidence": "The system utilizes Typhoon OCR to perform high-precision text extraction and layout analysis on uploaded PDF, JPG, and PNG policy files."
+    },
+    {
+     "key": "rag",
+     "label": "Retrieval-Augmented Generation",
+     "status": "used",
+     "evidence": "A Retrieval-Augmented Generation model grounds answers solely in the uploaded document to avoid AI hallucinations, with 384-dimensional embeddings and cosine similarity search in MongoDB."
+    },
+    {
+     "key": "vite",
+     "label": "Vite",
+     "status": "used",
+     "evidence": "The frontend is built using React and Vite as the build tool."
+    },
+    {
+     "key": "tailwind_css",
+     "label": "Tailwind CSS",
+     "status": "used",
+     "evidence": "The system is designed using Tailwind CSS for all web pages to increase responsiveness."
+    },
+    {
+     "key": "express",
+     "label": "Express.js",
+     "status": "used",
+     "evidence": "The backend is built using Node.js and Express.js because of their non-blocking asynchronous programming approach."
+    },
+    {
+     "key": "aws",
+     "label": "Amazon Web Services",
+     "status": "used",
+     "evidence": "The AI Insurance Chatbot has been deployed to an Amazon Web Services (AWS) EC2 t3.micro instance running Ubuntu Server 24.04 LTS with a permanent Elastic IP."
+    },
+    {
+     "key": "nginx",
+     "label": "Nginx",
+     "status": "used",
+     "evidence": "Nginx was utilized as a reverse proxy server to receive external requests on ports 80 and 443, forwarded to the Node.js server."
+    },
+    {
+     "key": "pm2",
+     "label": "PM2",
+     "status": "used",
+     "evidence": "Reliability is maintained by PM2, which works as the supervisor of the web application and continuously monitors the process."
+    },
+    {
+     "key": "cloudflare",
+     "label": "Cloudflare",
+     "status": "used",
+     "evidence": "Cloudflare Registrar has been employed to register the domain insurlm.org and DNS A records serve both root and www requests."
+    },
+    {
+     "key": "pnpm",
+     "label": "pnpm",
+     "status": "used",
+     "evidence": "The server-side setup utilized Node.js version 22.22.0 and pnpm."
+    },
+    {
+     "key": "ada_002_embedding",
+     "label": "OpenAI-style text-embedding-ada-002",
+     "status": "cited",
+     "evidence": "The primary embedding method was the typhoon embedding API (AI text-embedding-ada-002), but the team skipped it because it chunks at 1536 dimensions and used only the 384-dimensional local hash fallback."
+    }
+   ]
+  }
+ },
+ {
+  "id": "26023",
+  "canonical_title": "iRC - NewsGen (Automatically Generated News Content)",
+  "aliases": [
+   "iRc - Newsgen",
+   "IRC (I Read Customer)"
+  ],
+  "phase": "final",
+  "course_code": "CSX 3011",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Chatchai Bumrungsak",
+    "student_id": "6510550"
+   },
+   {
+    "name": "Jilamika Lalae",
+    "student_id": "6511063"
+   },
+   {
+    "name": "Titaporn Tienanansuk",
+    "student_id": "6511420"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "Asst. Prof. Dr. Thanachai Thumthawatworn"
+  ],
+  "abstract": "iRC - NewsGen is a web-based admin dashboard designed to streamline the news production workflow for small editorial teams. The system integrates n8n workflow automation with the Google Gemini AI API to handle the repetitive stages of news production, including web scraping, article drafting, keyword extraction, and bilingual translation between Thai and English. The platform is configured to generate 10 articles per week, which are then presented to editors through a centralized dashboard for review and approval. Once an editor verifies an article, it can be published directly to a Sanity content database with a single action.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [
+    "nlp"
+   ],
+   "technology": [
+    "mongodb",
+    "react"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "news_publishing",
+     "label": "News publishing and media production",
+     "status": "used",
+     "evidence": "The system automates news production for the IReadCustomer platform, generating, verifying, and publishing 10 news articles per week."
+    }
+   ],
+   "technology": [
+    {
+     "key": "n8n",
+     "label": "n8n workflow automation",
+     "status": "used",
+     "evidence": "n8n is the automation engine at the core of iRC - NewsGen, executing the automated news generation workflow and writing articles and execution logs to MongoDB; deployed on Railway."
+    },
+    {
+     "key": "google_gemini",
+     "label": "Google Gemini AI API",
+     "status": "used",
+     "evidence": "Google Gemini is used as an external API service for article generation, summarization, keyword extraction, and Thai-English translation."
+    },
+    {
+     "key": "typescript",
+     "label": "TypeScript",
+     "status": "used",
+     "evidence": "The technology stack table lists TypeScript as the language for both frontend and backend."
+    },
+    {
+     "key": "nestjs",
+     "label": "NestJS",
+     "status": "used",
+     "evidence": "The NestJS backend communicates over a REST API and is deployed on AWS Elastic Beanstalk."
+    },
+    {
+     "key": "vite",
+     "label": "Vite",
+     "status": "used",
+     "evidence": "The frontend layer uses React with Vite as the build tool, deployed on Vercel."
+    },
+    {
+     "key": "vercel",
+     "label": "Vercel",
+     "status": "used",
+     "evidence": "The technology stack table lists Vercel as the frontend deployment platform."
+    },
+    {
+     "key": "aws",
+     "label": "Amazon Web Services",
+     "status": "used",
+     "evidence": "The backend is deployed on AWS Elastic Beanstalk per the technology stack table."
+    },
+    {
+     "key": "railway",
+     "label": "Railway",
+     "status": "used",
+     "evidence": "The automation layer (n8n) is deployed on Railway per the technology stack table."
+    },
+    {
+     "key": "sanity",
+     "label": "Sanity headless CMS",
+     "status": "used",
+     "evidence": "Verified articles are published directly to a Sanity content database via the @sanity/client JavaScript library."
+    },
+    {
+     "key": "google_oauth",
+     "label": "Google OAuth 2.0",
+     "status": "used",
+     "evidence": "Authentication uses Google OAuth 2.0 login with token exchange and HTTP-only cookie session management."
+    },
+    {
+     "key": "figma",
+     "label": "Figma",
+     "status": "used",
+     "evidence": "The frontend team member used Figma to design wireframes and interface mockups for each module of the dashboard."
+    },
+    {
+     "key": "bcrypt",
+     "label": "Bcrypt",
+     "status": "used",
+     "evidence": "The user collection schema stores Bcrypt-hashed passwords."
+    },
+    {
+     "key": "sonar",
+     "label": "Sonar news data source",
+     "status": "used",
+     "evidence": "The automated pipeline retrieves news data from external sources such as Sonar."
+    },
+    {
+     "key": "nextjs",
+     "label": "Next.js",
+     "status": "cited",
+     "evidence": "The architecture section describes the React/Next.js frontend, while the authoritative technology stack table lists React with Vite."
+    },
+    {
+     "key": "apache_airflow",
+     "label": "Apache Airflow",
+     "status": "cited",
+     "evidence": "Related work discusses Apache Airflow as a Python-based orchestration alternative that was not chosen."
+    },
+    {
+     "key": "zapier",
+     "label": "Zapier and Make",
+     "status": "cited",
+     "evidence": "Related work compares cloud-based automation alternatives Make and Zapier, which were rejected for pricing and UI reasons."
+    },
+    {
+     "key": "contentful",
+     "label": "Contentful",
+     "status": "cited",
+     "evidence": "Contentful is discussed as a headless CMS alternative that becomes cost-prohibitive at scale for a student project."
+    },
+    {
+     "key": "strapi",
+     "label": "Strapi",
+     "status": "cited",
+     "evidence": "Strapi is discussed as a self-hosted open-source CMS alternative, though Sanity was preferred."
+    },
+    {
+     "key": "jasper_ai",
+     "label": "Jasper AI and Copy.ai",
+     "status": "cited",
+     "evidence": "Related work reviews Jasper AI and Copy.ai as AI writing assistants that lack workflow integration."
+    }
+   ]
+  }
+ },
+ {
+  "id": "26029",
+  "canonical_title": "Improving Sales Productivity at Adecco",
+  "aliases": [
+   "Pro Sales System",
+   "Pro Sales"
+  ],
+  "phase": "final",
+  "course_code": "CSX3011",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Maythawee Thammakan",
+    "student_id": "6510475"
+   },
+   {
+    "name": "Palapat Tabata",
+    "student_id": "6510476"
+   }
+  ],
+  "advisor": "Dr. Kwankamol Nongpong",
+  "committee": [
+   "Asst. Prof. Dr. Dobri Atanassov Batovski",
+   "A. Sakchhi Paudel"
+  ],
+  "abstract": "This project presents the development of Pro Sales, a web-based system designed to improve sales productivity for the Japanese Sales Team at Adecco, a global recruitment and human resources company operating in Thailand. The system aims to support sales representatives in managing prospect companies, organizing outreach activities, and identifying potential clients more efficiently through a centralized platform. Another objective of the project is to organize and centralize the sales team's company database, which was previously stored across multiple Excel files. The system consolidates these datasets into a structured relational database while ensuring that all information is stored locally within the organization to address data privacy concerns. Pro Sales is developed using modern web technologies, including React, Node.js, and PostgreSQL, to provide an efficient and scalable solution for managing sales data and improving overall sales operations.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [
+    "nlp"
+   ],
+   "technology": [
+    "nodejs",
+    "postgresql",
+    "react"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "recruitment",
+     "label": "Recruitment and staffing industry",
+     "status": "used",
+     "evidence": "The project improves sales productivity for the Japanese Sales Team at Adecco, a global recruitment and human resources company, and scrapes competitor recruitment platforms for leads."
+    }
+   ],
+   "technology": [
+    {
+     "key": "google_gemini",
+     "label": "Google Gemini 2.5 Flash",
+     "status": "used",
+     "evidence": "Job description text is sent to Gemini 2.5 Flash AI, which analyzes the text and identifies the hiring company behind each competitor job post, achieving 40.63 percent accuracy on 128 Kamome postings."
+    },
+    {
+     "key": "python",
+     "label": "Python",
+     "status": "used",
+     "evidence": "Web scraping is performed using Python with Selenium WebDriver, and Python upsert scripts transform and normalize the scraped CSV data into PostgreSQL."
+    },
+    {
+     "key": "selenium",
+     "label": "Selenium",
+     "status": "used",
+     "evidence": "The Selenium library was adopted to control a real browser for dynamic websites, simulating clicks, form submissions, scrolling, JavaScript execution, and logins."
+    },
+    {
+     "key": "beautifulsoup",
+     "label": "BeautifulSoup",
+     "status": "cited",
+     "evidence": "Traditional scraping relies on the BeautifulSoup library to parse static HTML, but it was insufficient because target sites render content with JavaScript."
+    },
+    {
+     "key": "tailwind_css",
+     "label": "Tailwind CSS",
+     "status": "used",
+     "evidence": "Tailwind CSS was used to design the user interface and ensure a clean and responsive layout."
+    },
+    {
+     "key": "vite",
+     "label": "Vite",
+     "status": "used",
+     "evidence": "The frontend is a web-based interface developed using React, Tailwind CSS, and Vite."
+    },
+    {
+     "key": "aws",
+     "label": "Amazon Web Services",
+     "status": "used",
+     "evidence": "An AWS EC2 Ubuntu instance runs the daily scraping server, scraped CSVs are uploaded to an AWS S3 bucket, and an AWS Lightsail instance hosts the WireGuard relay."
+    },
+    {
+     "key": "wireguard",
+     "label": "WireGuard VPN",
+     "status": "used",
+     "evidence": "Secure database access uses a WireGuard VPN network with a cloud relay server, assigning internal 10.10.0.x/24 addresses and DNAT forwarding to the local PostgreSQL host."
+    },
+    {
+     "key": "wsl",
+     "label": "Windows Subsystem for Linux",
+     "status": "used",
+     "evidence": "The PostgreSQL server runs locally inside WSL (Ubuntu) on port 5433, kept local because Amazon RDS was disallowed by data privacy policy."
+    },
+    {
+     "key": "systemd",
+     "label": "systemd timers",
+     "status": "used",
+     "evidence": "The scraping process on the EC2 server is scheduled using systemd timers, which trigger the scripts once per day."
+    },
+    {
+     "key": "tf_idf",
+     "label": "TF-IDF",
+     "status": "cited",
+     "evidence": "The original Snipe concept extracted representative phrases from job postings using TF-IDF and web searches, abandoned after the Google Custom Search API was discontinued in early 2025."
+    },
+    {
+     "key": "pgadmin",
+     "label": "pgAdmin and psql",
+     "status": "cited",
+     "evidence": "Team members connect to the private network using database clients such as pgAdmin or psql."
+    }
+   ]
+  }
+ },
+ {
+  "id": "26033",
+  "canonical_title": "Hop-On - Ride Sharing Mobile Application",
+  "aliases": [
+   "Hop-On Ridesharing Platform",
+   "Hop-On RideShare"
+  ],
+  "phase": "proposal",
+  "course_code": "CS 3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Nattasasi Nithiwpranan",
+    "student_id": "6610918"
+   },
+   {
+    "name": "Mya Tagu Khin Khin",
+    "student_id": "6611216"
+   },
+   {
+    "name": "Sai Wai Yan Tint",
+    "student_id": "6611228"
+   }
+  ],
+  "advisor": "Dr. Phyo Min Tun",
+  "committee": [
+   "Dr. Mana Tanachan",
+   "Asst. Prof. Dr. Dobri Atanassov Batovski"
+  ],
+  "abstract": "Daily transportation often faces challenges such as traffic congestion, high travel costs, and environmental pollution. Many individuals travel to similar destinations using separate vehicles, which leads to inefficient transportation and increased traffic. Hop-On RideShare is a ride-sharing platform designed to connect users who are traveling in the same direction. The application allows users to post rides, view available rides, and join shared trips easily through a mobile application. By enabling users to share rides, the system helps reduce travel costs, decrease traffic congestion, and promote eco-friendly transportation. The application integrates features such as ride management, real-time map navigation, and communication between users. It is developed using Android technologies with Kotlin and Jetpack Compose, supported by MongoDB and Google Maps APIs for location and routing services.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "transportation"
+   ],
+   "topic": [
+    "geolocation"
+   ],
+   "technology": [
+    "kotlin",
+    "mongodb"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "ride_sharing",
+     "label": "Ride sharing and carpooling",
+     "status": "used",
+     "evidence": "Hop-On RideShare is a ride-sharing platform connecting users traveling in the same direction, letting them post, view, and join shared trips."
+    }
+   ],
+   "technology": [
+    {
+     "key": "android",
+     "label": "Android",
+     "status": "used",
+     "evidence": "The application is developed using Android technologies and distributed as a mobile application."
+    },
+    {
+     "key": "jetpack_compose",
+     "label": "Jetpack Compose",
+     "status": "used",
+     "evidence": "The abstract states the app is developed using Android technologies with Kotlin and Jetpack Compose."
+    },
+    {
+     "key": "google_maps",
+     "label": "Google Maps APIs",
+     "status": "used",
+     "evidence": "The application is supported by MongoDB and Google Maps APIs for location and routing services, including real-time map navigation."
+    }
+   ]
+  }
+ },
+ {
+  "id": "26037",
+  "canonical_title": "Game Realism through Graphics and Physics",
+  "aliases": [
+   "Game IT Research"
+  ],
+  "phase": "final",
+  "course_code": "ITX 3200",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Sai Sy Hein",
+    "student_id": "6420131"
+   }
+  ],
+  "advisor": "Dr. Phyo Min Tun",
+  "committee": [
+   "Dr. Paitoon Porntrakoon",
+   "Dr. Anilkumar Kothalil Gopalakrishnan"
+  ],
+  "abstract": "The development of visually realistic virtual environments has become an important objective in modern computer graphics and game development. Game engines such as Unreal Engine 5 provide advanced technologies for real-time rendering and physics simulation, enabling developers to create highly immersive environments. However, achieving high levels of realism in real-time applications introduces significant computational challenges. Rendering systems that simulate realistic lighting behavior require substantial GPU resources, while physics simulation systems require CPU processing power. Because real-time applications must maintain stable frame rates, rendering and physics systems must operate within strict performance constraints. Indoor environments present additional challenges because lighting reflections and object interactions occur within confined spaces. Small visual artifacts or unstable physics behavior can significantly reduce perceived realism. Developers must therefore carefully balance rendering quality and physics precision to achieve both visual fidelity and performance stability. This project investigates the interaction between rendering and physics subsystems in Unreal Engine 5 and proposes a performance-aware framework for enhancing indoor scene realism. The study analyzes how rendering technologies such as Lumen global illumination and physics systems such as the Chaos physics engine compete for computational resources within a fixed frame-time budget. The results suggest that improvements in lighting coherence often produce greater perceptual realism benefits than marginal increases in physics precision in typical indoor scenes. Based on this observation, a system-level framework is proposed that coordinates rendering and physics parameters to optimize realism while maintaining real-time performance.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "game",
+    "research"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [],
+   "technology": [
+    "unreal_engine"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "lumen",
+     "label": "Lumen global illumination",
+     "status": "used",
+     "evidence": "The study analyzes how rendering technologies such as Lumen global illumination compete for computational resources within a fixed frame-time budget."
+    },
+    {
+     "key": "chaos_physics",
+     "label": "Chaos physics engine",
+     "status": "used",
+     "evidence": "Physics systems such as the Chaos physics engine are analyzed against rendering load, and collision stability is one of the measured metrics."
+    },
+    {
+     "key": "unreal_engine_5",
+     "label": "Unreal Engine 5",
+     "status": "used",
+     "evidence": "This project investigates the interaction between rendering and physics subsystems in Unreal Engine 5 and proposes a performance-aware framework for enhancing indoor scene realism."
+    }
+   ]
+  }
+ }
+]

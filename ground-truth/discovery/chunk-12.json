@@ -1,0 +1,538 @@
+[
+ {
+  "id": "1837",
+  "canonical_title": "Sibyl: Using Data Analytics to Predict Student Performance for Recommended Courses",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 4200/IT 4292",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Sittisak Tangpraditchai",
+    "student_id": "5813526"
+   },
+   {
+    "name": "Chitavorn Bhuvapanich",
+    "student_id": "5812039"
+   },
+   {
+    "name": "Varissara Tangsajjanuraksa",
+    "student_id": "5811095"
+   }
+  ],
+  "advisor": "Dr. Songsak Channarukul",
+  "committee": [
+   "Dr. Benjawan Srisura",
+   "A. Tapanan Yeophantong"
+  ],
+  "abstract": "In the present, recommender systems are tools for filtering users’ historical information and activities to predict a set of items that likely to be the preference of the users. Besides, businesses utilize recommender systems to increase the value for its organizations and customers. Recommender systems researches and applications present statistic and artificial techniques related in constructing recommender system including machine learning, data mining, collaborative filtering, and content-based filtering. As we have chosen matrix factorization technique to build a course recommender system for university students called \"Sibyl\". Sibyl recommends courses by predicting grade of the selected courses. In this report, we delineate the design, analysis, and implementation of Sibyl in detailed. Moreover, we will discuss the problems we faced and methodology that makes Sibyl achieved in recommending courses using of one the collaborative filtering approach called matrix factorization.",
+  "abstract_source": "document",
+  "reported_keywords": [
+   "Recommender system",
+   "matrix factorization",
+   "courses recommender system",
+   "prediction"
+  ],
+  "classification": {
+   "category": [
+    "ai_data",
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [
+    "recommender_system"
+   ],
+   "technology": [
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "au_spark",
+     "label": "AU Spark",
+     "status": "used",
+     "evidence": "Section 3.2 Dataset: 'we have collected data from AU spark which is an innovative information system in Assumption University'."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1839",
+  "canonical_title": "SMFD Painless Form E-Approval",
+  "aliases": [
+   "SMFD.io"
+  ],
+  "phase": "final",
+  "course_code": null,
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Shahin R.",
+    "student_id": null
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [],
+  "abstract": "Think about how much time you spend on getting a paper or petition signed. It gets worse if many authorities need to sign your petition and its a nightmare if your request needs to be signed by a high authority such as organisation president. To understand what exactly is, SMFD read Bob's story.\n\nBob is a guy who works for an enterprise as a designer. Bob wants to get an authorised leave for four days. Bob works for the IT department, which is located forty Kilometre far from headquarter. Bob was sick on Monday; he first needs to download then print authorised leave form and take it to his immediate supervisor who is called John; if John is free, he signs his petition now Bob he has to take his paper his paper to IT department director Adam on the eleventh floor. Unfortunately, Adam is busy; he'll come back in three hours then he might sign Bob's petition. Now Bob needs to get to the headquarter and get his paper singed by Vice president and President but again, unfortunately, Vice president is only available on Wednesdays and President is only available on Fridays Bob is sick, tired and hopeless and he'll give up his petition and go to work even though he is sick and make others sick as well!\n\nAdam, the IT manager, is a smart guy. He hears the Bob story, and he wants to fix this huge issue. He does some research and finds out about SMFD, which makes the whole process paperless, fast and secure!\n\nNext week Alice gets sick.\n\nShe logs in into SMFD and request for an authorised leave, Adam receives an email about the case and checks his medical certificate everything is exceptional Adam sign Alice's petition on his laptop right after Adam sign John receives a notification on his tablet, so he signed as well, who is next on the list? Vice president, So he'll receive a notification, and he'll sign at all. Finally, the President receives a notification while he is on his vacation, signs the petition using his phone.\n\nAlice receives a notification about her petition approved on every step. Alice didn't leave the house; nobody kills the threes to get papers signed. The organisation saved tones of money on time and made their employees happy.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "php",
+    "laravel",
+    "mysql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "e_signature",
+     "label": "Electronic signature",
+     "status": "used",
+     "evidence": "Petitions are signed electronically on laptop, tablet, or phone with sequenced authorisation, and signatures are encrypted with AES-256."
+    }
+   ],
+   "technology": [
+    {
+     "key": "php",
+     "label": "PHP",
+     "status": "used",
+     "evidence": "Backend tools list: 'PHP 7.3.x'; 'We used php and laravel for implementing backend.'"
+    },
+    {
+     "key": "laravel",
+     "label": "Laravel",
+     "status": "used",
+     "evidence": "Backend tools list: 'Laravel 6.x' and Laravel Eloquent model code for ABAC_USERS."
+    },
+    {
+     "key": "eloquent_orm",
+     "label": "Eloquent ORM",
+     "status": "used",
+     "evidence": "'for relationships instead of using SQL we used Eloquent ORM', with Model and hasMany relationship code shown."
+    },
+    {
+     "key": "nginx",
+     "label": "Nginx",
+     "status": "used",
+     "evidence": "Backend tools list: 'Nginx 1.17.x'; requests are forwarded to 'our Nginx proxy server'."
+    },
+    {
+     "key": "javascript",
+     "label": "JavaScript ES6",
+     "status": "used",
+     "evidence": "Frontend tools list: 'Javascript ES6' compiled for modern browsers."
+    },
+    {
+     "key": "bootstrap",
+     "label": "Bootstrap",
+     "status": "used",
+     "evidence": "Frontend list: 'Bootstrap 4.3'; 'You can leverage bootstrap classes to make beautiful forms.'"
+    },
+    {
+     "key": "sass",
+     "label": "SASS",
+     "status": "used",
+     "evidence": "Frontend tools list: 'SASS'."
+    },
+    {
+     "key": "webpack",
+     "label": "Webpack",
+     "status": "used",
+     "evidence": "'we used web pack so we can compile ES6 syntax for all modern browsers.'"
+    },
+    {
+     "key": "npm",
+     "label": "npm",
+     "status": "used",
+     "evidence": "'We used NPM to manage our external frontend libraries.'"
+    },
+    {
+     "key": "babel",
+     "label": "Babel",
+     "status": "used",
+     "evidence": "Frontend tools list: 'Babel'."
+    },
+    {
+     "key": "datatables",
+     "label": "DataTables",
+     "status": "used",
+     "evidence": "Frontend tools list: 'Datatables' and reference to datatables.net manual."
+    },
+    {
+     "key": "cloudflare",
+     "label": "Cloudflare",
+     "status": "used",
+     "evidence": "'Every request from users will be send to cloud flare and it will be checked for being malicious.'"
+    },
+    {
+     "key": "digitalocean",
+     "label": "DigitalOcean",
+     "status": "used",
+     "evidence": "'We used digital ocean to make future scaling easy.'"
+    },
+    {
+     "key": "ubuntu",
+     "label": "Ubuntu Linux",
+     "status": "used",
+     "evidence": "Backend tools list: 'Ubuntu 18.4.x' and Hardened Linux security measure."
+    },
+    {
+     "key": "ldap",
+     "label": "LDAP",
+     "status": "used",
+     "evidence": "'We support three authentication types: Google G Suite, LDAP, Database'; 'SMFD does have a LDAP driver.'"
+    },
+    {
+     "key": "google_g_suite",
+     "label": "Google G Suite",
+     "status": "used",
+     "evidence": "G Suite OAuth integration; code snippet restricts login to the au.edu domain."
+    },
+    {
+     "key": "google_analytics",
+     "label": "Google Analytics",
+     "status": "used",
+     "evidence": "'For analysing results we used google Analytics.'"
+    },
+    {
+     "key": "jquery",
+     "label": "jQuery",
+     "status": "cited",
+     "evidence": "References list https://api.jquery.com/."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1902",
+  "canonical_title": "Tax Invoice System (IoT)",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT 4292",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Woranat Swangswai",
+    "student_id": "5837619"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "Asst. Prof. Dr. Paitoon Porntrakoon",
+   "Dr. Benjawan Srisura"
+  ],
+  "abstract": "Gas stations in Thailand issue many tax invoices every day, and the current process needs many steps per receipt, is partly paper based, and carries high maintenance costs. The project developed a tax invoice system in Python with a Tkinter interface that runs on a Raspberry Pi 3 Model B+ with an Epson TM-T82 receipt printer. Employees can edit product information, keep tax invoice records, view employee shift history, and print tax invoice receipts. The system also searches a customer's company details from a tax ID through The Revenue Department API so staff do not have to enter the information manually. Development followed an Agile methodology managed by a single developer, and the goal was a low cost and easy to use system for employees who are not familiar with technology.",
+  "abstract_source": "generated",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "hardware_iot",
+    "software_application"
+   ],
+   "platform": [
+    "embedded_hardware"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "point_of_sale",
+     "label": "Point of sale",
+     "status": "used",
+     "evidence": "The system improves POS based tax invoicing at gas stations; introduction defines POS systems and the project runs the tax invoice software on a Raspberry Pi terminal with receipt printer."
+    }
+   ],
+   "technology": [
+    {
+     "key": "raspberry_pi",
+     "label": "Raspberry Pi",
+     "status": "used",
+     "evidence": "'I decide to use Rasberry Pi, a tiny credit card size computer' to run the software; hardware cost table lists Raspberry Pi 3 model B+."
+    },
+    {
+     "key": "tkinter",
+     "label": "Tkinter",
+     "status": "used",
+     "evidence": "'the GUI for the software is Tkinter which is the GUI part of Python.'"
+    },
+    {
+     "key": "thai_revenue_department_api",
+     "label": "The Revenue Department API",
+     "status": "used",
+     "evidence": "Function 4: 'Search tax id via The Revenue Department's API' to fetch customer company information automatically."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1904",
+  "canonical_title": "Staff Clocking System Using Face Detection",
+  "aliases": [],
+  "phase": "proposal",
+  "course_code": "CS4200",
+  "program": "computer_science",
+  "semester": null,
+  "academic_year": null,
+  "students": [
+   {
+    "name": "Sonam Choejur Tshering",
+    "student_id": "5918422"
+   },
+   {
+    "name": "Brighton Tapiwa Shanji",
+    "student_id": "5748131"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "A. Tapanan Yeophantong",
+   "Asst. Prof. Dr. Paitoon Porntrakoon"
+  ],
+  "abstract": "Assumption University staff currently clock in with fingerprint scanners that cause long queues at peak times or with paper log books that allow buddy punching and can be lost. The project proposed a staff clocking system that runs on Android tablets mounted around campus and identifies each employee from their face. The application detects the face with Firebase ML Kit, generates a 128 dimension embedding with a Facenet model converted to TensorFlow Lite, and compares embeddings with Euclidean distance to recognize the employee and record the clock in time in Firebase. A liveness detection model based on InceptionV3 with transfer learning was trained on the NUAA Photograph Imposter Database to reject fake faces. The Flutter admin application registers users, uploads cropped face images with embeddings to the database, and shows recognition results for clocking in and out.",
+  "abstract_source": "generated",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "firebase"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "time_attendance",
+     "label": "Time and attendance",
+     "status": "used",
+     "evidence": "The system clocks staff in and out using face recognition and stores datetime stamps for Assumption University employees."
+    }
+   ],
+   "technology": [
+    {
+     "key": "flutter",
+     "label": "Flutter",
+     "status": "used",
+     "evidence": "'Flutter App Admin UI' and 'Flutter Face Attendance' app screenshots for registering users and clocking in."
+    },
+    {
+     "key": "firebase_ml_kit",
+     "label": "Firebase ML Kit",
+     "status": "used",
+     "evidence": "'The system focuses on using Firebase MLKits to detect faces', with FirebaseVisionImage Kotlin code."
+    },
+    {
+     "key": "facenet",
+     "label": "Facenet",
+     "status": "used",
+     "evidence": "System overview runs the 'Facenet Model' to produce a 128-D embedding compared by Euclidean distance."
+    },
+    {
+     "key": "tensorflow",
+     "label": "TensorFlow",
+     "status": "used",
+     "evidence": "'The tensorflow model is converted to tflite which is compatible on mobile devices.'"
+    },
+    {
+     "key": "tensorflow_lite",
+     "label": "TensorFlow Lite",
+     "status": "used",
+     "evidence": "Model file 'choejur facenet.tflite' loaded with tf.lite.Interpreter; input [1,160,160,3], output [1,128]."
+    },
+    {
+     "key": "keras",
+     "label": "Keras",
+     "status": "used",
+     "evidence": "'Image augmentation in keras' using ImageDataGenerator for the liveness model."
+    },
+    {
+     "key": "inception_v3",
+     "label": "InceptionV3",
+     "status": "used",
+     "evidence": "'We used the InceptionV3 pretrained model as our starting point for the liveness detection.'"
+    },
+    {
+     "key": "kotlin",
+     "label": "Kotlin",
+     "status": "used",
+     "evidence": "MLKit integration code is Kotlin ('val image = FirebaseVisionImage.fromBitmap(bitmap)')."
+    },
+    {
+     "key": "python",
+     "label": "Python",
+     "status": "used",
+     "evidence": "'The input and output details of the model can then be obtained by running a simple python script' with tf.lite and numpy."
+    },
+    {
+     "key": "numpy",
+     "label": "NumPy",
+     "status": "used",
+     "evidence": "Euclidean distance computed with 'np.linalg.norm(np.subtract(emb1, emb2))'."
+    },
+    {
+     "key": "openface",
+     "label": "OpenFace",
+     "status": "cited",
+     "evidence": "Related works: 'Other popular techniques are VGGFace Model, OpenFace, which are similar to Facenet.'"
+    },
+    {
+     "key": "vgg_face",
+     "label": "VGGFace",
+     "status": "cited",
+     "evidence": "Related works mentions the VGGFace model as a popular facial recognition technique."
+    },
+    {
+     "key": "cloud_automl",
+     "label": "Cloud AutoML",
+     "status": "cited",
+     "evidence": "Related works: 'Other notable techniques is called CloudAutoML which is an online ML model which is a kit provided by firebase.'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "1906",
+  "canonical_title": "Elderly care service Finder",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT 4292",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Kaori Saito",
+    "student_id": "5828406"
+   },
+   {
+    "name": "Sophearith Saing",
+    "student_id": "5838108"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Paitoon",
+  "committee": [
+   "Asst. Prof. Dr. Rachsuda Setthawong",
+   "A. Chayapol Moemeng"
+  ],
+  "abstract": "This project is aimed at finding elderly care services for both parties in our system. The system is designed and developed based on the research by SCB Economic Intelligence Center. This is a web-based system, which can find and match Caregiver and Elders. Caregiver can provide services and schedules and Elders select services that they want then the system will match and show the list of Caregivers nearby Elders. Elders also can set services as default that they want to get. Then, they can choose whether they want to have a meeting with Caregiver who they selected from the list before making final decision to get services. Facility to communicate by using messenger and notification for both Caregiver and Elders are also available. Elderly care service Finder can be a very helpful system within Caregivers and Elders. This system provides services for not only Caregivers and Elders, but also administrators to approve Caregivers' information to be kept up-to-date and quality of their work by certification with identification or signature by the specific doctor or certified person, so that Elders feel secure and trust the information on our website. Furthermore, our system can also help both users to reduce the difficulty of finding care services around them by searching by postal code or service. Finally, this system is anticipated to be useful not only for specific area of Thailand, but also for all people in Thailand.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "healthcare"
+   ],
+   "topic": [
+    "recommender_system"
+   ],
+   "technology": [
+    "mongodb",
+    "nodejs"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "elderly_care",
+     "label": "Elderly care",
+     "status": "used",
+     "evidence": "The web system matches elders with caregivers, with certification approval by administrators, based on SCB Economic Intelligence Center research."
+    }
+   ],
+   "technology": [
+    {
+     "key": "mean_stack",
+     "label": "MEAN stack",
+     "status": "used",
+     "evidence": "'For the Backend, we decided to use MEAN for this project.'"
+    },
+    {
+     "key": "angular",
+     "label": "Angular",
+     "status": "used",
+     "evidence": "'it is better and work well to use Angular'; the application is client rendered by Angular."
+    },
+    {
+     "key": "express",
+     "label": "Express",
+     "status": "used",
+     "evidence": "'Express handles all the interactions between the frontend and the database.'"
+    },
+    {
+     "key": "aws",
+     "label": "Amazon Web Services",
+     "status": "used",
+     "evidence": "'We used Node.js for our web server and the domain is AWS. Unfortunately, it costed $15 for this project.'"
+    },
+    {
+     "key": "bootstrap",
+     "label": "Bootstrap",
+     "status": "used",
+     "evidence": "References list https://getbootstrap.com/ for the website UI."
+    },
+    {
+     "key": "angular_material",
+     "label": "Angular Material",
+     "status": "cited",
+     "evidence": "References list https://material.angular.io/."
+    }
+   ]
+  }
+ }
+]

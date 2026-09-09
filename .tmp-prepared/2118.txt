@@ -1,0 +1,1218 @@
+--- page 1 ---
+ 
+ 
+ 
+ASSUMPTION UNIVERSITY 
+Faculty of Science and Technology 
+Department of Computer Science 
+ 
+ 
+CS4200 
+SENIOR PROJECT 
+FINAL REPORT 
+ 
+ 
+ 
+VitriApp-Aufträge - 
+Mobile application for checklists in a computer-aided 
+facility management context 
+ 
+Project Advisor: A. Tapanan Yeophantong 
+ 
+Project Committee: Dr. Songsak Channarukul 
+                                     Dr. Kwankamol Nongpong 
+ 
+ 
+by 
+ 
+ 
+Jan Duldhardt     6118135 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Semester 1/2021 
+
+--- page 2 ---
+ 
+ASSUMPTION UNIVERSITY 
+Faculty of Science and Technology 
+Department of Computer Science 
+ 
+Senior Project Approval 
+ 
+Title:  VitriApp-Aufträge - Mobile application for checklists in a 
+computer-aided facility management context 
+Members:  Jan  Duldhardt  6118135 
+  
+ 
+Academic Year:  2021 
+Semester:  1 
+ 
+ 
+The Department of Computer Science, Faculty of Science and Technology, 
+Assumption University has approved of this final report, submitted in partial 
+fulfillment for the three -credit course, CS4200, under the requirements for the degree 
+of Bachelor of Science in Computer Science. 
+ 
+Approving Committee: 
+ 
+ 
+ 
+______________________________ 
+A. Tapanan Yeophantong 
+(Advisor) 
+ 
+ 
+ 
+ 
+______________________________ 
+Dr. Songsak Channarukul 
+(Committee Member) 
+ 
+ 
+ 
+_____________________________ 
+Dr. Kwankamol Nongpong 
+(Committee Member) 
+ 
+--- page 3 ---
+ 
+ABSTRACT 
+Checklists are everywhere, they help us to reduce failure by compensating for 
+potential limits of human memory and attention. Especially when it comes to facility 
+management, checklists are a good tool for the people who feed the system with data 
+such that  every time there is a routine to be followed, the person can just use a 
+checklist to not forget anything. Similar to when we go grocery shopping and do not 
+prepare a list , often we buy unnecessary things, and worse we forgot things that we 
+urgently need.  This is the reason EBCsoft GmbH is developing Vormula Editor, 
+Vormula App and VitriApp -Aufträge. With the Vormula Editor, the customer can 
+create custom checklists with endless possibilities. To use these checklists, the 
+customer has two cho ices: Vormula App, a simple mobile application where the user 
+can download checklists from the Vormula Editor, fill them out, and export them via 
+email. Second, the VitriApp-Aufträge, which also has all the features of the Vormula -
+App but can connect with the Vitricon CAFM. Both of these applications are already 
+in production and available for Android, iOS, and UWP. After an initial proof of 
+concept prototype at the beginning of 2020, I began working on developing both 
+applications in April 2021. Even thoug h both applications are already in use by our 
+customers, the applications are still in active development , as customers require more 
+and more features. Because of this, it was and still is very important to keep the code 
+quality at high standards such that  new features and changes can be implemented 
+quickly. This is reached by using design patterns and principles like Clean Code, 
+Clean Architecture, and SOLID principles. 
+  
+--- page 4 ---
+ 
+Acknowledgment 
+I would like to express the deepest appreciation to my project advisor , A. Tapanan 
+Yeophantong. His dedication and keen interest above all his overwhelming attitude to 
+help his students had been a big help in completing this project. 
+I owe a deep sense of gratitude to committee member and my academic advisor Dr. 
+Songsak Channarukul, who spiked my interest in mobile application development and 
+is always available when I need his help. 
+I would like to thank Dr. Kwankamol Nongpong for being an active member of this 
+project committee, providing honest and insightful feedback whic h has allowed me to 
+improve myself in various disciplines. 
+Piyakul Tillapart, Undergraduate Director in Computer Science for solving many of 
+my organization problems when it comes to university life, registration, and other 
+issues. 
+Claus Biedermann the CEO  of EBCsoft for trusting me  and allowing me to be in 
+charge of this project. 
+Maria Roßberg, the product manager of the App -Team who supports me a lot by  
+dealing with all the organizational work so that I can focus on the technical part. 
+My family, who supp orts me in any way possible even though I am far away from 
+home. 
+  
+--- page 5 ---
+ 
+Table of Contents 
+1 INTRODUCTION ......................................................................................................................... 1 
+1.1 RATIONALE AND MOTIVATION ........................................................................................................ 1 
+1.2 OBJECTIVES AND SCOPE OF WORK .................................................................................................. 1 
+1.3 OVERALL DESCRIPTION ................................................................................................................. 2 
+1.3.1 User Needs .......................................................................................................................... 2 
+1.3.2 Assumptions and Dependencies ......................................................................................... 3 
+1.4 SYSTEM FEATURES AND REQUIREMENTS ........................................................................................... 3 
+1.4.1 Functional Requirements .................................................................................................... 3 
+1.4.2 Checklist controls requirements .......................................................................................... 5 
+1.4.3 Conditions ......................................................................................................................... 10 
+1.4.4 Non-functional Requirements ........................................................................................... 13 
+2 SOFTWARE DESIGN .................................................................................................................. 14 
+2.1 BIG PICTURE ............................................................................................................................. 14 
+2.1.1 System Context ................................................................................................................. 14 
+2.1.2 Data Flow.......................................................................................................................... 15 
+2.2 SOFTWARE ARCHITECTURE .......................................................................................................... 16 
+2.2.1 Overview ........................................................................................................................... 16 
+2.2.2 Layers ................................................................................................................................ 16 
+2.2.3 Layer Relations ................................................................................................................. 18 
+2.2.4 Design and architectural patterns .................................................................................... 19 
+3 IMPLEMENTATION BACKEND ................................................................................................... 21 
+3.1 VORMULA EDITOR ..................................................................................................................... 21 
+3.2 CHECKLIST-MODE DOWNLOAD ...................................................................................................... 21 
+3.3 VITRICON-MODE DOWNLOAD ....................................................................................................... 22 
+4 IMPLEMENTATION FRONTEND ................................................................................................ 24 
+4.1 CHECKLIST CONTROLS ................................................................................................................. 24 
+4.1.1 Checklist data format ....................................................................................................... 24 
+4.1.2 Checklist structure ............................................................................................................ 25 
+4.1.3 Conditions ......................................................................................................................... 26 
+4.1.4 Controls implementation .................................................................................................. 28 
+4.1.5 Generating a checklist ...................................................................................................... 29 
+4.1.6 Checklist result with visitor pattern .................................................................................. 30 
+4.2 CAFM INTEGRATION .................................................................................................................. 31 
+4.3 CODE QUALITY........................................................................................................................... 32 
+4.4 TESTING ................................................................................................................................... 34 
+4.5 LOGGING .................................................................................................................................. 34 
+5 REFERENCES ............................................................................................................................. 36 
+  
+--- page 6 ---
+ 
+List of Figures 
+FIGURE 2.1. CONTEXT DIAGRAM OF AUAPP ..................................................................................... 14 
+FIGURE 2.2. THE DATA FLOW OF AUAPP WITH EXTERNAL INTERFACES  ............................................ 15 
+FIGURE 2.3. 5-TIER LAYERED MOBILE APPLICATION ARCHITECTURE ................................................ 16 
+FIGURE 2.4. ENTITY FRAMEWORK [2] ............................................................................................... 17 
+FIGURE 2.5. LAYER INTERACTION FOR ORDERAPPOINTMENT VIEW ................................................. 19 
+FIGURE 2.6. MODEL-VIEW-VIEWMODEL PATTERN [4] ...................................................................... 20 
+FIGURE 3.1. DOWNLOAD CHECKLIST FLOW ...................................................................................... 22 
+FIGURE 3.2. SYNCHRONIZATION VITRICON-MODE ........................................................................... 23 
+FIGURE 3.3. GRAPHQL DATA RETRIEVAL .......................................................................................... 23 
+FIGURE 4.1. CHECKLIST-META-INFO.JSON ........................................................................................ 24 
+FIGURE 4.2. JSON FILE FOR DATE-TIME CONTROLS IN CHECKLIST ..................................................... 25 
+FIGURE 4.3. CHECKLIST STRUCTURE WITH GROUPS .......................................................................... 26 
+FIGURE 4.4. DYNAMIC EXPRESSO – EXPRESSION TO FUNCTION ....................................................... 27 
+FIGURE 4.5. BINDING STRING EXPRESSION TO FUNCTION ................................................................ 27 
+FIGURE 4.6. BINDING STRING EXPRESSION TO FUNCTION ................................................................ 27 
+FIGURE 4.7. EVAL OF LONG CONTROL .............................................................................................. 28 
+FIGURE 4.8. CHECKLIST CONTROLS DEFINED IN MOBILE APPLICATION  ............................................. 28 
+FIGURE 4.9. CREATE CHECKLIST CODE SNIPPET ................................................................................ 29 
+FIGURE 4.10. DISPLAYCONDITION AND DEPENDENCY ...................................................................... 30 
+FIGURE 4.11. CHECKLISTRESULT UML DIAGRAM FOR VISITOR-PATTERN .......................................... 30 
+FIGURE 4.12. CODE SNIPPET USING THE VISITOR PATTERN FOR CHECKLISTRESULT  ......................... 31 
+FIGURE 4.13. CHECKLIST RELATIONSHIPS IN CAFM ........................................................................... 32 
+FIGURE 4.14. REGISTER TYPES IN IOC CONTAINER ............................................................................ 33 
+FIGURE 4.15 ORDERAPPOINTMENTLISTPAGEVIEWMODEL WITH DEPENDENCY INJECTION  ............. 34 
+FIGURE 4.16. LOG FILE ...................................................................................................................... 35 
+ 
+ 
+ 
+--- page 7 ---
+1 
+ 
+1 Introduction 
+1.1 Rationale and Motivation 
+After VitriApp-Zähler for the first Senior Project, which was developed for EBCsoft 
+GmbH, I was tasked with a new project by the same company – VitriApp-Aufträge. 
+The new project is quite different from the projects I have worked on so far,  I 
+accepted the project, to challenge myself and broaden my knowledge. Further, it is 
+very interesting to work on a project which need ed to be designed from the start and 
+adjust the features based on customer feedback. 
+1.2 Objectives and Scope of Work 
+The main goal is to develop a mobile application for iOS, Android and UWP with the 
+main functionality to fill out checklists and export the result. 
+The application has two different modes, the first mode is the Vitricon -mode. In this 
+mode, the user needs to be a customer of the CAFM system Vitricon and can use 
+checklists in connection with technical  objects, inventories, and orders. The second 
+mode, called Checklist -mode is much simpler. It basically consists of one main 
+feature, filling out checklists and exporting those results via email. This mode is made 
+for users who are not customers of the CAFM system yet. For marketing reasons there 
+is also a standalone mobile application in the stores called “Vormula App”, which is 
+only able to use the checklist mode.  From now,  I will only talk about VitriApp -
+Aufträge which is the scope of this Senior Project 2, as all the features of the Vormula 
+App are included in the VitriApp-Aufträge checklist mode. 
+I am responsible for the mobile application, GraphQL service  and involved in all 
+stages of the development process.  The application is already finished and in use by 
+our customers. 
+  
+--- page 8 ---
+2 
+ 
+1.3 Overall Description 
+The order app is a mobile application with which orders can be processed that have 
+been created in  the CAFM syste m.  In the CAFM system, all topics related to the 
+maintenance, care and modernization of buildings are managed. This includes a 
+number of services that need to be performed. In the projects and orders area, these 
+services are managed. It is possible to cre ate regular interval appointments or 
+individual appointments for a wide variety of inspections and work. Based on order 
+categories (e.g.: maintenance orders) or order objects (e.g.: air conditioning), 
+individually configurable checklists can be assigned. A  checklist corresponds to a 
+form that must be filled out by the user in the app lication. The checklist is linked to 
+the order in the CAFM system and then the order and associated appointments, 
+including the checklist, are transferred to the order app lication. In the application, the 
+checklists and the associated appointment details are then filled digitally and sent 
+back to the CAFM system after processing. 
+1.3.1 User Needs 
+The users of the order app are usually service providers who carry out certain 
+activities within the buildings. Using the app, they are shown the jobs assigned to 
+them. When an appointment takes place on site in the building, they can log it 
+digitally in the app. First, define the start and end time, enter remarks, then sign 
+everything digitally, and second, fill out the attached checklist. Once the appointment 
+has been successfully completed, the service provider can send their entries back to 
+the CAFM system. If the service provider receives an order without a specific 
+appointment, he can also  create a new appointment in the AUAPP in order to be able 
+to organize his work planning more flexibly. 
+Use Case: Janitor’s duties 
+A janitor has to go to a house once per week and perform different tasks. 
+First, an appointment sequence is created in the CAFM system and assigned to the 
+janitor. He gets an order with the category "Maintenance". A checklist "regular janitor 
+activities" is created to this order category.  
+Content of the checklist: 
+1. Empty garbage cans 
+2. Mow the lawn 
+3. Clean stairs 
+4. What is the condition of the house? 
+5. Are there any actions that need to be taken? 
+Now when the janitor goes to the house every Monday 8am, he opens his AUAPP, the 
+job, the appointment and enters the start time. Then he opens the checklist and fills it. 
+After that he enters the end time, fills in the comment, if necessary, changes the status 
+of the appointment to complete it and lastly give his signature. The janitor then clicks 
+--- page 9 ---
+3 
+ 
+on the synchronization button. T he data is sent  to the CAFM system and the 
+appointment disappears from the app.  The CAFM agent now sees the details entered 
+and the attachment with the completed checklist. 
+Use case 2: Air conditioning company 
+An air conditioning company is contracted to maintain the air conditioning system in 
+a building once a year. 
+An order is created in the CAFM system with the category "Maintenance". The 
+technical system "Air conditioning system XY" is linked to this order as the order 
+item. A checklist "Inspection of the air conditioning system" is linked to the order 
+object (technic al system).  There is no appointment, only the order with the order 
+object and the assignment to the air conditioning company. 
+The company gets the order displayed in the app and can create the appointment there 
+independently. The scheduling of the exact ti me is done by the company itself.  When 
+the appointment is due, it is opened, the start time is entered and the user navigates to 
+the order object. There, the associated checklist "Checking the air conditioning 
+system" is opened and filled with details on the spot.  
+There is a clear assignment of the checklist to the inventoried order item. So, the air 
+conditioning system has already been inventoried with a QR code and the company 
+knows exactly which air conditioning system it has to check.  If there are multiple 
+order items in one order, scanning the inventory QR code will uniquely identify the 
+correct item. Only one result per checklist and order item may be generated.  Then the 
+appointment is closed in the usual way and sent back to the CAFM system. 
+1.3.2 Assumptions and Dependencies 
+The Vitricon CAFM system must  be installed and linked to the VORMULA Editor, 
+where the checklists are configured. Th e login data must be entered in the AUAPP 
+and the installation of the GraphQL is required. 
+1.4 System Features and Requirements 
+1.4.1 Functional Requirements 
+The functional requirements are separated in three parts. First one for general features 
+presented in both modes, another one for checklist mode, Vitricon mode. 
+General functional requirements 
+Requirement 
+Login into two modes – 1. Checklist-mode, 2. Vitricon-mode 
+Base pages: Settings, Manual, Imprint, Privacy 
+Overview checklists – A list of all checklists in the app 
+--- page 10 ---
+4 
+ 
+Fill out checklists 
+Save draft during checklist fill out to continue at a later time 
+Keep multiple results for checklist 
+Pdf Report of result 
+ 
+Vitricon mode functional requirements 
+Requirement 
+Synchronization with Vitricon – In Vitricon mode the user can only synchronize which 
+first starts the upload and then the download 
+Synchronization upload and collision check – Uploads all the changed and new data to 
+the Vitricon, checks for collisions and let the user decide which data to keep 
+Synchronization download – User will get the data for the assigned projects, orders and 
+appointments set in the Vitricon 
+After synchronization keep only appointments which are still open. Closed 
+appointments have one of the following statuses: done, cancelled, insufficient, closed 
+with resubmission 
+Appointment-list overview - Show a list of all appointments, can be filtered to show only 
+specific appointments 
+Appointment-details – Shows an appointment in details and also lets the user update the 
+appointment’s start, end and status 
+Order items list – Shows a list of all the order items linked to order and appointment 
+Overview orders – Shows a list of all orders, can be filtered to show only specific orders 
+Create new appointment for an order 
+Overview checklist – Show all checklists relevant to an order, appointment and order 
+item 
+ 
+Checklist mode functional requirements 
+Requirement 
+Export result via E-Mail 
+ 
+--- page 11 ---
+5 
+ 
+1.4.2 Checklist controls requirements 
+In total there are 13 different controls.  In the following section are the requirements 
+for the attributes of each control type. In the All controls table the common attributes 
+are defined. 
+All controls 
+Field Type Comment 
+id number 
+(long) 
+Id of the control. Identifies the 
+controls uniquely. Is used to define 
+the order of the controls. Each Id is 
+assigned only once per checklist. 
+uniqueId string Value that is unique within a 
+checklist. If the position of a control 
+(and therefore the id) changes, this 
+value remains the same. Format: 
+UUID / GUID 
+displayConditions array of 
+objects 
+List of DisplayConditions. See 
+DisplayConditions. 
+isValidCondition string Condition which defines when an 
+input value is valid. All 
+IsValidConditions of a checklist 
+must be fulfilled for a checklist to 
+be completed.  
+groupId number 
+(long) 
+Id of the group in which the control 
+is located. For root elements this 
+value is null. 
+designator string Designator (name) of the control. Is 
+displayed above the value field(s). 
+description string Additional description of the 
+control. Is displayed in a popup in 
+the app. 
+koCondition string (Not part of the scope) - If this 
+--- page 12 ---
+6 
+ 
+Field Type Comment 
+condition is met, the checklist is 
+automatically completed 
+isDisplayReport boolean Defines if the control should be 
+displayed in reports. 
+isDisplayReportIfNullOrEmpty boolean Specifies if the control should be 
+displayed in reports if the result 
+value of the control is null. 
+IsDisplayReportWithoutDesignator boolean Specifies if the designator should be 
+displayed in the report. 
+IsReportNewPage boolean Specifies if the controls should be 
+printed on a new page in the PDF 
+report.  
+DivergentDesignator string Specifies if the control should get a 
+different designator in reports. 
+IsRequired boolean Specifies if a value is required for 
+this control to be valid, i.e. its result 
+value must not be empty or null. 
+  
+DisplayConditions 
+Field Type Comment 
+displayConditionString string Condition that is evaluated. 
+DisplayConditionId number 
+(long) 
+Id of the control to which 
+the displayConditionString refers. 
+  
+Switch (booleans.json) 
+Field Type Comment 
+--- page 13 ---
+7 
+ 
+Field Type Comment 
+IsNullable boolean Specifies if there should be a third value (unknown) 
+besides True (yes) and False (no). 
+DefaultValue boolean This value is loaded as value when the checklist is opened, 
+as long as there is no saved value entered by the user. 
+  
+Long (longs.json) 
+Field Type Comment 
+IsNullable boolean Specifies if it is possible to leave this field empty when 
+filling out the checklist. If "false" is specified here, the 
+field is prefilled with "0". 
+DefaultValue number 
+(long) 
+This value is loaded as value when the checklist is 
+opened, as long as there is no saved value entered by the 
+user. 
+  
+Double (doubles.json) 
+Field Type Comment 
+IsNullable boolean Specifies if it is possible to leave this 
+field empty when filling out the 
+checklist. 
+If "false" is specified here, the field is 
+prefilled with "0.00" (decimal places 
+depending 
+on MaximumNumberDecimalDigits). 
+DefaultValue number 
+(double) 
+This value is loaded as value when the 
+checklist is opened, as long as there is 
+no saved value entered by the user. 
+MaximalNumberDecimalDigits number Maximum decimal places that can be 
+--- page 14 ---
+8 
+ 
+Field Type Comment 
+(int32) entered by the user. 
+  
+Checkbox (checkboxes.json) 
+Field Type Comment 
+PossibleValues Array of 
+string 
+Defines the values that are available to the user for 
+selection. 
+IsIndeterminate boolean Specifies if the checkboxes should have a third 
+(undefined/null) state. Not implemented yet 
+DefaultValues Array of 
+string 
+This values are selected when the checklist is opened, 
+as long as there is no saved selected values by the 
+user. This value must also be in PossibleValues. 
+  
+Picker (lists.json) 
+Field Type Comment 
+IsNullable boolean Specifies if it is possible to leave this field empty when 
+filling out the checklist. If IsNullable = false and there 
+is no given DefaultValue, the first value of 
+the PossibleValues is selected. 
+PossibleValues Array of 
+string 
+Defines the values that are available to the user for 
+selection. 
+DefaultValue string This value is the selected value when the checklist is 
+opened, as long as there is no saved selected value 
+entered by the user. This value must also be 
+in PossibleValues. 
+  
+DatePicker (dates.json) 
+--- page 15 ---
+9 
+ 
+Field Type Comment 
+IsNullable boolean Specifies if it is possible to leave this field empty when 
+filling out the checklist. If IsNullable = false and there is 
+no given DefaultValue, the value will be set to the current 
+date. 
+DefaultValue string This value is loaded as value when the checklist is opened, 
+as long as there is no saved value entered by the user. 
+Format: DateTime.Parse(\"2020-06-29 00:00:00\“) 
+  
+DateTimePicker (date-times.json) 
+Field Type Comment 
+IsNullable boolean Specifies if it is possible to leave this field empty when 
+filling out the checklist. If IsNullable = false and there is 
+no given DefaultValue, the value will be set to the current 
+date time. 
+DefaultValue string This value is loaded as value when the checklist is opened, 
+as long as there is no saved value entered by the user. 
+Format: DateTime.Parse(\"2020-06-29 12:34:56\“) 
+  
+Editor (editors.json) 
+Field Type Comment 
+MaxLength number 
+(long) 
+Defines the maximum number of characters the user 
+can enter 
+   
+QrCode (qr-codes.json) 
+Field Type Comment 
+ShowValidateButton boolean Specifies if an additional button should be 
+displayed to validate the entered QR Code without 
+--- page 16 ---
+10 
+ 
+Field Type Comment 
+overwriting the existing value. 
+ 
+Group (groups.json) 
+Field Type Comment 
+DesignatorSize string Sets the font size of the designator. Can be specified in px 
+or NamedSize ( https://docs.microsoft.com/de-
+de/dotnet/api/xamarin.forms.namedsize?view=xamarin-
+forms ) . NamedSize is better because it is defined 
+differently for each platform and scales with the hardware-
+specific font size. 
+ 
+Signature (signatures.json) 
+Has only the fields which are used by all controls. 
+Image (images.json) 
+Has only the fields which are used by all controls. 
+Position (positions.json) 
+Has only the fields which are used by all controls. 
+1.4.3 Conditions 
+Each of the controls can also have conditions, which define whether the input is valid 
+or not  (ValidConditions) or can be used to hide and show other controls 
+(DisplayConditions). In this section it is defined, what conditions which control must 
+be able to handle. 
+Switch 
+• IsTrue 
+• IsFalse 
+• IsNotNull 
+• IsNull 
+Checkbox 
+• CountSelectedValuesGreaterThan 
+• CountSelectedValuesGreaterThanOrEqualTo 
+• CountSelectedValuesLessThan 
+• CountSelectedValuesLessThanOrEqualTo 
+--- page 17 ---
+11 
+ 
+• CountSelectedValuesIsEqualTo 
+• CountSelectedValuesIsNotEqualTo 
+• SelectionIsEqualTo 
+• SelectionIsNotEqualTo 
+• SelectionContains 
+• SelectionNotContains 
+DateTime 
+• IsAfter 
+• IsBefore 
+• IsBetween 
+• IsInFuture 
+• IsInPast 
+• IsToday 
+• IsNull 
+• IsNotNull 
+• IsEqualTo 
+• IsAfterOrEqualTo 
+• IsBeforeOrEqualTo 
+Date 
+• IsAfter 
+• IsBefore 
+• IsBetween 
+• IsInFuture 
+• IsInPast 
+• IsToday 
+• IsNull 
+• IsNotNull 
+• IsEqualTo 
+• IsAfterOrEqualTo 
+• IsBeforeOrEqualTo 
+Double 
+• IsGreaterThan 
+• IsLessThan 
+• IsNotNull 
+• IsNull 
+• IsLessThanOrEqualTo 
+• IsGreaterThanOrEqualTo 
+• IsEqualTo 
+• IsNotEqualTo 
+--- page 18 ---
+12 
+ 
+Editor 
+• IsNotNullOrEmpty 
+• Contains 
+• IsNullOrEmpty 
+• IsLengthGreaterOrEqualTo 
+• IsLengthLessOrEqualTo 
+Image 
+• CountGreaterThan 
+• CountGreaterThanOrEqualTo 
+• CountLessThan 
+• CountLessThanOrEqualTo 
+List 
+• IsNullOrEmpty 
+• IsNotNullOrEmpty 
+• IsEqualTo 
+• IsNotEqualTo 
+Long 
+• IsGreaterThan 
+• IsLessThan 
+• IsNotNull 
+• IsNull 
+• IsLessThanOrEqualTo 
+• IsGreaterThanOrEqualTo 
+• IsEqualTo 
+• IsNotEqualTo 
+Position 
+• IsNullOrEmpty 
+• IsNotNullOrEmpty 
+QR-Code 
+• IsNullOrEmpty 
+• IsNotNullOrEmpty 
+Signature 
+• IsNullOrEmpty 
+• IsNotNullOrEmpty 
+ 
+--- page 19 ---
+13 
+ 
+1.4.4 Non-functional Requirements 
+Performance 
+1. The applications must handle checklists with up to 250 controls without 
+problems. 
+2. For each list page (checklist, order, appointment, order item) the application 
+should handle a count of 10,000 each with opening corresponding pages in 
+less than 3 seconds. 
+Security 
+1. A new security token must be generated from the user details when 
+communication with external APIs to make sure of the timeliness of the user’s 
+credentials. 
+2. All data must be encrypted before persisting on the device. 
+3. All communication needs to use SSL when communication with external 
+APIs.  
+Quality 
+1. The application should not unexpectedly crash 
+2. If the synchronization fails, the data on the device should be kept to 
+synchronize at a later point in time 
+3. If something does not work as expected, a dialog should appear that informs 
+the user that something went wrong, in the best case it should tell the us er 
+what went wrong 
+4. A log must be kept to find and solve bugs more efficiently 
+ 
+ 
+  
+--- page 20 ---
+14 
+ 
+2 Software Design 
+2.1 Big Picture 
+The major subsystems are described in high -level details . In  short, there is the 
+AUAPP, Vitricon, GraphQL and the Vormula Editor . Each of these subsystems is 
+vital for the system to operate. 
+2.1.1 System Context 
+ 
+ 
+ 
+Figure 2.1. Context diagram of AUAPP 
+The above diagram outlines the major components of the overall system, subsystem 
+interconnections, and external interfaces. 
+
+--- page 21 ---
+15 
+ 
+2.1.2 Data Flow 
+ 
+Figure 2.2. The data flow of AUAPP with external interfaces 
+The above diagram shows the basic flow of data into and out of the system at a high 
+level. Our system and direct interfaces are outlined in blue.  
+
+--- page 22 ---
+16 
+ 
+2.2 Software Architecture 
+2.2.1 Overview 
+ 
+Figure 2.3. 5-tier layered mobile application architecture 
+The above diagram shows the high-level view of the application’s layered 
+architecture.  
+2.2.2 Layers 
+Data Source and Data Access 
+The first two layers of the mobile application are the data source and data access 
+layer. The application is using entity framework core 3.1 (EF) to handle the 
+responsibility for both layers. The Entity Framework is a set of technologies that 
+support the development of data-oriented software applications. Developers can work 
+with data in the form of domain -specific objects and properties, such as order and 
+
+--- page 23 ---
+17 
+ 
+order items, without having to concern themselves with the underlying database tables 
+and columns where this data is stored. 
+ 
+Figure 2.4. Entity Framework [2] 
+The above diagram shows how Entity Framework works under the hood. It takes our 
+conceptional model (domain model) and maps  it to a storage model. This storage 
+model is then saved in an SQLite database on the device itself. EF is using SQL for all 
+interactions with the local database therefore the performance is almost as good as 
+using SQL statements directly. 
+Domain Model Layer 
+The domain model layer defines the conceptual models of the application. The 
+domain model contains all of the system’s object representations of data in the 
+system. This also includes associated methods for any objects that contain their own 
+functionality. 
+Business Logic Layer 
+The business logic layer  of the application is to encapsulate the applications 
+controllers and services which implement much of the core business logic. It will also 
+serve as the connection between the user interface and t he domain model, thus 
+maintaining the separation of concerns. 
+
+--- page 24 ---
+18 
+ 
+Presentation Layer 
+The presentation layer is concerned about displaying and letting the user interact with 
+the data. This layer uses the MVVM design pattern which stands for Model-View-
+Viewmodel, and is the recommended way of writing applications in Xamarin.Forms. 
+2.2.3 Layer Relations 
+Presentation Layer to Business Logic Layer 
+The presentation layer represents the user interface of the application whereas the 
+business logic layer (BL) contains the services and controllers which implement the 
+actual logic what happens when the user interacts with the application. As we use 
+MVVM, the viewmodels calls the services and controllers from the BL. 
+Business Logic Layer to Data Access Layer 
+The business logic la yer communicates with the data access layer to get the data that 
+we need from the local storage.  
+ 
+
+--- page 25 ---
+19 
+ 
+Figure 2.5. Layer interaction for OrderAppointment View 
+In the above figure we can see how the layers interact with each other using the 
+example of the OrderAppointment view. The view binds the list of appointments to 
+the OrderAppointments property in the viewmodel. The viewmodel populates this list 
+by requesti ng the relevant appointments from the service. The service on the other 
+hand implements the logic to query for the correct appointments and uses the 
+DbContext, which is implemented in our data access layer (Entity Framework) to 
+execute the query. The DbCon text sends a SQL query to the database and returns our 
+appointments that we requested. The appointments will go through every layer until 
+they reach the viewmodel and update the list property. The viewmodel then notifies 
+the view that the list property has changed and the view will update. 
+Each of the layers have their own responsibilit ies such that the viewmodel is only 
+responsible for keeping the state of the view and calling the correct service methods 
+when the user interacts with the view. 
+2.2.4 Design and architectural patterns  
+A software design pattern is a reusable  solution to a frequently occurring problem in 
+software engineering. It is not a finalized design that can be turned into source code or 
+machine code right away. Design patterns are well -defined best practices that 
+programmers may employ to overcome common issues.[3] 
+Visitor Pattern 
+The problem that was faced during the development of the application was that we 
+have 13 different controls and each of the control works quite differently for example 
+a group control does not have a result value, whereas all the other controls do. But 
+also, all controls have different types for their return  types. And as all checklists are 
+dynamically created, we have no way of knowing before runtime what type of control 
+we are dealing with. A simple approach would have been to just create an interface 
+which is implemented by all controls and defines a metho d to get the result, but as the 
+controls have different return types for their value this was not as simple as that. 
+Instead, we implemented the visitor pattern, which makes it possible to define a new 
+operation for some classes of an object structure with out changing the classes itself. 
+For that we have to define a visitor object which implements the operation to be 
+performed on elements of an object structure. 
+MVVM 
+The presentation layer is implemented by using the Model -View-ViewModel 
+structural design pattern, which separates objects into three categories: 
+A model holds the actual application data, such as the domain model. The view 
+displays the visual elements and controls on the screen. Lastly, the ViewModel 
+represents the state of the view. 
+--- page 26 ---
+20 
+ 
+ 
+Figure 2.6. Model-View-ViewModel pattern [4] 
+The figure above shows how the three elements are working together. The view has 
+bindings to properties and commands in the view model. The view model does not 
+know about the view and is therefore decoupled. When a property changes in the view 
+model, INotifyPropertyChanged is raised and a notification is sent to the view that the 
+property has been changed and needs to be updated. On the other hand, the view 
+model is responsible to update the model to make changes to the model, the actual 
+data itself. For example, when we have the appointment details page, where we can 
+manipulate an appointment, we are actual only changing the data of the view model 
+but when we click save, the view model is responsible to call the proper business 
+logic to update the model and then persist the changes. 
+Dependency Injection 
+Dependency injection is a variant of the inversion of control approach. A client should 
+not have to know how to create certain services in order to use them. Instead, the 
+client defers to third -party code (th e injector). The injector is unknown to the client. 
+The injector provides services to the client, which may already exist or be created by 
+the injector. Then after, the client makes use of the services.  In detail that means, our 
+viewmodels which are the ma in consumer of these services do not need to know how 
+to create its dependent services, but rather the service is injected and resolved via an 
+Inversion-Of-Control (IOC) container. This is especially critical for writing tests, 
+writing any kind of tests fo r classes and methods which are using these services is 
+hard to handle. For example, if the service communicates with the internet, but during 
+the test there is no internet the test would fail but the actual implementation is actually 
+correct. Instead, we can inject fake-services which will be resolved when tests are 
+running. These fake -services are easier to control such that the output data is always 
+the same. 
+  
+
+--- page 27 ---
+21 
+ 
+3 Implementation Backend 
+When it comes to the backend implementation, we have to consider three different 
+sources 
+1. Vormula Editor 
+2. Vitricon 
+3. GraphQL 
+The first two, Vormula Editor and Vitricon are not part of the scope but are still 
+important to understand how our application works. 
+3.1 Vormula Editor 
+The Vormula Editor is the backbone when it comes to the c hecklists. Our mobile 
+application cannot work without the Vormula Editor but vice versa the Vormula 
+Editor is useless as we need t he mobile application in order to use the checklists. The 
+Vormula Editor lets the user create checklists which then can be either be downloaded 
+directly in the checklist mode of the application or a checklist can be linked to an 
+order inside the Vitricon. The Vormula Editor provides simple REST APIs such as: 
+1. GetAllReleasedChecklists() 
+2. GetLatestReleasedVersion(string checklistUuid) 
+With the first one we retrieve all released checklists which the user is eligible to 
+download 
+3.2 Checklist-mode download 
+In the checklist mode the download is rather simple. When the user clicks on the 
+download button, the client sends a JWT request to the Vormula Editor .The JWT is 
+then used for further communication with the Vormula Editor API. We then request 
+for the list of all available checklists for the user logged in . The user information are 
+acquired through the JWT . In the following diagram we can see the request flow to 
+download a checklist. 
+--- page 28 ---
+22 
+ 
+ 
+Figure 3.1. Download Checklist flow 
+3.3 Vitricon-mode download 
+When it comes to the Vitricon mode, there is no manual download of specific 
+checklists, but we synchroniz e all the data  associated with the logged in user . In total 
+we have to deal with data from 41 different tables . As this is a synchronization, we 
+need to first upload all the changed data since the  last synchronization and if there are 
+any collisions, we ask the user how he wants to resolve it. Either discard the new data 
+or overwrite the existing data with the new data from the application. In the following 
+diagram the steps of synchronization are shown. 
+
+--- page 29 ---
+23 
+ 
+ 
+Figure 3.2. Synchronization Vitricon-mode 
+GraphQL 
+The backbone of the Vitricon -mode synchronization is implemented with GraphQL 
+Spring Boot application. But as most of the logic how the synchronization works is 
+implemented inside the mobile application, I will just give a brief overview of how 
+the GraphQL is working. 
+Contrary to a simple REST service which defines what data a given endpoint is 
+sending, for GraphQL the client side requests the data that it needs. That means if we 
+have a table in the data base which has 100 fields but our application only uses 15 of 
+those fields, we can just ask for those 15 fields.  
+ 
+Figure 3.3. GraphQL data retrieval 
+
+--- page 30 ---
+24 
+ 
+In the above figure it is shown how we get the necessary data for the Order table. Our 
+client sends a request to the OrderService which implements an outside interface we 
+can communicate with. The OrderService does not directly implement the logic of 
+how to retrieve the data from the da tabase, it just acts as  a coordinator and requests 
+the OrderRepository to query the correct data from the actual database. After the data 
+is retrieved and send back to the OrderService it is send back to our mobile 
+application. This needs to be done for al l 41 tables, both the upload and download 
+work this way. 
+4 Implementation Frontend 
+The mobile application is implemented with Xamarin.Forms, a cross -platform 
+framework from Microsoft. Xamarin.Forms allows us to write Android, iOS and 
+UWP in C# and with tools  from the dotnet framework. UI can also be written in C# 
+and XAML and the code can be shared, but often we need to make adjustment on 
+each platform, for that we can use custom renderers and platform specific code. For 
+example, for the location control most  of the presentation logic is written in platform 
+specific code, as each platform uses a different map (Google Maps, Apple Maps and 
+Bing).  
+4.1 Checklist Controls 
+The main feature of the application is filling out checklists. In total there are 13 
+different controls that can be used. 
+4.1.1 Checklist data format 
+A checklist is defined by 14 json files, for each control type one file plus a meta 
+information file which contains general information about the checklist. 
+  
+Figure 4.1. checklist-meta-info.json 
+The above figure is an example of the checklist -meta-info and contains general 
+information regarding the checklist.  
+
+--- page 31 ---
+25 
+ 
+ 
+Figure 4.2. json file for date-time controls in checklist 
+The figure above shows one element of the date -times.json which defines all dat e-
+time controls in the checklist. 
+4.1.2 Checklist structure 
+In order to understand this section about checklist controls we need to understand how 
+they are structured. 
+As defined in the software requirement specification all controls implement the fields 
+id and groupId. These two fields define the order of the checklist and the structure. 
+
+--- page 32 ---
+26 
+ 
+ 
+Figure 4.3. Checklist structure with groups 
+In the diagram above it is shown how those two fields define the look and order of the 
+checklist controls. The order is defined by the id which is unique value for each 
+checklist. That means there cannot be two controls with the same id in a given 
+checklist, even the controls are from a different type s. The second field, groupId, 
+defines if the control is part of a given control group which will put all those controls 
+belonging to the same  group in a visual container . It  also has a functional use: By 
+using displayConditions we can define that a whole group should not be shown if a 
+given condition is not satisfied. 
+4.1.3 Conditions 
+Conditions are an essential part of the application. They are extensible and quite 
+powerful as they are defined as strings and then being interpreted as a corresponding 
+function in the application. 
+
+--- page 33 ---
+27 
+ 
+ 
+Figure 4.4. Dynamic Expresso – expression to function 
+The above figure shows how we are using DynamicExpresso library in order to 
+convert our condition strings into functions. Further, we have to set up the expressions 
+and what functions these expressions are being converted to.  A code snipped of how 
+this is done is here: 
+ 
+Figure 4.5. Binding string expression to function 
+As seen in the code snipped above first we have to map a  delegate function to an 
+expression, which is defined as: 
+ public delegate TResult Func<in T,out TResult>(T arg).  
+This means our delegate function takes an input parameter of type long and will return 
+an output of type bool. The implementation of this delegate function is then defined as 
+followed: 
+ 
+Figure 4.6. Binding string expression to function 
+It shows that now we have a simple  function with an input parameter of type long 
+which will then be used in order to check whether the value of our control is less than 
+the parameter parsed in the condition.  This logic needs to be defined for each control 
+and for each condition. In order t o use this, we are using for each control an 
+interpreter class which is responsible for the correctness of the evaluation. In order to 
+then evaluate if a control is valid, we will just use its corresponding interpreter and 
+call its Eval functions, which returns whether our condition is fulfilled or not, as seen 
+in the code snipped below. 
+
+--- page 34 ---
+28 
+ 
+ 
+Figure 4.7. Eval of long control 
+ValidConditions 
+All input controls have a field called isValidCondition which is a string. Depending 
+on the individual control validity conditions are not always specified in the 
+isValidCondition – the long entry control for example has additional fields for 
+specifying the minimum and maximum and the isValidCondition needs to be fulfilled 
+additionally to make the control valid. 
+DisplayConditions 
+DisplayConditions define if there are any constraints if the control should not be 
+visible. For example, in Figure x above we could give control with id 6 the condition 
+that it is only visible if control with id 1 (assuming it is a long entry control) has the 
+value 10. If control with id 1 does not have the value 10 control with id 6 is not 
+visible. 
+4.1.4 Controls implementation 
+We need to  create all the controls defined by the json files, where each control 
+implements the IChecklistControl interface.  The interface acts as a contract and 
+defines all the fields which must be implemented by all controls, defined in the SRS. 
+Additionally, the interface defines other necessities such as event handlers and more 
+importantly it implements our AcceptVisitor methods, which is needed for the 
+Visitor-Design-Pattern. 
+ 
+Figure 4.8. Checklist controls defined in mobile application 
+
+--- page 35 ---
+29 
+ 
+4.1.5 Generating a checklist 
+When a user clicks on a checklist, we need to generate that checklist in r untime, as 
+every checklist is different. As in the architecture design specified, each layer is 
+responsible for a different part of this process. 
+1. View is responsible to show the checklist and controls to the user  
+2. ViewModel provides the view with a List<IChecklistControl>  
+3. ViewModel requests the ChecklistService for the List<IChecklistControl> for 
+clicked checklist 
+4. ChecklistService forwards the request to the data access layer to return the 
+controls 
+After our ViewModel populates its List<IChecklistControl>  property and sends a 
+notification to the view, that the data is available, the view starts to create the 
+checklist. As the checklist can have nested groups, we have implemented the creation 
+of the checklist using recursion. First, we are separating all controls into two 
+categories: Top control, where groupId = null and childControls, which have a 
+groupId.  
+ 
+Figure 4.9. Create checklist code snippet 
+As seen in the figure above we iterate over all the controls in topControls and if the 
+control is a group, we need to create a checklistGroup with 
+GetGroupWithAllChildren, which is a recursive method . It will check for all 
+childControls whether any of those is a checklistGroup and if so call itself recursively. 
+The recursive function ends, if the childControls parameter is not a checklistGroup. In 
+this case the control is just added to the view and returned.  We also use recursion, 
+when it comes to DisplayConditions.  
+
+--- page 36 ---
+30 
+ 
+ 
+Figure 4.10. DisplayCondition and dependency 
+As shown in the figure above, control 3 is invisible, because it is dependent on control 
+2 whose display condition is not fulfilled.  In this case we just travel recursively 
+through all the controls and make all of the dependent controls invisible.  
+4.1.6 Checklist result with visitor pattern 
+ 
+Figure 4.11. ChecklistResult UML diagram for visitor-pattern 
+In the diagram above we define our ChecklistResult which implements the 
+IChecklistControlVisitor and is needed to use the AcceptVisitor()-method which is 
+implemented defined in the  IChecklistControl-Interface and implemented by each 
+ChecklistControl. In order to save a checklist, we use the visitor pattern  to create a 
+ChecklistResult. The following code snippet shows, that we just need to create a 
+ChecklistResult and then iterate our ChecklistControls which is a 
+List<IChecklistControl> where each element  implements the AcceptVisitor method 
+
+--- page 37 ---
+31 
+ 
+which takes as parameter an IChecklistControlVisitor interface which is implemented 
+by the ChecklistResult and only defines the visit() method for each type of a 
+ChecklistControl. 
+ 
+Figure 4.12. Code snippet using the visitor pattern for checklistResult 
+After iterating thr ough each checklistControl the result is saved inside the 
+checklistResult variable and is then persisted as a new result. 
+Other uses of the visitor pattern 
+As the visitor pattern is a kind of many -to-many relationship (many objects with 
+many functions) the  ChecklistResult is not the only use case of the visitor pattern.  
+We also use it to save a draft of the checklist -result when the user wants to continue 
+filling out the checklist at another time, evaluating the conditions of each control 
+before completing the checklist in order to make sure that each controls input is valid 
+and lastly and very important to create the PDF report of our checklist result.  
+4.2 CAFM integration 
+Before we have talked about the implementation of the checklist feature which is 
+essential for both modes. In this section we will talk how the application integrates 
+with the CAFM. 
+As mentioned previously we are dealing with a total of 41 different tables  but the 
+main domain models which deal with the business logic are the following: 
+• Orders 
+• OrderAppointments 
+• OrderItems 
+
+--- page 38 ---
+32 
+ 
+ 
+Figure 4.13. Checklist relationships in CAFM  
+In the figure above we can see the relationship between a checklist, order item, order 
+and an appointment. Checklists are either associated with an order item, for example a 
+device like an air conditioner or they are linked with an order inside a project. 
+After the synchronization the user will get all still open appointments for the orders he 
+is assigned with. He can either fill out checklists directly which will then be 
+associated only with the order, but the golden way for the user is , to go to the 
+appointment and fill out the attached checklists there, then on synchronization the  
+checklist report will be attached to the appointment.  Further order items are linked to 
+appointments via the order relationship. That means if an order item belongs to an 
+order, it automatically shows in the appointment and all its connected checklists are 
+now part of the appointment as well. 
+4.3 Code quality 
+This section is about how to keep the code clean, maintainable and extensible. 
+Creating a simple mobile application with a few defined features at the beginning is 
+not a complex task, but creating an application which can add new features at will in a 
+feasible time for the implementation and also is understandable by developers who 
+never worked on the project before is a challenge. Luckily there are already people 
+much smarter than me who have found solutions to these  problems. Two guidelines 
+which I have followed when implementing the mobile application are Clean Code 
+and SOLID principles. 
+SOLID principles 
+SOLID is an acronym for software design principles to make code more 
+understandable, flexible and maintainable. B ecause what happens often is that after 
+finishing the initial product unforeseen feature and change requests are difficult to 
+implement as everything is very tightly coupled and changes are breaking existing 
+
+--- page 39 ---
+33 
+ 
+behaviour. In this section I will explain each principle but only focus on the first and 
+last principle, further I assume that the reader is somewhat familiar with these 
+principles. 
+Single-responsibility principle 
+Probably one of the easier principles to understand and implement is the single 
+responsibility principle, which means that every class should have only one single 
+responsibility. In practice that means we do not want to have classes which have 
+many different use cases but are only being used for one single thing. For example, in 
+our business logic layer we have our services for each type of domain model, these 
+services all have one thing in common they all are only responsible for the business 
+logic of a single domain model. More precisely they implement the CRUD logic of its 
+corresponding domain model. 
+Dependency inversion principle 
+The dependency inversion principle is based on the Open/Closed and Liskov 
+Substitution principle. We introduce interfaces in o rder to make components open for 
+extension but closed for modification . Secondly, implementations of these interfaces 
+can be replaced at will, without breaking the application. With those principles 
+implemented we can focus on the dependency inversion principle which allows us to 
+use a very powerful tool in modern day programming: Dependency Injection 
+Dependency inversion means that high level components should not depend on low 
+level components but rather depend on abstractions (interfaces). If this is not  given, 
+our application is tightly coupled and any changes being made in the future can cause 
+problems. 
+In order to resolve dependencies an IOC container is used where we register the actual 
+type with the interface to be resolved. How this is done can be s een in the code 
+snippet below. 
+ 
+Figure 4.14. Register types in IOC Container 
+The next step is to inject these dependencies when needed into our viewmodels, 
+luckily, we have another library, called prism, which supports auto injection via the 
+constructor. We only have to define the interfaces in the constructor and it will 
+resolve the interfaces automatically.  
+
+--- page 40 ---
+34 
+ 
+ 
+Figure 4.15 OrderAppointmentListPageViewModel with dependency injection 
+In the code snipped above we can see our OrderAppointmentListViewModel has an 
+IOrderAppointmentService which will be injected with the OrderAppointmentService 
+when running the application. We could inject our FakeOrderAppointmentService 
+aswell when running tests or developing the app. 
+4.4 Testing 
+An important part of writing an enterprise application is the confidence of knowing if 
+the application works  as expected and if code changes break any existing working 
+logic. There are three main types of testing: 
+• End-to-end 
+• Integration 
+• Unit 
+As of now the main focus is on increasing the coverage of unit test of the business 
+logic layer. There are no tests for data access and data source layer as these layers are 
+implemented with the entity framework, a third-party library. We must assume that it 
+is properly tested. Integration tests will follow after most of the app behavior is final 
+defined, as currently there are frequent changes on how to application behaves due to 
+customer feedback. End-to-end test are done by software te sters manually but there 
+are plans to write UI tests, but as this is very time consuming and the UI is also 
+frequently changing, this has no priority yet. 
+4.5 Logging 
+No application is bug free, and bugs can always occur in production. Therefore, it is 
+very important to be able to analyse and fix bugs in a timely manner. In order to do 
+this, the application is keeping a log that records events while the software runs. This 
+helps us to understand and reproduce the issue the customer faces much better. 
+
+--- page 41 ---
+35 
+ 
+ 
+Figure 4.16. Log file 
+In the above figure we can see a small snippe t of the log file when the application 
+starts. It records basic information about the user such that if the app crashes we can 
+use the same environment in case the bug is device specific. More impor tantly is that 
+the log always keeps track of exceptions. When it comes to exception handling the 
+application throws all exceptions until they are caught in the presentation layer. The 
+reason for this is, that the presentation layer is the layer the user in teracts with, and 
+therefore we can track the whole stack trace of how the exception came to be. If the 
+customer is facing any issues, he can contact support and the issue will be 
+investigated. 
+AppCenter 
+One tool that is primarily being used for the investi gation of any kind of issues is the 
+AppCenter from Microsoft. When properly integrated it informs us when crashes 
+occur. We adjusted this tool such that on the next application start after a crash , the 
+log file is attached to a crash report and the customer does not have to send the log 
+manually to the support . He just has to tell the time and date when the crash has 
+occurred. 
+ 
+  
+
+--- page 42 ---
+36 
+ 
+5 References 
+[1] “4+1 architectural view model,” Wikipedia, 17-Sep-2021. [Online]. Available: 
+https://en.wikipedia.org/wiki/4%2B1_architectural_view_model. [Accessed: 30-
+Oct-2021]. 
+[2] Mcleblanc, “Entity framework overview - ADO.NET,” Entity Framework 
+Overview - ADO.NET | Microsoft Docs. [Online]. Available: 
+https://docs.microsoft.com/en-us/dotnet/framework/data/adonet/ef/overview. 
+[Accessed: 01-Nov-2021]. 
+[3] “Software design pattern,” Wikipedia, 30-Sep-2021. [Online]. Available: 
+https://en.wikipedia.org/wiki/Software_design_pattern. [Accessed: 04-Nov-
+2021].  
+[4] Davidbritch, “The model-view-viewmodel pattern - xamarin,” Xamarin | 
+Microsoft Docs. [Online]. Available: https://docs.microsoft.com/en-
+us/xamarin/xamarin-forms/enterprise-application-patterns/mvvm. [Accessed: 
+04-Nov-2021].  
+ 
+  
+ 
+  
+ 
+  
+--- page 43 ---
+37 
+ 
+ 

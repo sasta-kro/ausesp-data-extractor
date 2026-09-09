@@ -29,7 +29,7 @@
     "web"
    ],
    "domain": [
-    "education"
+    "campus"
    ],
    "topic": [],
    "technology": []
@@ -68,7 +68,6 @@
     "game"
    ],
    "platform": [
-    "game",
     "desktop"
    ],
    "domain": [
@@ -117,9 +116,7 @@
    "domain": [
     "business"
    ],
-   "topic": [
-    "computer_vision"
-   ],
+   "topic": [],
    "technology": [
     "nextjs",
     "mongodb",
@@ -155,11 +152,12 @@
    "Asst. Prof. Dr. Benjawan Srisura",
    "A. Suparwat Charoenvikrom"
   ],
-  "abstract": null,
+  "abstract": "D-Network Worldwide Company sells food supplement products through direct selling, and its existing backend platform showed order data only as plain data tables with no analysis or graphs. The team built a web-based analytic dashboard from the company's order data to support faster decision making. Users can view five reports covering sale, buyer, product, membership, and overall summary, each shown with bar, line, area, or pie charts and switchable data tables, while admins can set yearly sale targets, manage user accounts, and import updated CSV data. The project followed an agile approach and was documented with data flow diagrams and an entity relationship diagram. Interviews with the IT and finance managers found the system easy to use and valuable as a prototype for future big data work, although it is not linked to the main backend, does not update in real time, and accepts only CSV files in a fixed format.",
   "reported_keywords": [],
   "classification": {
    "category": [
-    "ai_data"
+    "ai_data",
+    "software_application"
    ],
    "platform": [
     "web"
@@ -203,9 +201,11 @@
     "mobile"
    ],
    "domain": [
-    "other"
+    "business"
    ],
-   "topic": [],
+   "topic": [
+    "geolocation"
+   ],
    "technology": []
   }
  }

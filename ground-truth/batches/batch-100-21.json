@@ -1,1 +1,133 @@
-[{"id":"1651","canonical_title":"Low Cost RFID Laundry Management System","aliases":[],"phase":"final","course_code":null,"program":null,"semester":null,"academic_year":null,"students":[{"name":"Chawan Vattanalap","student_id":"5737444"},{"name":"Artisd Chanyawadee","student_id":"5712266"}],"advisor":null,"committee":[],"abstract":null,"reported_keywords":[],"classification":{"category":["hardware_iot","software_application"],"platform":["mobile","web"],"domain":[],"topic":[],"technology":["firebase","kotlin"]}},{"id":"1902","canonical_title":"Tax Invoice System (IoT)","aliases":[],"phase":"final","course_code":"IT 4292","program":"information_technology","semester":"2","academic_year":2018,"students":[{"name":"Woranat Swangswai","student_id":"5837619"}],"advisor":"A. Chayapol Moemeng","committee":["Asst. Prof. Dr. Paitoon Porntrakoon","Dr. Benjawan Srisura"],"abstract":null,"reported_keywords":[],"classification":{"category":["hardware_iot","software_application"],"platform":["embedded_hardware"],"domain":[],"topic":[],"technology":["python"]}},{"id":"1940","canonical_title":"PNC: Pakpirom-Natia Connect","aliases":["PNC: Pakpirom Natia Connect"],"phase":"final","course_code":"CS 4200 & IT 4292","program":"computer_science","semester":"2","academic_year":2019,"students":[{"name":"Aticha Joylek","student_id":"5810466"},{"name":"Narabodee Anantapornkit","student_id":"5837556"},{"name":"Siwaporn Chanratassawakul","student_id":"5913262"}],"advisor":"A. Chayapol Moemeng","committee":["Dr. Benjawan Srisura","Asst. Prof. Paitoon Porntrakoon"],"abstract":null,"reported_keywords":[],"classification":{"category":["software_application"],"platform":["web"],"domain":[],"topic":[],"technology":["mongodb","nodejs","react"]}}]
+[
+ {
+  "id": "1651",
+  "canonical_title": "Low Cost RFID Laundry Management System",
+  "aliases": [],
+  "phase": "final",
+  "course_code": null,
+  "program": null,
+  "semester": null,
+  "academic_year": null,
+  "students": [
+   {
+    "name": "Chawan Vattanalap",
+    "student_id": "5737444"
+   },
+   {
+    "name": "Artisd Chanyawadee",
+    "student_id": "5712266"
+   }
+  ],
+  "advisor": null,
+  "committee": [],
+  "abstract": "Small laundry shops identify, check, and record customer orders manually, which is slow and error prone for owners with limited budget, manpower, and technology knowledge. The project built a low cost RFID laundry management system that maps the RFID tag of a washing bag to a customer's telephone number or email together with the order details. Staff use an Angular web application to add customers, add orders, and update order status, and an Android application written in Kotlin lets the owner track and update orders on a phone. Data is stored in a Firebase NoSQL database and Firebase Cloud Functions send an automatic email notification when an order is ready to pick up. Interviews showed the application helps with tracking orders, identifying orders, notifying customers, and calculating profit, and the low frequency RFID option was chosen because it fit the users' limited budget.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "hardware_iot",
+    "software_application"
+   ],
+   "platform": [
+    "mobile",
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "firebase",
+    "kotlin"
+   ]
+  }
+ },
+ {
+  "id": "1902",
+  "canonical_title": "Tax Invoice System (IoT)",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT 4292",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Woranat Swangswai",
+    "student_id": "5837619"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "Asst. Prof. Dr. Paitoon Porntrakoon",
+   "Dr. Benjawan Srisura"
+  ],
+  "abstract": "Gas stations in Thailand issue many tax invoices every day, and the current process needs many steps per receipt, is partly paper based, and carries high maintenance costs. The project developed a tax invoice system in Python with a Tkinter interface that runs on a Raspberry Pi 3 Model B+ with an Epson TM-T82 receipt printer. Employees can edit product information, keep tax invoice records, view employee shift history, and print tax invoice receipts. The system also searches a customer's company details from a tax ID through The Revenue Department API so staff do not have to enter the information manually. Development followed an Agile methodology managed by a single developer, and the goal was a low cost and easy to use system for employees who are not familiar with technology.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "hardware_iot",
+    "software_application"
+   ],
+   "platform": [
+    "embedded_hardware"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "python"
+   ]
+  }
+ },
+ {
+  "id": "1940",
+  "canonical_title": "PNC: Pakpirom-Natia Connect",
+  "aliases": [
+   "PNC: Pakpirom Natia Connect"
+  ],
+  "phase": "final",
+  "course_code": "CS 4200 & IT 4292",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Aticha Joylek",
+    "student_id": "5810466"
+   },
+   {
+    "name": "Narabodee Anantapornkit",
+    "student_id": "5837556"
+   },
+   {
+    "name": "Siwaporn Chanratassawakul",
+    "student_id": "5913262"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "Dr. Benjawan Srisura",
+   "Asst. Prof. Paitoon Porntrakoon"
+  ],
+  "abstract": "In Thai housing villages the juristic person must announce news, invoice maintenance fees, and track parcels for residents, while residents often miss notifications and paper records are hard to maintain. This project develops PNC, a web application that gathers maintenance fee payment, parcel management, and circular letter announcement in one system. It was built with the MERN stack, which combines MongoDB, Express JS, React JS with Redux, and Node JS, using the Agile methodology. The system records resident information to calculate maintenance fees automatically, notifies residents of invoices and arriving parcels, and lets the juristic person announce news and confirm payment evidence uploaded by residents. The current version helps the juristic person collect maintenance fees, and a future version aims to cover water and electricity bill payments.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "mongodb",
+    "nodejs",
+    "react"
+   ]
+  }
+ }
+]

@@ -1,0 +1,1159 @@
+[]ASSUMPTION UNIVERSITY
+
+Faculty of Science and Technology
+
+IT 4299 SENIOR PROJECT
+
+FINAL REPORT
+
+RESTAURANT MANAGEMENT SYSTEM
+
+By:
+
+  1. Aniceto Manuel Moreira Belo 5538432
+
+  2.Agostinho de Sousa Gama da Costa 5538429
+
+  3. Sai Than Htike 5618394
+
+Submitted in Partial Fulfillment of the Requirements for the Degree of
+Bachelor of science in Information Technology
+
+May 2018
+
+Faculty of Science and Technology
+
+Department of Information Technology
+
+Senior Project Final Report Approval
+
+Project Title : Restaurant Management System
+
+By : 1. Agostinho de Sousa Gama da Costa 5538429
+
+  2. Aniceto Manuel Moreira Belo 5538432
+
+  3. Sai Than Htike 5618394
+
+Project Advisor : Dr. Chokdee Liopanich
+
+Academic Year : 2/2017
+
+The Department of Information Technology, Faculty of Science and
+Technology, Assumption University had approved this final report of the
+three credits course, IT 4299Senior Project. This Senior Project report
+is submitted in partial fulfillment of the requirements for the degree
+of Bachelor of Science in Information Technology.
+
+Approval Committees:
+
+________________________
+
+(Dr. Chokdee Liopanich)
+
+Project Advisor
+
+_______________________ _____ __________________
+
+(A. Chayapol Moemeng) (Dr. Benjawan Srisura)
+
+Committee Member Committee Member
+
+ABSTRACT
+
+Today, the restaurant business has been growing rapidly. Every
+restaurant tries to present something new and unique to its customers.
+Many successful restaurants attract customers, but many of them fail. A
+contributing factor in addition to food, the more important is the
+service that is offered. The system integrates restaurant management, or
+simply called restaurant management system, will greatly helping
+restaurants to provide faster and better service to its customers, at
+the same time providing reliable control for the management of the
+restaurant. that's why we want to try to apply an online-based system to
+facilitate transactions and provide convenience for customers.
+Restaurant management system can handle the overall operations of the
+restaurant, from the moment customers arrive, order a meal, food
+preparation, up until customers make a payment and left the restaurant.
+
+ACKNOWLEDGEMENT
+
+This project cannot be done completely without supports from our advisor
+Dr. Chokdee Liopanich that keeps closely advising us to do this Senior
+Project.
+
+Furthermore, our committees, all the faculty members who have been
+always there giving assistance by providing and advising us with the
+useful information throughout the semester. Finally, we would like to
+say thank you to all our friends who share us the ideas while we are
+developing our Senior Project. Once again from our heart, that without
+helps from all of you, our project would not be able to finish on time
+as expected.
+
+Table of Contents
+
+CHAPTER 1 1
+
+INTRODUCTION1
+
+1.  EXISTING SYSTEM1
+
+2.  STATEMENT OF PROBLEMS2
+
+3.  PROJECT OBJECTIVE3
+
+4.  LIMITATION3
+
+CHAPTER 24
+
+SYSTEM ANALYSIS4
+
+1.  WORK FLOW5-6
+
+2.  USE CASE DIAGRAM7
+
+CHAPTER 38
+
+DEVELOPMENT PLATFORM8
+
+CHAPTER 49
+
+COST AND BENEFITS9
+
+2.  
+3.  
+4.  
+
+2.  
+
+3.  
+
+4.  1.  COST OF PROPOSED SYSTEM9-10
+
+    2.  BENEFITS OF THE PROPOSED SYSTEM11
+
+CHAPTER 512
+
+SCREEN DESIGN12
+
+2.  
+
+3.  
+
+4.  
+
+5.  1.  SCREEN FLOW13
+
+        1.  STAFF SCREEN13
+
+        2.  CUSTOMER SCREEN14
+
+        3.  ADMIN SCREEN15
+
+    2.  SCREEN DETAIL15
+
+        1.  STAFF SCREEN15-19
+
+        2.  CUSTOMER SCREEN20-22
+
+        3.  ADMIN SCREEN22-34
+
+        4.  CHEF SCREEN35
+
+CHAPTER 636
+
+LOGICAL DESIGN36
+
+5.  
+
+6.  1.  ENTITY RELATIONSHIP DIAGRAM(ERD)36
+
+    2.  DATA DICTIONARY36-39
+
+CHAPTER 1
+
+INTRODUCTION
+
+Nowadays, many restaurants are trying to provide a better quality
+service to the customers to compete with other restaurants; so does the
+AMALIA Restaurant. Amalia restaurant is located in Timor-Leste/Baucau
+Villa, in the East of Timor-Leste. This restaurant was established since
+1980s, the staffs of this restaurant around 20, two persons as chef, 1
+as manager, and the rest as usual staffs or waiters and waitress. The
+dishes or menu that provided by restaurant are: European foods, Asian
+foods especially Indonesia foods, Australian foods and Timorese foods.
+This restaurant is quite attracting to many foreigners, as a day there
+are about 500 people visit or having meal in this restaurant. So, we
+think that would be good if they apply online-based system to ease the
+transaction and giving convenience to the customers who visit or having
+meal in this restaurant.
+
+1.1. EXISTING SYSTEM
+
+The existing system in this restaurant is still in manual system which
+is customers come to the restaurant and find for the available seat,
+after that the waiters bring the menu to them and customers looking
+through the given menu for ordering food. After they get the menu they
+want then they list them down on the piece of paper which is provided by
+the waiters/waitress and give the paper to the waiters and the waiters
+bring that to the kitchen and give to the chef for preparing or cooking
+the ordering dishes. After foods are finished cooking, then the chef
+will ring the bell signed that the food has been ready to serve so
+waiters pick the foods from kitchen and serve to customers. After
+customers finished eating then they will call the waiters for the bill
+and the payment will be done by cash, and here waiter must use the
+calculator for calculating the transaction and the overall process is
+done.
+
+1.2. STATEMENT OF PROBLEMS
+
+Since the Amalia restaurant is in manual-based system, it makes
+customers are uncomfortable in ordering meals as well as hold up/making
+the transaction process delay and it is affecting to low income or
+profit.
+
+Following are the problems that customers, staffs and manager are
+facing:
+
+a)  Ordering meal written in paper
+
+Since every ordering food are written in a piece of paper, so it’s hard
+for the chef or even staff to read the customers’ handwriting.
+
+b)  Menu picture/book is not Clear and flexible
+
+Since the Menu pictures are in the piece of paper (A4 paper) so it does
+not look good for the customer as it’s sometimes hard to glance at
+because the picture is too small to be seen. As well as the Menu book is
+too big and sometimes customers have to go back and forth through each
+page to find the dish.
+
+c)  Manual Calculation is applied
+
+Once customers finish eating and making the payment, the process of
+calculation is still in calculator-based, so miscalculation or error can
+be rise or occurred.
+
+d)  No Bill and report
+
+Since there are no Bill and report, they always count the daily income
+at the end of the day such as at night counting how much profit they
+earn for each day.
+
+e)  Ordering process is longer
+
+As staff has to go back and forth taking the customer order to kitchen
+which takes so much time.
+
+1.3. PROJECT OBJECTIVE
+
+The main objective of this project is to ease the existing restaurant
+management system to give the best quality service for its customers.
+
+1.  To design a user-friendly digital menu for both customer and staff
+    to interact with.
+
+- Customer: a digital menu on screen will be provided on the table hence
+  the customer can make selection of various categories of food.
+
+- Staff: a computer for the waiter to take order for ‘Take away’, check
+  status of food and checkout.
+
+- Chef: a list of orders will be shown on screen where the chef can
+  manage the orders. After the order has been selected and updated its
+  status; such as: Waiting, Preparing (for Drink only), Cooking, Ready
+  to be served and Done.
+
+- Admin: can add/delete/update menu and table management as well as
+  check and print reports for owner.
+
+1.4. LIMITATION
+
+- There are several things that can’t be done by our system which is
+  inventory management system as well as the system does not accept
+  Card-Payment method, the payment must be done by Cash only.
+
+CHAPTER 2
+
+SYSTEM ANALYSIS
+
+There are 4types of users in our system which are: Admin, Customer,
+Staff and Chef. The requirement or role for each user are presented as
+follow:
+
+Admin role
+
+- To create, edit, update tables.
+
+- To add, edit, delete menus.
+
+- To manage food categories; add, edit, delete categories.
+
+- To check daily, monthly, yearly reports for manager.
+
+- Check which item is sold most in each day and month
+
+Staff role
+
+- Authorize table for customers when they are dining in.
+
+- Take order directly from customers ordering for 'Take away'.
+
+- Get food status notification from kitchen. Example; waiter can take
+  the food when the notification says 'Ready to be served'.
+
+- Checkout and print bill.
+
+Customer role
+
+- Browse food menu from digital touch-screen tablet.
+
+- Make order directly from the tablet.
+
+- Check order list
+
+- Check food status
+
+- Check bill
+
+Chef role
+
+- Receive food order from customer table
+
+- Update food status
+
+  2.1. Work Flow
+
+[]
+
+Fig.2-1: Flowchart of AMALIA Restaurant System
+
+Step 1: Staff authorize the table for customers to make order
+
+- Staff needs to login for the customers and first screen pops up with
+  the button ‘Dine in” or “stake away”, if “take away” is selected then
+  it navigates customers to the ordering screen, but if dine is selected
+  customers are navigated to Number of customer Screen after they put
+  the number of customers then go to second step.
+
+Step 2: Customer views the menu
+
+- Customer able to see categories of food separated by Tabs. Eg. ‘Main
+  Dishes’, ‘Noodles’, ‘Drinks’, ‘Appetizers’. Within each tab, price and
+  functions which customer can increase/decrease the number of order for
+  a menu they want.
+
+Step 3: Customer make order
+
+- All the food menu that customers have selected will be shown in the
+  sidebar table and the total number of menu selected. After customer is
+  satisfied with the menu, they can proceed to order by tabbing on the
+  ‘Order’ button.
+
+Step 4: Organize the order list for chef to see
+
+- Chef will be shown with a list of orders made directly from customers.
+  Eg. Order1, Order2. OrderDate: xx/xx/xxxx. Chef can click on an order
+  to see its details.
+
+Step 5: Chef accepts orders
+
+- Choose to cook it by clicking ‘Confirm’. The orders will be listed
+  accordingly with the time customers made the orders. First come, first
+  serve.
+
+Step 6: Chef mark order as ‘Finished’ when it’s done
+
+- Chef will need to update the order status accordingly. Eg. Order1:
+  ‘Cooking’, Order2: ‘Finished’, Order3: ‘Ready to serve’.
+
+Step 7: Food Status: ‘Cooking’, ‘Finished’, ‘Served’ for customer
+tables.
+
+- From time to time, customer can check their order/food status on their
+  table screen.
+
+Step 8: Show receipt on screen and/or print receipt for customer
+
+- Customers are given with two options to check their receipt. They can
+  either check it on their table screen and also will be given a printed
+  receipt from the staff.
+
+2.2. Use Case Diagram
+
+[]
+
+Fig.2-2: Use Case Diagram of AMALIA Restaurant System
+
+  Customer: there are two main functions for customer to do. Customer
+  can make order from their table and check the status of order within
+  the table screen.
+
+  Staff: there are main functions for staff to interact with. First,
+  staff has to login and can assign table to the dine-in customer or
+  take a take-away order from customer. After checking out, staff can
+  print the bill for customer.
+
+  Chef: the two crucial functions for the kitchen are receiving orders
+  from customer table and from staff. Chef can update the status of each
+  menu.
+
+  Admin: essential functions for admin are login at first and Table
+  management, Menu management and Report checking to prepare for the
+  restaurant owner.
+
+CHAPTER 3
+
+DEVELOPMENT PLATFORM
+
+The development platform of the system will be on web-based. Tools that
+we use for developing this system is Visual Studio Microsoft Azure for
+front end as Microsoft Azure (formerly Windows Azure) is a cloud
+computing service created by Microsoft for building, testing, deploying,
+and managing applications and services through a global network of
+Microsoft-managed data centers. It provides software as a service
+(SaaS), platform as a service and infrastructure as a service and
+supports many different programming languages, tools and frameworks,
+including both Microsoft-specific and third-party software and systems.
+For the Back end we use Microsoft SQL and C# as the programming
+language. From Microsoft Azure, we use App Service and SQL Database.
+
+The menu management system and architecture has been designed based on
+the general requirements, user survey, functional requirements and
+non‐functional requirements elicited from the restaurant.
+
+CHAPTER 4
+
+COST AND BENEFIT
+
+1.  
+
+2.  
+
+3.  
+
+4.  1 Cost of Proposed System
+
+- Hardware Cost
+
++------+------------------------------------------------+-----------------+
+| 1    | Two Personal Computers (one for Admin, one for | ฿30,000 .00     |
+|      | cashier)                                       |                 |
+|      |                                                |                 |
+|      |   7th Generation Intel® Core™ i5 processor     |                 |
+|      |                                                |                 |
+|      |   Windows operating system                     |                 |
+|      |                                                |                 |
+|      |   256 GB PCIe® NVMe™ M.2 SSD                   |                 |
+|      |                                                |                 |
+|      |   4 GB LPDDR3-1866 SDRAM (onboard)             |                 |
+|      |                                                |                 |
+|      |   13.3" diagonal FHD IPS WLED-backlit touch    |                 |
+|      |   screen (1920 x 1080)                         |                 |
++:=====+:===============================================+=================+
+| 2    | Tablet for each table (20 Pieces)              | ฿60,000.00      |
+|      |                                                |                 |
+|      | - Android OS                                   |                 |
+|      |                                                |                 |
+|      | - CPU 1.3GHz                                   |                 |
+|      |                                                |                 |
+|      | - 4 GB Flash Memory, 3 GB RAM Memory           |                 |
+|      |                                                |                 |
+|      | - Super AMOLED Display with 2560x1600 WQXGA    |                 |
+|      |   Resolution                                   |                 |
+|      |                                                |                 |
+|      | - Features Ultra Power Saving Mode and         |                 |
+|      |   Fingerprint Scanner                          |                 |
++------+------------------------------------------------+-----------------+
+| 3    | 25-Inches Tablet for kitchen                   | ฿10,000.00      |
+|      |                                                |                 |
+|      | - Display TFT 24-bit (True color)              |                 |
+|      |   - Multi-Touch                                |                 |
+|      |   - Width 18.4 Inch (Diagonal)                 |                 |
+|      |   - Resolution 1920 x 1080 Pixels              |                 |
+|      |   - Capacitive                                 |                 |
+|      |                                                |                 |
+|      |   - Android OS                                 |                 |
+|      |                                                |                 |
+|      |   - CPU Speed: 1.6 GHz                         |                 |
+|      |                                                |                 |
+|      |   - Memory                                     |                 |
+|      |     - ROM 32GB                                 |                 |
+|      |     - RAM 2GB                                  |                 |
+|      |                                                |                 |
+|      |   - Memory card                                |                 |
+|      |                                                |                 |
+|      |     - microSD Maximum 128 GB                   |                 |
+|      |                                                |                 |
+|      | - Support Web Browsing Google Chrome           |                 |
++------+------------------------------------------------+-----------------+
+| 4    | Billing Printer                                | ฿ 3,000.00      |
++------+------------------------------------------------+-----------------+
+| 5.   | Total Hardware Cost                            | ฿ 103,000.00    |
++------+------------------------------------------------+-----------------+
+
+- Software Development Cost
+
++------+------------------------------------------+---------------------+
+| 1.   | Microsoft Azure                          | ฿1,500.00/month     |
+|      |                                          |                     |
+|      | - SQL Database                           |                     |
+|      |                                          |                     |
+|      | - App Service                            |                     |
++======+:=========================================+=====================+
+| 2.   | Visual Studio Professional               | ฿1,350.00/month     |
++------+------------------------------------------+---------------------+
+|      | Total Software cost (3 months x          | ฿8,550.00           |
+|      | 2,850.00)                                |                     |
++------+------------------------------------------+---------------------+
+
+- Operational Cost
+
++------+------------------------------------------+---------------------+
+| 1.   | Internet                                 | ฿7,118.00/Year      |
+|      |                                          |                     |
+|      | - True fiber cable internet              |                     |
+|      |                                          |                     |
+|      | - 1GB (599 Bath/month)                   |                     |
++:=====+:=========================================+=====================+
+|   2. | SQL Server(1,000/month)                  | ฿12,000.00/Year     |
++------+------------------------------------------+---------------------+
+|      | Total Operational Cost                   | ฿19,118.00/Year     |
++------+------------------------------------------+---------------------+
+
+2.  
+
+3.  
+
+4.  2 Benefits of the proposed System
+
+  After developed this proposed system, Amalia Restaurant Management
+  system provided several benefits
+
+1.  Tangible Benefits
+
+- Admin
+
+- Reduce time, Admin can easily manage and check daily, monthly and
+  yearly report for manager
+
+- Reduce cost, reducing cost of operating system such as paper. The
+  proposed system is computer based system so every transaction will be
+  stored in server
+
+- Staffs
+
+- Reduce cost of paper, instead of writing customer’s order on a piece
+  of paper, staffs can let customer to order food by themselves through
+  the touch screen monitor that available on each table
+
+- Customer
+
+- Reduce time, instead of customer go back and forth throughout the big
+  tick menu book while order their food; they can just browse the list
+  of menu from the given monitor screen in just one click.
+
+2.  Intangible Benefits
+
+- Admin
+
+- Provide a flexible and efficient web application that enable admin to
+  add, delete and update the menu
+
+- Easy to check the transaction by providing the report
+
+- Staffs
+
+- Provide an easy and comfortable way of dealing with the customers,
+  staffs can keep track and check each customer order
+
+- Customer
+
+- Can make order easily and conveniently. Customer can view menu and
+  keep track with the process of cooking progress
+
+CHAPTER 5
+
+SCREEN DESIGN
+
+The prototype of the system is based on flow of ordering which is
+illustrated below which is contained of three main functions such as:
+Ordering, Kitchen, and Admin.
+
+[]
+
+Fig.5-1: Amalia System Flow
+
+5.1 Screen Flow
+
+Screen flow of the System consist of Staff, Customer and Admin Screen;
+those three Screen flows are illustrated as follow:
+
+1.  [Staff Screen.jpeg]Staff Screen
+
+  Fig.5-2: Staff Screen Flow
+
+2.  Customer Screen [Customer Screen.jpeg]
+
+Fig.5-3: Customer Screen Flow
+
+5.1.3 Admin Screen
+
+[Admin Screen.jpeg]Fig.5-4: Admin Screen Flow
+
+2.  Screen Detail
+
+    1.  Staff Screen
+
+[]
+
+After Login Staff will redirect to the Staff Screen, in Staff Screen
+there are several features which is consist of:
+
+a)  Log Out button, which is to Log out the system
+
+  []
+
+b)  Dine-In, which is to see the table availability by check-in the
+    available table to Dine-In Customers.
+
+  []
+
+  Staff check in table by clicking on any of the available table, in the
+  picture shows that TABLE #1 Not Available that means that table is
+  still being used by customer however the TABLE #5 Available so staff
+  can check in that table to customer; following are the screen of check
+  in and check out the table
+
+- Check In button
+
+  []
+
+  The above screen is TABLE #5 and it consist of dropdown menu to select
+  the number of customers and CHECK IN button for unlocking the table to
+  be used by the Dine In Customers.
+
+- Check Out button
+
+  []
+
+  This screen is to check out the TABLE #1, once click on CHECK OUT
+  button, it takes staff to print bill screen.[]
+
+  In this screen staff can print the bill or CANCEL if customer still
+  want to eat.
+
+c)  Take Away, this is for those who want to Take food home instead of
+    eating at the restaurant.
+
+  []
+
+  After clicking on Take Away button, it takes staff to “Take Away
+  Customer Name” to fill the Take Away Customer Name in the Text Box;
+
+  []
+
+  After Finish filling Customer Name then click on “Next” button, staff
+  will be led to the “Customer TakeAway” to start ordering for the Take
+  Away Customer;
+
+  []
+
+  As shown in the above screen picture staff can add quantity of food
+  and add into ORDER TABLE after that click on MAKE ORDER button and it
+  will be sent to the kitchen as well as it added into the ORDERED LIST,
+  after added to ORDERED LIST Staff can PROCEED TO CHECKOUT button to
+  check out, it takes to print bill screen[]
+
+  In this screen staff can print the bill or CANCEL if customers want to
+  add more dishes so the CANCEL button is to go back to “Customer
+  TakeAway” page to put more order.
+
+d)  Order Table, is to keep tracking the status of foods(order) whether
+    the foods are being cooked or not
+
+  []
+
+  As showing in the screen the status is ”Cooking” and “Waiting” that
+  means the food is being cooked and the other not yet been cooked.
+
+e)  Take away Customer Tracker, is to cluster the Take Away Customer
+    together in particular so we can know how many Take Away Customers,
+    as it’s displaying as following
+
+  []
+
+  Once clicking on Name(ex:Aniceto) it will display the Customer order
+  along with the Quantity of food that ordered and also Status.
+
+  []
+
+The above figure is the take away order showing that the food is being
+cooked.
+
+1.  Customer Screen
+
+Before Dine-In Customer making order, they need to be authorized by
+staff by check in into available table to unlock that certain table
+otherwise they can’t make order.
+
+[]
+
+This screen is the beginning screen for the Dine-In customers, once
+Staff finishes check in then customers can click on the “Let’s Eat”
+button and will take them to the Dine-In Menu to start making order. The
+next Screen is following:
+
+In this screen there are several features which is consisting of:
+
+a)  Categories, there are four Categories namely: Main Dish, Noodle,
+    Drink and Appetizer; Here customer can make order by clicking on ADD
+    button and they can add the amount of food by selecting the domain
+    down up to increase and decrease the order.
+
+  []
+
+b)  Order Table, Order table is to place the order when customers
+    clicking on ADD button.
+
+  []
+
+  In this screen customers are provided deleting function to delete the
+  order along with it they can see the total price of the order. When
+  finish adding into the order table customer should click on MAKE AN
+  ORDER button and the order will be moved to Ordered List as well as to
+  the kitchen automatically.
+
+c)  Ordered List, here customer can see their order and tracking the
+    status of the foods they order.
+
+  []
+
+  I this screen shows that customer food is still in waiting status, so
+  whenever the status is changed by chef the status will be updated too.
+
+d)  Check My Bill, customers are also provided to check their bill by
+    clicking on “Check My Bill” and it lets customer to see their bill
+    as showing in the picture below.
+
+  []
+
+1.  Admin Screen
+
+[]
+
+Once Login, Admin will be led to the main Screen, which is consisting of
+several features as following:
+
+a)  Log Out button, which is to log out the system
+
+  []
+
+b)  Menu Management, which is used by admin to manage the menu by
+    deleting, editing and adding new menu
+
+- Deleting button is clicked
+
+  []
+
+  When “DELETE” button is clicked, the dialogue box will pop up as shown
+  as following:
+
+  []
+
+  Admin will be asked whether he/she want to perform Deleting or
+  canceling action. If Confirm button is clicked, then the menu item
+  will be deleted automatically if Cancel Button is clicked then it goes
+  back to the “Menu Management Page”.
+
+- EDIT button is clicked
+
+  []
+
+  When EDIT button is clicked it redirects admin to the Edit Dish Screen
+  to make changes to the menu item.
+
+  []
+
+  The above figures is Edit Dish Screen which is enable admin to change
+  Dish Name, Dish picture, Dish Category and Price; after that admin
+  clicks on Submit button to approve or click Cancel button to cancel
+  editing.
+
+- Add a new dish button is clicked
+
+  []
+
+  When add a new dish button is clicked it takes admin to Add new dish
+  Screen which is displayed as followed
+
+  []
+
+  This screen allows admin to add new dish by filling Dish Name, Dish
+  Image, Dish Category and Price and after that click Submit button to
+  add or Cancel button to cancel
+
+c)  Food Category Management, there are two main features which is to
+    “view Food Category List” which is shown as follow:
+
+  []
+
+- View Food Category List is clicked
+
+  When admin clicks on “View Food Category List” it goes to “Food
+  Category List”screen
+
+  []
+
+  In this screen admin can see the Category Names and can edit the
+  category name by clicking on Edit Action and it redirect admin to the
+  “Edit Category Name” screen in order to edit the category names;
+
+  []
+
+  After editing the category name then click on Submit button to approve
+  editing or on Cancel button to cancel editing.
+
+d)  Restaurant Table Management, there are two main features also which
+    is to “View Restaurant Table” and “Create New Restaurant Table”
+    shown as follow:
+
+  []
+
+- View Restaurant Table List is clicked
+
+  []
+
+  It redirects admin to view table screen, here admin can ADD and DELETE
+  tables; when admin clicks on table number pop menu will show up and
+  enable admin to perform deleting and adding function.
+
+  []
+
+  When EDIT button is clicked it redirects to Edit Table screen in order
+  to allow admin to edit table “TABLE #1”
+
+  []
+
+  moreover DELETE button is clicked then the table “TABLE #1” will be
+  deleted right away.
+
+- Create New Restaurant Table is clicked
+
+  []
+
+  When Create New Restaurant Table is clicked it moves to the Create New
+  Table Screen so admin can create a new table
+
+  []
+
+  After filling Table Number and seat text boxes then admin can submit
+  to approve and cancel to cancel creating table.
+
+e)  Reports, consisting of three main features which is Dashboard, Daily
+    and Overall Reports.
+
+  []
+
+- Dashboard is clicked
+
+  []
+
+  When dashboard is clicked it enables admin to see the following
+  Reporting Types:
+
+- Selling Amount Rank
+
+  This report type is to show the selling ranking amount of item that
+  sold out within a day and a month;
+
+- Selling Amount Rank by date
+
+  []
+
+  As shown in the above picture, it shows the example of transaction on
+  date 2018-04-23 and it says “NasiUduk” the most sales on that date
+  with the amount of selling 22 dishes and followed by the “NasiKuning”
+  in the second place with 7 dishes and so on.
+
+- Selling Amount Rank by Month
+
+  []
+
+  As well as shown in the above picture it shows the transaction in the
+  month of April, “NasiKuning” is the highest sales with the total 54
+  and followed by “NasiUduk” with the total 34 and so on.
+
+- Selling Price Rank
+
+  This report type is to show the selling price(in total) ranking for
+  each item menu in particular day and month;
+
+- Selling Price Rank by Date (in total) for each item;
+
+  []
+
+  As shown in the picture the total money earned for each menu item on
+  the date 2018-04-26 and the most selling price is “NasiUduk” with the
+  total price 80 Baht and followed by the “NasiKuning” with the total
+  price 70 Baht and so on.
+
+- Selling Price Rank by Month(in total) for each item;
+
+  []
+
+  The figure shows that total selling price in the month of April, and
+  it shows the most selling price is “NasiUduk” with the total price is
+  2,720 Baht and followed by the 210 Baht which is for Shan Noodles and
+  so on.
+
+- Total selling price (by date and month),
+
+  It’s to show which menu is the highest or lowest sales in particular
+  day and month and those are shown in Chart. (Hint: put mouse over the
+  Chart to see the total price for each menu item).
+
+- Total Selling Price by Date
+
+  []
+
+  The above figure shows all the transactions in Chart, it tells that
+  the transaction on the date 2018-04-20, “NasiUduk” is sold most with
+  the total amount earned 1,760 Baht. We can see for the other dates by
+  filling to the text box for particular day.
+
+- Total Selling Price by Month
+
+  []
+
+  This figure tells that “Nasikuning” is the most selling in the month
+  of April with the total price 3,780 Baht. We can see for other month
+  by clicking on drop-down menu to select the particular month.
+
+- Item sales price by date and month
+
+  it’s to show the total money earned in each particular day and month.
+  We can see for other date by clicking on drop-down menu for month and
+  year.
+
+- Item Sales Price by Date
+
+  []
+
+  This figure shows about the total money earned for each day; the above
+  figures shows the total money earned for the date 2018-February-19 is
+  580 Baht.
+
+- Item Sales Price by Month
+
+  []
+
+  This figure shows the total income earned for each month; the above
+  figure tells that in 2018 in the month of April the total income
+  earned is 9,780 Baht.
+
+- Overall Report is clicked
+
+  []
+
+  The overall report is to show the total income in general and here
+  admin can print that report as well in order to report to the Owner.
+
+- Daily Report is clicked
+
+  []this report is to show the income made each day and print it and
+  report to the owner.
+
+1.  Chef Screen
+
+[]
+
+This figure is Chef screen, once the orders are made, they are going to
+be displayed on the chef screen and Chef can updating status in the
+screen by changing Status to Waiting, Cooking, Preparing (drink), Ready
+to be served and Done.
+
+CHAPTER 6
+
+LOGICAL DESIGN
+
+6.1 ENTITY RELATIONSHIP DIAGRAM (ERD)
+
+This chapter is all about Diagrams which is comprised of Flowchart and
+UML Diagrams.
+
+[]
+
+Fig.6-1: ERD of AMALIA Restaurant System
+
+6.2DATA DICTIONARY
+
++-------------------------------------------------------------------------+-------------+
+| Table: Category                                                         |             |
++:==============:+:==============:+:====================:+:==============:+:===========:+
+| Attribute      | Type           | Description          | Example                      |
++----------------+----------------+----------------------+------------------------------+
+| CategoryId(PK) | int            | Category ID          | 1,2,3,4                      |
++----------------+----------------+----------------------+------------------------------+
+| CategoryName   | nvarchar (100) | the types of menu    | Main Dish, Noodle, Drink,    |
+|                |                | category of the      | Appetizer                    |
+|                |                | restaurant           |                              |
++----------------+----------------+----------------------+------------------------------+
+
++--------------------------------------------------------------+-------------+
+| Table: User Type                                             |             |
++:==================:+:==================:+:==================:+:===========:+
+| Attribute          | Type               | Description        | Example     |
++--------------------+--------------------+--------------------+-------------+
+| UserTypeId (PK)    | int                | User type ID       | 1,2         |
++--------------------+--------------------+--------------------+-------------+
+| Type               | varchar (20)       | the types of       | Staff,      |
+|                    |                    | system user        | Admin       |
++--------------------+--------------------+--------------------+-------------+
+
++----------------------------------------------------------------+---------------+
+| Table: Active Dining                                           |               |
++:====================:+:==================:+:==================:+:=============:+
+| Attribute            | Type               | Description        | Example       |
++----------------------+--------------------+--------------------+---------------+
+| ServiceId (PK)       | bigint             | Service ID         | 7,8,9,10      |
++----------------------+--------------------+--------------------+---------------+
+| DiningType           | int                | Dining type        | 1,2           |
++----------------------+--------------------+--------------------+---------------+
+| TableId (FK)         | int                | Table ID           | 1,2,3,4,5     |
++----------------------+--------------------+--------------------+---------------+
+| CustomerAmountId     | int                | Number of dining   | 1,2,3,4,5     |
+| (FK)                 |                    | customer           |               |
++----------------------+--------------------+--------------------+---------------+
+| CreatedDateTime      | datetime           | Date and time of   | 2018-04-03    |
+|                      |                    | the service served | 23:58:14.030  |
++----------------------+--------------------+--------------------+---------------+
+| CustomerName         | varchar (20)       | Customer name      | Sam, Jon,     |
+|                      |                    |                    | James         |
++----------------------+--------------------+--------------------+---------------+
+
++---------------------------------------------------------------------+---------------+
+| Table: Customer Amount                                              |               |
++:=======================:+:===================:+:===================:+:=============:+
+| Attribute               | Type                | Description         | Example       |
++-------------------------+---------------------+---------------------+---------------+
+| CustomerAmountId (PK)   | int                 | Customer Amount ID  | 1,2,3,4,5,6,7 |
++-------------------------+---------------------+---------------------+---------------+
+| Amount                  | int                 | Amount of customer  | 1,2,3,4,5,6,  |
+|                         |                     |                     | More          |
++-------------------------+---------------------+---------------------+---------------+
+
++---------------------------------------------------------------+---------------+
+| Table: Dining Type                                            |               |
++:===================:+:==================:+:==================:+:=============:+
+| Attribute           | Type               | Description        | Example       |
++---------------------+--------------------+--------------------+---------------+
+| DiningTypeId (PK)   | int                | Dining Type ID     | 1,2           |
++---------------------+--------------------+--------------------+---------------+
+| Type                | nvarchar (50)      | Type of order      | Dine In, Take |
+|                     |                    |                    | away          |
++---------------------+--------------------+--------------------+---------------+
+
++-----------------------------------------------------------------+----------------------+
+| Table: Item                                                     |                      |
++:===================:+:===================:+:===================:+:====================:+
+| Attribute           | Type                | Description         | Example              |
++---------------------+---------------------+---------------------+----------------------+
+| ItemId (PK)         | int                 | Item ID             | 22,25,27,29,32,36,38 |
++---------------------+---------------------+---------------------+----------------------+
+| CategoryId (FK)     | int                 | Category ID         | 1,2,3,4              |
++---------------------+---------------------+---------------------+----------------------+
+| ItemName            | nvarchar (100)      | Item name           | NasiKuning, Jus      |
+|                     |                     |                     | Avacat, Bakso, Jus,  |
+|                     |                     |                     | Shan Noodles         |
++---------------------+---------------------+---------------------+----------------------+
+| Price               | float               | price of the item   | 70,40,50,30,80       |
++---------------------+---------------------+---------------------+----------------------+
+| Description         | nvarchar (300)      | Description of the  | Indonesian dish,     |
+|                     |                     | item                | Shan dish            |
++---------------------+---------------------+---------------------+----------------------+
+| Image               | nvarchar (MAX)      | image of the item   | binary data type     |
++---------------------+---------------------+---------------------+----------------------+
+
++--------------------------------------------------------------------+-------------------+
+| Table: Table                                                       |                   |
++:======================:+:===================:+:===================:+:=================:+
+| Attribute              | Type                | Description         | Example           |
++------------------------+---------------------+---------------------+-------------------+
+| TableId (PK)           | int                 | Table ID            | 21,28,29,32,31,33 |
++------------------------+---------------------+---------------------+-------------------+
+| TableNumber            | int                 | Table number        | 1,2,3,4,5,6       |
++------------------------+---------------------+---------------------+-------------------+
+| SeatNumber             | int                 | Seat number         | 1,15              |
++------------------------+---------------------+---------------------+-------------------+
+| IsLocked               | bit                 | table being checked | 1                 |
+|                        |                     | in                  |                   |
++------------------------+---------------------+---------------------+-------------------+
+| TableStatusId (FK)     | int                 | Table Status ID     | 2                 |
++------------------------+---------------------+---------------------+-------------------+
+
++-------------------------------------------------------------+----------------+
+| Table: Order                                                |                |
++:=================:+:=================:+:===================:+:==============:+
+| Attribute         | Type              | Description         | Example        |
++-------------------+-------------------+---------------------+----------------+
+| OrderId (PK)      | int               | Order ID            | 1,2,3,4,5      |
++-------------------+-------------------+---------------------+----------------+
+| ServiceId (FK)    | bigint            | Service ID          | 7,8,9,10       |
++-------------------+-------------------+---------------------+----------------+
+| ItemId (FK)       | int               | Item ID             | 2,11,16,18     |
++-------------------+-------------------+---------------------+----------------+
+| OrderStatusId     | int               | Order status ID     | 1,2,3,4        |
+| (FK)              |                   |                     |                |
++-------------------+-------------------+---------------------+----------------+
+| Amount            | int               | Amount              | 1,2,3,4,5      |
++-------------------+-------------------+---------------------+----------------+
+| CreateDateTime    | datetime          | Date and time       | 2017-06-26     |
+|                   |                   |                     | 09:57:42.517   |
++-------------------+-------------------+---------------------+----------------+
+| CustomerName      | varchar (20)      | Customer name       | James, Jim,    |
+|                   |                   |                     | Jon            |
++-------------------+-------------------+---------------------+----------------+
+
++-------------------------------------------------------------+------------------+
+| Table: Order Status                                         |                  |
++:=================:+:=================:+:===================:+:================:+
+| Attribute         | Type              | Description         | Example          |
++-------------------+-------------------+---------------------+------------------+
+| OrderStatusId     | int               | Order Status ID     | 1,2,3,4,5        |
+| (PK)              |                   |                     |                  |
++-------------------+-------------------+---------------------+------------------+
+| OrderStatus1      | varchar (50)      | Order Status        | Waiting,         |
+|                   |                   |                     | Cooking, Ready   |
+|                   |                   |                     | to be served,    |
+|                   |                   |                     | Done,            |
+|                   |                   |                     | Preparing(drink) |
++-------------------+-------------------+---------------------+------------------+
+
++--------------------------------------------------------------+----------------+
+| Table: User                                                  |                |
++:=================:+:=================:+:====================:+:==============:+
+| Attribute         | Type              | Description          | Example        |
++-------------------+-------------------+----------------------+----------------+
+| UserId (PK)       | int               | User ID              | 1,2,3          |
++-------------------+-------------------+----------------------+----------------+
+| UserTypeId (FK)   | int               | User type ID         | 1,2,3          |
++-------------------+-------------------+----------------------+----------------+
+| Username          | varchar (50)      | Username of the user | admin, staff   |
++-------------------+-------------------+----------------------+----------------+
+| Password          | nvarchar (50)     | Password of the user | password       |
++-------------------+-------------------+----------------------+----------------+
+| FirstNameEN       | nvarchar (70)     | First name of the    | John           |
+|                   |                   | user                 |                |
++-------------------+-------------------+----------------------+----------------+
+
++-------------------------------------------------------------+----------------+
+| Table: Table Status                                         |                |
++:=================:+:=================:+:===================:+:==============:+
+| Attribute         | Type              | Description         | Example        |
++-------------------+-------------------+---------------------+----------------+
+| TableStatusId     | int               | Table status ID     | 1,2,3          |
+| (PK)              |                   |                     |                |
++-------------------+-------------------+---------------------+----------------+
+| status            | nvarchar (50)     | Table Status        | Not Available, |
+|                   |                   |                     | Available      |
++-------------------+-------------------+---------------------+----------------+

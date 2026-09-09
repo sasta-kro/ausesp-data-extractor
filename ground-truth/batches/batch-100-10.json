@@ -36,7 +36,9 @@
     "campus"
    ],
    "topic": [],
-   "technology": []
+   "technology": [
+    "python"
+   ]
   }
  },
  {
@@ -122,7 +124,8 @@
   ],
   "classification": {
    "category": [
-    "ai_data"
+    "ai_data",
+    "software_application"
    ],
    "platform": [
     "web"
@@ -169,6 +172,7 @@
    ],
    "topic": [],
    "technology": [
+    "php",
     "laravel",
     "mysql"
    ]
@@ -198,12 +202,12 @@
    "A. Tapanan Yeophantong",
    "Asst. Prof. Dr. Paitoon Porntrakoon"
   ],
-  "abstract": null,
+  "abstract": "Assumption University staff currently clock in with fingerprint scanners that cause long queues at peak times or with paper log books that allow buddy punching and can be lost. The project proposed a staff clocking system that runs on Android tablets mounted around campus and identifies each employee from their face. The application detects the face with Firebase ML Kit, generates a 128 dimension embedding with a Facenet model converted to TensorFlow Lite, and compares embeddings with Euclidean distance to recognize the employee and record the clock in time in Firebase. A liveness detection model based on InceptionV3 with transfer learning was trained on the NUAA Photograph Imposter Database to reject fake faces. The Flutter admin application registers users, uploads cropped face images with embeddings to the database, and shows recognition results for clocking in and out.",
   "reported_keywords": [],
   "classification": {
    "category": [
     "ai_data",
-    "hardware_iot"
+    "software_application"
    ],
    "platform": [
     "mobile"
@@ -215,8 +219,7 @@
     "computer_vision"
    ],
    "technology": [
-    "firebase",
-    "python"
+    "firebase"
    ]
   }
  }

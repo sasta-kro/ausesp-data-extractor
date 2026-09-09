@@ -1,0 +1,427 @@
+[
+ {
+  "id": "2001",
+  "canonical_title": "Document Flow for AU HR",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT4292",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "Qianheng Ma",
+    "student_id": "5913929"
+   },
+   {
+    "name": "Peng Chen",
+    "student_id": "5918413"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "A. Suparwat Charoenvikrom",
+   "Asst. Prof. Dr. Paitoon Porntrakoon"
+  ],
+  "abstract": "Document flow for Human Resources is an automatic flow with Microsoft Office software to help the HR and authorised people to handle staff's leave requests in ABAC online.\n\nThis project aims to eliminate the paperwork for the leave requests, make it possible to submit the leave requests at anywhere, anytime with the network. With this project, AU's staff will no longer need to come to the university to take the paper form and submit it manually and the HR personnel will not need to record each request's information manually. All the request information will be saved automatically. The HR personnel can also use MS Power BI to access the data and make it visualization. It is easy to view the summary of each specific staff in a specific date interval.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [],
+   "technology": [
+    "mysql",
+    "php"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "microsoft_power_automate",
+     "label": "Microsoft Power Automate",
+     "status": "used",
+     "evidence": "1.3 Scope: 'This project is built on Microsoft Power Automate (MPA) and Microsoft Teams (MT) platform' with automatic approval flow routing"
+    },
+    {
+     "key": "microsoft_teams",
+     "label": "Microsoft Teams",
+     "status": "used",
+     "evidence": "Technology overview item 3: 'MS Teams: Send the alert to remind the user to check and make the decisions for each request'"
+    },
+    {
+     "key": "microsoft_forms",
+     "label": "Microsoft Forms",
+     "status": "used",
+     "evidence": "Technology overview item 1: 'MS Forms: Collect information form the requesters'"
+    },
+    {
+     "key": "microsoft_power_bi",
+     "label": "Microsoft Power BI",
+     "status": "used",
+     "evidence": "Technology overview item 5: 'MS Power BI: Data visualization, dashboard'"
+    },
+    {
+     "key": "microsoft_onedrive",
+     "label": "Microsoft OneDrive",
+     "status": "used",
+     "evidence": "Technology overview item 4: 'MS OneDrive: Save the printable form'"
+    },
+    {
+     "key": "github_pages",
+     "label": "GitHub Pages",
+     "status": "used",
+     "evidence": "Chapter 5: 'The entry point to the system is at https://maqianheng.github.io/AU_leave_request_forms/'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2003",
+  "canonical_title": "Thai Ghost Side-Scrolling Game (August Witcher of the Grand House)",
+  "aliases": [
+   "August Witcher of the Grand House"
+  ],
+  "phase": "final",
+  "course_code": "CS3200/IT4291",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Mungyeong Kim",
+    "student_id": "5911116"
+   },
+   {
+    "name": "Anawil Chumphun",
+    "student_id": "5912087"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "Asst. Prof. Dr. Paitoon Porntrakoon",
+   "A. Tapanan Yeophantong"
+  ],
+  "abstract": "Nowadays, many people like playing games and E-sports has been popular, side-scrolling game is defined as a game that game playing action is viewed from a side-view camera angle, and the onscreen characters can only move to the left or rights to reach the end of the game. Moreover, many people are interested in ghost stories and Thailand is well known for scary stories and some mysterious places so we decided to combine both game and Thai ghost story to make an interesting single game.\n\nAugust Witcher of the Grand House is a side-scrolling game which is designed to attract people who loves playing game with ghost story. In this game, a player will be playing from outside to inside a mysterious house to get through there with some weapons from stage and fight with Thai ghosts. The game is mainly playable on PCs.\n\nOur goal is to successfully design and implement our own design of the game on PCs enjoyable.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "game"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [],
+   "technology": [
+    "unreal_engine"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "adobe_photoshop",
+     "label": "Adobe Photoshop",
+     "status": "used",
+     "evidence": "Section 3.1: 'We drew all the design parts on our project such as characters, items, environments using photoshop'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2004",
+  "canonical_title": "Elderly Care Service Finder",
+  "aliases": [],
+  "phase": "proposal",
+  "course_code": "IT4291",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Kaori Saito",
+    "student_id": "5828406"
+   },
+   {
+    "name": "Sophearith Saing",
+    "student_id": "5838108"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Paitoon Porntrakoon",
+  "committee": [
+   "Asst. Prof. Dr. Rachsuda Setthawong",
+   "A. Chayapol Moemeng"
+  ],
+  "abstract": "This project is aimed at finding elderly care services for both parties in our system. The system is designed and developed based on the research by SCB Economic Intelligence Center. This is a web-based system, which can find and match Caregiver and Elders. Caregiver can provide services and schedules and Elders select services that they want then the system will match and show the list of Caregivers nearby Elders. Elders also can set services as default that they want to get. Then, they can choose whether they want to have a meeting with Caregiver who they selected from the list before making final decision to get services. Facility to communicate by using messenger and notification for both Caregiver and Elders are also available. Elderly care service Finder can be a very helpful system within Caregivers and Elders. This system provides services for not only Caregivers and Elders, but also administrators to approve to-date and quality of their work by certification with identification or signature by the specific doctor or certified person, so that Elders feel secure and trust the information on our website. Furthermore, our system can also help both users to reduce the difficulty of finding care services around them by searching by postal code or service. Finally, this system is anticipated to be useful not only for specific area of Thailand, but also for all people in Thailand.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "healthcare"
+   ],
+   "topic": [],
+   "technology": [
+    "firebase",
+    "mongodb",
+    "nodejs"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "mean_stack",
+     "label": "MEAN stack",
+     "status": "used",
+     "evidence": "Cost and benefits analysis: 'For the Backend, we decided to use MEAN for this project'"
+    },
+    {
+     "key": "angular",
+     "label": "Angular",
+     "status": "used",
+     "evidence": "'it is better and work well to use Angular' with the application client rendered by Angular"
+    },
+    {
+     "key": "express",
+     "label": "Express",
+     "status": "used",
+     "evidence": "'Express handles all the interactions between the frontend and the database, ensuring a smooth transfer of data'"
+    },
+    {
+     "key": "javascript",
+     "label": "JavaScript",
+     "status": "used",
+     "evidence": "'we use JavaScript for application and database, there is no need to translate the object from application to the database and back'"
+    },
+    {
+     "key": "bootstrap",
+     "label": "Bootstrap",
+     "status": "cited",
+     "evidence": "References list https://getbootstrap.com/"
+    },
+    {
+     "key": "angular_material",
+     "label": "Angular Material",
+     "status": "cited",
+     "evidence": "References list https://material.angular.io/"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2005",
+  "canonical_title": "Sale Forecasting Model's Recommendation for New Promotional Menu",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT4292",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "Sophearith Saing",
+    "student_id": "5838108"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Rachsuda Setthawong",
+  "committee": [
+   "Asst. Prof. Paitoon Porntrakoon",
+   "A. Suparwat Charoenvikrom"
+  ],
+  "abstract": "Time series analysis is the main tool used for predicting the future in various areas and especially in financial. From stock market to number of users or amount of sales, various tools and method are applied to time series data to assist in choosing the best decision to make. The goal of this work is to predict the amount of sales quantity of various menu from a Thai franchise restaurant. In order to do so, we tested a total of 7 different approaches of how to get the best prediction. This includes matching item from each menu's attributes, using Jaccard Similarity to find the most similar menu then forecast using one item or combine forecast of a few item then get the average. All forecasts are done in using Holt-Winters for its simple yet powerful capability. Various type of ways to calculate the score was implemented to see which way is the best for calculating match for forecasting. The result is an indication of which menu will be the best seller or customers favorite, so the restaurant can focus on integrating it into their promotions.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "none"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [
+    "recommender_system"
+   ],
+   "technology": [
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "restaurant",
+     "label": "Restaurant and food service",
+     "status": "used",
+     "evidence": "Section 5: 'The datasets are 2018 and 2019 sales of a Thai franchise restaurant'"
+    }
+   ],
+   "technology": [
+    {
+     "key": "statsmodels",
+     "label": "statsmodels",
+     "status": "used",
+     "evidence": "'We use statsmodel of Python version v.0.9.0 in order to generate Holt-Winters model'"
+    },
+    {
+     "key": "numpy",
+     "label": "NumPy",
+     "status": "used",
+     "evidence": "'we also use other data analysis libraries in python such as numpy, pandas and matplotlib for data preprocessing'"
+    },
+    {
+     "key": "pandas",
+     "label": "pandas",
+     "status": "used",
+     "evidence": "same sentence: 'data analysis libraries in python such as numpy, pandas and matplotlib'"
+    },
+    {
+     "key": "matplotlib",
+     "label": "Matplotlib",
+     "status": "used",
+     "evidence": "same sentence: 'data analysis libraries in python such as numpy, pandas and matplotlib'"
+    },
+    {
+     "key": "googletrans",
+     "label": "googletrans",
+     "status": "used",
+     "evidence": "'use googletrans library version 3.0.0 to translate all the item name from Thai to English'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2006",
+  "canonical_title": "Face Mask Detection",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS3200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "Parichart Meesin",
+    "student_id": "6010017"
+   },
+   {
+    "name": "Kamonrut Vorrawongprasert",
+    "student_id": "6013633"
+   }
+  ],
+  "advisor": "Chayapol Moemeng",
+  "committee": [
+   "Dr. Benjawan Srisura",
+   "Asst. Prof. Dr. Paitoon Porntrakoon"
+  ],
+  "abstract": "In 2020, the whole world is facing one of the most extreme contagious diseases which is Covid-19. Covid-19 can easily spread from people to people through the droplets from nose or mouth when the patient coughs or sneezes, or even touches their faces after touching the surface that has been covered by the droplets. With the loss of protection, more than 20 million people got infected from the Covid-19. Therefore, every country is trying to persuade everyone to wear a mask to avoid the spread of the Covid-19. In Thailand, the government set the regulation that everyone must wear masks in the public area, the same with stores and shops around the country. Hence, many public places like shopping malls, convenience stores and restaurants, need to have employees to check every customer that intend to enter the store whether they're wearing a mask or not which increases costs for labour or loss labour to do other tasks. In consequence, we arose an idea of the mask detector to help the store's owner lower the cost and be able to manage the employees efficiently. Our product is a mask detector which uses the video stream from a webcam to detect the faces of the customer entering into the store and detect whether they are wearing masks or not.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "healthcare"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "opencv",
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "tensorflow",
+     "label": "TensorFlow",
+     "status": "used",
+     "evidence": "Section 3.1 Training: 'the mask detection model trains using Keras, Tensorflow'"
+    },
+    {
+     "key": "keras",
+     "label": "Keras",
+     "status": "used",
+     "evidence": "'the mask detection model trains using Keras, Tensorflow' plus Keras preprocess_input and ImageDataGenerator"
+    },
+    {
+     "key": "mobilenetv2",
+     "label": "MobileNetV2",
+     "status": "used",
+     "evidence": "'The model that we use is MobileNetV2 as a base Model or the pre-training model'"
+    },
+    {
+     "key": "imutils",
+     "label": "imutils",
+     "status": "used",
+     "evidence": "'stream video from Webcam using imutils'"
+    },
+    {
+     "key": "numpy",
+     "label": "NumPy",
+     "status": "used",
+     "evidence": "'convert the data and labels array into a numpy array'"
+    },
+    {
+     "key": "pysimplegui",
+     "label": "PySimpleGUI",
+     "status": "used",
+     "evidence": "Tech stack: 'It is used to create the UI of the program showing the video frame'"
+    },
+    {
+     "key": "sqlite",
+     "label": "SQLite",
+     "status": "used",
+     "evidence": "'we use SQlite to store the information' with daily database and csv record files"
+    },
+    {
+     "key": "playsound",
+     "label": "playsound",
+     "status": "used",
+     "evidence": "Tech stack: 'It used to generate the warning sounds'"
+    },
+    {
+     "key": "haar_cascade",
+     "label": "Haar Cascade",
+     "status": "cited",
+     "evidence": "Related work 2.1: 'they use Haar Cascade model to locate and detect the face' in the reviewed Keras system"
+    }
+   ]
+  }
+ }
+]

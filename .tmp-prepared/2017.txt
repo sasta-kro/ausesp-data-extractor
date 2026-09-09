@@ -1,0 +1,2513 @@
+[page1image37495120]
+
+ASSUMPTION UNIVERSITY
+
+Vincent Mary School of Science and Technology
+
+IT 4291 SENIOR PROJECT I FINAL REPORT
+
+Dental Management System
+
+Project Advisor: Asst.Prof. Dr. Adtha Lawanna
+
+Project Committee: Asst.Prof. Titida Nochai
+
+  Asst.Prof. Dr. Benjawan Srisura
+
+SUBMITTED BY:
+
+Mr. Tanakorn Navanugraha 6025106
+Mr. Rajbir Singh 6015184
+
+Semester 1/2020
+
+______________________________________________________________
+
+Vincent Mary School of Science and Technology
+
+Department of Information Technology
+
+Department of Computer Science
+
+Senior Project Final Approval
+
+_____________________________________________________________
+
+Project Title: Dental Management System
+
+By: Tanakorn Navanugraha 6025106
+
+  Rajbir Singh 6015184
+
+Project Advisor: Asst.Prof. Dr. Adtha Lawanna
+
+Academic Year: 1/2020
+
+_____________________________________________________________
+
+The Senior Project committees of the Department of Information
+Technology, Department of Computer Science, Vincent Mary School of
+Science and Technology, Assumption University had approved this Senior
+Project Proposal. The Senior Project Proposal submitted in partial
+fulfillment of the requirements for the degree of Bachelor of Science in
+Information Technology and Bachelor of Science in Computer Science.
+
+Approval Committees:
+
+______________________
+
+(Asst.Prof.Dr. Adtha Lawanna.)
+
+Project Advisor
+
+___________________ ______________________
+
+(Asst.Prof. Dr. Benjawan Srisura) (Asst.Prof. Titida Nochai)
+
+Committee Member Committee Member
+
+Acknowledgement
+
+We would like to express my deep gratitude to Asst.Prof.Dr. Adtha
+Lawanna, my supervisors, for their patient guidance, enthusiastic
+encouragement and useful critiques of this research work and for her
+advice and assistance in keeping my progress on schedule. Our grateful
+thanks are also extended our committee members Asst.Prof. Dr. Benjawan
+Srisura and Asst.Prof. Titida Nochai, without whose support we would not
+have been able to complete the project.
+
+Secondly, we would like to express our special gratitude toward our
+friends and family for their support and constant encouragement.
+
+Finally, our thank and appreciations go to everyone who have been a part
+of developing the project with us.
+
+Mr. Tanakorn Navanugraha
+
+Mr. Rajbir Singh
+
+Table of Contents
+
+Topics Page
+
+1.  Introduction 8
+
+2.  Case study 8
+
+    1.  Case study 1: Changnoi Clinic 10
+
+    2.  Case study 2: Pattaya International Dental Center 17
+
+    3.  Case study 3: BDMS Wellness Clinic 27
+
+3.  Statement of problem 38
+
+4.  User requirements 40
+
+5.  Objectives of the project 42
+
+6.  Scope of the project 43
+
+7.  Limitation of the project 45
+
+8.  Cost and benefits 46
+
+    1.  Cost of proposed system 46
+
+    2.  Benefits of proposed system 48
+
+9.  Methodology 49
+
+10. Project management 50
+
+11. Logical design of the proposed system 51
+
+    1.  Data Flow Diagram 51
+
+    2.  Logic modelling 59
+
+    3.  Entity Relationship Diagram 61
+
+    4.  Data Dictionary 62
+
+12. Detailed Design of the System 64
+
+13. User Interface Manual 65
+
+14. Reference 78
+
+List of Tables
+
+Table Page
+
+Table 1: Cost of hardware and software 46
+
+Table 2: Cost of system implementation 47
+
+Table 3: Cost of developer 47
+
+Table 4: Data dictionary for dentist 62
+
+Table 5: Data dictionary for patient 62
+
+Table 5: Data dictionary for admin 63
+
+Table 7: Data dictionary for appointment 63
+
+List of Figures
+
+Figure Page
+
+Figure 1: ChangNoi Facebook page 10
+
+Figure 2: Example of Changnoi post 10
+
+Figure 3: The services of Changnoi 11
+
+Figure 4: Changnoi’s services on Facebook page 12
+
+Figure 5: Feedback on Changnoi Facebook page 12
+
+Figure 6: Feedback by expressing on Changnoi Facebook page 13
+
+Figure 7: Facebook post of Changnoi 13
+
+Figure 8: Advertisement of Changnoi 14
+
+Figure 9: Chat box of Changnoi 14
+
+Figure 10: Pattaya international dental center home 17
+
+Figure 11: About us of Pattaya international dental center 17
+
+Figure 12: Navigation bar of Pattaya international dental center 18
+
+Figure 13: List of services at Pattaya international dental center 19
+
+Figure 14: Home page of Pattaya international dental center 19
+
+Figure 15: Persuasive technique of Pattaya international dental center
+20
+
+Figure 16: Treatment by Pattaya international dental clinic 20
+
+Figure 17: Price of the treatments 21
+
+Figure 18: Gallery of Pattaya international dental center 21
+
+Figure 19: The massager provided by Pattaya dental center 22
+
+Figure 20: The map that the website provided 22
+
+Figure 21: Contact page in Pattaya international dental center 22
+
+Figure 22: Contact us by Pattaya international dental center 23
+
+Figure 23: Reservation page 23
+
+Figure 24: Ask your dentist option 24
+
+Figure 25: The answer for the question the patients need to know about
+24
+
+Figure 26: The Facebook page of Pattaya international dental center 25
+
+Figure 27: Skype 25
+
+Figure 28: About us of Pattaya international dental center 26
+
+Figure 29: Home page of BDMS wellness clinic 27
+
+Figure 30: Information on BDMS wellness website 28
+
+Figure 31: Key highlight of BDMS wellness website 28
+
+Figure 32: Key highlight treatments of BDMS wellness website 28
+
+Figure 33: Customers experience of BDMS wellness clinic 29
+
+Figure 34: List of services of DBMS wellness clinic 30
+
+Figure 35: Dental technology from the webpage 31
+
+Figure 36: Customer experience in photo and written form 31
+
+Figure 37: Before and after 32
+
+Figure 38: The picture of facilities of BDMS wellness clinic 32
+
+Figure 39: The inquiry on the webpage 33
+
+Figure 40: Contact method for BDMS wellness clinic 33
+
+Figure 41: Booking form of BDMS wellness clinic 34
+
+Figure 42: The article about BDMS wellness clinic 34
+
+Figure 43: International services 35
+
+Figure 44: Hotel booking assistance of BDMS wellness clinic 35
+
+Figure 45: Payment method of BDMS wellness clinic 35
+
+Figure 46: Discover Bangkok in BDMS wellness website 36
+
+Figure 47: “Where to eat” in BDMS wellness website 36
+
+Figure 48: “Where to shop” in BDMS wellness website 36
+
+Figure 49: Thai language in diary life in BDMS wellness webpage 37
+
+Figure 50: Gantt chart for project management 50
+
+Figure 51: Context diagram of dental management system 51
+
+Figure 52: Data flow diagram level 0 of dental management system 52
+
+Figure 53: Dataflow diagram level 1 of process 1.0: manage user 53
+
+Figure 54: Dataflow diagram level 1 of process 2.0: Request appointment
+54
+
+Figure 55: Dataflow diagram level 1 of process 3.0: Manage appointment
+55
+
+Figure 56: Dataflow diagram level 1 of process 4.0: Report treatment 56
+
+Figure 57: Dataflow diagram level 1 of process 5.0: Manage treatment 57
+
+Figure 58: Entity relationship diagram of Dental Management System 61
+
+Figure 59: Information of patient required 65
+
+Figure 60: Register page 65
+
+Figure 61: Login page 66
+
+Figure 62: Home page 66
+
+Figure 63: Booking page 67
+
+Figure 64: Inbox to receive appointment 68
+
+Figure 65: Review appointment information 68
+
+Figure 66: Send message 69
+
+Figure 67: Contact page 69
+
+Figure 68: Inbox of appointment 70
+
+Figure 69: About us 71
+
+Figure 70: Our dentist 71
+
+Figure 71: Our services 72
+
+Figure 72: Prices 72
+
+Figure 73: Login page for admin and dentist 73
+
+Figure 74: Site administration 73
+
+Figure 75: Show the users who register to our system 74
+
+Figure 76: Admin site for managing user in system 75
+
+Figure 77: Show date and login time 75
+
+Figure 78: Appointment list 76
+
+Figure 79: Appointment information form 76
+
+1.  Introduction
+
+This senior project is based on dental clinic management system (DCMS)
+or let’s say a system built for dental clinics. To start with, we should
+know what really dental clinic management system is. Dental clinic
+management system is basically built to streamline, and standardized
+electronic system specially designed for dental practitioners. DCMS
+provides user-friendly and comprehensive functions covering standard
+image-enabled patient records, configurable treatments and billing
+plans, and integrated inventory, accounts and reports management. Dental
+clinic management system is such kind of system which is not built often
+or if built there won’t be many websites for dental clinics.
+
+Most of the websites for dental clinics which exists are mostly of those
+clinics which are very popularly known by the people. For example,
+Pattaya international dental center is a very popular clinic in Pattaya
+and it has functions that a clinic website should have. Another example
+for a good website of dental clinic is the Bangkok smile dental clinic.
+It is clear that dental clinics with a well renowned reputation will
+surely have a website for their customers as well as visitors. For
+popular dental clinics it is very easy for them to attract customers as
+their name is enough to draw the attention of the customers and their
+websites are just a source of advertisement to let the customers reach
+them through their website.
+
+Affording the fees of these hi-fi clinics is not possible by everyone
+but when people hear of the cheaper dental clinics which is reasonable
+enough for everyone to afford the fees, people go to check their webpage
+and they find that these clinics does not have a webpage unlike other
+clinics, that is when they start thinking of the reputation of the
+clinic and some might doubt on their services as well. For theses
+clinics not having a website can be affecting the clinic in a negative
+way by not attracting much customers because the social media source,
+the customers can reach them is through Facebook or a clinic website
+.Through Facebook, the customers may get all the information regarding
+the services, location, contact number but the customers aren’t
+satisfied as it does not enable them to ease their tasks as through
+Facebook they might feel or think it as an advertisement as they cannot
+access to the functions which they actually require but end up asking
+for information either by messaging through Facebook or contacting them
+through their phone numbers.
+
+If these clinics have their own website, it will be easier for them to
+attract the customers towards them and seek of their services. By having
+their own website it means a proper website with all the functions being
+accessible by the customers which will ease their task and the clinic
+gains the customer loyalty and might change the perspective of the
+people who used to judge the clinics by their websites as well as their
+popularity. A dental clinic website should consist of the functions that
+can attract the customers as well as gain the customer loyalty.
+
+The most common problem found in the dental websites is the website has
+no purpose as most of the websites are all about the bio, about the
+doctor, and a list of services offered. Instead of just showing the
+address of the clinic and show a list of services within the website, a
+dentist’s website should consider allowing the users access to the
+following functions:
+
+- Enable the new user to register or create an account
+
+- Enable the customers to login
+
+- Enable the customers choose the treatment they want
+
+- Enable the customers to choose the clinic branch (if more than 1
+  branch)
+
+- Enable the customers to make the appointment through their website
+  rather than contacting through phone
+
+- Enable the customers to confirm their booking (place, date, time)
+
+- Enable the customers to receive appointment date
+
+- Enable the customers to receive the notification of being booked with
+  an appointment with full details
+
+With these functions being included in a clinic management system, we
+can clearly see that it automatically has a purpose to offer the service
+to the users and it won’t fail to excite the target public of a clinic
+as well as it won’t fail to interact with the public for a specific
+action.
+
+2.  Case study
+
+2.1 Changnoi Clinic (Which is the one we going to improve)
+
+We have done the research on existed system (ChangNoi clinic) to study
+and analyze the dental management system and to find out what are
+existed problems and the solution.
+
+[A screenshot of a computer screen Description automatically generated]
+
+Figure 1: ChangNoi Facebook Page [1]
+
+According to the picture above, it is the case study of ChangNoi dental
+clinic. This clinic information is available in Facebook and the website
+(dentalservicesfinder.com). From the observation, this clinic uses
+Facebook page to distribute the clinic marketing. ChangNoi clinic
+located in Lamphun province, Thailand. ChangNoi provide dental services
+and available on online platform like Facebook page and other pages. As
+we can roughly see in the Facebook page of ChangNoi dental clinic, they
+provided mostly picture of the dental promotions and their dental
+services. As an example, below ChangNoi dental clinic use the posting
+method of Facebook to show the services and some information, plus the
+price and promotion.
+
+[A screenshot of a cell phone Description automatically generated][A
+screenshot of a cell phone Description automatically generated]
+
+Figure 2: Example of Changnoi post
+
+Services
+
+Changnoi dental services have many services include:
+
+- Braces
+
+- Dental implant
+
+- Filling
+
+- Crown fitted
+
+- Check up
+
+- Teeth whitening
+
+- Teeth cleaning
+
+- X-ray
+
+- Doctor appointment
+
+[A person standing in front of a store Description automatically
+generated]
+
+Figure 3: The services of Changnoi
+
+Functions of ChangNoi Dental Clinic website
+
+As mentioned above ChangNoi dental clinic is available on Facebook and a
+website named (dentalservicesfinder.com). From the availability of the
+clinic we get to know that they don’t have their own website, so we
+assume that their functionality is only available either on Facebook or
+(dentalservicesfinder.com). The following are the functions provided by
+ChangNoi dental clinic through Facebook.
+
+- Contact: For contacting the clinic through Facebook you can simply
+  type the clinic’s name in the search box, and you can see the address,
+  contact number and their location with their working hours as well.
+  All these will be on the right side of the page on Facebook.
+
+- Services: The services offered by the clinic are shown through
+  advertisements as a Facebook post in which they include the prices,
+  promotions and the type of treatment they offer to the patients. Some
+  services offered by them are teeth whitening, dental implant, braces
+  setting, they also offer the membership for a year for the users of
+  the clinic and crowning of the teeth. Apart from these they offer
+  other treatments as well.
+
+[Text Description automatically generated][Graphical user interface,
+text, application Description automatically generated]
+
+Figure 4: Changnoi’s services on Facebook page
+
+- Feedback: They provide the customers to give their feedbacks on the
+  services obtained from the clinic through the review sections on the
+  left side of the page. In review, the customers can both upload their
+  own picture and write feedback, or they can only write their feedback
+  without any picture. The main purpose of review section is to get
+  acknowledged by the customers regarding the services offered by them.
+
+[Graphical user interface, application, Teams Description automatically
+generated]
+
+Figure 5: Feedback on Changnoi Facebook page.
+
+[A group of people posing for the camera Description automatically
+generated]
+
+Figure 6: Feedback by expressing on Changnoi Facebook page.
+
+- Advertisements: The page advertises by posting the photos of services
+  offered as well as photos of the treatment that had been done in the
+  past. So basically, Facebook is the platform where the clinic promotes
+  itself the most not only by posting the services, they offer but the
+  past treatments as well.
+
+[Graphical user interface Description automatically generated]
+
+Figure 7: Facebook post of Changnoi
+
+The picture above is one of the services offered by the clinic being
+used as an advertisement by the clinic. Along with the picture it has
+the description of the treatment to inform the customers about what it
+actually is.
+
+[A screenshot of a computer screen Description automatically generated]
+
+Figure 8: Advertisement of Changnoi
+
+The figure above shows the past operation as a source of advertisement
+so that the clinic can catch the attention of the customers through
+services as well as the through the success rate of the operation or the
+treatment.
+
+- Messaging Service: The clinic gives the privilege to the customers
+  apart from calling them the customers can also message them through
+  the Messenger chat box or the messenger app on their phones. The
+  customer can get all the same information through messages as they can
+  get through a phone call. They can even make an appointment through
+  message.
+
+[Graphical user interface, text, application, chat or text message
+Description automatically generated]
+
+Figure 9: Chat box of Changnoi
+
+The picture above shows the chat box from where the customer can ask for
+more information or all the information from the clinic. It also
+generates an automatic question for the customers such as where are you
+located? Can I make an appointment? Etc.
+
+Pros and Cons
+
+So overall, Changnoi dental clinic provides most likely complete of the
+important information that user needs to know. But as we can see,
+Facebook page is not so attractive to the user. It is simple and very
+inflexible, in other word, it needs to rely on Facebook. For example, it
+is not able to do something out of the bound such as decoration and all.
+Finally, we can list down the advantages and disadvantages of this
+clinic includes;
+
+Advantages
+
+- The basic information is given. All necessary information that the
+  customer required to know about clinic is given in the page for
+  example, location, phone number, and price.
+
+- The page simple and easy to understand. The user can surely understand
+  the information given in the page thanks to Facebook platform which
+  we’ll known widely.
+
+- Easy to promote via the help of Facebook. Since the Facebook is the
+  platform that widely use around the world. Most of the people are on
+  Facebook which mean they can access to this clinic easily.
+
+- It is easy to build the page on Facebook rather than on the website.
+  Because Facebook have its pattern of page provided but building a own
+  website surely required more time and resource.
+
+Disadvantages
+
+- The page has to only rely on the platform which mean the developer is
+  not able to change any design or any pattern of the page. You are
+  subject to rules changes and policy changes.
+
+- The decoration is not attractive to the users and it have to follow
+  Facebook pattern so it will look just familiar with another page.
+
+- People can leave a bad comment on the page and lead other uses decide
+  to use another clinic or judge the clinic in advance. The Facebook
+  have the function that other user can leave a comment about that
+  particular pages which people may have an unsatisfying experience or
+  other issues may leave a bad comment and leads the clinic into a bad
+  image.
+
+- It needs regularly update or its will look neglected. The Facebook
+  page required to update frequently otherwise the page will look out of
+  date.
+
+Solution
+
+To conclude the case study, we get to know that ChangNoi dental clinic
+is easy access as it is easy to build the page on Facebook rather than
+the website but if they had a website, they could have a better
+functionality such as make appointment online. Having a page on Facebook
+can be easy to promote but the biggest threats comes as it is open for
+everyone to comment on the page and if someone decides to leave bad
+comments it can affect the other users and they might end their brand
+loyalty towards the clinic. For ChangNoi dental clinic to have a good
+attraction of the customers they should have their own website where
+they can offer the access to the customers to the following functions:
+
+- Register to the clinic (only when the user is new)
+
+- Login
+
+- Choose the treatment the user would want to
+
+- Select the clinic branch
+
+- Send the request to the clinic for the appointment
+
+- Confirm booking (place, date, time)
+
+- Receive appointment date
+
+- Receive notification of being booked with an appointment with full
+  details (place, date, time)
+
+By having their own website and offering the following functions will
+surely catch the attention of customers as it will ease the customer
+tasks as well as increase the users’ satisfaction which is very
+beneficial to the clinic.
+
+2.2 Pattaya International Dental Center Background
+
+[]
+
+Figure 10: Pattaya international dental center home page [2]
+
+[]
+
+Figure 11: About us of Pattaya international dental center
+
+As we scroll down the home page of Pattaya international dental center,
+it also consists of the information of the clinic as well as a feedback
+video and comments by one of their customers. According to the two
+pictures above, it is clear that this case study will consist about the
+information of Pattaya international dental center. The information will
+consist of the services they offer, the functions of their website and
+the pros and cons of their website. From the two figures above it is
+clear that Pattaya international dental center uses its own website to
+connect with the customers. The clinic is located in Pattaya, Thailand.
+As we can see in their homepage, they have different options labeled in
+different option box such as Home, About us, Services, Dental fee,
+Gallery, Contact, and Ask your dentist. That means the customers who
+navigate through the website will get different information from
+different option channel.
+
+[]
+
+Figure 12: Navigation bar of Pattaya international dental center
+
+The figure above shows the navigation bar with several options to
+navigate through for the customers in order to get different information
+from each one.
+
+Services
+
+When we talk about a dental clinic, we often think about the type of
+services the clinic offers. It quite simple to understand that if it is
+a dental clinic then all the services offered would be treatments for
+teeth. There are various types of dental treatments, and the following
+dental treatments are offered by Pattaya international dental center.
+
+- Dental implant
+
+- Veneer
+
+- Dental crown and bridges
+
+- Whitening
+
+- Dental CT scan
+
+- Oral surgery
+
+- Root canal treatment
+
+- Braces
+
+- Gum treatment
+
+- Cleaning
+
+- Filling
+
+- Removable denture
+
+- X-ray
+
+- 
+
+[]
+
+Figure 13: List of services at Pattaya international dental center
+
+Functions of Pattaya international dental center
+
+From the information above so far we know that Pattaya international
+development center uses their website to attract with the customers by
+allowing the customers to gain access to navigate through the website by
+checking for the information they require such as type of services they
+want, the dental fee for each services, they can also get the
+information about the dentists under Pattaya international dental center
+under the option of about us.
+
+- Home Page: Pattaya international dental center’s homepage allow the
+  customers to gather the information about the clinic and they also
+  show the services in their homepage, but the customers can get the
+  details in the service and dental fee menu. They also provide their
+  staff pic as well as one of their customers review on their service on
+  the right-hand side of the information of the clinic.
+
+[]
+
+Figure 14: Home page of Pattaya international dental center
+
+- About Us: In their website, they have an option of about us which
+  means additional information about the clinic. In their case, in this
+  option they provide the personal information of the dentists working
+  in the clinic with the full information of their qualifications and a
+  persuasive message to attract the customers.
+
+[]
+
+Figure 15: Persuasive technique of Pattaya international dental center
+
+The above picture shows the persuasive technique of the clinic to
+attract the customers as they ensure the customers by telling their
+vision towards the customers, their mission towards the customers and
+their values of better quality, better services, better punctuality and
+better environment.
+
+- Services: By service we mean the treatments provided by the clinic to
+  the customers. For looking into services, the have provided the
+  service option on the navigation bar. Once the open the service menu,
+  the customers then can see the various types of treatments they can
+  get from the clinic.
+
+[]
+
+Figure 16: Treatment by Pattaya international dental center
+
+- Dental Fee: The services offered by the clinic are obviously not free,
+  so they provide a different section where the customers can take a
+  look for the fee of the treatment. it is an easy way of telling the
+  customers about the price of the treatment rather than receiving their
+  calls and telling them the price of the treatment.
+
+[]
+
+Figure 17: Price of the treatments
+
+The figure above shows the options of dental fee of various types of
+treatments and it further expands once the customers clicks on the plus
+sign for getting more information.
+
+- Gallery: The gallery option in website allows the customers to see the
+  venue of the clinic, the rooms inside the clinic that are used for the
+  treatments and the past treatments which had been done showing the
+  difference between before the treatment and after the treatment. When
+  the customer scrolls down further, the pictures of the dentists and
+  the staff that are working in the clinic are also available.
+
+[]
+
+Figure 18: Gallery of Pattaya international dental center
+
+- Contact: The website also allows the user to contact the Clinic by
+  using messenger from Facebook. The website provides the shortcut for
+  messenger so that the user can be reached easily.
+
+[A screenshot of a cell phone Description automatically generated]
+
+Figure 19: The messenger provided by Pattaya international dental center
+
+[A close up of a map Description automatically generated]
+
+Figure 20: The map that the website provided
+
+[A screenshot of a cell phone Description automatically generated]
+
+Figure 21: Contact page in Pattaya international dental center
+
+The picture above, the website provides additional way to reach out to
+the clinic for those who are not using Facebook or messenger. The
+website allows the users to contact to the clinic through the website.
+
+[A screenshot of a cell phone Description automatically generated]
+
+Figure 22: Contact us by Pattaya international dental center
+
+This is the information the website provides about their location and
+phone number that users may need in order to contact the clinic.
+
+[A screenshot of a cell phone Description automatically generated]
+
+[A screenshot of a cell phone Description automatically generated]
+
+Figure 23: Reservation page.
+
+As you can see above, the users required to fill in their information to
+schedule the visit. Moreover, there are options like pick up, airport
+transfer and more as in Figure 3.4.
+
+- Ask your dentist: This option in the website allows users to find the
+  most asked questions that previous patients asked. Which this function
+  can more or less satisfy the number of users who having a similar
+  question so that they can find out by themselves easily.
+
+[A screenshot of a social media post Description automatically
+generated]
+
+Figure 24: Ask your dentist option
+
+[A screenshot of a social media post Description automatically
+generated]
+
+Figure 25: The answer for the questions the patients need to know about
+
+- Facebook page: Pattaya international dental clinic also provide the
+  Facebook page. Which provide any information that the user needs to
+  know for example the link to the website, location, map, and email
+  address.
+
+[A screenshot of a computer screen Description automatically generated]
+
+Figure 26: The Facebook page of Pattaya international dental clinic
+
+- Skype: Pattaya international dental clinic also provide call and chat
+  via Skype for the user who use Skype.
+
+[A screenshot of a cell phone Description automatically generated]
+
+Figure 27: Skype
+
+Problems in Pattaya international dental center website
+
+- The problem that occurs for the website is that when the customers
+  open the website, the first thing it shows are the photos of the
+  dentists and the staff working in the clinic then followed by their
+  information and a feedback of their past customers.
+
+- Another problem found is that they have a data repetition for their
+  about us where they repeat the same thing in two pages which is the
+  homepage and in the about us section. The difference of both the
+  information of about us is that in the homepage the about us is not
+  focused as one of the words starts with a capital letter and the other
+  word starts with small letter. As in the about us section, it clearly
+  shows that it focuses on about us as both the words start with capital
+  letters. The difference is shown below in the pictures.
+
+[]
+
+Figure 28: About us of Pattaya international dental center
+
+The above picture shows the information of about us of Pattaya
+international dental center illustrating their vision mission and values
+in the homepage by having the difference in writing “About us”
+
+Analysis of Case Study 2
+
+To conclude this case study, we get to know that Pattaya international
+dental clinic is very easy to reach since it is available in website,
+Facebook, and Skype. Its functionality is what makes it easy for the
+customers to reach them, but their website still has some slight
+problems as discussed earlier. The problems which occurred are
+
+- Too many photos on the opening of homepage then followed by their
+  clinic’s information and a feedback of their past customer.
+
+- Data repetition of about us on homepage as well as about us section.
+  The difference is based on the word representation as on the homepage
+  they use “About us” and under the section of about us they use “About
+  Us”.
+
+In order to overcome these problems, they should improve their website
+in the following ways
+
+- Instead of opening the website with the photos of their dentists and
+  staff, they should open the website with the information of the clinic
+  followed by the feedback of one of their customers and then the photos
+  of the dentists and their staff should appear.
+
+- In order to avoid data repetition of the same information on two
+  different pages, the about us information describing their vision,
+  mission and values should be removed from the homepage and let it be
+  in the about us section
+
+OR
+
+- Remove the about us information describing their vision, mission and
+  value under the about us section and change the main heading from
+  about us to our dentists as their about us section contains the
+  information of their dentists as well.
+
+2.3 BDMS Wellness Clinic
+
+According to the pictures below, it is the case study of BDMS wellness
+dental clinic who provide their information through their website .In
+their website they offer the information of their services, their list
+of dentists who are working in the clinic and they also provide their
+contact through phone number, email, Line, Facebook etc. The clinic is
+located in Bangkok, Thailand. In this case study we will gather the
+information of their website and study the services provided by them as
+well as the pros and cons of their website.
+
+Background
+
+The homepage of BDMS wellness clinic consists of several parts in a
+page. In the website as the customers will scroll down the homepage,
+they will start with some basic service at the top such as free online
+consultation as the first option. After they scroll down further, they
+will be able to look at the introduction of the clinic with a picture
+being placed on the left-hand side and the description being written on
+the right-hand side. Going further down, the customers see two options
+where the clinic show some of their highlights in brief such as
+problem-based solutions and their highlight treatment. At the homepage
+they also allow the new visitors to read about the customer experience
+with the clinic and the customers can also access to gallery from the
+homepage as there is an option for the customers to click for access. At
+the bottom of the homepage, they provide their contact through phone
+number and email and their location address as well as their opening
+hours. Their contact is listed on the top of the website as well as at
+the bottom of homepage.
+
+[]
+
+Figure 29: Home page of BDMS wellness clinic
+
+The figure above shows the homepage of the clinic website where they
+offer the customers to navigate up to six options with all the options
+being different.
+
+[]
+
+Figure 30: Information on BDMS wellness website
+
+As the users scroll down the homepage, they get further information of
+the clinic as the introduction of the clinic is provided with the
+picture of the clinic
+
+[]
+
+Figure 31: Key highlights of BDMS wellness clinic
+
+The picture above shows some of the key highlights of their services
+with two options problem-based solutions and highlight treatment. The
+above picture focuses on the problem based dental solutions by giving
+the idea of some services
+
+[]
+
+Figure 32: key highlight treatment of BDMS wellness clinic
+
+The figure above shows the key highlighted treatments of the clinic that
+are provided to the customers and they give a brief information about
+the treatments
+
+[]
+
+Figure 33: Customer experience of BDMS wellness clinic
+
+The figure above shows the customer experience with the clinic and the
+experience in the above figure is the experience shared by Miss Han Thi,
+Miss Myanmar World 2018
+
+Services
+
+The following services are provided by the BDMS wellness dental clinic
+to the customers.
+
+- Cosmetic Dentistry
+
+- Dental Implants
+
+- Endodontic Dentistry
+
+- Fresh Breath Clinic
+
+- Invisalign
+
+- Operative Dentistry
+
+- Oral Surgery
+
+- Pediatric Dentistry in Thailand
+
+- Periodontics Dentistry
+
+- Prosthodontics
+
+[]
+
+Figure 34: List of services of BDMS wellness clinic
+
+The figure above shows some of the listed services in their website and
+the customers can get further information once click on the option of
+any one of the treatments
+
+Functions
+
+BDMS wellness dental clinic surely tell about their services through
+their website and also does show the past customer experiences with the
+clinic as well as the before after result to the customers. Apart of
+giving the information to the customers, BDMS wellness dental clinic
+also provides some of their functions to the customers such as
+contacting them through Line, Facebook and even the customers can
+schedule their visit to the clinic online. The functions are listed on
+their navigation bar such as the option dentists is for the customers to
+read about the dentist and get their information on which type of
+treatments, they are specialized in. They also provide the options of
+choosing the language that the customers are comfortable in.
+
+- Dental technology: This will show the technology that this clinic
+  provided for the patient.
+
+[A screenshot of a person Description automatically generated]
+
+[A picture containing person, indoor, man, standing Description
+automatically generated]
+
+Figure: 35: Dental Technology from the webpage
+
+- Gallery: It shows the picture that related to this clinic include;
+
+  - Customer experience: This where the website collects all comments
+    and feedbacks on the clinic, so it allows other new customer to know
+    the clinic’s performance.
+
+  - Before after: This is where the website collects the picture of
+    cases between before dental treatment and after dental treatment.
+
+  - Facility: The picture collection of the clinic and the facility they
+    provided.
+
+[A screenshot of a social media post Description automatically
+generated]
+
+[A screenshot of a cell phone Description automatically generated]
+
+Figure36: Customer experience in photo and written form.
+
+[A screenshot of a social media post Description automatically
+generated]
+
+Figure 37: Before and after
+
+[A group of people in a kitchen Description automatically generated]
+
+Figure 38: The picture of facilities of BDMS wellness clinic
+
+- Contact us: BDMS wellness dental clinic provide many ways to contact
+  to the clinic include; Phone number, location, Line, Facebook, Email,
+  and via the website
+
+[A screenshot of a cell phone Description automatically generated]
+
+Figure 39: The inquiry on the webpage
+
+[A close up of a logo Description automatically generated]
+
+Figure 40: Contact method for BDMS wellness clinic
+
+The available communication way for the customer who want to contact the
+clinic. It is in a shortcut form include; Phone number, Line, Messenger,
+and email.
+
+[A screenshot of a cell phone Description automatically generated]
+
+[A screenshot of a cell phone Description automatically generated]
+
+Figure 41: Booking form of BDMS wellness clinic
+
+Schedule your visit for the customer who want to book the schedule for
+an appointment with the doctor or visit to the clinic. The user can fill
+in the form and submit to the clinic through the webpage.
+
+- Article: It is the interesting article that related to dental that
+  this clinic captured into the site. There are many knowledges that the
+  user can get from this.
+
+[A screenshot of a cell phone Description automatically generated]
+
+Figure 42: The article about BDMS wellness clinic
+
+[A screenshot of a cell phone Description automatically generated]
+
+Figure 43: International services for the customer
+
+[A screenshot of a cell phone Description automatically generated]
+
+Figure 44: Hotel booking assistance of BDMS wellness clinic
+
+Hotel booking assistance for the foreigners who come from a different
+country and have to stay overnight. This clinic also provided a hotel
+for the patients. Plus, this clinic cooperates with some hotel in
+Bangkok which will help the customer to contact to the hotel easier and
+good hotel price.
+
+[A screenshot of a cell phone Description automatically generated]
+
+Figure 45: Payment method of BDMS wellness clinic
+
+This is the available payment options include VISA, MASTERCARD, and
+AMERICAN EXPRESS. This will allow the customer to plan their payment
+easier.
+
+[A screen shot of a city Description automatically generated]
+
+Figure 46: Discover Bangkok in BDMS wellness clinic website
+
+The clinic also provides ‘Discover Bangkok’ function so that the
+customer can travel while visit for the dental treatment at the same
+time.
+
+[A close up of food Description automatically generated]
+
+Figure 47: ‘Where to eat’ in BDMS wellness website
+
+[A screenshot of a social media post Description automatically
+generated]
+
+Figure 48: ‘Where to shop’ in BDMS wellness website
+
+[A screenshot of a cell phone Description automatically generated]
+
+Figure 49: Thai language in diary life in BDMS wellness clinic webpage
+
+Thai language in daily life is also provided in this clinic website, it
+shows the Thai words and sentence that foreigner needs to know when
+staying in Thailand should know.
+
+3.  Statement of Problem
+
+From the case study above, we have chosen Changnoi clinic that we going
+to improve. There are several problems that we got form the case study
+which will be listed and explain below:
+
+Rely on online platform (Facebook)
+
+The ChangNoi dental clinic have to fully rely on the online platform
+(Facebook) for their advertisement, information of the services they
+provide in the clinic, their promotions available for the customers.
+Promoting through Facebook is considered good enough for promotions and
+advertisements but when it comes to the services provided by the clinic,
+Facebook can fell short of attracting the customers for the clinic as
+the services may not be in details as we can get from a well-built
+website that can provide full information and details about the clinic
+and their services. Providing services through Facebook can be a
+drawback in terms of attracting customers and gaining customer loyalty.
+
+Unattractive Design
+
+As we all know that a Facebook will never be as attractive as a pure
+website. Another problem for ChangNoi clinic is that they are not able
+to convert their Facebook page into an attractive one because the page
+admin of the clinic have to follow the rules and regulations of Facebook
+as they are using Facebook as their main source of advertisement,
+promotions and providing the information of the clinic. So, it is
+difficult for them to make changes for their page to make it a better
+and an attractive design. Another disadvantage of having a Facebook page
+is that it will look like any other page as all the pages have to follow
+the Facebook pattern in order to have a page.
+
+Open-end opinions and reviews
+
+Facebook is an online public platform where people from any part of the
+world has the permission from Facebook to leave comments on any post or
+page. They can also write a review for any page or post on their
+timeline. This may affect the clinic in a way that some people may add
+some negative comments about the clinic like writing about the services
+as a bad service or unsatisfied of the services by the clinic. It would
+affect the new customers the most as they might not know about the
+clinic and its quality of their services. So, the new customers are most
+highly to be affected by the negative reviews by other people and they
+might end up going to the other clinics.
+
+Regular update required
+
+For a Facebook page, a regular update of the page is necessary as with
+the change of time it can look outdated as users who ever visits the
+ChangNoi clinic’s page will not be excited to see the page anymore as
+there would not be anything new in the page and it would consist all the
+same old information that have been for long in the page. If not
+regularly updated, they might lose the customer attention as well as
+their loyalty towards the clinic because when the users first find the
+information about the place where they are going to get treated the
+first thing which attracts them is of course the website and the more
+attractive website the more customer attention.
+
+Photos without any information on the opening of the homepage
+
+The problem of Pattaya international dental center is that when the
+customers open the website, the first thing it shows are the photos of
+the dentists and the staff working in the clinic then followed by their
+information and a feedback of their past customers. When the users open
+a website, they usually want to see the information at first and not the
+photos of the dentists and staff working there. Though this is not a
+huge problem but it still cannot be neglected as even these small
+mistakes or we can say problems can be the cause of confusion for the
+customers as most of them might expect that as soon as they open a
+website the first thing they will get is the information about what they
+need but what they see is a group of photos of their staff and dentists
+working in the clinic.
+
+Information Repetition
+
+In the case of Pattaya international dental center’s website, only one
+part of the information is repeated at two different sections of the
+website. The information repeated is the clinics about us information
+about their vison, mission and values. First it appears at the bottom of
+the homepage where it is clear that they don’t focus on that part as it
+is heading is written as “About us” where we can see the alphabet a is
+in capital and the alphabet u is small. On the other hand, under the
+section of about us we will see the same information being displayed
+with just the difference of the heading representation which goes by
+“About Us”. Here it is clear that the about us section clearly focuses
+on the information about the clinic.
+
+4.  User Requirements
+
+User requirement: The process to get to know who will be involved in the
+project/system and what their activities are. In this process we will
+get the level of management, organizational charts and in order to get
+those we need to take an interview, study into each function of the
+system.
+
+Stakeholders of dental clinic are followed;
+
+Patients
+
+The customers will be provided with a QR code to access the web
+application. They will also be needing an ID and password to login to
+the web application. The customer requirements are;
+
+- The patients can log in to the website
+
+- The patients have to fill in the information include Name, gender,
+  age, date of birth, phone number, email, address.
+
+- The patients can view the services
+
+- The patients can select service
+
+- The patients can book an appointment
+
+- The patients can report the problems
+
+- The patients can view status of an appointment.
+
+Dentist
+
+Care providers are who basically give services to the patient and
+provide suggestion as well as warning. The dentist has to log in into
+the system in order to manipulate and view information.
+
+Dentist requirement are;
+
+- The dentist can view patient’s information
+
+- The dentist receives patient’s reservation
+
+- The dentist can view history of the service that the patient took.
+
+- The dentist receives a patient’s appointment
+
+- The dentist sent the report of the patient’s after the service.
+
+Web developers for the website of the clinic
+
+Technology provider is very important in dental clinic management system
+because with the help of technology, things get a lot easier and more
+convenience but there will always be a problems or latencies so that we
+need the people who look before and after these technologies. Web
+developer requirement are;
+
+- Web developer plan and develop the website
+
+- Web developer design the database
+
+- Web developer maintain the website
+
+- Web developer collect and analyze the information that may useful to
+  the website.
+
+Patient management or receptionist
+
+Management team is very important, in order to run the clinic smoothly
+we need a good management team. Patient management or receptionist are;
+
+- Access to the website and manage the schedule of patient and dentist.
+
+- Receive a reservation from patience.
+
+- Arrange the appointment
+
+- Report the schedule to the dentist
+
+Manager
+
+The person who will be taking care of all thing occur in the clinic and
+lead the clinic into a successful way.
+
+- Receive the report
+
+- Study and analyze data to improve the clinic
+
+Technician
+
+Technician are the people who maintain/fix/solve errors of equipment,
+system, tools, mechanical. Technician requirement include;
+
+- Fix the dentist tools
+
+- Fix the dentist machine
+
+- Maintain tools and machine
+
+Suppliers
+
+Suppliers are both individual and company that provide equipment, tools,
+machine that necessary for the clinic. Suppliers requirement include;
+
+- Maintain tools and machine
+
+Banks, Funders
+
+Banks, Funders, the source of the money for investment, improvement,
+maintenance.
+
+- Provide funds
+
+5.  Objectives of the project
+
+The main objective of this website is to make it easy for patience to
+interact with dental clinic and be able to check the available services
+and book an appointment online without actually going to the physically
+clinic or calling the clinic during their opening hours. Plus, replace
+traditional paper-based system due to the global warming and other
+natural disaster from using paper. The objectives of dental management
+system are listed down as; Provide a proper digital management system:
+With the help of technologies, we can establish a system that help
+managing the dental clinic. With the proper system clinic can run in an
+organized way for example, when the patience sent the information like
+an appointment via the system, the clinic can easily manage the time and
+date of an appointment. The system will show available time and date to
+the user so that the user can decide when to book the appointment.
+Customer satisfaction: To ensure that all customer that use this system/
+website to satisfy and use our system consecutively. Reduce time and
+cost: The system can shorten time to connect to the clinic since the
+user can access to the website any time and the schedule will already
+arranged in the site. So, the user can select available time and service
+as they want. In addition, some people often come to the clinic and
+check the schedule. But with the system, the user can easily check the
+availability online. Real time data transmittance: Since the website is
+on online platform, the transmittance between the data surely at very
+high speed. So, if the customer wants to contact the clinic, they can
+immediately do so. Managing the whole system within one place: Since
+everything is on the system and working connectively, everything can be
+check and control under the conditions of the system. For instance, when
+the customer book an appointment on the website, the receptionist also
+can check which services the user booked and which dentist they should
+provide, also the dentist can check by themselves whether they have a
+patience or not.
+
+Therefore, this project comprise four objectives listed step as follow:
+
+1.  Project provides scheduling system for the clinic
+
+2.  Project prepares function about “Get in touch”
+
+3.  Project prepares the information of clinic.
+
+4.  Project shows price list of the service
+
+6.  Scope of the project
+
+Scheduling system
+
+- Patient can give information
+
+- Patient can register/ login to the system
+
+- Patient access to home page
+
+- Patient can book date and time
+
+- Patient can give an appointment detail
+
+- Dentist get a notification from patient through email
+
+- Stuff/ dentist can see appointment from patient
+
+- Stuff/ dentist sent confirmation to patient
+
+Get in touch (Not register yet)
+
+- Patient can reach out to the system
+
+- The information from patient will sent to the dentist via email.
+
+- Dentist can contact patient via information that patient provides (Tel
+  and email)
+
+About us
+
+- System provides information about the clinic overall information
+
+- Dentist details
+
+- Services details: General dental, filling, orthodontics, teething
+  whitening, teeth cleaning, root canal treatment, dental for kids.
+
+Price
+
+- System provides price list for each service.
+
+The scope of our system will define that what our system will be able to
+do in order to help the users to ease their task and save their time.
+Our scope will also tell about the functionality of the system provided
+to different groups of users for instance, our system is a dental clinic
+system so it will provide the functionality to the users such as
+patients, dentists, etc. The first group is the patients as they are the
+main users who will use the web application the most and the web
+application will be designed to ease their tasks and satisfy their
+needs. The second group will be the dentists who provide the treatment
+to the patients and help them in all the problems related to the
+patient’s teeth. The third group will be the receptionist who will have
+an important role in fixing the appointment between the patient and the
+dentist. The fourth group will be the manager who will keep all the
+record of the patients visited, treatment done in a month. The patients
+have the accessibility to create their account on the website when they
+are new users. The users then have to provide the username and password
+for logging in the website and once they login the website, the admin
+will make sure that their passwords are authorized for the website and
+their account is created. After logging in to the website, the users
+then are asked to fill the patient’s information form where basic
+information about the patient will be asked. The patients are required
+to fill in the information form which includes name, gender, and age,
+date of birth, phone number, email, and address. When the patient’s
+information form is filled, they can further navigate the website. The
+patients can browse through the services provided by the clinic. As we
+all know there are various types of services in a dental clinic.
+
+After looking at all the services provided, the users may choose the
+treatment of their choice or choose the treatment they are looking for.
+This function will ease the patient’s tasks as they can select the
+treatment by just sitting at home and don’t even have to contact the
+clinic. After the process of choosing the treatment they want, they can
+then go for booking an appointment in the clinic by choosing the
+treatment they want and the date they are available to go to the clinic
+as well the time. While booking an appointment with the clinic, the
+patients can tell about their problems that what really, they want and
+what happened to their teeth. Mainly they can tell the problems occurred
+and the treatment they are looking for. Once the patients are booked
+with an appointment, they can view the status of their appointment on
+the website itself. It will tell the patients about the date and time
+that they have been appointed with the dentists.
+
+The dentists can receive the information about the patient which
+consists of the problems that the patients have mentioned alongside with
+the treatment they need. Dentist can use that information to maintain
+the record of the patients in the clinic. When the patients’ reservation
+is done, the dentists are informed about the reservations and then they
+can tell their availability accordingly. If the dentist is not available
+at the date and time the patient wants, then they can recommend some
+other date and time as per their availability to the patients. Once the
+reservation or appointment has been confirmed, the dentists are able to
+study the problem of the patients and prepare themselves for the
+treatment on the appointed date and time. After the treatment is done on
+the appointed date and time, the dentists can view the history of the
+treatment that the patient took and record it in the patient’s record
+history with the reports of the treatment being attached. As for the
+report of the treatment that is made by the dentists after the
+treatment, those reports are then recorded by the dentists in the record
+of patient’s history where the whole history of the services that
+patients took will be available.
+
+The system functions for the receptionist are as follows: The
+receptionist will be the main person who will see the patient’s request
+and can manage the requested reservation by editing after getting the
+availability of the dentist on which date and what time. So instead of
+calling back the patient to inform their schedule, they just have to
+update on the website. The role of a receptionist is vital because they
+will be behind the scheduling of the appointment between the patient and
+the dentist as per the patient’s request and the dentist’s availability.
+The only difference with the website is before the receptionist would
+receive a phone call from the patient and then the appointment is
+scheduled and with the website, they will just see the patient request
+and proceed according to the availability of the dentist. After
+receiving and managing the patient’s reservation for the treatment, the
+receptionist will further finalize the date and time according to the
+dentist’s availability and then will arrange an appointment for the
+patient. The appointment can be on the date requested by the patient as
+well as the date the dentist is available. Once the receptionist is done
+arranging the appointment for the patient, they will further report the
+schedule to the dentist, so they are updated with their schedule on
+different dates and times and does not forget about the appointment.
+
+The system functions for the manager are the manager of the clinic will
+have the access of the reports of the daily operations of the
+outpatients and the use of the medical facilities in the clinic. They
+provide the administrative support to the clinic such as saving the
+records of the total patients, their information, the treatment they got
+and even the information of all the dentists and staff working in the
+staff. With getting the report of the clinic on a daily basis, they will
+have to update all the reports on the daily basis into the system as
+there is always a closing time for the clinic which means a daily report
+is a must to be recorded in the system for the clinic.
+
+7.  Limitations of the project
+
+The limitations of a system basically mean that even if the system
+provides the functionality to the users there are still some features or
+let’s say some functions which are not accessible by the users of the
+website. There is nothing in this world which is perfect even the
+technologies are also not perfect. So, it wouldn’t be strange to say
+that this website is not perfect or this website does have some
+limitations for the users that they cannot access.
+
+QR Code: The only way to access to the website is through QR code or the
+website link. As this is a web application and it does not have any
+version on different platforms so accessing through the website link or
+QR code is required for reaching the login page of the website.
+
+Payment Option: The users as in the patients does not have the access to
+the payment option as the website does not support the payment channel
+and the payment to be done at the clinic after the treatment is done.
+This is a major limitation as the patients may want to pay online
+instead of paying in cash.
+
+Specific Time for Booking: It is quite obvious that the dental clinics
+have their own opening and closing time. When the patient book his/her
+during the clinic is open, it is sure that the receptionist will receive
+their request for reservation but what if the patient send a request for
+reservation after the clinic is closed will the receptionist be able to
+receive the request at that time? The answer is no as once the clinic is
+closed all the system and servers are switched off as well so the
+request will be received the next morning by the receptionist.
+
+8.  Cost and Benefits
+
+8.1 Cost of the Proposed System
+
+Table 1: Cost of hardware and software
+
++----------------------------------------------------------------------------------------------------+
+| Hardware and software cost                                                                         |
++:=============================+:==========================================+:========================+
+|   Personal Computer          |   PC ThinkCentre M720 Tower               | 13,661 THB              |
+|                              |                                           |                         |
+|                              |   Intel Celeron Processor G4900 (2MB      |                         |
+|                              |   Cache, 3.10GHz)                         |                         |
+|                              |                                           |                         |
+|                              |   Windows 10 Home 64                      |                         |
+|                              |                                           |                         |
+|                              |   8GB DDR4 2666MHz UDIMM                  |                         |
+|                              |                                           |                         |
+|                              |   Integrated GPU                          |                         |
+|                              |                                           |                         |
+|                              |   1TB Hard Drive, 7200RPM, 3.5", SATA3    |                         |
+|                              |                                           |                         |
+|                              |   No optical drive                        |                         |
+|                              |                                           |                         |
+|                              |   Tower B360 85% Power 210W               |                         |
+|                              |                                           |                         |
+|                              |   1 year’s warranty                       |                         |
+|                              |                                           |                         |
+|                              |   No M.2 Storage Card                     |                         |
+|                              |                                           |                         |
+|                              |   NIC integration                         |                         |
++------------------------------+-------------------------------------------+-------------------------+
+|   Server                     |   Dell PowerEdge T40 Specification        | 13,100 THB              |
+|                              |                                           |                         |
+|                              |   Intel® Xeon® E-2224G 3.5GHz, 8M cache,  |                         |
+|                              |   4C/4T, turbo (71W) / 8G ECC UDIMM/1TB,  |                         |
+|                              |   TPM                                     |                         |
+|                              |                                           |                         |
+|                              |   8GB 2666MT/s DDR4 ECC UDIMM             |                         |
+|                              |                                           |                         |
+|                              |   1 x 1TB 7.2k Entry SATA 3.5in Cable     |                         |
+|                              |   Hard Drive                              |                         |
+|                              |                                           |                         |
+|                              |   Onboard Intel VROC 6.X, Support RAID 0. |                         |
+|                              |   1, 5                                    |                         |
+|                              |                                           |                         |
+|                              |   DVD+/- RW, SATA 8X, 9.5                 |                         |
+|                              |                                           |                         |
+|                              |   1 x Gigabit Ethernet                    |                         |
+|                              |                                           |                         |
+|                              |   Single Power Supply, 300W, Bronze       |                         |
+|                              |                                           |                         |
+|                              |   MiniTower Chassis with up to 3 x 3.5”   |                         |
+|                              |   Cabled Hard Drives                      |                         |
+|                              |                                           |                         |
+|                              |   3Yr ProSupport & Mission Critical       |                         |
+|                              |   (7x24) 4-hour Onsite Service            |                         |
++------------------------------+-------------------------------------------+-------------------------+
+|   Peripheral devices         |   MONITOR VIEWSONIC VA2223-H 21.5" TN FHD | 2550 THB                |
+|                              |   60Hz                                    |                         |
+|                              |                                           |                         |
+|                              |   Size: 21.5"                             |                         |
+|                              |                                           |                         |
+|                              |   Brightness: 250 cd/m²                   |                         |
+|                              |                                           |                         |
+|                              |   Contrast: 600: 1                        |                         |
+|                              |                                           |                         |
+|                              |   Response Time: 5 ms                     |                         |
+|                              +-------------------------------------------+-------------------------+
+|                              |   LAN CABLE BRILLIANT LAN UTP CAT6E BLACK | 100 THB                 |
+|                              |   [5M]                                    |                         |
+|                              +-------------------------------------------+-------------------------+
+|                              |   Cable POWER AC 1mm (1.8M) COOLPOW       | 35 THB                  |
+|                              +-------------------------------------------+-------------------------+
+|                              |   Cable Power AC 3 1.8M                   | 95 THB                  |
++------------------------------+-------------------------------------------+-------------------------+
+|   Total                                                                  | 29,541 THB              |
++--------------------------------------------------------------------------+-------------------------+
+
+Table 2: Cost of system implementation
+
++--------------------------------------------------------------------------------+
+| Cost for system implementation                                                 |
++:=========================+:=========================+:=========================+
+|   Web hosting            |   Host Seven Plus VPS    | 359 THB per year         |
++--------------------------+--------------------------+--------------------------+
+|   Internet Connection    |   True GIGATEX Fiber     | 599 THB per month        |
+|                          |                          |                          |
+|                          |   200/200 Mbps           |                          |
++--------------------------+--------------------------+--------------------------+
+|   Total                                             | 958 THB                  |
++-----------------------------------------------------+--------------------------+
+
+Table 3: Cost of developer
+
++-----------------------------------------------------------------------------+
+| Cost for system developer                                                   |
++=========================+=========================+=========================+
+| Project manager         | Run and control the     | 30,000 THB per month    |
+|                         | project flow            |                         |
++-------------------------+-------------------------+-------------------------+
+| System analysis and     | Analyze and design the  | 25,000 THB per month    |
+|                         | project flow such as    |                         |
+| System designer         | dataflow diagram,       |                         |
+|                         | entity relationship     |                         |
+|                         | diagram.                |                         |
++-------------------------+-------------------------+-------------------------+
+| UX/UI Designer          | Design the user         | 25,000 THB per month    |
+|                         | interface               |                         |
++-------------------------+-------------------------+-------------------------+
+| Web developer           | Develop the website     | 30,000 THB per month    |
++-------------------------+-------------------------+-------------------------+
+| Total                   |                         | 110,000 THB per month   |
++-------------------------+-------------------------+-------------------------+
+
+8.2 Benefits of the Proposed System
+
+Intangible Benefits
+
+This system provides several intangible benefits which are follows:
+
+- Easy access to the web application: The customer can easily access the
+  website through any device which has an internet connection and a
+  supported web browser. Since, it is a web application, installation is
+  not required.
+
+- Easy to use interface: The customer can use the interface without any
+  difficulties as all the services that the dental management system
+  functions have been provided on the website.
+
+- Save time: User are not necessary to come to the clinic to book an
+  appointment and go back home to wait for the appointment date.
+
+- Increase customer experience: It is convenient for the user to book an
+  appointment online anytime and anywhere with the website we provide.
+  And the user can see all the information about the clinic.
+
+Tangible Benefits
+
+This system provides tangible benefit which is:
+
+- Save money by providing online booking: Clinic can save the cost for
+  printing paper based by providing the booking appointment online in
+  the system.
+
+9.  Methodology
+
+Requirement analysis
+
+Before developing our system, we collected information regarding other
+dental management system by researching on their website and doing case
+studies. Once, we found out what are all requirements and what are the
+thing required to complete our project, we manage to collect all
+important requirements and then apply to next our process.
+
+System Design
+
+After gathering all requirements, we moved to next process which is
+system designing. In this process we analyzed costs and benefits of the
+system to figure total estimate that we need to develop as well as
+maintain the website. Moreover, we defined our scope of the project and
+limitation on our project. In addition, we worked on understanding our
+project objective. Finally, we designed the ER-Diagram to get better
+understand of the database and Dataflow diagram this included context
+diagram, level 0 diagram, and level 1 diagram for a better understanding
+of our system. And then we designed data dictionary for our database.
+
+Implementation
+
+After we complete designing all diagram and system architecture or
+system blueprint, we developed the web application by programming it. We
+use ER-Diagram to create the database in Django. Our programming section
+we used to implement our website included HTML, python, Mysql, and PHP.
+We used python server from the internet to run our website.
+
+Verification
+
+We uploaded our website to the server online in order to check problems
+and fix bugs. During the step of verification, there are a lot of
+obstacles we have to faces such as bugs in coding, error in database
+management system, and etc.
+
+Maintenance
+
+After the system is used by clinic, it needs to be properly maintained
+by:
+
+- Taking reviews and suggestions from the customer.
+
+- Update the system with new features to satisfy the customer needs.
+
+- Creating a Backup of the system so it can be restored if any problems
+  occur.
+
+10. Project Management
+
+[A picture containing chart Description automatically generated]
+
+Figure 50: Gantt chart for project management
+
+This Gantt chart illustrated the timeline on each activity on our
+project and the duration of each. There are four main process which are
+Requirement analysis, System design, Implementation, and Verification.
+
+11. Logical Design of the Proposed System
+
+11.1 Data Flow Diagram
+
+[]
+
+Figure 51: Context diagram of Dental Management System
+
+Figure 51: Context diagram represents the entire process and entities of
+the project which it explains the information flows between internal and
+external entities. According to the figure, it shows the information
+flow between patient, stuff, admin, and dentist that involved in the
+dental management system. In the system, patient is the only entity that
+is an external stakeholders and dentist, stuff, and admin are internal
+stakeholders.
+
+Level 0 diagram
+
+[]
+
+Figure 52: Data flow diagram level 0 of Dental Management System
+
+Dataflow diagram level 0 represents the workflow of dental management
+system which consists of 5 process; 1.0 Manage user, 2.0 Request
+appointment, 3.0 Manage appointment, 4.0 Report treatment, and 5.0
+Manage treatment.
+
+Level 1 diagram: Manage user
+
+[]
+
+Figure 53: Data flow diagram level 1 of process 1.0: Manage users
+
+Data flow diagram level 1 of process 1.0: manage users represents the
+process inside process 1.0 which are 1.1 Receive user info, 1.2 Validate
+user info, 1.3 Record user info, 1.4 Show user info, and 1.5 Verify
+login info.
+
+Level 1 diagram: Request appointment
+
+[]
+
+Figure 54: Data flow diagram level 1 of process 2.0: Request Appointment
+
+Data flow diagram level 1 of process 2.0: Request Appointment represents
+sub process in process 2.0 request appointment which consists; 2.1
+receive patient, 2.2 Receive requested appointment list, and 2.3 Record
+appointment.
+
+Level 1 diagram: Manage appointment
+
+[]
+
+Figure 55: Data flow diagram level 1 of process 3.0: Manage Appointment
+
+Data flow diagram level 1 of process 3.0: Manage Appointment represents
+the sub process of process 3.0 which consists 3.1 Receive appointment,
+3.2 Verify appointment, 3.3 Confirm appointment, and 3.4 Update
+appointment.
+
+Level 1 diagram: Report treatment
+
+[]
+
+Figure 56: Data flow diagram level 1 of process 4.0: Report treatment
+
+Data flow diagram level 1 of process 4.0: Report treatment represents
+sub process of process 4.0 which consist; 4.1 Show treatment list, 4.2
+Record treatment, 4.3 Verify treatment, and Confirm treatment.
+
+Level 1 diagram: Manage treatment
+
+[]
+
+Figure 57: Data flow diagram level 1 of process 5.0: Manage treatment
+
+This picture shows the data flow diagram level 1 of process 5.0,
+managing treatment comprise four process which are; Show treatment, show
+dentist list, assign dentist to handle treatment, update the complete
+status of the treatment.
+
+11.2 Logic Modelling
+
+Process 1.0 manage user:
+
+Process 1.1 Review user info
+
+GET Patient Info from DENTIST. GET Staff Info from DENTIST.
+
+GET Patient Info from STAFF. GET Dentist Info from STAFF.
+
+GET Patient Info from ADMIN. GET Dentist Info from ADMIN.
+
+SENT User Info to Validate User Info.
+
+GET Patient Info from Patient Database. GET Stuff Info from Stuff
+Database.
+
+Process 1.2 Validate User Info
+
+GET User Info from 1.1 Receive User Info.
+
+GET Validated Patient Info from ADMIN. GET Validated Dentist Info from
+ADMIN.
+
+GET Validated Stuff Info from ADMIN.
+
+SENT Validated Patient Info to Patient Database. SENT Validated Stuff
+Info to Stuff Database.
+
+SENT Validated User Info to 1.3 Record User Info
+
+Process 1.3 Record User Info
+
+GET User Info from 1.2 Validate User Info
+
+GET Recorded Patient Info from ADMIN.GET Recorded Stuff Info from ADMIN.
+
+SENT Validated Patient Info to Patient Database. SENT Stuff Info to
+Stuff Database.
+
+Sent User Info to 1.4 Show User Info.
+
+Process 1.4 Show User Info
+
+GET User Info from 1.3 Record User Info.
+
+SENT Patient Info to DENTIST. SENT Stuff Info to DENTIST. SENT Patient
+Info to STUFF.
+
+SENT Patient Info to Patient Database. SENT Stuff Info to Stuff
+Database.
+
+Process 1.5 Verify Login Info
+
+GET Patient Id & Password from Patient Database. GET Stuff Id & Password
+from Stuff Database.
+
+GET Patient Id & Password from PATIENT.
+
+SENT Patient Account to PATIENT
+
+GET Stuff Id & Password from STUFF
+
+SENT Stuff Account to STUFF
+
+Process 2.0 Request Appointment:
+
+Process 2.1 Receive patient info
+
+SENT Requested Patient Info to STUFF. GET Patient Info from STUFF.
+
+SENT Patient Info to 2.2 Receive Requested Appointment List.
+
+Process 2.2 Receive requested appointment list
+
+GET Patient Info from 2.1 Receive Patient Info.
+
+GET Requested Appointment from STUFF. SENT Appointment Info to STUFF.
+
+GET Requested Appointment from PATIENT. SENT Appointment to PATIENT.
+
+SENT Appointment List Info to Appointment List Database.
+
+SENT Appointment to Appointment Database.
+
+GET Requested Appointment Info from DENTIST
+
+SENT Appointment List Info to DENTIST.
+
+SENT Appointment to 2.3 Record appointment.
+
+Process 2.3 Record appointment
+
+GET Appointment from 2.2 Receive Requested Appointment List.
+
+GET Appointment List Info from Appointment List Database.
+
+GET Appointment from Appointment Database.
+
+Process 3.0 Manage Appointment
+
+Process 3.1 Receive appointment
+
+GET Patient Appointment from PATIENT. SENT Requested Appointment to
+PATIENT.
+
+SENT Appointment Info to DENTTIST.
+
+Process 3.2 Verify appointment
+
+GET Requested Patient Id from DENTIST. SENT Patient Id to DENTIST.
+
+SENT Requested Dentist Id to DENTIST. GET Dentist Id from DENTIST.
+
+Process 3.3 Confirm appointment
+
+GET Requested Appointment Info from DENTIST. SENT Appointment Info to
+DENTIST.
+
+SENT Appointment Status to appointment Database.
+
+Process 3.4 Update appointment
+
+GET Updated Appointment Status from DENTIST. GET Appointment Status from
+Appointment Database.
+
+Process 4.0: Report treatment
+
+Process 4.1 Show treatment list
+
+GET Requested Treatment List from PATIENT. SENT Treatment List to
+PATIENT.
+
+GET Requested Treatment List from DENTIST. SENT Treatment List to
+DETNTIST.
+
+SENT Treatment List to Treatment List Database
+
+Process 4.2 Record treatment
+
+GET Requested Treatment Info from PATIENT. SENT Treatment Info to
+PATIENT.
+
+SENT Treatment Info to Treatment Database.
+
+Process 4.3 Verify treatment
+
+GET Requested Treatment Info from DENTIST. SENT Treatment Info to
+DENTIST.
+
+SENT Verified treatment Info to Treatment Database. GET Treatment Info
+from Treatment Database.
+
+Process 4.4 confirm treatment
+
+GET Requested Treatment from PATIENT. SENT Confirmed Treatment to
+PATIENT.
+
+GET Requested Treatment from DENTIST. SENT Confirmed Treatment to
+DENTIST.
+
+SENT Confirmed Treatment to Treatment Database. GET Treatment from
+Treatment Database.
+
+Process 5.0: Manage treatment
+
+Process 5.1 Show treatment
+
+GET Requested Treatment Info from PATIENT. SENT Treatment Info to
+PATIENT.
+
+GET Requested Treatment Info from DENTIST. SENT Treatment Info to
+DENTIST.
+
+GET Treatment from Treatment Database.
+
+Process 5.2 Show dentist list
+
+GET Treatment Id from DENTIST. GET Requested Dentist List from DENTIST.
+
+SENT Dentist List to DENTIST. SENT Treatment Id to Treatment Database.
+
+Process 5.3 Assign dentist to handle treatment
+
+GET Dentist Id from DENTIST. SENT Dentist Id to Treatment Database.
+GET Treatment Info from Treatment Database.
+
+Process 5.4 Update the complete status of the treatment
+
+GET Completed Treatment Status Update from DENTSIT.
+
+SENT Updated Treatment Complete Status to DENTIST.
+
+SENT Treatment Complete Status to Treatment Database.
+
+11.3 Entity Relationship Diagram
+
+Figure 60 show ER diagram of dental management system
+
+[]
+
+Figure 58: Entity relationship diagram of Dental Management System
+
+Figure 58 is an ER diagram that describes system data schema in
+graphical form. ER diagram shows relationship among dentist, patient,
+admin, and appointment. In each entity, it represents attributes that
+needed to be store in entities. Each attribute is the information that
+system needs to store in order to operate the process in dental
+management system.
+
+11.4 Data Dictionary
+
+Table 4: Data dictionary for Dentist
+
++-------------------------------------------------------------------------------------------------------+
+| Dentist                                                                                               |
++:=================:+:=====================:+:=================:+:=================:+:=================:+
+| Attribute name    | Description           | Type              | Field Size        | Sample            |
++-------------------+-----------------------+-------------------+-------------------+-------------------+
+| Dentist_ID        | Id of dentist         | Int               | 4                 | 1                 |
++-------------------+-----------------------+-------------------+-------------------+-------------------+
+| Dentist_name      | First name of the     | Varchar           | 50                | John              |
+|                   | dentist               |                   |                   |                   |
++-------------------+-----------------------+-------------------+-------------------+-------------------+
+| Dentist_lastname  | Last name of the      | Varchar           | 50                | Newton            |
+|                   | dentist               |                   |                   |                   |
++-------------------+-----------------------+-------------------+-------------------+-------------------+
+| Dentist_username  | Username of the       | Varchar           | 50                | John11            |
+|                   | dentist               |                   |                   |                   |
++-------------------+-----------------------+-------------------+-------------------+-------------------+
+| Dentist_password  | Password of the       | Varchar           | 50                | B14141414         |
+|                   | dentist user          |                   |                   |                   |
++-------------------+-----------------------+-------------------+-------------------+-------------------+
+
+Table 4 shows data dictionary for dentist, which is one of the most
+important things in the ER diagram for the system. In the table, it
+shows Types of data, description, field size, and example of each.
+
+Table 5: Data Dictionary for Patient
+
++------------------------------------------------------------------------------------------------------------+
+| Patient                                                                                                    |
++:==========================+:==================+:==================+:==================+:===================+
+| Attribute name            | Description       | Type              | Field Size        | Sample             |
++---------------------------+-------------------+-------------------+-------------------+--------------------+
+| Patient_ID                | Id of the patient | int               | 4                 | 11                 |
++---------------------------+-------------------+-------------------+-------------------+--------------------+
+| Patient_name              | Name of the       | Varchar           | 50                | Bob                |
+|                           | patient           |                   |                   |                    |
++---------------------------+-------------------+-------------------+-------------------+--------------------+
+| Patient_lastname          | Last name of the  | Varchar           | 50                | Micky              |
+|                           | patient           |                   |                   |                    |
++---------------------------+-------------------+-------------------+-------------------+--------------------+
+| Patient_address           | Address of the    | Varchar           | 100               | 110/11 Bangkok     |
+|                           | patient           |                   |                   | Thailand           |
++---------------------------+-------------------+-------------------+-------------------+--------------------+
+| Patient_tel               | Telephone number  | int               | 15                | 0817821212         |
+|                           | of the patient    |                   |                   |                    |
++---------------------------+-------------------+-------------------+-------------------+--------------------+
+| Patient_email             | Email of the      | Varchar           | 50                | Asssdfov@gmail.com |
+|                           | patient           |                   |                   |                    |
++---------------------------+-------------------+-------------------+-------------------+--------------------+
+| Patient_age               | Age of the        | int               | 3                 | 23                 |
+|                           | patient           |                   |                   |                    |
++---------------------------+-------------------+-------------------+-------------------+--------------------+
+| Patient_birthday          | Birthday date of  | date              | -                 | 20/02/2020         |
+|                           | the patient       |                   |                   |                    |
++---------------------------+-------------------+-------------------+-------------------+--------------------+
+| Patient_emergency_contact | Emergency contact | int               | 20                | 0818089822         |
+|                           | of the patient    |                   |                   |                    |
++---------------------------+-------------------+-------------------+-------------------+--------------------+
+| Patient_username          | Username of the   | Varchar           | 50                | Booo1121           |
+|                           | patient           |                   |                   |                    |
++---------------------------+-------------------+-------------------+-------------------+--------------------+
+| Patient_password          | Password of the   | Varchar           | 50                | Bob1212121         |
+|                           | patient           |                   |                   |                    |
++---------------------------+-------------------+-------------------+-------------------+--------------------+
+
+Table 5 shows data dictionary of patient which are Patient_ID,
+Patient_name, Patient_lastname, Patient_address, Patient_tel,
+Patient_email, Patient_age, Patient_birthday, Patient_emergency_contact.
+And it also describes the types, description, field size, and example of
+each.
+
+Table 6: Data Dictionary for Admin
+
++---------------------------------------------------------------------------------------------------+
+| Admin                                                                                             |
++:==================+:==================+:==================+:==================+:==================+
+| Attribute name    | Description       | Type              | Field Size        | Sample            |
++-------------------+-------------------+-------------------+-------------------+-------------------+
+| Admin_ID          | Id of the admin   | int               | 4                 | 90                |
++-------------------+-------------------+-------------------+-------------------+-------------------+
+| Admin_username    | Username of admin | Varchar           | 50                | Ad123             |
++-------------------+-------------------+-------------------+-------------------+-------------------+
+| Admin_password    | Password of admin | Varchar           | 50                | Ad12345           |
++-------------------+-------------------+-------------------+-------------------+-------------------+
+
+The table above shows data dictionary of admin which are Admin_ID,
+Admin_username, and Admin_password. It also explains description, type
+of data, field size, and example of each.
+
+Table 7: Data Dictionary for Appointment
+
++-------------------------------------------------------------------------------------------------------+
+| Appointments                                                                                          |
++:======================+:==================+:==================+:==================+:==================+
+| Attribute name        | Description       | Type              | Field Size        | Sample            |
++-----------------------+-------------------+-------------------+-------------------+-------------------+
+| Appointment_ID        | Id of the         | int               | 4                 | 52                |
+|                       | appointment       |                   |                   |                   |
++-----------------------+-------------------+-------------------+-------------------+-------------------+
+| Patient_ID            | Id of the patient | int               | 5                 | 23                |
++-----------------------+-------------------+-------------------+-------------------+-------------------+
+| Appointment_date      | Appointment date  | date              | -                 | 20/02/2020        |
++-----------------------+-------------------+-------------------+-------------------+-------------------+
+| Appointment_time      | Appointment time  | time              | -                 | 13.00 pm          |
++-----------------------+-------------------+-------------------+-------------------+-------------------+
+| Appointment_duraition | Appointment       | time              | -                 | 30 mins           |
+|                       | duration          |                   |                   |                   |
++-----------------------+-------------------+-------------------+-------------------+-------------------+
+
+It shows data dictionary of appointment which are Appointment_ID,
+Patient_ID, Appointment_date, Appointment_time, and
+Appointment_duration. It also shows description, type of data, field
+size, and example of each.
+
+12. 
+    Detailed Design of the System
+
+Web design
+
+The customers are allowed to access and book an appointment in our
+website without logging in. There is a registration and logging in
+system for those who want to be in our system and rebook the appointment
+in the future. The website is divided into two interfaces which are;
+
+- Customer user interface: Home page, registration page, log in page,
+  About us, contact, services, prices, book now
+
+- Admin user interface: Database interface, log in page, manage page for
+  users and appointments
+
+Testing plan
+
+This project conducted the test on local computers first to ensure that
+all the features were working well. Some bugs were found during local
+testing. After debugging, we uploaded all our data to the server and
+tested it again. If certain changes had to be made to the interface, it
+had to be on the server data.
+
+Security Design
+
+All groups of users such as our customers, managers and staff have
+different interfaces. All the interfaces can be logged in only using the
+unique ID and password. For example, a customer isn’t given access to
+the manager’s interface.
+
+System requirement
+
+- Hardware requirement: Our website is uploaded to an online platform.
+  We have made it available for all device that connect to the internet
+  such as laptop, mobile phone, etc.
+
+- Software requirement: Our web application is hosted on a web-based
+  server. It can be used on most web browsers such as Google Chrome,
+  Firefox etc. Also, on mobile phone such as Safari.
+
+13. User interface manual
+
+Scheduling System
+
+Step 1: Patient can give information
+
+[Graphical user interface, text, application, website Description
+automatically generated]
+
+Figure 59: Information of patient required
+
+Figure 59: required patient to insert their information into the system,
+which are Name, Email, address
+
+Step 2: Patient can register/ login to the system
+
+[Graphical user interface, text, website Description automatically
+generated]
+
+Figure 60: Register page
+
+On the page above the users can register their account if they don’t
+have one yet. The registration from requires their Username, Email,
+Password, and Password verification before they can click register
+account. As we can see in the picture, it also guides the users that if
+they already have an account, they can click on the Login and will be
+directed to Login page.
+
+[Graphical user interface, website Description automatically
+generated]Figure 61: Log in page
+
+The above picture illustrates the Login page for the users. In this page
+they are required to use the Username and Password that they registered
+with and have to use the same to get through the Login page. Below it
+has a guideline asking the users if they have an account or not, if they
+don’t and wish to make one can click on the Sign Up and create an
+account otherwise can click on Home and direct to Website.
+
+Step 3: Patient access to home page
+
+[A screenshot of a computer screen Description automatically generated]
+
+Figure 62: Home page
+
+The picture above is the Home page of the website where there is a
+navigation bar indicating different functions such as home, about us,
+services, prices, contact, register, login and Book now. Above of the
+navigation bar we can see on the left side there is an indication to the
+email of the dental clinic and their location where as on the right hand
+side there is a line saying Hello, followed by the username and if an
+unidentified user is serving the website it will show anonymous user and
+with a logout button being right with it.
+
+Step 4: Patient can book date and time and give an appointment detail
+
+[Graphical user interface, text, application, website Description
+automatically generated]
+
+Figure 63: Booking page
+
+The picture above illustrates the booking form for booking an
+appointment. It requires the users to fill the form with their name,
+phone number, email, address, time slot that they want to book, date
+they want to book, a message box is provided for the users to write
+about their problem and the treatment they want to get and click book
+now. Once the book now button is clicked, a message will be sent to
+clinic’s email.
+
+Step 5: Dentist get a notification from patient through email and stuff/
+dentist can see appointment from patient
+
+[A screenshot of a computer screen Description automatically generated]
+
+Figure 64: Inbox to receive appointment request and contact by patients
+
+The appointment email will be sent to admin and dentist which will be
+show as Figure 66.
+
+Step 6: Patient wait for the confirmation
+
+[Graphical user interface, application, website Description
+automatically generated]
+
+Figure 65: Review appointment information but appointment to be
+confirmed manually
+
+The dentist or admin will contact to the customer by telephone or email
+manually.
+
+Get in touch (Not register yet)
+
+Step1: Patient can reach out to the system
+
+[A screenshot of a computer screen Description automatically generated]
+
+Figure 66: Send message
+
+The picture above shows the contact page for the users. As we can see it
+has a form which requires users’ name, email and a message regarding
+what they want to contact about and once the send message is clicked the
+message will be sent to the clinic’s email.
+
+Step 2: The information from patient will sent to the dentist via email.
+
+[Graphical user interface, website Description automatically generated]
+
+Figure 67: Contact page
+
+Step 3: Dentist can contact patient via information that patient
+provides (Tel and email)
+
+[A screenshot of a computer screen Description automatically generated]
+
+Figure 68: Inbox of appointment
+
+About us
+
+System provides information about the clinic overall information
+
+[Graphical user interface, website Description automatically generated]
+
+Figure 69: About us
+
+In the About Us page we provide the information regarding the dental
+clinic with a little bit of their information being displayed and have
+the statistics for the dental clinic like how many patients they have
+treated, how experienced their dentists are, how modern their equipment
+is
+
+Dentist details
+
+[Graphical user interface, website Description automatically generated]
+
+Figure 70: Our dentist
+
+When we scroll down the About Us page, we come to know about the
+dentists who are working in the clinic. Their information will be
+represented by their name and a little information about them.
+
+Services details: General dental, filling, orthodontics, teething
+whitening, teeth cleaning, root canal treatment, dental for kids.
+
+[Graphical user interface, website Description automatically generated]
+
+Figure 71: Our services
+
+Price
+
+The figure above represent the services provided by the clinic. As we
+can see
+
+[Graphical user interface, text Description automatically generated]
+
+Figure 72: Prices
+
+The above picture displays the prices of the services provided by the
+clinic. As we can see there are total of 9 services displayed under the
+service name and its prices are shown respectively next to them under
+the heading name Price.
+
+Admin
+
+Admin site
+
+Step 1: Admin login to the system
+
+[Graphical user interface, website Description automatically generated]
+
+Figure 73: Login page for admin and dentist
+
+The following page shown on above is the Login page for admin of the
+system to administrate the system and here in our system dentist and the
+admin are the same person.
+
+Step 2: Admin view details
+
+[Graphical user interface, website Description automatically generated]
+
+Figure 74: Site administration
+
+After logging in, the admin will get to see the site administration as
+shown in the picture. In the picture it shows the site administration of
+users, appointments and groups. Where Users come under authentication
+and authorization and appointments are under website.
+
+Step 2.1: Admin views patient registered information
+
+[Graphical user interface, website Description automatically generated]
+
+Figure 75: Show the user who register to our system
+
+The above picture shows the number of users who registered, and login
+and we can see the difference between admin account and users account by
+seeing their staff status. As users are people getting services and not
+giving services, so it is obvious that their staff status will not be
+active.
+
+Step 2.2(a): Admin manage user in system
+
+[A screenshot of a cell phone Description automatically generated]
+
+Figure 76: Admin site for managing user in system
+
+Going further while checking the users’ profile, the admin can check the
+user information by seeing their username alongside with password being
+encrypted to protect their privacy. As we move down, we can see their
+personal information and permissions they have for the website.
+
+Step 2.2(b): Admin manage user in system
+
+[Graphical user interface, text, application Description automatically
+generated]
+
+Figure 77: Show date of last login and time
+
+At the end of the users’ page, the admin can also see that when was the
+date and time the user created an account and can also see the latest
+login by the users’ and their time of login as well.
+
+Step 2.3(a): Admin views appointment details
+
+[Graphical user interface, application Description automatically
+generated]
+
+Figure 78: Appointment list
+
+Step 2.3(b): Admin views appointment details
+
+Under the appointments section, when we go further, we can see the
+appointment list or the list of customers who booked an appointment
+through the website.
+
+[Graphical user interface, text, website Description automatically
+generated]Figure 79: Appointment information form
+
+This is the appointment information, which is visible only to the admin,
+they can see the whole information of the users such as their name,
+phone number, email, address, their choice of schedule, their choice of
+date and the message the wrote.
+
+Conclusion
+
+To conclude, the introduced system, Dental Management System is targeted
+for patients so that they can provide a better customer service to their
+customers by providing appointment management system so the patient can
+have a better experience for dental clinic. Moreover, the system aims to
+convenient admin and dentist to manage their customers and their
+information.
+
+Achievements
+
+- Customers have better experience to book an appointment at dental
+  clinic. They can save time and money by using this website to book
+  their appointment. With dental management system, user can access and
+  find out about the clinic much easier without actual going to the
+  clinic.
+
+- Dental management system can manage their customers/ patients easier
+  and faster. Dental management system help dentist to categorize,
+  arrange and store the appointment by the help of digital and
+  technology such as database management system.
+
+- For us, we increased our technical skills on working through the
+  development and implementation stage of web-application building. We
+  have learned many new things regarding PHP programming, HTML, Django,
+  Mysql, Python, and CSS programming languages. We gained more knowledge
+  about the clinical industry and dental industry by researching on
+  people, website, internet, etc. Finally, we have done our best in
+  making this project to complete.
+
+Difficulties
+
+We had difficulties for working on the database for sending and storing
+the problems. We also had difficulties in making the web application
+responsive to be used in most of the electronic devices. We had to learn
+how to use the web host for uploading our files on the online database,
+which was confusing at first, but we started to understand it as we
+worked on it. Implement some new features on the web application was
+difficult because it affected some other functions in the application as
+well.
+
+Recommendation
+
+The system requires improvements in certain parts of the system. Some of
+these improvements include:
+
+- Integrating online payment system during checkouts for the customers.
+
+- Management system for supply in clinic
+
+- Chat system to interact with patient in case they are having
+  inquiries.
+
+- May concern inventory and maintenance system for the dental clinic
+  management system. (Going to be senior project 2)
+
+References
+
+[1]https://web.facebook.com/%E0%B8%84%E0%B8%A5%E0%B8%B4%E0%B8%99%E0%B8%B4%E0%B8%81%E0%B8%97%E0%B8%B1%E0%B8%99%E0%B8%95%E0%B8%81%E0%B8%A3%E0%B8%A3%E0%B8%A1%E0%B8%8A%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%99%E0%B9%89%E0%B8%AD%E0%B8%A2-1683401661959889/?ref=page_internal
+
+Accessed 15 June 2020
+
+[2] https://www.pidcdental.com
+
+Accessed 20 June 2020
+
+[3] www.bwcdentalclinic.com
+
+Accessed 20 June 2020
+
+[4] https://www.bdmswellness.com/
+
+Accessed 21 June 2020

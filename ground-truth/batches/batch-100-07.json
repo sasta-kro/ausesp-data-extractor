@@ -19,7 +19,7 @@
    "Asst. Prof. Dr. Dobri Atanassov Batovski",
    "Asst. Prof. Pawut Satitsuksanoh"
   ],
-  "abstract": null,
+  "abstract": "The project addresses physical security by building a home security and surveillance system on a Raspberry Pi 3. An HC-SR04 ultrasonic sensor watches a closed door and triggers intrusion detection, a camera module captures a snapshot of the intruder, and a DHT-11 sensor tracks temperature and humidity. The system communicates with the user entirely over email using SMTP and POP with Gmail, executing remote commands such as arm, disarm, snap, text, quote and status. The software was written from scratch in Python 3, using multiprocessing and resource locks so that sensors and modules run concurrently. Bluetooth scanning can automatically disarm the system when a whitelisted smartphone is detected.",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -110,7 +110,7 @@
    "Asst. Prof. Dr. Adtha Lawanna",
    "Dr. Benjawan Srisura"
   ],
-  "abstract": null,
+  "abstract": "The project addresses the problem of homeless dogs and cats by providing an online platform that connects animal shelters with adopters. Adopters can register, browse animals by category, and send adoption requests together with a questionnaire. Administrators maintain animal records such as breed, color, age, weight and vaccination history, and approve or reject requests with automatic email notifications of the result. The web application was developed in C#, HTML, CSS and JavaScript using Visual Studio, with SQL Server and Firebase Storage for data and Microsoft Azure as the web server. The system is intended to reduce shelter workload and help ensure that each animal is placed with a suitable adopter.",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -154,7 +154,7 @@
    "Asst. Prof. Dr. Chokdee Liophanich",
    "Asst. Prof. Titida Nochai"
   ],
-  "abstract": null,
+  "abstract": "Metro Sky Trip is a website that helps travelers plan trips along the Bangkok metro sky trains BTS, MRT and ARL. The system stores attractions and Thai food restaurants together with their nearby stations, and users can search by origin and destination or by station and attraction. It automatically recommends possible trip plans using a three station nearest neighbor algorithm that considers restaurants close to the stations around an attraction. Administrators manage attraction, restaurant, station and train information, and popular plans are summarized for users. Development followed the Agile methodology with Scrum, using Visual Studio 2017, a MySQL database and Amazon Web Services for cloud storage.",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -167,6 +167,7 @@
     "transportation"
    ],
    "topic": [
+    "geolocation",
     "recommender_system"
    ],
    "technology": [
@@ -196,7 +197,7 @@
    "Asst. Prof. Dr. Titida Nochai",
    "Dr. Benjawan Srisura"
   ],
-  "abstract": null,
+  "abstract": "EzEat is a web application that helps restaurant owners and managers handle the ordering process. Walk in customers scan a QR code presented on the table to open the menu on their own device and send their order directly to the kitchen, which removes the need for handwritten order tickets. Each staff role receives a real time dashboard that simulates the ticket line of a restaurant, and managers get order summaries and sales reports. The system also supports delivery orders with a customer interface suitable for mobile devices. The prototype was built with Node.js, Express and MongoDB with Mongoose, developed in the Cloud9 IDE, with passwords hashed and salted using bcrypt.",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -206,8 +207,7 @@
     "web"
    ],
    "domain": [
-    "business",
-    "e_commerce"
+    "business"
    ],
    "topic": [],
    "technology": [

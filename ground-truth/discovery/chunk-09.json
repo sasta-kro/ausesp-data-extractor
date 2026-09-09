@@ -1,0 +1,435 @@
+[
+ {
+  "id": "1810",
+  "canonical_title": "Smart Home",
+  "aliases": [],
+  "phase": "proposal",
+  "course_code": "IT 4291",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Thayawat Thathong",
+    "student_id": "5717532"
+   },
+   {
+    "name": "Prasong Chonsathian",
+    "student_id": "5937618"
+   }
+  ],
+  "advisor": "Asst. Prof. Chokdee Liophanich, Ph.D.",
+  "committee": [
+   "Asst. Prof. Titida Nochai",
+   "Benjawan Srisura, Ph.D."
+  ],
+  "abstract": "This senior project built a smart home model that automates seven zones of a house, including the living room, kitchen, bedroom, toilet, garden, entrance, and hallway. NodeMCU ESP8266 boards connect sensors and relays to the internet and send real time data to Firebase, while an Anto.io dashboard lets users monitor and control the devices. The system detects flame and gas in the kitchen, controls the bedroom fan with a DHT11 temperature sensor, responds to clap commands in the toilet, and waters the garden automatically based on soil moisture. Lights in the living room can be switched by voice through Google Assistant and IFTTT. Testing equipment, development tools, and the completed model are budgeted at a total of 5,000 baht.",
+  "abstract_source": "generated",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "hardware_iot"
+   ],
+   "platform": [
+    "embedded_hardware"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [],
+   "technology": [
+    "firebase"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "smart_home",
+     "label": "Smart home and home automation",
+     "status": "used",
+     "evidence": "Section 1.1: In this project, we will make those devices become smart which is called smart home."
+    }
+   ],
+   "technology": [
+    {
+     "key": "nodemcu_esp8266",
+     "label": "NodeMCU ESP8266",
+     "status": "used",
+     "evidence": "Section 3.1.1: This project we use NodeMCU to communicate to others hardware and to the internet in order to contact with Firebase (Store real time information), Anto.io (IoT dashboard)."
+    },
+    {
+     "key": "arduino",
+     "label": "Arduino",
+     "status": "used",
+     "evidence": "Section 3.2.1 Arduino IDE: This project we use it to implement a code and upload it to NodeMCU. The testing budget also lists Arduino UNO R3 with USB cable."
+    },
+    {
+     "key": "c",
+     "label": "C",
+     "status": "used",
+     "evidence": "Section 3.2.1: The language to code on this software is C language which can be used with any Arduino boards including NodeMCU."
+    },
+    {
+     "key": "anto_io",
+     "label": "Anto.io",
+     "status": "used",
+     "evidence": "Section 3.2.3: This project we use it as a dashboard to control the systems such as changing the temperature in the bedroom."
+    },
+    {
+     "key": "ifttt",
+     "label": "IFTTT",
+     "status": "used",
+     "evidence": "Section 3.2.2: This project we use it to communicate between Google assistant and Anto.io in order to allows light1 and light2 turn on and turn off by using voice recognition in the living room."
+    },
+    {
+     "key": "google_assistant",
+     "label": "Google Assistant",
+     "status": "used",
+     "evidence": "Section 3.2.5: This project we use it as a middleware as well to control the light1 and light2 in the living room by using voice recognition."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1811",
+  "canonical_title": "Travel Guide",
+  "aliases": [
+   "Travel Diary"
+  ],
+  "phase": "final",
+  "course_code": "CS4200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Nathanan Pornprapee",
+    "student_id": null
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "Dr. Kwankamol Nongpong",
+   "A. Piyakul Tillapart"
+  ],
+  "abstract": "The way people travel has changed because of technologies. So, we decided to create this project, which is a travel diary, mobile application for helping users to keep tracks of locations and experiences along their trip just like they're making their own travel journals. We designed the application to be user generated content, which users can start a trip, then select location to check-in, write reviews and add photos to record that in to their trip. They can keep checking-in until the trip ends, which the ended trip will be keep in the past trips, where users can come back and take a look.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [
+    "geolocation"
+   ],
+   "technology": []
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "travel_tourism",
+     "label": "Travel and tourism",
+     "status": "used",
+     "evidence": "Abstract: a travel diary, mobile application for helping users to keep tracks of locations and experiences along their trip just like they're making their own travel journals."
+    }
+   ],
+   "technology": [
+    {
+     "key": "ios",
+     "label": "iOS",
+     "status": "used",
+     "evidence": "Section 1.2: Our project is an iOS application which mainly focuses on recording the trips."
+    },
+    {
+     "key": "facebook_login",
+     "label": "Facebook Login",
+     "status": "used",
+     "evidence": "Section 2.1: First, users need to login by using facebook login before starting their trip. Test case F-001 also covers Facebook Login."
+    },
+    {
+     "key": "google_places_api",
+     "label": "Google Places API",
+     "status": "used",
+     "evidence": "Section 2.1: The application uses Google Place API to get locations and save them into our database."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1812",
+  "canonical_title": "People Sensor with Computer Vision",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT 4292",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Hein Htet Naing",
+    "student_id": "5818035"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "A. Piyakul Tillapart",
+   "A. Pawut Satitsuksanoh"
+  ],
+  "abstract": "In this report, we proposed a system for people sensor to keep track of people movement with computer vision technology. This report consists of 3 main concepts: (1) people detection, (2) people tracking and (3) people counting. A Deep Neural Network architecture is used for people detections and Kalman Filter is being used for tracking purposes. On top on that we've proposed a method to make probabilistic assumption for multi-object tracking across different images.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "embedded_hardware",
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "python",
+    "opencv"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "people_counting",
+     "label": "People counting and traffic flow monitoring",
+     "status": "used",
+     "evidence": "Chapter 3: we are making an intelligent system with computer vision (images/video) to detect and count people traffic flow in a facility. The web application counts people coming and going out from our library."
+    }
+   ],
+   "technology": [
+    {
+     "key": "keras",
+     "label": "Keras",
+     "status": "used",
+     "evidence": "Section 4.3: The deep learning classifier is trained by using Keras, a high end API library for machine learning written in Python."
+    },
+    {
+     "key": "tensorflow",
+     "label": "TensorFlow",
+     "status": "used",
+     "evidence": "Section 4.3: and using Tensorflow as a backend to train people classifier."
+    },
+    {
+     "key": "raspberry_pi",
+     "label": "Raspberry Pi",
+     "status": "used",
+     "evidence": "Section 5.1: In this system we are using a Raspberry pi, a web camera, a compute engine to process images and detection."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1813",
+  "canonical_title": "ISL Room Sensor",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS4200",
+  "program": "computer_science",
+  "semester": null,
+  "academic_year": null,
+  "students": [
+   {
+    "name": "Asnai Narang",
+    "student_id": "5815228"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "A. Pawut Satitsuksanoh",
+   "Dr. Kwankamol Nongpong"
+  ],
+  "abstract": "The ISL Room Sensor is a sensor box built to detect the state of a room and reduce wasted electricity. It uses a Raspberry Pi with Arduino and Grove Pi together with temperature and humidity, light, sound, thermopile, and motion sensors. The Raspberry Pi streams sensor data into Firebase where a filtering module applies a Kalman filter, then an SVM predicts room occupancy while threshold and rule based models detect the light and air conditioner states. The system also flags anomalies such as lights or air conditioning left on in an empty room and displays results on admin and user screens. Trained on data recorded in a room at Assumption University Hua Mak campus, it reached perfect precision and recall for light detection and near 96 percent accuracy for occupancy detection.",
+  "abstract_source": "generated",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "hardware_iot"
+   ],
+   "platform": [
+    "embedded_hardware"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [],
+   "technology": [
+    "firebase"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "energy_management",
+     "label": "Energy management and conservation",
+     "status": "used",
+     "evidence": "Motivation: It leaves us wondering the amount of electricity being wasted because of scenarios like this. Scope includes ability to notify detection of predefined events so that the person in charge can go and close them to conserve electricity."
+    }
+   ],
+   "technology": [
+    {
+     "key": "raspberry_pi",
+     "label": "Raspberry Pi",
+     "status": "used",
+     "evidence": "Section 2.1: Sensor data is captured using raspberry pi alongside arduino and grove pi. Cost table lists Raspberry pi model 3B+."
+    },
+    {
+     "key": "arduino",
+     "label": "Arduino",
+     "status": "used",
+     "evidence": "Chapter 1 lists Arduino under Other devices Used, and the cost table lists Arduino UNO."
+    },
+    {
+     "key": "grove_pi",
+     "label": "Grove Pi",
+     "status": "used",
+     "evidence": "Section 2.1: Sensor data is captured using raspberry pi alongside arduino and grove pi. Sensors used include Grove temperature and humidity, Grove light, and Grove PIR motion sensors."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1814",
+  "canonical_title": "ISL Text Mining And Analytics Platform",
+  "aliases": [
+   "Smart Digest",
+   "Keyword Impact",
+   "Brand Impact"
+  ],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Kasperi Reinikainen",
+    "student_id": "5818014"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "Dr. Kwankamol Nongpong",
+   "A. Pawut Satitsuksanoh"
+  ],
+  "abstract": "In this report I present a platform that is able to process large amounts of text data and serve it for quantitative real-time analytics based on terms and concepts extracted from the text. The work consists of four main components; text extraction in form of web scrapers, text processing pipeline in form of data-stream processing application, text classification in form of a concept-predictor API and a set of analytical API endpoints in form of cloud-functions.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [
+    "nlp"
+   ],
+   "technology": [
+    "python",
+    "nodejs"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "business_intelligence",
+     "label": "Business intelligence and media analytics",
+     "status": "used",
+     "evidence": "Conclusion: Through these several analysis API endpoints that the Platform offers, businesses can stream real-time analytics based on keywords or concepts of their choice."
+    }
+   ],
+   "technology": [
+    {
+     "key": "aws",
+     "label": "Amazon Web Services",
+     "status": "used",
+     "evidence": "Platform Service Components: Smart Digest platform is built on Amazon AWS cloud-platform. It utilizes several different services as described next."
+    },
+    {
+     "key": "aws_lambda",
+     "label": "AWS Lambda",
+     "status": "used",
+     "evidence": "There are 10 analytics APIs and all of them are independent AWS Lambda cloud-functions powered with an API-endpoint by AWS API Gateway. The text processor components run as individual cloud functions in AWS Lambda."
+    },
+    {
+     "key": "dynamodb",
+     "label": "Amazon DynamoDB",
+     "status": "used",
+     "evidence": "Datastorages: term_document_table, concept_document_table and document_terms table. All these three are instances of AWS Dynamo NoSQL database service."
+    },
+    {
+     "key": "serverless",
+     "label": "Serverless Framework",
+     "status": "used",
+     "evidence": "They are built using Serverless deployment framework and Node.JS version 6.10 javascript runtime with npm package manager."
+    },
+    {
+     "key": "flask",
+     "label": "Flask",
+     "status": "used",
+     "evidence": "About back-end application: Main application framework is Flask microframework, which is a robust framework to develop and deploy lightweight REST-APIs easily. Programming language used is Python version 3.6."
+    },
+    {
+     "key": "scrapy",
+     "label": "Scrapy",
+     "status": "used",
+     "evidence": "The other crawler implementation was built on top of Scrapy python web-scraping library which supported fast and easy implementation of the scraper."
+    },
+    {
+     "key": "beautifulsoup",
+     "label": "Beautiful Soup",
+     "status": "used",
+     "evidence": "The first crawler implementations were based on a python web-crawling framework called Beautifulsoap which provided support to easily grab clean element content and traverse the web-page tree recursively."
+    },
+    {
+     "key": "apache_kafka",
+     "label": "Apache Kafka",
+     "status": "cited",
+     "evidence": "Background Figure 1: Example real-time stream pipeline in Apache Kafka, shown only as an example of stream analytics architectures."
+    },
+    {
+     "key": "hadoop",
+     "label": "Apache Hadoop",
+     "status": "cited",
+     "evidence": "Background: Common open source tools for this include the Apache Hadoop-ecosystem tools like Hadoop, Spark and Hive."
+    },
+    {
+     "key": "spark",
+     "label": "Apache Spark",
+     "status": "cited",
+     "evidence": "Background: Common open source tools for this include the Apache Hadoop-ecosystem tools like Hadoop, Spark and Hive."
+    }
+   ]
+  }
+ }
+]

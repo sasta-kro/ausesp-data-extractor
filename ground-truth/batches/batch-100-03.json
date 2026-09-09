@@ -110,7 +110,7 @@
   ],
   "advisor": null,
   "committee": [],
-  "abstract": null,
+  "abstract": "Online sellers who advertise on social media must repost the same advertisement on each platform one by one, which divides their time and effort. The team designed JustOne, a mobile application for iOS that shares one advertisement post to Instagram, Facebook and Line at once. The report cites market research that 44 percent of local businesses in Thailand depend on promoting their businesses on social media. The app is planned as a free download on the Apple App Store with banner ads for free users. Premium features add customer chat via Line and a point of sale system with order history and printable shipment labels.",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -120,6 +120,7 @@
     "mobile"
    ],
    "domain": [
+    "business",
     "e_commerce"
    ],
    "topic": [],
@@ -156,7 +157,7 @@
    "Asst. Prof. Paitoon Porntrakoon",
    "A. Piyakul Tillapart"
   ],
-  "abstract": null,
+  "abstract": "The manual senior project procedure at the faculty causes duplicated group lists, weak matching between students and advisors, and heavy paperwork. The team built a website, the VMS Senior Project System, where science and technology students form groups, select up to five topics and set priorities. Lecturers post and manage topics, rank student groups, set committees, download submitted documents and score projects. An administrator runs a matching algorithm that assigns topics, sets deadlines, maintains a repository of past reports and sends email notifications. The system was developed with PHP, HTML5, CSS3 and JavaScript, uses MySQL on Apache with XAMPP, and verifies users through the university LDAP Active Directory.",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -166,10 +167,11 @@
     "web"
    ],
    "domain": [
-    "education"
+    "campus"
    ],
    "topic": [],
    "technology": [
+    "php",
     "mysql"
    ]
   }

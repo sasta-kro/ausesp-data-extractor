@@ -1,0 +1,472 @@
+[
+ {
+  "id": "1816",
+  "canonical_title": "Aspect-Based Sentiment Analysis on Hotel Reviews",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS4200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "William Sivutha Poch",
+    "student_id": "5983122"
+   },
+   {
+    "name": "Navin Singh",
+    "student_id": "5935221"
+   },
+   {
+    "name": "Jiadong Jiao",
+    "student_id": "5918459"
+   }
+  ],
+  "advisor": "Kwankamol Nongpong",
+  "committee": [
+   "Tapanan Yeophantong",
+   "Pawut Satitsuksanoh"
+  ],
+  "abstract": "More and more companies and enterprises begin to attach importance to the user experience. They try to know the customers' views on their services or products through various ways, especially the hotel should attach great importance to the customer's feelings and comments. Today, most hotels have their own channels for customers to share their experiences. But if you encounter a large number of comments, it is very time and labor consuming just through human effort. Therefore, our team has developed a web application to analyze user comments using aspect-based sentiment analysis. In this project, the procedure is not limited to analyzing whether the overall comments are negative, positive or neutral but the sentiment analysis will be on finer details in which aspects the customers are expressing their attitudes on. As the domain of this work is hotel, we focus on detecting and analyzing sentiment on four aspects, which are service, amenities, conditions and the hotel cleanliness. The application provides visualization, which could help hotel managers to better understand the feedbacks from their customers.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [
+    "nlp"
+   ],
+   "technology": [
+    "firebase",
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "hospitality",
+     "label": "Hospitality and hotel services",
+     "status": "used",
+     "evidence": "The system analyzes hotel reviews for the four aspects staff, amenities, condition and cleanliness, and its visualization dashboard is meant to help hotel managers understand customer feedback. The work is a proof of concept for the Thai market research company Infosearch."
+    }
+   ],
+   "technology": [
+    {
+     "key": "keras",
+     "label": "Keras",
+     "status": "used",
+     "evidence": "The aspect and sentiment models were created using the Keras library with a Keras Tokenizer, embedding input layers and dense output layers, and the program loads each model from a json and h5 file."
+    },
+    {
+     "key": "spacy",
+     "label": "spaCy",
+     "status": "used",
+     "evidence": "Reviews are split into individual sentences using the natural language processor spaCy and its pre-trained models for the English language during preprocessing."
+    },
+    {
+     "key": "nltk",
+     "label": "Natural Language Toolkit (NLTK)",
+     "status": "used",
+     "evidence": "Every word in each sentence is stemmed to its base form using the NLTK Porter Stemmer."
+    },
+    {
+     "key": "scikit_learn",
+     "label": "scikit-learn",
+     "status": "used",
+     "evidence": "Precision, recall and f1 results were obtained from the scikit-learn classification report which supports multilabels, and the hamming loss metric was computed with scikit-learn."
+    },
+    {
+     "key": "glove",
+     "label": "GloVe word embeddings",
+     "status": "used",
+     "evidence": "One experimental aspect model, GloVe Embedding + CNN LSTM, used pre-trained GloVe word embeddings from Stanford NLP and was compared against the current model in Table 4.2."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1822",
+  "canonical_title": "Motorist data collection for store parking",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT4292 and CS4200",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Thayawat Thathong",
+    "student_id": "5717532"
+   },
+   {
+    "name": "Chinnawat Wongpatamajaroen",
+    "student_id": "5811398"
+   },
+   {
+    "name": "Prasong Chonsathian",
+    "student_id": "5937618"
+   }
+  ],
+  "advisor": "Chayapol Moemeng",
+  "committee": [
+   "Tapanan Yeophantong",
+   "Paitoon Porntrakoon"
+  ],
+  "abstract": "Finding a free space is a huge problem for outdoor parking lots in Thailand and no obvious solution exists yet. The team built a video detection system that uses a Logitech HD C270 webcam and computer vision to monitor an outdoor parking area. Users draw rectangles over the camera feed to define parking slots, and the system marks each slot green when it is available or red when a car occupies it. A monitor screen summarizes the total, available and unavailable spaces and keeps a history log for each rectangle. The system stores hourly counts in a Google Firebase realtime database and was implemented in Python with OpenCV and NumPy on Google Colab. Eight test runs produced detection accuracy between 80 and 100 percent.",
+  "abstract_source": "generated",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "transportation"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "firebase",
+    "opencv",
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "smart_parking",
+     "label": "Smart parking",
+     "status": "used",
+     "evidence": "The system detects outdoor parking spaces in real time from a webcam feed, shows how many spaces are available and unavailable, and stores hourly occupancy counts for later analysis."
+    }
+   ],
+   "technology": [
+    {
+     "key": "numpy",
+     "label": "NumPy",
+     "status": "used",
+     "evidence": "NumPy is described as a core software component of the project alongside Python and OpenCV for scientific computing on the video data."
+    },
+    {
+     "key": "google_colab",
+     "label": "Google Colaboratory",
+     "status": "used",
+     "evidence": "The team explains why they use Google Colab, a free cloud Jupyter notebook environment, for developing and running the project code."
+    },
+    {
+     "key": "canny_edge_detection",
+     "label": "Canny edge detection",
+     "status": "used",
+     "evidence": "Detection converts each parking lot region to grayscale and applies Canny-Edge thresholding before separating the box into 16 sub-boxes to decide availability."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1823",
+  "canonical_title": "Line Bot for Printing Tax Invoice",
+  "aliases": [
+   "Gassy Bot"
+  ],
+  "phase": "final",
+  "course_code": "CS3200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Kamonchanok Arttanate"
+   }
+  ],
+  "advisor": "Chayapol Moemeng",
+  "committee": [
+   "Paitoon Porntrakoon",
+   "Benjawan Srisura"
+  ],
+  "abstract": "The number of people filling gas at the gas station and request for the tax invoice has been increased recently, is one of the services that people often use. So, I decided to create this project, which is a printing tax invoice by Line Bot, an artificial intelligence for printing tax invoice of filling gas. I would say that the uniqueness of my Line Bot can reduce the wait time of the gas customer to get the tax invoice. I designed my Line Bot base on the user who is an owner or employees in the gas station. I provided the user with my two main features. The first one is printing, which allows the user to search by taxpayer number and print the tax invoice. Secondly, config the gas price, which allows the user to update the gas price that can be change every day, which allows users who is an owner or a manager. I also evaluated our system by sample group of people to give back the feedback after experience through my Line Bot.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [
+    {
+     "key": "chatbot",
+     "label": "Chatbot",
+     "status": "used",
+     "evidence": "The deliverable is Gassy Bot, a conversational bot that users add as a friend on the LINE application and interact with by typing keywords such as a taxpayer number or gas price commands."
+    }
+   ],
+   "platform": [],
+   "domain": [
+    {
+     "key": "gas_station",
+     "label": "Gas station services",
+     "status": "used",
+     "evidence": "The bot prints tax invoices for customers filling gas, configures daily gas prices for five gas types, and was tested with a sample group at a real Esso gas station."
+    }
+   ],
+   "technology": [
+    {
+     "key": "line_bot",
+     "label": "LINE Bot (LINE Messaging API)",
+     "status": "used",
+     "evidence": "The system runs on the Line application and users add the bot via QR code; references cite developers.line.biz and a LINE bot setup tutorial."
+    },
+    {
+     "key": "python_zeep",
+     "label": "Python zeep",
+     "status": "used",
+     "evidence": "Taxpayer name and address are retrieved using the API of the revenue department, and the references include a guide to pulling taxpayer data from the Revenue Department webservice with python zeep."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1824",
+  "canonical_title": "Smart Hydroponic Farm",
+  "aliases": [
+   "Hydroponic Fertilizer Controller (HFC)"
+  ],
+  "phase": "final",
+  "course_code": "CS4200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Rajanart Incharoensakdi",
+    "student_id": "5735451"
+   },
+   {
+    "name": "Pimtarat Jelaskuvanic",
+    "student_id": "5410193"
+   }
+  ],
+  "advisor": "Pawut Satitsuksanoh",
+  "committee": [
+   "Dobri Atanassov Batovski",
+   "Chayapol Moemeng"
+  ],
+  "abstract": "Hydroponic is a method in agriculture that has grown more popular among farming entrepreneurs and enthusiasts. However, many entrepreneurs and recreational farmers face the problem of controlling the water solution quality within the system: the electrical conductivity (EC) and pH value of the water. To address this problem, we have developed a Hydroponic Fertilizer Controller (HFC) along with a mobile application to fulfil the task of measuring and controlling the level of the farm's EC and pH as they desired. The test conducted shows that the HFC can manage the EC and pH value at user-specified multiple levels at a satisfactory level. We also conduct experiment by install the system into a real farm, Mai Nam Farm, with the result which satisfied the farm owner.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "hardware_iot"
+   ],
+   "platform": [
+    "embedded_hardware",
+    "mobile"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [],
+   "technology": [
+    "firebase"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "agriculture",
+     "label": "Agriculture and hydroponics",
+     "status": "used",
+     "evidence": "The project automates a hydroponic farm by continuously measuring and adjusting the EC and pH of the water solution, and was tested at the aquatic plant farm Mai Nam Farm in Phuket."
+    }
+   ],
+   "technology": [
+    {
+     "key": "raspberry_pi",
+     "label": "Raspberry Pi 3 Model B",
+     "status": "used",
+     "evidence": "The HFC control box is built on the Raspberry Pi 3 Model B with a Broadcom BCM2837 quad-core ARM Cortex A53, which reads the sensors, drives the touchscreen and runs the control software."
+    },
+    {
+     "key": "raspbian",
+     "label": "Raspbian OS",
+     "status": "used",
+     "evidence": "The LCD touchscreen drivers are coordinated into the most recent Raspbian OS so the display works without a physical console or mouse."
+    },
+    {
+     "key": "netpie",
+     "label": "NETPIE",
+     "status": "used",
+     "evidence": "The mobile application utilizes firebase and netpie protocol in order to create a real-time report of statuses and datalogs to the user."
+    },
+    {
+     "key": "dfrobot_sensors",
+     "label": "DFRobot analog pH and EC sensors",
+     "status": "used",
+     "evidence": "An analog pH meter (DFRobot SEN0161) and an analog electrical conductivity meter (DFRobot DFR0300) are the sensors used in the HFC to measure the water solution."
+    },
+    {
+     "key": "a4988_stepper_driver",
+     "label": "Pololu A4988 stepper motor driver",
+     "status": "used",
+     "evidence": "The peristaltic pumps are driven through stepping motor units controlled by Pololu A4988 stepper motor driver carriers; one driver unit burned at Mai Nam Farm and was replaced with regular DC motors."
+    },
+    {
+     "key": "python",
+     "label": "Python",
+     "status": "cited",
+     "evidence": "The references include the Python 2.7.15 Tkinter interface documentation from docs.python.org, the only programming-language reference cited in the report."
+    },
+    {
+     "key": "tkinter",
+     "label": "Tkinter",
+     "status": "cited",
+     "evidence": "Reference 5 cites the Tkinter Python interface to Tcl/Tk documentation, indicating the HFC touchscreen interface is Python-based."
+    },
+    {
+     "key": "ads1015",
+     "label": "Adafruit ADS1015/ADS1115 ADC",
+     "status": "cited",
+     "evidence": "The references cite Adafruit ADS1015/ADS1115 analog-to-digital converters for reading the analog sensors on the Raspberry Pi."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1825",
+  "canonical_title": "Advising Scheduling System",
+  "aliases": [
+   "VMS Advising Scheduling System"
+  ],
+  "phase": "final",
+  "course_code": "CS4200 and IT4291",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Kwangmin Kim",
+    "student_id": "5738001"
+   },
+   {
+    "name": "Serhii Bielik",
+    "student_id": "5748106"
+   },
+   {
+    "name": "Kaori Saito",
+    "student_id": "5828406"
+   }
+  ],
+  "advisor": "Rachsuda Setthawong",
+  "committee": [
+   "Pawut Satitsuksanoh",
+   "Suparwat Charoenvikrom"
+  ],
+  "abstract": "This project is aimed at making an appointment for academic advising. The system is designed and developed based on use case at Vincent Mary School of Science and Technology (VMS). This is a web-based system, which can be interactive to mobile platform as well. Advisors can provide an advising schedule, and advisees can make an appointment through the mobile phone. Facility to communicate by using messenger and notification for both advisors and advisees are also available. Advising system can be a very helpful system within advisors, advisees and administration. It provides services for not only advisors and advisees, but also program directors to simply reduce their current work by this system such as assign advisors to new students, and modification of appointment is available for both advisors and advisees by limited times. Furthermore, it can also reduce the problems of time conflict and standardize the way of making appointment as a whole school with notification as reminder of any events. Finally, this system is anticipated to be useful not only for VMS students but also for all students at any school.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [],
+   "technology": [
+    "laravel",
+    "php"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "angular",
+     "label": "Angular",
+     "status": "used",
+     "evidence": "The application is purely reactive and client rendered by Angular, so the Laravel backend only provides a set of API endpoints."
+    },
+    {
+     "key": "mariadb",
+     "label": "MariaDB",
+     "status": "used",
+     "evidence": "For data storage the project uses a traditional relational database based on MariaDB, described as the most popular fork of MySQL."
+    },
+    {
+     "key": "nginx",
+     "label": "NGINX",
+     "status": "used",
+     "evidence": "For the web server the team uses the popular combination of NGINX plus PHP-FPM."
+    },
+    {
+     "key": "php_fpm",
+     "label": "PHP-FPM",
+     "status": "used",
+     "evidence": "PHP FastCGI Process Manager is the PHP daemon used with NGINX to handle the application load."
+    },
+    {
+     "key": "centos",
+     "label": "CentOS",
+     "status": "used",
+     "evidence": "The application and all services run under CentOS, a free enterprise-class distribution based on Red Hat Enterprise Linux."
+    },
+    {
+     "key": "cloudflare",
+     "label": "Cloudflare",
+     "status": "used",
+     "evidence": "The required valid SSL certificate was obtained from Cloudflare, which also serves as a CDN for the application."
+    },
+    {
+     "key": "google_oauth",
+     "label": "Google OAuth login",
+     "status": "used",
+     "evidence": "The system uses the AU authorizing system where members must be registered with a Google account to log in, and the user table stores google_id, token and refresh_token columns."
+    },
+    {
+     "key": "google_calendar_api",
+     "label": "Google Calendar API",
+     "status": "used",
+     "evidence": "The reservation table stores a Google calendar event id, and the references cite the Google Calendar API v3 reference."
+    },
+    {
+     "key": "hetzner",
+     "label": "Hetzner Cloud",
+     "status": "cited",
+     "evidence": "The cost analysis recommends a cloud server instance from a popular European data center and cites hetzner.com/cloud, though the deployed machine was provided at VMS."
+    }
+   ]
+  }
+ }
+]

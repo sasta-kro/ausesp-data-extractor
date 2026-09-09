@@ -1,0 +1,482 @@
+Senior Project Report
+
+Document Flow for AU HR
+
+Qianheng Ma，
+
+Peng Chen
+
+A. Chayapol Moemeng (Advisor)
+
+IT4292 Senior Project 2 (1/2020)
+
+Senior Project Approval
+
+Project Title: Document Flow for AU HR
+
+Academic Year: 1/2020
+
+Authors: Qianheng Ma, 5913929
+
+Peng Chen, 5918413
+
+Project Advisor: A. Chayapol Moemeng
+
+The Senior Project Committee’s cooperation between the Department of
+Computer Science and Information Technology, Vincent Mary School of
+Science and Technology, Assumption University had approved this Senior
+Project. This Senior Project is in partial fulfilment of the requirement
+for the Degree of Bachelor of Science in Computer Science and
+Information Technology.
+
+Approval Committee:
+
++------------------------------------+----+-------------------------------------+
+| __________________________________ |    |                                     |
+|                                    |    |                                     |
+| A. Chayapol Moemeng                |    |                                     |
+|                                    |    |                                     |
+| Project Advisor                    |    |                                     |
++------------------------------------+----+-------------------------------------+
+| __________________________________ |    | ___________________________________ |
+|                                    |    |                                     |
+| A. Suparwat Charoenvikrom          |    | Asst. Prof. Dr. Paitoon             |
+|                                    |    |                                     |
+| Committee Member                   |    | Committee Member                    |
++------------------------------------+----+-------------------------------------+
+
+Acknowledgements
+
+First, we like to extend our appreciation to our project advisor, A.
+Chayapol Moemeng. During the process of the project, he shared ideas
+with us to solve the problems in the project.
+
+Secondly, we like to thank the Committee members. They provided
+suggestions on how to edit and improve our project.
+
+Finally, we thank all friends who provided help in doing this project
+successfully.
+
+Table of Contents
+
+Chapter 1: Introduction 1
+
+  1.1 Problem Statement 1
+
+  1.2 Objective 2
+
+  1.3 Scope of the Project 2
+
+Chapter 2: Related Work 3
+
+Chapter 3: Proposed Methodology 4
+
+  3.1 Technology Overview 4
+
+  3.2 ROI Analysis 4
+
+Chapter 4: Design of The System / Work 6
+
+  4.1 Functional Requirements Specification 6
+
+  4.2 System Design (consider items that applied) 8
+
+Chapter 5: Result 11
+
+Chapter 6: Conclusion 19
+
+References 21
+
+Table of Figures
+
+  Figure 1-1: Paper Document Storage 1
+
+  Figure 4-2: UML Use Case Diagram 7
+
+  Figure 4-3: Workflow 8
+
+  Figure 4-4: System Architecture 9
+
+  Figure 4-5: UI Design 10
+
+  Figure 5-6: Front Page 11
+
+  Figure 5-7: Authorized Leave Form 12
+
+  Figure 5-8: Power Automate Flow 13
+
+  Figure 5-9: Install Flow App (First Step) 13
+
+  Figure 5-10: Install Flow App (Second Step) 14
+
+  Figure 5-11: The Request Adaptive Card 15
+
+  Figure 5-12: The Result Adaptive Card 16
+
+  Figure 5-13: The Printable Form 16
+
+  Figure 5-14: Print 17
+
+  Figure 5-15: Days off Summary 17
+
+  Figure 5-16: Form Summary by Month 18
+
+  Figure 5-17: Form Summary by Form Type 19
+
+Abstract
+
+Document flow for Human Resources is an automatic flow with Microsoft
+Office software to help the HR and authorised people to handle staff’s
+leave requests in ABAC online.
+
+This project aims to eliminate the paperwork for the leave requests,
+make it possible to submit the leave requests at anywhere, anytime with
+the network. With this project, AU’s staff will no longer need to come
+to the university to take the paper form and submit it manually and the
+HR personnel will not need to record each request’s information
+manually. All the request information will be saved automatically. The
+HR personnel can also use MS Power BI to access the data and make it
+visualization. It is easy to view the summary of each specific staff in
+a specific date interval.
+
+Chapter 1: Introduction
+
+Human Resources jobs include monitoring the work hours of the
+organization’s staff. Staff has the need to leave their jobs for several
+days and they must fill in the leave request forms. In the past, when
+dealing with leave request form, HR faces the problem of unclear
+writing, and 3D (document, delivery, and delay). Also, paper documents
+are likely to be lost and damaged. This newly developed system allows HR
+to make decision online to save time and money and ensure the safety of
+the documents.
+
+[]
+
+1.1 Problem Statement
+
+This project aims to build a system that will improve the following
+issues.
+
+1.  Time: With the present system using paper form, the requesters have
+    to come to the university to get the form and fill it. Then, the
+    request form will be passed to three or four authorized persons,
+    manually.
+
+2.  Cost: With the present system, the university needs to print a form
+    for each request. The university also needs to employ some staff at
+    the office to keep the forms in file. The university will pay for
+    the cost of paper, print fee, equipment maintenance and salary. The
+    cost is estimated at 13,100 baht each month. (Salary may come to
+    10,000 baht per month, papers for 1 ream of 500 pieces at 100 baht
+    per ream, toner at 1,000 baht, and monthly equipment maintenance at
+    2,000 baht.)
+
+3.  Safety: Recently, with the pandemic of COVID-19, people are afraid
+    of making contact with others. For safety reasons, it is better to
+    stay at home. In this situation, the staff may not want to come to
+    school to contact with others who will fill the leave form.
+
+1.2 Objective
+
+1.  Build an efficient document flow process: In each leave request, it
+    must be approved by four authorized persons of the department. In
+    the old system, the paper form must be manually passed to all levels
+    upwards. The process will eventually be transferred to HR team to
+    manage the documents.
+
+2.  The system allows HR staff to view the history of record and
+    summarize in MS Power BI.
+
+3.  Generate a printable form for the Leave Request.
+
+1.3 Scope of the Project
+
+1.  This project is built on Microsoft Power Automate (MPA) and
+    Microsoft Teams (MT) platform. AU has an enterprise licence of
+    Microsoft teams and this is an enhancement of what they already
+    have. Receive the information from MS Form and make the Approval
+    Process automatically transfer to different Authorized Persons or
+    the Leave Requester with MS Power Automate.
+
+2.  Make each kind of Leave Request accessible and filled with the MS
+    Form by the Leave Requesters.
+
+Chapter 2: Related Work
+
+STEVE GOODMAN [1] posted his idea of automating the process of creating
+a sales or project proposal. The solution is to provide a form to users
+to provide information, allow a manager to review the information
+entered and then automatically create a Microsoft Word document based on
+a company template. They created an underlying Team Contoso Proposals to
+provision a SharePoint site and to use as the place to access the form
+and for approval management. They also created a PowerApp form that
+presents a friendly, easy to use interface to their users, then
+integrated it with Microsoft Teams. They then created the Microsoft Flow
+that glues the process together and set up the approvals process within
+the Flow.
+
+LUISE FREESE [2] uses Microsoft Flow to automate her process of sending
+stickers. She created a form in Microsoft Forms for users to fill in and
+it can automatically form a Word Document and a SharePoint list.
+Therefore, every time a new form is submitted, a new Word Document,
+which can be an envelope or label is generated and once a day she will
+get a summary of all submissions in her SharePoint list.
+
+ANDREW WARLAND [3] presented his idea of auto-populating document
+templates via a form in SharePoint. The benefits include auto-creates
+one or more Word documents (multiple based on metadata choices contained
+in the form), auto-populates the Word documents where required with the
+metadata in the form stores that document (or documents) in a folder
+(actually a document set) that can be used to add other content. The
+processes are setting up the model, setting up the document library,
+linking the metadata columns with the template, summary, and outcomes of
+the first stage and creating the workflow.
+
+The group learned from the above examples to design forms for requesters
+to fill in, automatically receive forms and give access to different
+authorised persons to reply to the requesters. As well the group formed
+an Excel files of request history for HR to view and check.
+
+Chapter 3: Proposed Methodology
+
+3.1 Technology Overview
+
+Since the system is based on Microsoft Teams and Power Automate
+platform, the following list is the overview of the technology used for
+this project.
+
+1.  MS Forms: Collect information form the requesters.
+
+2.  MS Power Automate: Make the approval process automatically.
+
+3.  MS Teams: Send the alert to remind the user to check and make the
+    decisions for each request and show the result of the request.
+
+4.  MS OneDrive: Save the printable form.
+
+5.  MS Power BI: Data visualization, dashboard.
+
+6.  PHP: Ask the backend server to interact with the MySQL database and
+    Microsoft Power Automate.
+
+7.  MySQL: Use to store staffs’ information and Leave records.
+
+Chapter 4: Design of the System / Work
+
+4.1 Functional Requirements Specification
+
+1.  Stakeholders
+
+    - University’s staffs
+
+    - Authorized person
+
+    - HR
+
+2.  Actors and Goals
+
+    - Requester: Requesters may want to go on a holiday or see the
+      doctor or leave for some special reason or take an authorized
+      leave and make the request. After that, they want to know whether
+      their leave form is approved or rejected and how many days they
+      have been absent for work.
+
+    - HR Personnel: HR personnel wish to see how many leave days already
+      taken and visualize the summary for each requester by month,
+      semester or year.
+
+    - Authorised Person (Immediate Supervisor, Dean, Vice President and
+      President): they wish to see all requests which are waiting for
+      their approval and comments for a request.
+
+3.  Use Cases
+
+  []
+
+Figure 4-2: UML Use Case Diagram
+
+4.2 System Design (consider items that applied)
+
+1.  Process / Workflow / Sequence Diagram
+
+  []
+
+Figure 4-3: Workflow
+
+  Figure 4-3 is the process of the system. Once a requester fills any
+  kind of leave form, it will trigger the flow. The flow will send the
+  approval to each authorized person one by one. In the approval
+  process, if anyone among the authorized persons reject the request,
+  the flow will stop and send the result to the requester. The request
+  will be successful when all the authorized persons approve the
+  request.
+
+2.  System Architecture
+
+[]
+
+  Figure 4-4 is the system architecture. Once a requester fills the form
+  on Microsoft forms, it will trigger the flow. The power automate will
+  use the requester’s name and send a HTTP request to the PHP server.
+  The PHP server uses the name to query the related data from MySQL
+  database and return the data. If the requester’s data is inside the
+  database, the flow will send the form’s information to the authorized
+  person and PHP server. The PHP server will insert the new record to
+  MySQL database. When the authorized person makes decision for this
+  request, it will interact with power automate and trigger the new
+  action. It will send the request to the next authorized person or send
+  to the result to request. It depends on the previous authorized
+  person’s decision. At the same time, the power automate will send HTTP
+  request to PHP server to update the related record.
+
+3.  Tech Stack
+
+    - MS Form
+
+    - MS Power Automate
+
+    - MySQL
+
+    - PHP
+
+4.  [A screenshot of a computer Description automatically
+    generated]UI/UX Design. Since the system is based on MS Teams and
+    Power Automation platform, the message template is quite limited.
+
+Figure 4-5: UI Design
+
+5.  Database Design
+
+[Graphical user interface, application, Teams Description automatically
+generated]
+
+Figure 4-6: Database Design
+
+Chapter 5: Result
+
+The entry point to the system is at
+https://maqianheng.github.io/AU_leave_request_forms/ as shown in Figure
+5-1. The users will choose a Leave Form. For example, Authorized Leave
+Form is chosen, and Figure 5-2 will appear.
+
+[]
+
+[]
+
+  After the requester submits the form, the Power Automate flow (shown
+  in Figure 5-8) will send the information to the authorised person
+  through the MS teams automatically.
+
+[]
+
+  For the first time to receive the message from the flow, the receiver
+  may need to install the flow app manually (shown in Figure 5-9 and
+  Figure 5-10).
+
+[A screenshot of a computer Description automatically generated]
+
+[A screen shot of a computer Description automatically generated]
+
+  Figure 5-11 is the adaptive card when the authorized person receives
+  it. The authorized person can make decision here, approve or reject.
+
+[Graphical user interface, application, Teams Description automatically
+generated]
+
+Figure 5-11: Request Adaptive Card
+
+  Figure 5-12 is the result adaptive card. After all the authorized
+  persons approve the request, it will be sent to the requester. It will
+  also generate the printable form as shown in Figure 5-12. The
+  requester can click the button to view the form.
+
+[Graphical user interface, text, application Description automatically
+generated]
+
+  The printable forms are saved in OneDrive. The requester clicks the
+  page as shown in the Figure 5-13. The requester can use the browser’s
+  feature: right click and click print.
+
+[Graphical user interface, text, application Description automatically
+generated]
+
+  After the requester clicks the print, the final print will be as shown
+  in Figure 5-14.
+
+[Graphical user interface, application Description automatically
+generated]
+
+[A picture containing graphical user interface, table Description
+automatically generated]
+
+[A screen shot of a computer Description automatically generated]
+
+Figure 5-16: Power BI Summary-2
+
+  The data can also be exported to be a xlsx or csv file as shown in
+  Figure 5-17.
+
+[Graphical user interface, application, Word Description automatically
+generated]
+
+  Due to the limitation, the embedded Power BI report data cannot be
+  refreshed. The users who have the access permission can go to the
+  Power BI webpage to refresh the data manually or set the scheduled
+  refresh to make the data automatically refresh as shown in Figure 5-18
+  and Figure 5-19.
+
+  [Graphical user interface, application Description automatically
+  generated]
+
+  Figure 5-18: Refresh Data
+
+[Graphical user interface, text, website Description automatically
+generated]
+
+Chapter 6: Conclusion
+
+The group made this system by using Microsoft software to digitalize the
+Leave Request and eliminate the costly paperwork. With the online
+request, the whole process becomes easier and faster. The group think
+this solution is feasible and it is already tested by the HR people.
+With their feedback, the group removed some questions from the forms and
+made it more concise. When the requester fills the form, they just need
+to answer a few questions. The other information such as authorized
+leave days, sick leave days, and annual leave days already taken, will
+be retrieved and calculated from backend server. As shown in the
+demonstration to the HR personnel, the latest version works well.
+
+The group found some limitations. If the requester’s information was
+retrieved from database, all the staff’s information must be recorded
+into the database in advance. So when a staff whose information is not
+in the database fills a form, the request cannot be sent to the
+authorised persons. In the current version, all the departments have
+four authorized persons. Different departments have different number of
+authorized persons. The group think the Power BI’s visualization summary
+is not enough.
+
+In the future, the group will record all the university’s staff’s
+information into the database and consult all the departments the number
+of their authorized persons. This system can handle all the departments’
+requests based on each department's rules. The group will make more and
+various meaningful Power BI’s visualization summaries.
+
+This project is a good experience for the group to learn about making
+Microsoft Power Automate flow. With the experience, the group learn how
+to work together to meet the requirements of users.
+
+References
+
+1.  Goodman, Steve. “Automating Document Creation and Approvals with
+    Teams and Microsoft Flow - Part Three.” Practical 365, 22 July 2019,
+    https://practical365.com/teams-2/automating-document-creation-and-approvals-with-teams-and-microsoft-flow-part-three.
+
+2.  Freese, Luise. “Using Microsoft Flow to automate my process of
+    sending stickers.” Regarding 365, 25 Mar 2019,
+
+  https://regarding365.com/using-microsoft-flow-to-automate-my-process-of-sending-stickers-f9ec29eed930.
+
+3.  Andrew Warland, Andrew. "Auto-populating document templates via a
+    form in SharePoint" 30 August 2019,
+
+  https://andrewwarland.wordpress.com/2019/08/30/auto-populating-document-templates-via-a-form-in-sharepoint.

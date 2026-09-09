@@ -1,0 +1,463 @@
+Soravis Varayuththasawad
+
+A. Chayapol Moemeng
+
+CS 4200 Senior Project 2 (1/2020)
+
+Senior Project Approval
+
+Project title: Slip Salary
+
+Academic Year: 1/2020
+
+Authors: Soravis Varayuththasawad (5913094)
+
+Project Advisor: A. Chayapol Moemeng
+
+------------------------------------------------------------------------
+
+The Senior Project committee’s cooperation between the Department of
+Computer Science and Information Technology, Vincent Mary School of
+Science and Technology, Assumption University had approved this Senior
+Project. The Senior Project in partial fulfilment of the requirement for
+the degree of Bachelor of Science in Computer Science and Information
+technology.
+
+Approval Committee:
+
++:--------------------------------:+:-:+:-----------------------------:+
+| …………………………..                     |   |                               |
+|                                  |   |                               |
+| (A. Chayapol Moemeng)            |   |                               |
+|                                  |   |                               |
+| Project Advisor                  |   |                               |
++----------------------------------+---+-------------------------------+
+| …………………………..                     |   | …………………………..                  |
+|                                  |   |                               |
+| (Asst. Prof. Dr. Benjawan        |   | (Asst. Prof. Dr. Paitoon      |
+| Srisura)                         |   | Porntrakoon)                  |
+|                                  |   |                               |
+| Committee Member                 |   | Committee Member              |
++----------------------------------+---+-------------------------------+
+
+Abstract
+
+This paper introduces the application – Slip Salary – that is
+alternative solution to handle payment of employees in selected
+organization. The application uses simple structure in order to fulfill
+its objective. Using Firestore as database with suitable amount of data,
+this affects not only the database structure will be simple but also the
+cost will be deducted. Including React.js for application side, The
+well-known web development tool with several benefits. As a result, Slip
+Salary is able to complete its assigned features: management, providing
+printing format.
+
+ 
+
+Table of Contents
+
+Senior Project Approval
+
+Abstract
+
+Table of Contents
+
+Table of Figures
+
+Chapter 1: Introduction 1
+
+1.1 Problem Statement 1
+
+1.2 Scope of the project 1
+
+Chapter 2: Related Work 2
+
+Chapter 3: Proposed Solution 3
+
+3.1 Proposed Solution 3
+
+3.2 ROI 3
+
+Chapter 4: Design of the Application 4
+
+4.1 System Design 4
+
+Tech Stack 4
+
+Database 4
+
+UI/UX Design 5
+
+Process 5
+
+4.2 Functions 7
+
+Authentication 7
+
+Employees 10
+
+Earning Deductables 12
+
+Pay Period 13
+
+Create Record 14
+
+Total Record/Edit Record 15
+
+Chapter 5: Result 18
+
+Chapter 6: Conclusion 19
+
+More automatic less manual 19
+
+Add more related features 19
+
+References 20
+
+Table of Figures
+
+Figure 1: Firestore Example 4
+
+Figure 2: UI 5
+
+Figure 3: Menu 5
+
+Figure 4: Create Record 6
+
+Figure 5: Total Record/Edit Record 6
+
+Figure 6: PDF 7
+
+Figure 7: Sign In 8
+
+Figure 8: Google Login 8
+
+Figure 9: Login Error Case 9
+
+Figure 10: Employee Page 10
+
+Figure 11: Create Employee 10
+
+Figure 12: Update Employee 11
+
+Figure 13: Delete Employee 11
+
+Figure 14: Earning Deductables Page 12
+
+Figure 15: Update Earning Deductable 12
+
+Figure 16: Pay Period Page 13
+
+Figure 17: Edit Pay Period 13
+
+Figure 18: Create Record Page 14
+
+Figure 19: Create Record Dynamic Field 14
+
+Figure 20: Total Record Modal 15
+
+Figure 21: Total Record Page 15
+
+Figure 22: Edit Record 16
+
+Figure 23: PDF Result 16
+
+Figure 24: Print Format 17
+
+Chapter 1: Introduction
+
+1.1 Problem Statement
+
+Slip Salary is created to be an alternative solution to the previous one
+which using Microsoft Access to get the work done. However, using
+Microsoft Access can have numbers of drawback. According to user, MS
+Access license cost is quite considerable amount to continuous pay.
+Apart from that, the program is not flexible since its keep everything
+in a single file and it is difficult to maintain. Therefore, the
+solution is designed to achieve those disadvantages.
+
+1.2 Scope of the project
+
+The project functions are the same as what the previous solution are.
+There are several features that are needed to complete this project.
+First, the application must be able to manage other information which
+relate to payroll at the end of the application process. Those
+information are employees, payroll period, earning deductables, and
+holidays. They must be manageable CRUD(create, read, update, delete). In
+each topic, there are sub detail for example an employee record includes
+employee number, account number, name, position, income rate, pay
+period. Some of information are not required in payroll at all but they
+are included in case of future demand. The key feature is to create
+payroll. Providing form to fill information and produce “ready to print”
+payrolls are required.
+
+Chapter 2: Related Work
+
+There are a lot of existing solution in this present time. However, most
+of them are not only focus on employee’s payroll solution but their
+products are able to handle almost every aspect of business and most of
+them have cost that suitable for medium or large company. Consequently,
+large number of small business tend to use Excel or Access as solution.
+Even so, there are some product that can implement in small-medium
+business. Due to foreigner applications have quite expensive cost then,
+only Thai solutions will be mentioned.
+
+Amenda Payroll, Byte Crunch, and FlowPayroll, these are solution that
+worth remark since they have the similar or better features than this
+project. All of them have manageable record features and able create
+payroll format as this project require functions. FlowPayroll even have
+more extension features in exchange of reachable price. There figures
+are some of their applications.
+
+[]
+
+[A picture containing table Description automatically generated]
+
+Chapter 3: Proposed Solution
+
+3.1 Proposed Solution
+
+The problem is to create the solution with reduced cost, flexible and
+easier to maintain. Therefore, the proposed solution is the application
+that using open-source React as frontend and Firestore as backend. By
+using these two apply with small business amount of data, the cost of
+application will be removed. In addition, this application is deployed
+in Firebase along with realtime-database in Firestore. Hence, user can
+access both application and database online. Additionally, Firestore
+keep user’s data as document-oriented database which suitable for simple
+data of small business.
+
+3.2 ROI 
+
+In case of this project, the return of investment can be calculated
+involved the app that will be replaced. The user design to cut their
+cost of Office license but they currently need Microsoft Access to do
+their job. In occasion that this project can done its job properly and
+can replace Microsoft Access, the yearly license cost will be deducted.
+The time that user need to spend on filling form will not be different
+from the previous solution since, the design of an application is intent
+to be similar. Then, time using is not change. In summary, this project
+can reduce cost without spending any cost.
+
+Chapter 4: Design of the Application
+
+4.1 System Design 
+
+Tech Stack
+
+First, the development platform is ReactJS powered with its ton of
+open-source libraries is suitable for web application. Second, Firestore
+is used as Database to handle simple data. Third, Firebase is
+implemented as web hosting and authentication system with Google login.
+
+Database
+
+Firestore is appropriate for uncomplicated data. It categorized
+information into collection and document as Figure 3: Firestore
+Example[Graphical user interface, text, application, email Description
+automatically generated]
+
+Figure 3: Firestore Example
+
+UI/UX Design
+
+The UI/UX design is not main requirement, therefore the project is
+designed to simplest as possible in order to let user easy to
+understand. The web application use simple react-bootstrap as UI.
+
+[A screenshot of a computer screen Description automatically generated]
+
+Process
+
+This topic inform just briefly how application process should be, then
+how it works in detail will be mentioned the next sub-chapter.
+
+As mentioned, the application musts able to manage information that
+require in payroll at the end of process. This can be illustrated easier
+in Figure 5: Menu.
+
+[]
+
+For the first 3 pages: employee, earning deductables, and pay periods in
+menu, these page can handle CRUD for each categories as Figure 4: UI.
+Following, menu create record is to create payroll for each employee by
+selectable period as Figure 6: Create Record
+
+[]
+
+After user submitted the form, filled information will be saved for
+selected employee by selected pay period.
+
+Last menu is act as print preview but user also able to edit and delete
+those payroll record as Figure 7: Total Record/Edit Record
+
+[]
+
+Finally, user can click generate PDF button at top right of Figure 7:
+Total Record/Edit Record
+
+The PDF file will be generated Figure 8: PDF as shown records in
+previous page
+
+[]
+
+4.2 Functions
+
+The main stakeholders in this project are only 2 groups which are
+application’s user and employees. The employees will receive the payroll
+paper at the end of process. Therefore, only actor will be application’s
+user.
+
+Authentication
+
+Firstly, the authentication is required to access application
+information. User’s google account need to have permission to read/write
+in firebase authentication which must add manually by admin. In
+addition, Firestore rule is coded to require auth in order to read or
+write the data. In case, Google account is not recognized by
+authentication, the access is prohibited. The steps are provided as
+following figures
+
+[]
+
+[]
+
+[]
+
+If the account is legit the application will redirect user to employee
+table page in the next topic.
+
+Employees
+
+After login, the first page will be employees ‘page which show employee
+information sorted by employee number. The page has CRUD features as the
+same as the next 2 pages. when user done create, update, or delete
+action the result will appear immediately as real-time. The following
+figures will show create, update, and delete modal
+
+[]
+
+[]
+
+As Figure 13: Create Employee, employee number will auto increment from
+the last employee number. The form has a few validations: prevent number
+duplication and require field validation.
+
+Required field can be spotted by star symbol. The other field do not
+require because at the moment the information do not affect Payroll but
+they are left there for future. Update feature also use the same format
+and validation.
+
+[]
+
+[]
+
+Earning Deductables
+
+[]
+
+The features are the same as employee page but there is only duplicate
+prevention validation.
+
+[]
+
+Pay Period
+
+[]
+
+It has same features as following 2 and duplication prevention.
+
+[]
+
+Create Record
+
+[]
+
+User can select employee and pay period from drop down. Then, holiday
+and earning deductables can manually add or remove fields by clicking at
+plus and minus icon, in case there are more than one holidays or earning
+deductables as Figure 21: Create Record Dynamic Field
+
+[]
+
+In earning deductables, unit and remark fields do not affect the result
+payroll. Also, the validation of this page only require employee and pay
+period selection.
+
+Total Record/Edit Record
+
+After submitted the record, user can view, edit, delete sort by specific
+pay period.
+
+[]
+
+[]
+
+If user click edit button application will redirect back to Create
+Record page with filled information and locked employee and pay period
+dropdown. Figure 24: Edit Record
+
+[]
+
+Go to generate PDF, it will generate PDF page in A5 for each record in
+that pay period. The Adobe Reader can fit A5 into one A4. Ready to
+print.
+
+[]
+
+[]
+
+Chapter 5: Result
+
+This project was already presented to real user of selected organization
+along with project advisor. As the result the project has been modified
+according to user’s feedback and request in this current version.
+
+[]
+
+[]
+
+ 
+
+Chapter 6: Conclusion
+
+The project achieves as alternative payroll solution that fulfill
+Microsoft Access disadvantage at selected organization and able to
+remain the same require features as previous solution. However, there
+are many features and improvement can apply in this project in farther
+development. Those features can be found in related work. The most
+obvious improve possibility are “more automatic less manual” and “add
+more related features”
+
+More automatic less manual
+
+The current version of the project, there is many fields that should be
+auto calculated or easier for user to use such as calculated tax, auto
+generate pay period, auto amount calculation. However, the project
+cannot apply those features in selected company. Hence, they are for
+future improvement.
+
+Add more related features
+
+Payroll system is related to several fields for example: employee
+scheduling, accounting, information analysis, employee attendance,
+connect to bank account and so on. These are possibility that can be
+seen from existing solution used by several medium to large company.
+
+Even though, this project solution is enough to handle small business
+that has little amount of data but there is still room for more
+development in the future.
+
+References
+
+  --------------------------------------------------------------------------
+  [1]   08 08 2020. [Online]. Available:
+        https://firebase.google.com/docs/firestore.
+  ----- --------------------------------------------------------------------
+  [2]   "Byte Crunch," [Online]. Available: https://www.byte-crunch.com/th/.
+
+  [3]   "byte-brain," Amanda Payroll, [Online]. Available:
+        https://www.byte-brain.co.th/amanda-payroll/index.html.
+
+  [4]   "FlowPayroll," [Online]. Available: https://flowpayroll.co/th.
+  --------------------------------------------------------------------------

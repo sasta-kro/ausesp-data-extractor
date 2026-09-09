@@ -1,0 +1,497 @@
+[
+ {
+  "id": "2119",
+  "canonical_title": "Infinite Runner: A Casual Game for Marketing",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS4200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Aman Upadhya",
+    "student_id": "6115306"
+   },
+   {
+    "name": "Thanitsak Leaungsupornpong",
+    "student_id": "6115309"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "A. Kiratijuta Bhumichitr",
+   "Asst. Prof. Dr. Paitoon Porntrakoon"
+  ],
+  "abstract": "Infinite runner is a collaborative game created by students of computer science and communication arts, while working together as a team under Baksters. Infinite runner is a casual endless running game. The main idea behind this game was to build a foundation where the game can be used in the future for marketability. While still trying the preserve the elements of a casual game, where the games are short in length and generally are easy to learn making it really engaging for the players, we also tried to create a project that can be used as showcase for future batches at ABAC in the hope to get them interested in game develop thus, building a game community. There is a lot of learning that went into the project, from self-learning to learning as a team with each other, Infinite Runner is not just a game from a development perspective it also packs tremendous amount of artistic work.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "game"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [],
+   "technology": [
+    "unity"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "ios",
+     "label": "iOS",
+     "status": "used",
+     "evidence": "Project objectives state the game must support both iOS and Android platforms, and Baksters plans to launch on the app store."
+    },
+    {
+     "key": "android",
+     "label": "Android",
+     "status": "used",
+     "evidence": "Infinite Runner supports Android KitKat and above with about 50 MB storage, and launch is planned on the play store."
+    }
+   ],
+   "domain": [
+    {
+     "key": "marketing",
+     "label": "Marketing and brand promotion",
+     "status": "used",
+     "evidence": "The title is 'A casual game for marketing' and section 2.4 'Design for marketability' describes biome events and potions used to promote brands and recall users."
+    }
+   ],
+   "technology": [
+    {
+     "key": "ferr2d",
+     "label": "Ferr2D Terrain Tool",
+     "status": "used",
+     "evidence": "The Ferr2D tool kit was used with the 2D jungle pack asset to build the customized platform patterns and graphics inside Unity."
+    }
+   ]
+  }
+ },
+ {
+  "id": "2120",
+  "canonical_title": "Habitat: University Dormitory Management",
+  "aliases": [
+   "Habitat: Dormitory University Management"
+  ],
+  "phase": "final",
+  "course_code": "CS 3200 / ITX 3009",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Phanuwat Sikharestrakul",
+    "student_id": "6115218"
+   },
+   {
+    "name": "Jirapat Suwanjunee",
+    "student_id": "6217410"
+   },
+   {
+    "name": "Krittamet Chuwongworaphinit",
+    "student_id": "6111252"
+   }
+  ],
+  "advisor": "Dr. Songsak Channarukul",
+  "committee": [
+   "A. Chayapol Moemeng",
+   "A. Kiratijuta Bhumichitr"
+  ],
+  "abstract": "In university of Thailand, dormitory in campus is the main point when students decide to stay, spend time doing activity in the university on campus to make convenient to the students, especially international students who come to Thailand. The dormitory on campus will be immediately good choice. The students can pay expenses of dormitory while there are some mistakes when calculate the expenses. There are more than one student stays in room, so the expenses should be separated in each student. Almost dormitory applications do not aim to solve this problem and cannot check the detail of expenses. Habitat is a dormitory of university on campus application built on 2 platforms are an iOS that focuses on expenses in each student, news, and alternative bank payment for students. Another platform is a web application platform for managing system to check any expenses, manage each room in dormitory in each building, and also, petition to collect any problems of students such as some room make too noise, the students can report on the petition feature.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile",
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [],
+   "technology": [
+    "react"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "ios",
+     "label": "iOS",
+     "status": "used",
+     "evidence": "The student side of Habitat is an iOS mobile application that shows each student's bill, announcements and petitions."
+    }
+   ],
+   "domain": [
+    {
+     "key": "housing",
+     "label": "Student housing / dormitory management",
+     "status": "used",
+     "evidence": "Habitat manages the Assumption University dormitories King Solomon, King David and Queen of Sheba, including rooms, tenants and expense calculation."
+    },
+    {
+     "key": "payments",
+     "label": "Payments and billing",
+     "status": "used",
+     "evidence": "Tenants pay expenses by scanning a QR code with a bank application, and staff configure E-Wallet or PromptPay bank accounts for receiving payments."
+    }
+   ],
+   "technology": [
+    {
+     "key": "swift",
+     "label": "Swift",
+     "status": "used",
+     "evidence": "Section 3.2.4 states the user part is developed with the Swift 5.0 programming language using Xcode 13.0."
+    }
+   ]
+  }
+ },
+ {
+  "id": "2121",
+  "canonical_title": "Development of a Wearable Biosensing Device for Programmers",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Minn Moe Yan Oo",
+    "student_id": "6017540"
+   },
+   {
+    "name": "Aung Hlaing Moe",
+    "student_id": "5745402"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Dobri Atanassov Batovski",
+  "committee": [
+   "A. Piyakul Tillapart",
+   "Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan"
+  ],
+  "abstract": "The proposed biosensing configuration can evaluate the stress levels when doing different coding tasks and issue health-related notifications. The hardware implementation is based on a Raspberry Pi single-board computer, parallel processing accelerator and a limited set of biosensors.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "hardware_iot"
+   ],
+   "platform": [
+    "embedded_hardware"
+   ],
+   "domain": [
+    "healthcare"
+   ],
+   "topic": [],
+   "technology": [
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "stress_monitoring",
+     "label": "Stress monitoring and wellbeing",
+     "status": "used",
+     "evidence": "The project evaluates programmer stress levels during coding tasks using HRV derived from ECG and pulse sensor data, comparing relaxed and coding conditions for five participants."
+    }
+   ],
+   "technology": [
+    {
+     "key": "raspberry_pi",
+     "label": "Raspberry Pi",
+     "status": "used",
+     "evidence": "Section 4.1.1 lists a Raspberry Pi 4 Model B 8GB RAM as the core single-board computer of the system."
+    },
+    {
+     "key": "esp8266",
+     "label": "ESP8266 (NodeMCU)",
+     "status": "used",
+     "evidence": "An ESP8266 NodeMCU board is placed on a breadboard to collect ECG signals from the Mikroe ECG click 5 sensor."
+    },
+    {
+     "key": "arduino",
+     "label": "Arduino IDE",
+     "status": "used",
+     "evidence": "A sketch is uploaded to the NodeMCU using Arduino IDE, and the pulse sensor is described as designed for the Arduino."
+    },
+    {
+     "key": "cplusplus",
+     "label": "C++",
+     "status": "used",
+     "evidence": "Appendix B contains the ECG system sketch in C/C++ using ESP8266WiFi.h and PubSubClient.h libraries."
+    },
+    {
+     "key": "mqtt",
+     "label": "MQTT",
+     "status": "used",
+     "evidence": "Data generated from the ECG sensor is stored in an online MQTT server, with the sketch connecting to industrial.api.ubidots.com on port 1883."
+    },
+    {
+     "key": "ubidots",
+     "label": "Ubidots",
+     "status": "used",
+     "evidence": "ECG data is stored using ubidots.com and monitored through an Ubidots dashboard screen."
+    },
+    {
+     "key": "google_sheets",
+     "label": "Google Sheets",
+     "status": "used",
+     "evidence": "A script written in Google Sheets collects data from ubidots.com and stores it in Google Sheets for easier access."
+    },
+    {
+     "key": "mcp3008",
+     "label": "MCP3008 ADC",
+     "status": "used",
+     "evidence": "The MCP3008 8-channel 10-bit ADC IC reads the analog pulse signal for the Raspberry Pi over SPI communication."
+    },
+    {
+     "key": "java",
+     "label": "Java",
+     "status": "cited",
+     "evidence": "The literature review of the Shimmer3 ECG platform notes users may record data through an API platform implemented in C# or Java."
+    },
+    {
+     "key": "csharp",
+     "label": "C#",
+     "status": "cited",
+     "evidence": "The literature review of the Shimmer3 ECG platform notes users may record data through an API platform implemented in C# or Java."
+    }
+   ]
+  }
+ },
+ {
+  "id": "2125",
+  "canonical_title": "eVac: Online Vaccination App (Android)",
+  "aliases": [
+   "eVac: Online Vaccination Tracking App (Android)"
+  ],
+  "phase": "final",
+  "course_code": "ITX3009/CSX3010",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Suja Subedi",
+    "student_id": "6218323"
+   },
+   {
+    "name": "Zhenli Zhang",
+    "student_id": "6218016"
+   },
+   {
+    "name": "Mushi Sonthliwal",
+    "student_id": "6213102"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Paitoon Porntrakoon",
+  "committee": [
+   "A. Chayapol Moemeng",
+   "A. Tapanan Yeophantong"
+  ],
+  "abstract": "For the past 2 years, the world as a collective has had to withstand the effects of a pandemic. Our vaccines became almost as valuable as our passports, and our team thought that we should come up with a way to ease the entire process of procuring, recording and showcasing our vaccinations. That is why we created eVac. eVac is an android application that can help you keep track of your vaccination appointments, add appointments, create a vaccine certificate, record your previous vaccines and record the proof of vaccination.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "healthcare"
+   ],
+   "topic": [],
+   "technology": [
+    "firebase"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "android",
+     "label": "Android",
+     "status": "used",
+     "evidence": "Chapter 1 states the project develops a mobile application based on the Android operating system, delivered as an Android application only."
+    }
+   ],
+   "domain": [
+    {
+     "key": "vaccination",
+     "label": "Vaccination and immunization records",
+     "status": "used",
+     "evidence": "eVac tracks vaccination appointments, records previous vaccines, and creates vaccine certificate QR codes as digital proof of vaccination during the pandemic."
+    }
+   ],
+   "technology": [
+    {
+     "key": "figma",
+     "label": "Figma",
+     "status": "used",
+     "evidence": "Section 3.4 states Figma was used to create the high-fidelity prototype of the application."
+    },
+    {
+     "key": "flutter",
+     "label": "Flutter",
+     "status": "cited",
+     "evidence": "The references cite 'Flutter: Build Apps for any Screen' and the Dart package repository, indicating the Android app was built with the Flutter framework."
+    },
+    {
+     "key": "dart",
+     "label": "Dart",
+     "status": "cited",
+     "evidence": "The references cite the official package repository for Dart and Flutter apps (pub.dev)."
+    },
+    {
+     "key": "qr_code",
+     "label": "QR codes",
+     "status": "used",
+     "evidence": "Users show QR codes for verification, providers scan patient QR codes, and vaccine certificates are created and downloaded as PDFs through QR codes."
+    },
+    {
+     "key": "syncfusion",
+     "label": "Syncfusion",
+     "status": "cited",
+     "evidence": "SyncFusion documentation is cited among the project references."
+    }
+   ]
+  }
+ },
+ {
+  "id": "2126",
+  "canonical_title": "My Medical Check Up",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT4292",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Tachasit Sarasitt",
+    "student_id": "6110032"
+   },
+   {
+    "name": "Napatsorn Kawaree",
+    "student_id": "6111099"
+   },
+   {
+    "name": "Kanyarat Nalucupchanchai",
+    "student_id": "6115308"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Paitoon Porntrakoon",
+  "committee": [
+   "Asst. Prof. Dr. Benjawan Srisura",
+   "A. Chayapol Moemeng"
+  ],
+  "abstract": "In order to facilitate the need for many Thai people to go to the hospital for health check-ups 1-2 times a year. Due to the fact that people who work in companies have a measure to have annual health checks for company employees, there are a lot of people in the working age who do annual health checks. This does not include childhood and adolescents who at some schools have ambulances for annual health checks. In addition, older people who start to have health problems are more interested in health than childhood, adolescence and working people. Normally, the elderly will have annual check-ups from the hospital in order to keep them informed of their ongoing health problems. The problem that we foresee in the system for collecting Medical check up results of Thai people is the display of health information that has stored health data after the health check in the form of a health diary. Today, technology is accessible to all ages. In order to develop health check results using technology, a website was created to store information of people who have annual health checks for easy and convenient use and store information on the side of those who received the health results.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "healthcare"
+   ],
+   "topic": [],
+   "technology": [
+    "mysql",
+    "php",
+    "postgresql",
+    "python",
+    "wordpress"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "medical_records",
+     "label": "Medical records management",
+     "status": "used",
+     "evidence": "The website stores patients' annual health check-up records, flags abnormal values, gives doctor suggestions and compares values across years in graphs."
+    }
+   ],
+   "technology": [
+    {
+     "key": "anvil",
+     "label": "Anvil",
+     "status": "used",
+     "evidence": "The dynamic parts of the website are developed in Anvil, a full-stack Python web app tool whose built-in Data Tables database is backed by PostgreSQL."
+    },
+    {
+     "key": "digital_ocean",
+     "label": "DigitalOcean",
+     "status": "used",
+     "evidence": "WordPress is hosted on DigitalOcean Droplets using the LAMP stack on the most cost-effective tier at 5 USD per month."
+    },
+    {
+     "key": "apache",
+     "label": "Apache HTTP Server",
+     "status": "used",
+     "evidence": "The site runs the LAMP stack on DigitalOcean, where Apache serves the site and Certbot configures TLS/SSL on the Apache web servers."
+    },
+    {
+     "key": "plotly",
+     "label": "Plotly",
+     "status": "used",
+     "evidence": "Plotly is the open-source graphing library used for the interactive history-of-value graphs."
+    },
+    {
+     "key": "elementor",
+     "label": "Elementor",
+     "status": "used",
+     "evidence": "Elementor is named as a notable WordPress drag-and-drop page builder plugin used to enhance the website's UI/UX design."
+    },
+    {
+     "key": "phpmyadmin",
+     "label": "phpMyAdmin",
+     "status": "used",
+     "evidence": "phpMyAdmin was installed on the Linux host to make MySQL database management easier than the command line."
+    },
+    {
+     "key": "lets_encrypt",
+     "label": "Let's Encrypt",
+     "status": "used",
+     "evidence": "Certbot is used as an ACME client to obtain free Let's Encrypt TLS/SSL certificates for the website."
+    },
+    {
+     "key": "no_ip",
+     "label": "No-IP",
+     "status": "used",
+     "evidence": "A domain name for the website was created using the No-IP dynamic DNS service so an SSL certificate could be obtained."
+    },
+    {
+     "key": "adobe_xd",
+     "label": "Adobe XD",
+     "status": "used",
+     "evidence": "Adobe XD was used to create the preliminary prototype of the webpage before development settled on WordPress."
+    }
+   ]
+  }
+ }
+]

@@ -1,0 +1,512 @@
+[
+ {
+  "id": "2017",
+  "canonical_title": "Dental Management System",
+  "aliases": [
+   "Dental Clinic Management System",
+   "DCMS"
+  ],
+  "phase": "final",
+  "course_code": "IT 4291",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "Tanakorn Navanugraha",
+    "student_id": "6025106"
+   },
+   {
+    "name": "Rajbir Singh",
+    "student_id": "6015184"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Adtha Lawanna",
+  "committee": [
+   "Asst. Prof. Titida Nochai",
+   "Asst. Prof. Dr. Benjawan Srisura"
+  ],
+  "abstract": "Changnoi dental clinic in Lamphun, Thailand relies only on a Facebook page, so patients cannot register, view detailed services, or book appointments online. This project designed and built a dental management system as a web application for the clinic. Patients can register and log in, browse services and prices, request bookings, and send messages, and their requests reach the dentist and admin by email. An admin site lets the clinic manage registered users and appointments. The system was implemented with HTML, CSS, PHP, Python, MySQL and Django, tested locally first, and then uploaded to an online server.",
+  "abstract_source": "generated",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "healthcare"
+   ],
+   "topic": [],
+   "technology": [
+    "mysql",
+    "php",
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "django",
+     "label": "Django",
+     "status": "used",
+     "evidence": "We use ER-Diagram to create the database in Django."
+    },
+    {
+     "key": "html",
+     "label": "HTML",
+     "status": "used",
+     "evidence": "Our programming section we used to implement our website included HTML, python, Mysql, and PHP."
+    },
+    {
+     "key": "css",
+     "label": "CSS",
+     "status": "used",
+     "evidence": "We have learned many new things regarding PHP programming, HTML, Django, Mysql, Python, and CSS programming languages."
+    }
+   ]
+  }
+ },
+ {
+  "id": "2018",
+  "canonical_title": "Slip Salary",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "Soravis Varayuththasawad",
+    "student_id": "5913094"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "Asst. Prof. Dr. Benjawan Srisura",
+   "Asst. Prof. Dr. Paitoon Porntrakoon"
+  ],
+  "abstract": "This paper introduces the application – Slip Salary – that is alternative solution to handle payment of employees in selected organization. The application uses simple structure in order to fulfill its objective. Using Firestore as database with suitable amount of data, this affects not only the database structure will be simple but also the cost will be deducted. Including React.js for application side, The well-known web development tool with several benefits. As a result, Slip Salary is able to complete its assigned features: management, providing printing format.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "firebase",
+    "react"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "payroll",
+     "label": "Payroll and HR",
+     "status": "used",
+     "evidence": "the application must be able to manage other information which relate to payroll at the end of the application process. Those information are employees, payroll period, earning deductables, and holidays."
+    }
+   ],
+   "technology": [
+    {
+     "key": "cloud_firestore",
+     "label": "Cloud Firestore",
+     "status": "used",
+     "evidence": "this application is deployed in Firebase along with realtime-database in Firestore. Hence, user can access both application and database online."
+    },
+    {
+     "key": "firebase_auth",
+     "label": "Firebase Authentication with Google login",
+     "status": "used",
+     "evidence": "Firebase is implemented as web hosting and authentication system with Google login."
+    },
+    {
+     "key": "react_bootstrap",
+     "label": "React Bootstrap",
+     "status": "used",
+     "evidence": "The web application use simple react-bootstrap as UI."
+    },
+    {
+     "key": "microsoft_access",
+     "label": "Microsoft Access",
+     "status": "cited",
+     "evidence": "Slip Salary is created to be an alternative solution to the previous one which using Microsoft Access to get the work done."
+    }
+   ]
+  }
+ },
+ {
+  "id": "2019",
+  "canonical_title": "Computer Simulations of Graphene Biosensors Using a Raspberry Pi 4 Cluster",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Min Aung Dain",
+    "student_id": "5648042"
+   },
+   {
+    "name": "Aung Hlaing Moe",
+    "student_id": "5745402"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Dobri Atanassov Batovski",
+  "committee": [
+   "A. Piyakul Tillapart",
+   "Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan"
+  ],
+  "abstract": "The use of graphene biosensors for the detection of viruses, like Covid-19, is limited by the biosensor design characteristics. Computational experiments can assist the industry and speed up the research and development (R&D) process of more reliable graphene configurations. Our project has resulted in a research paper of computer simulation on graphene sensors based on Raspberry Pi 4 devices.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "research",
+    "hardware_iot"
+   ],
+   "platform": [
+    "embedded_hardware"
+   ],
+   "domain": [
+    "healthcare"
+   ],
+   "topic": [],
+   "technology": [
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "raspberry_pi",
+     "label": "Raspberry Pi",
+     "status": "used",
+     "evidence": "For this project, we are using the Raspberry Pi 4 Model B with 8GB RAM... We will use this single-board computer as our main device to run the MD simulations."
+    },
+    {
+     "key": "google_coral",
+     "label": "Google Coral USB Accelerator (Edge TPU)",
+     "status": "used",
+     "evidence": "We are using Google Coral USB Accelerator as an Edge TPU to speed up our MD simulation run on a Rpi device."
+    }
+   ],
+   "domain": [
+    {
+     "key": "scientific_computing",
+     "label": "Scientific computing and simulation",
+     "status": "used",
+     "evidence": "Our project is about the computer simulations of graphene sensors on Raspberry Pi 4 devices with the help of usb TPU accelerators."
+    }
+   ],
+   "technology": [
+    {
+     "key": "tensorflow",
+     "label": "TensorFlow",
+     "status": "used",
+     "evidence": "TensorFlow (TF) is a machine learning framework... it is an open source library for numerical computation and large-scale machine learning... which makes it perfect for both MD simulation and use it as a library for our TPU. Appendix code: import tensorflow as tf"
+    },
+    {
+     "key": "tensorflow_lite",
+     "label": "TensorFlow Lite",
+     "status": "used",
+     "evidence": "we are using the TF lite library... Appendix code: from tflite_runtime.interpreter import Interpreter"
+    },
+    {
+     "key": "google_colab",
+     "label": "Google Colab",
+     "status": "used",
+     "evidence": "we let the demo MD simulation program run on both Google Colab as it provides free cloud GPUs and TPUs for free and the local equipment is Rpi accelerated with Edge TPU"
+    },
+    {
+     "key": "numpy",
+     "label": "NumPy",
+     "status": "used",
+     "evidence": "Appendix A source code: import numpy as np"
+    },
+    {
+     "key": "matplotlib",
+     "label": "Matplotlib",
+     "status": "used",
+     "evidence": "Appendix A source code: import matplotlib.pyplot as plt"
+    },
+    {
+     "key": "scipy",
+     "label": "SciPy",
+     "status": "used",
+     "evidence": "Appendix A source code: from scipy.constants import Boltzmann"
+    },
+    {
+     "key": "gromacs",
+     "label": "GROMACS",
+     "status": "cited",
+     "evidence": "There are some popular MD simulation applications, such as AMBER, GROMACS and NAMD, which evaluate molecular motion at the atomic level."
+    },
+    {
+     "key": "comsol_multiphysics",
+     "label": "COMSOL Multiphysics",
+     "status": "cited",
+     "evidence": "they simulated G-FETs on the COMSOL Multiphysics, which is a cross-platform finite element analysis, solver and multiphysics simulation software."
+    }
+   ]
+  }
+ },
+ {
+  "id": "2024",
+  "canonical_title": "Computer-Aided Facility Management (CAFM)",
+  "aliases": [
+   "VitriApp-Zähler 2",
+   "ZAAPP"
+  ],
+  "phase": "final",
+  "course_code": "CS3200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "Jan Duldhardt",
+    "student_id": "6118135"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "Dr. Songsak Channarukul",
+   "Dr. Kwankamol Nongpong"
+  ],
+  "abstract": "Technology becomes more and more important in our daily life. It can help us to be more efficient and productive in almost every aspect. Especially businesses can profit tremendously when going digitally.\n\nBusinesses, who have to manage lots of properties, have many responsibilities when it comes to facility management. One way in the right direction is to implement a Computer Aided Facility Management (CAFM) system which can help with many aspects regarding facility management.\n\nThe problem with many CAFM systems, is that they are not very intuitive. Often, they are very complex and mostly designed for desktop usage. Because of that CAFM systems should have complementary and easy to use mobile applications. Where users can manage individual aspects of facility management on the go.\n\nVitriApp-Zähler 2 (ZAAPP) is one of those complementary mobile applications. It is designed to integrate with the energy management module of the Vitricon CAFM software.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [
+    "geolocation"
+   ],
+   "technology": []
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "uwp",
+     "label": "Universal Windows Platform (UWP)",
+     "status": "used",
+     "evidence": "The main goal is to develop a new mobile application for iOS, Android and UWP with the main functionality to capture new values for data points of meters."
+    }
+   ],
+   "domain": [
+    {
+     "key": "facility_management",
+     "label": "Facility management (CAFM)",
+     "status": "used",
+     "evidence": "Computer-aided facility management (CAFM) is the support of facility management by information technology."
+    },
+    {
+     "key": "energy_management",
+     "label": "Energy management and metering",
+     "status": "used",
+     "evidence": "ZAAPP is designed for those who are responsible for reading the meters in facilities... designed to work complementary to the Vitricon energy management module which has the function of recording and evaluation of consumption, tariffs and costs."
+    }
+   ],
+   "technology": [
+    {
+     "key": "xamarin",
+     "label": "Xamarin.Forms",
+     "status": "used",
+     "evidence": "Frontend: Xamarin.Forms 5 (iOS, Android, UWP)"
+    },
+    {
+     "key": "csharp",
+     "label": "C#",
+     "status": "used",
+     "evidence": "And we only need C# as our programming language and XAML (Extended Markup Language) for our UI."
+    },
+    {
+     "key": "xaml",
+     "label": "XAML",
+     "status": "used",
+     "evidence": "The page's UI is defined in a .xaml (eXtended Application Markup Language)... it has some extra features for application development which we are using."
+    },
+    {
+     "key": "java",
+     "label": "Java",
+     "status": "used",
+     "evidence": "Our GraphQL service is developed with the Java Spring Boot Framework... That is the main reason why we choose Java instead of a C# dotnet implementation."
+    },
+    {
+     "key": "spring_boot",
+     "label": "Spring Boot",
+     "status": "used",
+     "evidence": "Backend: Java Spring Boot GraphQL web service... All of the mutations are annotated with @Transactional this is a feature of Spring Boot."
+    },
+    {
+     "key": "graphql",
+     "label": "GraphQL",
+     "status": "used",
+     "evidence": "For the upload and download of the needed data the app must communicate with the GraphQL service which needs to be extended and improved."
+    },
+    {
+     "key": "mariadb",
+     "label": "MariaDB",
+     "status": "used",
+     "evidence": "Database: MariaDB... The database management system is MariaDB and no changes were made here."
+    },
+    {
+     "key": "querydsl",
+     "label": "QueryDSL",
+     "status": "used",
+     "evidence": "we are using a library called querydsl which is an extensive Java framework, which allows for the generation of type-safe queries in a syntax similar to SQL."
+    },
+    {
+     "key": "azure_pipelines",
+     "label": "Azure Pipelines",
+     "status": "used",
+     "evidence": "we have created build pipelines which are automatically triggered when there are new commits to a pull request (Figure 3.2: Azure Pipelines GitHub Integration)."
+    },
+    {
+     "key": "github",
+     "label": "GitHub",
+     "status": "used",
+     "evidence": "Azure Pipelines GitHub Integration... Before the feature branch is merged onto the main branch at least one other developer has to review the code."
+    },
+    {
+     "key": "jira",
+     "label": "Jira",
+     "status": "used",
+     "evidence": "For issue tracking and agile project management we are using Jira."
+    },
+    {
+     "key": "jwt",
+     "label": "JWT tokens",
+     "status": "used",
+     "evidence": "After the authorization is successful the user will get two JWT token one for the REST webservice the other for the GraphQL service."
+    }
+   ]
+  }
+ },
+ {
+  "id": "2025",
+  "canonical_title": "Colors Puzzle: A Casual Puzzle Game",
+  "aliases": [
+   "Colors Puzzle",
+   "Color Puzzle"
+  ],
+  "phase": "final",
+  "course_code": "CS3200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "Aman Upadhya",
+    "student_id": "6115306"
+   },
+   {
+    "name": "Thanitsak Leaungsupornpong",
+    "student_id": "6115309"
+   },
+   {
+    "name": "Chayapam Suesawatwanich",
+    "student_id": "6016930"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "Asst. Prof. Dr. Dobri Atanassov Batovski",
+   "Asst. Prof. Dr. Paitoon Porntrakoon"
+  ],
+  "abstract": "Color Puzzle is a casual game targeted for the wide audience in this game we tried to improve the previous version of Colors Puzzle. In 2020, with the casual game market popularity, we had realized the Colors Puzzle Game's potential in the casual mobile gaming market. However, certain aspects of the game still needed to be addressed due to the bad designs or some feedback on both platforms' comments.\n\nTo handle problems, in this project we decided to make major changes in 3 aspects of Colors Puzzle, including UI/UX, Game mechanics, and overall gameplay. The work has been distributed to three members regarding the experiences and specialty to work on each part of the Colors Puzzle, main objective of the project is to create a more engaging and fun version of Colors Puzzle.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "game"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [],
+   "technology": [
+    "unity"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "unity_collaborate",
+     "label": "Unity Collaborate",
+     "status": "used",
+     "evidence": "Colors Puzzle is developed on the Unity engine, using the unity collaborate feature we as a team were able to collaborate and work together as a group."
+    },
+    {
+     "key": "unity_ads",
+     "label": "Unity Ads",
+     "status": "used",
+     "evidence": "Google ads and Unity ads are used as rewarded ads and not as pop-up ads."
+    },
+    {
+     "key": "unity_iap",
+     "label": "Unity IAP",
+     "status": "used",
+     "evidence": "Unity IAP is used as a transactional method where the game themes, game types, game modes and permanent revival (limit 2 in a round) is sold."
+    },
+    {
+     "key": "admob",
+     "label": "Google AdMob",
+     "status": "used",
+     "evidence": "Google Ads: Ad Mob (listed among external integrations)."
+    },
+    {
+     "key": "google_play_games",
+     "label": "Google Play Games services",
+     "status": "used",
+     "evidence": "Google Play Games: Play Games Unity Plugin... players can compete on the leaderboards and unlock achievements."
+    },
+    {
+     "key": "apple_game_center",
+     "label": "Apple Game Center",
+     "status": "used",
+     "evidence": "Apple Game Center (listed among external integrations; leaderboards and achievements)."
+    },
+    {
+     "key": "native_share",
+     "label": "Native Share plugin (Android and iOS)",
+     "status": "used",
+     "evidence": "Open-source sharing API: Native Share for Android & iOS... Native Share can be used to share scores on many different social media platforms."
+    }
+   ]
+  }
+ }
+]

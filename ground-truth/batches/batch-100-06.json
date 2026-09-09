@@ -46,7 +46,9 @@
    "domain": [
     "transportation"
    ],
-   "topic": [],
+   "topic": [
+    "geolocation"
+   ],
    "technology": [
     "firebase"
    ]
@@ -72,7 +74,7 @@
    "Asst. Prof. Paitoon Porntrakoon",
    "Dr. Benjawan Srisura"
   ],
-  "abstract": null,
+  "abstract": "Presale property inspection relied on a manual and paper based process in which sales agents prepared documentation, inspected each field of a unit by hand, recorded issues, and wrote an inspection report afterwards. This project built a web application that partially automates that process with Autodesk cloud products. The system imports Revit models from the Autodesk BIM 360 document system through the Forge API, extracts the property fields to be checked, and lets an administrator assign models to sales agents who then run guided inspections. Issues found during an inspection are created with attached photos and committed back to BIM 360, and the system automatically generates a PDF report that is emailed to the customer and the sales agent. The application was developed in PHP 7 with the Yii 2 framework, uses MariaDB, and was deployed to a live web server.",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -85,7 +87,9 @@
     "business"
    ],
    "topic": [],
-   "technology": []
+   "technology": [
+    "php"
+   ]
   }
  },
  {
@@ -169,11 +173,12 @@
     "web"
    ],
    "domain": [
-    "education"
+    "campus"
    ],
    "topic": [],
    "technology": [
-    "mysql"
+    "mysql",
+    "php"
    ]
   }
  },
@@ -213,10 +218,11 @@
     "software_application"
    ],
    "platform": [
+    "desktop",
     "web"
    ],
    "domain": [
-    "other"
+    "campus"
    ],
    "topic": [],
    "technology": [

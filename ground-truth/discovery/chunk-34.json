@@ -1,0 +1,110 @@
+[
+ {
+  "id": "2117",
+  "canonical_title": "AuIdea",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Pinky Shahi",
+    "student_id": "6135205"
+   },
+   {
+    "name": "Suchawan Chaiworn",
+    "student_id": "6135102"
+   },
+   {
+    "name": "Lipika Baniya",
+    "student_id": "6138108"
+   }
+  ],
+  "advisor": "A. Kiratijuta Bhumichitr",
+  "committee": [
+   "Asst. Prof. Dr. Paitoon Porntrakoon",
+   "A. Tapanan Yeophantong"
+  ],
+  "abstract": "For Vincent Mary School of Science and Technology students about to enroll in senior project 1 and 2, it can sometimes be difficult to understand what these projects are about or how they work. Most of the students are clueless about what kind of project to make or which advisor to choose. That is the main problem that we're going to solve in this senior project. As a solution, we will build a platform for end users to view senior projects easily and have detailed information about certain projects and advisors. A recommendation algorithm to help suggest some projects that might be useful for them when deciding on a senior project topic. For our senior project, our system will be able to recommend projects, showcase past projects as well as provide useful information about advisors.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [
+    "recommender_system"
+   ],
+   "technology": [
+    "firebase",
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [
+    {
+     "key": "user_experience",
+     "label": "User Experience Design",
+     "status": "used",
+     "evidence": "The design process included brainstorming, an affinity diagram, user personas, user journeys, low and high fidelity prototypes, and usability testing with Vincent Mary School of Science and Technology students."
+    }
+   ],
+   "platform": [],
+   "domain": [
+    {
+     "key": "higher_education",
+     "label": "Higher Education",
+     "status": "used",
+     "evidence": "The application targets Vincent Mary School of Science and Technology students about to enroll in senior project 1 and 2 at Assumption University."
+    }
+   ],
+   "technology": [
+    {
+     "key": "android",
+     "label": "Android",
+     "status": "used",
+     "evidence": "AuIdea is a mobile application that is available on native platforms such as Android, and the scope includes creating an android application with all senior projects and advisor details."
+    },
+    {
+     "key": "pandas",
+     "label": "pandas",
+     "status": "used",
+     "evidence": "Data processing converts grouped course data back into a pandas' data frame and resets the indices to build each student's metadata soup."
+    },
+    {
+     "key": "count_vectorizer",
+     "label": "CountVectorizer",
+     "status": "used",
+     "evidence": "The team imports the Count Vectorizer library and applies it to the soup data frame to remove stop words and create a count matrix before computing cosine similarity."
+    },
+    {
+     "key": "adobe_xd",
+     "label": "Adobe XD",
+     "status": "used",
+     "evidence": "Adobe XD was used to create the high-fidelity prototype once the low fidelity prototype was finalized."
+    },
+    {
+     "key": "google_forms",
+     "label": "Google Forms",
+     "status": "used",
+     "evidence": "Advisor specialty data was collected through a survey using Google Form."
+    },
+    {
+     "key": "visual_studio_code",
+     "label": "Visual Studio Code",
+     "status": "used",
+     "evidence": "Datasets were examined using Visual Studio Code to confirm data types, missing values, and find patterns."
+    }
+   ]
+  }
+ }
+]

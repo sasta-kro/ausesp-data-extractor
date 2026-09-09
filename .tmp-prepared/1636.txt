@@ -1,0 +1,951 @@
+
+
+SC 4299
+Senior Project
+
+Final Report
+
+Body Weight Balancing
+
+
+Project Advisor
+
+Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan
+
+Project Committees
+
+Asst. Prof. Dr. Dobri Atanassov Batovski
+A. Chayapol Moemeng
+
+
+Submitted by
+Mr. Yilin Wang		Adm. No. 5638021
+Mr. Mohamed Kaba	Adm. No. 5618141
+
+Vincent Mary School of Science and Technology
+Department of Computer Science
+Assumption University of Thailand
+December, 2017Assumption University of Thailand
+Vincent Mary School of Science and Technology
+Department of Computer Science
+
+
+Project Title:	Body Weight Balancing
+
+Presented by:		Mr.  Yilin Wang	Adm. No. 5638021
+Mr.  Mohamed Kaba 	Adm. No. 5618141
+Project Advisor:		Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan
+Project Committees:	Asst. Prof. Dr. Dobri Atanassov Batovski
+
+A. Chayapol Moemeng
+
+Academic Year:	1/2017
+	The Department of Computer Science, Vincent Mary School of Science and Technology, Assumption University of Thailand, had approved this Senior Project Proposal of the three-credit course, SC 4299 Senior Project, for the Bachelor Degree of Science in the major of Computer Science (BS CS).
+
+Approved by:
+
+Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan
+Project Advisor
+
+ 
+ Asst. Prof. Dr. Dobri Atanassov Batovski		   
+Committee Member		                               
+
+
+
+
+A. Chayapol Moemeng	
+Committee Member
+
+
+
+
+A.Piyakul Tillapart
+Program Director, BC CS Program
+Abstract
+
+This project presents a Body Weight Balancing system to be used in predicting the number of days needed for a person to get to a normal weight state based on his or her Body Mass Index (BMI), Basal Metabolic Rate (BMR), and Daily Food Intake Calorie (DIFC). By using BMI value, the system estimates the weight value of a person, where the individual with a normal BMI has a weight value of zero. Based on BMR, the Daily Needed Calorie (DNC) of a person is calculated, and from the DNC, the weight value and the DIFC, the number of days needed for a person to get a normal BMI state could be predicted. And also the presented system would recommend needed food items for a person based on his/her weight value.
+Table of Contents
+Table of Contents								       i
+List of Figures									      vii
+List of Abbreviations								      x
+Chapter 1 Introduction							       1
+	1.1 Introduction							       1
+1.2 Rationale and Motivation						       1
+1.3 Problem Statement				                               1
+1.4 Review of Literature						       4
+1.5 Goals and Objectives						       5
+1.6 Scope and Limitations						       5
+Chapter 2 History of Body Weight Balancing				       7 	2.1 Existing Approaches 					                   7
+	2.2 Features and Functionalities of Body Weight Balancing                    7 Chapter 3 Project Framework				                               9
+            3.1 Framework Overview						       9
+            3.2 Calculation Module                                                                            10
+            	3.2.1 BMI Value                                                                           10
+		3.2.2 BMR Value                                                                          11
+		3.2.3 DNC Value                                                                          12
+		3.2.4 DIFC                                                                                    13
+3.2.5 Prediction of Days                                                               13
+3.2.6 The Way of Food Selection				      15
+
+                                          
+ 
+ Table of Contents
+	3.4 Rule of Each Module							16
+         		3.4.1 BMI								16
+		3.4.2 BMR								16
+		3.4.3 DNC								17
+		3.4.4 DIFC								17
+		3.4.5 Predict Needed Days to Get Normal Weight Status		19
+	3.5 Problems and Solution							20
+Chapter 4 Database Design				                               	 	22
+	4.1 Database									22
+	4.2 Rule of BMI								22
+	4.3 Rule of DNC								22
+	4.4 Rule of Food-Calorie							23
+	4.5 Rule of Food Recommendation						25
+Chapter 5 Evaluation								29
+5.1 Demo1 (if a person is in normal weight status, Male)			29
+	5.1.1    Demo2 (if a person is normal weight status, Female)	31
+5.2 Demo3 (if a person is in overweight status, Male)			33
+	5.2.1    Demo4 (if a person is in overweight status, Female		35
+5.3 Demo5 (if a person is in lower weight status, Male)			37
+		5.3.1    Demo6 (if a person is in lower weight status, Female)	38
+Chapter 6 Product Comparison 							41 Chapter 7 Conclusion 							            47
+Acknowledgements							                        48
+Table of Contents	
+References									      	49                                               
+APPENDIX 									     	51 
+
+						     
+List of Figures 
+Figure 3.1    Body Weight Balancing Framework				        	 9
+Figure 3.2    Body Weight Balancing Dataflow				       	 10
+Figure 3.3    Weight Status based on BMI					             11
+Figure 3.4     DNC calculation based on BMI	 			      	 12
+Figure 3.5     Concept of how Food calories are shared		                         15
+Figure 3.6     Fixed Concept of how Food calorie are divided		             16
+Figure 3.7     Structure of the Recommendation of food selection		    	 19
+Figure 4.1     Weight Status based on BMI value	                                        	 22
+Figure 4.2     DNC based on BMR value					             23
+Figure 4.3     Main-Food and their calorie					             23
+Figure 4.4     Fast-Food and their calorie					     	 24
+Figure 4.5     Fruit and Snacks` calorie	                                                    	 24
+Figure 4.6     Beverages and their calorie	                                      	             25
+Figure 4.7     Preparation to calculate the total amount of calories when we
+                      eat during breakfast.			                                                 26
+Figure 4.8     Preparation to calculate the total amount of calories when we
+                     drink during breakfast		 				             26
+Figure 4.9.1   Preparation to calculate the total amount of calories when we
+           eat during lunch							 27
+Figure 4.9.2   Preparation to calculate the total amount of calories when we
+           drink during lunch and dinner						 28
+Figure 4.9.3   Preparation to calculate the total amount of calories of
+          dish during lunch and dinner.						 28
+List of Figures 
+Figure 5.11    Page of BMI and BMR when user is in normal weight status		 29
+Figure 5.12    Page of DNC when user is in normal weight status			 30
+Figure 5.13    Page of food recommendation and prediction of days when user is
+                      in normal weight status 						30
+Figure 5.21    Page of BMI and BMR when user is in normal weight status		31
+Figure 5.22    Page of DNC when user is in normal weight status			32
+Figure 5.23    Page of food recommendation and prediction of days when user is
+In normal weight status						32
+Figure 5.31     Page of BMI and BMR when user is in overweight status		33
+Figure 5.32     Page of DNC when user is in overweight status			34
+Figure 5.33     Page of food recommendation and prediction of days when user is 
+		In overweight status							34
+Figure 5.41     Page of BMI and BMR when user is in overweight status		35
+Figure 5.42     Page of DNC when user is in overweight status			36
+Figure 5.43     Page of food recommendation and prediction of days when user is 
+		In overweight status							36
+Figure 5.51     Page of BMI and BMR when user is in lower weight status		37
+Figure 5.52     Page of DNC when user is in lower weight status			38
+Figure 5.53     Page of food recommendation and prediction of days when user is 
+In lower weight status							38
+Figure 5.61     Page of BMI and BMR when user is in lower weight status		39
+Figure 5.62     Page of DNC when user is in lower weight status			39
+Figure 5.63     Page of Food recommendation and prediction of days when user is 
+In lower weight status							40
+List of Figures 
+Figure 6.1     Display BMI, BMR value when user is in normal weight status	41
+Figure 6.2     Display DNC value when user is in normal weight status		42
+Figure 6.3     Display food recommendation and prediction of days when user is 
+          In normal weight status							42
+Figure 6.4     Display the BMI, BMR and BMR activity value of other
+                      application							            43
+Figure 6.5     Display BMI, BMR value when user is in normal weight status	44
+Figure 6.6     Display DNC value when user is in normal weight status.		44
+Figure 6.7     Display food recommendation and prediction of days when user is 
+In normal weight status						45
+Figure 6.8     Displays the BMR value						46
+
+
+
+
+
+
+
+
+
+
+List of Abbreviations
+BMI          Body Mass Index
+BMR         Basal Metabolic Rate
+DNC          Daily Needed Calories
+DIFC         Daily Intake Food Calories
+NDN         Number of Days Needed
+PAC          Percentage Additional Calories
+EWW        Earned Weight Per Week
+
+
+
+
+		      Chapter 1 Introduction
+1.1 Introduction
+This Application presents a Weight Prediction System to be used in predicting the number of days needed for a person to get to a normal weight state based on his or her Body Mass Index (BMI), Basal Metabolic Rate (BMR), Daily Food Intake Calories (DIFC). By using BMI value, the system estimates the weight value of a person, where the individual with a normal BMI has a weight value of zero. Based on BMR, the Daily Needed Calories (DNC) of a person is calculated, and from the DNC, the weight value and the DIFC, the number of days needed for a person to get a normal BMI state could be predicted.
+
+1.2 Rationale and Motivation	
+In modern society, more and more people will get varying degrees of obesity due to lack of exercise, sedentary offices or at home. In modern medicine, obesity will bring a lot of risk, like digestive and pulmonary disease, or cardiovascular and gallbladder and diabetes mellitus. Most of times, except lack of exercise to obesity, food intake is the most important. So, we decided to design an application to determine if a person is obese, meanwhile, giving a suggestion of food intake and the predicted the number of days to achieve that person's normal weight.
+
+1.3 Problem Statement
+Early clinical studies have shown that among the chronic patients, the mortality rate of the lower BMI is higher than that of the higher BMI. The earliest was the longer survival rate in dialysis patients who were overweight and obese in 1999, Nursing-Home elderly residents and chronic obstructive pulmonary disease (COPD) patients observed this phenomenon, which is called the obesity paradox.
+In recent years, the elderly also found this phenomenon. However, according to the National Nutritional Health Survey, the low risk of death from BMI observed in the elderly population is since low BMI reflects relatively low muscle mass and low BMI also reflects low muscle mass (or muscle loss Disease) health risk. 
+BMI is proportional to the mass and inversely proportional to the square of the height. So, if all body dimensions double, and mass scales naturally with the cube of the height, then BMI doubles instead of remaining the same. This results in taller people having a reported BMI that is uncharacteristically high, compared to their actual body fat levels. In comparison, the Ponderal index is based on the natural scaling of mass with the third power of the height.
+However, many taller people are not just "scaled up" short people but tend to have narrower frames in proportion to their height. Nick Korevaar [3] (a mathematics lecturer from the University of Utah) suggests that instead of squaring the body height (as the BMI does) or cubing the body height (as the Ponderal index does), it would be more appropriate to use an exponent of between 2.3 and 2.7. The BMI tables are excellent for identifying obesity and body fat in large populations, but they are far less reliable for determining fatness in individuals.
+However, many taller people are not just "scaled up" short people but tend to have narrower frames in proportion to their height. Nick Korevaar [3](a mathematics lecturer from the University of Utah) suggests that instead of squaring the body height (as the BMI does) or cubing the body height (as the Ponderal index does), it would be more appropriate to use an exponent of between 2.3 and 2.7.
+The BMI tables are excellent for identifying obesity and body fat in large populations, but they are far less reliable for determining fatness in individuals.
+BMI in children (aged 2 to 20) defined as below:
+BMI for age percentiles for boys 2 to 20 years of age.
+BMI for age percentiles for girls 2 to 20 years of age.
+BMI is used differently for children. It is calculated in the same way as for adults, but then compared to typical values for other children of the same age. Instead of comparison against fixed thresholds for underweight and overweight, the BMI is compared against the percentile for children of the same sex and age.
+A BMI that is less than the 5th percentile is considered underweight and above the 95th percentile is considered obese. Children with a BMI between the 85th and 95th percentile is overweight.
+Recent studies in Britain have indicated that females between the ages 12 and 16 have a higher BMI than males of the same age by 1.0 kg/m2 on average.
+The same BMI may represent a different level of obesity for different ethnic groups. BMI in Asia, including China, is generally lower than in European countries, but studies have shown that Asians have a high risk of cardiovascular disease at low BMI levels. Chinese people begin to increase the risk of suffering from high blood pressure when the BMI is lower than 25.
+Not suitable for the crowd, and everyone applies BMI, such as:
+Under the age of 18.
+An athlete.
+Weight training is being.
+Pregnant or breastfeeding.
+Weak or sedentary elderly.
+      1.4 Review of Literature
+Eating Disorders or obesity is a serious problem. They involve a poor body image, abnormal eating behaviors, overemphasis of the importance of weight and shape, Eating Disorders and obesity are often poorly understood and underestimated in the society. There are mistaken beliefs that Eating Disorders or obesity are about vanity, a dieting attempt gone wrong, an illness of “choice”, a cry for attention, or a person “going through a phase”. Eating Disorders have a cultural history that being thin “beauty ideal”.
+Patrick L [9] stated that both young men and women have suffered from eating disorder or obesity.  The etiology of eating disorders is complex and appears to include genetic factors and as well as psychological factors that include a history of trauma and childhood sexual abuse. This paragraph will explain the Eating disorders btw male and female. Eating disorder or obesity that have long been perceived to occur primarily in women; Men and women with eating disorders share common risk factors and exhibit some overlap in clinical presentation, but important differences do exist. Determining which factors best explain these differences remain uncertain. Furthermore, despite a marked increase in the incidence of anorexia nervosa and bulimia nervosa in women over the last 50 years, the awareness of eating disorders in men remains low. This is although men represent 10‐20% of cases of anorexia nervosa and bulimia nervosa and up to 40% of cases of binge eating disorder. 
+Over the past several decades, numerous BMR formulas have been developed targeting different population groups. One good example of such data is contained in a comprehensive literature search which revealed 248 BMR estimation equations that developed using diverse ranges of age, gender, race, fat free mass, fat mass, height, waist-to-hip ratio, body mass index, and weight the basal metabolic rate (BMR), the energy required for performing vital body functions at rest, is the largest contributor to energy expenditure.
+
+1.5 Goals and Objectives
+The goal of this project is to design a system that can calculate a person's Body Mass Index (BMI) to judge whether a person is in normal weight, then based on Basal Metabolic Rate (BMR) and a person's lifestyle, automatically select food and according to a certain number of days to achieve the normal weight.
+Our goal is divided into three objectives:
+1. To develop an algorithm that can calculate how much calories needed to achieve the normal weight.
+2. To design a framework that can recommend food, based on lifestyle and Daily Food Intake Calories (DIFC).
+3. To develop a client-service application with clear presentation of calculated result.
+
+1.6 Scope and Limitations
+After some research, we found that different ethnic groups and regions will use different BMI tables.
+The following are the scope of our project:
+1. Client-Service Application.
+2. Body Mass Index (BMI) system. 
+3. Basal Metabolic Rate (BMR) system.
+4. Daily Needed Calories (DNC) system.
+5. Automatic selection of food and Predict Days system.
+
+The following are out of scope, and may be added in future versions:
+1. Different ethnicity of people has different ways to calculate BMI and BMR.
+2. Under the age of 18.
+3. An athlete.
+4. Weak or sedentary elderly.
+5. More food and categories, such as Thai style, Chinese style and American style.
+6. Custom select food system.
+Chapter 2 History of Body Weight Balancing
+Early body weight balancing applications only focus on the value of Body Mass Index BMI and there are not as important as care BMR and how your daily activities DNC). Recently, many professional weight apps have been developed to detail your daily food intake and what you should eat.
+Nowadays, many people gradually begin to become obese as they get older due to lack of diet or lack of necessary exercise. So, more and more people will choose the appropriate application to manage their body. So, these products have already become a great deal of selection, because it can give people a detailed plan or schedule, perhaps such a plan is not very satisfied with people, and the choices is limited, but it could really have helped people achieve their goals. 
+Despite this, the body weight balancing is still very underdeveloped, due to several reasons, mostly related to different people, different place in the world, different age ranges, different occupations, even the people are in different states now, such as Pregnant, being sport etc.
+
+2.1 Existing Approaches
+Calculating your body's BMI and BMR value ​​is a set of proven formulas. Also, the DNC is based on the BMR value. Then according to the DIFC, the number of days will also be applied to the existing proven formula, this is a complete set of closely related algorithms. There are 3 main points should be marked.
+
+2.2 Features and Functionalities of Body Weight Balancing
+This product could tell the user's status and detailed data. Unlike other applications, our products are fully automated in terms of recommending food and have a cyclical nature, which means that each day's food recommendations are different, 7 days is cyclical.
+The food provided is mainly healthy and normal food, drinks and snacks are also provided. There will be provided as much as possible satisfied most people, so sub-healthy fast-food is also provided.
+Chapter 3: Project Framework
+3.1 Framework Overview
+Figure 3.1 shows the framework of how the body weight balancing application works.
+
+Figure 3.1: Body Weight Balancing Framework.
+
+ Figure 3.2 shown below explains the flowchat of our Body Weight Balancing
+
+
+Figure 3.2: Body Weight Balancing Dataflow.
+
+            3.2 Calculation Module
+This section delivers the calculations of BMI, BMR, DNC and DIFC. The calculation details are as follow: 
+                   3.2.1 BMI value
+Based on Eq. (1), Standard BMI equal is shown below:
+BMI = (weight in kilogram) / (height in meters) * (height in meters),		(1)
+it is categorized that a person may fall into one the following weight status. Figure 3.3 shows a table in the database to determine the body status.
+
+
+Figure 3.3: Weight Status based on BMI.
+
+The following calculation would estimate the overweight value of a person who has a BMI greater than 24.9. Assume that W is an overweight factor of a person and its value is estimated based on the normal range of the BMI (see Figure 3.3), called BMI (normal):
+W = BMI (normal) * (height) * (height),						(2)
+W (upper) = BMI (normal) * (height) * (height),					(3)
+Overweight (min) = weight - W (upper).						(4)
+Similarly, the following calculation would estimate the lower weight value of a person who has a BMI less than 18.5. Assume that L is an overweight factor of a person and its value is estimated based on the normal range of the BMI (see Figure 3.3), called BMI (healthy):
+L = BMI (healthy) * (height) * (height),						(5)
+L (lower) = BMI (normal) * (height) * (height),					(6)
+Lower Weight (min) = weight - L (lower).						(7)
+
+3.2.2 BMR value
+A BMR calculator gives the number of calories burned while a person is doing nothing. That is, it should be a good indication of the calorie count that a person needs to adhere to lose or gain weight. Therefore, by combining the values of BMR and BMI, help a person could maintain the recommended weight and hence a healthy lifestyle. 
+Men = 88.362 + (13.379 * weight in kilograms) + (4.799 * height in centimeter) - (5.677 * age in year),										(8)
+Women = 447.593 + (9.247 * weight in kilograms) + (3.098 * height in centimeter) - (4.33 * age in year).									 (9)
+
+3.2.3 DNC value
+Figure 3.4 shows the estimation of DNC of a person based on the physical activity multiply by the BMR value.
+
+Figure 3.4: DNC calculation based on BMI.
+DNC = BMR * Daily Physical Activity factor.					(10)
+
+3.2.4 DIFC value
+The system calculates the total intake calories of a person which is called daily food intake calorie.
+3.2.5 Prediction of days
+There is noted hereby that 1 pound (or 0.443592kg) of fat is equal to 3500 calories. To reduce weight by 1, pound a week that would require a person to create a deficit of 3500 calories (it means that deficit 500 calorie daily in 7 days). This is to say, for one to lose more weight needs to simply create a bigger deficit.
+To add weight by 1, pound a week that would require a person to create a deficit of 3500 calories (it means that deficit 500 calorie daily in 7 days). This is to say, for one to add more weight needs to simply create a bigger deficit.
+To find out the number of calories needed to reduce the extra weight of an overweight person, predict the number of days to attain the desired weight or state of a normal BMI, BMR, DNC, and DIFC and overweight value (or lower weight value), the system just uses any value from overweight min (or lower weight max) to calculate the required days to achieve the desired weight. The predicts the number of days for an overweight person who desired to attain a normal BMI status by subtracting 500 calories from DNC value and then multiplying it with 7 to get a reduction of 0.45392kg weight per week as expressed below:
+(DNC - 500) * 7 = 0.453592 kg. 							(11)
+If DIFC is less than DNC - 500, then the Percentage Reduction in Calorie(PRC) could be calculated, (otherwise a person would not be loss weight, it means the system will not be able to predict the number of days:
+PRC (Percentage reduction in Calorie) = (((DNC-500) - DFI) / (DNC-500)) * 100. (12)
+Based on Eqs. (11) and (12), the Earned Weight Reduction (EWR) value of the person can be calculated as:
+EWR (Earned weight reduction) = 0.453592 * PRC.					(13)
+Based on Eq. (13), the overall Weight Reduction (OWR) value of the person which can be calculated as:
+OWR (over weight reduction) = 0.453592 + EWR. 					(14)
+From Eqs. (4) and (14), The Minimum Number of Days Needed (NDN min) for a person to reduce his or her weight to reach in a state of normal BMI, the formula is shown below as:
+NDN (Minimum number of days needed) = overweight (min) / (or/7). 		(15)
+Similarly, the system can predict the number of days required to reach normal BMI for a low weight person with no eating disorder, in such case, the DNC value add 500 calories and then multiply it with 7 to get an addition of 0.453592 kg weight per week which is also shown below:
+(DNC + 500) * 7 = 0.453592 kg.							 (16)
+If DIFC is greater than DNC + 500, then the Percentage Addition in Calorie (PAC) could be calculated, (otherwise a person would not be adding weight, and it means the system will not be able to predict the number of days.
+PAC (Percentage Addition in Calorie) = ((DIFC-(DNC+500)) / (DNC+500)) * 100. (17)
+Based on Eqs. (16) and (17), the Earned Weight per Week (EWW) value of the person can be calculated as:
+EWW (Earned weight per week) = ((0.45392 * PAC)/100) + 0.45392.		 (18)
+From Eq. (18), The Minimum Number of Days Needed (NDN min) for a lower weight person to reach a normal BMI and it can be given as:
+NDN (Minimum number of days needed) = lower weight (min) / (EWW/7).		 (19)
+
+3.2.6 The Way of Food Selection
+The food choice way is to arrange the permutations of total food calories after the total choice, then divided into 3 states which are morning, afternoon and evening. Figure 3.5 is shown below which explains how food is divided and selected.
+
+
+Figure 3.5: Concept of how Food calories are shared.
+	
+But this result is huge, such as a table is 10 * 2 specifications, each time you need to use two tables, the result is 10`s millions of levels. According to our use of the environment, we made some optimization; we have fixed each module to let them be permutated separately and then combined. Figure 3.6 shows the process and method of food distribution.
+
+
+Figure 3.6: Fixed Concept of how Food calorie are divided.
+
+3.4 Rule of each Module
+3.4.1 Module of BMI
+We used Eqs. (1), (2), (3), (4), (5), (6), (7) to find the BMI value from the user inputs.
+We set up a data in the table of database, used it to determine whether the inputted data of the users are overweight, lower weight or normal weight status. Then tells the user if it has un-normal weight status, what risks the user are in, and needs to reduce or increase weight value.
+Displays to the client.
+3.4.2 Module of BMR
+We used Eqs. (8), (9) to find user’s BMR value, and display to the client.
+
+
+
+3.4.3 Module of DNC.
+We first create a table in the database, to know the user's daily life style.
+We used the BMR value to multiply by the factor of each different lifestyle level, to get the value of DNC, according the Eqs.  (10), (11).
+Depend on this DNC value, for the user, when the user is overweight, plus 500 calories, when the user is lower weight, then minus 500 calories. Finally, tells the user how much calories must be kept, reduce or add to keep an healthy status.
+Displays to the client.
+
+3.4.4 Module of DIFC
+Food recommendation system:
+Depend on (DNC - 500) and (DNC + 500) and DNC to estimate total DIFC calories selection.
+About the design: Divide the foods into 4 parts: breakfast, lunch, dinner and fruit-snack. According to the normal life, the ratio is 3:5:4: 1.
+Create 2 tables (eat and drink) for breakfast. Create 3 tables (eat, drink and dish) for lunch and dinner (common tables to use). Create a table for fruit-snack.
+The computational complexity of permutations and combinations is huge, to reduce the amount of computation and to archive more rationalization, we divided 1 into 4 parts.
+Permutations:
+            Combination of all the tables could be permutations and combinations.
+Sorting method (bubble sort):
+Compare the first number with all numbers and always choose the smallest one. And so on until n-1, and from small to large.
+Common methods of breakfast, lunch and dinner. The difference is that lunch and dinner are triple loop, breakfast is double loop.
+Furthermore, About the design of the table is the extra food:
+ For food collection, we use the following method:
+          		  8.1 To select a food, permutation and combination it by itself.
+          		  8.2 To select 2 kinds of food, permutation and combination it by itself.
+            Design idea: Because snacks cannot be the same as the main food as the main heat supply, can only be used as a hobby way.
+     9.   About overweight, lower weight and normal weight handling:
+            If overweight, the method of overweight is found in the value closest to the (DNC 
+	+ 500) value, choosing at least 7 outputs.
+            If lower weight, the method of lower weight is find the value closest to the     
+	(DNC - 500) value, choosing at least 7 outputs.
+      10.   If there is a normal weight, then the method of normal weight calculation is 
+	based on (-1) ^n * n.  It means that, select 1 up, and 1 down, the result is around 	DNC.       							
+       11.   Displays the total calories by the 7-days cycle. 
+       12.   Displays it to the client.     
+
+
+The following figure 3.7 shows how the system makes different recommendations for different physical states in getting the total recommended calories.
+
+Figure 3.7: Structure of the Recommendation food selection. 
+
+3.4.4 Predict Needed Days to Get Normal Weight Status
+We use Eqs.  (12), (13), (14), (15) to calculate how many days needed to get the normal weight status when the user is overweight.
+We use Eqs.  (16), (17), (18), (19) to calculate how many days needed to get the normal weight status when the user is lower weight.
+Displays to the client.
+
+
+
+
+3.5 Problems and Solution
+1. Boundary value problem (BMI)
+We encountered a problem dealing with BMI values, such as the maximum BMI which have the normal boundary of 24.9, if a person's BMI value is exactly 24.9, the system cannot be displayed.
+Solution: Because we are accurate to the last three digits at the exact decimal point, and if not, we can solve the problem. The way we solve it is that we have only 1 digit.
+2. Exception handling (connect to SQL)
+After ping ip address, if we connect to a database on another computer, it works, but after a while, the connection was unsuccessful.
+Solution: Because in the same network environment, ip address changes often, so we switched to the use of the computer's name to connect to solve this problem.
+3.The rationality of calculation (select food DIFC)
+We have considered if we should arrange the food without dividing it. If so, the performance of the computer running is important because the computational complexity of permutations and combinations is huge. Moreover, after the calculation of the results may be impractical, such as breakfast arranged to eat watermelon, and extra food like pizza.
+Solution: Divide the food into 4 parts: breakfast, lunch, dinner and extra food. According to the normal life, the ratio is 3:5:4:1. Different time used different tables. (Because lunch and dinner are similar, so they used common tables).
+4. Calculate the time of the result, Improve performance (DIFC)
+Calculate the results estimate about 12 seconds, regardless of the large amount of computation and computer performance factors, we still think that it takes long.
+Solution: After permutation, sort lunch and dinner first. The result is positive, only about 7 seconds to finish. Another solution is we can arrange the data in the database first. However, the disadvantage is that if we change the contents of the table (input more data or delete data), the solution fails.
+Best solution (right now we are using): Thread. We use this method to handle permutation and combination, meaning we start the computation as soon as the App starts.
+5. Runtime error (DIFC)
+The result is not correct under normal weight status, but overweight and lower weight are okay.
+Solution: No initialization.
+Chapter 4: Database Design
+4.1 Database.
+We used a food database, which records a variety of cooked food, main foods (kind of rice), beverages and fast food detailed calories. We have set up food table, beverage table, snack stable, fast food table for each, put onto Microsoft SQL Server 2008.The database has about 1,000 kinds of food and drink. The database is based on Chinese food, to cater internationally; we selected about 200 kinds of well-known.
+
+4.2 Rule of BMI
+Figure 4.1 shows system to determine the body state of a table. The data for “Normal-Flag” is for check a person's weight status, and then tell user how to maintain the weight value.
+
+Figure 4.1: Weight Status based on BMI value.
+
+4.3 Rule of DNC
+Figure 4.2 shows the description of the system with the BMR value, then according to the user's life style to get a DNC value’s database table.
+
+Figure 4.2: DNC based on BMR value.
+
+4.4 Rule of Food-Calorie
+Figure 4.3 shows a part of the main food’s calories of database’s table. 
+
+Figure 4.3: Main Food and their calorie.
+
+Figure 4.4 shows a part of the fast food’s calories of database’s table which is a part of food recommendation section.
+
+Figure 4.4: Fast-Food and their calorie.
+
+Figure 4.5 is a part of the beverage’s calories of database’s table. Prepares for the recommended portion of the food.
+
+
+Figure 4.5: Beverages and their calorie.
+
+ Rule of Food Recommendation
+Figure 4.6 shows a partial table of the foods that need to be eaten for the fruit and snack’s calories.
+
+
+Figure 4.6: Fruit and Snacks calorie.
+
+
+
+
+
+
+
+Figure 4.7 shows a partial table of the foods that need to be eaten for breakfast.
+
+
+Figure 4.7: Preparation to calculate the total amount of calories when we eat during breakfast.
+
+Figure 4.8 shows a partial table of the drink that are needed for breakfast.
+
+
+Figure 4.8: Preparation to calculate the total amount of calories when we drink during breakfast.
+
+
+
+
+Figure 4.9.1 shows a partial table of the foods that need to be eaten for lunch and dinner.
+
+
+Figure 4.9.1: Preparation to calculate the total amount of calories when we eat during lunch.
+
+Figure 4.9.2 shows a partial table of the drinks that needed for lunch and dinner.
+
+
+Figure 4.9.2: Preparation to calculate the total amount of calories when we drink during lunch and dinner.
+
+
+Figure 4.9.3 shows a partial table of the dish that are needed to be eaten for lunch and dinner.
+
+
+Figure 4.9.3: Preparation to calculate the total amount of calories of dish during lunch and dinner.Chapter 5: Evaluation
+Demo 1 (if a person has normal weight status, Male)
+Figure 5.11, Figure 5.12 and Figure 5.13 shows the application test of a person whose weight is 80 kg, height is 1.84 m, age of 23 years-old, male, and the lifestyle is very active (exercises 6-7 days a week).
+
+
+Figure 5.11: Page of BMI and BMR when user is in normal weight status.
+
+
+Figure 5.12: Page of DNC when user is in normal weight status.
+
+
+Figure 5.13: Page of food recommendation and prediction of days when user is in normal weight status.
+
+Demo 2 (if a person has normal weight status, Female)
+Figure 5.21, Figure 5.22 and Figure 5.23 shows the application test of a person whose weight is 65 kg, height is 1.68 m, age of 23 years-old, female, and the lifestyle is lightly active (lightly exercises 1-3 days a week).
+
+
+Figure 5.21: Page of BMI and BMR when user is in normal weight status.
+
+
+Figure 5.22: Page of DNC when user is in normal weight status.
+
+
+Figure 5.23: Page of food recommendation and prediction days when user is in normal weight status.
+
+
+
+
+Demo 3 (if a person is overweight, Male).
+Figure 5.31, Figure 5.32 and Figure 5.33 shows the application test of a person whose weight is 85 kg, height is 1.84 m, age of 23 years-old, male, and the lifestyle is Moderately active (exercises 3-5 days a week).
+
+
+Figure 5.31: Page of BMI and BMR when user is in overweight status.
+
+
+Figure 5.32: Page of DNC when user is in overweight status. 
+
+
+Figure 5.33: Page of food recommendation and prediction days when user is in overweight status.
+
+Demo 4 (if a person is overweight, Female).
+Figure 5.41, Figure 5.42 and Figure 5.43 shows the application test of a person whose weight is 80 kg, height is 1.68 m, age of 27 years-old, female, and the lifestyle is Sedentary or little active (no exercise + desk job).
+
+
+Figure 5.41: Page of BMI and BMR when user is in overweight status.
+
+
+Figure 5.42: Page of DNC when user is in overweight status. 
+
+
+Figure 5.43: Page of food recommendations and predictions of days when user is overweight status.
+
+
+
+
+
+Demo 5 (if a person is lower weight, Male).
+Figure 5.51, Figure 5.52 and Figure 5.53 shows application test a person of the weight is 56 kg, height is 1.78 m, age of 26 years-old, male, and the lifestyle is Sedentary or little active (no exercise + desk job).
+
+
+Figure 5.51: Page of BMI and BMR when user is in lower weight status.
+
+
+Figure 5.52: Page of DNC when user is in lower weight status. 
+
+
+Figure 5.53: Page of food recommendations and predictions of days when user is in lower weight status.
+
+Demo 5 (if a person is lower weight, Female).
+Figure 5.61, Figure 5.62 and Figure 5.63 shows the application test of a person whose weight is 40 kg, height is 1.68 m, age of 26 years-old, female, and the lifestyle is lightly active (lightly exercises 1-3 days a week).
+
+
+Figure 5.61: Page of BMI and BMR when user is in lower weight status. 
+
+
+Figure 5.62: Page of DNC when user is in lower weight status.
+
+
+Figure 5.63: Page of food recommendations and predictions of days when user is in lower weight status.
+
+Chapter 6: Product Comparison
+There  exist some  body weight balance application, we took two application which we compared with our product.
+Figure 6.1, Figure 6.2 and Figure 6.3 shows the application test of a person whose weight is 80kg, height is 1.84m, age of 23 years-old, male, and the lifestyle is very active (exercises 6-7 days a week).
+
+
+Figure 6.1: display BMI, BMR value when user is in normal weight status.
+
+
+         Figure 6.2: displays the DNC values when the user is in normal weight status.
+
+
+     Figure 6.3: displays the food recommendations and prediction of days when the user is normal weight status.
+
+
+
+
+
+Figure 6.4 shows the other app that we compared to ours, having the same inputs as ours like the weight is being 80 kg, the height being 1.84 m, and the age being 23 years-old, male, and the lifestyle is very active (exercises 6-7 days a week).
+But this application in Figure 6.4 cannot recommend food, which makes ours better.
+
+Figure 6.4: Display the BMI, BMR and BMR activity value of other app.
+
+
+
+
+
+
+
+
+
+Figure 6.5, Figure 6.6 and Figure 6.7 in our application, it tells a person whose weight is 80 kg, height is 1.68 m, age of 27 years-old, female, and the lifestyle is Sedentary or little active (no exercise + desk job).
+
+
+Figure 6.5: display BMI, BMR value when user is normal weight status.
+
+
+Figure 6.6: display DNC value when user is normal weight status.
+
+
+
+
+            Figure 6.7: displays food recommendations and predictions of days when user is normal weight status.
+
+Figure 6.8 shows the second application which we are going to use to compare with our product, it tells a person whose weight is 80 kg, height is 1.68 m, age of 27 years-old, female, and the lifestyle is Sedentary or little active (no exercise + desk job). And the result shows the BMR value, and DFIC.
+
+Continuation of Figure 6.8:
+
+
+Figure 6.8: display the BMR value.Chapter 7 Conclusion 
+
+
+Compare with other applications, our application has many advantages:
+1. More clearly and detailed in showing the data set (BMI, BMR, DNC, food item, calories and prediction of days), which is used in this project are real and valid.
+2. We provided food recommendation and selection of foods, which will give good preview to user.
+3. Most of the other application only have single BMI value or only the BMR value. But in our application along with BMI and BMR, we have DNC and DIFC value. Also other application never shown any food recommendation.
+4. We have more accuracy based on the latest BMI value and BMR values which are updated.
+5. We emphasize more on the overweight or lower weight status.
+This application can also have many improvements. Firstly, we can improve the rules for arranging food, which would improve efficiency. Secondly, we can expand our types of food, which would improve the overall performance. Thirdly, we could make the interface look nicer, that would attract more users.
+
+
+
+
+	
+Acknowledgements
+We would like to express my special thanks of gratitude to our Project Advisor Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan as well as our  Project Committee members Asst. Prof. Dr. Dobri Atanassov Batovskiwho  and Mr. Chayapol Moemeng who gave us the golden opportunity and encouragement  to do this wonderful project on the topic Body Weight Balancing, which also helped us in doing a lot of Research and doing that process ,we came to know about so many new things we are really thankful to them.
+Secondly, we would also like to thank our parents for the financial support and moral support and friends who believed in us and encourage us that we can finish within the limited time frame.
+Lastly, we thank ourselves  Yilin Wang and Mohamed Kaba for not giving up and sticking to the fact that nothing can stop us from reaching the sky. 
+
+
+
+References
+[1]	Thomas E.Dorner, Anita Rieder.Institute of Social Medicine, Center for Public Health, Medical University of Vienna, Vienna, Austria.
+[2] Kaplan MS, Huguet N, Newsom JT, McFarland BH, Lindsay J. Prevalence and correlates of overweight and obesity among older adults: findings from
+      the Canadian National Population Health Survey. J Gerontol A Biol Sci Med Sci 2003;58:1018–1030.
+[3] 1 2 Korevaar, Nick (July 2003). "Notes on Body Mass Index and actual national data".
+[4] "Weight Index Doesn’t Tell the Whole Truth". The New York Times. 31 August 2010.
+[5] "Body Mass Index: BMI for Children and Teens". Center for Disease Control. Retrieved 2013-12-16.
+[6] "Health Survey for England: The Health of Children and Young People". Archive2.official-documents.co.uk. Retrieved 16 December 2013.
+[7] F. Dohm, K. M. Pike, R. H. Striegel-Moore and D. E. ilfley, "Bias in binge eating disorder", Journal of Consulting and Clinical Psychology vol. 69, pp. 383-388, 1998.
+[8] J.J. Zodda, "Eating disorders: More to them than meets the mouth" SAPA Project Test, Personality research, Rochester Institute of Technology, Department of Psychology, 2003.
+[9] Patrick L. Eating disorders: a review of the literature with emphasis on medical complications and clinical nutrition. Alternative Medicine Review. 2002;7(3):184–202. [PubMed]
+
+
+
+[10] P. Keel, L. Kelly, L. Klump, and K. Pamela, "Are eating disorders culture-bound   
+        syndromes? Implications for conceptualizing their etiology", Psychological Bulletin, 
+        vol, 129, pp. 747-769, 2003.
+[11] N. S. Sabounchi, H. Rahmandad, and A. Ammerman, "Best fitting prediction 
+        equations for Basal Metabolic Rate: Informing obesity interventions in diverse  
+        populations", International Joumal of Obesity (London), vol. 37(10), pp. 1364-1370, 
+        2013.
+[12] T. K. Abdel Hamid, Modeling the dynamics of human energy regulations and its 
+        implications for obesity treatment System Dynamics Review, vol. 37(10), pp.431-
+        471, 2002.
+[13] T. K. Abdel Hamid, Modeling the dynamics of human energy regulations and its 
+        implications for obesity treatment System Dynamics Review, vol. 37(10), pp.431-
+        471, 2002.
+[14] K. J. Rothman, "BMI-related errors in the measurement of obesity" International 
+        Journal of obesity, vol, 32, pp.56-59. 2008.
+[15] S. Russell s, P. Norvig, Artificial Intelligence: A Modern Approach, Pearson 
+        Education, New Jersey, 2004, pp. 737-748.
+[16] M. Negnevitsky, Artificial Intelligence- A Guide to Intelligent Systems, Addison 
+        Wesley, 2005, pp. 165-216.
+[17] V. B. Rao and H. v. Rao. eural Networks & Fuzzy logic, BPB Publications, New 
+        Delhi, 1996, pp. 150-300.
+[18] K.G. Anilkumar, "A subjective job scheduler based on sciences neural network", 
+        Human-centric Computing and information (HCIS), a Springer open journal, vol. 
+        3:17, 2013.
+APPENDIX 
+Exhibition the Method of food recommendation.
+public partial class FormSelectFoodAndPredictDays : Form
+    {
+        public FormSelectFoodAndPredictDays()
+        {
+            InitializeComponent();
+
+            double SuggestionCalories = 0.0;
+            if (FormMain.BodyStatus == "OverWeight")
+                SuggestionCalories = FormDNC.DNC - 500;
+            else if (FormMain.BodyStatus == "LowerWeight")
+                SuggestionCalories = FormDNC.DNC + 500;
+            else
+                SuggestionCalories = FormDNC.DNC;
+
+
+            double BreakfastCalories = SuggestionCalories * 3 / 13;
+            double LunchCalories = SuggestionCalories * 5 / 13;
+            double DinnerCalories = SuggestionCalories * 4 / 13;
+            double OthersCalories = SuggestionCalories / 13;
+
+            DataTable BreakfastDt = GetSuggestDataForSevenDays(FormMain.BreakfastDataListByOrderDt, BreakfastCalories);
+            DataTable LunchDt = GetSuggestDataForSevenDays(FormMain.LunchAndDinnerDataListByOrderDt, LunchCalories);
+            DataTable DinnerDt = GetSuggestDataForSevenDays(FormMain.LunchAndDinnerDataListByOrderDt, DinnerCalories);
+            DataTable OthersDt = GetSuggestDataForSevenDays(FormMain.OthersDataListByOrderDt, OthersCalories);
+
+
+            DataTable DtResult = new DataTable();
+            DtResult.Columns.Add("WeekDay", typeof(string));
+            DtResult.Columns.Add("Breakfast", typeof(string));
+            DtResult.Columns.Add("Lunch", typeof(string));
+            DtResult.Columns.Add("Dinner", typeof(string));
+            DtResult.Columns.Add("Others", typeof(string));
+            DtResult.Columns.Add("TotalCalories", typeof(double));
+            for (int i = 0; i < 7; i++)
+                DtResult.Rows.Add((WeekDay)i, BreakfastDt.Rows[i]["EatableName"].ToString(), LunchDt.Rows[i]["EatableName"].ToString(),
+                    DinnerDt.Rows[i]["EatableName"].ToString(), OthersDt.Rows[i]["EatableName"].ToString(),
+                   Convert.ToDouble(BreakfastDt.Rows[i]["Calories"]) + Convert.ToDouble(LunchDt.Rows[i]["Calories"])
+                   + Convert.ToDouble(DinnerDt.Rows[i]["Calories"]) + Convert.ToDouble(OthersDt.Rows[i]["Calories"]));
+
+            dataGridViewResult.DataSource = DtResult;
+            dataGridViewResult.Columns["WeekDay"].Width = 70;
+            dataGridViewResult.Columns["Breakfast"].Width = 250;
+            dataGridViewResult.Columns["Lunch"].Width = 250;
+            dataGridViewResult.Columns["Dinner"].Width = 250;
+            dataGridViewResult.Columns["Others"].Width = 200;
+            dataGridViewResult.Columns["TotalCalories"].Width = 80;
+
+            double SumCalories = 0.0;
+            for (int i = 0; i < DtResult.Rows.Count; i++)
+                SumCalories += Convert.ToDouble(DtResult.Rows[i]["TotalCalories"]);
+            double DFI = Math.Round(SumCalories / 7, 1);
+
+            int NDN = 0;
+            if (FormMain.BodyStatus == "OverWeight")
+            {
+                double PRC = (SuggestionCalories - DFI) / SuggestionCalories;
+                double EWR = 0.45392 * PRC;
+                double OWR = 0.45392 + EWR;
+                NDN = Convert.ToInt32(FormMain.OverWeight / (OWR / 7));
+                labelResult.Text = "Your average calorie is " + DFI.ToString() + " calories. If you following this recommendation, you need " + NDN.ToString() + " days to attain healthy weight status.";
+            }
+            else if (FormMain.BodyStatus == "LowerWeight")
+            {
+                double PAC = (DFI - SuggestionCalories) / SuggestionCalories;
+                double EWW = 0.45392 * PAC / 100 + 0.45392;
+                NDN = Convert.ToInt32(FormMain.LowerWeight / (EWW / 7));
+                labelResult.Text = "Your average calorie is " + DFI.ToString() + " calories. If you following this recommendation, you need " + NDN.ToString() + " days to get healthy weight status.";
+            }
+            else
+            {
+                labelResult.Text = "Your average calorie is " + DFI.ToString() + " calories. If you following this recommendation, you will keep healthy weight status.";
+            }
+
+
+
+        }
+
+        public static DataTable GetBreakfastDataListByOrder()
+        {
+            DataTable DtBreakfastDataList = new DataTable();
+            DataTable DtBreakfastEat = new DataTable();
+            DataTable DtBreakfastDrink = new DataTable();
+            SqlDataAdapter DataAdapter = null;
+            string SqlCmd = "";
+
+            string SqlCon = ConfigurationManager.ConnectionStrings["SqlConnection"].ConnectionString;
+
+            SqlCmd = "SELECT * FROM [BreakfastEat]";
+            DataAdapter = new SqlDataAdapter(SqlCmd, SqlCon);
+            DataAdapter.Fill(DtBreakfastEat);
+
+            SqlCmd = "SELECT * FROM [BreakfastDrink]";
+            DataAdapter = new SqlDataAdapter(SqlCmd, SqlCon);
+            DataAdapter.Fill(DtBreakfastDrink); 
+
+            DtBreakfastDataList.Columns.Add("EatableName", typeof(string));
+            DtBreakfastDataList.Columns.Add("Calories", typeof(double));
+
+            for (int i = 0; i < DtBreakfastEat.Rows.Count; i++)
+            {
+                for (int j = 0; j < DtBreakfastDrink.Rows.Count; j++)
+                {
+                    DtBreakfastDataList.Rows.Add(DtBreakfastEat.Rows[i]["FoodName"].ToString() + "\r\n" + DtBreakfastDrink.Rows[j]["DrinkName"].ToString(),
+                        Convert.ToDouble(DtBreakfastEat.Rows[i]["Calories"]) + Convert.ToDouble(DtBreakfastDrink.Rows[j]["Calories"]));
+                }
+            }
+
+            return GetCaloriesByOrder(DtBreakfastDataList);
+        }
+
+        public static DataTable GetLunchAndDinnerDataListByOrder()
+        {
+            DataTable DtLunchAndDinnerDataList = new DataTable();
+            DataTable DtLunchAndDinnerEat = new DataTable();
+            DataTable DtLunchAndDinnerVegetables = new DataTable();
+            DataTable DtLunchAndDinnerDrink = new DataTable();
+            SqlDataAdapter DataAdapter = null;
+            string SqlCmd = "";
+
+            string SqlCon = ConfigurationManager.ConnectionStrings["SqlConnection"].ConnectionString;
+
+            SqlCmd = "SELECT * FROM [LunchAndDinnerEat]";
+            DataAdapter = new SqlDataAdapter(SqlCmd, SqlCon);
+            DataAdapter.Fill(DtLunchAndDinnerEat); 
+
+            SqlCmd = "SELECT * FROM [LunchAndDinnerVegetables]";
+            DataAdapter = new SqlDataAdapter(SqlCmd, SqlCon);
+            DataAdapter.Fill(DtLunchAndDinnerVegetables); 
+
+            SqlCmd = "SELECT * FROM [LunchAndDinnerDrink]";
+            DataAdapter = new SqlDataAdapter(SqlCmd, SqlCon);
+            DataAdapter.Fill(DtLunchAndDinnerDrink); 
+
+            DtLunchAndDinnerDataList.Columns.Add("EatableName", typeof(string));
+            DtLunchAndDinnerDataList.Columns.Add("Calories", typeof(double));
+
+             
+            for (int i = 0; i < DtLunchAndDinnerEat.Rows.Count; i++)
+            {
+                for (int j = 0; j < DtLunchAndDinnerVegetables.Rows.Count; j++)
+                {
+                    for (int k = 0; k < DtLunchAndDinnerDrink.Rows.Count; k++)
+                    {
+                        DtLunchAndDinnerDataList.Rows.Add(DtLunchAndDinnerEat.Rows[i]["FoodName"].ToString() + "\r\n"
+                            + DtLunchAndDinnerVegetables.Rows[j]["FoodName"].ToString() + "\r\n" + DtLunchAndDinnerDrink.Rows[k]["DrinkName"].ToString(),
+                            Convert.ToDouble(DtLunchAndDinnerEat.Rows[i]["Calories"])
+                          + Convert.ToDouble(DtLunchAndDinnerVegetables.Rows[j]["Calories"]) + Convert.ToDouble(DtLunchAndDinnerDrink.Rows[k]["Calories"]));
+                    }
+                }
+            }
+
+            return GetCaloriesByOrder(DtLunchAndDinnerDataList);
+        }
+
+     
+        public static DataTable GetOthersDataListByOrder()
+        {
+            DataTable DtFruitAndSnacksDataList = new DataTable();
+            DataTable DtFruitAndSnacks = new DataTable();
+            SqlDataAdapter DataAdapter = null;
+            string SqlCmd = "";
+
+            string SqlCon = ConfigurationManager.ConnectionStrings["SqlConnection"].ConnectionString;
+
+            SqlCmd = "SELECT * FROM [FruitAndSnacks]";
+            DataAdapter = new SqlDataAdapter(SqlCmd, SqlCon);
+            DataAdapter.Fill(DtFruitAndSnacks); 
+
+            DtFruitAndSnacksDataList.Columns.Add("EatableName", typeof(string));
+            DtFruitAndSnacksDataList.Columns.Add("Calories", typeof(double));
+
+
+            
+            for (int i = 0; i < DtFruitAndSnacks.Rows.Count; i++)
+                DtFruitAndSnacksDataList.Rows.Add(DtFruitAndSnacks.Rows[i]["SnackTitle"].ToString(), Convert.ToDouble(DtFruitAndSnacks.Rows[i]["Calories"]));
+
+            
+            for (int i = 0; i < DtFruitAndSnacks.Rows.Count - 1; i++)
+            {
+                for (int j = i + 1; j < DtFruitAndSnacks.Rows.Count; j++)
+                {
+                    DtFruitAndSnacksDataList.Rows.Add(DtFruitAndSnacks.Rows[i]["SnackTitle"].ToString() + "\r\n" + DtFruitAndSnacks.Rows[j]["SnackTitle"].ToString(),
+                        Convert.ToDouble(DtFruitAndSnacks.Rows[i]["Calories"]) + Convert.ToDouble(DtFruitAndSnacks.Rows[j]["Calories"]));
+                }
+            }
+
+            return GetCaloriesByOrder(DtFruitAndSnacksDataList);
+        }
+        private DataTable GetSuggestDataForSevenDays(DataTable DtSourceByOrder, double SuggestCalories)
+        {
+            DataTable SuggestData = new DataTable();
+
+            int NearestRowNum = 0;
+            for (int i = 0; i < DtSourceByOrder.Rows.Count - 1; i++)
+            {
+                if (SuggestCalories >= Convert.ToDouble(DtSourceByOrder.Rows[i]["Calories"]) && SuggestCalories <= Convert.ToDouble(DtSourceByOrder.Rows[i + 1]["Calories"]))
+                {
+                    if (FormMain.BodyStatus == "OverWeight")
+                        NearestRowNum = i;
+                    else if (FormMain.BodyStatus == "LowerWeight")
+                        NearestRowNum = i + 1;
+                    else
+                        NearestRowNum = i;
+                }
+            }
+
+            SuggestData.Columns.Add("EatableName", typeof(string));
+            SuggestData.Columns.Add("Calories", typeof(double));
+            for (int i = 0; i < 7; i++)
+            {
+                if (FormMain.BodyStatus == "OverWeight")
+                {
+                    SuggestData.Rows.Add(DtSourceByOrder.Rows[NearestRowNum]["EatableName"], DtSourceByOrder.Rows[NearestRowNum]["Calories"]);
+                    NearestRowNum--;
+                }
+                else if (FormMain.BodyStatus == "LowerWeight")
+                {
+                    SuggestData.Rows.Add(DtSourceByOrder.Rows[NearestRowNum]["EatableName"], DtSourceByOrder.Rows[NearestRowNum]["Calories"]);
+                    NearestRowNum++;
+                }
+                else
+                {
+                    SuggestData.Rows.Add(DtSourceByOrder.Rows[NearestRowNum]["EatableName"], DtSourceByOrder.Rows[NearestRowNum]["Calories"]);
+                    NearestRowNum += Convert.ToInt32(Math.Pow(-1, i + 1)) * (i + 1);
+                }
+
+            }
+
+            return SuggestData;
+        }
+        private static DataTable GetCaloriesByOrder(DataTable DtDataList)
+        {
+            string SwapEatableNameTemp = "";
+            double SwapCaloriesTemp = 0.0;
+            for (int i = 0; i < DtDataList.Rows.Count - 1; i++)
+            {
+                for (int j = i + 1; j < DtDataList.Rows.Count; j++)
+                {
+                    if (Convert.ToDouble(DtDataList.Rows[j]["Calories"]) < Convert.ToDouble(DtDataList.Rows[i]["Calories"]))
+                    {
+                        SwapEatableNameTemp = DtDataList.Rows[j]["EatableName"].ToString();
+                        SwapCaloriesTemp = Convert.ToDouble(DtDataList.Rows[j]["Calories"]);
+
+                        DtDataList.Rows[j]["EatableName"] = DtDataList.Rows[i]["EatableName"];
+                        DtDataList.Rows[j]["Calories"] = DtDataList.Rows[i]["Calories"];
+
+                        DtDataList.Rows[i]["EatableName"] = SwapEatableNameTemp;
+                        DtDataList.Rows[i]["Calories"] = SwapCaloriesTemp;
+                    }
+
+                }
+            }
+            return DtDataList;
+        }
+
+        private enum WeekDay
+        {
+            Sunday = 0, Monday = 1, Tuesday = 2, Wednesday = 3, Thursday = 4, Friday = 5, Saturday = 6
+        }
+
+
+
+
+
+
+
+
+
+ PAGE   \* MERGEFORMAT iii
+
+
+
+
+ PAGE   \* MERGEFORMAT 59
+
+
+
+

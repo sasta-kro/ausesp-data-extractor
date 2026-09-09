@@ -1,0 +1,168 @@
+[
+ {
+  "id": "2115",
+  "canonical_title": "LINE Chatbot for Coupon Customer",
+  "aliases": [
+   "Coupon Management Inventory System"
+  ],
+  "phase": "final",
+  "course_code": "CS4200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Apitsara Choppradit",
+    "student_id": "5710497"
+   },
+   {
+    "name": "Tanapat Limtemsap",
+    "student_id": "6014216"
+   }
+  ],
+  "advisor": "Chayapol Moemeng",
+  "committee": [
+   "Benjawan Srisura",
+   "Paitoon Porntrakoon"
+  ],
+  "abstract": "Digital transformation is quite a common word nowadays. Many businesses try to adapt to current society and improve by combining the usage of digital and technology because of easily collecting and analyzing data to improve their business process. The One Petroleum is also one of them. They try to incorporate the chatbot into managing and generating coupon processes. But some parts of these processes still require the labor of humans to perform and take more time. So, this project is developed in order to improve these processes to be more automatic, more digital and reduce the human labor and time spent. The project which we are developing will be divided into two major parts – LINE chatbot and Web Application – as well as the rework of coupon form. The project is developed by using Next.js framework and MongoDB to build the web app because of convenience and low budget in development to deploy on Vercel Server. And creating LINE chatbot by using LINE Developers Platform's Messaging API. The result of this project is that the site operator or business owner comment that some words on user interfaces are hard to understand or not relate in the real working environment. In conclusion, there are some benefits gained from implementing this project. The project can reduce the human work and time spent on generating and managing coupon processes. It also makes the processes to be more convenient as it allows employees to send pictures from the oil stations directly and business owners and check processes outside off the oil station's office. Lastly, it also provides a better data visualization on the information at hand better than a collection of paper coupons to count on.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web",
+    "mobile"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "nextjs",
+    "mongodb",
+    "react"
+   ]
+  },
+  "discoveries": {
+   "category": [
+    {
+     "key": "chatbot",
+     "label": "Chatbot / conversational agent",
+     "status": "used",
+     "evidence": "The project is developed ... by creating LINE chatbot by using LINE Developers Platform's Messaging API, and the bot replies to commands typed in the LINE group."
+    }
+   ],
+   "platform": [
+    {
+     "key": "messaging_app",
+     "label": "Messaging app (LINE)",
+     "status": "used",
+     "evidence": "The smartphone and tablets that have LINE application installed are needed for able to communicate with the bot."
+    }
+   ],
+   "domain": [
+    {
+     "key": "fuel_retail",
+     "label": "Fuel retail (oil station)",
+     "status": "used",
+     "evidence": "The One Petroleum - the oil station - that we are developing this project for is currently utilizing the LINE bot in their daily coupon management."
+    }
+   ],
+   "technology": [
+    {
+     "key": "line_messaging_api",
+     "label": "LINE Messaging API",
+     "status": "used",
+     "evidence": "And creating LINE chatbot by using LINE Developers Platform's Messaging API."
+    },
+    {
+     "key": "vercel",
+     "label": "Vercel",
+     "status": "used",
+     "evidence": "The project is developed by using Next.js framework and MongoDB to build the web app because of convenience and low budget in development to deploy on Vercel Server."
+    },
+    {
+     "key": "material_ui",
+     "label": "Material-UI",
+     "status": "used",
+     "evidence": "Our team can design and develop user interface that the Next.js web application that we have developed needs. If there are React components that our application requires, we can just import directly."
+    },
+    {
+     "key": "nosqlbooster",
+     "label": "NoSQLBooster for MongoDB",
+     "status": "used",
+     "evidence": "Why do we choose NoSQLBooster for MongoDB? Because ... we found that go back and forth to look for data or documents insert/delete/update on MongoDB online editor are troublesome task and repetitive."
+    },
+    {
+     "key": "ngrok",
+     "label": "Ngrok",
+     "status": "used",
+     "evidence": "We choose ngrok to perform as the webhook between our in-developed application to LINE server remotely during the development process."
+    },
+    {
+     "key": "visual_studio_code",
+     "label": "Visual Studio Code",
+     "status": "used",
+     "evidence": "Why do we choose Visual Studio Code as our text editor? Because Visual Studio Code is a lightning-fast source code editor, perfect for day-to-day use."
+    },
+    {
+     "key": "qr_code",
+     "label": "QR Code",
+     "status": "used",
+     "evidence": "The new coupon will consist of QR-code for the bot to be able to retrieve data from when used coupons are taken a picture and are sent to the LINE group chat for the bot to detect it."
+    },
+    {
+     "key": "npm",
+     "label": "npm",
+     "status": "used",
+     "evidence": "Ngrok is easy to be install by NPM and utilize it as well."
+    },
+    {
+     "key": "github",
+     "label": "GitHub",
+     "status": "used",
+     "evidence": "We can use GitHub to deploy an existing project - then with a deployment for every push - by selecting a repository from our GitHub account."
+    },
+    {
+     "key": "odoo",
+     "label": "Odoo ERP",
+     "status": "cited",
+     "evidence": "In our case, we the example of ERP that related the most to our project is Odoo ERP, with Odoo Inventory and Odoo Coupon Programs discussed as related work."
+    },
+    {
+     "key": "chatcompose",
+     "label": "ChatCompose",
+     "status": "cited",
+     "evidence": "ChatCompose is a ChatBot platform for marketing and support, presented in Chapter 2 as related work for linking a chatbot to the LINE Messaging API."
+    },
+    {
+     "key": "moment_js",
+     "label": "Moment.js",
+     "status": "cited",
+     "evidence": "Reference [19] Moment.js, Using Moment. From https://momentjs.com/docs/"
+    },
+    {
+     "key": "mongodb_charts",
+     "label": "MongoDB Charts",
+     "status": "cited",
+     "evidence": "Reference [17] MongoDB, Embedding SDK for Charts Demo - MongoDB Charts."
+    },
+    {
+     "key": "creative_tim",
+     "label": "Creative Tim",
+     "status": "cited",
+     "evidence": "Reference [16] Creative Tim, Next JS dashboard. From https://www.creative-tim.com/"
+    },
+    {
+     "key": "json_web_token",
+     "label": "JSON Web Token",
+     "status": "cited",
+     "evidence": "Future work: Improving authentication system - So, we will use JSON Web Token instead of saving ID and password in database."
+    }
+   ]
+  }
+ }
+]

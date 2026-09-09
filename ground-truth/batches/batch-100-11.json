@@ -20,7 +20,7 @@
     "student_id": "5838108"
    }
   ],
-  "advisor": "Asst. Prof. Dr. Paitoon",
+  "advisor": "Asst. Prof. Dr. Paitoon Porntrakoon",
   "committee": [
    "Asst. Prof. Dr. Rachsuda Setthawong",
    "A. Chayapol Moemeng"
@@ -37,7 +37,9 @@
    "domain": [
     "healthcare"
    ],
-   "topic": [],
+   "topic": [
+    "recommender_system"
+   ],
    "technology": [
     "mongodb",
     "nodejs"
@@ -83,8 +85,8 @@
     "computer_vision"
    ],
    "technology": [
-    "python",
-    "opencv"
+    "opencv",
+    "python"
    ]
   }
  },
@@ -116,13 +118,14 @@
   "reported_keywords": [],
   "classification": {
    "category": [
-    "research"
+    "research",
+    "software_application"
    ],
    "platform": [
     "desktop"
    ],
    "domain": [
-    "campus"
+    "education"
    ],
    "topic": [],
    "technology": []
@@ -152,7 +155,7 @@
    "A. Tapanan Yeophantong",
    "A. Piyakul Tillapart"
   ],
-  "abstract": null,
+  "abstract": "Lumpini Ville Condominium tracked parked cars by having guards write plate and slot numbers on paper twice a day, and the admin then re-entered each record by hand to check registration. This project replaced that process with two applications. Car Plate Checker is an Android app in which the guard photographs the car plate, the plate number is recognized using the Google Cloud Vision API for OCR, and the system shows the room number if the car is registered. Car Plate Management is a web application where the admin registers plates with room numbers, imports room lists from Excel, views parking records synced from the phones, filters them by date, and downloads them as Excel files. The report concludes that all objectives set initially were met, removing paper recording and manual data entry.",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -163,16 +166,15 @@
     "web"
    ],
    "domain": [
-    "security"
+    "other"
    ],
    "topic": [
-    "computer_vision",
     "ocr"
    ],
    "technology": [
-    "react",
     "mongodb",
-    "nodejs"
+    "nodejs",
+    "react"
    ]
   }
  },
@@ -203,8 +205,12 @@
     "ai_data",
     "research"
    ],
-   "platform": [],
-   "domain": [],
+   "platform": [
+    "none"
+   ],
+   "domain": [
+    "other"
+   ],
    "topic": [],
    "technology": []
   }

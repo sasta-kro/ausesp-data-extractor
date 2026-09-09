@@ -1,0 +1,73 @@
+[
+ {
+  "id": "2114",
+  "canonical_title": "Naughty Hamsters",
+  "aliases": [
+   "Naughty Hamster",
+   "Naughty Hamsters Casual Game"
+  ],
+  "phase": "proposal",
+  "course_code": "",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Sutisan Nilrattanakul",
+    "student_id": "6213221"
+   },
+   {
+    "name": "Wanitcha Srithongchuay",
+    "student_id": "6213365"
+   }
+  ],
+  "advisor": "Tapanan Yeophantong",
+  "committee": [
+   "Chayapol Moemeng",
+   "Khai Sandar Htun"
+  ],
+  "abstract": "Since our young age, both of this project's creators have experienced playing a number of games. For this course Senior Project I, we therefore took the opportunity to start learning and improving our skills on game development by selecting the topic of casual game development. With existing problems and player's expectations regarding gaming experience in consideration, our team has implemented our own-designed game called Naughty Hamsters as an online multiplayer party game. The game implementation is done by using the development tools of Unity 2020.3.32 as game engine and Photon Unity Networking 2.40 to deliver networking solutions. This project report covers several aspects and details of how this game is created; including project background, project framework and methodology, and project implementation and testing. Conducting this project, we have studied theorems and concepts to create a game, as well as putting on action by ourselves. Finally, we are able to successfully implement a playable and enjoyable game. Creating Naughty Hamsters has allowed us to take a significant step to gain more understanding of the scene behind game creation and development as it has given us opportunities to learn, use, and improve our performance better. In the end, we strongly hope that Naughty Hamsters can be further developed, tested, and launched in the future and become one of the games listed on some online game platforms to be played and enjoyed by real gamers.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "game"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [],
+   "technology": [
+    "unity"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "c_sharp",
+     "label": "C#",
+     "status": "used",
+     "evidence": "Section 3.1.1 Software Components lists 'PROGRAMMING LANGUAGE: C#' and states 'To implement this game, we use the programming language of C#'."
+    },
+    {
+     "key": "photon_unity_networking",
+     "label": "Photon Unity Networking (PUN)",
+     "status": "used",
+     "evidence": "Section 3.1.1: 'we use Photon Unity Networking (PUN); Version 2.40 by making an import in Unity' and the abstract names Photon Unity Networking 2.40 as the networking solution for the online multiplayer matchmaking."
+    },
+    {
+     "key": "mirror",
+     "label": "Mirror Networking",
+     "status": "cited",
+     "evidence": "Section 2.2.2 describes Mirror as a high-level networking library for Unity 2019/2020 LTS; the team first planned to use Mirror but switched to Photon after finding its APIs complex, so it was only evaluated and described, not used in the final build."
+    }
+   ]
+  }
+ }
+]

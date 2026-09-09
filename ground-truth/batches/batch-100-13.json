@@ -24,7 +24,7 @@
   ],
   "advisor": "A. Darun",
   "committee": [],
-  "abstract": null,
+  "abstract": "Good Shepherd Pvt LTD operates SAMT, a tutoring platform connecting students and teachers in fields such as music, sports, arts and technology. Individual one-to-one classes were expensive, teachers had no place to advertise group classes, students wanted to study with friends, and property owners had unused facilitated spaces. The team developed SAMT Master, a web-based administration and teacher application that manages learning hubs whose rooms are selected from a map by preferred location, creates teacher course groups that multiple students can join, and handles course group enrollment. It includes an online ticketing system where students pay by cash, credit card or internet banking, join classes using QR codes, and receive full or partial refunds when courses are canceled. The design covers a swim lane flowchart, data flow diagrams, an entity relationship diagram and a 16-table database, and the company plans to integrate the code into its application and a future mobile version.",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -34,9 +34,12 @@
     "web"
    ],
    "domain": [
-    "education"
+    "education",
+    "business"
    ],
-   "topic": [],
+   "topic": [
+    "geolocation"
+   ],
    "technology": []
   }
  },
@@ -72,7 +75,8 @@
   "reported_keywords": [],
   "classification": {
    "category": [
-    "hardware_iot"
+    "hardware_iot",
+    "software_application"
    ],
    "platform": [
     "embedded_hardware",
@@ -112,7 +116,8 @@
   "reported_keywords": [],
   "classification": {
    "category": [
-    "ai_data"
+    "ai_data",
+    "software_application"
    ],
    "platform": [
     "web"
@@ -123,7 +128,9 @@
    "topic": [
     "nlp"
    ],
-   "technology": []
+   "technology": [
+    "python"
+   ]
   }
  },
  {
@@ -158,7 +165,8 @@
   "reported_keywords": [],
   "classification": {
    "category": [
-    "research"
+    "research",
+    "hardware_iot"
    ],
    "platform": [
     "embedded_hardware"
@@ -208,7 +216,8 @@
     "other"
    ],
    "domain": [
-    "campus"
+    "campus",
+    "education"
    ],
    "topic": [],
    "technology": [

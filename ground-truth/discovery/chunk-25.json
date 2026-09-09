@@ -1,0 +1,443 @@
+[
+ {
+  "id": "2127",
+  "canonical_title": "Grade Report Generator",
+  "aliases": [
+   "GRG"
+  ],
+  "phase": "final",
+  "course_code": "IT4292 / CS 4200",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Swe Lin Htut",
+    "student_id": "6018184"
+   },
+   {
+    "name": "Phoo Pwint Sone",
+    "student_id": "6118147"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Paitoon Porntrakoon",
+  "committee": [
+   "A. Chayapol Momeng",
+   "Asst. Prof. Dr. Benjawan Srisura"
+  ],
+  "abstract": "These days, the number of ABAC students has almost doubled since 2010, and more and more work and responsibilities have to be taken from the University. Among them, one of the main responsibilities is to handle the students' grades, including for each subject grading system, and generating them. On top of that, there are so many subjects that share the subject code which make it more complicated and difficult to generate all the grade reports manually. It is tough to make changes, check or modify for each subject one by one. Besides, the possibility of human errors is very common in this case. Thus, we plan to make the \"Grade Report Generator\" which will solve all the struggling secretaries are facing right now. \"Grade Report Generator\" is a web application that automatically generates the grade report of the subjects offered by VMS faculty in a semester. Some of the main features of our project are such as managing semester and approval committees, managing codeshare subjects and subjects offered in a semester, managing grading criteria of each subject and its codeshare subjects and also to generate minutes of meeting, change the date or move the meeting place and so on. In this report, we are going to provide what is the scope of our project, how we create the Grade Report Generator including the methodology, workflow and so on.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [],
+   "technology": [
+    "mysql",
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "flask",
+     "label": "Flask",
+     "status": "used",
+     "evidence": "Section 2.1: \"We developed a system using Python (Flask), AJAX, Javascript, HTML and CSS (Bootstrap) mainly.\" Section 2.1.1 Python Flask describes the web framework used."
+    },
+    {
+     "key": "ajax",
+     "label": "AJAX",
+     "status": "used",
+     "evidence": "Section 2.1.3 AJAX: \"In our program, we use Ajax to send and receive the data. We used it for creating, adding and deleting the data.\""
+    },
+    {
+     "key": "bootstrap",
+     "label": "Bootstrap",
+     "status": "used",
+     "evidence": "Section 2.1: developed using \"CSS (Bootstrap)\"; referenced in the References as Bootstrap v5.1.3 for fast responsive sites."
+    },
+    {
+     "key": "javascript",
+     "label": "JavaScript",
+     "status": "used",
+     "evidence": "Section 2.1: \"We developed a system using Python (Flask), AJAX, Javascript, HTML and CSS (Bootstrap) mainly.\" Section 2.1.3 states the front end uses JavaScript for some parts."
+    }
+   ]
+  }
+ },
+ {
+  "id": "2129",
+  "canonical_title": "Vincent Mary School of Science and Technology Website",
+  "aliases": [
+   "VMS Website",
+   "VMS2022"
+  ],
+  "phase": "final",
+  "course_code": "ITX 3009",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2022,
+  "students": [
+   {
+    "name": "Chanoknon Tangthienkul",
+    "student_id": "6217412"
+   },
+   {
+    "name": "Kasidit Ploenthamakhun",
+    "student_id": "6016901"
+   },
+   {
+    "name": "Atita Kasemporntaweekit",
+    "student_id": "6211015"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "A. Tapanan Yeophantong",
+   "Asst. Prof. Dr. Paitoon Porntrakoon"
+  ],
+  "abstract": "This is a web-oriented application that allows us to access the data of Vincent Mary School (VMS) of Science and Technology, which contains the basic information of faculty such as the future path of technology or career of tech. This website is designed for assisting the students at an institute regarding the information in the faculty. The present study aims to start that we are going to make a faculty-related website that will provide all information regarding our faculty and have the purpose of the website is to improve the website with the new template design. Now it is of vital thing in the present scenario of any college which, the student can get all information before taking admission. This site provides the all information like students can easily get all information regarding their syllabus.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [],
+   "technology": [
+    "nextjs",
+    "react",
+    "wordpress"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "jquery",
+     "label": "jQuery",
+     "status": "used",
+     "evidence": "Scope of the project: \"In the backend, jQuery will be in charge of the data content\" and the bullet \"No CMS, use HTML, React.js, Next.js, jQuery, CSS, WP GraphQL\"."
+    },
+    {
+     "key": "wpgraphql",
+     "label": "WPGraphQL",
+     "status": "used",
+     "evidence": "Conclusion: \"we have Server-Side Rendering (SSR) and WPGraphQL as a backend to manage data\"; sections 2.6 and 3.1.4 cover WP GraphQL."
+    },
+    {
+     "key": "html",
+     "label": "HTML",
+     "status": "used",
+     "evidence": "Scope: \"By planning the website structure with HTML and CSS\" and the tool bullet listing HTML among the technologies used without a CMS."
+    },
+    {
+     "key": "css",
+     "label": "CSS",
+     "status": "used",
+     "evidence": "Scope bullet \"No CMS, use HTML, React.js, Next.js, jQuery, CSS, WP GraphQL\"; section 2.2 covers CSS for styling."
+    },
+    {
+     "key": "babel",
+     "label": "Babel",
+     "status": "used",
+     "evidence": "Section 3.1.1: \"The open source transpiler Babel is used to transform and compile code into JavaScript usable by a browser... All of these tools are used with npm in a terminal.\""
+    },
+    {
+     "key": "webpack",
+     "label": "Webpack",
+     "status": "used",
+     "evidence": "Section 3.1.1: \"Webpack, another open-source tool, is used to bundle the modules afterwards.\""
+    },
+    {
+     "key": "vercel",
+     "label": "Vercel",
+     "status": "used",
+     "evidence": "Conclusion: \"Directly link to our website: https://vms2022-github-io.vercel.app/\" - the finished site is deployed on Vercel."
+    },
+    {
+     "key": "asp_net",
+     "label": "ASP.NET MVC",
+     "status": "cited",
+     "evidence": "Problem statement: \"The present VMS.au.edu website runs on ASP.NET MVC, a web application framework built by Microsoft\" - the legacy system the project replaces, not used for the new site."
+    }
+   ]
+  }
+ },
+ {
+  "id": "2134",
+  "canonical_title": "Estimation of Possible Shoplifting from Video Frames",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CSX 3011/CS 4200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Minn Moe Yan Oo",
+    "student_id": "6017540"
+   },
+   {
+    "name": "Chanatip Kwankeua",
+    "student_id": "6215452"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Dobri Atanassov Batovski",
+  "committee": [
+   "A. Piyakul Tillapart",
+   "Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan"
+  ],
+  "abstract": "Both individuals and companies suffer significant financial and time losses as a result of crime. Surveillance cameras create so much data that it's difficult for them to analyze it all in real time. Although the human eye has its limitations, one of the significant considerations in surveillance is visual concentration. A crime may take place in another section of the screen or on a separate monitor and the staff may fail to catch it. Due to the advancements in computer vision and machine learning technology, there are a variety of applications that can be implemented to solve many customers' pain points. Shop owners, for example, are subjected to theft because the most effective method of preventing it necessitates extensive manual labor in reviewing CCTV feeds, and most of the time the act has already occurred. The goal of this project is to eliminate the need for human intervention by using real-time computer vision to detect shoplifting and to provide immediate feedback or alerts. It was decided to develop a deep learning model that would be able to detect items in the shop and identify malicious activity. Aside from that, the model was implemented into a Raspberry Pi unit, which was used to perform real-time computation. By ensuring proper installation of the device, shoplifting can be detected accurately and quickly in real time.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "embedded_hardware"
+   ],
+   "domain": [
+    "security"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "opencv",
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "raspberry_pi",
+     "label": "Raspberry Pi",
+     "status": "used",
+     "evidence": "Abstract and section 3.6: the model was implemented into a Raspberry Pi unit for real-time computation, with a Raspberry Pi high quality camera and 6mm 3MP wide angle lens (section 4.2, Table 3.2)."
+    }
+   ],
+   "domain": [],
+   "technology": [
+    {
+     "key": "tensorflow",
+     "label": "TensorFlow",
+     "status": "used",
+     "evidence": "Section 3.6: \"the deep learning models produced with TensorFlow\"; Appendix A source code uses the TensorFlow object detection workspace and pretrained models."
+    },
+    {
+     "key": "tensorflow_lite",
+     "label": "TensorFlow Lite",
+     "status": "used",
+     "evidence": "Section 3.6: \"TensorFlow Lite (TFLite for short) is a lite version of TensorFlow that enables such models to function on devices with restricted capabilities... we set up a Raspberry Pi (RPi) to run a TFLite model.\""
+    },
+    {
+     "key": "ssd_mobilenet",
+     "label": "SSD MobileNet V2 FPNLite",
+     "status": "used",
+     "evidence": "Appendix A source code: PRETRAINED_MODEL_NAME = 'ssd_mobilenet_v2_fpnlite_320x320_coco17_tpu-8' downloaded from download.tensorflow.org."
+    },
+    {
+     "key": "raspbian",
+     "label": "Raspbian OS",
+     "status": "used",
+     "evidence": "Table 3.2 RPi specifications lists OS \"Raspian OS\" on the ARM64 Cortex-A72 board that runs the detection model."
+    }
+   ]
+  }
+ },
+ {
+  "id": "2139",
+  "canonical_title": "XAM: Examination System",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Chayapam Suesawatwanich",
+    "student_id": "6016930"
+   },
+   {
+    "name": "Phanuwat Sikharestrakul",
+    "student_id": "6115218"
+   }
+  ],
+  "advisor": "Dr. Songsak Channarukul",
+  "committee": [
+   "A. Chayapol Moemeng",
+   "A. Kiratijuta Bhumichitr"
+  ],
+  "abstract": "In universities in Thailand, an examination is the main point to measure what students understand in the courses. Instructors have the opportunity to monitor and evaluate their teaching strategies according to their students' progress. The examination has multiple-choice questions and written questions. The examination standard is separated to the quiz, mid-term, and final examinations. Next, the students can improve their knowledge and skills. They can learn more. All knowledge in each course is helpful to adapt to use after graduation. XAM is an examination system application for Assumption University built on two platforms. First, it is an iOS that focuses on the use case of students who must take the examination and submit it. Proctors can scan and check the students in the examination room. Another is a web application platform for managing the system on the users and courses for the admin staff. In the last role, Instructors can create, edit, remove the examination for their courses. They can also check the class members and the students' submissions in each examination.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile",
+    "web"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [],
+   "technology": [
+    "react"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "swift",
+     "label": "Swift",
+     "status": "used",
+     "evidence": "Section 1.3: \"Swift 5.0 programming language using XCode 13.3 for proctors and students\" - the iOS/iPad application side of XAM."
+    },
+    {
+     "key": "xcode",
+     "label": "Xcode",
+     "status": "used",
+     "evidence": "Section 1.3: the iOS application for proctors and students is built with \"Swift 5.0 programming language using XCode 13.3\"."
+    },
+    {
+     "key": "html",
+     "label": "HTML5",
+     "status": "used",
+     "evidence": "Section 1.3: \"The application is developed by React 17.0.2 and HTML 5 for admin staff and instructors\" - the web application side."
+    }
+   ]
+  }
+ },
+ {
+  "id": "2143",
+  "canonical_title": "Let's Meet",
+  "aliases": [
+   "Letmeet"
+  ],
+  "phase": "final",
+  "course_code": "IT4291",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Natapon Taecharoenchai",
+    "student_id": "6037621"
+   },
+   {
+    "name": "Phubodee Kongcharoensukying",
+    "student_id": "6017637"
+   },
+   {
+    "name": "Chaitach Vadhanachai",
+    "student_id": "5915132"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Darun Kesrarat",
+  "committee": [
+   "A. Supawat Charoenvikrom",
+   "A. Piyakul Tillapart"
+  ],
+  "abstract": "Letmeet is a system that help the user reserve the meeting room. It facilitates the user to search and reserve a meeting room. The user could register to the system, they can access and modify their account by singing in.\n\nThe user account could maintain the participant and manager detail, with their reservation and meeting information. Moreover, they can view their meeting invitation and meeting history in their own user menu. Team function also provided in this system.\n\nThe manager can make a reservation and invite participant to the meeting. Manager is one who can create a team for meeting and add member to the team. So, participant could be added to the team by manager. Also, they can cancel reservation, update and delete team.\n\nThe system admin can add meeting room to the system. They can verify the user account when the user register to the system. System Admin can also view meeting room summary and reports graph to help them take decision.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "php"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "flutter",
+     "label": "Flutter",
+     "status": "used",
+     "evidence": "Section 4.6 Implementation Tools: \"Programming languages: Dart, Flutter SDK Plugin\" and \"Flutter: Required in order to run the application (Plugin)\"."
+    },
+    {
+     "key": "dart",
+     "label": "Dart",
+     "status": "used",
+     "evidence": "Section 4.6: \"Dart: Dart language\" listed under technologies; Visual Studio Code listed as IDE for \"Dart, Flutter\"."
+    },
+    {
+     "key": "xampp",
+     "label": "XAMPP",
+     "status": "used",
+     "evidence": "Section 4.6 Database: \"Xampp: Local database .php files, SQL query (Select, From, Where)\"."
+    },
+    {
+     "key": "hostneverdie",
+     "label": "HostNeverDie",
+     "status": "used",
+     "evidence": "Section 4.6 Database: \"HostNeverDie: Online cloud database, Rent yearly, .php files\"; also reference [6] cites the hostneverdie.com package."
+    },
+    {
+     "key": "android_studio",
+     "label": "Android Studio",
+     "status": "used",
+     "evidence": "Section 4.6 Mobile Emulator: \"Android Phone: Google Android Phone Pixel 2 from Android Studio\" used for testing."
+    },
+    {
+     "key": "visual_studio_code",
+     "label": "Visual Studio Code",
+     "status": "used",
+     "evidence": "Section 4.6: \"Microsoft Visual Studio Code: develop, making prototype and testing the system.\""
+    },
+    {
+     "key": "github",
+     "label": "GitHub",
+     "status": "used",
+     "evidence": "Section 4.6 Shared resources: \"GitHub: Upload/download the application's code and .php files.\""
+    },
+    {
+     "key": "drawio",
+     "label": "Draw.io",
+     "status": "used",
+     "evidence": "Section 4.6: \"Draw.io.com: the easiest chart, flow chart and ERD maker that we ever tried\" used for use case, flow chart and ERD diagrams."
+    }
+   ]
+  }
+ }
+]

@@ -27,7 +27,7 @@
    "A. Tapanan Yeophantong",
    "A. Piyakul Tillapart"
   ],
-  "abstract": null,
+  "abstract": "Marathon running has grown quickly in Thailand, but existing websites only list events with brief information and links, show routes as static map images, and keep no record of runners once an event ends. This project built a web based management system where runners can register, view event information and routes, join events, see ranks, and find photos tagged to them. Administrators can create and manage events, build event routes with Google My Maps, enter finish times that automatically generate ranks, and tag runners in event photos. The website was developed with WordPress and the EventOn event calendar plugin, customized with PHP and database modifications. Test cases for user registration, login, event registration, and runner management all passed.",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -39,11 +39,11 @@
    "domain": [
     "other"
    ],
-   "topic": [
-    "geolocation"
-   ],
+   "topic": [],
    "technology": [
-    "wordpress"
+    "wordpress",
+    "php",
+    "mysql"
    ]
   }
  },
@@ -75,7 +75,7 @@
    "Asst. Prof. Dr. Adtha Lawanna",
    "A. Tun Tun Aung"
   ],
-  "abstract": null,
+  "abstract": "Apartment managers in Thailand still keep tenant information, contracts, and utility records on paper, which can be lost or damaged and leads to calculation mistakes. This project develops a web based apartment management system that runs on the apartment local area network for the manager and staff. The system records rooms, tenants, and contracts, calculates electricity and water bills, tracks payments and expenses, checks room availability, and prints ready to sign contracts and invoices. It also generates monthly utility and summary reports for the manager. The system is written in PHP with a MySQL database, uses Bootstrap for the interface template, runs on AppServ with the Apache web server, and generates PDF files with FPDF.",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -89,6 +89,7 @@
    ],
    "topic": [],
    "technology": [
+    "php",
     "mysql"
    ]
   }
@@ -121,7 +122,7 @@
    "Asst. Prof. Dr. Adtha Lawanna",
    "Dr. Chokdee Liophanich"
   ],
-  "abstract": null,
+  "abstract": "Buyers face many smartphone models with different features and it is difficult to pick one that fits their preferences and budget. Phonies is a proposed website where users can browse smartphone specifications, compare models side by side, and get a product recommendation. The matching system pairs smartphones with the lifestyle favorites stored in a member profile or entered directly, filtered by the desired budget, and also ranks products by popularity based on member clicks. Administrators can add, update, and delete products with correct specifications and reliable images. The system is planned as an online web application written in PHP with a MySQL database administered through phpMyAdmin and hosted on Z.com hosting.",
   "reported_keywords": [],
   "classification": {
    "category": [
@@ -137,6 +138,7 @@
     "recommender_system"
    ],
    "technology": [
+    "php",
     "mysql"
    ]
   }

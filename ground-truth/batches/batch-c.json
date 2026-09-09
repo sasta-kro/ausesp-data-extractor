@@ -1,6 +1,177 @@
 [
-{"id":"2015","canonical_title":"Keyword Analysis for Market Research","aliases":["Keyword Analytics for Market Research"],"phase":"final","course_code":"CS 3200","program":"computer_science","semester":"1","academic_year":2020,"students":[{"name":"Farial Azmain","student_id":"5916886"},{"name":"Noorul Zumana Shajahan","student_id":"5916887"},{"name":"Raqia Ali Nur","student_id":"5926802"}],"advisor":"A. Tapanan Yeophantong","committee":["Dr. Kwankamol Nongpong","A. Piyakul Tillapart"],"abstract":"This market research is aimed to gain understanding and get insights on the customers and the potential customers of ABAC. The main need of our research is customer data, for that we conducted 2 rounds of surveys to gather the responses from the customers and the potential customers. The gathered data was then given to ISL Lab to be processed. The processed data were analysed and made into meaningful information and made into this report. From our analysis, we discovered that the major problems that the current customers and the past customers had was regarding the teaching, expense and the management at ABAC. As for the needs of the potential customers, they want their education to be more practical, that can be used in real life work and fit with the modern time. This market research will be very useful to understand the pain points and the needs of the customers and the potential customers. We will be able to get the view of students, alumni and faculty/staff members at ABAC on ABAC. Furthermore, we will be able to gain understanding on what the modern generation of students are expecting regarding bachelor degree programs. We hope this report can give you the understanding and the insights that you need.","reported_keywords":[],"classification":{"category":["ai_data"],"platform":["other"],"domain":["education"],"topic":["nlp"],"technology":[]}},
-{"id":"2026","canonical_title":"Object Recognition for Product Identification in Retail Stores","aliases":[],"phase":"final","course_code":"CS 3200","program":"computer_science","semester":"2","academic_year":2020,"students":[{"name":"Dao Trung Kien","student_id":"6128302"},{"name":"Sochivoath Chiv","student_id":"6128304"}],"advisor":"A. Tapanan Yeophantong","committee":["Asst. Prof. Dr. Dobri Atanassov Batovski","Dr. Kwankamol Nongpong"],"abstract":"Retail stores are increasingly steering towards smart shelf technology; however, current available smart shelves are expensive to implement and use a variety of complicated sensors and hardware. Our project attempts to prove the feasibility of using only computer vision for object detection in a retail environment to provide cheaper alternatives for smaller retail stores. In our project, we explore multiple computer vision methodologies and implemented MobileNet SSD to detect various products and recognize predefined customer activities at a shelf. This paper describes the overall framework of our system, the preparation and creation of our custom model as well as an analysis of the evaluation results. This report also details the relevant software and hardware specifications as well as the implementation, the cost of implementation, deployment, and environmental setup of our project.","reported_keywords":[],"classification":{"category":["ai_data"],"platform":["embedded_hardware"],"domain":["business"],"topic":["computer_vision"],"technology":["python","opencv"]}},
-{"id":"2040","canonical_title":"AU Museum Website","aliases":[],"phase":"final","course_code":"CS 4200","program":"computer_science","semester":"1","academic_year":2020,"students":[{"name":"Kitipong Sillathum","student_id":"5717607"}],"advisor":"A. Tapanan Yeophantong","committee":["Dr. Kwankamol Nongpong","A. Piyakul Tillapart"],"abstract":"AU Museum website is a web platform that uses the wordpress. Wordpress is a free custom and open source content management system (CMS) that provide thousands of plugins, widgets, and themes. Moreover, AU Museum website requires the system about wordpress, local host, live host, web server, plugin and theme. AU museum website starts with local host \"Flywheel\" and uploads the necessary contents and images ange content of the webpage. Finally, user interface (UI) of AU Museum website has a home page, about us page, collections; first floor, second floor and third floor, visit us. AU Museum website will be a learning center for AU members such as students, teachers, university staff and other users that are interested in museums. AU Museum website will be one more channel for promoting the historical AU museum, collections in AU museum, events, etc. via website.","reported_keywords":[],"classification":{"category":["software_application"],"platform":["web"],"domain":["campus"],"topic":[],"technology":["wordpress"]}},
-{"id":"2113","canonical_title":"WiFi-based Occupancy Sensor","aliases":[],"phase":"final","course_code":"CS 3200","program":"computer_science","semester":"2","academic_year":2021,"students":[{"name":"Shizhu Bao","student_id":"6118444"},{"name":"Suppachai Wongsrinoppakun","student_id":"6010525"}],"advisor":"A. Tapanan Yeophantong","committee":["Dr. Kwankamol Nongpong","A. Piyakul Tillapart"],"abstract":"Real-time estimations of the presence of people in a space can help administrators better manage a space, save unnecessary costs, and provide better services. In this paper, we propose a technique to estimate the number of mobile devices in a certain place at a certain time through the Wi-Fi probe request issued by the device with a wireless network function, so as to judge whether there is a person in the place. Compared with the method using camera detection, the cost of this method is lower, and the privacy of people in the venue can be better protected. We also provide a front-end page that makes it easier for administrators to view real-time or period data reports. It also supports real-time notification of administrators when certain conditions are triggered, such as when the number of people exceeds so that corresponding measures can be carried out.","reported_keywords":[],"classification":{"category":["hardware_iot"],"platform":["embedded_hardware","web"],"domain":["business"],"topic":[],"technology":[]}}
+ {
+  "id": "2015",
+  "canonical_title": "Keyword Analysis for Market Research",
+  "aliases": [
+   "Keyword Analytics for Market Research"
+  ],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "Farial Azmain",
+    "student_id": "5916886"
+   },
+   {
+    "name": "Noorul Zumana Shajahan",
+    "student_id": "5916887"
+   },
+   {
+    "name": "Raqia Ali Nur",
+    "student_id": "5926802"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "Dr. Kwankamol Nongpong",
+   "A. Piyakul Tillapart"
+  ],
+  "abstract": "This market research is aimed to gain understanding and get insights on the customers and the potential customers of ABAC. The main need of our research is customer data, for that we conducted 2 rounds of surveys to gather the responses from the customers and the potential customers. The gathered data was then given to ISL Lab to be processed. The processed data were analysed and made into meaningful information and made into this report. From our analysis, we discovered that the major problems that the current customers and the past customers had was regarding the teaching, expense and the management at ABAC. As for the needs of the potential customers, they want their education to be more practical, that can be used in real life work and fit with the modern time. This market research will be very useful to understand the pain points and the needs of the customers and the potential customers. We will be able to get the view of students, alumni and faculty/staff members at ABAC on ABAC. Furthermore, we will be able to gain understanding on what the modern generation of students are expecting regarding bachelor degree programs. We hope this report can give you the understanding and the insights that you need.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "other"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [
+    "nlp"
+   ],
+   "technology": []
+  }
+ },
+ {
+  "id": "2026",
+  "canonical_title": "Object Recognition for Product Identification in Retail Stores",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "Dao Trung Kien",
+    "student_id": "6128302"
+   },
+   {
+    "name": "Sochivoath Chiv",
+    "student_id": "6128304"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "Asst. Prof. Dr. Dobri Atanassov Batovski",
+   "Dr. Kwankamol Nongpong"
+  ],
+  "abstract": "Retail stores are increasingly steering towards smart shelf technology; however, current available smart shelves are expensive to implement and use a variety of complicated sensors and hardware. Our project attempts to prove the feasibility of using only computer vision for object detection in a retail environment to provide cheaper alternatives for smaller retail stores. In our project, we explore multiple computer vision methodologies and implemented MobileNet SSD to detect various products and recognize predefined customer activities at a shelf. This paper describes the overall framework of our system, the preparation and creation of our custom model as well as an analysis of the evaluation results. This report also details the relevant software and hardware specifications as well as the implementation, the cost of implementation, deployment, and environmental setup of our project.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "embedded_hardware"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "opencv",
+    "python"
+   ]
+  }
+ },
+ {
+  "id": "2040",
+  "canonical_title": "AU Museum Website",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "Kitipong Sillathum",
+    "student_id": "5717607"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "Dr. Kwankamol Nongpong",
+   "A. Piyakul Tillapart"
+  ],
+  "abstract": "AU Museum website is a web platform that uses the wordpress. Wordpress is a free custom and open source content management system (CMS) that provide thousands of plugins, widgets, and themes. Moreover, AU Museum website requires the system about wordpress, local host, live host, web server, plugin and theme. AU museum website starts with local host \"Flywheel\" and uploads the necessary contents and images ange content of the webpage. Finally, user interface (UI) of AU Museum website has a home page, about us page, collections; first floor, second floor and third floor, visit us. AU Museum website will be a learning center for AU members such as students, teachers, university staff and other users that are interested in museums. AU Museum website will be one more channel for promoting the historical AU museum, collections in AU museum, events, etc. via website.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [],
+   "technology": [
+    "php",
+    "wordpress"
+   ]
+  }
+ },
+ {
+  "id": "2113",
+  "canonical_title": "WiFi-based Occupancy Sensor",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Shizhu Bao",
+    "student_id": "6118444"
+   },
+   {
+    "name": "Suppachai Wongsrinoppakun",
+    "student_id": "6010525"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "Dr. Kwankamol Nongpong",
+   "A. Piyakul Tillapart"
+  ],
+  "abstract": "Real-time estimations of the presence of people in a space can help administrators better manage a space, save unnecessary costs, and provide better services. In this paper, we propose a technique to estimate the number of mobile devices in a certain place at a certain time through the Wi-Fi probe request issued by the device with a wireless network function, so as to judge whether there is a person in the place. Compared with the method using camera detection, the cost of this method is lower, and the privacy of people in the venue can be better protected. We also provide a front-end page that makes it easier for administrators to view real-time or period data reports. It also supports real-time notification of administrators when certain conditions are triggered, such as when the number of people exceeds so that corresponding measures can be carried out.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "hardware_iot"
+   ],
+   "platform": [
+    "embedded_hardware",
+    "web"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [],
+   "technology": [
+    "python"
+   ]
+  }
+ }
 ]

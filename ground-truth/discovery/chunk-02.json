@@ -1,0 +1,463 @@
+[
+ {
+  "id": "1637",
+  "canonical_title": "M-parking system",
+  "aliases": [
+   "M-Parking System"
+  ],
+  "phase": "proposal",
+  "course_code": "IT 4299",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2016,
+  "students": [
+   {
+    "name": "Charoenkeith W.",
+    "student_id": "5455213"
+   },
+   {
+    "name": "Parin M.",
+    "student_id": "5615712"
+   },
+   {
+    "name": "Daran S.",
+    "student_id": "5618624"
+   }
+  ],
+  "advisor": "Dr. Benjawan Srisura",
+  "committee": [
+   "Asst. Prof. Dr. Darun Kesrarat",
+   "Dr. Chokdee Liophanich"
+  ],
+  "abstract": "The existing card based parking system at shopping malls requires staff to hand out parking cards, makes customers search for free slots by themselves, and only reveals parking fees at the exit gantry. This project proposes M-parking, a mobile application for Android phones with NFC that lets members check in and check out by tapping their phone at the gantry. The system recommends a parking zone based on the store the customer wants to visit or the first available zone from the lowest floor upward, and members can view their parking time and fees during the session. A web application lets the administrator manage customers, staff, zones, slots, stores, floor plans, and parking rates, and produce daily and monthly parking reports. The proposed system is analyzed and designed using data flow diagrams, an entity relationship diagram, and a data dictionary.",
+  "abstract_source": "generated",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile",
+    "web"
+   ],
+   "domain": [
+    "transportation"
+   ],
+   "topic": [],
+   "technology": [
+    "mysql",
+    "php"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "android",
+     "label": "Android",
+     "status": "used",
+     "evidence": "Limitations state the system is developed to support only smartphones that use the Android operating system with NFC supporting."
+    },
+    {
+     "key": "android_studio",
+     "label": "Android Studio",
+     "status": "used",
+     "evidence": "Software cost table lists Android Studio as a development tool with Gradle-based build support and Android Virtual Device emulator."
+    },
+    {
+     "key": "nfc",
+     "label": "NFC",
+     "status": "used",
+     "evidence": "Introduction states the proposed system uses NFC technology in mobile, with NFC Ntag215 tags and an ACR122U NFC reader listed in hardware costs."
+    },
+    {
+     "key": "php",
+     "label": "PHP",
+     "status": "used",
+     "evidence": "Software cost table lists 'Php development (Sublime)' among the project software tools."
+    },
+    {
+     "key": "mysql",
+     "label": "MySQL",
+     "status": "used",
+     "evidence": "Software cost table lists 'Mysql server' with its feature list, and the hosting plan includes unlimited MySQL databases."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1638",
+  "canonical_title": "Marathon Management System",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT 4292",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Thanatcha Premsupha",
+    "student_id": "5714270"
+   },
+   {
+    "name": "Phyu Phyu Khaing",
+    "student_id": "5718331"
+   },
+   {
+    "name": "Wasin Rattanaroengchai",
+    "student_id": "5737458"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Darun Kesrarat",
+  "committee": [
+   "A. Tapanan Yeophantong",
+   "A. Piyakul Tillapart"
+  ],
+  "abstract": "Marathon running has grown quickly in Thailand, but existing websites only list events with brief information and links, show routes as static map images, and keep no record of runners once an event ends. This project built a web based management system where runners can register, view event information and routes, join events, see ranks, and find photos tagged to them. Administrators can create and manage events, build event routes with Google My Maps, enter finish times that automatically generate ranks, and tag runners in event photos. The website was developed with WordPress and the EventOn event calendar plugin, customized with PHP and database modifications. Test cases for user registration, login, event registration, and runner management all passed.",
+  "abstract_source": "generated",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [],
+   "technology": [
+    "wordpress",
+    "php",
+    "mysql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "wordpress",
+     "label": "WordPress",
+     "status": "used",
+     "evidence": "Methodology states they used WordPress, an open-source CMS based on PHP and MySQL, and the conclusion confirms WordPress was the development tool."
+    },
+    {
+     "key": "eventon",
+     "label": "EventOn",
+     "status": "used",
+     "evidence": "Methodology lists EventOn, a WordPress event calendar plugin, whose code was modified to fit the design."
+    },
+    {
+     "key": "php",
+     "label": "PHP",
+     "status": "used",
+     "evidence": "Conclusion states both database and PHP knowledge were needed for modification to make the website work as required."
+    },
+    {
+     "key": "mysql",
+     "label": "MySQL",
+     "status": "used",
+     "evidence": "Methodology describes WordPress as a CMS based on PHP and MySQL used to build the system."
+    },
+    {
+     "key": "google_my_maps",
+     "label": "Google My Maps",
+     "status": "used",
+     "evidence": "Methodology states the system uses this Google web service to show event routes and facilities such as water stations."
+    },
+    {
+     "key": "google_forms",
+     "label": "Google Forms",
+     "status": "cited",
+     "evidence": "Existing system analysis notes event organizers currently provide a Google Form for runners to register for each marathon."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1640",
+  "canonical_title": "Apartment Management System",
+  "aliases": [
+   "Apartment Reservation System"
+  ],
+  "phase": "proposal",
+  "course_code": "IT 4299",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Juladeach Pokhaiputthinun",
+    "student_id": "5713539"
+   },
+   {
+    "name": "Surawat Pothong",
+    "student_id": "5726804"
+   },
+   {
+    "name": "Zhe Zhou",
+    "student_id": "5748101"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Darun Kesrarat",
+  "committee": [
+   "Asst. Prof. Dr. Adtha Lawanna",
+   "A. Tun Tun Aung"
+  ],
+  "abstract": "Apartment managers in Thailand still keep tenant information, contracts, and utility records on paper, which can be lost or damaged and leads to calculation mistakes. This project develops a web based apartment management system that runs on the apartment local area network for the manager and staff. The system records rooms, tenants, and contracts, calculates electricity and water bills, tracks payments and expenses, checks room availability, and prints ready to sign contracts and invoices. It also generates monthly utility and summary reports for the manager. The system is written in PHP with a MySQL database, uses Bootstrap for the interface template, runs on AppServ with the Apache web server, and generates PDF files with FPDF.",
+  "abstract_source": "generated",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "php",
+    "mysql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "php",
+     "label": "PHP",
+     "status": "used",
+     "evidence": "Methodology states the software program is written in PHP language, listed as free in the development cost table."
+    },
+    {
+     "key": "mysql",
+     "label": "MySQL",
+     "status": "used",
+     "evidence": "Methodology states PHP handles the administration of MySQL, and AppServ consists of PHP, MySQL and Apache Webserver."
+    },
+    {
+     "key": "apache",
+     "label": "Apache HTTP Server",
+     "status": "used",
+     "evidence": "Implementation states the system is implemented with AppServ, which consists of PHP, MySQL and Apache Webserver."
+    },
+    {
+     "key": "appserv",
+     "label": "AppServ",
+     "status": "used",
+     "evidence": "Development cost table lists AppServ as free and implementation runs the system with the program called Appserv."
+    },
+    {
+     "key": "bootstrap",
+     "label": "Bootstrap",
+     "status": "used",
+     "evidence": "Methodology states Bootstrap is used for creating the template, listed as free in the development cost table."
+    },
+    {
+     "key": "fpdf",
+     "label": "FPDF",
+     "status": "used",
+     "evidence": "Methodology states the PDF file is created by the FPDF, and a Thai FPDF reference is cited."
+    },
+    {
+     "key": "adminlte",
+     "label": "AdminLTE",
+     "status": "used",
+     "evidence": "References list https://adminlte.io/ among the implementation resources for the interface."
+    },
+    {
+     "key": "datatables",
+     "label": "DataTables",
+     "status": "used",
+     "evidence": "References list https://datatables.net/ among the implementation resources for the interface."
+    },
+    {
+     "key": "bootstrap_datepicker",
+     "label": "Bootstrap Datepicker",
+     "status": "used",
+     "evidence": "References cite bootstrap-datetimepicker and bootstrap-datepicker pages used by the interface."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1642",
+  "canonical_title": "Phonies (Recommender System for Smartphone Product)",
+  "aliases": [
+   "Phonies"
+  ],
+  "phase": "proposal",
+  "course_code": "IT 4299",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Kritanu Singhavorawuti",
+    "student_id": "5616813"
+   },
+   {
+    "name": "Palod Patimavirujh",
+    "student_id": "5612602"
+   },
+   {
+    "name": "Napat Woodtisanti",
+    "student_id": "5610873"
+   }
+  ],
+  "advisor": "Dr. Benjawan Srisura",
+  "committee": [
+   "Asst. Prof. Dr. Adtha Lawanna",
+   "Dr. Chokdee Liophanich"
+  ],
+  "abstract": "Buyers face many smartphone models with different features and it is difficult to pick one that fits their preferences and budget. Phonies is a proposed website where users can browse smartphone specifications, compare models side by side, and get a product recommendation. The matching system pairs smartphones with the lifestyle favorites stored in a member profile or entered directly, filtered by the desired budget, and also ranks products by popularity based on member clicks. Administrators can add, update, and delete products with correct specifications and reliable images. The system is planned as an online web application written in PHP with a MySQL database administered through phpMyAdmin and hosted on Z.com hosting.",
+  "abstract_source": "generated",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "e_commerce"
+   ],
+   "topic": [
+    "recommender_system"
+   ],
+   "technology": [
+    "php",
+    "mysql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "php",
+     "label": "PHP",
+     "status": "used",
+     "evidence": "Scope states the system will be developed in an online web application by using PHP language."
+    },
+    {
+     "key": "phpmyadmin",
+     "label": "phpMyAdmin",
+     "status": "used",
+     "evidence": "Software cost table lists phpMyAdmin 4.4.14 as the development tool for administering the database."
+    },
+    {
+     "key": "mysql",
+     "label": "MySQL",
+     "status": "used",
+     "evidence": "Software cost describes phpMyAdmin supporting most MySQL features, and the hosting plan includes MySQL support."
+    },
+    {
+     "key": "zcom_hosting",
+     "label": "Z.com Hosting",
+     "status": "used",
+     "evidence": "Operation cost table lists Z.Com Hosting Plan S supporting HTML, PHP, Perl, CGI, JavaScript and CSS for 1,500 baht per year."
+    },
+    {
+     "key": "ebay",
+     "label": "eBay",
+     "status": "cited",
+     "evidence": "References list eBay.com as a studied existing e-commerce site for smartphones."
+    },
+    {
+     "key": "lazada",
+     "label": "Lazada",
+     "status": "cited",
+     "evidence": "References list Lazada.co.th as a studied existing e-commerce site for smartphones."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1643",
+  "canonical_title": "Game Promotion Finding",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT 4291",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2018,
+  "students": [
+   {
+    "name": "Parun Sirisopa",
+    "student_id": "5715283"
+   },
+   {
+    "name": "Settasuk Kongsithiseth",
+    "student_id": "5714011"
+   }
+  ],
+  "advisor": "Dr. Benjawan Srisura",
+  "committee": [
+   "Asst. Prof. Dr. Chokdee Liophanich",
+   "Asst. Prof. Titida Nochai"
+  ],
+  "abstract": "Thailand has many websites with game news and ratings but none that gathers game promotions in one place, so gamers miss limited time deals and must search each game company site themselves. This project built a game promotion website where visitors and members can browse games, view promotion details, and read game news. Members can rate games on graphics, audio, and gameplay, write comments, and subscribe to games to receive notification of new promotions. Administrators manage games, promotions, and member accounts through the backend. The website is developed in PHP with a MySQL database.",
+  "abstract_source": "generated",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [],
+   "technology": [
+    "php",
+    "mysql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "php",
+     "label": "PHP",
+     "status": "used",
+     "evidence": "Scope states the system will be developing in PHP programming language."
+    },
+    {
+     "key": "mysql",
+     "label": "MySQL",
+     "status": "used",
+     "evidence": "Operational cost table lists PHP MySQL hosting at zero cost as part of the 20 GB hosting plan."
+    },
+    {
+     "key": "google_play",
+     "label": "Google Play",
+     "status": "cited",
+     "evidence": "References cite Google Play as an official site where users install, rate, and review applications."
+    },
+    {
+     "key": "whatsale_thailand",
+     "label": "What Sale Thailand",
+     "status": "cited",
+     "evidence": "References cite whatsalethailand.com as an existing promotion browsing site studied for the project."
+    }
+   ]
+  }
+ }
+]

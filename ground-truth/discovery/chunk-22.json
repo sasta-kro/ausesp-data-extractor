@@ -1,0 +1,471 @@
+[
+ {
+  "id": "2041",
+  "canonical_title": "Concepts Discovery Using Topic Modeling",
+  "aliases": [
+   "Concept Discovery using Topic Modeling"
+  ],
+  "phase": "final",
+  "course_code": "CS4200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "Harpreet Singh Arora",
+    "student_id": "5838428"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "A. Piyakul Tillapart",
+   "Dr. Kwankamol Nongpong"
+  ],
+  "abstract": "Mandatory exploring of collections of textual data should be a thing of the past, as technology matures and develops, a new learning curve for machine learning should be implemented. For that very reason, there was development of a machine learning technique called Topic Modeling, it is an unsupervised learning algorithm that helps discover hidden topics within a large collection of textual data. The framework consists of three steps; data ingestion, big data processing, topic modeling with visualization, where the topic model we discuss is based on Latent Dirichlet Allocation & Pachinko Allocation for comparison and results judgement. The aim of this project was to provide assistance and reduce burden on Market Researchers from processing data for concept discovery in a manual procedure.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "none"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [
+    "nlp"
+   ],
+   "technology": []
+  },
+  "discoveries": {
+   "category": [
+    {
+     "key": "topic_modeling",
+     "label": "Topic Modeling",
+     "status": "used",
+     "evidence": "\"the topic modeling generation pipeline we have built for concepts discovery for infosearch or any survey form format text data structure related application\" (Chapter 3)"
+    }
+   ],
+   "platform": [],
+   "domain": [
+    {
+     "key": "market_research",
+     "label": "Market Research",
+     "status": "used",
+     "evidence": "\"The aim of this project was to provide assistance and reduce burden on Market Researchers\" and the framework was built for the company Infosearch"
+    }
+   ],
+   "technology": [
+    {
+     "key": "latent_dirichlet_allocation",
+     "label": "Latent Dirichlet Allocation (LDA)",
+     "status": "used",
+     "evidence": "\"the framework still utilizes LDA model as the visualization techniques are not yet supported for PA model\" (Conclusion)"
+    },
+    {
+     "key": "pachinko_allocation",
+     "label": "Pachinko Allocation Model (PAM)",
+     "status": "used",
+     "evidence": "\"the topic model we discuss is based on Latent Dirichlet Allocation & Pachinko Allocation for comparison and results judgement\"; LDA and PAM compared on the Rexa dataset"
+    },
+    {
+     "key": "tfidf",
+     "label": "TF-IDF Vectorizer",
+     "status": "used",
+     "evidence": "\"After the preprocessing we applied Term Frequency-Inverse Document Frequency Vectorizer or TF-IDF Vectorizer\""
+    },
+    {
+     "key": "pyldavis",
+     "label": "pyLDAvis",
+     "status": "used",
+     "evidence": "\"It is a cluster and word frequency association visualization provided by pyLDAvis\"; Figure 3.6 shows the pyLDAvis tool"
+    },
+    {
+     "key": "termite_plot",
+     "label": "Termite Plot",
+     "status": "used",
+     "evidence": "\"there is another way for us to comprehend the result of the topic modeling by using Termite Plot, which is a visualization tool to visual topic modeling results\""
+    }
+   ]
+  }
+ },
+ {
+  "id": "2042",
+  "canonical_title": "Boom Boxing! A Voice Controlled Boxing Game",
+  "aliases": [
+   "Boom Boxing",
+   "BoomBoxing"
+  ],
+  "phase": "proposal",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Nguyen Ha Duong",
+    "student_id": "6128301"
+   },
+   {
+    "name": "Nguyen Huy Tung",
+    "student_id": "6128110"
+   },
+   {
+    "name": "Phumin Abdul Hameed",
+    "student_id": "6135117"
+   }
+  ],
+  "advisor": "Chayapol Moemeng",
+  "committee": [
+   "Asst. Prof. Dr. Paitoon Porntrakoon",
+   "A. Suparwat Charoenvikrom"
+  ],
+  "abstract": "Among the fast improved game developing environment, all the game are aiming to get the player to play with from different perspective as well as method to play the game. Traditional keyboard and mouse games are becoming less popular day by day. In fact, with the fast-developing rate, games like VR, and voice control game are likely to be choose intern of game evolution. With that in mind, our group had started the BoomBoxing project in order to try ourself in this area mostly for experience. BoomBoxing is a small game that developed to allow player to move and play based on their voice only without the help of keyboard or mouse. We have applied a library in C# for Unity which is keywordrecognizer after considering a lot of other choices. All of the material for BoomBoxing will be explained as clear as our could in this report and from our website. For information inform of website and downloading the game. We suggesting u to try our website: https://phumzxter.github.io/bbstatic/index.html",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "game"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [],
+   "technology": [
+    "unity"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "csharp",
+     "label": "C#",
+     "status": "used",
+     "evidence": "\"We have applied a library in C# for Unity\"; scripts such as BattleController.cs, HUDcontroller.cs, menumanagement.cs"
+    },
+    {
+     "key": "unity",
+     "label": "Unity",
+     "status": "used",
+     "evidence": "\"Boom Boxing is developed by Unity\" using Unity's component-based architecture"
+    },
+    {
+     "key": "windows_speech",
+     "label": "UnityEngine.Windows.Speech KeywordRecognizer",
+     "status": "used",
+     "evidence": "\"keywordrecognizer is a class in UnityEngine.Windows.Speech that listens to speech input and attempts to match uttered phrases to a list of registered keywords\""
+    },
+    {
+     "key": "blender",
+     "label": "Blender",
+     "status": "used",
+     "evidence": "\"we mostly use blender as our main source to generate graphic and model for the game\"; character and stage models made in Blender"
+    },
+    {
+     "key": "mixamo",
+     "label": "Mixamo",
+     "status": "used",
+     "evidence": "\"download pre-made animations from Mixamo.com... Most of the animation that we used in Boom Boxing were downloaded and import to unity from mixamo.com\""
+    },
+    {
+     "key": "github",
+     "label": "GitHub",
+     "status": "used",
+     "evidence": "\"We also using GitHub to port for any code changing\""
+    },
+    {
+     "key": "github_pages",
+     "label": "GitHub Pages",
+     "status": "used",
+     "evidence": "project website hosted at https://phumzxter.github.io/bbstatic/index.html"
+    },
+    {
+     "key": "itch_io",
+     "label": "itch.io",
+     "status": "used",
+     "evidence": "\"Currently, BoomBoxing can be found on itch.io. We have published the game to this online platform\""
+    },
+    {
+     "key": "opengameart",
+     "label": "OpenGameArt.org",
+     "status": "used",
+     "evidence": "\"The music is downloaded from OpengameArt.org, which supply not only the sound effect for the game but there is also background music\""
+    }
+   ]
+  }
+ },
+ {
+  "id": "2102",
+  "canonical_title": "Isekai: My Journey In The City",
+  "aliases": [
+   "My Journey In The City",
+   "Isekai"
+  ],
+  "phase": "proposal",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "PhonePyae KyawSwar",
+    "student_id": "6118156"
+   },
+   {
+    "name": "Hein Khant Zaw",
+    "student_id": "6121300"
+   },
+   {
+    "name": "Chen Yang Hsu",
+    "student_id": "6121400"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Paitoon Porntrakoon",
+  "committee": [
+   "Asst. Prof. Dr. Benjawan Srisura",
+   "A. Chayapol Moemeng"
+  ],
+  "abstract": "My Journey In the City is a diary app targeted for tourists and travellers who like to save memories while travelling. Whenever a user reaches a destination across the world, he can save that moment by saving photos and simple/short diaries. The map will show all the memories the traveller had as a pinned photo and how many diaries the traveller created during the arrival. Users can also check the places information before writing a diary from the google map. Our team has three members working on two platforms Android and iOS. We are focusing on UI/UX design, Data Modelling and API testing for most of our time during the semester. Our goal is to create an app that helps to some extent for the traveller from saving memories with ease while enjoying the journey.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [
+    "geolocation"
+   ],
+   "technology": [
+    "firebase"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "ios",
+     "label": "iOS",
+     "status": "used",
+     "evidence": "\"Our team has three members working on two platforms Android and iOS\"; Chapter 3.3 documents the iOS app screens"
+    },
+    {
+     "key": "android",
+     "label": "Android",
+     "status": "used",
+     "evidence": "\"For android supports version 4.4 (KitKat) and above\"; Chapter 3.4 documents the Android app with RecyclerView diary list"
+    }
+   ],
+   "domain": [
+    {
+     "key": "travel_tourism",
+     "label": "Travel and Tourism",
+     "status": "used",
+     "evidence": "\"a diary app targeted for tourists and travellers who like to save memories while travelling\""
+    }
+   ],
+   "technology": [
+    {
+     "key": "firebase_authentication",
+     "label": "Firebase Authentication",
+     "status": "used",
+     "evidence": "\"I used firebase authentication features to store user gmail and password... it generates User UID\""
+    },
+    {
+     "key": "firebase_firestore",
+     "label": "Cloud Firestore",
+     "status": "used",
+     "evidence": "\"We used firebase firestore to store user profiles such as username, experience and Biography\""
+    },
+    {
+     "key": "firebase_realtime_database",
+     "label": "Firebase Realtime Database",
+     "status": "used",
+     "evidence": "\"We used firebase realtime database to store the diary that users upload\""
+    },
+    {
+     "key": "google_maps",
+     "label": "Google Maps / Places API",
+     "status": "used",
+     "evidence": "\"Our app is provided by Google Maps and users can search the places... Search is also by Google Places API to provide rich data\""
+    },
+    {
+     "key": "wikipedia",
+     "label": "Wikipedia",
+     "status": "used",
+     "evidence": "\"The address and images information is from Google Places and description is from Wikipedia\" (place detail screen)"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2108",
+  "canonical_title": "MSCS Student Management System",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT4292",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Kan Wuthithepbuncha",
+    "student_id": "6010163"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Rachsuda Setthawong",
+  "committee": [
+   "A. Suparwat Charoenvikrom",
+   "Asst. Prof. Dr. Benjawan Srisura"
+  ],
+  "abstract": "In this Senior Project 2, I am building a new system for the registration of classes and theses in Master of Science in Computer Science (MSCS) curriculum, as well as the system for recording the graduation information of MSCS students. My new system will also be compared with the system that is currently used by the MSCS students, secretary, and director. As opposed to the students in BSCS, BSIT, and other bachelor's degree programs, the students in MSCS program currently use a manually approved system to register for a class or a thesis. This works fine if there are not many students, as the MSCS program typically has a maximum of 20 students in each year. However, the current system are still some pertinent drawbacks that need to be rectified. The new system provides centralized information for managing classes, theses, as well as student graduation information, to help lessen the time required when manipulating with the data. Both the current and new systems have three main user groups, consisting of the students, director, and secretary.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [],
+   "technology": []
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "au_spark",
+     "label": "AU SPARK",
+     "status": "cited",
+     "evidence": "\"As some information is already shown by AU SPARK and/or other systems implemented by Assumption University, the said information is not included with the new MSCS system\""
+    }
+   ],
+   "domain": [],
+   "technology": [
+    {
+     "key": "phpmyadmin",
+     "label": "phpMyAdmin",
+     "status": "used",
+     "evidence": "\"The data regarding the classes, theses, and graduation is stored in the phyMyAdmin Database Management Systems, to be properly referred to on each corresponding webpage\""
+    },
+    {
+     "key": "microsoft_teams",
+     "label": "Microsoft Teams",
+     "status": "used",
+     "evidence": "\"it is also possible to enter a link to a Microsoft Teams meeting for any defense that is not held on campus\""
+    }
+   ]
+  }
+ },
+ {
+  "id": "2113",
+  "canonical_title": "WiFi-based Occupancy Sensor",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Shizhu Bao",
+    "student_id": "6118444"
+   },
+   {
+    "name": "Suppachai Wongsrinoppakun",
+    "student_id": "6010525"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "Dr. Kwankamol Nongpong",
+   "A. Piyakul Tillapart"
+  ],
+  "abstract": "Real-time estimations of the presence of people in a space can help administrators better manage a space, save unnecessary costs, and provide better services. In this paper, we propose a technique to estimate the number of mobile devices in a certain place at a certain time through the Wi-Fi probe request issued by the device with a wireless network function, so as to judge whether there is a person in the place. Compared with the method using camera detection, the cost of this method is lower, and the privacy of people in the venue can be better protected. We also provide a front-end page that makes it easier for administrators to view real-time or period data reports. It also supports real-time notification of administrators when certain conditions are triggered, such as when the number of people exceeds so that corresponding measures can be carried out.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "hardware_iot"
+   ],
+   "platform": [
+    "embedded_hardware",
+    "web"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [],
+   "technology": [
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "smart_building",
+     "label": "Smart Building / Indoor Occupancy Monitoring",
+     "status": "used",
+     "evidence": "\"create a smart sensor solution that can perform occupancy detection in an indoor environment using wi-fi signal\" for managing room occupancy and density in the Bakster home-office and cafe space"
+    }
+   ],
+   "technology": [
+    {
+     "key": "raspberry_pi",
+     "label": "Raspberry Pi",
+     "status": "used",
+     "evidence": "\"we used a Raspberry Pi 4 Model B, running on Kali-Linux ARM 64-bit image\" to run the occupancy detection programs"
+    },
+    {
+     "key": "kali_linux",
+     "label": "Kali Linux",
+     "status": "used",
+     "evidence": "\"In this project, the system we use is Kali based on Linux... The success rate of installing a Wi-Fi adapter driver on Kali is also higher than on other systems\""
+    },
+    {
+     "key": "scapy",
+     "label": "Scapy",
+     "status": "used",
+     "evidence": "\"To do this, we used Scapy, a python program that allows us to probe Wi-Fi networks for packets\""
+    },
+    {
+     "key": "python",
+     "label": "Python",
+     "status": "used",
+     "evidence": "packet capture built on Scapy, described in the report as \"a python program that allows us to probe Wi-Fi networks for packets\""
+    },
+    {
+     "key": "aircrack_ng",
+     "label": "Aircrack-ng",
+     "status": "cited",
+     "evidence": "\"kali provides some network-related tools by default, such as Aircrack-ng\" (mentioned as a Kali default, not used for detection)"
+    },
+    {
+     "key": "tp_link_tl_wn722n",
+     "label": "TP-Link TL-WN722N Wi-Fi USB Adapter",
+     "status": "used",
+     "evidence": "\"we used the TL-WN722N V.3.20 150Mbps High Gain Wireless USB Adapter by TP-Link\" with monitor mode support"
+    }
+   ]
+  }
+ }
+]

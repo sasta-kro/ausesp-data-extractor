@@ -1,0 +1,536 @@
+[
+ {
+  "id": "25115",
+  "canonical_title": "Battle of Talingchan",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CSX 3011/ITX 3010",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Ayyada Kriangkaisak",
+    "student_id": "6610608"
+   },
+   {
+    "name": "Chinnapat Premudomkit",
+    "student_id": "6520238"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Darun Kesrarat",
+  "committee": [
+   "Asst. Prof. Dr. Anilkumar Kothalil Gopalakrishnan",
+   "A. Tianai Tang"
+  ],
+  "abstract": "This project is the proof-of-concept game development of a digital trading card game Battle of Talingchan which is transformed from a physical card to online multiplayer game experience. This game is developed using Unity engine, the game features a 1v1 matchmaking system that is powered by Photon to ensure the real time interactions between players. The final product is deployed online via itch.io. The gameplay is according to the rule sets of the original physical card game along with Thai themed characters which include in all cards. This game structured included four distinct phases which are Draw phase, Main phase, Battle phase and End phase. Detailed project specifications and guidance were provided by TOYLAXY (LION HOUSE CO., LTD.).",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "game"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [],
+   "technology": [
+    "firebase",
+    "unity"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "csharp",
+     "label": "C#",
+     "status": "used",
+     "evidence": "Tech Stack: The primary logic is programmed using C#, facilitating the implementation of the game's complex finite state machine architecture."
+    },
+    {
+     "key": "photon",
+     "label": "Photon Engine",
+     "status": "used",
+     "evidence": "The game features a 1v1 matchmaking system that is powered by Photon; the Photon Unity Networking (PUN) SDK communicates with a Photon Server to handle 1v1 matchmaking."
+    },
+    {
+     "key": "textmeshpro",
+     "label": "TextMeshPro",
+     "status": "used",
+     "evidence": "Visual communication and the game's Heads-Up Display (HUD) are managed through Unity UI combined with TextMeshPro."
+    },
+    {
+     "key": "universal_render_pipeline",
+     "label": "Universal Render Pipeline (URP)",
+     "status": "used",
+     "evidence": "The project employs the Universal Render Pipeline (URP) to ensure optimized performance across desktop and web-based environments."
+    },
+    {
+     "key": "itch_io",
+     "label": "itch.io",
+     "status": "used",
+     "evidence": "The completed proof-of-concept will be deployed and hosted on the itch.io platform, providing a centralized web-based distribution channel."
+    }
+   ]
+  }
+ },
+ {
+  "id": "26002",
+  "canonical_title": "FiscAI Application",
+  "aliases": [
+   "FISCAI APPLICATION"
+  ],
+  "phase": "proposal",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Humam Khurram",
+    "student_id": "6611680"
+   },
+   {
+    "name": "Mankirat Kaur",
+    "student_id": "6611585"
+   },
+   {
+    "name": "Anuson Khawnsakun",
+    "student_id": "6610789"
+   }
+  ],
+  "advisor": "A. Tianai Tang",
+  "committee": [
+   "Anilkumar Kothalil Gopalakrishnan",
+   "Benjawan Sirsura"
+  ],
+  "abstract": "FiscAI is a personal finance management application that is designed to simplify and make it convenient to track expenses. Some of the individuals find it hard and time-consuming to write down their daily costs manually particularly where they have a lot of receipts. FiscAI is meant to address this issue by applying Large Language Models (LLMs) with Optical Character Recognition (OCR) to scan and extract receipts into information. The system can identify important details such as the store name, purchased items, and tax information, which helps reduce the need for manual data entry. The application is developed using a modern full-stack approach, where the frontend is built with React and the backend is powered by Deno. This structure allows the system to run efficiently while maintaining a responsive user experience. One of the key features of FiscAI is its support for multiple languages, including English and Thai, which makes the application more accessible to different users. In addition, the system also provides real-time financial forecasting, allowing users to better understand their spending habits and plan their finances more effectively. FiscAI combines AI-based automation with traditional data management features to create a practical and user-friendly tool for managing personal finances.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "finance"
+   ],
+   "topic": [
+    "nlp",
+    "ocr"
+   ],
+   "technology": [
+    "react"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "deno",
+     "label": "Deno",
+     "status": "used",
+     "evidence": "The backend runs on Deno, which is a secure runtime environment for JavaScript and TypeScript applications; references list Deno and Deno Deploy."
+    },
+    {
+     "key": "typescript",
+     "label": "TypeScript",
+     "status": "used",
+     "evidence": "Frontend technology stack lists TypeScript alongside React 18, Vite, Tailwind CSS, and React Router."
+    },
+    {
+     "key": "vite",
+     "label": "Vite",
+     "status": "used",
+     "evidence": "The build tool used for the project is Vite, which enables rapid development and optimizes the application for production builds."
+    },
+    {
+     "key": "tailwind_css",
+     "label": "Tailwind CSS",
+     "status": "used",
+     "evidence": "The application uses Tailwind CSS for styling, a utility-first CSS framework."
+    },
+    {
+     "key": "react_query",
+     "label": "React Query (TanStack Query)",
+     "status": "used",
+     "evidence": "Key Frontend Libraries table: React Query for server-state data fetching and caching."
+    },
+    {
+     "key": "framer_motion",
+     "label": "Framer Motion",
+     "status": "used",
+     "evidence": "Key Frontend Libraries table: Framer Motion for page animations and UI transitions."
+    },
+    {
+     "key": "recharts",
+     "label": "Recharts",
+     "status": "used",
+     "evidence": "Key Frontend Libraries table: Recharts for financial charts and data visualization."
+    },
+    {
+     "key": "shadcn_ui",
+     "label": "Radix UI / shadcn",
+     "status": "used",
+     "evidence": "Key Frontend Libraries table: Radix UI / shadcn for accessible UI component primitives."
+    },
+    {
+     "key": "websocket",
+     "label": "WebSocket",
+     "status": "used",
+     "evidence": "The application will use WebSocket technology to ensure that the user dashboard updates immediately whenever a new receipt is scanned."
+    },
+    {
+     "key": "json_web_tokens",
+     "label": "JSON Web Tokens (JWT)",
+     "status": "used",
+     "evidence": "User authentication is handled using JSON Web Tokens (JWT), allowing the system to securely verify user identity."
+    },
+    {
+     "key": "web_crypto_api",
+     "label": "Web Crypto API",
+     "status": "used",
+     "evidence": "User passwords are protected using cryptographic hashing algorithms implemented through the Web Crypto API."
+    },
+    {
+     "key": "tesseract",
+     "label": "Tesseract OCR",
+     "status": "cited",
+     "evidence": "Related Work: traditional OCR tools like Tesseract can struggle with receipt images, especially with poor lighting, background noise, or misaligned text."
+    },
+    {
+     "key": "plaid",
+     "label": "Plaid",
+     "status": "cited",
+     "evidence": "Related Work: finance applications connect directly to bank accounts through services like Plaid or Yodlee."
+    },
+    {
+     "key": "yodlee",
+     "label": "Yodlee",
+     "status": "cited",
+     "evidence": "Related Work: finance applications connect directly to bank accounts through services like Plaid or Yodlee."
+    },
+    {
+     "key": "mint",
+     "label": "Mint",
+     "status": "cited",
+     "evidence": "Related Work: many personal finance applications, such as Mint and YNAB, allow users to track spending by connecting bank accounts."
+    },
+    {
+     "key": "ynab",
+     "label": "YNAB (You Need A Budget)",
+     "status": "cited",
+     "evidence": "Related Work: many personal finance applications, such as Mint and YNAB, allow users to track spending by connecting bank accounts."
+    }
+   ]
+  }
+ },
+ {
+  "id": "26006",
+  "canonical_title": "RANGOON: QR Ordering System",
+  "aliases": [
+   "YANGOON"
+  ],
+  "phase": "final",
+  "course_code": "ITX 3010",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Su Myat Thu",
+    "student_id": "6540036"
+   },
+   {
+    "name": "Theint Tha Zin Aung",
+    "student_id": "6540061"
+   }
+  ],
+  "advisor": "A. Jinchun Lu",
+  "committee": [
+   "Asst. Prof. Dr. Paitoon Porntrakoon",
+   "Dr. Phyo Min Tun"
+  ],
+  "abstract": "The Rangoon QR Ordering System is a web-based digital solution developed for Rangoon Food House, a Burmese restaurant that serves authentic Myanmar cuisine. The system aims to improve the restaurant ordering process by utilizing QR code technology, allowing customers to scan a QR code at their table to access the menu, place orders, and interact with the system directly through their mobile devices. The system provides two main interfaces: a customer interface and an admin interface. Customers can browse menu items, view prices in Thai Baht, customize orders, and choose between dine-in or takeaway options. In addition, the system includes features such as order history and a waiter call function, which sends a notification sound to staff when assistance is requested. On the admin side, the system enables staff to manage menu items, monitor and update orders in real-time, and view order history with filtering options. It also includes a dashboard that provides insights into daily sales, total revenue, and popular menu items to support better decision-making. The system is developed using modern web technologies, including React.js for the frontend, Laravel (PHP) for the backend, and MySQL for the database. By implementing this system, Rangoon Food House can enhance service efficiency, reduce waiting time, minimize human errors, and improve the overall customer dining experience.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "e_commerce"
+   ],
+   "topic": [],
+   "technology": [
+    "laravel",
+    "mysql",
+    "php",
+    "react"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "nginx",
+     "label": "Nginx Web Server",
+     "status": "used",
+     "evidence": "Nginx is used as the web server to host and deliver the web application and handles incoming web requests efficiently."
+    },
+    {
+     "key": "vps_hosting",
+     "label": "VPS Hosting (Virtual Private Server)",
+     "status": "used",
+     "evidence": "The system is deployed on a Virtual Private Server (VPS), which provides a stable and scalable hosting environment accessed through a public domain."
+    },
+    {
+     "key": "git",
+     "label": "Git",
+     "status": "used",
+     "evidence": "Git and GitHub are used for version control and collaboration during system development."
+    },
+    {
+     "key": "github",
+     "label": "GitHub",
+     "status": "used",
+     "evidence": "Git and GitHub are used for version control, to manage code updates, and to deploy the latest version of the application."
+    },
+    {
+     "key": "toast_pos",
+     "label": "Toast POS",
+     "status": "cited",
+     "evidence": "Related Work 2.1: Toast POS is a complete point-of-sale solution for restaurant management, compared as an existing platform."
+    },
+    {
+     "key": "grabfood",
+     "label": "GrabFood",
+     "status": "cited",
+     "evidence": "Related Work 2.2: GrabFood / Line Man are online food ordering platforms that connect restaurants with customers through a mobile application."
+    },
+    {
+     "key": "line_man",
+     "label": "Line Man",
+     "status": "cited",
+     "evidence": "Related Work 2.2: GrabFood / Line Man are online food ordering platforms that connect restaurants with customers through a mobile application."
+    }
+   ]
+  }
+ },
+ {
+  "id": "26010",
+  "canonical_title": "Jewelry Shop Management System",
+  "aliases": [
+   "AutoWise",
+   "Myit Tar Oo Jewelry Shop"
+  ],
+  "phase": "final",
+  "course_code": "ITX 3010",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Aung Khant",
+    "student_id": "6511724"
+   },
+   {
+    "name": "Toe Oo Wai Yan",
+    "student_id": "6511488"
+   },
+   {
+    "name": "Thin Nwe Oo",
+    "student_id": "6530027"
+   }
+  ],
+  "advisor": "A. Jinchun Lu",
+  "committee": [
+   "Asst. Prof. Dr. Paitoon Porntrakoon",
+   "Dr. Phyo Min Tun"
+  ],
+  "abstract": "This project is about the development of Jewelry Shop Management System, which is intended for the operation and management of the daily activities of a jewelry business. The system assists in managing significant business information such as customers, products, invoices, purchases, vendors, promotions, and material sources. The organization and storage of such information using the system are expected to improve data accuracy, efficiency, and transparency for the operation and management of the business. Using the Jewelry Shop Management System, users are able to manage products, inventory, customers' purchases, and vendors' buyback. Additionally, the system is also used for price management using gold price history and promotion discounts. The structure of the system is based on a relational database design that connects different entities such as products, customers, invoices, and vendors. Using the Jewelry Shop Management System, the operation and management of a jewelry business are expected to be more effective and efficient for the owners and managers. In particular, the system is expected to help the owners and managers monitor products, sales, and customers in a more systematic and reliable manner. In essence, the project is about the potential benefits and advantages of using information systems and database technologies for the operation and management of the jewelry retail industry.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "nodejs",
+    "postgresql"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "spring_boot",
+     "label": "Spring Boot",
+     "status": "used",
+     "evidence": "Spring Boot (Java) is the backend framework used to build RESTful APIs and handle business logic; Application Architecture is a Spring Boot Architecture."
+    },
+    {
+     "key": "java",
+     "label": "Java",
+     "status": "used",
+     "evidence": "The backend of Myit Tar Oo Jewelry Shop was developed using Spring Boot (Java)."
+    },
+    {
+     "key": "vue_js",
+     "label": "Vue.js",
+     "status": "used",
+     "evidence": "Vue.js (JavaScript Framework) is used to build dynamic and component-based user interfaces for the frontend."
+    },
+    {
+     "key": "typescript",
+     "label": "TypeScript",
+     "status": "used",
+     "evidence": "TypeScript is used together with Vue.js to provide type checking and improve code maintainability."
+    },
+    {
+     "key": "spring_data_jpa",
+     "label": "Spring Data JPA",
+     "status": "used",
+     "evidence": "Integration with Spring Data JPA enables efficient database operations (Create, Read, Update, Delete) over PostgreSQL."
+    },
+    {
+     "key": "lombok",
+     "label": "Lombok",
+     "status": "used",
+     "evidence": "The project was created using Spring Initialize with dependencies including Spring Web, Spring Data JPA, PostgreSQL Driver, Spring Boot DevTools, and Lombok."
+    },
+    {
+     "key": "aws_s3",
+     "label": "AWS S3",
+     "status": "used",
+     "evidence": "AWS S3 backup: cloud storage used for storing jewelry product images."
+    },
+    {
+     "key": "heroku",
+     "label": "Heroku",
+     "status": "used",
+     "evidence": "The complete system was deployed using Heroku, enabling users to access the application online."
+    },
+    {
+     "key": "postman",
+     "label": "Postman",
+     "status": "used",
+     "evidence": "Postman is used to test backend API endpoints during development."
+    },
+    {
+     "key": "github",
+     "label": "GitHub",
+     "status": "used",
+     "evidence": "GitHub is the version control system used for collaboration and source code management."
+    }
+   ]
+  }
+ },
+ {
+  "id": "26014",
+  "canonical_title": "Using PCG to Explore Data Augmentation Strategies for Robust Classifiers",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CSX 3011",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2025,
+  "students": [
+   {
+    "name": "Aye Nyein Moe",
+    "student_id": "6530089"
+   },
+   {
+    "name": "Aung Sett Hpone",
+    "student_id": "6530122"
+   },
+   {
+    "name": "Htoo Kyaw Kyaw Sint",
+    "student_id": "6530129"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Dobri Atanassov Batovski",
+  "committee": [
+   "Dr. Kwankamol Nongpong",
+   "A. Sakchhi Paudel"
+  ],
+  "abstract": "This senior project examines data augmentation as a design variable for robustness-oriented image classification rather than as a routine preprocessing step. The study focuses on handwritten equation recognition from whiteboard images collected in a low-resource classroom-style setting. A balanced dataset of 240 images was organized into four classes — linear equations, quadratic equations, rational expressions, and inequalities — and split into fixed training, validation, and test partitions. Two convolutional neural network models were trained under matched conditions, including the same dataset split, model architecture, and training schedule. The only controlled difference was the augmentation strategy. The baseline model used a generic library-style augmentation workflow, while the proposed condition used a scenario-aware procedural content generation (PCG) pipeline designed to simulate classroom capture effects such as lighting variation, blur, noise, perspective change, and partial occlusion. Evaluation was conducted on both a standard held-out test set and a shared shifted test set. The generic model achieved 67.5% accuracy on the standard test and 65.0% on the shifted test, while the PCG model achieved 80.0% and 72.5%, respectively. The corresponding confusion matrices show that both models recognized linear equations reliably, but the PCG pipeline reduced some of the most severe class confusions, especially under shift, for quadratic and rational forms. At the same time, the generic model exhibited a smaller clean-to-shift drop, indicating a trade-off between absolute accuracy and relative stability. Taken together, the results show that augmentation design materially changes error behavior and robustness outcomes. For robustness-oriented computer vision, scenario-aware augmentation can therefore be a practical and interpretable strategy when deployment conditions differ from the clean training distribution. The proposed system is designed for smart classroom environments, where automated recognition of handwritten educational content can support lecture capture and digital learning tools.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "research"
+   ],
+   "platform": [
+    "none"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "opencv",
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "tensorflow",
+     "label": "TensorFlow",
+     "status": "used",
+     "evidence": "The implementation was carried out in Python with a deep-learning stack centered on TensorFlow/Keras for the CNN workflow."
+    },
+    {
+     "key": "keras",
+     "label": "Keras",
+     "status": "used",
+     "evidence": "The deep-learning stack is centered on TensorFlow/Keras for the CNN workflow."
+    },
+    {
+     "key": "numpy",
+     "label": "NumPy",
+     "status": "used",
+     "evidence": "NumPy supported numerical processing; appendix source code uses np.ndarray and np.random.Generator."
+    },
+    {
+     "key": "matplotlib",
+     "label": "Matplotlib",
+     "status": "used",
+     "evidence": "Matplotlib was used for result visualization."
+    }
+   ]
+  }
+ }
+]

@@ -1,0 +1,569 @@
+[
+ {
+  "id": "2026",
+  "canonical_title": "Object Recognition for Product Identification in Retail Stores",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "Dao Trung Kien",
+    "student_id": "6128302"
+   },
+   {
+    "name": "Sochivoath Chiv",
+    "student_id": "6128304"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "Asst. Prof. Dr. Dobri Atanassov Batovski",
+   "Dr. Kwankamol Nongpong"
+  ],
+  "abstract": "Retail stores are increasingly steering towards smart shelf technology; however, current available smart shelves are expensive to implement and use a variety of complicated sensors and hardware. Our project attempts to prove the feasibility of using only computer vision for object detection in a retail environment to provide cheaper alternatives for smaller retail stores. In our project, we explore multiple computer vision methodologies and implemented MobileNet SSD to detect various products and recognize predefined customer activities at a shelf. This paper describes the overall framework of our system, the preparation and creation of our custom model as well as an analysis of the evaluation results. This report also details the relevant software and hardware specifications as well as the implementation, the cost of implementation, deployment, and environmental setup of our project.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data"
+   ],
+   "platform": [
+    "embedded_hardware"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "opencv",
+    "python",
+    "tensorflow"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "nvidia_jetson",
+     "label": "NVIDIA Jetson Nano",
+     "status": "used",
+     "evidence": "Section 5.1: 'our team had decided to employ NVIDIA's Jetson Nano single board computer which costs $99' as the processing unit running the deployed model."
+    },
+    {
+     "key": "ip_camera",
+     "label": "IP camera",
+     "status": "used",
+     "evidence": "Section 3.1: 'the main mediums of image retrieval are IP cameras'; a HIK Vision DS-2CD2021G1-I camera streams 25 FPS to the processing unit."
+    },
+    {
+     "key": "raspberry_pi",
+     "label": "Raspberry Pi",
+     "status": "cited",
+     "evidence": "Section 5.1: alternatives considered 'included a general PC and Raspberry Pi' before the team chose the Jetson Nano."
+    }
+   ],
+   "domain": [
+    {
+     "key": "retail",
+     "label": "Retail",
+     "status": "used",
+     "evidence": "The system detects products and predefined customer activities at a shelf in retail and convenience store environments (Chapters 1, 3 and 5)."
+    }
+   ],
+   "technology": [
+    {
+     "key": "mobilenet_ssd",
+     "label": "MobileNet SSD",
+     "status": "used",
+     "evidence": "Section 3.2.3: MobileNet SSD chosen as the model; trained ssd_mobilenet_v1_coco via transfer learning, reaching mAP 0.9999 over 5 products."
+    },
+    {
+     "key": "tensorrt",
+     "label": "TensorRT",
+     "status": "used",
+     "evidence": "Section 4.3.3: before deployment the trained model 'must be converted into the TensorRT model' for faster processing on the Jetson Nano."
+    },
+    {
+     "key": "tensorboard",
+     "label": "TensorBoard",
+     "status": "used",
+     "evidence": "Section 4.3.2: 'we take advantage of TensorBoard, TensorFlow's inbuilt visualization toolkit' to monitor total losses across checkpoints."
+    },
+    {
+     "key": "labelimg",
+     "label": "LabelImg",
+     "status": "used",
+     "evidence": "Section 4.1.4: 'LabelImg is a graphical image annotation tool... We use this tool mostly in the process of collecting data for training.'"
+    },
+    {
+     "key": "haar_cascade",
+     "label": "Haar Cascade classifier",
+     "status": "cited",
+     "evidence": "Section 2.1 literature review covers the Haar Cascade Classifier; it was rejected for low accuracy and dependence on consistent lighting."
+    },
+    {
+     "key": "rcnn",
+     "label": "R-CNN family (Fast/Faster R-CNN)",
+     "status": "cited",
+     "evidence": "Sections 2.2 and 3.2.2 review R-CNN, Fast R-CNN and Faster R-CNN; Faster R-CNN was rejected as computationally expensive."
+    },
+    {
+     "key": "yolo",
+     "label": "YOLO (Tiny YOLO, YOLOv3)",
+     "status": "cited",
+     "evidence": "Sections 2.3 and 3.2.2 review YOLO variants; rejected because Tiny YOLO has poor accuracy and YOLOv3 is too intensive for single board computers."
+    }
+   ]
+  }
+ },
+ {
+  "id": "2036",
+  "canonical_title": "Web Classification Chrome Extension POC: Gambling Blocker",
+  "aliases": [
+   "Web Classification Chrome Extension: Gambling Blocker",
+   "Gambling Website Classification"
+  ],
+  "phase": "proposal",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "Perawat Wongkrit",
+    "student_id": "6010603"
+   }
+  ],
+  "advisor": "Dr. Chayapol Moemeng",
+  "committee": [
+   "Dr. Kwankamol Nongpong",
+   "Dr. Rachsuda Setthawong"
+  ],
+  "abstract": "Gambling has been a problem in Thailand for a longtime which government cannot entirely fix the people addition in gambling, especially in teenager and working age adult. Because gambling is illegal in Thailand, government and police try to raid and catch gambling though out Thailand but still not effective. That due to gambling website start to gain popularity among Thai gamblers. That popularity also reaches the underage, unlike the adult, underage teen protection because they still not have much experience in these black side of the world. The Problems caused by excessive gambling are not just financial. Too much time spent on gambling can also lead to relationship and legal problems, job loss, bad education grade, mental health problems including depression and anxiety, and even suicide. Some people might say that problems is might not happen because they might get rich from gambling, but that is not the case because most of these gambling websites have the algorithm to get money from user on one way or another. Some websites easily give the money to the user first, so the user will invest more, and they will get a bigger amount of money from user. These websites persuade people to use their website by advertise on illegal free website though out Thailand. A lot of people will encounter these websites a lot because people who don't have much money will try to find alternate way of get the free service, such as watching free movie online website, pornography website and etc.. One of the ways to protect or filter out these websites is using web page classification technique. Our service is an google chrome extension that help block the Thai gambling website using our own custom model to classify which website is gambling website. We use google chrome extension because of two reasons. First due to, parent can easily install the extension without their children acknowledgement. And secondly, majority of Thailand population are using google chrome as their main browser.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "security"
+   ],
+   "topic": [
+    "nlp"
+   ],
+   "technology": [
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "chrome_extension",
+     "label": "Chrome extension",
+     "status": "used",
+     "evidence": "Section 1.2: 'Gambling Blocker is a POC google chrome extension that classify the Thai online gambling website' using a machine learning text-based model."
+    }
+   ],
+   "domain": [
+    {
+     "key": "web_content_filtering",
+     "label": "Web content filtering",
+     "status": "used",
+     "evidence": "Abstract: 'One of the ways to protect or filter out these websites is using web page classification technique', aiming to block Thai gambling sites from underage users."
+    }
+   ],
+   "technology": [
+    {
+     "key": "scikit_learn",
+     "label": "scikit-learn",
+     "status": "used",
+     "evidence": "Section 3.2: 'I use sci-kit learn library' for training, vectorizing and TF-IDF; a MultinomialNB classifier reached 97.5% accuracy."
+    },
+    {
+     "key": "pythainlp",
+     "label": "PyThaiNLP",
+     "status": "used",
+     "evidence": "Section 3.3: 'I use PyThaiNlp to filter out characters that are not Thai characters' when cleaning data for classification."
+    },
+    {
+     "key": "google_cloud_functions",
+     "label": "Google Cloud Functions",
+     "status": "used",
+     "evidence": "Section 3.4: 'For our back-end I decide to use google cloud function', a serverless Python function the extension calls for classification."
+    },
+    {
+     "key": "google_cloud_storage",
+     "label": "Google Cloud Storage",
+     "status": "used",
+     "evidence": "Section 3.5 and 4.2: 'I use Google Cloud Bucket to store the model and vectorizer for our function.'"
+    },
+    {
+     "key": "javascript",
+     "label": "JavaScript",
+     "status": "used",
+     "evidence": "Section 3.6: 'Google chrome extension is work by using html with javascript to handle front-end'; myScript.js bridges the extension and Google Cloud."
+    },
+    {
+     "key": "html",
+     "label": "HTML",
+     "status": "used",
+     "evidence": "Section 3.6: HTML with JavaScript handles the extension front-end."
+    },
+    {
+     "key": "aws",
+     "label": "Amazon Web Services",
+     "status": "cited",
+     "evidence": "Chapter 6 Future Plan: 'Try more cloud service like AWS or Heroku and use the most efficient one.'"
+    },
+    {
+     "key": "heroku",
+     "label": "Heroku",
+     "status": "cited",
+     "evidence": "Chapter 6 Future Plan: 'Try more cloud service like AWS or Heroku and use the most efficient one.'"
+    }
+   ]
+  }
+ },
+ {
+  "id": "2037",
+  "canonical_title": "PROMAI: Promotion Recommendation on E-commerce Application",
+  "aliases": [],
+  "phase": "proposal",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "Sanpawat Sewsuwan",
+    "student_id": "6113187"
+   },
+   {
+    "name": "Saharat Tiewkunupakan",
+    "student_id": "6114520"
+   },
+   {
+    "name": "Thanapol Sopanhari",
+    "student_id": "6113632"
+   }
+  ],
+  "advisor": "Dr. Songsak Channarukul",
+  "committee": [
+   "A. Chayapol Moemeng",
+   "A. Kiratijuta Bhumichitr"
+  ],
+  "abstract": "In the present day, shopping is the activity that people spend time as a hobby or buying basic needs. Nevertheless, the said activities are usually time-consuming and troublesome for finding the products to help fulfill a promotion and searching for the available promotions. Unexpectedly, the existing e-commerce applications do not aim to solve this pain point. If managed properly, they can undoubtedly boost the products' sales. Promai is an e-commerce application built on an iOS platform that focuses on promotion recommendations and package recommendations for those who do not know what to buy to achieve a promotion. With the various approaches to suggest, it improves the user experience by making it more accessible. Besides, combining with the promotions' progress tracking bars will significantly stimulate their desires to purchase. Furthermore, Promai Pro is provided for the staff to create and manage promotions at their fingertips.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "e_commerce"
+   ],
+   "topic": [
+    "recommender_system",
+    "gamification"
+   ],
+   "technology": []
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "ios",
+     "label": "iOS",
+     "status": "used",
+     "evidence": "Section 1.2 and 3.1: 'Promai, an e-commerce application developed on an iOS platform' is the customer-facing mobile app."
+    },
+    {
+     "key": "ipados",
+     "label": "iPadOS",
+     "status": "used",
+     "evidence": "Section 3.2: 'Promai Pro is an application built specifically on iPadOS platform' for staff to create and manage promotions."
+    }
+   ],
+   "domain": [
+    {
+     "key": "supermarket",
+     "label": "Supermarket retail",
+     "status": "used",
+     "evidence": "Chapters 2 and 3 model supermarket sale promotions (five types, applicable and blacklist products) and Promai Pro is aimed at supermarket staff."
+    }
+   ],
+   "technology": [
+    {
+     "key": "swift",
+     "label": "Swift",
+     "status": "used",
+     "evidence": "Section 3.1: 'The application is developed by Swift 5.0 programming language using Xcode 12.3.'"
+    },
+    {
+     "key": "xcode",
+     "label": "Xcode",
+     "status": "used",
+     "evidence": "Section 3.1: development used 'Xcode 12.3, an official integrated development environment provided by Apple.'"
+    },
+    {
+     "key": "sql",
+     "label": "SQL",
+     "status": "used",
+     "evidence": "Section 4.3.3: 'the program performs the filter process in SQL to get the products that can be recommended' against the Promai relational database."
+    }
+   ]
+  }
+ },
+ {
+  "id": "2039",
+  "canonical_title": "Nearby Festival",
+  "aliases": [
+   "Tickey"
+  ],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Aung Khant Oo",
+    "student_id": "6118154"
+   },
+   {
+    "name": "Siyu Han",
+    "student_id": "6118516"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Darun Kesrarat",
+  "committee": [
+   "Asst. Prof. Dr. Paitoon Porntrakoon",
+   "Asst. Prof. Dr. Dobri Atanassov Batovski"
+  ],
+  "abstract": "Thailand is well known for its unique culture, numerous forms of activities, as well as carnivals. All these activities have contributed to the tourism economy in Thailand. However, in the marketplace, there is still a lack of a platform that helps people to find festivals around them. Our Nearby Festival application is trying to solve this kind of vacancy by creating a platform that enables travelers to easily find the festivals going around their places.We hope our application can bring a little force in promoting the tourism of Thailand.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile",
+    "web"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [
+    "geolocation"
+   ],
+   "technology": [
+    "firebase",
+    "react"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "android",
+     "label": "Android",
+     "status": "used",
+     "evidence": "Section 1.1 and 2.1: an Android application is built for users with React Native and tested on an Android Studio virtual device."
+    }
+   ],
+   "domain": [
+    {
+     "key": "tourism",
+     "label": "Tourism",
+     "status": "used",
+     "evidence": "Abstract and Section 4.1: the project aims to help travelers explore festivals and 'help to promote the local traveling industry'."
+    }
+   ],
+   "technology": [
+    {
+     "key": "react_native",
+     "label": "React Native",
+     "status": "used",
+     "evidence": "Section 2.1: 'we use React Native to build the android applications' as a hybrid app instead of a native app."
+    },
+    {
+     "key": "javascript",
+     "label": "JavaScript",
+     "status": "used",
+     "evidence": "Section 2.1: the web application uses 'React (Javascript framework), HTML, and CSS'; appendix shows React JSX code."
+    },
+    {
+     "key": "html",
+     "label": "HTML",
+     "status": "used",
+     "evidence": "Section 2.1: web application built with React, HTML and CSS."
+    },
+    {
+     "key": "css",
+     "label": "CSS",
+     "status": "used",
+     "evidence": "Section 2.1: web application built with React, HTML and CSS."
+    },
+    {
+     "key": "figma",
+     "label": "Figma",
+     "status": "used",
+     "evidence": "Section 2.1: 'We use Figma to draw the user interface design for both web and android applications.'"
+    },
+    {
+     "key": "android_studio",
+     "label": "Android Studio",
+     "status": "used",
+     "evidence": "Section 2.1: 'we use Android Studio software to get the android virtual device' for testing."
+    },
+    {
+     "key": "visual_studio_code",
+     "label": "Visual Studio Code",
+     "status": "used",
+     "evidence": "Section 2.1: 'we use Visual Studio Code as the main software' for writing code."
+    },
+    {
+     "key": "firebase_realtime_database",
+     "label": "Firebase Realtime Database",
+     "status": "used",
+     "evidence": "Section 4.1: 'We store the text data by using Realtime Database service'; appendix code reads and writes via firebaseDB.ref."
+    },
+    {
+     "key": "firebase_storage",
+     "label": "Firebase Cloud Storage",
+     "status": "used",
+     "evidence": "Section 4.1: 'store the festival images in Cloud Storage', one of three Firebase services used."
+    },
+    {
+     "key": "firebase_cloud_messaging",
+     "label": "Firebase Cloud Messaging",
+     "status": "used",
+     "evidence": "Section 2.2.3: location-based notifications 'sent through each users' devices using the Firebase Cloud Messaging API'."
+    },
+    {
+     "key": "google_maps_api",
+     "label": "Google Maps APIs",
+     "status": "used",
+     "evidence": "Section 4.1 lists Directions API, Geocoding API, Maps Javascript API and Maps SDK for Android used for maps, directions and geocoding."
+    },
+    {
+     "key": "qr_code",
+     "label": "QR code ticketing",
+     "status": "used",
+     "evidence": "Section 2.2.1: an approved booking generates a QR code the user shows as a ticket and the organizer scans via the application."
+    }
+   ]
+  }
+ },
+ {
+  "id": "2040",
+  "canonical_title": "AU Museum Website",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "Kitipong Sillathum",
+    "student_id": "5717607"
+   }
+  ],
+  "advisor": "A. Tapanan Yeophantong",
+  "committee": [
+   "Dr. Kwankamol Nongpong",
+   "A. Piyakul Tillpart"
+  ],
+  "abstract": "AU Museum website is a web platform that uses the wordpress. Wordpress is a free custom and open source content management system (CMS) that provide thousands of plugins, widgets, and themes. Moreover, AU Museum website requires the system about wordpress, local host, live host, web server, plugin and theme. AU museum website starts with local host \"Flywheel\" and uploads the necessary contents and images ange content of the webpage. Finally, user interface (UI) of AU Museum website has a home page, about us page, collections; first floor, second floor and third floor, visit us. AU Museum website will be a learning center for AU members such as students, teachers, university staff and other users that are interested in museums. AU Museum website will be one more channel for promoting the historical AU museum, collections in AU museum, events, etc. via website.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [],
+   "technology": [
+    "php",
+    "wordpress"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "museum",
+     "label": "Museum",
+     "status": "used",
+     "evidence": "The site presents the AU Museum collections by floor, a learning center 'of arts, culture and aesthetics' at Assumption University."
+    }
+   ],
+   "technology": [
+    {
+     "key": "elementor",
+     "label": "Elementor",
+     "status": "used",
+     "evidence": "Table 2.1 and Chapter 2: pages are created and edited with the Elementor drag and drop page builder."
+    },
+    {
+     "key": "all_in_one_wp_migration",
+     "label": "All-in-One WP Migration",
+     "status": "used",
+     "evidence": "Section 2.1.4: 'use the All-in-One Wp Migration Plugin, export the file .wordpress to the web server at museum.au.edu.'"
+    },
+    {
+     "key": "local_by_flywheel",
+     "label": "Local by Flywheel",
+     "status": "used",
+     "evidence": "Section 2.1.2: development starts on the local host 'Flywheel' at aumuseum.local before migrating to the live server."
+    },
+    {
+     "key": "neve",
+     "label": "Neve WordPress theme",
+     "status": "used",
+     "evidence": "Section 2.1.6: 'the theme in AU Museum used the \"Neve\" theme', a fast multi-purpose theme."
+    },
+    {
+     "key": "smart_slider_3",
+     "label": "Smart Slider 3",
+     "status": "used",
+     "evidence": "Table 2.1 lists Smart Slider 3 as the responsive slider plugin used on the site."
+    },
+    {
+     "key": "wpforms_lite",
+     "label": "WPForms Lite",
+     "status": "used",
+     "evidence": "Table 2.1 lists WPForms Lite as the contact form plugin used on the site."
+    },
+    {
+     "key": "mysql",
+     "label": "MySQL",
+     "status": "used",
+     "evidence": "Section 2.1.1: 'Wordpress: is a free and open-source content management system (CMS) written in PHP and paired with a MySQL or MariaDB database', the stack the site runs on."
+    }
+   ]
+  }
+ }
+]

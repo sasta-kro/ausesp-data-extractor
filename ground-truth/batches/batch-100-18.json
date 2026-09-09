@@ -40,7 +40,8 @@
     "e_commerce"
    ],
    "topic": [
-    "recommender_system"
+    "recommender_system",
+    "gamification"
    ],
    "technology": []
   }
@@ -76,18 +77,18 @@
     "software_application"
    ],
    "platform": [
-    "web",
-    "mobile"
+    "mobile",
+    "web"
    ],
    "domain": [
-    "other"
+    "entertainment"
    ],
    "topic": [
     "geolocation"
    ],
    "technology": [
-    "react",
-    "firebase"
+    "firebase",
+    "react"
    ]
   }
  },
@@ -119,7 +120,9 @@
    "category": [
     "ai_data"
    ],
-   "platform": [],
+   "platform": [
+    "none"
+   ],
    "domain": [
     "business"
    ],
@@ -222,7 +225,9 @@
    "topic": [
     "geolocation"
    ],
-   "technology": []
+   "technology": [
+    "firebase"
+   ]
   }
  }
 ]

@@ -1,0 +1,417 @@
+[
+ {
+  "id": "1908",
+  "canonical_title": "AI Play Game",
+  "aliases": [
+   "AI Play Games",
+   "AI play games"
+  ],
+  "phase": "final",
+  "course_code": "CS 3200",
+  "program": "computer_science",
+  "semester": "1",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Fengbo Zhou",
+    "student_id": "5918131"
+   }
+  ],
+  "advisor": "A. Chayapol Moemeng",
+  "committee": [
+   "A. Kwankamol Nongpong",
+   "Asst. Prof. Dr. Dobri Batovski"
+  ],
+  "abstract": "This project focuses on creating an AI that can play arcade games. Just like how DeepBlue played chess, this project is about creating an AI that can play console games by itself and get a good score. There are many related works done by others, such as Mario bot which is a bot that can play classic Mario games on it own and pass the stages. This project does not stipulate which game can be used, so there are several options such as Google Chrome dinosaur game and battle city etc. But dinosaur game is too easy to be solved because the dinosaur is moving all the time so the available action is only two, jump or down to avoid obstacles, as for battle city, the problem is too complicated to be solved for a starter's project. So finally Circus Charlie was chosen as this project.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "game"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "opencv",
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "python",
+     "label": "Python",
+     "status": "used",
+     "evidence": "\"the neural network this project using is based on python\" and \"because of the emulator platform and python is used in this project, this limitation can not be avoided\""
+    },
+    {
+     "key": "opencv",
+     "label": "OpenCV",
+     "status": "used",
+     "evidence": "\"For the preprocessing part, OpenCV's template matching and Pillow (an API for capture screen) are being used\" to locate loops, cups and Charlie in game frames"
+    },
+    {
+     "key": "keras",
+     "label": "Keras",
+     "status": "used",
+     "evidence": "\"The Keras API (which is built on top of TensorFlow) is used\" to build the six-hidden-layer network, tested with \"KERAS.Evalute method\""
+    },
+    {
+     "key": "tensorflow",
+     "label": "TensorFlow",
+     "status": "used",
+     "evidence": "\"The Keras API (which is built on top of TensorFlow) is used\" for the learning model"
+    },
+    {
+     "key": "pillow",
+     "label": "Pillow (PIL)",
+     "status": "used",
+     "evidence": "\"the image of the game frame is captured by using Pillow\""
+    },
+    {
+     "key": "lua",
+     "label": "Lua",
+     "status": "used",
+     "evidence": "\"A python to lua script is needed to send the correspond action back to the emulator so the game can continue\""
+    },
+    {
+     "key": "fceux",
+     "label": "FCEUX Emulator",
+     "status": "used",
+     "evidence": "\"The platform that is used to load this game is called FCEUX\", a Nintendo Entertainment System (NES) emulator with Lua scripting used to control the game"
+    },
+    {
+     "key": "neat",
+     "label": "NEAT (NeuroEvolution of Augmenting Topologies)",
+     "status": "cited",
+     "evidence": "MarI/O related work trains its Mario AI with a self-learning neural network, \"more specifically it is called NeuroEvolution of Augmenting Topologies (NEAT)\""
+    },
+    {
+     "key": "bizhawk",
+     "label": "BizHawk",
+     "status": "cited",
+     "evidence": "\"The author of this project used BizHawk emulator which is for advanced user\" (MarI/O related work)"
+    },
+    {
+     "key": "recurrent_neural_network",
+     "label": "Recurrent Neural Network",
+     "status": "cited",
+     "evidence": "Chrome Dinosaur Game related work: \"the Recurrent Neural network was used\" with screenshots read via OpenCV and the model trained with Keras"
+    }
+   ]
+  }
+ },
+ {
+  "id": "1909",
+  "canonical_title": "Automated Schedule of Undergraduate Student Advising Reservation using Extended Flower Pollination Algorithm",
+  "aliases": [
+   "XFPA",
+   "EXFPA"
+  ],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Sai Kham Lao",
+    "student_id": "5748124"
+   },
+   {
+    "name": "Deep Kumar",
+    "student_id": "5818029"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Rachsuda Setthawong",
+  "committee": [
+   "Asst. Dean Suparwat Charoenvikrom",
+   "A. Pawut Satitsuksanoh"
+  ],
+  "abstract": "Academic advising is an important process to assist undergraduate students in their academic life because it provides students the direction about personal, social, and educational concerns. However, the traditional process that an advisor manually generates an advising schedule often ends up with some conflicts with student schedules. To address this problem effectively and efficiently, this work introduces the eXtended Flower Pollination Algorithm (XFPA), which extends the Adapted Flower pollination Algorithm (AFPA) to automatically generate an optimal academic advising schedule that conforms to availability and/or preferences of both advisor and students. In particular, this work redefines a representative of a candidate schedule (solution), adapts the operators so that candidates' solutions can exchange information during evolution steps, and also accepts the hard and soft constraints when generating an optimal solution. The remedy function is also introduced to solve the conflict slots that cannot be suitable for them. Moreover, to further improve the proposed algorithm, XFPA is modified to enhance the nearly optimal solution generated in the complex datasets. The experiment results show that enhanced version of XFPA (EXFPA) is capable of automatically and efficiently generating optimal solutions in both simple and complex datasets.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "research",
+    "software_application"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "education"
+   ],
+   "topic": [],
+   "technology": []
+  },
+  "discoveries": {
+   "category": [
+    {
+     "key": "metaheuristic_optimization",
+     "label": "Metaheuristic Optimization",
+     "status": "used",
+     "evidence": "The project designs and experiments with nature-inspired metaheuristics, extending the Flower Pollination Algorithm with mutation and crossover operators and comparing convergence against a Genetic Algorithm"
+    }
+   ],
+   "platform": [],
+   "domain": [
+    {
+     "key": "scheduling",
+     "label": "Scheduling and Timetabling",
+     "status": "used",
+     "evidence": "\"The goal of the project is to develop automated scheduling of undergraduate students advising reservations using Extended flower pollination algorithms\", producing a lecturer-student advising timetable"
+    }
+   ],
+   "technology": [
+    {
+     "key": "flower_pollination_algorithm",
+     "label": "Flower Pollination Algorithm (FPA/XFPA/EXFPA)",
+     "status": "used",
+     "evidence": "\"this work introduces the eXtended Flower Pollination Algorithm (XFPA), which extends the Adapted Flower pollination Algorithm (AFPA)\" and the Enhancement of XFPA (EXFPA) reaches fitness 1.0 on complex datasets"
+    },
+    {
+     "key": "genetic_algorithm",
+     "label": "Genetic Algorithm",
+     "status": "used",
+     "evidence": "Implemented for comparison: \"the Genetic Algorithm (GA), the eXtended flower pollination algorithm (XFPA) and the Enhancement of extended flower pollination algorithm (EXFPA)\"; XFPA also uses \"a modified version of the genetic operators\""
+    },
+    {
+     "key": "levy_flight",
+     "label": "Levy Flight",
+     "status": "cited",
+     "evidence": "FPA background: \"pollen carrying pollinators move with levy flight behavior\", with levy distribution used for pollination strength"
+    }
+   ]
+  }
+ },
+ {
+  "id": "1911",
+  "canonical_title": "License Plate Recording System for Condominium (Car Plate Checker & Car Plate Management)",
+  "aliases": [
+   "Car Plate Checker",
+   "Car Plate Management"
+  ],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": null,
+  "academic_year": null,
+  "students": [
+   {
+    "name": "Fengbo Zhou",
+    "student_id": "5918131"
+   },
+   {
+    "name": "Rubina Shrestha",
+    "student_id": "6018194"
+   }
+  ],
+  "advisor": "A. Suparwat Charoenvikrom",
+  "committee": [
+   "A. Tapanan Yeophantong",
+   "A. Piyakul Tillapart"
+  ],
+  "abstract": "Lumpini Ville Condominium tracked parked cars by having guards write plate and slot numbers on paper twice a day, and the admin then re-entered each record by hand to check registration. This project replaced that process with two applications. Car Plate Checker is an Android app in which the guard photographs the car plate, the plate number is recognized using the Google Cloud Vision API for OCR, and the system shows the room number if the car is registered. Car Plate Management is a web application where the admin registers plates with room numbers, imports room lists from Excel, views parking records synced from the phones, filters them by date, and downloads them as Excel files. The report concludes that all objectives set initially were met, removing paper recording and manual data entry.",
+  "abstract_source": "generated",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile",
+    "web"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [
+    "ocr"
+   ],
+   "technology": [
+    "mongodb",
+    "nodejs",
+    "react"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "property_management",
+     "label": "Property and Facility Management",
+     "status": "used",
+     "evidence": "The system was built for Lumpini Ville Condominium so guards can record parked cars per floor, pole and slot, and the admin can manage resident room and plate registrations"
+    }
+   ],
+   "technology": [
+    {
+     "key": "java",
+     "label": "Java",
+     "status": "used",
+     "evidence": "\"For the mobile application, android studio has been used with java as the programming language\""
+    },
+    {
+     "key": "android_studio",
+     "label": "Android Studio",
+     "status": "used",
+     "evidence": "\"For the mobile application, android studio has been used with java as the programming language\""
+    },
+    {
+     "key": "google_cloud_vision",
+     "label": "Google Cloud Vision API",
+     "status": "used",
+     "evidence": "\"The technology we have used in our project for reading the license plate number of a car is, Optical Character Recognition using the Cloud Vision API\", sending the image as base64 and extracting the plate number from the detected text"
+    },
+    {
+     "key": "express_js",
+     "label": "Express.js",
+     "status": "used",
+     "evidence": "\"Express.js - It is a server framework for Node.js which is mainly used for routing purposes\""
+    },
+    {
+     "key": "axios",
+     "label": "Axios",
+     "status": "used",
+     "evidence": "\"Library that helps to make http requests to external sources\" used to retrieve data from external APIs for the web page"
+    },
+    {
+     "key": "react_bootstrap",
+     "label": "React-Bootstrap",
+     "status": "used",
+     "evidence": "\"One of the most popular frontend frameworks which replaces the ordinary Bootstrap Javascript\" supporting React components without jQuery"
+    },
+    {
+     "key": "mongodb_atlas",
+     "label": "MongoDB Atlas",
+     "status": "used",
+     "evidence": "\"For our project, we have used the MongoDB Atlas which is a global cloud database service\""
+    }
+   ]
+  }
+ },
+ {
+  "id": "1912",
+  "canonical_title": "Neural Network Learning Generalization with Customized Gaussian Noise Injection",
+  "aliases": [
+   "Neural Network Learning Generalization with Gaussian Noise Injection"
+  ],
+  "phase": "final",
+  "course_code": "IT4292",
+  "program": "information_technology",
+  "semester": null,
+  "academic_year": null,
+  "students": [
+   {
+    "name": "Chaitach Vadhanachai",
+    "student_id": "5915132"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Thitipong Tanprasert",
+  "committee": [
+   "Asst. Prof. Dr. AnilKumar Kothalil Gopalakrishnan",
+   "Asst. Prof. Dr. Benjawan Srisura"
+  ],
+  "abstract": "This report provides a study of Neural Network Learning Generalization with Gaussian Noise Injection. Though such injections have been studied when applied to data. There have been few studied on understanding the Neural Network Generalization when applied to network activation. Here we derive the generalization of the Neural Network with gaussian noise injection, obtained by scaling the injection noise to original data. we show analytically and empirically that such generalization produces the accuracy with different datasets",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "research"
+   ],
+   "platform": [
+    "none"
+   ],
+   "domain": [
+    "other"
+   ],
+   "topic": [],
+   "technology": []
+  },
+  "discoveries": {
+   "category": [
+    {
+     "key": "deep_learning",
+     "label": "Deep Learning",
+     "status": "used",
+     "evidence": "\"We build the difference NN model that suitable for each dataset\" with dense layers, trained for 500 epochs with early stopping to compare original and noise-injected data"
+    }
+   ],
+   "platform": [],
+   "domain": [],
+   "technology": [
+    {
+     "key": "kaggle",
+     "label": "Kaggle Datasets",
+     "status": "used",
+     "evidence": "\"most data used in this experiment retrieve from Kaggle and Google Data Finder\", including the breast cancer, diabetes, smoking and wine quality datasets"
+    },
+    {
+     "key": "google_dataset_search",
+     "label": "Google Dataset Search",
+     "status": "used",
+     "evidence": "Datasets for the experiment were found via https://datasetsearch.research.google.com/"
+    }
+   ]
+  }
+ },
+ {
+  "id": "1913",
+  "canonical_title": "Senior Project Plus",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT4291",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2019,
+  "students": [
+   {
+    "name": "Leopold Yangane Faye",
+    "student_id": "5818008"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Paitoon Porntrakoon",
+  "committee": [
+   "A. Piyakul Tillapart",
+   "A. Chayapol Moemeng"
+  ],
+  "abstract": "In the following project we will present a comparison between two systems. The one currently at use in our faculty and the new now we are proposing. The current VMS Senior Project system covers the basic processes of senior project registration, topic selection and topic assignment, as well as grading. It is however still limited in terms of input/output accuracy, raw layout and data presentation, data ease of access, etc. The system we are proposing should then be the improved version of the current one. It should be capable of efficiently using data input from all the processes, offering a cleaner information visualization, gathering basic data from scattered process, etc. Both the current and the proposed system deal with 3 users: the student, the advisor and the administrator.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "campus"
+   ],
+   "topic": [
+    "recommender_system"
+   ],
+   "technology": []
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [],
+   "technology": []
+  }
+ }
+]

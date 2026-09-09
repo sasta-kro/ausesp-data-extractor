@@ -1,0 +1,653 @@
+[
+ {
+  "id": "1718",
+  "canonical_title": "Anywhere Time Attendance Terminal by using fingerprint in Smartphone",
+  "aliases": [],
+  "phase": "final",
+  "course_code": "IT 4292",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Juladeach Pokhaiputthinun",
+    "student_id": "5713539"
+   },
+   {
+    "name": "Surawat Pothong",
+    "student_id": "5726804"
+   },
+   {
+    "name": "Zhe Zhou",
+    "student_id": "5748101"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Darun Kesrarat",
+  "committee": [
+   "Asst. Prof. Dr. Adtha Lawanna",
+   "Dr. Benjawan Srisura"
+  ],
+  "abstract": "Manual identity checking methods such as name calling and card stamping are slow and easy to cheat. This project developed an Android application that lets people clock in anywhere using the fingerprint scanner on their own smartphone. A creator places a location pin for a specific area and time window, attenders check in with fingerprint scanning inside that pinned area, and an administrator registers accounts and grants user status. The system was developed following the System Development Life Cycle and documented with data flow diagrams, an entity relationship diagram, data dictionaries, and interface designs. It was implemented with Java, PHP, HTML, and Bootstrap, using Android Studio and Brackets as the main tools, and hosted on Google Cloud Platform.",
+  "abstract_source": "generated",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [
+    "geolocation"
+   ],
+   "technology": [
+    "php"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "android",
+     "label": "Android",
+     "status": "used",
+     "evidence": "Mobile phone with the finger print function and Android operating system are required to implement the application."
+    }
+   ],
+   "domain": [
+    {
+     "key": "attendance",
+     "label": "Attendance and time keeping",
+     "status": "used",
+     "evidence": "System lets users clock in via mobile fingerprint at pins placed by a creator, aimed at offices, schools, factories and universities."
+    }
+   ],
+   "technology": [
+    {
+     "key": "java",
+     "label": "Java",
+     "status": "used",
+     "evidence": "The combination of use of three programing language such as Java, PHP, HTML."
+    },
+    {
+     "key": "android_studio",
+     "label": "Android Studio",
+     "status": "used",
+     "evidence": "The program which is used to conduct coding are Android studio and Brackets."
+    },
+    {
+     "key": "bootstrap",
+     "label": "Bootstrap",
+     "status": "used",
+     "evidence": "Development costs table lists Bootstrap as a free tool."
+    },
+    {
+     "key": "appserv",
+     "label": "AppServ",
+     "status": "used",
+     "evidence": "Development costs table lists Appserv as a free tool."
+    },
+    {
+     "key": "google_cloud_platform",
+     "label": "Google Cloud Platform",
+     "status": "used",
+     "evidence": "Implement costs table lists Google Cloud Platform at 4.28$ per month."
+    },
+    {
+     "key": "gps",
+     "label": "GPS",
+     "status": "used",
+     "evidence": "Stability of application is depended on function of GPS, since pins are defined by latitude and longitude with a check-in distance."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1719",
+  "canonical_title": "MIDI Signals Manipulating Console for Live Multiple-Keyboard Performance",
+  "aliases": [],
+  "phase": "proposal",
+  "course_code": "IT 4291",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Taechasit Sarasitt",
+    "student_id": "6110032"
+   },
+   {
+    "name": "Napatsorn Kawaree",
+    "student_id": "6111099"
+   },
+   {
+    "name": "Kanyarat Nalucupchanchai",
+    "student_id": "6115308"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Thitipong Tanprasert",
+  "committee": [
+   "Asst. Prof. Dr. Benjawan Srisura",
+   "A. Chayapol Moemeng"
+  ],
+  "abstract": "Nowadays, music concerts or live performances need good music equipment especially ones that make the performance turn out entertaining for the audience, have its unique point, and multiple keyboards is one of the most important equipment. Keyboard-type device that doesn't have a built-in sound source is called a MIDI controller. There are two types of MIDI controllers: performance controllers that generate notes and are used to perform music, and controllers that may not send notes, but transmit other types of real-time events. Many devices are some combination of the two types. Keyboard-type device needs to be connected to other devices that are the source of the sound, through MIDI protocol. Yet, existing musical instrument digital interfaces are designed for sound engineers, which are not easy to use for real-time performance by musicians of typical instruments, even by pianists. In this project, we studied the technologies involved with modern digital sound productions, then created an easy and futuristic musical instrument as a digital interface for multiple keyboards that supports live music performance, is not more complicated to operate than an organ, and utilizes a potentially unlimited repertoire of sounds.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "desktop"
+   ],
+   "domain": [
+    "entertainment"
+   ],
+   "topic": [],
+   "technology": [
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "windows",
+     "label": "Windows",
+     "status": "used",
+     "evidence": "Screenshot of Qt Designer on Windows and installation prerequisites reference Windows OS with the ASIO driver."
+    }
+   ],
+   "domain": [
+    {
+     "key": "music",
+     "label": "Music and live performance",
+     "status": "used",
+     "evidence": "The project creates a digital interface for multiple keyboards that supports live music performance for concerts and musicians."
+    }
+   ],
+   "technology": [
+    {
+     "key": "midi",
+     "label": "MIDI protocol",
+     "status": "used",
+     "evidence": "The software manages all the MIDI outputs and manipulates MIDI signals in real time, our software is only responsible for midi manipulation."
+    },
+    {
+     "key": "mido",
+     "label": "Mido",
+     "status": "used",
+     "evidence": "We use the Mido (MIDI Objects for Python) library to interact with midi by treating midi as if it were an object in python."
+    },
+    {
+     "key": "rtmidi",
+     "label": "RtMidi",
+     "status": "used",
+     "evidence": "We use RtMidi as the backend in our software as it is recommended by the Mido developer."
+    },
+    {
+     "key": "qt",
+     "label": "Qt",
+     "status": "used",
+     "evidence": "For our project, Qt version 4.0 which generated from Qt Designer we used to develop a framework."
+    },
+    {
+     "key": "qt_designer",
+     "label": "Qt Designer",
+     "status": "used",
+     "evidence": "We use the Qt designer program to develop our user interface designing for Musical Instrument Digital Interface."
+    },
+    {
+     "key": "pyqt5",
+     "label": "PyQt5",
+     "status": "used",
+     "evidence": "We use Python PyQt5 library to make the connection between the Qt file and Python program."
+    },
+    {
+     "key": "tracktion_waveform",
+     "label": "Tracktion Waveform",
+     "status": "used",
+     "evidence": "We use Tracktion Waveform Digital Audio Workstation (DAW) to turn MIDI signals into sound."
+    },
+    {
+     "key": "loopmidi",
+     "label": "LoopMIDI",
+     "status": "used",
+     "evidence": "The loopMIDI plays an important role in our project because we can test our program without having to connect the hardware midi devices."
+    },
+    {
+     "key": "midi_ox",
+     "label": "MIDI-OX",
+     "status": "used",
+     "evidence": "The role of MIDI-OX in our project is to test and debug the functionality of our software since it can read the data inside the midi messages."
+    },
+    {
+     "key": "asio",
+     "label": "ASIO",
+     "status": "used",
+     "evidence": "The PC's specification must support ASIO audio standard or a compatible one, ASIO is required for fast real-time audio response."
+    },
+    {
+     "key": "juicy_sf",
+     "label": "Juicy SF plugin",
+     "status": "used",
+     "evidence": "We use Waveform DAW as midi receiver software, and the open source Juicy SF audio plugin as a soundfont player."
+    },
+    {
+     "key": "hauptwerk",
+     "label": "Hauptwerk",
+     "status": "cited",
+     "evidence": "A related work is a well-known commercial program called Hauptwerk, designed for pipe organ playback using MIDI."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1720",
+  "canonical_title": "Banknote Recognition for Visually Impaired People",
+  "aliases": [
+   "Bank A Rai"
+  ],
+  "phase": "final",
+  "course_code": "CS4200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Pathompong Kunapermsiri",
+    "student_id": "5716712"
+   },
+   {
+    "name": "Chatchawan Yoojuie",
+    "student_id": "5715298"
+   },
+   {
+    "name": "Natthakul Boonmee",
+    "student_id": "5710081"
+   }
+  ],
+  "advisor": "Dr. Kwankamol Nongpong",
+  "committee": [
+   "A. Tapanan Yeophantong",
+   "A. Chayapol Moemeng"
+  ],
+  "abstract": "This research aims to study and implement an application for visually impaired people on android platform. We focused on implementing an application that will be used to detect Thai Banknote of type 16 only, whereas we did not focused on detecting the genuineness of Thai banknote. The main objectives of the study is to use the deep learning to classify and detect the Thai banknotes. We will also be collecting and training of banknote dataset in 5 categories, which are the banknotes of 20, 50, 100, 500 and 1,000 baht. The tools that will be used in the study include, the android SDK for implementing the application for android device and TensorFlow which will be used for implementing the model for object classification and detection The result of the study, the application can recognize and differentiate 5 classes of banknote, then generate a sound to tell the result in real-time and reliable. So, the visually impaired people can apply this application in daily life.",
+  "abstract_source": "document",
+  "reported_keywords": [
+   "TensorFlow",
+   "Keras",
+   "Visually impaired people",
+   "Thai Banknote Type 16",
+   "Binary classification",
+   "Object detection"
+  ],
+  "classification": {
+   "category": [
+    "ai_data",
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "healthcare"
+   ],
+   "topic": [
+    "computer_vision"
+   ],
+   "technology": [
+    "python"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "android",
+     "label": "Android",
+     "status": "used",
+     "evidence": "Application supports only Android Platform, per Scope and Limitation."
+    }
+   ],
+   "domain": [
+    {
+     "key": "assistive_technology",
+     "label": "Assistive technology for visually impaired people",
+     "status": "used",
+     "evidence": "The application recognizes Thai banknotes and speaks the result so visually impaired people can apply it in daily life."
+    }
+   ],
+   "technology": [
+    {
+     "key": "tensorflow",
+     "label": "TensorFlow",
+     "status": "used",
+     "evidence": "TensorFlow which will be used for implementing the model for object classification and detection."
+    },
+    {
+     "key": "keras",
+     "label": "Keras",
+     "status": "used",
+     "evidence": "We will be using Keras with the TensorFlow as the backend to create the model."
+    },
+    {
+     "key": "tensorflow_mobile",
+     "label": "TensorFlow Mobile",
+     "status": "used",
+     "evidence": "TensorFlow provides the libraries for mobile platforms, the one that we are used for our project is called TensorFlow Mobile."
+    },
+    {
+     "key": "ssd",
+     "label": "Single Shot MultiBox Detector (SSD)",
+     "status": "used",
+     "evidence": "We used the SSD: Single Shot MultiBox Detector framework which based on Inception-v2 architecture for the detection model."
+    },
+    {
+     "key": "inception_v2",
+     "label": "Inception-v2",
+     "status": "used",
+     "evidence": "The base model configuration that we use for our project is ssd_inception_v2_coco."
+    },
+    {
+     "key": "coco",
+     "label": "COCO dataset",
+     "status": "used",
+     "evidence": "ssd_inception_v2_coco comes with the pre-trained weight on the COCO dataset, used via transfer learning."
+    },
+    {
+     "key": "labelimg",
+     "label": "LabelImg",
+     "status": "used",
+     "evidence": "For the banknotes detection pipeline, we will need to hand-label each images manually with LabelImg."
+    },
+    {
+     "key": "vgg_16",
+     "label": "VGG-16",
+     "status": "cited",
+     "evidence": "Originally, SSD use the VGG-16 convolutional neural network architecture as a base network."
+    },
+    {
+     "key": "google_text_to_speech",
+     "label": "Google Text-To-Speech API",
+     "status": "used",
+     "evidence": "We used the Google's Text-To-Speech API service to generate voice output in Thai and English."
+    },
+    {
+     "key": "android_sdk",
+     "label": "Android SDK",
+     "status": "used",
+     "evidence": "The tools that will be used in the study include, the android SDK for implementing the application for android device."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1724",
+  "canonical_title": "DECK: A B2B Customer Loyalty Point Transfer System using Blockchain Technology",
+  "aliases": [
+   "Deck"
+  ],
+  "phase": "final",
+  "course_code": "CS 4200",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Panusorn Srijamorn",
+    "student_id": "5713074"
+   },
+   {
+    "name": "Pichayuth Kittisriswai",
+    "student_id": "5713091"
+   }
+  ],
+  "advisor": "Dr. Songsak Channarukul",
+  "committee": [
+   "Asst. Prof. Dr. Thitipong Tanprasert",
+   "Dr. Kwankamol Nongpong"
+  ],
+  "abstract": "For years, customer loyalty programs have been launched on gas station, airlines, supermarkets, and grocery stores, typically in the form of credit cards or loyalty cards. While the memberships for many loyalty rewards programs are growing daily, many of these are not used regularly. That is because consumers have begun to move towards digital and cashless society, so the scope of loyalty programs has been changed. In this project, we are going to develop a universal loyalty program application. Users can keep their loyalty card and track their points transfer instantly via the application. Blockchain technology has used to create a secure and transparent record of all point transferring transactions.",
+  "abstract_source": "document",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile",
+    "desktop"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "nodejs"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [],
+   "domain": [
+    {
+     "key": "loyalty_programs",
+     "label": "Customer loyalty and rewards programs",
+     "status": "used",
+     "evidence": "We have implemented a universal loyalty program application which turns a physical loyalty card into a digital one, with point transfer between loyalty programs."
+    }
+   ],
+   "technology": [
+    {
+     "key": "blockchain",
+     "label": "Blockchain",
+     "status": "used",
+     "evidence": "Blockchain technology has used to create a secure and transparent record of all point transferring transactions."
+    },
+    {
+     "key": "hyperledger_fabric",
+     "label": "Hyperledger Fabric",
+     "status": "used",
+     "evidence": "In our project, we used Hyperledger Fabric platform, a permissioned private blockchain network."
+    },
+    {
+     "key": "hyperledger_composer",
+     "label": "Hyperledger Composer",
+     "status": "used",
+     "evidence": "In our application, we use Hyperledger composer to model and implement chaincode."
+    },
+    {
+     "key": "fabric_ca",
+     "label": "Hyperledger Fabric CA",
+     "status": "used",
+     "evidence": "We used Fabric CA Client to issue new certificate for the requester."
+    },
+    {
+     "key": "javascript",
+     "label": "JavaScript",
+     "status": "used",
+     "evidence": "The script file is written in JavaScript, and the backend uses Hyperledger Composer JavaScript APIs with NodeJS."
+    },
+    {
+     "key": "ethereum",
+     "label": "Ethereum",
+     "status": "cited",
+     "evidence": "Ethereum is described as an open-source public blockchain platform, and the team left it out because the project needs a private network with no cryptocurrency."
+    },
+    {
+     "key": "quorum",
+     "label": "Quorum",
+     "status": "cited",
+     "evidence": "Quorum is an Ethereum-based permissioned distributed ledger compared against Hyperledger Fabric in the platforms comparison."
+    },
+    {
+     "key": "bitcoin",
+     "label": "Bitcoin",
+     "status": "cited",
+     "evidence": "Blockchain is originally developed as the accounting method for the virtual currency Bitcoin."
+    },
+    {
+     "key": "go",
+     "label": "Go",
+     "status": "cited",
+     "evidence": "Chaincode or smart contract is a small program, written in Go, Node.js, and other programming languages."
+    }
+   ]
+  }
+ },
+ {
+  "id": "1725",
+  "canonical_title": "Divvy: Local Rides Sharing Application",
+  "aliases": [
+   "Divvy"
+  ],
+  "phase": "final",
+  "course_code": "CS 3200/IT 4291",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2017,
+  "students": [
+   {
+    "name": "Sittisak Tangpraditchai",
+    "student_id": "5813526"
+   },
+   {
+    "name": "Chitavorn Bhuvapanich",
+    "student_id": "5812039"
+   },
+   {
+    "name": "Varissara Tangsajjanuraksa",
+    "student_id": "5811095"
+   }
+  ],
+  "advisor": "Dr. Songsak Channarukul",
+  "committee": [
+   "Dr. Benjawan Srisura",
+   "A. Chayapol Moemeng"
+  ],
+  "abstract": "Nowadays, the technological advancement connects human and non- living thing together We have experienced various applications that use the concept “Ride Sharing”. They provide a more convenient way for transportation such as Grab and Uber. Ride Sharing is an instance of carpooling which is a concept that is widely accepted across the planet. Ride sharing means hailing privately owned cars. With the use of mobile applications, connection between drivers and passengers who would like to share rides becomes easier and more convenient. It would possibly provide significant social and environmental benefits as well.",
+  "abstract_source": "document",
+  "reported_keywords": [
+   "Ride Sharing",
+   "Driver",
+   "Passenger",
+   "Trip Companion",
+   "Real-Time Chat System",
+   "Matching"
+  ],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile"
+   ],
+   "domain": [
+    "transportation"
+   ],
+   "topic": [
+    "geolocation"
+   ],
+   "technology": [
+    "firebase"
+   ]
+  },
+  "discoveries": {
+   "category": [],
+   "platform": [
+    {
+     "key": "ios",
+     "label": "iOS",
+     "status": "used",
+     "evidence": "We have implemented a native application available on iOS platform, and Divvy is a smartphone application which will run in iOS."
+    }
+   ],
+   "domain": [
+    {
+     "key": "ride_sharing",
+     "label": "Ride sharing and carpooling",
+     "status": "used",
+     "evidence": "Divvy is a local ride sharing application for specific community such as university, organization and village, matching drivers and passengers by origin and destination."
+    }
+   ],
+   "technology": [
+    {
+     "key": "csharp",
+     "label": "C#",
+     "status": "used",
+     "evidence": "We used LINQ to retrieve, create, delete, and update from database and utilization of C# language to implement webservice functionalities."
+    },
+    {
+     "key": "rest_api",
+     "label": "RESTful API",
+     "status": "used",
+     "evidence": "Divvy web service as RESTful API receiving data request from application layer in a form of HTTP request."
+    },
+    {
+     "key": "linq",
+     "label": "LINQ",
+     "status": "used",
+     "evidence": "We used LINQ to retrieve, create, delete, and update from database."
+    },
+    {
+     "key": "sql",
+     "label": "SQL",
+     "status": "used",
+     "evidence": "The requests are translated into SQL by Data context to access the Divvy Database."
+    },
+    {
+     "key": "json",
+     "label": "JSON",
+     "status": "used",
+     "evidence": "Divvy web service and Firebase cloud messaging are handling those HTTP requests and respond JSON formatted output back to application layer."
+    },
+    {
+     "key": "google_maps",
+     "label": "Google Maps APIs",
+     "status": "used",
+     "evidence": "With the utilization of Google Maps APIs on Divvy, users are able to visualize the map with places' name, direction, and place images."
+    },
+    {
+     "key": "google_directions_api",
+     "label": "Google Directions API",
+     "status": "used",
+     "evidence": "To draw the path between original location and destination, we used Google direction API with GMSPolyline and GMSPath."
+    },
+    {
+     "key": "google_places_api",
+     "label": "Google Places API",
+     "status": "used",
+     "evidence": "For identifying the place, we used Google place API with Place Search and Query Autocomplete."
+    },
+    {
+     "key": "firebase_cloud_messaging",
+     "label": "Firebase Cloud Messaging",
+     "status": "used",
+     "evidence": "We have implemented Firebase cloud messaging to handle real-time chat system for matched drivers and passengers."
+    },
+    {
+     "key": "apple_push_notification_service",
+     "label": "Apple Push Notification service",
+     "status": "used",
+     "evidence": "We used Apple Push Notification service SSL imported from Firebase services to send remote notifications."
+    },
+    {
+     "key": "mvc",
+     "label": "Model-View-Controller",
+     "status": "used",
+     "evidence": "On application layer, we use model-view-controller concepts to develop Divvy."
+    },
+    {
+     "key": "au_spark",
+     "label": "AU Spark",
+     "status": "used",
+     "evidence": "Divvy connects to AU Spark, an innovative information system in Assumption University, and requires users to sign in with their AU spark account."
+    }
+   ]
+  }
+ }
+]

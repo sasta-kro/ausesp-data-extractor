@@ -1,0 +1,133 @@
+[
+ {
+  "id": "2116",
+  "canonical_title": "Data Analytics with D-Network Worldwide Company",
+  "aliases": [
+   "Data Analytic with D-Network Company"
+  ],
+  "phase": "final",
+  "course_code": "IT4292",
+  "program": "information_technology",
+  "semester": "1",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Tanus Witpattanakul",
+    "student_id": "6015131"
+   },
+   {
+    "name": "Pon-ake Phayak",
+    "student_id": "6017503"
+   },
+   {
+    "name": "Kittisak Sadee",
+    "student_id": "6037506"
+   }
+  ],
+  "advisor": "Asst. Prof. Dr. Darun Kesrarat",
+  "committee": [
+   "Asst. Prof. Dr. Benjawan Srisura",
+   "A. Suparwat Charoenvikrom"
+  ],
+  "abstract": "D-Network Worldwide Company sells food supplement products through direct selling, and its existing backend platform showed order data only as plain data tables with no analysis or graphs. The team built a web-based analytic dashboard from the company's order data to support faster decision making. Users can view five reports covering sale, buyer, product, membership, and overall summary, each shown with bar, line, area, or pie charts and switchable data tables, while admins can set yearly sale targets, manage user accounts, and import updated CSV data. The project followed an agile approach and was documented with data flow diagrams and an entity relationship diagram. Interviews with the IT and finance managers found the system easy to use and valuable as a prototype for future big data work, although it is not linked to the main backend, does not update in real time, and accepts only CSV files in a fixed format.",
+  "abstract_source": "generated",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "ai_data",
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "mysql"
+   ]
+  },
+  "discoveries": {
+   "category": [
+    {
+     "key": "data_visualization",
+     "label": "Data visualization",
+     "status": "used",
+     "evidence": "Report sections list 'Core material used: Bar chart, and data table', 'Area chart with searchable options', 'line chart', and 'Membership ratio: show overall type of user in this company by using pie chart'."
+    }
+   ],
+   "platform": [],
+   "domain": [
+    {
+     "key": "direct_selling",
+     "label": "Direct selling / MLM",
+     "status": "used",
+     "evidence": "Introduction: 'D-Network company is the company that currently sell products in form of direct sell by presenting food supplement to customers', with User, Saler, and Member purchasing tiers."
+    },
+    {
+     "key": "food_supplements",
+     "label": "Food supplements and nutrition products",
+     "status": "used",
+     "evidence": "Company Background: 'focusing on selling supplementary product for example, nutrient product'."
+    },
+    {
+     "key": "business_intelligence",
+     "label": "Business intelligence and analytics dashboards",
+     "status": "used",
+     "evidence": "The system is an 'Analytic Dashboard' with five reports built 'to conclude the information of each user type for decision making to the company'."
+    }
+   ],
+   "technology": [
+    {
+     "key": "codeigniter",
+     "label": "CodeIgniter",
+     "status": "used",
+     "evidence": "Introduction: 'we first learn the tool that IT leader team has assigned us to do, for example, code igniter for web based'."
+    },
+    {
+     "key": "xampp",
+     "label": "XAMPP",
+     "status": "used",
+     "evidence": "Table 2: All Development Tools used lists XAMPP v3.2.3 as a non-paid development tool."
+    },
+    {
+     "key": "apache",
+     "label": "Apache HTTP Server",
+     "status": "used",
+     "evidence": "Table 2 lists Apache as a component bundled with XAMPP."
+    },
+    {
+     "key": "filezilla",
+     "label": "FileZilla",
+     "status": "used",
+     "evidence": "Table 2 lists FileZilla as a component bundled with XAMPP."
+    },
+    {
+     "key": "visual_studio_code",
+     "label": "Visual Studio Code",
+     "status": "used",
+     "evidence": "Table 2: All Development Tools used lists Visual Studio Code version 1.54.1."
+    },
+    {
+     "key": "adobe_dreamweaver",
+     "label": "Adobe Dreamweaver",
+     "status": "used",
+     "evidence": "Table 2: All Development Tools used lists Adobe Dreamweaver, Adobe CC 2020, non-paid version of software."
+    },
+    {
+     "key": "lucidchart",
+     "label": "Lucidchart",
+     "status": "used",
+     "evidence": "Table 2 lists 'Lucid Chart Free Trial' and Reference [6] is https://www.lucidchart.com/pages/."
+    },
+    {
+     "key": "hyper_admin_theme",
+     "label": "Hyper SaaS analytics dashboard theme (CoderThemes)",
+     "status": "cited",
+     "evidence": "Reference [4] https://coderthemes.com/hyper/saas/dashboard-analytics.html."
+    }
+   ]
+  }
+ }
+]
