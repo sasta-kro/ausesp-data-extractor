@@ -34,11 +34,14 @@ Repository split:
 ## Repository layout
 
 ```text
-ground-truth/batches/    hand-transcribed records, one file per work batch
-ground-truth/discovery/  taxonomy research notes with page-level evidence
-enrichment/              second-pass products: logos, repository links, liveness
-steps/                   preparation, conversion, and build tooling
-output/reviewed-import.csv   the import product (untracked)
+ground-truth/             hand-transcribed records, one file per work batch
+ground-truth/discovery/   taxonomy research notes with page-level evidence
+notes/                    maintainer notes: policies, decisions, traps, reviews
+steps/                    preparation, conversion, and build tooling
+output/                   deliverables
+output/reviewed-import.csv    the import product (rebuilt, untracked)
+output/enrichment/            logos, per-project records, repository links,
+                              link liveness (tracked, see notes/enrichment-pass.md)
 ```
 
 ## Pipeline
@@ -61,9 +64,10 @@ output/import.csv                import into AUSE Discovery admin UI
 
 Steps 1 and 2 came from the earlier frontmatter-extractor project. Step 3
 is regex-based and never reached the quality of the hand-transcribed
-records; its known defects are listed below. The shipped CSV is built from
-the ground truth by `steps/build_reviewed_csv.py`, which is the step that
-matters.
+records; its known defects are in `notes/regex-pipeline-defects.md`. The
+shipped CSV is built from the ground truth by `steps/build_reviewed_csv.py`,
+which is the step that matters. Fix data in the batch records, never in the
+CSV.
 
 ## Usage
 
@@ -101,128 +105,19 @@ The taxonomy file comes from the main repository. The extractor can only
 emit keys that file defines. Key additions happen there, then sync to the
 database with `ausectl catalog sync`.
 
-## Dataset notes
+## Maintainer notes
 
-- `ground-truth/batches/` holds one JSON record per project, transcribed
-  directly from the source documents: verbatim titles and abstracts, people
-  as printed, classifications restricted to the keys defined in the main
-  repository. Where a document prints no abstract, a short factual summary
-  based on the document's own content stands in. Fix data in the batch
-  records, never in the CSV.
-- Person names are normalized at build time: honorifics and academic titles
-  are stripped, truncated surname-less forms are completed against the rest
-  of the corpus, and spelling variants of the same person merge through
-  their shared student id.
-- Aliases equal to their row title (case-insensitive) are filtered out at
-  build time; the importer rejects them.
-- Five projects print no semester or academic year anywhere and cannot
-  import: 1651, 1661, 1813, 1904, 2146. Two more print no advisor
-  (1628, 1800); both stay in the dataset with an empty advisor list.
-
-## Enrichment pass (project logos and repository links)
-
-A second pass over the full corpus produced, per project:
-
-- `enrichment/logos/<id>.png` — the project's own logo, cropped at 300 DPI from
-  the report cover or slide title page. Only project-specific marks are taken:
-  reports carrying just the university crest record `au_crest_only` and get no
-  image. 72 of 220 projects have a logo.
-- `enrichment/records/<id>.json` and `enrichment/manifest.json` — logo
-  provenance (source file, page, crop box) plus every repository URL found in
-  the documents, each classified as `project_repo` (the team's own repository,
-  17 across the corpus) or `third_party_reference` (a cited library such as
-  tesseract or zxing, kept for provenance but not for display).
-- `enrichment/liveness.json` — public accessibility of each URL at check time:
-  `public` (200, green), `not_found` (404, private or deleted, shown as
-  "Not accessible (private or deleted)"), `unknown` (rate limit or network
-  error, "Unverified"). Renamed repositories resolve to their new home through
-  the recorded final URL.
-
-The pipeline is `steps/prepare_enrichment.py` (stage per-project sources,
-including RAR archives, legacy .doc media, and PPTX posters) →
-`steps/render_enrichment.py` (render candidate pages) →
-`steps/grep_repo_urls.py` (text-layer URL harvest) → `steps/crop_logo.py`
-(crop or copy, with blank and sliver rejection) → `steps/check_link_liveness.py`
-→ `steps/classify_links.py` (hand-reviewed owner/repo classification) →
-`steps/merge_enrichment.py` (validation and manifest). Promotion of a logo to
-the AUSE Discovery UI, and where the bytes live (representative-image field or
-a new artifact kind on pluggable artifact storage), is a decision recorded in
-the main repository, deferred until integration.
-
-## Person-name canonicalization
-
-Documents print the same person under different spellings, and the importer
-matches people by exact student id or by case/space-insensitive name, so any
-spelling that differs in letters becomes a separate person row. The build step
-therefore applies a hand-reviewed canonical map (`CANONICAL_PEOPLE` in
-`steps/build_reviewed_csv.py`) after honorific stripping. Ground-truth records
-stay verbatim; the map is the only place variants collapse. The full
-duplication analysis (38 fuzzy pairs across 416 post-normalization names) was
-reviewed before the map was written.
-
-Policies and judgment calls, recorded so they are not re-litigated:
-
-- Staff canonical form = the most frequent mention, cross-checked against real
-  AU Vincent Mary faculty names. Fifteen professor spelling families collapsed
-  (Anilkumar Kothalil Gopalakrishnan had six spellings alone, including
-  initial and truncated forms; "Dean" is not in the honorific regex, so
-  "Dean Suparwat Charoenvikrom" needed an explicit map entry).
-- Burmese names carry no surname: every word is part of a single given name,
-  spacing is not significant, and elements like Aung, Moe, Oo, Htet, Naing are
-  name parts, not family names. Students sharing such elements are never the
-  same person by that fact alone; only a shared 7-digit student id proves
-  identity. `Phone Pyae Kyaw Swar` is a manual fix: his documents print fused
-  spellings (`PhonePyaeKyawSwar`, `PhonePyae KyawSwar`) and the map supplies
-  the properly spaced form.
-- Distinct student ids are definitive even when names are nearly identical:
-  Vibolrottana Seng (6217429) and Vibolrottanak Seng (6118173) are two
-  different students who share a title page, not a duplicate.
-- Student display spellings picked by evidence: Paranan **Vitpornnitipacha**
-  (her own GitHub profile and LinkedIn), Taechasit Sarasitt (his GitHub
-  username `taechasit1001`), Jarukorn Thuengjitvilas (the sp-1727 record),
-  Kwangmin Kim (the only CSV-visible form). Setthanant Tetanonsakul is a
-  judgment call: no online trace exists, and the spelling matches standard
-  Thai romanization of the likely original (เสฏฐนันท์).
-- Four students have no id printed anywhere in their documents and the ids
-  cannot be recovered through the university anymore (the students are gone
-  from MS Teams and their email accounts): Kamonchanok Arttanate, Nathanan
-  Pornprapee, Nattalie Shinkoi, Sai Kham Sheng (the last two had wrong ids
-  removed earlier, see the extraction notes). They import as students without
-  ids as documented exceptions; the ids may be recoverable from paper records
-  later and can then be filled in.
-
-## Known defects of the regex pipeline (step 3)
-
-Observed in real import output, 2026-09-05:
-
-- Advisor parsing produced `).` for project 2006 (Face Mask Detection):
-  parenthesized signature artifacts leak into the advisor field.
-- Committee parsing produced literal underscores for project 2121:
-  signature-line separators are not filtered.
-- Some projects with a real abstract extracted none (2121 among them).
-- Titles sometimes swallow following student names or course lines.
-- Word-per-line PDF extraction mode misses some students (2238).
-- Classification uses title and abstract only, so methodology tools
-  (Qt, Spring Boot, and similar) are never tagged. Full-document keyword
-  matching was tried and rejected: literature-review mentions create false
-  tags. The workable fix is reading the tools chapters specifically.
-
-## Known document traps
-
-- Stale template titles: `Text Classification for Education Publication`
-  appears on approval pages and headers of unrelated projects.
-- Fictional placeholder approvers: Hal Emmerich, Frank Jaeger, and Drago
-  Pettrovich Madnar (video-game character names) on project 2596.
-- Cover/approval spelling conflicts: RANGOON vs YANGOON (26006),
-  Vipornnitipacha vs Vitpornnitipacha (2148).
-- Cover team brands instead of titles: AutoWise (26010).
-- Student IDs print as `ddd-dddd`, seven digits total, and can sit before
-  or after names, in parentheses, or on the following line.
-- The same project is filed under two numbers in six places: 1703/1711,
-  1934/2003, 1906/2004, 1827/1920, 2579/26009, and 2113/2145. Both sides
-  are kept; deselect one at import time.
-- Some 2022-onward PDFs render blank in common text extraction paths. The
-  preparation step keeps plain-text conversions alongside them.
+- `notes/dataset-notes.md` — dataset contents, the five unimportable
+  projects, where data fixes go.
+- `notes/person-name-canonicalization.md` — the person dedup policies
+  (Burmese names, student-id rules, spelling tie-breaks).
+- `notes/enrichment-pass.md` — the logo and repository-link products and
+  their open integration decisions.
+- `notes/regex-pipeline-defects.md` — why step 3 is reference-only.
+- `notes/document-traps.md` — recurring corpus patterns that break naive
+  extraction.
+- `notes/people-duplication-review.md` — the full 2026-09-11 duplication
+  analysis behind the canonical name map.
 
 ## License
 

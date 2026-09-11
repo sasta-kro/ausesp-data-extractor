@@ -4,13 +4,13 @@
 **/**.pdf
 **/**.zip
 
-output/
+output/*
+!output/enrichment/
 test-subset/
 
 all-senior-projects/
 
 .venv/
-output/
 __pycache__/
 
 .tmp-prepared/
