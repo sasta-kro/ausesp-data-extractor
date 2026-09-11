@@ -44,10 +44,59 @@ HONORIFIC = re.compile(
     r"|Prof|Doctor|Doc|Dr|Aj|A)(?:\.|\b)\s*)+")
 DOCTORATE = re.compile(r",?\s*Ph\.?\s*D\.?\s*$", re.IGNORECASE)
 
+# Hand-reviewed canonical forms for people whose names print inconsistently
+# across documents. Applied AFTER honorific stripping, keyed by the squished
+# lowercase name. Ground-truth records stay verbatim; this map is the single
+# place where spelling variants collapse. Rationale for each judgment call is
+# recorded in the README ("Person-name canonicalization").
+CANONICAL_PEOPLE = {
+    # staff (AU Vincent Mary faculty; canonical = most frequent mention,
+    # cross-checked against real faculty names)
+    "anilkumar kothalil gopalakrishnan": "Anilkumar Kothalil Gopalakrishnan",
+    "anilkumar k. gopalakrishnan": "Anilkumar Kothalil Gopalakrishnan",
+    "anilkumar kothalil": "Anilkumar Kothalil Gopalakrishnan",
+    "anilkumar kothalil gopalakrishna": "Anilkumar Kothalil Gopalakrishnan",
+    "anilkumar kothalil gopalkrishnan": "Anilkumar Kothalil Gopalakrishnan",
+    "darun": "Darun Kesrarat",
+    "phyo min htun": "Phyo Min Tun",
+    "thanachai thumthawatworm": "Thanachai Thumthawatworn",
+    "benjawan sirsura": "Benjawan Srisura",
+    "benjawin srisura": "Benjawan Srisura",
+    "chayapol meomeng": "Chayapol Moemeng",
+    "chayapol meomong": "Chayapol Moemeng",
+    "chayapol momeng": "Chayapol Moemeng",
+    "chokdee liopanich": "Chokdee Liophanich",
+    "atthipat hirunadisuan": "Athiphat Hirunadisuan",
+    "jichun lu": "Jinchun Lu",
+    "lu jinchun": "Jinchun Lu",
+    "kwankamol knongpong": "Kwankamol Nongpong",
+    "mana thanachan": "Mana Tanachan",
+    "piyakul tillpart": "Piyakul Tillapart",
+    "dobri batovski": "Dobri Atanassov Batovski",
+    "dean suparwat charoenvikrom": "Suparwat Charoenvikrom",
+    "supawat charoenvikrom": "Suparwat Charoenvikrom",
+    "tang tianai": "Tianai Tang",
+    # students (verified by shared student_id; display spelling picked by the
+    # evidence noted in the README)
+    "jarukorn theungjitvilas": "Jarukorn Thuengjitvilas",
+    "kwang min kim": "Kwangmin Kim",
+    "paranan vipornnitipacha": "Paranan Vitpornnitipacha",
+    "sethanant tetanonsakul": "Setthanant Tetanonsakul",
+    "tachasit sarasitt": "Taechasit Sarasitt",
+    "phonepyaekyawswar": "Phone Pyae Kyaw Swar",
+    "phonepyae kyawswar": "Phone Pyae Kyaw Swar",
+    "artisd c.": "Artisd Chanyawadee",
+    "chawan v.": "Chawan Vattanalap",
+    "brighton t. shanji": "Brighton Tapiwa Shanji",
+    "chinnawat w.": "Chinnawat Wongpatamajaroen",
+    "alexander j. fuller": "Alexander James Fuller",
+}
+
 
 def person_name(name: str) -> str:
     cleaned = HONORIFIC.sub("", DOCTORATE.sub("", squish(name))).strip()
-    return cleaned or squish(name)
+    cleaned = cleaned or squish(name)
+    return CANONICAL_PEOPLE.get(cleaned.lower(), cleaned)
 
 
 def load_taxonomy(path: Path) -> dict[str, set[str]]:

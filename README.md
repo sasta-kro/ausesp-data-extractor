@@ -149,6 +149,48 @@ the AUSE Discovery UI, and where the bytes live (representative-image field or
 a new artifact kind on pluggable artifact storage), is a decision recorded in
 the main repository, deferred until integration.
 
+## Person-name canonicalization
+
+Documents print the same person under different spellings, and the importer
+matches people by exact student id or by case/space-insensitive name, so any
+spelling that differs in letters becomes a separate person row. The build step
+therefore applies a hand-reviewed canonical map (`CANONICAL_PEOPLE` in
+`steps/build_reviewed_csv.py`) after honorific stripping. Ground-truth records
+stay verbatim; the map is the only place variants collapse. The full
+duplication analysis (38 fuzzy pairs across 416 post-normalization names) was
+reviewed before the map was written.
+
+Policies and judgment calls, recorded so they are not re-litigated:
+
+- Staff canonical form = the most frequent mention, cross-checked against real
+  AU Vincent Mary faculty names. Fifteen professor spelling families collapsed
+  (Anilkumar Kothalil Gopalakrishnan had six spellings alone, including
+  initial and truncated forms; "Dean" is not in the honorific regex, so
+  "Dean Suparwat Charoenvikrom" needed an explicit map entry).
+- Burmese names carry no surname: every word is part of a single given name,
+  spacing is not significant, and elements like Aung, Moe, Oo, Htet, Naing are
+  name parts, not family names. Students sharing such elements are never the
+  same person by that fact alone; only a shared 7-digit student id proves
+  identity. `Phone Pyae Kyaw Swar` is a manual fix: his documents print fused
+  spellings (`PhonePyaeKyawSwar`, `PhonePyae KyawSwar`) and the map supplies
+  the properly spaced form.
+- Distinct student ids are definitive even when names are nearly identical:
+  Vibolrottana Seng (6217429) and Vibolrottanak Seng (6118173) are two
+  different students who share a title page, not a duplicate.
+- Student display spellings picked by evidence: Paranan **Vitpornnitipacha**
+  (her own GitHub profile and LinkedIn), Taechasit Sarasitt (his GitHub
+  username `taechasit1001`), Jarukorn Thuengjitvilas (the sp-1727 record),
+  Kwangmin Kim (the only CSV-visible form). Setthanant Tetanonsakul is a
+  judgment call: no online trace exists, and the spelling matches standard
+  Thai romanization of the likely original (เสฏฐนันท์).
+- Four students have no id printed anywhere in their documents and the ids
+  cannot be recovered through the university anymore (the students are gone
+  from MS Teams and their email accounts): Kamonchanok Arttanate, Nathanan
+  Pornprapee, Nattalie Shinkoi, Sai Kham Sheng (the last two had wrong ids
+  removed earlier, see the extraction notes). They import as students without
+  ids as documented exceptions; the ids may be recoverable from paper records
+  later and can then be filled in.
+
 ## Known defects of the regex pipeline (step 3)
 
 Observed in real import output, 2026-09-05:
