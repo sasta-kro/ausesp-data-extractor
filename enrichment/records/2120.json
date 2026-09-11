@@ -1,0 +1,17 @@
+{
+  "id": "2120",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {
+      "pdf": "slides.pdf",
+      "page": 1,
+      "box": [0.83, 0.16, 0.97, 0.39]
+    },
+    "output": "logos/2120.png",
+    "verified": true,
+    "note": "Habitat cat mascot app mark, also used as app icon in comparison table on slide 7"
+  },
+  "links": []
+}

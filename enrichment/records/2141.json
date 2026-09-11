@@ -1,0 +1,13 @@
+{
+  "id": "2141",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {"pdf": "slides.pdf", "page": 1, "box": [0.20, 0.20, 0.76, 0.79]},
+    "output": "logos/2141.png",
+    "verified": true,
+    "note": "CV Coach stylized A mark with letter-spaced wordmark from title slide"
+  },
+  "links": []
+}

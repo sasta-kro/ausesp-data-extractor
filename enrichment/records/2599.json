@@ -1,0 +1,13 @@
+{
+  "id": "2599",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {"pdf": "slides.pdf", "page": 1, "box": [0.05, 0.12, 0.95, 0.48]},
+    "output": "logos/2599.png",
+    "verified": true,
+    "note": "Stylized SPACE RAIL game wordmark (white letters, gold outline) on title slide"
+  },
+  "links": []
+}

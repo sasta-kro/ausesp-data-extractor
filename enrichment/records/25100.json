@@ -1,0 +1,13 @@
+{
+  "id": "25100",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {"pdf": "slides.pdf", "page": 1, "box": [0.14, 0.28, 0.4, 0.7]},
+    "output": "logos/25100.png",
+    "verified": true,
+    "note": "ULTRACARE camera-and-heart emblem with wordmark on title slide"
+  },
+  "links": []
+}

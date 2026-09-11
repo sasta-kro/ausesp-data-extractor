@@ -1,0 +1,13 @@
+{
+  "id": "2042",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {"pdf": "slides.pdf", "page": 4, "box": [0.03, 0.37, 0.30, 0.82]},
+    "output": "logos/2042.png",
+    "verified": true,
+    "note": "BoomBoxing boxing-gloves emblem, largest clean occurrence; also appears smaller on slides page 1 next to the wordmark."
+  },
+  "links": []
+}

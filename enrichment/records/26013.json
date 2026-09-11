@@ -1,0 +1,13 @@
+{
+  "id": "26013",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {"pdf": "slides.pdf", "page": 1, "box": [0.70, 0.55, 1.0, 1.0]},
+    "output": "logos/26013.png",
+    "verified": true,
+    "note": "Recurring cat-with-magnifying-glass mascot used as deck brand mark on the title slide; plain-text CODE_FIX title is not stylized."
+  },
+  "links": []
+}

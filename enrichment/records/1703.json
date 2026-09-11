@@ -1,0 +1,15 @@
+{
+  "id": "1703",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {
+      "media": "image10.png"
+    },
+    "output": "logos/1703.png",
+    "verified": true,
+    "note": null
+  },
+  "links": []
+}

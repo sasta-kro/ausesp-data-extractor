@@ -1,0 +1,13 @@
+{
+  "id": "25115",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {"pdf": "slides.pdf", "page": 1, "box": [0.00, 0.00, 0.16, 0.30]},
+    "output": "logos/25115.png",
+    "verified": true,
+    "note": "Hand-drawn Battle of Talingchan game emblem on title slide; some key-art characters touch the crop corner"
+  },
+  "links": []
+}

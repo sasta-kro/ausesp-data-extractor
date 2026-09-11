@@ -1,0 +1,13 @@
+{
+  "id": "2226",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {"pdf": "slides.pdf", "page": 1, "box": [0.03, 0.05, 0.24, 0.20]},
+    "output": "logos/2226.png",
+    "verified": true,
+    "note": "Hex-a-gon team brand mark (teal chevrons plus wordmark) from slide header"
+  },
+  "links": []
+}

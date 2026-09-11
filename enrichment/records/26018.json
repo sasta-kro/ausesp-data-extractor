@@ -1,0 +1,13 @@
+{
+  "id": "26018",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {"pdf": "slides.pdf", "page": 6, "box": [0.27, 0.17, 0.36, 0.29]},
+    "output": "logos/26018.png",
+    "verified": true,
+    "note": "DockForge VS Code extension icon (whale tail with wrench) shown atop the system architecture diagram."
+  },
+  "links": []
+}

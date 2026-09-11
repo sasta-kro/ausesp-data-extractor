@@ -1,0 +1,13 @@
+{
+  "id": "2039",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {"pdf": "slides.pdf", "page": 4, "box": [0.40, 0.33, 0.57, 0.62]},
+    "output": "logos/2039.png",
+    "verified": true,
+    "note": "Tickey yellow circle app mark inside phone illustration; a black hand icon slightly overlaps its lower-left in the source slide. No rendered external evidence pages were found to view."
+  },
+  "links": []
+}

@@ -1,0 +1,13 @@
+{
+  "id": "26026",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {"pdf": "slides.pdf", "page": 1, "box": [0.03, 0.65, 0.36, 0.82]},
+    "output": "logos/26026.png",
+    "verified": true,
+    "note": "Stylized MGNITION wordmark on title slide"
+  },
+  "links": []
+}

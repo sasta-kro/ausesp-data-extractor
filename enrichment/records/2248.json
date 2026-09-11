@@ -1,0 +1,13 @@
+{
+  "id": "2248",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {"pdf": "slides.pdf", "page": 1, "box": [0.04, 0.28, 0.98, 0.78]},
+    "output": "logos/2248.png",
+    "verified": true,
+    "note": "Stylized arched bubble-letter wordmark of the project title on the title slide; minor template doodles (tulips, pencil) remain in frame."
+  },
+  "links": []
+}

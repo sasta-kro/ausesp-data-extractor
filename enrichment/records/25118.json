@@ -1,0 +1,13 @@
+{
+  "id": "25118",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {"pdf": "slides.pdf", "page": 1, "box": [0.02, 0.00, 0.31, 0.45]},
+    "output": "logos/25118.png",
+    "verified": true,
+    "note": "TrustLoop pinwheel emblem with wordmark and tagline on title slide"
+  },
+  "links": []
+}

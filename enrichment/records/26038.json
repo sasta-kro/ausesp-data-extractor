@@ -1,0 +1,17 @@
+{
+  "id": "26038",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {
+      "pdf": "slides.pdf",
+      "page": 1,
+      "box": [0.10, 0.58, 0.90, 0.80]
+    },
+    "output": "logos/26038.png",
+    "verified": true,
+    "note": "Brush-style BANGKOK BUDDY wordmark on title slide"
+  },
+  "links": []
+}

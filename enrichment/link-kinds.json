@@ -1,0 +1,263 @@
+{
+ "https://github.com/adawolfs/flutter_mlkit/tree/master/lib": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/aieml/face-mask-detection-keras": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/akshatkaush/exercise-count": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/alamofire/alamofire": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/aretisd/sakpha-": {
+  "kind": "project_repo",
+  "note": "owner = Artisd Chanyawadee (student)",
+  "uncertain": false
+ },
+ "https://github.com/arthurhub/android": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/balajisrinivas/face-mask-detection": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/chawanvtp/sakpha-android": {
+  "kind": "project_repo",
+  "note": "owner = Chawan Vattanalap (student)",
+  "uncertain": false
+ },
+ "https://github.com/cmu-perceptual-computing-": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/cmu-perceptual-computing-lab/openpose": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/electronnet/electron.net": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/en/actions": {
+  "kind": "dropped",
+  "note": "scrape artifact of a docs URL"
+ },
+ "https://github.com/fozziethebeat/s-space/blob": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/garrukzijian/cvcoach": {
+  "kind": "project_repo",
+  "note": "owner = Zijian Zhou (student)",
+  "uncertain": false
+ },
+ "https://github.com/google/leveldb": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/haerulmuttaqin/762b4f041cf562ba6fd72cac1c1221cc": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/haerulmuttaqin/mypets-app": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/hdodenhof/circleimageview": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/hyperledger/fabric-sdk-go/blob/main/pkg/fab/txn/env.go": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/infineon/mqtt": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/jeromepan/enhancement-of-photographs-taken-with-a-moving-": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/jg-fisher/dinoai": {
+  "kind": "project_repo",
+  "note": "owner not matched to a student; DinoAI plausibly the product name",
+  "uncertain": true
+ },
+ "https://github.com/jkjung-avt/790a1410b91c170187f8dbdb8cc698c8": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/kusk24/augo": {
+  "kind": "project_repo",
+  "note": "repo name matches AUGo campus AR app",
+  "uncertain": false
+ },
+ "https://github.com/maxbachmann/rapidfuzz": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/microsoft/vscode-webview-ui-toolkit": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/miyakogi/pyp-peteer": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/morgancsit/lba-frontend": {
+  "kind": "project_repo",
+  "note": "owner = Morgan Kieffer (student)",
+  "uncertain": false
+ },
+ "https://github.com/morgancsit/sp1-longtailbookingdapp": {
+  "kind": "project_repo",
+  "note": "owner = Morgan Kieffer (student)",
+  "uncertain": false
+ },
+ "https://github.com/openai/whisper": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/openalpr/openalpr": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/openalpr/openalpr/issues/660": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/pandalabos/smarthomefinal": {
+  "kind": "project_repo",
+  "note": "repo name matches Smart Home Interface",
+  "uncertain": false
+ },
+ "https://github.com/pilgr/paper": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/pmndrs/zustand": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/pythainlp/pythainlp": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/rey5137/material": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/rkcosmos/deepcut": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/rohitks1997/cinemo": {
+  "kind": "project_repo",
+  "note": "owner = Rohit Kumar Setthachok (student)",
+  "uncertain": false
+ },
+ "https://github.com/rwightman/posenet-python": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/sakrist/vbpiechart": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/seatgeek/thefuzz": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/serhii-bielik/cs4200-sp2-advising": {
+  "kind": "project_repo",
+  "note": "owner = Serhii Bielik (student)",
+  "uncertain": false
+ },
+ "https://github.com/singekkasith/senior-project-i": {
+  "kind": "project_repo",
+  "note": "owner = Ekkasith Singmaneechai (student)",
+  "uncertain": false
+ },
+ "https://github.com/spring-projects/spring-ai/issues/866": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/taechasit1001/au_seniorproject_1": {
+  "kind": "project_repo",
+  "note": "owner = Taechasit Sarasitt (student)",
+  "uncertain": false
+ },
+ "https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/de": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/tensorflow/models/tree/master/research/object_detection/samples/configs": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/tesseract-ocr/tesseract": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/tesseract-ocr/tesseract/issues/296": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/theskumar/python-dotenv": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/thuyein96/internal-developer-tool-orchestronic": {
+  "kind": "project_repo",
+  "note": "owner = Thu Yein (student)",
+  "uncertain": false
+ },
+ "https://github.com/tj/commander.js": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/tutsplus/how-to-use-the-google-cloud-vision-api-in-android-apps": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/tzutalin/labelimg": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/williampoch/aspectbasedsentimentanalysis": {
+  "kind": "project_repo",
+  "note": "owner = William Sivutha Poch (student)",
+  "uncertain": false
+ },
+ "https://github.com/williampoch/sp1": {
+  "kind": "project_repo",
+  "note": "owner = William Sivutha Poch (student)",
+  "uncertain": false
+ },
+ "https://github.com/williampoch/sp1website": {
+  "kind": "project_repo",
+  "note": "owner = William Sivutha Poch (student)",
+  "uncertain": false
+ },
+ "https://github.com/worldveil/dejavu": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://github.com/zxing/zxing": {
+  "kind": "third_party_reference",
+  "note": "cited library, tool, or tutorial repository"
+ },
+ "https://gitlab.com/islabac/smartdigest/concept-predictor-api": {
+  "kind": "project_repo",
+  "note": "ISL lab GitLab hosting project work",
+  "uncertain": false
+ }
+}

@@ -36,6 +36,7 @@ Repository split:
 ```text
 ground-truth/batches/    hand-transcribed records, one file per work batch
 ground-truth/discovery/  taxonomy research notes with page-level evidence
+enrichment/              second-pass products: logos, repository links, liveness
 steps/                   preparation, conversion, and build tooling
 output/reviewed-import.csv   the import product (untracked)
 ```
@@ -117,6 +118,36 @@ database with `ausectl catalog sync`.
 - Five projects print no semester or academic year anywhere and cannot
   import: 1651, 1661, 1813, 1904, 2146. Two more print no advisor
   (1628, 1800); both stay in the dataset with an empty advisor list.
+
+## Enrichment pass (project logos and repository links)
+
+A second pass over the full corpus produced, per project:
+
+- `enrichment/logos/<id>.png` — the project's own logo, cropped at 300 DPI from
+  the report cover or slide title page. Only project-specific marks are taken:
+  reports carrying just the university crest record `au_crest_only` and get no
+  image. 72 of 220 projects have a logo.
+- `enrichment/records/<id>.json` and `enrichment/manifest.json` — logo
+  provenance (source file, page, crop box) plus every repository URL found in
+  the documents, each classified as `project_repo` (the team's own repository,
+  17 across the corpus) or `third_party_reference` (a cited library such as
+  tesseract or zxing, kept for provenance but not for display).
+- `enrichment/liveness.json` — public accessibility of each URL at check time:
+  `public` (200, green), `not_found` (404, private or deleted, shown as
+  "Not accessible (private or deleted)"), `unknown` (rate limit or network
+  error, "Unverified"). Renamed repositories resolve to their new home through
+  the recorded final URL.
+
+The pipeline is `steps/prepare_enrichment.py` (stage per-project sources,
+including RAR archives, legacy .doc media, and PPTX posters) →
+`steps/render_enrichment.py` (render candidate pages) →
+`steps/grep_repo_urls.py` (text-layer URL harvest) → `steps/crop_logo.py`
+(crop or copy, with blank and sliver rejection) → `steps/check_link_liveness.py`
+→ `steps/classify_links.py` (hand-reviewed owner/repo classification) →
+`steps/merge_enrichment.py` (validation and manifest). Promotion of a logo to
+the AUSE Discovery UI, and where the bytes live (representative-image field or
+a new artifact kind on pluggable artifact storage), is a decision recorded in
+the main repository, deferred until integration.
 
 ## Known defects of the regex pipeline (step 3)
 

@@ -1,0 +1,13 @@
+{
+  "id": "2145",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {"pdf": "slides.pdf", "page": 1, "box": [0.45, 0.10, 0.97, 0.90]},
+    "output": "logos/2145.png",
+    "verified": true,
+    "note": "Designed room-with-person-and-wifi icon emblem from the title slide"
+  },
+  "links": []
+}

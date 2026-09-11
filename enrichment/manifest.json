@@ -1,0 +1,4614 @@
+{
+ "1616": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": null
+  },
+  "links": [
+   {
+    "url": "https://github.com/fozziethebeat/s-space/blob",
+    "normalized": "https://github.com/fozziethebeat/s-space/blob",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 26,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/fozziethebeat/s-space/blob",
+     "status": "not_found",
+     "http_status": 404,
+     "final_url": "https://github.com/fozziethebeat/s-space/blob",
+     "checked_at": "2026-09-11T07:31:00+00:00"
+    }
+   }
+  ]
+ },
+ "1621": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": null
+  },
+  "links": []
+ },
+ "1627": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Viewed first 25 of 34 DOCX media images; only the AU crest, diagrams, third-party logos, app screenshots and car photos."
+  },
+  "links": [
+   {
+    "url": "https://github.com/jkjung-avt/790a1410b91c170187f8dbdb8cc698c8",
+    "normalized": "https://github.com/jkjung-avt/790a1410b91c170187f8dbdb8cc698c8",
+    "found_in": [
+     {
+      "file": "report.docx",
+      "page": null,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/jkjung-avt/790a1410b91c170187f8dbdb8cc698c8",
+     "status": "not_found",
+     "http_status": 404,
+     "final_url": "https://github.com/jkjung-avt/790a1410b91c170187f8dbdb8cc698c8",
+     "checked_at": "2026-09-11T07:31:19+00:00"
+    }
+   },
+   {
+    "url": "https://github.com/openalpr/openalpr",
+    "normalized": "https://github.com/openalpr/openalpr",
+    "found_in": [
+     {
+      "file": "report.docx",
+      "page": null,
+      "method": "text"
+     }
+    ],
+    "primary": false,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/openalpr/openalpr",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/openalpr/openalpr",
+     "checked_at": "2026-09-11T07:31:35+00:00"
+    }
+   },
+   {
+    "url": "https://github.com/openalpr/openalpr/issues/660",
+    "normalized": "https://github.com/openalpr/openalpr/issues/660",
+    "found_in": [
+     {
+      "file": "report.docx",
+      "page": null,
+      "method": "text"
+     }
+    ],
+    "primary": false,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/openalpr/openalpr/issues/660",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/openalpr/openalpr/issues/660",
+     "checked_at": "2026-09-11T07:31:38+00:00"
+    }
+   },
+   {
+    "url": "https://github.com/tesseract-ocr/tesseract/issues/296",
+    "normalized": "https://github.com/tesseract-ocr/tesseract/issues/296",
+    "found_in": [
+     {
+      "file": "report.docx",
+      "page": null,
+      "method": "text"
+     }
+    ],
+    "primary": false,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/tesseract-ocr/tesseract/issues/296",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/tesseract-ocr/tesseract/issues/296",
+     "checked_at": "2026-09-11T07:32:13+00:00"
+    }
+   }
+  ]
+ },
+ "1628": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only AU crest on report cover; slide header icon is generic cell tower clipart, not a project mark."
+  },
+  "links": []
+ },
+ "1636": {
+  "logo": {
+   "has_logo": false,
+   "reason": "no_viewable_source",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "legacy .doc report with no recoverable embedded images and no rendered pages"
+  },
+  "links": []
+ },
+ "1637": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": null
+  },
+  "links": []
+ },
+ "1638": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Rendered pages show only the AU crest. Poster media had no project logo: stock runner photos, third-party marathon posters, generic icons. poster-hdphoto1-3.wdp and poster-image3/4/10/11.tiff not viewable (binary formats)."
+  },
+  "links": []
+ },
+ "1640": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only the Assumption University crest on the cover plus plain text titles; no project mark on pages 1-4."
+  },
+  "links": []
+ },
+ "1642": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only the Assumption University crest on the cover; PHONIES title is plain text and pages 2-4 have no mark."
+  },
+  "links": []
+ },
+ "1643": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only the Assumption University crest on the cover; Game Promotion Finding title is plain text and pages 2-4 have no mark."
+  },
+  "links": []
+ },
+ "1646": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only the Assumption University crest on the cover; title is plain text and pages 2-4 (approval, acknowledgement, abstract) have no mark."
+  },
+  "links": []
+ },
+ "1650": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only the Assumption University crest on the cover; Digitized Dimension name is plain serif text and pages 2-4 have no mark."
+  },
+  "links": []
+ },
+ "1651": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Report cover has only the Assumption University crest; the poster shows Sakpha as plain template text, not a designed mark."
+  },
+  "links": [
+   {
+    "url": "https://github.com/aretisd/sakpha-",
+    "normalized": "https://github.com/aretisd/sakpha-",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 22,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "project_repo",
+    "liveness": {
+     "url": "https://github.com/aretisd/sakpha-",
+     "status": "not_found",
+     "http_status": 404,
+     "final_url": "https://github.com/aretisd/sakpha-",
+     "checked_at": "2026-09-11T07:30:46+00:00"
+    }
+   },
+   {
+    "url": "https://github.com/chawanvtp/sakpha-android",
+    "normalized": "https://github.com/chawanvtp/sakpha-android",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 22,
+      "method": "text"
+     }
+    ],
+    "primary": false,
+    "kind": "project_repo",
+    "liveness": {
+     "url": "https://github.com/chawanvtp/sakpha-android",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/chawanvtp/sakpha-android",
+     "checked_at": "2026-09-11T07:30:52+00:00"
+    }
+   }
+  ]
+ },
+ "1653": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only the Assumption University crest on the cover; remaining pages are plain text"
+  },
+  "links": []
+ },
+ "1657": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only the Assumption University crest on the cover; other pages are plain text"
+  },
+  "links": []
+ },
+ "1661": {
+  "logo": {
+   "has_logo": false,
+   "reason": "no_logo_found",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Cover title is plain bold text and only the AU crest appears; poster icon is a stock megaphone graphic with third-party social brand logos, not a project mark"
+  },
+  "links": []
+ },
+ "1662": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Report shows only the AU crest; the poster icon is the AU purple-gold eagle shield used as a stand-in for the system, title is plain text"
+  },
+  "links": []
+ },
+ "1702": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only the Assumption University crest on the cover; other pages are plain text"
+  },
+  "links": []
+ },
+ "1703": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "media": "image10.png"
+   },
+   "output": "logos/1703.png",
+   "verified": true,
+   "note": null
+  },
+  "links": []
+ },
+ "1707": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Cover page shows only the Assumption University crest above a plain-text title; pages 2-4 are text only."
+  },
+  "links": []
+ },
+ "1709": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Cover page shows only the Assumption University crest above a plain-text title; pages 2-4 are text only."
+  },
+  "links": []
+ },
+ "1710": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Cover page shows only the Assumption University crest above a plain-text title; pages 2-4 are text only."
+  },
+  "links": []
+ },
+ "1711": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "media": "image10.png"
+   },
+   "output": "logos/1711.png",
+   "verified": true,
+   "note": "Gold serif Amalia app wordmark on black, taken from the app header image; AU crest in image2.png excluded."
+  },
+  "links": []
+ },
+ "1715": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Cover page shows only the Assumption University crest above a plain-text title; pages 2-4 are text only."
+  },
+  "links": []
+ },
+ "1716": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Cover page shows only the Assumption University crest above a plain-text title; pages 2-4 are text only."
+  },
+  "links": [
+   {
+    "url": "https://github.com/jeromepan/enhancement-of-photographs-taken-with-a-moving-",
+    "normalized": "https://github.com/jeromepan/enhancement-of-photographs-taken-with-a-moving-",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 30,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/jeromepan/enhancement-of-photographs-taken-with-a-moving-",
+     "status": "not_found",
+     "http_status": 404,
+     "final_url": "https://github.com/jeromepan/enhancement-of-photographs-taken-with-a-moving-",
+     "checked_at": "2026-09-11T07:31:15+00:00"
+    }
+   }
+  ]
+ },
+ "1718": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only the Assumption University crest on the report cover; pages 2-4 are text only."
+  },
+  "links": []
+ },
+ "1719": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Slides title carries AU crest and VMSIT shield only. The Hauptwerk mark on slide 7 is a third-party product logo."
+  },
+  "links": [
+   {
+    "url": "https://github.com/taechasit1001/au_seniorproject_1",
+    "normalized": "https://github.com/taechasit1001/au_seniorproject_1",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 28,
+      "method": "text"
+     },
+     {
+      "file": "slides.pdf",
+      "page": 35,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "project_repo",
+    "liveness": {
+     "url": "https://github.com/taechasit1001/au_seniorproject_1",
+     "status": "not_found",
+     "http_status": 404,
+     "final_url": "https://github.com/taechasit1001/au_seniorproject_1",
+     "checked_at": "2026-09-11T07:32:06+00:00"
+    }
+   }
+  ]
+ },
+ "1720": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only the Assumption University crest on the report cover; pages 2-4 are text only."
+  },
+  "links": [
+   {
+    "url": "https://github.com/tensorflow/models/tree/master/research/object_detection/samples/configs",
+    "normalized": "https://github.com/tensorflow/models/tree/master/research/object_detection/samples/configs",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 38,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/tensorflow/models/tree/master/research/object_detection/samples/configs",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/tensorflow/models/tree/master/research/object_detection/samples/configs",
+     "checked_at": "2026-09-11T07:32:09+00:00"
+    }
+   },
+   {
+    "url": "https://github.com/tzutalin/labelimg",
+    "normalized": "https://github.com/tzutalin/labelimg",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 38,
+      "method": "text"
+     }
+    ],
+    "primary": false,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/tzutalin/labelimg",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/HumanSignal/labelImg",
+     "checked_at": "2026-09-11T07:32:23+00:00"
+    }
+   }
+  ]
+ },
+ "1724": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only the Assumption University crest on the report cover; pages 2-4 are text only."
+  },
+  "links": []
+ },
+ "1725": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only the Assumption University crest on the report cover; pages 2-4 are text only."
+  },
+  "links": []
+ },
+ "1726": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "First 25 media images checked: AU crest plus Autodesk BIM 360/Revit third-party marks, screenshots and DFD diagrams only."
+  },
+  "links": []
+ },
+ "1727": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Cover and front matter show only the Assumption University crest; no project mark in pages 1-4."
+  },
+  "links": [
+   {
+    "url": "https://github.com/alamofire/alamofire",
+    "normalized": "https://github.com/alamofire/alamofire",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 22,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/alamofire/alamofire",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/alamofire/alamofire",
+     "checked_at": "2026-09-11T07:30:45+00:00"
+    }
+   },
+   {
+    "url": "https://github.com/sakrist/vbpiechart",
+    "normalized": "https://github.com/sakrist/vbpiechart",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 22,
+      "method": "text"
+     }
+    ],
+    "primary": false,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/sakrist/vbpiechart",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/sakrist/vbpiechart",
+     "checked_at": "2026-09-11T07:31:55+00:00"
+    }
+   }
+  ]
+ },
+ "1728": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Cover and front matter show only the Assumption University crest; no project mark in pages 1-4."
+  },
+  "links": []
+ },
+ "1730": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Cover and front matter show only the Assumption University crest; no project mark in pages 1-4."
+  },
+  "links": []
+ },
+ "1800": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Cover shows only the Assumption University crest; no project mark in pages 1-4."
+  },
+  "links": []
+ },
+ "1801": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Cover shows only the Assumption University crest; no project mark in pages 1-4."
+  },
+  "links": []
+ },
+ "1802": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "report.pdf",
+    "page": 1,
+    "box": [
+     0.28,
+     0.53,
+     0.72,
+     0.605
+    ]
+   },
+   "output": "logos/1802.png",
+   "verified": true,
+   "note": "Stylized AUComplaint wordmark on the cover; first crop included the Final Report caption, tightened to the wordmark only."
+  },
+  "links": []
+ },
+ "1804": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": null
+  },
+  "links": []
+ },
+ "1805": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": null
+  },
+  "links": []
+ },
+ "1809": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": null
+  },
+  "links": []
+ },
+ "1810": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": null
+  },
+  "links": []
+ },
+ "1811": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": null
+  },
+  "links": []
+ },
+ "1812": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": null
+  },
+  "links": []
+ },
+ "1813": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only the Assumption University crest on the cover, no project mark anywhere in the report."
+  },
+  "links": []
+ },
+ "1814": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Cover shows only the Assumption University crest; remaining pages are abstract and table of contents."
+  },
+  "links": [
+   {
+    "url": "https://gitlab.com/islabac/smartdigest/concept-predictor-api",
+    "normalized": "https://gitlab.com/islabac/smartdigest/concept-predictor-api",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 43,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "project_repo",
+    "liveness": {
+     "url": "https://gitlab.com/islabac/smartdigest/concept-predictor-api",
+     "status": "unknown",
+     "http_status": 403,
+     "final_url": "https://gitlab.com/users/sign_in",
+     "checked_at": "2026-09-11T07:32:35+00:00"
+    }
+   }
+  ]
+ },
+ "1816": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Cover carries only the Assumption University crest; pages 2-4 are acknowledgement, abstract and table of contents."
+  },
+  "links": [
+   {
+    "url": "https://github.com/williampoch/aspectbasedsentimentanalysis",
+    "normalized": "https://github.com/williampoch/aspectbasedsentimentanalysis",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 30,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "project_repo",
+    "liveness": {
+     "url": "https://github.com/williampoch/aspectbasedsentimentanalysis",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/williampoch/aspectbasedsentimentanalysis",
+     "checked_at": "2026-09-11T07:32:25+00:00"
+    }
+   }
+  ]
+ },
+ "1822": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Cover shows only the Assumption University crest; other pages are approval, table of contents and table of figures."
+  },
+  "links": []
+ },
+ "1823": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Cover shows only the Assumption University crest; pages 2-4 are abstract, acknowledgement and table of contents."
+  },
+  "links": []
+ },
+ "1824": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "image": "poster.jpg",
+    "box": [
+     0.33,
+     0.0,
+     0.72,
+     0.127
+    ]
+   },
+   "output": "logos/1824.png",
+   "verified": true,
+   "note": null
+  },
+  "links": []
+ },
+ "1825": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only Assumption University crest on cover, title is plain text, no project mark on pages 1-4"
+  },
+  "links": [
+   {
+    "url": "https://github.com/serhii-bielik/cs4200-sp2-advising",
+    "normalized": "https://github.com/serhii-bielik/cs4200-sp2-advising",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 58,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "project_repo",
+    "liveness": {
+     "url": "https://github.com/serhii-bielik/cs4200-sp2-advising",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/serhii-bielik/cs4200-sp2-advising",
+     "checked_at": "2026-09-11T07:31:59+00:00"
+    }
+   }
+  ]
+ },
+ "1826": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only Assumption University crest on cover, title is plain text, no project mark on pages 1-4"
+  },
+  "links": []
+ },
+ "1827": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only Assumption University crest on cover, SAMT MASTER title is plain text, no project mark on pages 1-4"
+  },
+  "links": []
+ },
+ "1828": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only Assumption University crest on cover, AU Network Profiler title is plain text, no project mark on pages 1-4"
+  },
+  "links": []
+ },
+ "1829": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only Assumption University crest on cover, Stampz title is plain text, no project mark on pages 1-4"
+  },
+  "links": []
+ },
+ "1836": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only Assumption University crest on cover, PeerShare title is plain text, no project mark on pages 1-4"
+  },
+  "links": []
+ },
+ "1837": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": null
+  },
+  "links": []
+ },
+ "1839": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": null
+  },
+  "links": []
+ },
+ "1902": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "All 15 media files checked: AU crest cover, ER/DFD diagrams, app screenshots, site photos; no project logo"
+  },
+  "links": []
+ },
+ "1904": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": null
+  },
+  "links": [
+   {
+    "url": "https://github.com/adawolfs/flutter_mlkit/tree/master/lib",
+    "normalized": "https://github.com/adawolfs/flutter_mlkit/tree/master/lib",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 18,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/adawolfs/flutter_mlkit/tree/master/lib",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/adawolfs/flutter_mlkit/tree/master/lib",
+     "checked_at": "2026-09-11T07:30:39+00:00"
+    }
+   }
+  ]
+ },
+ "1906": {
+  "logo": {
+   "has_logo": false,
+   "reason": "no_viewable_source",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "legacy .doc report with no recoverable embedded images and no rendered pages"
+  },
+  "links": []
+ },
+ "1908": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "All 26 embedded DOCX images checked (image7 and image8 are .jpeg, rest .png). image1 is the AU crest; the rest are NES game screenshots (Circus Charlie, Super Mario Bros via FCEUX, Chrome dino), sprite crops, and Python/TensorFlow code and terminal output screenshots. No designed project logo exists."
+  },
+  "links": [
+   {
+    "url": "https://github.com/jg-fisher/dinoai",
+    "normalized": "https://github.com/jg-fisher/dinoai",
+    "found_in": [
+     {
+      "file": "report.docx",
+      "page": null,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "project_repo",
+    "liveness": {
+     "url": "https://github.com/jg-fisher/dinoai",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/jg-fisher/dinoai",
+     "checked_at": "2026-09-11T07:31:17+00:00"
+    }
+   }
+  ]
+ },
+ "1909": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Rendered external page shows a faculty shield email; all 19 media files are AU crest, fitness charts, and tool screenshots"
+  },
+  "links": []
+ },
+ "1911": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": null
+  },
+  "links": [
+   {
+    "url": "https://github.com/tutsplus/how-to-use-the-google-cloud-vision-api-in-android-apps",
+    "normalized": "https://github.com/tutsplus/how-to-use-the-google-cloud-vision-api-in-android-apps",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 38,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/tutsplus/how-to-use-the-google-cloud-vision-api-in-android-apps",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/tutsplus/how-to-use-the-google-cloud-vision-api-in-android-apps",
+     "checked_at": "2026-09-11T07:32:21+00:00"
+    }
+   }
+  ]
+ },
+ "1912": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only the Assumption University crest on the report cover; slides use plain text titles with a stock room background."
+  },
+  "links": []
+ },
+ "1913": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only the Assumption University crest on the report cover; all other pages are plain text."
+  },
+  "links": []
+ },
+ "1914": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Reviewed media/image1.png through image25.png: only the AU crest plus survey form screenshots and pie charts. No project-specific mark."
+  },
+  "links": []
+ },
+ "1916": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only the Assumption University crest on the report cover; remaining pages are plain text and a table of contents."
+  },
+  "links": []
+ },
+ "1917": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only the Assumption University crest on the report cover; remaining pages are plain text front matter."
+  },
+  "links": []
+ },
+ "1919": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only the Assumption University crest on the report cover; remaining pages are plain text front matter and introduction."
+  },
+  "links": []
+ },
+ "1920": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only the Assumption University crest on report page 1, no project logo"
+  },
+  "links": []
+ },
+ "1925": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only the Assumption University crest on report page 1, no project logo"
+  },
+  "links": [
+   {
+    "url": "https://github.com/williampoch/sp1",
+    "normalized": "https://github.com/williampoch/sp1",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 26,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "project_repo",
+    "liveness": {
+     "url": "https://github.com/williampoch/sp1",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/williampoch/sp1",
+     "checked_at": "2026-09-11T07:32:27+00:00"
+    }
+   },
+   {
+    "url": "https://github.com/williampoch/sp1website",
+    "normalized": "https://github.com/williampoch/sp1website",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 25,
+      "method": "text"
+     }
+    ],
+    "primary": false,
+    "kind": "project_repo",
+    "liveness": {
+     "url": "https://github.com/williampoch/sp1website",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/williampoch/sp1website",
+     "checked_at": "2026-09-11T07:32:30+00:00"
+    }
+   },
+   {
+    "url": "https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/de",
+    "normalized": "https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/de",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 25,
+      "method": "text"
+     }
+    ],
+    "primary": false,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/de",
+     "status": "unknown",
+     "http_status": 429,
+     "final_url": "https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/de",
+     "checked_at": "2026-09-11T07:32:07+00:00"
+    }
+   }
+  ]
+ },
+ "1927": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only the Assumption University crest on report page 1, no project logo"
+  },
+  "links": []
+ },
+ "1928": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only the Assumption University crest on report page 1, no project logo"
+  },
+  "links": [
+   {
+    "url": "https://github.com/pythainlp/pythainlp",
+    "normalized": "https://github.com/pythainlp/pythainlp",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 27,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/pythainlp/pythainlp",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/pythainlp/pythainlp",
+     "checked_at": "2026-09-11T07:31:46+00:00"
+    }
+   },
+   {
+    "url": "https://github.com/rkcosmos/deepcut",
+    "normalized": "https://github.com/rkcosmos/deepcut",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 27,
+      "method": "text"
+     }
+    ],
+    "primary": false,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/rkcosmos/deepcut",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/rkcosmos/deepcut",
+     "checked_at": "2026-09-11T07:31:50+00:00"
+    }
+   }
+  ]
+ },
+ "1933": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only the Assumption University crest on report page 1, no project logo"
+  },
+  "links": []
+ },
+ "1934": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only the Assumption University crest on report page 1, no project logo"
+  },
+  "links": []
+ },
+ "1936": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only the Assumption University crest on the report cover, pages 2-4 are plain text"
+  },
+  "links": []
+ },
+ "1937": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only the Assumption University crest on the cover, remaining rendered pages are plain text"
+  },
+  "links": [
+   {
+    "url": "https://github.com/arthurhub/android",
+    "normalized": "https://github.com/arthurhub/android",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 54,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/arthurhub/android",
+     "status": "not_found",
+     "http_status": 404,
+     "final_url": "https://github.com/arthurhub/android",
+     "checked_at": "2026-09-11T07:30:48+00:00"
+    }
+   },
+   {
+    "url": "https://github.com/hdodenhof/circleimageview",
+    "normalized": "https://github.com/hdodenhof/circleimageview",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 54,
+      "method": "text"
+     }
+    ],
+    "primary": false,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/hdodenhof/circleimageview",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/hdodenhof/circleimageview",
+     "checked_at": "2026-09-11T07:31:10+00:00"
+    }
+   },
+   {
+    "url": "https://github.com/pilgr/paper",
+    "normalized": "https://github.com/pilgr/paper",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 54,
+      "method": "text"
+     }
+    ],
+    "primary": false,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/pilgr/paper",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/pilgr/paper",
+     "checked_at": "2026-09-11T07:31:42+00:00"
+    }
+   },
+   {
+    "url": "https://github.com/rey5137/material",
+    "normalized": "https://github.com/rey5137/material",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 54,
+      "method": "text"
+     }
+    ],
+    "primary": false,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/rey5137/material",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/rey5137/material",
+     "checked_at": "2026-09-11T07:31:48+00:00"
+    }
+   }
+  ]
+ },
+ "1938": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only the Assumption University crest on the cover, remaining rendered pages are plain text"
+  },
+  "links": []
+ },
+ "1940": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Cover has only the Assumption University and Vincent Mary School header marks, no project logo"
+  },
+  "links": []
+ },
+ "1941": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only the Assumption University crest on the cover, remaining rendered pages are plain text"
+  },
+  "links": [
+   {
+    "url": "https://github.com/haerulmuttaqin/762b4f041cf562ba6fd72cac1c1221cc",
+    "normalized": "https://github.com/haerulmuttaqin/762b4f041cf562ba6fd72cac1c1221cc",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 51,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/haerulmuttaqin/762b4f041cf562ba6fd72cac1c1221cc",
+     "status": "not_found",
+     "http_status": 404,
+     "final_url": "https://github.com/haerulmuttaqin/762b4f041cf562ba6fd72cac1c1221cc",
+     "checked_at": "2026-09-11T07:31:06+00:00"
+    }
+   },
+   {
+    "url": "https://github.com/haerulmuttaqin/mypets-app",
+    "normalized": "https://github.com/haerulmuttaqin/mypets-app",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 51,
+      "method": "text"
+     }
+    ],
+    "primary": false,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/haerulmuttaqin/mypets-app",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/haerulmuttaqin/mypets-app",
+     "checked_at": "2026-09-11T07:31:08+00:00"
+    }
+   }
+  ]
+ },
+ "1949": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only the Assumption University crest on the cover, remaining rendered pages are plain text"
+  },
+  "links": []
+ },
+ "1950": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Cover page shows only the Assumption University crest; other pages are plain text."
+  },
+  "links": [
+   {
+    "url": "https://github.com/electronnet/electron.net",
+    "normalized": "https://github.com/electronnet/electron.net",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 41,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/electronnet/electron.net",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/electronnet/electron.net",
+     "checked_at": "2026-09-11T07:30:57+00:00"
+    }
+   }
+  ]
+ },
+ "1952": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only the Assumption University crest on the cover; project title is plain text."
+  },
+  "links": []
+ },
+ "1953": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only the Assumption University crest on the cover; no project-specific mark in the rendered pages."
+  },
+  "links": []
+ },
+ "1954": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only the Assumption University crest on the cover; title is plain bold text."
+  },
+  "links": []
+ },
+ "2001": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "All 22 embedded media checked: only AU and Vincent Mary School marks; the rest are screenshots, diagrams, and third-party logos."
+  },
+  "links": []
+ },
+ "2003": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Cover shows only the Assumption University banner and Vincent Mary School crest; no project-specific mark."
+  },
+  "links": []
+ },
+ "2004": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Cover page shows only the Assumption University crest, pages 2-4 are plain text"
+  },
+  "links": []
+ },
+ "2005": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only embedded image (media/image1.png) is the Assumption University crest on a dark background"
+  },
+  "links": []
+ },
+ "2006": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only AU and Vincent Mary School header marks on the cover, pages 2-4 are plain text"
+  },
+  "links": [
+   {
+    "url": "https://github.com/aieml/face-mask-detection-keras",
+    "normalized": "https://github.com/aieml/face-mask-detection-keras",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 30,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/aieml/face-mask-detection-keras",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/aieml/face-mask-detection-keras",
+     "checked_at": "2026-09-11T07:30:40+00:00"
+    }
+   },
+   {
+    "url": "https://github.com/balajisrinivas/face-mask-detection",
+    "normalized": "https://github.com/balajisrinivas/face-mask-detection",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 30,
+      "method": "text"
+     }
+    ],
+    "primary": false,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/balajisrinivas/face-mask-detection",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/balajisrinivas/face-mask-detection",
+     "checked_at": "2026-09-11T07:30:50+00:00"
+    }
+   }
+  ]
+ },
+ "2007": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Report headers show only AU and Vincent Mary School marks, the JD.com logo on slides-p3 is a third-party brand"
+  },
+  "links": []
+ },
+ "2008": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": false,
+   "source": {
+    "media": "image25.png"
+   },
+   "output": null,
+   "verified": false,
+   "note": "Cloud Cafe icon and wordmark appear only embedded in app screenshots (top-left of image25.png), no standalone logo image among the first 25 media files"
+  },
+  "links": [
+   {
+    "url": "https://github.com/electronnet/electron.net",
+    "normalized": "https://github.com/electronnet/electron.net",
+    "found_in": [
+     {
+      "file": "report.docx",
+      "page": null,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/electronnet/electron.net",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/electronnet/electron.net",
+     "checked_at": "2026-09-11T07:30:57+00:00"
+    }
+   }
+  ]
+ },
+ "2010": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Cover page shows only the Assumption University crest, pages 2-4 are plain text"
+  },
+  "links": []
+ },
+ "2014": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": null
+  },
+  "links": []
+ },
+ "2015": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": null
+  },
+  "links": []
+ },
+ "2017": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "First 25 media images are the AU crest and third-party dental clinic screenshots/photos"
+  },
+  "links": []
+ },
+ "2018": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "First 25 media images are AU and Vincent Mary School marks plus app UI screenshots"
+  },
+  "links": []
+ },
+ "2019": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Slides use generic stock illustrations, no project brand mark"
+  },
+  "links": []
+ },
+ "2021": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.37,
+     0.18,
+     0.63,
+     0.66
+    ]
+   },
+   "output": "logos/2021.png",
+   "verified": true,
+   "note": "Randevoo R mark with wordmark from title slide"
+  },
+  "links": []
+ },
+ "2024": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 2,
+    "box": [
+     0.005,
+     0.93,
+     0.045,
+     1.0
+    ]
+   },
+   "output": "logos/2024.png",
+   "verified": true,
+   "note": "ZAAPP app icon from slide footer bar; appears on all content slides"
+  },
+  "links": []
+ },
+ "2025": {
+  "logo": {
+   "has_logo": false,
+   "reason": "no_logo_found",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only AU crest plus decorative slide backgrounds; Colors Puzzle app icon appears only inside app-store screenshots on slide 7"
+  },
+  "links": []
+ },
+ "2026": {
+  "logo": {
+   "has_logo": false,
+   "reason": "no_logo_found",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only AU crest and a decorative circuit-board slide template with plain text titles; no project brand mark"
+  },
+  "links": []
+ },
+ "2031": {
+  "logo": {
+   "has_logo": false,
+   "reason": "no_logo_found",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Plain text titles over stock photos and a meme image; no designed project mark on any slide"
+  },
+  "links": []
+ },
+ "2032": {
+  "logo": {
+   "has_logo": false,
+   "reason": "no_logo_found",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Plain text titles with decorative circle shapes only; no project brand mark on any slide"
+  },
+  "links": []
+ },
+ "2036": {
+  "logo": {
+   "has_logo": false,
+   "reason": "no_logo_found",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Plain text titles over stock backgrounds; only third-party gambling ad banners and stock photos appear, no project brand mark"
+  },
+  "links": [
+   {
+    "url": "https://github.com/pythainlp/pythainlp",
+    "normalized": "https://github.com/pythainlp/pythainlp",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 19,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/pythainlp/pythainlp",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/pythainlp/pythainlp",
+     "checked_at": "2026-09-11T07:31:46+00:00"
+    }
+   }
+  ]
+ },
+ "2037": {
+  "logo": {
+   "has_logo": false,
+   "reason": "no_logo_found",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only AU crest, VMS school shield, plain-text PROMAI title and third-party brand images across report p1-4 and slides p1-8."
+  },
+  "links": []
+ },
+ "2039": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 4,
+    "box": [
+     0.4,
+     0.33,
+     0.57,
+     0.62
+    ]
+   },
+   "output": "logos/2039.png",
+   "verified": true,
+   "note": "Tickey yellow circle app mark inside phone illustration; a black hand icon slightly overlaps its lower-left in the source slide. No rendered external evidence pages were found to view."
+  },
+  "links": []
+ },
+ "2040": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only the Assumption University crest on the report cover; pages 2-4 are text-only."
+  },
+  "links": []
+ },
+ "2041": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only the Assumption University crest on the report cover; pages 2-4 are text-only."
+  },
+  "links": []
+ },
+ "2042": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 4,
+    "box": [
+     0.03,
+     0.37,
+     0.3,
+     0.82
+    ]
+   },
+   "output": "logos/2042.png",
+   "verified": true,
+   "note": "BoomBoxing boxing-gloves emblem, largest clean occurrence; also appears smaller on slides page 1 next to the wordmark."
+  },
+  "links": []
+ },
+ "2102": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.115,
+     0.3,
+     0.285,
+     0.7
+    ]
+   },
+   "output": "logos/2102.png",
+   "verified": true,
+   "note": "App logo (blue diamond with airplane, Isekai characters, CITY GUIDE) shown on the title slide phone mockup."
+  },
+  "links": []
+ },
+ "2108": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only Assumption University crest and Vincent Mary School of Science and Technology marks appear; title text is plain font with no project brand mark."
+  },
+  "links": []
+ },
+ "2113": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.45,
+     0.1,
+     0.98,
+     0.9
+    ]
+   },
+   "output": "logos/2113.png",
+   "verified": true,
+   "note": "Project mark on title slide: cube with wifi signal and person icon for the Wi-Fi based Occupancy Sensor."
+  },
+  "links": []
+ },
+ "2114": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 4,
+    "box": [
+     0.38,
+     0.1,
+     0.64,
+     0.5
+    ]
+   },
+   "output": "logos/2114.png",
+   "verified": true,
+   "note": "Naughty Hamsters game mascot (hamster character) from section slide; same mascot family appears on slides 1 and 2."
+  },
+  "links": []
+ },
+ "2115": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.55,
+     0.12,
+     1.0,
+     0.72
+    ]
+   },
+   "output": "logos/2115.png",
+   "verified": true,
+   "note": "Chatbot robot mascot illustration on title slide of LINE Chatbot for Coupon Customer deck."
+  },
+  "links": []
+ },
+ "2116": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Report cover shows only the Assumption University crest; slides use stock photos, Lego photos and a meme, none of which are a project brand mark."
+  },
+  "links": []
+ },
+ "2117": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.35,
+     0.14,
+     0.65,
+     0.74
+    ]
+   },
+   "output": "logos/2117.png",
+   "verified": true,
+   "note": "AuIdea app logo (purple circle pencil emblem with AuIdea wordmark) from deck title slide."
+  },
+  "links": []
+ },
+ "2118": {
+  "logo": {
+   "has_logo": false,
+   "reason": "no_logo_found",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Report shows only AU crest, slides use plain text titles and generic device illustrations, external letterhead is third-party EBCsoft logo"
+  },
+  "links": []
+ },
+ "2119": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.18,
+     0.12,
+     0.82,
+     0.62
+    ]
+   },
+   "output": "logos/2119.png",
+   "verified": true,
+   "note": "Stylized INFINITE RUNNER game wordmark on title slide"
+  },
+  "links": []
+ },
+ "2120": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.83,
+     0.16,
+     0.97,
+     0.39
+    ]
+   },
+   "output": "logos/2120.png",
+   "verified": true,
+   "note": "Habitat cat mascot app mark, also used as app icon in comparison table on slide 7"
+  },
+  "links": []
+ },
+ "2121": {
+  "logo": {
+   "has_logo": false,
+   "reason": "no_logo_found",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Report shows only AU crest, slides use a generic template with stock illustrations and no project brand mark"
+  },
+  "links": []
+ },
+ "2125": {
+  "logo": {
+   "has_logo": false,
+   "reason": "no_logo_found",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "eVac appears only as plain bold text on a slide card, report shows only AU and VMS crests, no designed brand mark"
+  },
+  "links": []
+ },
+ "2126": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 6,
+    "box": [
+     0.578,
+     0.118,
+     0.668,
+     0.208
+    ]
+   },
+   "output": "logos/2126.png",
+   "verified": true,
+   "note": "Medical CheckUp site emblem (cross, hand, heartbeat) from website screenshot header on solution slide"
+  },
+  "links": []
+ },
+ "2127": {
+  "logo": {
+   "has_logo": false,
+   "reason": "no_logo_found",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only AU crest and VMS school mark on report cover, slides use generic stock clipart and third-party tech logos (Flask, MySQL, HTML)."
+  },
+  "links": []
+ },
+ "2128": {
+  "logo": {
+   "has_logo": false,
+   "reason": "no_logo_found",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Report cover has only AU and VMS marks. Slides use a Canva template with decorative shapes and plain bold ProTimer title text, no project brand mark."
+  },
+  "links": []
+ },
+ "2129": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only AU crest and Vincent Mary School of Science and Technology identity appear, including inside website screenshots. No project brand mark."
+  },
+  "links": []
+ },
+ "2130": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 8,
+    "box": [
+     0.12,
+     0.57,
+     0.4,
+     0.8
+    ]
+   },
+   "output": "logos/2130.png",
+   "verified": true,
+   "note": "BAKSTERS Company Limited brand mark (heart emblem and stylized wordmark), the client company this fall detection project was built for, on the External Exposure slide."
+  },
+  "links": [
+   {
+    "url": "https://github.com/rwightman/posenet-python",
+    "normalized": "https://github.com/rwightman/posenet-python",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 43,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/rwightman/posenet-python",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/rwightman/posenet-python",
+     "checked_at": "2026-09-11T07:31:53+00:00"
+    }
+   }
+  ]
+ },
+ "2131": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.55,
+     0.15,
+     0.97,
+     0.85
+    ]
+   },
+   "output": "logos/2131.png",
+   "verified": true,
+   "note": "Robot mascot with speech bubbles used as the VMS Chatbot identity on the title slide. ChatterBot and WeChat marks elsewhere are third-party logos."
+  },
+  "links": []
+ },
+ "2132": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only AU and VMS university crests appear. Slides use stock cork photos, plain Thai title text, generic person/store icons and the third-party Google Assistant logo."
+  },
+  "links": []
+ },
+ "2134": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only the Assumption University crest on the report cover; slides use plain text titles and generic icons. OpenCV mark on slide 8 is third-party."
+  },
+  "links": []
+ },
+ "2136": {
+  "logo": {
+   "has_logo": false,
+   "reason": "no_logo_found",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "iLearn appears only as plain bold text. University crests and a third-party collaborator emblem (Siam Commodities) are the only marks."
+  },
+  "links": []
+ },
+ "2137": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.415,
+     0.05,
+     0.495,
+     0.2
+    ]
+   },
+   "output": "logos/2137.png",
+   "verified": true,
+   "note": "Red chevron team brand mark, reused on slides 1-3."
+  },
+  "links": []
+ },
+ "2138": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.415,
+     0.05,
+     0.495,
+     0.2
+    ]
+   },
+   "output": "logos/2138.png",
+   "verified": true,
+   "note": "Red chevron team brand mark, same mark as project 2137, reused across slides."
+  },
+  "links": []
+ },
+ "2139": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.18,
+     0.18,
+     0.56,
+     0.58
+    ]
+   },
+   "output": "logos/2139.png",
+   "verified": true,
+   "note": "XAM wordmark with pink and purple circles from title slide; final letter M is slightly clipped at the crop edge."
+  },
+  "links": []
+ },
+ "2140": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.13,
+     0.34,
+     0.315,
+     0.66
+    ]
+   },
+   "output": "logos/2140.png",
+   "verified": true,
+   "note": "ATK coin emblem (orange and purple halves with white eagle and otter) at the center of the network graphic on the title slide."
+  },
+  "links": [
+   {
+    "url": "https://github.com/google/leveldb",
+    "normalized": "https://github.com/google/leveldb",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 95,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/google/leveldb",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/google/leveldb",
+     "checked_at": "2026-09-11T07:31:04+00:00"
+    }
+   },
+   {
+    "url": "https://github.com/hyperledger/fabric-sdk-go/blob/main/pkg/fab/txn/env.go",
+    "normalized": "https://github.com/hyperledger/fabric-sdk-go/blob/main/pkg/fab/txn/env.go",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 97,
+      "method": "text"
+     }
+    ],
+    "primary": false,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/hyperledger/fabric-sdk-go/blob/main/pkg/fab/txn/env.go",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/hyperledger/fabric-sdk-go/blob/main/pkg/fab/txn/env.go",
+     "checked_at": "2026-09-11T07:31:12+00:00"
+    }
+   }
+  ]
+ },
+ "2141": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.2,
+     0.2,
+     0.76,
+     0.79
+    ]
+   },
+   "output": "logos/2141.png",
+   "verified": true,
+   "note": "CV Coach stylized A mark with letter-spaced wordmark from title slide"
+  },
+  "links": [
+   {
+    "url": "https://github.com/garrukzijian/cvcoach",
+    "normalized": "https://github.com/garrukzijian/cvcoach",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 34,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "project_repo",
+    "liveness": {
+     "url": "https://github.com/garrukzijian/cvcoach",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/garrukzijian/cvcoach",
+     "checked_at": "2026-09-11T07:31:02+00:00"
+    }
+   },
+   {
+    "url": "https://github.com/akshatkaush/exercise-count",
+    "normalized": "https://github.com/akshatkaush/exercise-count",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 37,
+      "method": "text"
+     }
+    ],
+    "primary": false,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/akshatkaush/exercise-count",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/akshatkaush/exercise-count",
+     "checked_at": "2026-09-11T07:30:42+00:00"
+    }
+   },
+   {
+    "url": "https://github.com/cmu-perceptual-computing-",
+    "normalized": "https://github.com/cmu-perceptual-computing-",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 38,
+      "method": "text"
+     }
+    ],
+    "primary": false,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/cmu-perceptual-computing-",
+     "status": "not_found",
+     "http_status": 404,
+     "final_url": "https://github.com/cmu-perceptual-computing-",
+     "checked_at": "2026-09-11T07:30:53+00:00"
+    }
+   },
+   {
+    "url": "https://github.com/cmu-perceptual-computing-lab/openpose",
+    "normalized": "https://github.com/cmu-perceptual-computing-lab/openpose",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 37,
+      "method": "text"
+     }
+    ],
+    "primary": false,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/cmu-perceptual-computing-lab/openpose",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/cmu-perceptual-computing-lab/openpose",
+     "checked_at": "2026-09-11T07:30:55+00:00"
+    }
+   }
+  ]
+ },
+ "2142": {
+  "logo": {
+   "has_logo": false,
+   "reason": "no_logo_found",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Report and slides use plain text titles and stock backgrounds only, no project brand mark"
+  },
+  "links": [
+   {
+    "url": "https://github.com/maxbachmann/rapidfuzz",
+    "normalized": "https://github.com/maxbachmann/rapidfuzz",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 28,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/maxbachmann/rapidfuzz",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/rapidfuzz/RapidFuzz",
+     "checked_at": "2026-09-11T07:31:24+00:00"
+    }
+   },
+   {
+    "url": "https://github.com/pythainlp/pythainlp",
+    "normalized": "https://github.com/pythainlp/pythainlp",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 28,
+      "method": "text"
+     }
+    ],
+    "primary": false,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/pythainlp/pythainlp",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/pythainlp/pythainlp",
+     "checked_at": "2026-09-11T07:31:46+00:00"
+    }
+   },
+   {
+    "url": "https://github.com/seatgeek/thefuzz",
+    "normalized": "https://github.com/seatgeek/thefuzz",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 28,
+      "method": "text"
+     }
+    ],
+    "primary": false,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/seatgeek/thefuzz",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/seatgeek/thefuzz",
+     "checked_at": "2026-09-11T07:31:57+00:00"
+    }
+   }
+  ]
+ },
+ "2143": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 3,
+    "box": [
+     0.45,
+     0.12,
+     0.85,
+     0.32
+    ]
+   },
+   "output": "logos/2143.png",
+   "verified": true,
+   "note": "Let's Meet stylized teal wordmark, same mark also appears on slides page 1"
+  },
+  "links": []
+ },
+ "2145": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.45,
+     0.1,
+     0.97,
+     0.9
+    ]
+   },
+   "output": "logos/2145.png",
+   "verified": true,
+   "note": "Designed room-with-person-and-wifi icon emblem from the title slide"
+  },
+  "links": []
+ },
+ "2146": {
+  "logo": {
+   "has_logo": false,
+   "reason": "no_logo_found",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only plain text titles and concept illustrations; Baksters logo on slides page 6 is the third-party client company, not this project"
+  },
+  "links": []
+ },
+ "2147": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.15,
+     0.08,
+     0.85,
+     0.44
+    ]
+   },
+   "output": "logos/2147.png",
+   "verified": true,
+   "note": "RecipeDia green chef-hat wordmark, also appears on report page 1 and slide headers"
+  },
+  "links": []
+ },
+ "2148": {
+  "logo": {
+   "has_logo": false,
+   "reason": "no_logo_found",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "audit downgrade: the only candidate was a rounded pill button with plain app-name text on the slide title page, a UI element rather than a designed mark"
+  },
+  "links": []
+ },
+ "2149": {
+  "logo": {
+   "has_logo": false,
+   "reason": "no_logo_found",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Slide title text and AU/VMS marks only; astronaut art is Among Us third-party characters"
+  },
+  "links": []
+ },
+ "2203": {
+  "logo": {
+   "has_logo": false,
+   "reason": "no_logo_found",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Plain text titles and generic clip art only across report and slides"
+  },
+  "links": []
+ },
+ "2205": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Jetts Fitness logo on slide 6 is a third-party observed business, not this project's brand"
+  },
+  "links": []
+ },
+ "2206": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only AU and VMS marks; marketplace screenshots are third-party brands"
+  },
+  "links": []
+ },
+ "2207": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Report cover shows only AU crest and Vincent Mary School of Science and Technology marks. Slides use a beach theme with generic clipart (palm trees, longtail boat, sailor) and script text titles, no designed project logo."
+  },
+  "links": [
+   {
+    "url": "https://github.com/morgancsit/lba-frontend",
+    "normalized": "https://github.com/morgancsit/lba-frontend",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 53,
+      "method": "text"
+     },
+     {
+      "file": "slides.pdf",
+      "page": 69,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "project_repo",
+    "liveness": {
+     "url": "https://github.com/morgancsit/lba-frontend",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/morgancsit/lba-frontend",
+     "checked_at": "2026-09-11T07:31:29+00:00"
+    }
+   },
+   {
+    "url": "https://github.com/morgancsit/sp1-longtailbookingdapp",
+    "normalized": "https://github.com/morgancsit/sp1-longtailbookingdapp",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 53,
+      "method": "text"
+     },
+     {
+      "file": "slides.pdf",
+      "page": 69,
+      "method": "text"
+     }
+    ],
+    "primary": false,
+    "kind": "project_repo",
+    "liveness": {
+     "url": "https://github.com/morgancsit/sp1-longtailbookingdapp",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/morgancsit/sp1-longtailbookingdapp",
+     "checked_at": "2026-09-11T07:31:31+00:00"
+    }
+   }
+  ]
+ },
+ "2211": {
+  "logo": {
+   "has_logo": false,
+   "reason": "no_logo_found",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Template gradient slides with plain text titles and stock circuit art only"
+  },
+  "links": []
+ },
+ "2213": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.05,
+     0.7,
+     0.34,
+     0.93
+    ]
+   },
+   "output": "logos/2213.png",
+   "verified": true,
+   "note": "HEX-a-gon team brand mark (people icon plus wordmark) on title slide"
+  },
+  "links": []
+ },
+ "2214": {
+  "logo": {
+   "has_logo": false,
+   "reason": "no_logo_found",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Cover title is set in the deck's display font (same font reused for all slide headings); no emblem, icon, or distinct project wordmark exists"
+  },
+  "links": []
+ },
+ "2216": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only the Assumption University crest on the report cover; slides use plain text titles and generic icons"
+  },
+  "links": []
+ },
+ "2222": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only the Assumption University crest appears; the only other mark is the third-party Knack logo in a related-work screenshot"
+  },
+  "links": []
+ },
+ "2224": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only Assumption University identity marks; team name NEED2PASS is plain bold text; other marks are third-party (Sonoff, Canva, Broadlink)"
+  },
+  "links": [
+   {
+    "url": "https://github.com/pandalabos/smarthomefinal",
+    "normalized": "https://github.com/pandalabos/smarthomefinal",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 29,
+      "method": "text"
+     },
+     {
+      "file": "report.pdf",
+      "page": 45,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "project_repo",
+    "liveness": {
+     "url": "https://github.com/pandalabos/smarthomefinal",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/pandalabos/smarthomefinal",
+     "checked_at": "2026-09-11T07:31:40+00:00"
+    }
+   },
+   {
+    "url": "https://github.com/infineon/mqtt",
+    "normalized": "https://github.com/infineon/mqtt",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 45,
+      "method": "text"
+     }
+    ],
+    "primary": false,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/infineon/mqtt",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/infineon/mqtt",
+     "checked_at": "2026-09-11T07:31:14+00:00"
+    }
+   }
+  ]
+ },
+ "2225": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only Assumption University and Vincent Mary School marks on the report cover and slide headers"
+  },
+  "links": []
+ },
+ "2226": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.03,
+     0.05,
+     0.24,
+     0.2
+    ]
+   },
+   "output": "logos/2226.png",
+   "verified": true,
+   "note": "Hex-a-gon team brand mark (teal chevrons plus wordmark) from slide header"
+  },
+  "links": []
+ },
+ "2231": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.28,
+     0.17,
+     0.73,
+     0.82
+    ]
+   },
+   "output": "logos/2231.png",
+   "verified": true,
+   "note": "Title slide emblem: graduate on books with Education Agency Support System wordmark"
+  },
+  "links": []
+ },
+ "2233": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.03,
+     0.05,
+     0.26,
+     0.22
+    ]
+   },
+   "output": "logos/2233.png",
+   "verified": true,
+   "note": "Bikebuster brand mark: purple no-motorcycle icon with wordmark from slide header"
+  },
+  "links": [
+   {
+    "url": "https://github.com/miyakogi/pyp-peteer",
+    "normalized": "https://github.com/miyakogi/pyp-peteer",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 31,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/miyakogi/pyp-peteer",
+     "status": "not_found",
+     "http_status": 404,
+     "final_url": "https://github.com/miyakogi/pyp-peteer",
+     "checked_at": "2026-09-11T07:31:27+00:00"
+    }
+   }
+  ]
+ },
+ "2238": {
+  "logo": {
+   "has_logo": false,
+   "reason": "no_logo_found",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Slides and report use plain bold text titles only, no designed project mark"
+  },
+  "links": []
+ },
+ "2239": {
+  "logo": {
+   "has_logo": false,
+   "reason": "no_logo_found",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Slides are game screenshots with plain text titles; only third-party tool logos (Unity, Blender, GIMP, Trello) appear"
+  },
+  "links": [
+   {
+    "url": "https://github.com/singekkasith/senior-project-i",
+    "normalized": "https://github.com/singekkasith/senior-project-i",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 20,
+      "method": "text"
+     },
+     {
+      "file": "slides.pdf",
+      "page": 38,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "project_repo",
+    "liveness": {
+     "url": "https://github.com/singekkasith/senior-project-i",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/singekkasith/senior-project-i",
+     "checked_at": "2026-09-11T07:32:01+00:00"
+    }
+   }
+  ]
+ },
+ "2241": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 8,
+    "box": [
+     0.785,
+     0.145,
+     0.915,
+     0.295
+    ]
+   },
+   "output": "logos/2241.png",
+   "verified": true,
+   "note": "ECIC circular brand mark (ECIC wordmark with grid icon) from comparison slide header"
+  },
+  "links": []
+ },
+ "2242": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 7,
+    "box": [
+     0.075,
+     0.14,
+     0.122,
+     0.213
+    ]
+   },
+   "output": "logos/2242.png",
+   "verified": true,
+   "note": "Owl EDURATING mascot mark from app header in screenshot; only visible occurrence is inside app screenshots."
+  },
+  "links": [
+   {
+    "url": "https://github.com/cmu-perceptual-computing-",
+    "normalized": "https://github.com/cmu-perceptual-computing-",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 37,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/cmu-perceptual-computing-",
+     "status": "not_found",
+     "http_status": 404,
+     "final_url": "https://github.com/cmu-perceptual-computing-",
+     "checked_at": "2026-09-11T07:30:53+00:00"
+    }
+   }
+  ]
+ },
+ "2244": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Report cover shows only the Assumption University crest; slides use a generic template with plain text titles."
+  },
+  "links": []
+ },
+ "2248": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.04,
+     0.28,
+     0.98,
+     0.78
+    ]
+   },
+   "output": "logos/2248.png",
+   "verified": true,
+   "note": "Stylized arched bubble-letter wordmark of the project title on the title slide; minor template doodles (tulips, pencil) remain in frame."
+  },
+  "links": []
+ },
+ "2250": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 3,
+    "box": [
+     0.52,
+     0.38,
+     0.96,
+     0.68
+    ]
+   },
+   "output": "logos/2250.png",
+   "verified": true,
+   "note": "CiNEMO movie-camera wordmark; same logo also appears on report.pdf page 3 (abstract)."
+  },
+  "links": [
+   {
+    "url": "https://github.com/rohitks1997/cinemo",
+    "normalized": "https://github.com/rohitks1997/cinemo",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 44,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "project_repo",
+    "liveness": {
+     "url": "https://github.com/rohitks1997/cinemo",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/rohitks1997/cinemo",
+     "checked_at": "2026-09-11T07:31:52+00:00"
+    }
+   }
+  ]
+ },
+ "2251": {
+  "logo": {
+   "has_logo": false,
+   "reason": "no_logo_found",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Plain serif text titles on cover and slides; remaining images are hardware photos, diagrams, and template decorations. No project brand mark."
+  },
+  "links": []
+ },
+ "2252": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Report cover carries only Assumption University and Vincent Mary School marks; slides are plain bold titles on a grid template with one table screenshot."
+  },
+  "links": []
+ },
+ "2254": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 7,
+    "box": [
+     0.52,
+     0.15,
+     0.93,
+     0.88
+    ]
+   },
+   "output": "logos/2254.png",
+   "verified": true,
+   "note": "ZURGIRIAL skull emblem with crossed pistols, also on slides pages 3 and 8"
+  },
+  "links": []
+ },
+ "2255": {
+  "logo": {
+   "has_logo": false,
+   "reason": "no_logo_found",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only a generic headphones icon used as topic illustration on slides page 2 plus template decoration, no designed project mark"
+  },
+  "links": [
+   {
+    "url": "https://github.com/worldveil/dejavu",
+    "normalized": "https://github.com/worldveil/dejavu",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 28,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/worldveil/dejavu",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/worldveil/dejavu",
+     "checked_at": "2026-09-11T07:32:32+00:00"
+    }
+   }
+  ]
+ },
+ "25100": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.14,
+     0.28,
+     0.4,
+     0.7
+    ]
+   },
+   "output": "logos/25100.png",
+   "verified": true,
+   "note": "ULTRACARE camera-and-heart emblem with wordmark on title slide"
+  },
+  "links": []
+ },
+ "25101": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.05,
+     0.06,
+     0.3,
+     0.26
+    ]
+   },
+   "output": "logos/25101.png",
+   "verified": true,
+   "note": "Convenient Park Hotel brand mark (N monogram with wordmark), also in slide headers and as badge on slides 3 and 7"
+  },
+  "links": []
+ },
+ "25102": {
+  "logo": {
+   "has_logo": false,
+   "reason": "no_logo_found",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "AU Canteen title is plain bold text on a red banner, no designed emblem or wordmark anywhere in report or slides"
+  },
+  "links": []
+ },
+ "25104": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 3,
+    "box": [
+     0.63,
+     0.15,
+     0.89,
+     0.53
+    ]
+   },
+   "output": "logos/25104.png",
+   "verified": true,
+   "note": "DTG (Dynamic Technology Group) circular emblem used as the DTG FieldLink app identity, also on report page 3 letter"
+  },
+  "links": []
+ },
+ "25105": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 2,
+    "box": [
+     0.6,
+     0.25,
+     0.95,
+     0.82
+    ]
+   },
+   "output": "logos/25105.png",
+   "verified": true,
+   "note": "Bankify B emblem with arrow, on Problem Statement slide; report pages show only the AU crest"
+  },
+  "links": []
+ },
+ "25113": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 6,
+    "box": [
+     0.5,
+     0.43,
+     1.0,
+     0.7
+    ]
+   },
+   "output": "logos/25113.png",
+   "verified": true,
+   "note": "PAYME emblem and wordmark on Proposed Solution slide; WiteLab team mark also appears in slide headers"
+  },
+  "links": [
+   {
+    "url": "https://github.com/pmndrs/zustand",
+    "normalized": "https://github.com/pmndrs/zustand",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 28,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/pmndrs/zustand",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/pmndrs/zustand",
+     "checked_at": "2026-09-11T07:31:44+00:00"
+    }
+   }
+  ]
+ },
+ "25115": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.0,
+     0.0,
+     0.16,
+     0.3
+    ]
+   },
+   "output": "logos/25115.png",
+   "verified": true,
+   "note": "Hand-drawn Battle of Talingchan game emblem on title slide; some key-art characters touch the crop corner"
+  },
+  "links": []
+ },
+ "25116": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.1,
+     0.28,
+     0.6,
+     0.5
+    ]
+   },
+   "output": "logos/25116.png",
+   "verified": true,
+   "note": "Colorful KIDDEE LAB client wordmark on title slide"
+  },
+  "links": []
+ },
+ "25117": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 2,
+    "box": [
+     0.67,
+     0.26,
+     0.84,
+     0.43
+    ]
+   },
+   "output": "logos/25117.png",
+   "verified": true,
+   "note": "Feel Thailand restaurant script mark seen on a wall photo in External Exposure slide; low resolution, angled; project title itself is plain text"
+  },
+  "links": []
+ },
+ "25118": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.02,
+     0.0,
+     0.31,
+     0.45
+    ]
+   },
+   "output": "logos/25118.png",
+   "verified": true,
+   "note": "TrustLoop pinwheel emblem with wordmark and tagline on title slide"
+  },
+  "links": []
+ },
+ "2579": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": null
+  },
+  "links": []
+ },
+ "2593": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 6,
+    "box": [
+     0.07,
+     0.45,
+     0.24,
+     0.68
+    ]
+   },
+   "output": "logos/2593.png",
+   "verified": true,
+   "note": "SkillSync app icon with wordmark and tagline from login screen mockup"
+  },
+  "links": []
+ },
+ "2594": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.14,
+     0.2,
+     0.46,
+     0.76
+    ]
+   },
+   "output": "logos/2594.png",
+   "verified": true,
+   "note": "AUGO bubble-letter app logo on title slide"
+  },
+  "links": [
+   {
+    "url": "https://github.com/kusk24/augo",
+    "normalized": "https://github.com/kusk24/augo",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 48,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "project_repo",
+    "liveness": {
+     "url": "https://github.com/kusk24/augo",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/kusk24/augo",
+     "checked_at": "2026-09-11T07:31:21+00:00"
+    }
+   }
+  ]
+ },
+ "2595": {
+  "logo": {
+   "has_logo": false,
+   "reason": "no_logo_found",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Title text uses the same decorative template font as all slide text, no distinct brand mark or emblem"
+  },
+  "links": []
+ },
+ "2596": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.42,
+     0.25,
+     0.58,
+     0.48
+    ]
+   },
+   "output": "logos/2596.png",
+   "verified": true,
+   "note": "Blue timeout clock icon above the AU Timeout title on the title slide"
+  },
+  "links": []
+ },
+ "2597": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 6,
+    "box": [
+     0.36,
+     0.12,
+     0.64,
+     0.26
+    ]
+   },
+   "output": "logos/2597.png",
+   "verified": true,
+   "note": "EduQuest pixel wordmark with crossed swords from the app role-select screenshot"
+  },
+  "links": []
+ },
+ "2598": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 3,
+    "box": [
+     0.75,
+     0.8,
+     0.99,
+     0.98
+    ]
+   },
+   "output": "logos/2598.png",
+   "verified": true,
+   "note": "Green Sportify wordmark with flexed arms and heartbeat line, bottom right of 'What is Sportify' slide"
+  },
+  "links": []
+ },
+ "2599": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.05,
+     0.12,
+     0.95,
+     0.48
+    ]
+   },
+   "output": "logos/2599.png",
+   "verified": true,
+   "note": "Stylized SPACE RAIL game wordmark (white letters, gold outline) on title slide"
+  },
+  "links": []
+ },
+ "26002": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 3,
+    "box": [
+     0.01,
+     0.02,
+     0.12,
+     0.12
+    ]
+   },
+   "output": "logos/26002.png",
+   "verified": true,
+   "note": "Fiscai brand mark (chart-and-arrow icon plus wordmark) from slide header, only occurrence is small"
+  },
+  "links": [
+   {
+    "url": "https://github.com/tesseract-ocr/tesseract",
+    "normalized": "https://github.com/tesseract-ocr/tesseract",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 25,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/tesseract-ocr/tesseract",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/tesseract-ocr/tesseract",
+     "checked_at": "2026-09-11T07:32:11+00:00"
+    }
+   }
+  ]
+ },
+ "26003": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 6,
+    "box": [
+     0.03,
+     0.04,
+     0.18,
+     0.17
+    ]
+   },
+   "output": "logos/26003.png",
+   "verified": true,
+   "note": "Team KGB brand mark (circular G emblem plus KGB wordmark) from slide header"
+  },
+  "links": [
+   {
+    "url": "https://github.com/openai/whisper",
+    "normalized": "https://github.com/openai/whisper",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 31,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/openai/whisper",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/openai/whisper",
+     "checked_at": "2026-09-11T07:31:33+00:00"
+    }
+   },
+   {
+    "url": "https://github.com/theskumar/python-dotenv",
+    "normalized": "https://github.com/theskumar/python-dotenv",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 31,
+      "method": "text"
+     }
+    ],
+    "primary": false,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/theskumar/python-dotenv",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/theskumar/python-dotenv",
+     "checked_at": "2026-09-11T07:32:15+00:00"
+    }
+   }
+  ]
+ },
+ "26004": {
+  "logo": {
+   "has_logo": false,
+   "reason": "no_logo_found",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only AU crest plus generic template illustrations (brain, robot, hearts) and plain bold MIND NEST title text; no designed product or team brand mark"
+  },
+  "links": [
+   {
+    "url": "https://github.com/spring-projects/spring-ai/issues/866",
+    "normalized": "https://github.com/spring-projects/spring-ai/issues/866",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 37,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/spring-projects/spring-ai/issues/866",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/spring-projects/spring-ai/issues/866",
+     "checked_at": "2026-09-11T07:32:03+00:00"
+    }
+   }
+  ]
+ },
+ "26005": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.16,
+     0.28,
+     0.85,
+     0.53
+    ]
+   },
+   "output": "logos/26005.png",
+   "verified": true,
+   "note": "Stylized serif BAKEFLOW wordmark on title slide; Homemade Homebake logo on slide 3 belongs to the client, not this project"
+  },
+  "links": []
+ },
+ "26006": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.68,
+     0.0,
+     1.0,
+     0.26
+    ]
+   },
+   "output": "logos/26006.png",
+   "verified": true,
+   "note": "Rangoon Food House brand mark from title slide top right"
+  },
+  "links": []
+ },
+ "26007": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.24,
+     0.28,
+     0.67,
+     0.6
+    ]
+   },
+   "output": "logos/26007.png",
+   "verified": true,
+   "note": "LotusLIB wordmark with lotus app icon from title slide"
+  },
+  "links": []
+ },
+ "26008": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.05,
+     0.02,
+     0.31,
+     0.43
+    ]
+   },
+   "output": "logos/26008.png",
+   "verified": true,
+   "note": "Fivetwo One cafe script wordmark in circle from title slide"
+  },
+  "links": [
+   {
+    "url": "https://github.com/zxing/zxing",
+    "normalized": "https://github.com/zxing/zxing",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 41,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/zxing/zxing",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/zxing/zxing",
+     "checked_at": "2026-09-11T07:32:33+00:00"
+    }
+   }
+  ]
+ },
+ "26009": {
+  "logo": {
+   "has_logo": false,
+   "reason": "no_logo_found",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Title slides use plain serif text on colored blocks with decorative flower and leaf photos, no project or business emblem in report or slides"
+  },
+  "links": []
+ },
+ "26010": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Report cover shows only the AU crest and Vincent Mary School of Engineering, Science and Technology marks with a plain-text 'AutoWise' title. Slides use serif text titles and stock jewelry photos with no designed project mark; 'Borcelle Jewelry' on slide 7 is a template placeholder, not the project brand."
+  },
+  "links": []
+ },
+ "26011": {
+  "logo": {
+   "has_logo": false,
+   "reason": "no_logo_found",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "First Save Point team deck uses plain bold text titles and stock cycling photos, no team or product emblem in report or slides"
+  },
+  "links": []
+ },
+ "26012": {
+  "logo": {
+   "has_logo": false,
+   "reason": "no_logo_found",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Deck uses plain text titles, workflow diagrams, emoji icons and a stock microplastics photo, no team or project emblem in report or slides"
+  },
+  "links": []
+ },
+ "26013": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.7,
+     0.55,
+     1.0,
+     1.0
+    ]
+   },
+   "output": "logos/26013.png",
+   "verified": true,
+   "note": "Recurring cat-with-magnifying-glass mascot used as deck brand mark on the title slide; plain-text CODE_FIX title is not stylized."
+  },
+  "links": []
+ },
+ "26014": {
+  "logo": {
+   "has_logo": false,
+   "reason": "no_logo_found",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only AU/VMS crests, plain text titles, and a generic stock illustration on the slides title page."
+  },
+  "links": []
+ },
+ "26016": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only AU and Vincent Mary School crests on report and slides; other marks are third-party (conference site) or generic icons."
+  },
+  "links": []
+ },
+ "26017": {
+  "logo": {
+   "has_logo": false,
+   "reason": "no_logo_found",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Slides use a generic mechanical parts template with stock vector decorations; no project emblem, mascot, or wordmark."
+  },
+  "links": []
+ },
+ "26018": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 6,
+    "box": [
+     0.27,
+     0.17,
+     0.36,
+     0.29
+    ]
+   },
+   "output": "logos/26018.png",
+   "verified": true,
+   "note": "DockForge VS Code extension icon (whale tail with wrench) shown atop the system architecture diagram."
+  },
+  "links": [
+   {
+    "url": "https://github.com/microsoft/vscode-webview-ui-toolkit",
+    "normalized": "https://github.com/microsoft/vscode-webview-ui-toolkit",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 27,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/microsoft/vscode-webview-ui-toolkit",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/microsoft/vscode-webview-ui-toolkit",
+     "checked_at": "2026-09-11T07:31:26+00:00"
+    }
+   }
+  ]
+ },
+ "26019": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.1,
+     0.27,
+     0.96,
+     0.62
+    ]
+   },
+   "output": "logos/26019.png",
+   "verified": true,
+   "note": "Designed two-tone wordmark with blue circle accent on the slides title; the Allianz AYUDHYA mark seen later is third-party."
+  },
+  "links": []
+ },
+ "26020": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 5,
+    "box": [
+     0.42,
+     0.6,
+     0.58,
+     0.8
+    ]
+   },
+   "output": "logos/26020.png",
+   "verified": true,
+   "note": null
+  },
+  "links": [
+   {
+    "url": "https://github.com/thuyein96/internal-developer-tool-orchestronic",
+    "normalized": "https://github.com/thuyein96/internal-developer-tool-orchestronic",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 37,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "project_repo",
+    "liveness": {
+     "url": "https://github.com/thuyein96/internal-developer-tool-orchestronic",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/thuyein96/internal-developer-tool-orchestronic",
+     "checked_at": "2026-09-11T07:32:17+00:00"
+    }
+   }
+  ]
+ },
+ "26021": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 3,
+    "box": [
+     0.28,
+     0.05,
+     0.39,
+     0.22
+    ]
+   },
+   "output": "logos/26021.png",
+   "verified": true,
+   "note": null
+  },
+  "links": [
+   {
+    "url": "https://github.com/tj/commander.js",
+    "normalized": "https://github.com/tj/commander.js",
+    "found_in": [
+     {
+      "file": "report.pdf",
+      "page": 44,
+      "method": "text"
+     }
+    ],
+    "primary": true,
+    "kind": "third_party_reference",
+    "liveness": {
+     "url": "https://github.com/tj/commander.js",
+     "status": "public",
+     "http_status": 200,
+     "final_url": "https://github.com/tj/commander.js",
+     "checked_at": "2026-09-11T07:32:19+00:00"
+    }
+   }
+  ]
+ },
+ "26022": {
+  "logo": {
+   "has_logo": false,
+   "reason": "no_logo_found",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only AU/VMS crests on cover; slide art is generic safe clipart and screenshots, no designed project mark"
+  },
+  "links": []
+ },
+ "26023": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 2,
+    "box": [
+     0.07,
+     0.43,
+     0.32,
+     0.73
+    ]
+   },
+   "output": "logos/26023.png",
+   "verified": true,
+   "note": "iReadCustomer client brand shown in slide headers and large on slide 2"
+  },
+  "links": []
+ },
+ "26024": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.7,
+     0.35,
+     0.95,
+     0.8
+    ]
+   },
+   "output": "logos/26024.png",
+   "verified": true,
+   "note": null
+  },
+  "links": []
+ },
+ "26026": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.03,
+     0.65,
+     0.36,
+     0.82
+    ]
+   },
+   "output": "logos/26026.png",
+   "verified": true,
+   "note": "Stylized MGNITION wordmark on title slide"
+  },
+  "links": []
+ },
+ "26027": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.04,
+     0.12,
+     0.18,
+     0.33
+    ]
+   },
+   "output": "logos/26027.png",
+   "verified": true,
+   "note": "MCG red pinwheel brand mark next to MCG CARE 2.0 title on title slide"
+  },
+  "links": []
+ },
+ "26029": {
+  "logo": {
+   "has_logo": false,
+   "reason": "no_logo_found",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only mark on any page is the client company Adecco wordmark (third-party brand); project product Pro Sales appears as plain text only"
+  },
+  "links": []
+ },
+ "26030": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 4,
+    "box": [
+     0.58,
+     0.3,
+     0.93,
+     0.88
+    ]
+   },
+   "output": "logos/26030.png",
+   "verified": true,
+   "note": "Clario blue app icon with document mark and wordmark, shown on table of contents and What is Clario slides"
+  },
+  "links": []
+ },
+ "26031": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.24,
+     0.06,
+     0.75,
+     0.28
+    ]
+   },
+   "output": "logos/26031.png",
+   "verified": true,
+   "note": "Hand-drawn blue gradient GAMORAX wordmark, largest on title slide, repeated in slide headers"
+  },
+  "links": []
+ },
+ "26032": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Report cover carries only the Assumption University and Vincent Mary School crests; EduTrack title is plain text"
+  },
+  "links": []
+ },
+ "26033": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Only university and Vincent Mary School crests exist; Hop-On RideShare appears as plain standard-font title text on the slide deck"
+  },
+  "links": []
+ },
+ "26034": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.38,
+     0.13,
+     0.62,
+     0.37
+    ]
+   },
+   "output": "logos/26034.png",
+   "verified": true,
+   "note": "QUIZZY wave-icon wordmark on title slide, only designed mark in the deck"
+  },
+  "links": []
+ },
+ "26035": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 3,
+    "box": [
+     0.58,
+     0.24,
+     0.93,
+     0.99
+    ]
+   },
+   "output": "logos/26035.png",
+   "verified": true,
+   "note": "3D pigeon mascot (app character) from What is TestHive slide, largest clean occurrence"
+  },
+  "links": []
+ },
+ "26036": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.1,
+     0.16,
+     0.45,
+     0.82
+    ]
+   },
+   "output": "logos/26036.png",
+   "verified": true,
+   "note": "Apsara dancer silhouette in red circle, project brand mark on title slide"
+  },
+  "links": []
+ },
+ "26037": {
+  "logo": {
+   "has_logo": false,
+   "reason": "au_crest_only",
+   "extracted": false,
+   "source": null,
+   "output": null,
+   "verified": false,
+   "note": "Deck is plain text slides; only AU crest on title slide and report cover, no project mark"
+  },
+  "links": []
+ },
+ "26038": {
+  "logo": {
+   "has_logo": true,
+   "reason": null,
+   "extracted": true,
+   "source": {
+    "pdf": "slides.pdf",
+    "page": 1,
+    "box": [
+     0.1,
+     0.58,
+     0.9,
+     0.8
+    ]
+   },
+   "output": "logos/26038.png",
+   "verified": true,
+   "note": "Brush-style BANGKOK BUDDY wordmark on title slide"
+  },
+  "links": []
+ }
+}

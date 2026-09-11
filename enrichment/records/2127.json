@@ -1,0 +1,13 @@
+{
+  "id": "2127",
+  "logo": {
+    "has_logo": false,
+    "reason": "no_logo_found",
+    "extracted": false,
+    "source": null,
+    "output": null,
+    "verified": false,
+    "note": "Only AU crest and VMS school mark on report cover, slides use generic stock clipart and third-party tech logos (Flask, MySQL, HTML)."
+  },
+  "links": []
+}

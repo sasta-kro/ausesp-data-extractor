@@ -1,0 +1,13 @@
+{
+  "id": "2148",
+  "logo": {
+    "has_logo": false,
+    "reason": "no_logo_found",
+    "extracted": false,
+    "source": null,
+    "output": null,
+    "verified": false,
+    "note": "audit downgrade: the only candidate was a rounded pill button with plain app-name text on the slide title page, a UI element rather than a designed mark"
+  },
+  "links": []
+}

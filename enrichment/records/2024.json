@@ -1,0 +1,13 @@
+{
+  "id": "2024",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {"pdf": "slides.pdf", "page": 2, "box": [0.005, 0.93, 0.045, 1.0]},
+    "output": "logos/2024.png",
+    "verified": true,
+    "note": "ZAAPP app icon from slide footer bar; appears on all content slides"
+  },
+  "links": []
+}

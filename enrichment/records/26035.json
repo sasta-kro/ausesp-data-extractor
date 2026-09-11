@@ -1,0 +1,17 @@
+{
+  "id": "26035",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {
+      "pdf": "slides.pdf",
+      "page": 3,
+      "box": [0.58, 0.24, 0.93, 0.99]
+    },
+    "output": "logos/26035.png",
+    "verified": true,
+    "note": "3D pigeon mascot (app character) from What is TestHive slide, largest clean occurrence"
+  },
+  "links": []
+}

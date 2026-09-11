@@ -1,0 +1,17 @@
+{
+  "id": "2119",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {
+      "pdf": "slides.pdf",
+      "page": 1,
+      "box": [0.18, 0.12, 0.82, 0.62]
+    },
+    "output": "logos/2119.png",
+    "verified": true,
+    "note": "Stylized INFINITE RUNNER game wordmark on title slide"
+  },
+  "links": []
+}

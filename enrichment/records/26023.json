@@ -1,0 +1,13 @@
+{
+  "id": "26023",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {"pdf": "slides.pdf", "page": 2, "box": [0.07, 0.43, 0.32, 0.73]},
+    "output": "logos/26023.png",
+    "verified": true,
+    "note": "iReadCustomer client brand shown in slide headers and large on slide 2"
+  },
+  "links": []
+}

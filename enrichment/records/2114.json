@@ -1,0 +1,13 @@
+{
+  "id": "2114",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {"pdf": "slides.pdf", "page": 4, "box": [0.38, 0.10, 0.64, 0.50]},
+    "output": "logos/2114.png",
+    "verified": true,
+    "note": "Naughty Hamsters game mascot (hamster character) from section slide; same mascot family appears on slides 1 and 2."
+  },
+  "links": []
+}

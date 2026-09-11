@@ -1,0 +1,13 @@
+{
+  "id": "26007",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {"pdf": "slides.pdf", "page": 1, "box": [0.24, 0.28, 0.67, 0.6]},
+    "output": "logos/26007.png",
+    "verified": true,
+    "note": "LotusLIB wordmark with lotus app icon from title slide"
+  },
+  "links": []
+}

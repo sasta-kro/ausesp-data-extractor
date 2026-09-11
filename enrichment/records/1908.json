@@ -1,0 +1,13 @@
+{
+  "id": "1908",
+  "logo": {
+    "has_logo": false,
+    "reason": "au_crest_only",
+    "extracted": false,
+    "source": null,
+    "output": null,
+    "verified": false,
+    "note": "All 26 embedded DOCX images checked (image7 and image8 are .jpeg, rest .png). image1 is the AU crest; the rest are NES game screenshots (Circus Charlie, Super Mario Bros via FCEUX, Chrome dino), sprite crops, and Python/TensorFlow code and terminal output screenshots. No designed project logo exists."
+  },
+  "links": []
+}

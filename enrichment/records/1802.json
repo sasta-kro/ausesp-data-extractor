@@ -1,0 +1,17 @@
+{
+  "id": "1802",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {
+      "pdf": "report.pdf",
+      "page": 1,
+      "box": [0.28, 0.53, 0.72, 0.605]
+    },
+    "output": "logos/1802.png",
+    "verified": true,
+    "note": "Stylized AUComplaint wordmark on the cover; first crop included the Final Report caption, tightened to the wordmark only."
+  },
+  "links": []
+}

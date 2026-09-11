@@ -1,0 +1,13 @@
+{
+  "id": "1824",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {"image": "poster.jpg", "box": [0.33, 0.0, 0.72, 0.127]},
+    "output": "logos/1824.png",
+    "verified": true,
+    "note": null
+  },
+  "links": []
+}

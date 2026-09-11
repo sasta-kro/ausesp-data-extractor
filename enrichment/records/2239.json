@@ -1,0 +1,13 @@
+{
+  "id": "2239",
+  "logo": {
+    "has_logo": false,
+    "reason": "no_logo_found",
+    "extracted": false,
+    "source": null,
+    "output": null,
+    "verified": false,
+    "note": "Slides are game screenshots with plain text titles; only third-party tool logos (Unity, Blender, GIMP, Trello) appear"
+  },
+  "links": []
+}

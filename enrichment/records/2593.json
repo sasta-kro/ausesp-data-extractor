@@ -1,0 +1,17 @@
+{
+  "id": "2593",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {
+      "pdf": "slides.pdf",
+      "page": 6,
+      "box": [0.07, 0.45, 0.24, 0.68]
+    },
+    "output": "logos/2593.png",
+    "verified": true,
+    "note": "SkillSync app icon with wordmark and tagline from login screen mockup"
+  },
+  "links": []
+}

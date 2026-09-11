@@ -1,0 +1,17 @@
+{
+  "id": "2140",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {
+      "pdf": "slides.pdf",
+      "page": 1,
+      "box": [0.13, 0.34, 0.315, 0.66]
+    },
+    "output": "logos/2140.png",
+    "verified": true,
+    "note": "ATK coin emblem (orange and purple halves with white eagle and otter) at the center of the network graphic on the title slide."
+  },
+  "links": []
+}

@@ -1,0 +1,13 @@
+{
+  "id": "26003",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {"pdf": "slides.pdf", "page": 6, "box": [0.03, 0.04, 0.18, 0.17]},
+    "output": "logos/26003.png",
+    "verified": true,
+    "note": "Team KGB brand mark (circular G emblem plus KGB wordmark) from slide header"
+  },
+  "links": []
+}

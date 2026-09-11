@@ -1,0 +1,13 @@
+{
+  "id": "2242",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {"pdf": "slides.pdf", "page": 7, "box": [0.075, 0.14, 0.122, 0.213]},
+    "output": "logos/2242.png",
+    "verified": true,
+    "note": "Owl EDURATING mascot mark from app header in screenshot; only visible occurrence is inside app screenshots."
+  },
+  "links": []
+}

@@ -1,0 +1,17 @@
+{
+  "id": "26034",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {
+      "pdf": "slides.pdf",
+      "page": 1,
+      "box": [0.38, 0.13, 0.62, 0.37]
+    },
+    "output": "logos/26034.png",
+    "verified": true,
+    "note": "QUIZZY wave-icon wordmark on title slide, only designed mark in the deck"
+  },
+  "links": []
+}

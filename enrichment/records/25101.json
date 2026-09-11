@@ -1,0 +1,13 @@
+{
+  "id": "25101",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {"pdf": "slides.pdf", "page": 1, "box": [0.05, 0.06, 0.3, 0.26]},
+    "output": "logos/25101.png",
+    "verified": true,
+    "note": "Convenient Park Hotel brand mark (N monogram with wordmark), also in slide headers and as badge on slides 3 and 7"
+  },
+  "links": []
+}

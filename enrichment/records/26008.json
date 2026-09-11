@@ -1,0 +1,13 @@
+{
+  "id": "26008",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {"pdf": "slides.pdf", "page": 1, "box": [0.05, 0.02, 0.31, 0.43]},
+    "output": "logos/26008.png",
+    "verified": true,
+    "note": "Fivetwo One cafe script wordmark in circle from title slide"
+  },
+  "links": []
+}

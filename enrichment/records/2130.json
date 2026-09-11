@@ -1,0 +1,17 @@
+{
+  "id": "2130",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {
+      "pdf": "slides.pdf",
+      "page": 8,
+      "box": [0.12, 0.57, 0.4, 0.8]
+    },
+    "output": "logos/2130.png",
+    "verified": true,
+    "note": "BAKSTERS Company Limited brand mark (heart emblem and stylized wordmark), the client company this fall detection project was built for, on the External Exposure slide."
+  },
+  "links": []
+}

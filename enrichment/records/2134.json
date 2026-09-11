@@ -1,0 +1,13 @@
+{
+  "id": "2134",
+  "logo": {
+    "has_logo": false,
+    "reason": "au_crest_only",
+    "extracted": false,
+    "source": null,
+    "output": null,
+    "verified": false,
+    "note": "Only the Assumption University crest on the report cover; slides use plain text titles and generic icons. OpenCV mark on slide 8 is third-party."
+  },
+  "links": []
+}

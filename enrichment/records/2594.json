@@ -1,0 +1,17 @@
+{
+  "id": "2594",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {
+      "pdf": "slides.pdf",
+      "page": 1,
+      "box": [0.14, 0.2, 0.46, 0.76]
+    },
+    "output": "logos/2594.png",
+    "verified": true,
+    "note": "AUGO bubble-letter app logo on title slide"
+  },
+  "links": []
+}

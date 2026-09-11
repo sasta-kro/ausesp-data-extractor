@@ -1,0 +1,13 @@
+{
+  "id": "25105",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {"pdf": "slides.pdf", "page": 2, "box": [0.60, 0.25, 0.95, 0.82]},
+    "output": "logos/25105.png",
+    "verified": true,
+    "note": "Bankify B emblem with arrow, on Problem Statement slide; report pages show only the AU crest"
+  },
+  "links": []
+}

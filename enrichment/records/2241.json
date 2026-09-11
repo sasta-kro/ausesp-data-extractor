@@ -1,0 +1,13 @@
+{
+  "id": "2241",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {"pdf": "slides.pdf", "page": 8, "box": [0.785, 0.145, 0.915, 0.295]},
+    "output": "logos/2241.png",
+    "verified": true,
+    "note": "ECIC circular brand mark (ECIC wordmark with grid icon) from comparison slide header"
+  },
+  "links": []
+}

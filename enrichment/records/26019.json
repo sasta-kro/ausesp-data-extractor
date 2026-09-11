@@ -1,0 +1,13 @@
+{
+  "id": "26019",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {"pdf": "slides.pdf", "page": 1, "box": [0.10, 0.27, 0.96, 0.62]},
+    "output": "logos/26019.png",
+    "verified": true,
+    "note": "Designed two-tone wordmark with blue circle accent on the slides title; the Allianz AYUDHYA mark seen later is third-party."
+  },
+  "links": []
+}

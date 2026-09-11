@@ -1,0 +1,13 @@
+{
+  "id": "2231",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {"pdf": "slides.pdf", "page": 1, "box": [0.28, 0.17, 0.73, 0.82]},
+    "output": "logos/2231.png",
+    "verified": true,
+    "note": "Title slide emblem: graduate on books with Education Agency Support System wordmark"
+  },
+  "links": []
+}

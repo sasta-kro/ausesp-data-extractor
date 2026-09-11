@@ -1,0 +1,17 @@
+{
+  "id": "2138",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {
+      "pdf": "slides.pdf",
+      "page": 1,
+      "box": [0.415, 0.05, 0.495, 0.20]
+    },
+    "output": "logos/2138.png",
+    "verified": true,
+    "note": "Red chevron team brand mark, same mark as project 2137, reused across slides."
+  },
+  "links": []
+}

@@ -1,0 +1,13 @@
+{
+  "id": "2254",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {"pdf": "slides.pdf", "page": 7, "box": [0.52, 0.15, 0.93, 0.88]},
+    "output": "logos/2254.png",
+    "verified": true,
+    "note": "ZURGIRIAL skull emblem with crossed pistols, also on slides pages 3 and 8"
+  },
+  "links": []
+}

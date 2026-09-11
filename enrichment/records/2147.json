@@ -1,0 +1,13 @@
+{
+  "id": "2147",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {"pdf": "slides.pdf", "page": 1, "box": [0.15, 0.08, 0.85, 0.44]},
+    "output": "logos/2147.png",
+    "verified": true,
+    "note": "RecipeDia green chef-hat wordmark, also appears on report page 1 and slide headers"
+  },
+  "links": []
+}

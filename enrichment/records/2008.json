@@ -1,0 +1,15 @@
+{
+  "id": "2008",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": false,
+    "source": {
+      "media": "image25.png"
+    },
+    "output": null,
+    "verified": false,
+    "note": "Cloud Cafe icon and wordmark appear only embedded in app screenshots (top-left of image25.png), no standalone logo image among the first 25 media files"
+  },
+  "links": []
+}

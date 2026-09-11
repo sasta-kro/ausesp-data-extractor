@@ -1,0 +1,13 @@
+{
+  "id": "2102",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {"pdf": "slides.pdf", "page": 1, "box": [0.115, 0.30, 0.285, 0.70]},
+    "output": "logos/2102.png",
+    "verified": true,
+    "note": "App logo (blue diamond with airplane, Isekai characters, CITY GUIDE) shown on the title slide phone mockup."
+  },
+  "links": []
+}

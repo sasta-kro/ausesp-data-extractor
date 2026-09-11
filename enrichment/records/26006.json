@@ -1,0 +1,13 @@
+{
+  "id": "26006",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {"pdf": "slides.pdf", "page": 1, "box": [0.68, 0.0, 1.0, 0.26]},
+    "output": "logos/26006.png",
+    "verified": true,
+    "note": "Rangoon Food House brand mark from title slide top right"
+  },
+  "links": []
+}

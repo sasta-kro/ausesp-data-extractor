@@ -1,0 +1,13 @@
+{
+  "id": "2115",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {"pdf": "slides.pdf", "page": 1, "box": [0.55, 0.12, 1.0, 0.72]},
+    "output": "logos/2115.png",
+    "verified": true,
+    "note": "Chatbot robot mascot illustration on title slide of LINE Chatbot for Coupon Customer deck."
+  },
+  "links": []
+}

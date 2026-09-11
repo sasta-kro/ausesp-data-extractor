@@ -1,0 +1,17 @@
+{
+  "id": "2139",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {
+      "pdf": "slides.pdf",
+      "page": 1,
+      "box": [0.18, 0.18, 0.56, 0.58]
+    },
+    "output": "logos/2139.png",
+    "verified": true,
+    "note": "XAM wordmark with pink and purple circles from title slide; final letter M is slightly clipped at the crop edge."
+  },
+  "links": []
+}

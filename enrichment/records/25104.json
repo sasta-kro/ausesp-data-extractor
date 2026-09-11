@@ -1,0 +1,13 @@
+{
+  "id": "25104",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {"pdf": "slides.pdf", "page": 3, "box": [0.63, 0.15, 0.89, 0.53]},
+    "output": "logos/25104.png",
+    "verified": true,
+    "note": "DTG (Dynamic Technology Group) circular emblem used as the DTG FieldLink app identity, also on report page 3 letter"
+  },
+  "links": []
+}

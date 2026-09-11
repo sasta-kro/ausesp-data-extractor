@@ -1,0 +1,13 @@
+{
+  "id": "26027",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {"pdf": "slides.pdf", "page": 1, "box": [0.04, 0.12, 0.18, 0.33]},
+    "output": "logos/26027.png",
+    "verified": true,
+    "note": "MCG red pinwheel brand mark next to MCG CARE 2.0 title on title slide"
+  },
+  "links": []
+}

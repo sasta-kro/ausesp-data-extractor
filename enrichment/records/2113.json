@@ -1,0 +1,13 @@
+{
+  "id": "2113",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {"pdf": "slides.pdf", "page": 1, "box": [0.45, 0.10, 0.98, 0.90]},
+    "output": "logos/2113.png",
+    "verified": true,
+    "note": "Project mark on title slide: cube with wifi signal and person icon for the Wi-Fi based Occupancy Sensor."
+  },
+  "links": []
+}

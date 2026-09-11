@@ -1,0 +1,13 @@
+{
+  "id": "26005",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {"pdf": "slides.pdf", "page": 1, "box": [0.16, 0.28, 0.85, 0.53]},
+    "output": "logos/26005.png",
+    "verified": true,
+    "note": "Stylized serif BAKEFLOW wordmark on title slide; Homemade Homebake logo on slide 3 belongs to the client, not this project"
+  },
+  "links": []
+}

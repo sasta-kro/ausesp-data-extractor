@@ -1,0 +1,13 @@
+{
+  "id": "26021",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {"pdf": "slides.pdf", "page": 3, "box": [0.28, 0.05, 0.39, 0.22]},
+    "output": "logos/26021.png",
+    "verified": true,
+    "note": null
+  },
+  "links": []
+}

@@ -1,0 +1,13 @@
+{
+  "id": "26030",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {"pdf": "slides.pdf", "page": 4, "box": [0.58, 0.3, 0.93, 0.88]},
+    "output": "logos/26030.png",
+    "verified": true,
+    "note": "Clario blue app icon with document mark and wordmark, shown on table of contents and What is Clario slides"
+  },
+  "links": []
+}

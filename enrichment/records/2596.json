@@ -1,0 +1,17 @@
+{
+  "id": "2596",
+  "logo": {
+    "has_logo": true,
+    "reason": null,
+    "extracted": true,
+    "source": {
+      "pdf": "slides.pdf",
+      "page": 1,
+      "box": [0.42, 0.25, 0.58, 0.48]
+    },
+    "output": "logos/2596.png",
+    "verified": true,
+    "note": "Blue timeout clock icon above the AU Timeout title on the title slide"
+  },
+  "links": []
+}
