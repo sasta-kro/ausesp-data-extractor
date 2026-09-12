@@ -9,7 +9,7 @@ and writes output/extraction-evidence/manifest.json plus a summary at
 output/extraction-evidence/summary.md. Any validation failure is reported and fails
 the run.
 
-Usage: python3 steps/merge_enrichment.py
+Usage: python3 pipeline/merge_enrichment.py
 """
 from __future__ import annotations
 

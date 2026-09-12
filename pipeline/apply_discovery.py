@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
 """Aggregate discovery results and fold them into the canonical batches.
 
-Reads ground-truth/discovery/chunk-*.json and does two things:
+Reads dataset/taxonomy-research/research-*.json and does two things:
 
 1. Writes output/discovery-report.md: every suggested taxonomy key that is
    not already in values.yaml, ranked by how many projects genuinely use it
    ("used" evidence), with "cited"-only counts shown separately.
-2. Merges each discovery record into the existing ground-truth/batches record
+2. Merges each discovery record into the existing dataset/project-records record
    for the same id: fills a missing abstract, replaces classification arrays,
    and fills null metadata fields. Never overwrites non-null existing values
    except classification, which the discovery pass re-examined in full.
 
-Usage: python3 steps/apply_discovery.py [--taxonomy <values.yaml>] [--dry-run]
+Usage: python3 pipeline/apply_discovery.py [--taxonomy <values.yaml>] [--dry-run]
 """
 
 from __future__ import annotations
@@ -45,7 +45,7 @@ def main() -> int:
     # ---- aggregate suggestions -------------------------------------------
     stats: dict[str, dict[str, dict]] = {d: defaultdict(lambda: {"label": "", "used": [], "cited": []}) for d in DIMENSIONS}
     records = []
-    for chunk in sorted((root / "ground-truth" / "discovery").glob("chunk-*.json")):
+    for chunk in sorted((root / "dataset" / "taxonomy-research").glob("research-*.json")):
         for record in json.loads(chunk.read_text()):
             records.append(record)
             for dimension, suggestions in (record.get("discoveries") or {}).items():
@@ -81,7 +81,7 @@ def main() -> int:
         return 0
 
     # ---- merge into canonical batches ------------------------------------
-    batch_dir = root / "ground-truth" / "batches"
+    batch_dir = root / "dataset" / "project-records"
     canonical: dict[str, tuple[Path, dict]] = {}
     for batch in sorted(batch_dir.glob("*.json")):
         data = json.loads(batch.read_text())

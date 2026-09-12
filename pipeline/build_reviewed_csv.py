@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """Build the reviewed import CSV from the hand-transcribed ground truth.
 
-Inputs: every JSON file in ground-truth/batches/. Output:
+Inputs: every JSON file in dataset/project-records/. Output:
 output/ause-discovery-projects-metadata-import.csv in the exact AUSE Discovery import schema.
 Records missing an abstract or a title are dropped and reported; the
 application rejects such rows anyway.
 
-Usage: python3 steps/build_reviewed_csv.py [--taxonomy <values.yaml>]
+Usage: python3 pipeline/build_reviewed_csv.py [--taxonomy <values.yaml>]
 """
 
 from __future__ import annotations
@@ -128,7 +128,7 @@ def main() -> int:
     args = parser.parse_args()
 
     records: dict[str, dict] = {}
-    sources = sorted((root / "ground-truth" / "batches").glob("*.json"))
+    sources = sorted((root / "dataset" / "project-records").glob("*.json"))
     for source in sources:
         loaded = json.loads(source.read_text())
         # sample.json is keyed by id; batch files are lists of records.

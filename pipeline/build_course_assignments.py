@@ -7,7 +7,7 @@ Agents read the cover, capture the course statement verbatim, and write one
 JSON per project to _workspace/sp-course-code-tracking/<id>.json. Word-doc projects are excluded
 (covered mechanically through textutil).
 
-Usage: python3 steps/build_course_assignments.py [--group-size 17]
+Usage: python3 pipeline/build_course_assignments.py [--group-size 17]
 """
 from __future__ import annotations
 

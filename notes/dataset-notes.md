@@ -1,14 +1,14 @@
 # Dataset notes
 
 Working record of what the dataset contains and why some records are the way
-they are. Read before touching `ground-truth/` or rebuilding the CSV.
+they are. Read before touching `dataset/` or rebuilding the CSV.
 
-- `ground-truth/batches/` holds one JSON record per project, transcribed
+- `dataset/project-records/` holds one JSON record per project, transcribed
   directly from the source documents: verbatim titles and abstracts, people
   as printed, classifications restricted to the keys defined in the main
   repository. Where a document prints no abstract, a short factual summary
-  based on the document's own content stands in. Fix data in the batch
-  records, never in the CSV.
+  based on the document's own content stands in. Fix data in the record
+  files, never in the CSV.
 - Person names are normalized at build time (see
   [person-name-canonicalization.md](person-name-canonicalization.md)):
   honorifics and academic titles are stripped, spelling variants collapse

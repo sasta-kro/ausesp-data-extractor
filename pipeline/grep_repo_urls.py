@@ -6,7 +6,7 @@ by page for github.com / gitlab.com / bitbucket.org URLs, and converts DOCX
 reports to text through macOS textutil (no page numbers there). Writes
 output/extraction-evidence/repo-link-evidence/text-grep.json with one record per sighting.
 
-Usage: python3 steps/grep_repo_urls.py
+Usage: python3 pipeline/grep_repo_urls.py
 """
 from __future__ import annotations
 

@@ -12,8 +12,8 @@ smaller than 40 px on either side, so a wrong box fails loudly instead of
 producing a sliver. Prints the output size; on success the PNG is written to
 --out.
 
-Usage: python3 steps/crop_logo.py --pdf <path> --page N --box 0.30,0.10,0.70,0.25 --out <path>
-       python3 steps/crop_logo.py --media <path> --out <path>
+Usage: python3 pipeline/crop_logo.py --pdf <path> --page N --box 0.30,0.10,0.70,0.25 --out <path>
+       python3 pipeline/crop_logo.py --media <path> --out <path>
 """
 from __future__ import annotations
 

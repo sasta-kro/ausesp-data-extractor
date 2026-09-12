@@ -7,7 +7,7 @@ into groups, and writes one complete prompt per group under
 _workspace/prompts/group-NN.md. The shared rules block matches the pilot
 prompt so behavior stays identical across waves.
 
-Usage: python3 steps/build_pass_assignments.py [--group-size 6]
+Usage: python3 pipeline/build_pass_assignments.py [--group-size 6]
 """
 from __future__ import annotations
 
@@ -45,7 +45,7 @@ When the same logo appears in several places, use the largest, cleanest, fully v
 
 # COMMAND TEMPLATE (run from this exact directory)
 
-cd /Users/saiaikeshwetunaung/Developer/WebApps/ause-discover/tools/ausesp-data-extractor && .venv/bin/python steps/crop_logo.py --pdf _workspace/extracted-sources/<ID>/report.pdf --page <N> --box 0.20,0.05,0.80,0.25 --out output/logos/<ID>.png
+cd /Users/saiaikeshwetunaung/Developer/WebApps/ause-discover/tools/ausesp-data-extractor && .venv/bin/python pipeline/crop_logo.py --pdf _workspace/extracted-sources/<ID>/report.pdf --page <N> --box 0.20,0.05,0.80,0.25 --out output/logos/<ID>.png
 
 - page numbers are 1-based and must be within the page ranges stated for that document below.
 - box is x0,y0,x1,y1 fractions of the page, 0.0-1.0, measured from the TOP-LEFT, with x0<x1 and y0<y1; give generous margins because the script auto-trims.

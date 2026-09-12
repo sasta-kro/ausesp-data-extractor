@@ -3,7 +3,7 @@
 Observed in real import output, 2026-09-05. Step 3 is regex-based and never
 reached the quality of the hand-transcribed records; kept for reference only.
 The shipped CSV is built from the ground truth by
-`steps/build_reviewed_csv.py`.
+`pipeline/build_reviewed_csv.py`.
 
 - Advisor parsing produced `).` for project 2006 (Face Mask Detection):
   parenthesized signature artifacts leak into the advisor field.

@@ -15,7 +15,7 @@ Modes:
                                                  (replaces in place after verification)
   --demo <id>                                   3-panel comparison sheet for review
 
-Usage: python3 steps/normalize_logo.py --demo 2141
+Usage: python3 pipeline/normalize_logo.py --demo 2141
 """
 from __future__ import annotations
 

@@ -11,7 +11,7 @@ Output: output/extraction-evidence/repo-link-evidence/link-kinds.json ({url: {"k
 Hand-curated 2026-09-11 by cross-checking owners against ground-truth student
 names and repo names against ground-truth titles.
 
-Usage: python3 steps/classify_links.py
+Usage: python3 pipeline/classify_links.py
 """
 from __future__ import annotations
 

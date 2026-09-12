@@ -22,9 +22,9 @@ in this pass is written here.
 4. **Slide-only projects (2021, 2031, 2032).** No report files exist anywhere
    in the corpus (verified twice). All three were transcribed from their full
    slide decks (37, 99, and 32 pages, every page read visually plus the text
-   layer) into `ground-truth/batches/batch-slideonly.json`.
+   layer) into `dataset/project-records/records-slideonly.json`.
 5. **Duplicate culling.** The worse side of each pair is fully deleted
-   (ground-truth record, enrichment record, logo PNG, manifest entries, CSV
+   (dataset record, enrichment record, logo PNG, manifest entries, CSV
    row). Decisions below.
 6. **Logo manifest generation** filters to projects present in the
    metadata CSV (the jq documented in the main repository's operator note),

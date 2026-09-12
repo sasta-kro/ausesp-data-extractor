@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Pull the final JSON array from a recorded reading-session log into ground-truth/discovery/.
+"""Pull the final JSON array from a recorded reading-session log into dataset/taxonomy-research/.
 
-Usage: python3 steps/extract_discovery.py <output-file> <chunk-number>
+Usage: python3 pipeline/extract_discovery.py <output-file> <chunk-number>
 Validates the array, drops placeholder records (empty title or non-numeric id),
-and writes ground-truth/discovery/chunk-NN.json.
+and writes dataset/taxonomy-research/chunk-NN.json.
 """
 from __future__ import annotations
 
@@ -53,7 +53,7 @@ def main() -> int:
     records = best
     clean = [r for r in records if r.get("canonical_title") and str(r.get("id", "")).isdigit()]
     dropped = [r.get("id") for r in records if r not in clean]
-    dest = Path("ground-truth/discovery") / f"chunk-{int(chunk):02d}.json"
+    dest = Path("dataset/taxonomy-research") / f"chunk-{int(chunk):02d}.json"
     dest.parent.mkdir(exist_ok=True)
     dest.write_text(json.dumps(clean, ensure_ascii=False, indent=1))
     suffix = f" (dropped {dropped})" if dropped else ""

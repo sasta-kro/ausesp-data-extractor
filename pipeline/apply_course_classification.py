@@ -12,7 +12,7 @@ Evidence layers, strongest first:
 Outputs _workspace/course-final.json: {id: {"course": "sp1"|"sp2"|"unspecified",
 "basis": "explicit"|"reread"|"docx"|"inferred:<code>"|"none", "evidence": ...}}.
 
-Usage: python3 steps/apply_course_classification.py
+Usage: python3 pipeline/apply_course_classification.py
 """
 from __future__ import annotations
 
@@ -40,7 +40,7 @@ def main() -> int:
     base = root / "_workspace"
 
     gt = {}
-    for f in (root / "ground-truth" / "batches").glob("*.json"):
+    for f in (root / "dataset" / "project-records").glob("*.json"):
         data = json.loads(f.read_text())
         for r in (data.values() if isinstance(data, dict) else data):
             gt[r["id"]] = r

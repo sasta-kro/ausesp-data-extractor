@@ -11,7 +11,7 @@ searchable archive of historical senior projects.
 
 The extraction work itself is finished: all 217 report-bearing projects in
 the corpus were read cover to cover and transcribed into the batch records
-under `ground-truth/`. The final stretch of that work was done by hand,
+under `dataset/`. The final stretch of that work was done by hand,
 directly against the source PDFs and Word documents, with this repository
 providing the record format, the preparation and conversion steps, and the
 CSV build tooling throughout. The repository is kept as the reproducible
@@ -34,10 +34,13 @@ Repository split:
 ## Repository layout
 
 ```text
-ground-truth/             hand-transcribed records, one file per work batch
-ground-truth/discovery/   taxonomy research notes with page-level evidence
+dataset/                  the hand-transcribed dataset
+dataset/project-records/  one JSON record per project: title, people, period,
+                          course, abstract, classification
+dataset/taxonomy-research/ vocabulary research notes with page-level evidence
+dataset/sample.json       the original pilot sample used by validate.py
 notes/                    maintainer notes: policies, decisions, traps, reviews
-steps/                    preparation, conversion, and build tooling
+pipeline/                 preparation, conversion, and build tooling
 output/                   deliverables
 output/ause-discovery-projects-metadata-import.csv   project metadata for the
                           AUSE Discovery import (rebuilt from ground truth, untracked)
@@ -60,22 +63,22 @@ _workspace/intermediate-data/      pass intermediates (course map, link greps)
 resources/all-sp-projects/        raw corpus: 220 projects, ZIPs and PDFs
         |
         v
-steps/1_prepare.py               unzip, normalize, clean -> reports/
+pipeline/1_prepare.py               unzip, normalize, clean -> reports/
         |
         v
-steps/2_trim.py                  keep front matter only -> thinned/
+pipeline/2_trim.py                  keep front matter only -> thinned/
         |
         v
-steps/3_extract_and_build_csv.py extract metadata, classify, emit CSV (scratch)
+pipeline/3_extract_and_build_csv.py extract metadata, classify, emit CSV (scratch)
         |
         v
-steps/build_reviewed_csv.py      ground truth -> the AUSE Discovery import CSV
+pipeline/build_reviewed_csv.py      ground truth -> the AUSE Discovery import CSV
 ```
 
 Steps 1 and 2 came from the earlier frontmatter-extractor project. Step 3
 is regex-based and never reached the quality of the hand-transcribed
 records; its known defects are in `notes/regex-pipeline-defects.md`. The
-shipped CSV is built from the ground truth by `steps/build_reviewed_csv.py`,
+shipped CSV is built from the ground truth by `pipeline/build_reviewed_csv.py`,
 which is the step that matters. Fix data in the batch records, never in the
 CSV.
 
@@ -86,29 +89,29 @@ python3 -m venv .venv
 .venv/bin/pip install -r requirements.txt
 
 # Step 1: prepare raw reports (only needed for a fresh corpus copy)
-.venv/bin/python steps/1_prepare.py <raw-dir> <reports-dir>
+.venv/bin/python pipeline/1_prepare.py <raw-dir> <reports-dir>
 
 # Step 2: trim to front matter
-.venv/bin/python steps/2_trim.py <reports-dir> <thinned-dir>
+.venv/bin/python pipeline/2_trim.py <reports-dir> <thinned-dir>
 
 # Step 3: regex extraction (defective, kept for reference)
-.venv/bin/python steps/3_extract_and_build_csv.py \
+.venv/bin/python pipeline/3_extract_and_build_csv.py \
   --pdfs <thinned-dir> \
   --taxonomy <path-to>/ause-discover/config/taxonomy/values.yaml \
   --output output
 
 # Build the AUSE Discovery import CSV from the hand-transcribed ground truth
-.venv/bin/python steps/build_reviewed_csv.py \
+.venv/bin/python pipeline/build_reviewed_csv.py \
   --taxonomy <path-to>/ause-discover/config/taxonomy/values.yaml
 
 # Regenerate the taxonomy research report and fold corrections into batches
-.venv/bin/python steps/apply_discovery.py
+.venv/bin/python pipeline/apply_discovery.py
 
 # Validate a pipeline run against the ground truth
-.venv/bin/python steps/validate.py \
+.venv/bin/python pipeline/validate.py \
   --metadata output/metadata \
   --corpus <corpus-analysis.json> \
-  --sample ground-truth/sample.json
+  --sample dataset/sample.json
 ```
 
 The taxonomy file comes from the main repository. The extractor can only

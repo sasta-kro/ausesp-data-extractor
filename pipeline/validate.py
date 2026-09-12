@@ -4,13 +4,13 @@
 Two references:
   1. The corpus analysis workbook's Projects sheet (all thinned projects):
      canonical title, student IDs, advisor, academic period.
-  2. The reviewed ground-truth sample (tools/sp-import/ground-truth/sample.json):
+  2. The reviewed ground-truth sample (tools/sp-import/dataset/sample.json):
      everything above plus classification facets, built by independent
      document reading rather than the extractor.
 
 Usage:
   .venv/bin/python validate.py --metadata output/metadata \
-      --corpus /tmp/corpus_analysis.json --sample ground-truth/sample.json
+      --corpus /tmp/corpus_analysis.json --sample dataset/sample.json
 """
 
 from __future__ import annotations

@@ -6,7 +6,7 @@ and up to four pages of each external-evidence PDF, at screen resolution.
 Writes _workspace/renders/<id>/<name>-p<N>.png and
 _workspace/renders-manifest.json listing what exists per project.
 
-Usage: python3 steps/render_enrichment.py [--dpi 150] [--clean]
+Usage: python3 pipeline/render_enrichment.py [--dpi 150] [--clean]
 """
 from __future__ import annotations
 

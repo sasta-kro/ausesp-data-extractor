@@ -11,7 +11,7 @@ or deleted (indistinguishable from outside); unknown = anything else
 (429/5xx/network/timeout). checked_at and final_url are recorded so renamed
 repos resolve to their new home.
 
-Usage: python3 steps/check_link_liveness.py
+Usage: python3 pipeline/check_link_liveness.py
 """
 from __future__ import annotations
 

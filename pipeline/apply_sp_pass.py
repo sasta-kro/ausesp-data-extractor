@@ -2,10 +2,10 @@
 """Apply the SP1/SP2 pass: classify records, cull duplicate pairs, fold in
 the slide-only transcriptions, rebuild the CSV and logo manifest.
 
-Every mutation is printed as it happens. Run steps/apply_course_classification.py
+Every mutation is printed as it happens. Run pipeline/apply_course_classification.py
 first (produces _workspace/course-final.json).
 
-Usage: python3 steps/apply_sp_pass.py
+Usage: python3 pipeline/apply_sp_pass.py
 """
 from __future__ import annotations
 
@@ -44,7 +44,7 @@ COURSE_KEYS = {"sp1": "senior_project_1", "sp2": "senior_project_2"}
 
 def main() -> int:
     root = Path(__file__).resolve().parent.parent
-    batches = root / "ground-truth" / "batches"
+    batches = root / "dataset" / "project-records"
     course = json.loads((root / "_workspace" / "course-final.json").read_text())
     delete_ids = {d for _, d in CULLED}
 
@@ -116,7 +116,7 @@ def main() -> int:
             record["course_evidence"] = raw["course_evidence"]
         review_outputs.append(record)
         print(f"added {pid} {record['canonical_title']!r} course={record['course']}")
-    (batches / "batch-slideonly.json").write_text(
+    (batches / "records-slideonly.json").write_text(
         json.dumps(review-outputs, ensure_ascii=False, indent=1))
 
     # 3. drop culled enrichment records, logos, and manifest entries
@@ -131,7 +131,7 @@ def main() -> int:
 
     # 4. rebuild the CSV
     result = subprocess.run(
-        [sys.executable, "steps/build_reviewed_csv.py", "--taxonomy",
+        [sys.executable, "pipeline/build_reviewed_csv.py", "--taxonomy",
          str(root / ".." / ".." / "config" / "taxonomy" / "values.yaml")],
         cwd=root, capture_output=True, text=True)
     print(result.stdout.strip())

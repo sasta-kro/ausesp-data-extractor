@@ -7,7 +7,7 @@ poster.pdf, extracted external-evidence files, and media images pulled out of
 DOCX reports. Writes _workspace/extracted-sources-manifest.json describing exactly
 what was found per project, including anomalies.
 
-Usage: python3 steps/prepare_enrichment.py [--source <corpus-dir>] [--clean]
+Usage: python3 pipeline/prepare_enrichment.py [--source <corpus-dir>] [--clean]
 """
 from __future__ import annotations
 

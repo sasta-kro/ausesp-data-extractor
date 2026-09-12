@@ -23,7 +23,7 @@ decisions that still matter. Products live in `output/extraction-evidence/`.
   check time: `public` (200), `not_found` (404, private or deleted,
   indistinguishable from outside), `unknown` (rate limit or network error).
   Renamed repositories resolve to their new home through the recorded final
-  URL. Statuses go stale; re-run `steps/check_link_liveness.py` before any
+  URL. Statuses go stale; re-run `pipeline/check_link_liveness.py` before any
   launch.
 
 ## Decisions and open items
@@ -31,8 +31,8 @@ decisions that still matter. Products live in `output/extraction-evidence/`.
 - All repository URLs came from the text layer (mechanical grep). Slide
   decks show demo links (herokuapp, railway, github.io) but no repository
   links; those demo sites could become a future "deployed site" link type.
-- Link classification is hand-curated in `steps/classify_links.py` (owner
-  matched against ground-truth student names, repo name matched against
+- Link classification is hand-curated in `pipeline/classify_links.py` (owner
+  matched against dataset student names, repo name matched against
   project titles). Third-party references must never display as project
   repos.
 - Audit spot-check downgraded 2148 (a UI pill button, not a logo) and
@@ -45,7 +45,7 @@ decisions that still matter. Products live in `output/extraction-evidence/`.
 
 ## Pipeline
 
-`steps/prepare_enrichment.py` (stage per-project sources, including RAR
+`pipeline/prepare_enrichment.py` (stage per-project sources, including RAR
 archives, legacy .doc media, and PPTX posters) → `render_enrichment.py`
 (render candidate pages) → `grep_repo_urls.py` (text-layer URL harvest) →
 `crop_logo.py` (crop or copy, with blank and sliver rejection) →
@@ -72,14 +72,14 @@ Second treatment of the logo set, after maintainer review of padded samples.
   the orange square (white chevron complete) and the fill is now the logo's
   own orange.
 - Normalization: every logo squared to 1:1 with background-aware padding
-  (`steps/normalize_logo.py --all`): the fill is the exact dominant border
+  (`pipeline/normalize_logo.py --all`): the fill is the exact dominant border
   color (no snapping, no rounding; near-white edges stay white because their
   exact color is white), transparent padding only for the rare
   transparent-bordered logo. No upscaling; square side capped at 1024 px.
   Final set: 69 squares, sides 119-1024 px.
 - Fill decisions came from a maintainer-reviewed sample run (21 comparison
   sheets under `_workspace/review-outputs/padding-samples/`, regenerable with
-  `steps/normalize_logo.py --demo <id>`): background-aware fill chosen over
+  `pipeline/normalize_logo.py --demo <id>`): background-aware fill chosen over
   white and transparent; an earlier white-snapping rule was dropped after it
   falsified 2141's true off-white (248,248,248) background.
 - Verification records live in `output/extraction-evidence/logo-verification/` (one JSON per

@@ -1,6 +1,6 @@
 # Person-name canonicalization
 
-Why `CANONICAL_PEOPLE` in `steps/build_reviewed_csv.py` exists and the
+Why `CANONICAL_PEOPLE` in `pipeline/build_reviewed_csv.py` exists and the
 policies behind every entry, so they are not re-litigated. The full
 duplication analysis that produced this is in
 [people-duplication-review.md](people-duplication-review.md).
@@ -9,7 +9,7 @@ Documents print the same person under different spellings, and the AUSE
 Discovery importer matches people by exact 7-digit student id or by
 case/space-insensitive name, so any spelling that differs in letters becomes
 a separate person row. The canonical map is applied after honorific
-stripping; ground-truth records stay verbatim.
+stripping; dataset records stay verbatim.
 
 ## Policies
 

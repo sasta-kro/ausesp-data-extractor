@@ -1,6 +1,6 @@
 # Person deduplication report (for review — no changes applied yet)
 
-Date: 2026-09-11. Scope: every human name in `ground-truth/batches/` (486 raw spellings, 416 distinct after the builder's honorific stripping, 220 projects), cross-checked against the 212-row `output/ause-discovery-projects-metadata-import.csv`. Method: normalized-equality clustering, prefix/token-subset matching, edit-distance matching, student_id cross-referencing (per the rule: a student always has a 7-digit id, staff never do), role-consistency checks, and frequency + real-world faculty knowledge for canonical forms.
+Date: 2026-09-11. Scope: every human name in `dataset/project-records/` (486 raw spellings, 416 distinct after the builder's honorific stripping, 220 projects), cross-checked against the 212-row `output/ause-discovery-projects-metadata-import.csv`. Method: normalized-equality clustering, prefix/token-subset matching, edit-distance matching, student_id cross-referencing (per the rule: a student always has a 7-digit id, staff never do), role-consistency checks, and frequency + real-world faculty knowledge for canonical forms.
 
 ## Verdict summary
 
@@ -36,7 +36,7 @@ Date: 2026-09-11. Scope: every human name in `ground-truth/batches/` (486 raw sp
 
 ## A. Clusters that create separate people in the app (the real bugs)
 
-All of these are staff (professor) spelling variants. The importer merges people by exact student_id or case/space-insensitive display_name, so any variant that differs in letters becomes its own Person row. Fixes go into a canonical-name map in `steps/build_reviewed_csv.py` (ground-truth records deliberately stay verbatim as printed). Canonical form = most frequent mention, consistent with real AU Vincent Mary faculty.
+All of these are staff (professor) spelling variants. The importer merges people by exact student_id or case/space-insensitive display_name, so any variant that differs in letters becomes its own Person row. Fixes go into a canonical-name map in `pipeline/build_reviewed_csv.py` (dataset records deliberately stay verbatim as printed). Canonical form = most frequent mention, consistent with real AU Vincent Mary faculty.
 
 ### 1. Anilkumar Kothalil Gopalakrishnan — 6 spellings, 1 person
 
@@ -167,9 +167,9 @@ These are real students on title pages. Options: (a) you supply the real ids fro
 
 ## F. Proposed implementation (after your approval)
 
-1. Add a `CANONICAL_PEOPLE` map to `steps/build_reviewed_csv.py`: squished variant name -> canonical display name, covering all of section A plus the student spellings in section B (keyed by id where one exists, so future re-extractions can't regress).
+1. Add a `CANONICAL_PEOPLE` map to `pipeline/build_reviewed_csv.py`: squished variant name -> canonical display name, covering all of section A plus the student spellings in section B (keyed by id where one exists, so future re-extractions can't regress).
 2. Rebuild `output/ause-discovery-projects-metadata-import.csv`; verify each cluster collapses to exactly one display name (automated check comparing before/after distinct names).
-3. No ground-truth records change (verbatim policy).
+3. No dataset records change (verbatim policy).
 4. Fresh-import guidance for local + VM after you have the fixed CSV.
 
 Open questions for you: Paranan spelling (B), Setthanant spelling (B), Seng pair confirmation (C), the 4 no-id students (E).
