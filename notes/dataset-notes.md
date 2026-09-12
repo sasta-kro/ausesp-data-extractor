@@ -16,10 +16,10 @@ they are. Read before touching `dataset/` or rebuilding the CSV.
   completed against the rest of the corpus, and spelling variants of the same
   person merge through their shared student id.
 - Aliases equal to their row title (case-insensitive) are filtered out at
-  build time; the importer rejects them.
+  build time. The importer rejects them.
 - Five projects print no semester or academic year anywhere and cannot
   import: 1651, 1661, 1813, 1904, 2146. Two more print no advisor
-  (1628, 1800); both stay in the dataset with an empty advisor list.
+  (1628, 1800). Both stay in the dataset with an empty advisor list.
 - 220 projects total in the corpus views: 217 report-bearing plus three
   slide-only projects (2021, 2031, 2032) that have no report document.
 - Two legacy .doc reports (1636, 1906) yield no recoverable embedded images

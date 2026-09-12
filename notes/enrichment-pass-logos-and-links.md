@@ -5,38 +5,38 @@ decisions that still matter. Products live in `output/extraction-evidence/`.
 
 ## What was produced
 
-- `output/logos/<id>.png` — the project's own logo, cropped at
+- `output/logos/<id>.png`: the project's own logo, cropped at
   300 DPI from the slide title page or report cover, auto-trimmed, max
   1600 px. 71 of 220 projects have one. Only project-specific marks are
   taken: reports carrying just the university crest record `au_crest_only`
   and get no image. The title slide of the presentation deck is where teams
-  put their brand mark (41 of 71 logos come from slide page 1); report
+  put their brand mark (41 of 71 logos come from slide page 1). Report
   covers are crest-only territory in almost every era, and exactly one logo
   came from a poster.
-- `output/extraction-evidence/logo-and-link-records/<id>.json` and `manifest.json` — logo
+- `output/extraction-evidence/logo-and-link-records/<id>.json` and `manifest.json`: logo
   provenance (source file, page, crop box) plus every repository URL found
   in the documents, classified as `project_repo` (the team's own
   repository, 17 URLs across 14 projects) or `third_party_reference` (a
   cited library such as tesseract or zxing, kept for provenance but not for
   display).
-- `output/extraction-evidence/repo-link-evidence/liveness.json` — public accessibility of each URL at
+- `output/extraction-evidence/repo-link-evidence/liveness.json`: public accessibility of each URL at
   check time: `public` (200), `not_found` (404, private or deleted,
   indistinguishable from outside), `unknown` (rate limit or network error).
   Renamed repositories resolve to their new home through the recorded final
-  URL. Statuses go stale; re-run `pipeline/check_link_liveness.py` before any
+  URL. Statuses go stale. Re-run `pipeline/check_link_liveness.py` before any
   launch.
 
 ## Decisions and open items
 
 - All repository URLs came from the text layer (mechanical grep). Slide
   decks show demo links (herokuapp, railway, github.io) but no repository
-  links; those demo sites could become a future "deployed site" link type.
+  links. Those demo sites could become a future "deployed site" link type.
 - Link classification is hand-curated in `pipeline/classify_links.py` (owner
   matched against dataset student names, repo name matched against
   project titles). Third-party references must never display as project
   repos.
 - Audit spot-check downgraded 2148 (a UI pill button, not a logo) and
-  re-cropped 1824 from its poster; 2119 was kept (a stylized wordmark
+  re-cropped 1824 from its poster. 2119 was kept (a stylized wordmark
   counts as a logo).
 - Promotion of logos and links into the AUSE Discovery UI, and where the
   bytes live (representative-image field vs a new artifact kind on the
@@ -62,25 +62,25 @@ Second treatment of the logo set, after maintainer review of padded samples.
   slide/page background or stray content), mark genuine (the project's own,
   matching title or team). Result: 37 passed untouched, 27 re-cropped from
   their recorded sources, 5 investigated for suspected wrong content and all
-  kept (2130 Baksters and 26003 "TEAM KGB" are the teams' own brands; 26023's
-  deck presents itself under the iReadCustomer brand; 2593 and 26034 were
+  kept (2130 Baksters and 26003 "TEAM KGB" are the teams' own brands, 26023's
+  deck presents itself under the iReadCustomer brand. 2593 and 26034 were
   re-cropped to their real marks), 2 reclassified as passes (2213/2226: the
   hex-a-gon mark is the shared team brand of the same three students across
   their SP1 and SP2 projects). Zero logos dropped.
 - 2024 required a second fix pass: its first re-crop left a black fringe from
-  the slide footer, which polluted the fill; the final crop lands entirely on
+  the slide footer, which polluted the fill. The final crop lands entirely on
   the orange square (white chevron complete) and the fill is now the logo's
   own orange.
 - Normalization: every logo squared to 1:1 with background-aware padding
   (`pipeline/normalize_logo.py --all`): the fill is the exact dominant border
-  color (no snapping, no rounding; near-white edges stay white because their
+  color (no snapping, no rounding, near-white edges stay white because their
   exact color is white), transparent padding only for the rare
-  transparent-bordered logo. No upscaling; square side capped at 1024 px.
+  transparent-bordered logo. No upscaling. Square side capped at 1024 px.
   Final set: 69 squares, sides 119-1024 px.
 - Fill decisions came from a maintainer-reviewed sample run (21 comparison
   sheets under `_workspace/review-outputs/padding-samples/`, regenerable with
   `pipeline/normalize_logo.py --demo <id>`): background-aware fill chosen over
-  white and transparent; an earlier white-snapping rule was dropped after it
+  white and transparent. An earlier white-snapping rule was dropped after it
   falsified 2141's true off-white (248,248,248) background.
 - Verification records live in `output/extraction-evidence/logo-verification/` (one JSON per
   logo: verdict, issue, what the image shows, fix notes).
