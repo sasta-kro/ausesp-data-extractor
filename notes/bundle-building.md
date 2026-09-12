@@ -27,9 +27,10 @@ extension.
 ## Membership
 
 Only projects present in the metadata CSV enter the bundle. This is the
-single filter, with no hardcoded project exclusions, so culled duplicates
-and the five unimportable projects can never reference a Project that has
-no database row. Current result: 209 members produce 209 manifest entries.
+single filter, with no hardcoded project exclusions, so culled duplicates,
+the five period-less projects, and the four advisorless projects can never
+reference a Project that has no database row. Current result: 205 members
+produce 205 manifest entries.
 
 ## File classification
 

@@ -31,6 +31,14 @@ FACET_COLUMNS = {
 }
 SEMESTERS = {"1": "first", "2": "second", "summer": "summer"}
 
+# Projects whose documents print no advisor anywhere (verified by full-text
+# search of every staged file, 2026-09-13: sp-1800 report, sp-2021/2031/2032
+# slide-only decks). The import schema rejects a row without an advisor, so
+# these stay out of the CSV until the application treats a missing advisor
+# as a warning instead of an error (MVP improvement backlog item 20 in the
+# main repository). Their dataset records remain as ground truth.
+DROPPED_NO_ADVISOR = {"1800", "2021", "2031", "2032"}
+
 
 def squish(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
@@ -156,6 +164,9 @@ def main() -> int:
     dropped: list[str] = []
     for project_id in sorted(records):
         record = records[project_id]
+        if project_id in DROPPED_NO_ADVISOR:
+            dropped.append(f"{project_id}: no advisor printed in any document, importer requires one")
+            continue
         title = squish(record.get("canonical_title") or "")
         abstract = squish(record.get("abstract") or "")
         semester = SEMESTERS.get(str(record.get("semester") or ""), "")
