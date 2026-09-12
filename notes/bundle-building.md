@@ -29,7 +29,7 @@ extension.
 Only projects present in the metadata CSV enter the bundle. This is the
 single filter, with no hardcoded project exclusions, so culled duplicates
 and the five unimportable projects can never reference a Project that has
-no database row. Current result: 209 members produce 208 manifest entries.
+no database row. Current result: 209 members produce 209 manifest entries.
 
 ## File classification
 
@@ -55,22 +55,33 @@ application availability enum: `public` to `accessible`, `not_found` to
 omitted entirely for projects without repository links, because an
 explicit empty array would instruct the application to remove links.
 
-## Files that cannot be imported
+## Legacy format conversions
 
 The application extension table admits no `.doc` file anywhere and no
-`.pptx` under the `poster` type. Three files are skipped for that reason
-and reported as warnings on every build:
+`.pptx` under the `poster` type. Three corpus files are therefore
+converted to PDF before bundling (LibreOffice, headless, cached under
+`_workspace/converted/` so rebuilds do not reconvert):
 
-- `sp-1636/report.doc`: the project's only file. The project has no logo
-  and no links either, so its manifest entry is omitted entirely. Its
-  metadata still imports normally. A `textutil` conversion to `.docx` on
-  this machine would restore a report entry if the result reads well.
-- `sp-1638/poster.pptx` and `sp-1703/poster.pptx`: both projects keep
-  their other content, only the poster is missing. Rendering these to PDF
-  or PNG would restore them.
+- `sp-1636/report.doc` -> `report.pdf` (68 pages). The project's only
+  file, so without the conversion it had no bundle entry at all.
+- `sp-1638/poster.pptx` -> `slides.pdf` (10 slides). The corpus named it
+  a poster, but it is a presentation deck (16:9 slide geometry).
+- `sp-1703/poster.pptx` -> `slides.pdf` (16 slides). Same situation.
 
-Any fix belongs in the staging step or a conversion pass, not in the
-bundle builder: the builder only maps files the application can accept.
+A staged file already carrying the converted target name always wins over
+a conversion, so the rules stay safe if a project ever gains a real
+`slides.pdf` beside a legacy deck.
+
+## The sp-26027 external report
+
+The `external/` copy of the MCG Care 2.0 report was compared against the
+staged core report (2026-09-12, full text diff). It is a redundant
+near-duplicate: identical students, advisor, approval page, abstract,
+table of contents, figures, and references, with everything from chapter
+3 onward byte-identical. Its only unique content is a "Team 2Byte1Bit"
+line on the cover, and its embedded creation date is one day older. The
+staged core report is the one imported. The `external/` directory stays
+skipped like all others.
 
 ## Superseded manual path
 

@@ -30,7 +30,9 @@ import csv
 import json
 import re
 import shutil
+import subprocess
 import sys
+import tempfile
 from datetime import datetime
 from pathlib import Path
 from urllib.parse import urlsplit
@@ -64,6 +66,19 @@ FILE_RULES = {
     "poster.jpeg": ("poster", "Project poster"),
 }
 FILE_ORDER = {"report": 0, "slides": 1, "poster": 2}
+
+# Legacy corpus files converted to PDF before bundling, because the
+# application admits .doc nowhere and .pptx not under the poster type.
+# The 1636 report.doc is a real report, and the decks named poster.pptx in
+# 1638 and 1703 are presentation slides mislabeled by the corpus (verified
+# by inspection, 2026-09-12), so both convert and bundle as their true kind.
+# A staged file already carrying the target name wins over a conversion.
+CONVERSIONS = {
+    "report.doc": "report.pdf",
+    "poster.pptx": "slides.pdf",
+}
+SOFFICE = "/Applications/LibreOffice.app/Contents/MacOS/soffice"
+CONVERTED_CACHE = EXTRACTOR_ROOT / "_workspace" / "converted"
 
 # Staged beside the core files but never bundle content: "media" and
 # "doc-convert" are extraction byproducts, "external" holds supplementary
@@ -104,14 +119,38 @@ def read_members() -> list[str]:
     return sorted(keys, key=lambda k: int(k.split("-", 1)[1]))
 
 
-def collect_files(identifier: str) -> tuple[list[dict], list[str]]:
-    """Plan the file entries for one project. Returns (entries, warnings)."""
+def converted_source(identifier: str, item: Path, dry_run: bool) -> Path | None:
+    """Return the cached or freshly produced PDF for a legacy corpus file."""
+    cached = CONVERTED_CACHE / f"{identifier}-{CONVERSIONS[item.name]}"
+    if cached.is_file():
+        return cached
+    if dry_run:
+        return None
+    CONVERTED_CACHE.mkdir(parents=True, exist_ok=True)
+    with tempfile.TemporaryDirectory() as work:
+        result = subprocess.run(
+            [SOFFICE, "--headless", "--convert-to", "pdf", "--outdir", work, str(item)],
+            capture_output=True, text=True, timeout=300)
+        produced = Path(work) / f"{item.stem}.pdf"
+        if result.returncode != 0 or not produced.is_file():
+            print(result.stderr.strip() or result.stdout.strip(), file=sys.stderr)
+            return None
+        shutil.copy2(produced, cached)
+    return cached
+
+
+def collect_files(identifier: str, dry_run: bool) -> tuple[list[dict], list[str], list[str]]:
+    """Plan the file entries for one project.
+
+    Returns (entries, warnings, conversions).
+    """
     source_dir = SOURCES_DIR / identifier
     if not source_dir.is_dir():
         sys.exit(f"member sp-{identifier} has no staged source directory: {source_dir}")
 
     entries: list[dict] = []
     warnings: list[str] = []
+    conversions: list[str] = []
     for item in sorted(source_dir.iterdir()):
         if item.name in SKIP_DIRS:
             continue
@@ -119,30 +158,48 @@ def collect_files(identifier: str) -> tuple[list[dict], list[str]]:
             warnings.append(f"sp-{identifier}: unexpected non-file entry '{item.name}'")
             continue
         rule = FILE_RULES.get(item.name)
+        source = item
+        bundle_name = item.name
+        converted = False
         if rule is None:
-            warnings.append(f"sp-{identifier}: skipped '{item.name}', no rule maps it to a supported artifact type")
-            continue
+            target_name = CONVERSIONS.get(item.name)
+            if target_name is None:
+                warnings.append(f"sp-{identifier}: skipped '{item.name}', no rule maps it to a supported artifact type")
+                continue
+            if (source_dir / target_name).is_file():
+                warnings.append(f"sp-{identifier}: skipped '{item.name}', '{target_name}' is already staged")
+                continue
+            rule = FILE_RULES[target_name]
+            bundle_name = target_name
+            source = converted_source(identifier, item, dry_run)
+            converted = True
+            if source is None and not dry_run:
+                warnings.append(f"sp-{identifier}: skipped '{item.name}', conversion to PDF failed")
+                continue
         artifact_type, display_name = rule
-        byte_count = item.stat().st_size
-        if byte_count > FILE_MAX_BYTES:
-            warnings.append(f"sp-{identifier}: skipped '{item.name}', {byte_count} bytes exceeds the {FILE_MAX_BYTES} byte limit")
-            continue
-        extension = item.suffix.lstrip(".").lower()
-        with open(item, "rb") as source:
-            prefix = source.read(8)
-        if not prefix.startswith(MAGIC[extension]):
-            warnings.append(f"sp-{identifier}: skipped '{item.name}', content does not match its extension")
-            continue
+        byte_count = source.stat().st_size if source is not None else 0
+        if source is not None:
+            if byte_count > FILE_MAX_BYTES:
+                warnings.append(f"sp-{identifier}: skipped '{item.name}', {byte_count} bytes exceeds the {FILE_MAX_BYTES} byte limit")
+                continue
+            extension = bundle_name.rsplit(".", 1)[-1].lower()
+            with open(source, "rb") as handle:
+                prefix = handle.read(8)
+            if not prefix.startswith(MAGIC[extension]):
+                warnings.append(f"sp-{identifier}: skipped '{item.name}', content does not match its extension")
+                continue
+        if converted:
+            conversions.append(f"sp-{identifier}: {item.name} -> {bundle_name} (planned)" if dry_run else f"sp-{identifier}: {item.name} -> {bundle_name}")
         entries.append({
             "artifact_type": artifact_type,
             "display_name": display_name,
-            "original_filename": item.name,
-            "file_path": f"projects/sp-{identifier}/{item.name}",
-            "_source": item,
+            "original_filename": bundle_name,
+            "file_path": f"projects/sp-{identifier}/{bundle_name}",
+            "_source": source,
             "_bytes": byte_count,
         })
     entries.sort(key=lambda e: (FILE_ORDER[e["artifact_type"]], e["original_filename"]))
-    return entries, warnings
+    return entries, warnings, conversions
 
 
 def plan_logo(identifier: str, record: dict) -> tuple[dict | None, list[str]]:
@@ -220,20 +277,22 @@ def plan_links(identifier: str, record: dict) -> tuple[list[dict] | None, list[s
     return planned, warnings
 
 
-def build_plan() -> tuple[list[dict], list[str]]:
+def build_plan(dry_run: bool) -> tuple[list[dict], list[str], list[str]]:
     members = read_members()
     with open(EVIDENCE_MANIFEST, encoding="utf-8") as handle:
         evidence = json.load(handle)
 
     plan: list[dict] = []
     warnings: list[str] = []
+    conversions: list[str] = []
     for key in members:
         identifier = key.split("-", 1)[1]
         record = evidence.get(identifier) or {}
-        files, file_warnings = collect_files(identifier)
+        files, file_warnings, project_conversions = collect_files(identifier, dry_run)
         logo, logo_warnings = plan_logo(identifier, record)
         links, link_warnings = plan_links(identifier, record)
         warnings.extend(file_warnings + logo_warnings + link_warnings)
+        conversions.extend(project_conversions)
         if not files and not logo and not links:
             warnings.append(f"sp-{identifier}: no bundle content (no importable files, no logo, no links), entry omitted")
             continue
@@ -247,7 +306,7 @@ def build_plan() -> tuple[list[dict], list[str]]:
         if links is not None:
             entry["links"] = links
         plan.append(entry)
-    return plan, warnings
+    return plan, warnings, conversions
 
 
 def clean_entry(entry: dict) -> dict:
@@ -291,7 +350,7 @@ def write_bundle(plan: list[dict]) -> None:
         handle.write("\n")
 
 
-def report(plan: list[dict], warnings: list[str], dry_run: bool) -> None:
+def report(plan: list[dict], warnings: list[str], conversions: list[str], dry_run: bool) -> None:
     logo_count = sum(1 for entry in plan if "logo" in entry)
     link_count = sum(len(entry.get("links", [])) for entry in plan)
     file_total = sum(len(entry.get("files", [])) for entry in plan)
@@ -311,6 +370,10 @@ def report(plan: list[dict], warnings: list[str], dry_run: bool) -> None:
           f"{sum(1 for e in plan for l in e.get('links', []) if l['availability'] == 'not_accessible')} not accessible, "
           f"{sum(1 for e in plan for l in e.get('links', []) if l['availability'] == 'unverified')} unverified)")
     print(f"  total bytes: {byte_total:,}")
+    if conversions:
+        print(f"  legacy conversions ({len(conversions)}):")
+        for conversion in conversions:
+            print(f"    - {conversion}")
     if warnings:
         print(f"  warnings ({len(warnings)}):")
         for warning in warnings:
@@ -322,8 +385,8 @@ def main() -> None:
     parser.add_argument("--dry-run", action="store_true", help="validate and plan without writing the bundle")
     arguments = parser.parse_args()
 
-    plan, warnings = build_plan()
-    report(plan, warnings, arguments.dry_run)
+    plan, warnings, conversions = build_plan(arguments.dry_run)
+    report(plan, warnings, conversions, arguments.dry_run)
     if not arguments.dry_run:
         write_bundle(plan)
         print(f"bundle written to {BUNDLE_ROOT}")
