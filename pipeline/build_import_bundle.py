@@ -65,7 +65,21 @@ FILE_RULES = {
     "poster.jpg": ("poster", "Project poster"),
     "poster.jpeg": ("poster", "Project poster"),
 }
-FILE_ORDER = {"report": 0, "slides": 1, "poster": 2}
+FILE_ORDER = {"report": 0, "slides": 1, "poster": 2, "other": 3}
+
+# Supplementary material staged in external/ imports under the "other" type
+# when its extension is permitted there (pdf). Each corpus name is unique,
+# so every importable file gets an explicit public display name. Award
+# images (jpg, png) have no permitted type and stay out with a warning.
+EXTERNAL_EXTENSIONS = {".pdf"}
+EXTERNAL_DISPLAY = {
+    "IAIT2020_submission21.pdf": "IAIT 2020 conference paper",
+    "HPBDIS_2021_paper_106.pdf": "HPBDIS 2021 conference paper",
+    "20211108_confirmation_app_development.pdf": "Client confirmation letter",
+    "User_Feedback_Reprt.pdf": "User feedback report",
+    "Research_Paper_26014_.pdf": "Research paper",
+    "Research_Paper_26016_.pdf": "Research paper",
+}
 
 # Legacy corpus files converted to PDF before bundling, because the
 # application admits .doc nowhere and .pptx not under the poster type.
@@ -80,11 +94,10 @@ CONVERSIONS = {
 SOFFICE = "/Applications/LibreOffice.app/Contents/MacOS/soffice"
 CONVERTED_CACHE = EXTRACTOR_ROOT / "_workspace" / "converted"
 
-# Staged beside the core files but never bundle content: "media" and
-# "doc-convert" are extraction byproducts, "external" holds supplementary
-# material submitted with the report (published conference papers, award
-# certificates, feedback reports), which is not a classified deliverable.
-SKIP_DIRS = {"media", "doc-convert", "external"}
+# Extraction byproducts staged beside the real files, never bundle content.
+# external/ is not in this set: it holds supplementary material that the
+# "other" artifact type imports when its extension is permitted.
+SKIP_DIRS = {"media", "doc-convert"}
 
 # Evidence liveness status -> application availability enum.
 AVAILABILITY = {"public": "accessible", "not_found": "not_accessible", "unknown": "unverified"}
@@ -139,6 +152,40 @@ def converted_source(identifier: str, item: Path, dry_run: bool) -> Path | None:
     return cached
 
 
+def collect_external_files(identifier: str, directory: Path) -> tuple[list[dict], list[str]]:
+    """Plan the supplementary material in one project's external/ directory
+    as "other" artifacts. Returns (entries, warnings)."""
+    entries: list[dict] = []
+    warnings: list[str] = []
+    for item in sorted(directory.iterdir()):
+        label = f"external/{item.name}"
+        if not item.is_file():
+            warnings.append(f"sp-{identifier}: unexpected non-file entry '{label}'")
+            continue
+        if item.suffix.lower() not in EXTERNAL_EXTENSIONS:
+            warnings.append(f"sp-{identifier}: skipped '{label}', no permitted artifact type admits its extension")
+            continue
+        byte_count = item.stat().st_size
+        if byte_count > FILE_MAX_BYTES:
+            warnings.append(f"sp-{identifier}: skipped '{label}', {byte_count} bytes exceeds the {FILE_MAX_BYTES} byte limit")
+            continue
+        with open(item, "rb") as handle:
+            prefix = handle.read(8)
+        if not prefix.startswith(MAGIC["pdf"]):
+            warnings.append(f"sp-{identifier}: skipped '{label}', content does not match its extension")
+            continue
+        display_name = EXTERNAL_DISPLAY.get(item.name) or item.stem.replace("_", " ").strip()
+        entries.append({
+            "artifact_type": "other",
+            "display_name": display_name,
+            "original_filename": item.name,
+            "file_path": f"projects/sp-{identifier}/{item.name}",
+            "_source": item,
+            "_bytes": byte_count,
+        })
+    return entries, warnings
+
+
 def collect_files(identifier: str, dry_run: bool) -> tuple[list[dict], list[str], list[str]]:
     """Plan the file entries for one project.
 
@@ -152,6 +199,11 @@ def collect_files(identifier: str, dry_run: bool) -> tuple[list[dict], list[str]
     warnings: list[str] = []
     conversions: list[str] = []
     for item in sorted(source_dir.iterdir()):
+        if item.name == "external" and item.is_dir():
+            external_entries, external_warnings = collect_external_files(identifier, item)
+            entries.extend(external_entries)
+            warnings.extend(external_warnings)
+            continue
         if item.name in SKIP_DIRS:
             continue
         if not item.is_file():

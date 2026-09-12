@@ -39,12 +39,24 @@ no database row. Current result: 209 members produce 209 manifest entries.
 | `slides.pdf` | `slides` | Presentation slides |
 | `poster.pdf`, `poster.png`, `poster.jpg`, `poster.jpeg` | `poster` | Project poster |
 
-`media/`, `doc-convert/`, and `external/` directories are never bundle
-content. `media/` and `doc-convert/` are extraction byproducts. `external/`
-holds supplementary material submitted beside the report in eight projects
-(published conference papers, award certificates, a confirmation letter, a
-user-feedback report). None of it is a classified deliverable. Reclassify
-deliberately in `FILE_RULES` if that should ever change.
+`media/` and `doc-convert/` directories are extraction byproducts and are
+never bundle content. `external/` directories hold supplementary material
+submitted beside the report (published conference papers, a confirmation
+letter, a feedback report). Files there import under the `other` type when
+their extension is permitted, which covers the six PDFs. The three YRSS
+2021 award images in sp-2039 (jpg, png) have no type that permits their
+extension, so they stay out and the build reports a warning for each.
+
+## The sp-26027 external report
+
+The `external/` copy of the MCG Care 2.0 report was compared against the
+staged core report (2026-09-12, full text diff). It was a redundant
+near-duplicate: identical students, advisor, approval page, abstract,
+table of contents, figures, and references, with everything from chapter
+3 onward byte-identical. Its only unique content was a "Team 2Byte1Bit"
+line on the cover, and its embedded creation date was one day older. The
+file was deleted from staging (2026-09-12) and the staged core report is
+the one imported.
 
 ## Repository links
 
@@ -71,17 +83,6 @@ converted to PDF before bundling (LibreOffice, headless, cached under
 A staged file already carrying the converted target name always wins over
 a conversion, so the rules stay safe if a project ever gains a real
 `slides.pdf` beside a legacy deck.
-
-## The sp-26027 external report
-
-The `external/` copy of the MCG Care 2.0 report was compared against the
-staged core report (2026-09-12, full text diff). It is a redundant
-near-duplicate: identical students, advisor, approval page, abstract,
-table of contents, figures, and references, with everything from chapter
-3 onward byte-identical. Its only unique content is a "Team 2Byte1Bit"
-line on the cover, and its embedded creation date is one day older. The
-staged core report is the one imported. The `external/` directory stays
-skipped like all others.
 
 ## Superseded manual path
 
