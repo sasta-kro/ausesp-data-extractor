@@ -90,7 +90,10 @@
      "evidence": "Design an html page that can know what the user's operation is and submit those values to the ESP8266 microcontroller."
     }
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "IT 4291 Senior Project 1 (2/2022)"
  },
  {
   "id": "2254",
@@ -208,7 +211,10 @@
      "evidence": "System design table (4.1): Object Design Unity, Blender; Backend ILCPP; Database Unity Collection."
     }
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "ITX 3010 Senior Project 2 (2/2022)"
  },
  {
   "id": "2255",
@@ -344,7 +350,10 @@
      "evidence": "References [3] https://github.com/worldveil/dejavu."
     }
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "Senior Project 1 Report"
  },
  {
   "id": "2593",
@@ -431,7 +440,10 @@
      "evidence": "Sec. 4.5 Tech Stack: 'The IDE used throughout development is Visual Studio Code.'"
     }
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CSX3011 Senior Project 2 (2/2025)"
  },
  {
   "id": "2594",
@@ -565,7 +577,10 @@
      "evidence": "Sec. 2.3 Related Work: 'navigation tools like Google Maps provide efficient location-based services'"
     }
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CSX 3010 Senior Project 1 (2/2025)"
  },
  {
   "id": "2595",
@@ -691,7 +706,10 @@
      "evidence": "Ch. 5: 'The Liveroom feature provides members with an AI-powered interactive space where users can ask questions related to any course or subject and receive responses in a conversational format.'"
     }
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "ITX 3009 Senior Project 1 (2/2025)"
  },
  {
   "id": "2597",
@@ -875,7 +893,10 @@
      "evidence": "p.38: 'express-rate-limit to mitigate abuse on login and OTP endpoints.'"
     }
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "Senior Project 1 Report"
  },
  {
   "id": "2598",
@@ -1006,7 +1027,10 @@
      "evidence": "p.19 Table 2: 'Authentication: JWT, token-based user session control.'"
     }
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CSX3010/ITX3009 Senior Project 1 (2/2025)"
  },
  {
   "id": "2599",
@@ -1147,7 +1171,10 @@
      "evidence": "p.15 Ch2.5: 'Modern frameworks such as Google's MediaPipe, OpenPose, and Apple's Vision framework have democratized access to real-time pose estimation.'"
     }
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CSX 3010 | Senior Project I (2/2025)"
  },
  {
   "id": "25100",
@@ -1284,7 +1311,10 @@
      "evidence": "Future work only: \"learning-based temporal models such as Long Short-Term Memory (LSTM) or Temporal Convolutional Networks (TCN) could be integrated\" (p.49)"
     }
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CS 3200 Senior Project 1 (2/2025)"
  },
  {
   "id": "25101",
@@ -1448,7 +1478,9 @@
      "evidence": "\"Google Maps: Embedded maps on the marketing website for hotel location display\" (p.51)"
     }
    ]
-  }
+  },
+  "course": "unspecified",
+  "course_basis": "none"
  },
  {
   "id": "25104",
@@ -1601,7 +1633,10 @@
      "evidence": "Related work section: \"Jobber is a widely used field service scheduling app tailored for small to medium-sized home service businesses\" (p.15)"
     }
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CSX 3011 Senior Project 2 (2/2025)\nITX 3011 Senior Project 2 (2/2025)"
  },
  {
   "id": "25105",
@@ -1718,7 +1753,10 @@
      "evidence": "'Open Banking UK defines secure API standards that licensed institutions must follow' (Related Work 2.1, p.9)"
     }
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CSX3010 Senior Project 1 (2/2025)"
  },
  {
   "id": "25113",
@@ -1836,7 +1874,10 @@
      "evidence": "Reference [19] 'Stripe, Stripe API Reference: Online Payment Processing' (p.28)"
     }
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CSX 3011 Senior Project 2 (2/2025)"
  },
  {
   "id": "25116",
@@ -2002,6 +2043,9 @@
      "evidence": "'Paddle OCR, an open-source and locally deployable solution, was first implemented through a persistent Python worker... its accuracy declined substantially when applied to Kiddee Lab's handwritten registration forms' (Sec 3.4.2, pp.17-18; evaluated and replaced)"
     }
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "ITX3010/CSX3011 Senior Project 2 (2/2025)"
  }
 ]

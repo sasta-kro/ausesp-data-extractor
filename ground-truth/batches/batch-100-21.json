@@ -39,7 +39,10 @@
     "firebase",
     "kotlin"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "Senior Project II"
  },
  {
   "id": "1902",
@@ -78,7 +81,10 @@
    "technology": [
     "python"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "docx",
+  "course_evidence": "word-document explicit statement"
  },
  {
   "id": "1940",
@@ -128,6 +134,9 @@
     "nodejs",
     "react"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CS 4200 & IT 4292 Senior Project II (2/2019)"
  }
 ]

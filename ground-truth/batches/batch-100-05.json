@@ -35,7 +35,10 @@
     "computer_vision"
    ],
    "technology": []
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CS 4200 Senior Project 2"
  },
  {
   "id": "1716",
@@ -80,7 +83,10 @@
    "technology": [
     "opencv"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CS 3200 Senior Project 1"
  },
  {
   "id": "1718",
@@ -128,7 +134,10 @@
    "technology": [
     "php"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "IT 4292 Senior Project II"
  },
  {
   "id": "1720",
@@ -186,7 +195,10 @@
    "technology": [
     "python"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CS4200 Senior Project II"
  },
  {
   "id": "1724",
@@ -231,6 +243,9 @@
    "technology": [
     "nodejs"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CS 4200 SENIOR PROJECT II"
  }
 ]

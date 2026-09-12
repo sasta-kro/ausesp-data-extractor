@@ -34,7 +34,10 @@
    "domain": [],
    "topic": [],
    "technology": []
-  }
+  },
+  "course": "unspecified",
+  "course_basis": "none",
+  "course_evidence": "TS 4299; TS 4299"
  },
  {
   "id": "1657",
@@ -85,7 +88,10 @@
    "technology": [
     "firebase"
    ]
-  }
+  },
+  "course": "unspecified",
+  "course_basis": "none",
+  "course_evidence": "SC4299; SC4299"
  },
  {
   "id": "1661",
@@ -125,7 +131,10 @@
    ],
    "topic": [],
    "technology": []
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "A Senior Project (1) Submitted by:"
  },
  {
   "id": "1662",
@@ -174,7 +183,10 @@
     "php",
     "mysql"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "inferred:IT4299, IT4299",
+  "course_evidence": "codes mapped unanimously from corpus dictionary"
  },
  {
   "id": "1702",
@@ -210,6 +222,9 @@
    ],
    "topic": [],
    "technology": []
-  }
+  },
+  "course": "sp1",
+  "course_basis": "inferred:IT4299, IT4299",
+  "course_evidence": "codes mapped unanimously from corpus dictionary"
  }
 ]

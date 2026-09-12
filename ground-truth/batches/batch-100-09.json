@@ -47,7 +47,10 @@
     "opencv",
     "python"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "SENIOR PROJECT II"
  },
  {
   "id": "1823",
@@ -87,7 +90,10 @@
    "technology": [
     "python"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "reread",
+  "course_evidence": "Line Bot for Printing Tax Invoice; CS3200 SENIOR PROJECT II; FINAL REPORT"
  },
  {
   "id": "1824",
@@ -130,7 +136,10 @@
    "technology": [
     "firebase"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CS4200 SENIOR PROJECT II (SC4299)"
  },
  {
   "id": "1826",
@@ -178,49 +187,9 @@
     "recommender_system"
    ],
    "technology": []
-  }
- },
- {
-  "id": "1827",
-  "canonical_title": "SAMT Master",
-  "aliases": [],
-  "phase": "final",
-  "course_code": "CS3200/IT4291",
-  "program": "computer_science",
-  "semester": "2",
-  "academic_year": 2018,
-  "students": [
-   {
-    "name": "Aye Myat Mon",
-    "student_id": "5818026"
-   },
-   {
-    "name": "Puja Karmacharya",
-    "student_id": "5818313"
-   },
-   {
-    "name": "Nuzhat Sarwar",
-    "student_id": "5838433"
-   }
-  ],
-  "advisor": "A. Darun",
-  "committee": [],
-  "abstract": "SAMT Master is the administration section of an education platform developed for The Good Shepherd Company Limited, a company that connects teachers and students in sports, arts, music, and technology. The team extended the platform with a web based admin system covering five features. Administrators can review teacher applications with uploaded documents, create and manage job posts, track and assign error reports, and create searchable receipts for deposits, payment invoices, and withdrawals. A marketing heat map shows where potential customers are concentrated. It uses a scraping bot to collect leads from websites and the Google API to resolve each province and county into latitude and longitude for Google Maps pins. The design covers twenty database tables and the team plans to continue the project in senior project 2.",
-  "reported_keywords": [],
-  "classification": {
-   "category": [
-    "software_application"
-   ],
-   "platform": [
-    "web"
-   ],
-   "domain": [
-    "education"
-   ],
-   "topic": [
-    "geolocation"
-   ],
-   "technology": []
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "SC4299/IT4292 SENIOR PROJECT II"
  }
 ]

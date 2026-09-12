@@ -45,7 +45,10 @@
     "nlp"
    ],
    "technology": []
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CS 3200 Senior Project 1"
  },
  {
   "id": "2026",
@@ -91,7 +94,10 @@
     "python",
     "tensorflow"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "inferred:CS3200, CS3200",
+  "course_evidence": "codes mapped unanimously from corpus dictionary"
  },
  {
   "id": "2040",
@@ -130,7 +136,10 @@
     "php",
     "wordpress"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CS 4200 SENIOR PROJECT 2"
  },
  {
   "id": "2113",
@@ -173,6 +182,9 @@
    "technology": [
     "python"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CS 3200 SENIOR PROJECT I FINAL REPORT"
  }
 ]

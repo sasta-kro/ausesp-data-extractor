@@ -47,7 +47,10 @@
     "nextjs",
     "react"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "ITX3010/CSX3011 Senior Project II (2/2023)"
  },
  {
   "id": "2252",
@@ -86,7 +89,10 @@
     "react",
     "firebase"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CSX 3010 Senior Project I (2/2022)"
  },
  {
   "id": "25115",
@@ -129,7 +135,10 @@
     "firebase",
     "unity"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CSX 3011/ ITX 3010 Senior Project 2 (2/2025)"
  },
  {
   "id": "2579",
@@ -175,6 +184,9 @@
     "postgresql",
     "react"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CSX 3011 Senior Project 2 (2/2025)"
  }
 ]

@@ -45,7 +45,10 @@
    "technology": [
     "python"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "inferred:IT4291, CS3200, IT4291",
+  "course_evidence": "codes mapped unanimously from corpus dictionary"
  },
  {
   "id": "2001",
@@ -88,51 +91,10 @@
     "mysql",
     "php"
    ]
-  }
- },
- {
-  "id": "2003",
-  "canonical_title": "August Witcher of the Grand House",
-  "aliases": [
-   "Thai Ghost Side-Scrolling Game (August Witcher of the Grand House)"
-  ],
-  "phase": "final",
-  "course_code": "CS 3200",
-  "program": "computer_science",
-  "semester": "2",
-  "academic_year": 2019,
-  "students": [
-   {
-    "name": "Mungyeong Kim",
-    "student_id": "5911116"
-   },
-   {
-    "name": "Anawil Chumphun",
-    "student_id": "5912087"
-   }
-  ],
-  "advisor": "A. Chayapol Moemeng",
-  "committee": [
-   "Asst. Prof. Dr. Paitoon Porntrakoon",
-   "A. Tapanan Yeophantong"
-  ],
-  "abstract": "Nowadays, many people like playing games and E-sports has been popular, side-scrolling game is defined as a game that game playing action is viewed from a side-view camera angle, and the onscreen characters can only move to the left or rights to reach the end of the game. Moreover, many people are interested in ghost stories and Thailand is well known for scary stories and some mysterious places so we decided to combine both game and Thai ghost story to make an interesting single game.\n\nAugust Witcher of the Grand House is a side-scrolling game which is designed to attract people who loves playing game with ghost story. In this game, a player will be playing from outside to inside a mysterious house to get through there with some weapons from stage and fight with Thai ghosts. The game is mainly playable on PCs.\n\nOur goal is to successfully design and implement our own design of the game on PCs based, and each character’s stories Thai ghost concerned to the game more interesting and enjoyable.",
-  "reported_keywords": [],
-  "classification": {
-   "category": [
-    "game"
-   ],
-   "platform": [
-    "desktop"
-   ],
-   "domain": [
-    "entertainment"
-   ],
-   "topic": [],
-   "technology": [
-    "unreal_engine"
-   ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "docx",
+  "course_evidence": "word-document explicit statement"
  },
  {
   "id": "2004",
@@ -178,7 +140,10 @@
     "mongodb",
     "nodejs"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "duplicate-explicit",
+  "course_evidence": "culled twin 1906 printed \"IT 4292 Senior Project 2\"; 2004 itself prints mixed codes"
  },
  {
   "id": "2005",
@@ -218,6 +183,9 @@
    "technology": [
     "python"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "docx",
+  "course_evidence": "word-document explicit statement"
  }
 ]

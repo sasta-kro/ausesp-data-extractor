@@ -50,7 +50,10 @@
    "technology": [
     "react"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CS 3200 Senior Project 1 (2/2025)"
  },
  {
   "id": "26014",
@@ -100,7 +103,10 @@
     "opencv",
     "python"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CSX 3011 Senior Project II (2/2025)"
  },
  {
   "id": "26019",
@@ -152,7 +158,10 @@
     "nodejs",
     "react"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CSX 3011 Senior Project 2 (2/2025)"
  },
  {
   "id": "26023",
@@ -205,6 +214,9 @@
     "mongodb",
     "react"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CSX 3011 Senior Project 2 (2/2025)"
  }
 ]

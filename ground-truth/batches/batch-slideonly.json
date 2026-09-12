@@ -1,0 +1,155 @@
+[
+ {
+  "id": "2021",
+  "canonical_title": "Randevoo: Online Reservation Platform",
+  "aliases": [
+   "Randevoo"
+  ],
+  "phase": "final",
+  "course_code": "CS4200",
+  "course": "sp2",
+  "course_basis": "explicit",
+  "program": "computer_science",
+  "semester": "2",
+  "academic_year": 2021,
+  "students": [
+   {
+    "name": "Sokvathara Lin",
+    "student_id": "6018002",
+    "id_source": "1646-era spelling, id from project 1950"
+   },
+   {
+    "name": "Menh Keo",
+    "student_id": "6038302",
+    "id_source": "id from project 1646"
+   }
+  ],
+  "advisor": null,
+  "committee": [],
+  "abstract": "Rendezvous means a meeting at an agreed time and place. Randevoo is an online reservation platform via mobile application. It connects customers to sellers throughout specific reservations and offers customers fully comprehensive products' specifications and locations. Problems: price is the most essential concern for every customer buying the online products, precision is another factor that most customers desire as their expectation, and no easy way exists to reserve reservations with multiple stores via a single service. Solutions: a mobile platform where customers can reserve reservations at nearby stores to save money when exploring and comparing, save time when found as expected and as desired, and have exclusivity when reserving to the store. The system has an iOS app for customers and business owners (business accounts, business hours that auto-generate reservation schedules, product listings, reservation approve or decline, QR code check-in) and a React web app for administration to monitor the service, manage products, and manage users and stores, backed by Firebase Authentication, Cloud Firestore, Cloud Functions, Cloud Storage, and Cloud Messaging, with Algolia product search and Google Maps store locations and navigation.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "mobile",
+    "ios",
+    "web"
+   ],
+   "domain": [
+    "e_commerce"
+   ],
+   "topic": [
+    "geolocation"
+   ],
+   "technology": [
+    "react",
+    "firebase"
+   ]
+  },
+  "note": "slide deck only, no report document exists; Deck is the Senior Project II Final Defence, no semester or academic year is printed anywhere so 2/2021 is inferred from March and April 2021 in-app screenshots and the course flow, no student IDs and no advisor or committee are printed on any slide.; Sokvathara Lin: id attached from 1646-era spelling, id from project 1950; Menh Keo: id attached from id from project 1646",
+  "course_evidence": "CS4200 Senior Project II"
+ },
+ {
+  "id": "2031",
+  "canonical_title": "Hotel Management System",
+  "aliases": [
+   "Hotel Reservation System",
+   "Hotel Jaa"
+  ],
+  "phase": "final",
+  "course_code": null,
+  "course": "unspecified",
+  "course_basis": "none",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "Tanus Witpattanakul",
+    "student_id": "6015131"
+   },
+   {
+    "name": "Kittisak Sadee",
+    "student_id": "6037506"
+   },
+   {
+    "name": "Pon-ake Phayak",
+    "student_id": "6017503"
+   }
+  ],
+  "advisor": null,
+  "committee": [],
+  "abstract": "Our Senior project is the Hotel Management System. The main operations that we focused on reservation system in hotel service. In the current trends, there are many hotels that change from traditional operation to digital-based operation which significantly help the hotel to gather information and learn customer behavior, and one of the digital platforms is the website platform which provides various optional systems. So, we have decided to adapt the hotel management system in a web-based platform in order to increase hotel performance, using iPower Hotel Chiang Rai as the case study. On the customer side, the program provides a reservation system for the hotel, a gallery system for the hotel, and an infographic for the hotel, so customers do not need to use mobile phone or walk-in to directly contact the hotel but can book room via the website. On the admin side, the program provides an admin managing customers' account system for the hotel and an admin supervision on customers and reservation system, to inspect customers' activity, gather data and payment information, and ban bad behaviour customers that spam the reservation system.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "business"
+   ],
+   "topic": [],
+   "technology": [
+    "php",
+    "mysql"
+   ]
+  },
+  "note": "slide deck only, no report document exists; No course line, semester, year, advisor, or committee is printed anywhere; period (AY2020 semester 2) inferred from Gantt dates 19-Oct-20 to 24-Mar-21; program is a guess (information_technology) since no program or course code appears; demo site branded 'Hotel Jaa' and Gantt charts labeled 'Hotel Reservation System'; conclusion says the project failed last semester and is continued."
+ },
+ {
+  "id": "2032",
+  "canonical_title": "Dental Inventory Management System",
+  "aliases": [
+   "DIMS"
+  ],
+  "phase": "final",
+  "course_code": null,
+  "course": "unspecified",
+  "course_basis": "none",
+  "program": "information_technology",
+  "semester": "2",
+  "academic_year": 2020,
+  "students": [
+   {
+    "name": "Tanakorn Navanugraha",
+    "student_id": "6025106",
+    "id_source": "id from project 2017"
+   },
+   {
+    "name": "Rajbir Singh",
+    "student_id": "6015184",
+    "id_source": "id from project 2017"
+   },
+   {
+    "name": "Kan Wuthithepbunha",
+    "student_id": null
+   }
+  ],
+  "advisor": null,
+  "committee": [],
+  "abstract": "This senior project is basically based on Dental Inventory Management System (DIMS), a system built to manage the inventory system in the dental clinic. The dental inventory management system is essentially built to organize, perform, and track inventory in the clinic such as tools and equipment. The statement of problem lists lack of storage, security issues, document transportation, prone to damage, and limit communication and collaboration. The main objective of this project is to make it easy for the clinic to manage and interact with the inventory system, to allow clinic staff to check the available stocks of items, tools, and equipment, and to replace the traditional paper-based system.",
+  "reported_keywords": [],
+  "classification": {
+   "category": [
+    "software_application"
+   ],
+   "platform": [
+    "web"
+   ],
+   "domain": [
+    "healthcare"
+   ],
+   "topic": [],
+   "technology": [
+    "django"
+   ]
+  },
+  "note": "slide deck only, no report document exists; Title slide prints typo 'Managerment' (corrected from intro/Gantt/conclusion usage); no course code, advisor, committee, student ids, program, or printed semester, phase sp2-final inferred from 'Background on Senior 1' plus Mar-2021 Gantt and finished Django screenshots, semester 2/2020 inferred from Gantt 30-Oct-20 to 24-Mar-21, program information_technology is a bare guess with no course code to go on.; Tanakorn Navanugraha: id attached from id from project 2017; Rajbir Singh: id attached from id from project 2017",
+  "course_evidence": "Background on Senior 1 / \"Senior Project I aimed on improve and provide the website on Changnoi dental clinic\""
+ }
+]

@@ -39,7 +39,10 @@
    "technology": [
     "firebase"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "SENIOR PROJECT I"
  },
  {
   "id": "1811",
@@ -79,7 +82,10 @@
     "geolocation"
    ],
    "technology": []
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CS4200 SENIOR PROJECT II"
  },
  {
   "id": "1812",
@@ -121,7 +127,10 @@
     "python",
     "opencv"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "inferred:IT4292, IT4292",
+  "course_evidence": "codes mapped unanimously from corpus dictionary"
  },
  {
   "id": "1813",
@@ -160,7 +169,10 @@
    "technology": [
     "firebase"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "inferred:CS4200, CS4200",
+  "course_evidence": "codes mapped unanimously from corpus dictionary"
  },
  {
   "id": "1814",
@@ -205,6 +217,9 @@
     "python",
     "nodejs"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CS 4200 Senior Project II"
  }
 ]

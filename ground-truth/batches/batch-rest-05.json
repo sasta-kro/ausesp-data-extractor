@@ -148,7 +148,10 @@
      "evidence": "YOURLS (Your Own URL Shortener): A PHP-based self-hosted solution with plugin support (Related Work, page 9)"
     }
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CSX 3010 Senior Project 1 (2/2025)"
  },
  {
   "id": "26022",
@@ -225,7 +228,10 @@
      "evidence": "Reference [3] A. Banks and R. Gupta, MQTT Version 3.1.1, OASIS Standard, 2014 (page 24)"
     }
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "reread",
+  "course_evidence": "มหาวิทยาลัยอัสสัมชัญ; ASSUMPTION UNIVERSITY; of THAILAND"
  },
  {
   "id": "26024",
@@ -355,7 +361,10 @@
      "evidence": "bcrypt, Used for password hashing and protecting sensitive user credentials (Tech Stack, page 28)"
     }
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CSX 3010/ITX 3009 Senior Project 1 (2/2025)"
  },
  {
   "id": "26026",
@@ -466,7 +475,10 @@
      "evidence": "\"Design Tools: Figma - UI/UX design and prototyping\" (section 4.2.5)"
     }
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CSX 3010 Senior Project 1 (2/2025)"
  },
  {
   "id": "26027",
@@ -611,7 +623,10 @@
      "evidence": "\"Wireframes and prototypes were developed using Figma to visualize system functionality prior to implementation.\" (section 3.4.2)"
     }
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CSX3011/ITX3010 Senior Project 2 (Semester 2025-2)"
  },
  {
   "id": "26030",
@@ -707,7 +722,10 @@
      "evidence": "\"the Clario OCR module was deployed to the Odoo Marketplace, which is the official distribution platform for Odoo applications\" (section 5.3)"
     }
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "reread",
+  "course_evidence": "Senior Project Report; ITX3009, CSX3010 Senior Project 2 (2/2025); Senior Project 2 Approval"
  },
  {
   "id": "26031",
@@ -828,7 +846,10 @@
      "evidence": "'Learning Management Systems (LMS) such as Moodle and institutional LMS platforms are widely used in universities' (Chapter 2, p.4)"
     }
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CSX 3011 Senior Project 2 (2/2025) / ITX  3011 Senior Project 2 (2/2025)"
  },
  {
   "id": "26032",
@@ -939,7 +960,10 @@
      "evidence": "'the Agile (Scrum) framework is adopted to ensure rapid development, continuous student and advisor feedback, and structured iterations' (p.20)"
     }
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CSX3011 Senior Project 2 (2/2025) / ITX3010 Senior Project 2 (2/2025)"
  },
  {
   "id": "26034",
@@ -1083,7 +1107,10 @@
      "evidence": "References [10] 'Google LLC. Maps JavaScript API Documentation' (p.36); listed as reference only, Leaflet/OpenStreetMap are the implemented stack"
     }
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "IT 3200 Senior Project 1 (1/2026)"
  },
  {
   "id": "26035",
@@ -1173,7 +1200,10 @@
      "evidence": "Table 1 Tech Stack: 'Version Control GitHub Code management'"
     }
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CSX3010 Senior Project 1 (2/2025) / ITX3009 Senior Project 1 (2/2025)"
  },
  {
   "id": "26036",
@@ -1264,7 +1294,10 @@
      "evidence": "Section 4.4.1.k customization form: 'a recaptcha to check if the user is a bot or not before making the request'"
     }
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CSX 3011 Senior Project II (2/2025)"
  },
  {
   "id": "26038",
@@ -1372,6 +1405,9 @@
      "evidence": "Section 6.4.1: 'the service falls back to the Wikipedia REST API' for place images when Google Places images are unavailable"
     }
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CS 3200 Senior Project 1 (2/2025)"
  }
 ]

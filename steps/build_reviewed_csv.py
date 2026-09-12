@@ -24,6 +24,7 @@ CSV_HEADERS = [
     "students", "advisors", "co_advisors", "committee_members",
     "categories", "platforms", "domains", "topics", "technologies",
 ]
+COURSE_KEYS = {"sp1": "senior_project_1", "sp2": "senior_project_2"}
 FACET_COLUMNS = {
     "category": "categories", "platform": "platforms", "domain": "domains",
     "topic": "topics", "technology": "technologies",
@@ -177,7 +178,9 @@ def main() -> int:
             "semester": semester,
             "program_key": record.get("program") or "computer_science",
             "major_key": "",
-            "course_key": "senior_project",
+            # SP1/SP2 classification from the course pass (notes/sp1-sp2-pass.md);
+            # records without a classification stay on the unspecified course.
+            "course_key": COURSE_KEYS.get(record.get("course"), "senior_project"),
             "title_aliases": json.dumps(clean_aliases(record.get("aliases", []), title), ensure_ascii=False),
             "students": json.dumps(student_json(record.get("students", [])), ensure_ascii=False),
             "advisors": json.dumps([{"display_name": person_name(record["advisor"])}] if squish(record.get("advisor") or "") else [], ensure_ascii=False),

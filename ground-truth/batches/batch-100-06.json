@@ -52,7 +52,10 @@
    "technology": [
     "firebase"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CS 3200/IT 4291 SENIOR PROJECT I"
  },
  {
   "id": "1726",
@@ -90,7 +93,10 @@
    "technology": [
     "php"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "docx",
+  "course_evidence": "word-document explicit statement"
  },
  {
   "id": "1728",
@@ -130,7 +136,10 @@
     "mysql",
     "nodejs"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CS4200 SENIOR PROJECT II"
  },
  {
   "id": "1730",
@@ -180,7 +189,10 @@
     "mysql",
     "php"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "IT 4292 SENIOR PROJECT II"
  },
  {
   "id": "1800",
@@ -228,6 +240,9 @@
    "technology": [
     "firebase"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "A report submitted in partial fulfillment of the requirements for Senior Project I"
  }
 ]

@@ -45,7 +45,10 @@
     "mysql",
     "php"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "inferred:IT4299, IT4299",
+  "course_evidence": "codes mapped unanimously from corpus dictionary"
  },
  {
   "id": "1643",
@@ -88,7 +91,10 @@
     "php",
     "mysql"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "IT 4291 SENIOR PROJECT 1"
  },
  {
   "id": "1719",
@@ -134,7 +140,10 @@
    "technology": [
     "python"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "IT 4291 Senior Project I (1/2021)"
  },
  {
   "id": "2006",
@@ -179,7 +188,10 @@
     "opencv",
     "python"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CS 3200 Senior Project 1 (1/2020)"
  },
  {
   "id": "2117",
@@ -229,7 +241,10 @@
     "firebase",
     "python"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CS 3200 Senior Project 1 (1/2021)"
  },
  {
   "id": "2148",
@@ -271,7 +286,10 @@
     "php",
     "mysql"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CS 3200 Senior Project 1 (2/2021)"
  },
  {
   "id": "2244",
@@ -316,7 +334,10 @@
     "nodejs",
     "react"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "inferred:CSX3011, CSX3011",
+  "course_evidence": "codes mapped unanimously from corpus dictionary"
  },
  {
   "id": "25102",
@@ -365,7 +386,10 @@
     "postgresql",
     "react"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CSX 3010 Senior Project 1 (2/2025)"
  },
  {
   "id": "2596",
@@ -411,7 +435,10 @@
    "technology": [
     "firebase"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CS 3200 Senior Project 1 (2/2025)"
  },
  {
   "id": "26006",
@@ -459,7 +486,10 @@
     "php",
     "react"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "ITX 3010 Senior Project 2 (2/2025)"
  },
  {
   "id": "26010",
@@ -509,7 +539,10 @@
     "nodejs",
     "postgresql"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "Senior Project 2 Report"
  },
  {
   "id": "26037",
@@ -548,6 +581,9 @@
    "technology": [
     "unreal_engine"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "ITX 3200 Senior Project 2 (2/2025)"
  }
 ]

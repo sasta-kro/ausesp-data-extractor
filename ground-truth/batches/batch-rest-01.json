@@ -76,7 +76,10 @@
      "evidence": "I use firebase storage to store the profile pictures."
     }
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CS 4200 Senior Project 2 (2/2021)"
  },
  {
   "id": "2130",
@@ -211,7 +214,10 @@
      "evidence": "Future works include... it might prove interesting to experiment with other types of pose estimation models such as MoveNet and OpenPose."
     }
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "inferred:CS4200, CS4200",
+  "course_evidence": "codes mapped unanimously from corpus dictionary"
  },
  {
   "id": "2131",
@@ -317,7 +323,10 @@
      "evidence": "We use the unparse method to convert the dict dictionary data in Python into an xml string, and then return specific xml structure data to respond to the user's POST request."
     }
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "SENIOR PROJECT 1"
  },
  {
   "id": "2132",
@@ -423,7 +432,10 @@
      "evidence": "Google Assistant itself had a voice application service called Dialogflow ... but Google deprecated it to open for Google Action (p. 16)."
     }
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CSX 3010 Senior Project 1 (2/2021)"
  },
  {
   "id": "2136",
@@ -527,7 +539,10 @@
      "evidence": "image recognition on the existing data using Keras models and the ImageNet dataset to find out more related keywords (Conclusion, p. 14)."
     }
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CS 4200 Senior Project 2 (2/2021)"
  },
  {
   "id": "2137",
@@ -626,7 +641,10 @@
      "evidence": "Another system is Room Minister. It is also a room reservation system (p. 5)."
     }
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CSX 3010 Senior Project 1 (2/2021)"
  },
  {
   "id": "2138",
@@ -708,7 +726,10 @@
      "evidence": "Section 4.2: 'We use the google form that users can rate scored satisfaction from 1 to 5'"
     }
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CSX 3010 / ITX 3009 Senior Project 1 (2/2021)"
  },
  {
   "id": "2140",
@@ -833,7 +854,10 @@
      "evidence": "Section 3.1.1: 'the token has an equivalent standard as an ERC20 token, a fungible token standard of Ethereum base'"
     }
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CS 4200 Senior Project 2 (2/2021)"
  },
  {
   "id": "2141",
@@ -953,7 +977,10 @@
      "evidence": "Section 2.1.2: 'Here he used pose_hrnet_w48_256*192 pretrained on COCO dataset with 17 joints.' (related work)"
     }
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CS 3200 Senior Project 1 (1/2020)"
  },
  {
   "id": "2142",
@@ -1049,78 +1076,10 @@
      "evidence": "\"Google chrome extension worked by using html with JavaScript to handle front-end.\" (Section 3.7, p.15)"
     }
    ]
-  }
- },
- {
-  "id": "2145",
-  "canonical_title": "WiFi-based Occupancy Sensor",
-  "aliases": [],
-  "phase": "final",
-  "course_code": "CS 3200",
-  "program": "computer_science",
-  "semester": "2",
-  "academic_year": 2021,
-  "students": [
-   {
-    "name": "Shizhu Bao",
-    "student_id": "6118444"
-   },
-   {
-    "name": "Suppachai Wongsrinoppakun",
-    "student_id": "6010525"
-   }
-  ],
-  "advisor": "A. Tapanan Yeophantong",
-  "committee": [
-   "Dr. Kwankamol Nongpong",
-   "A. Piyakul Tillapart"
-  ],
-  "abstract": "Real-time estimations of the presence of people in a space can help administrators better manage a space, save unnecessary costs, and provide better services. In this paper, we propose a technique to estimate the number of mobile devices in a certain place at a certain time through the Wi-Fi probe request issued by the device with a wireless network function, so as to judge whether there is a person in the place. Compared with the method using camera detection, the cost of this method is lower, and the privacy of people in the venue can be better protected. We also provide a front-end page that makes it easier for administrators to view real-time or period data reports. It also supports real-time notification of administrators when certain conditions are triggered, such as when the number of people exceeds so that corresponding measures can be carried out.",
-  "reported_keywords": [],
-  "classification": {
-   "category": [
-    "hardware_iot"
-   ],
-   "platform": [
-    "raspberry_pi",
-    "embedded_hardware",
-    "web"
-   ],
-   "domain": [
-    "business"
-   ],
-   "topic": [
-    "geolocation"
-   ],
-   "technology": [
-    "python"
-   ]
   },
-  "discoveries": {
-   "category": [],
-   "platform": [],
-   "domain": [],
-   "technology": [
-    {
-     "key": "scapy",
-     "label": "Scapy",
-     "status": "used",
-     "evidence": "\"we used Scapy, a python program that allows us to probe Wi-Fi networks for packets\" (Section 3.4, p.19)"
-    },
-    {
-     "key": "kali_linux",
-     "label": "Kali Linux",
-     "status": "used",
-     "evidence": "\"we used a Raspberry Pi 4 Model B, running on Kali-Linux ARM 64-bit image\" (Section 2.4, p.13)"
-    },
-    {
-     "key": "tp_link_tl_wn722n",
-     "label": "TP-Link TL-WN722N wireless USB adapter",
-     "status": "used",
-     "evidence": "\"we used the TL-WN722N V.3.20 150Mbps High Gain Wireless USB Adapter by TP-Link\" (Section 2.4, p.13)"
-    }
-   ]
-  }
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CS 4200 Senior Project 2 (1/2021)"
  },
  {
   "id": "2146",
@@ -1192,7 +1151,10 @@
      "evidence": "\"use the scikit learn library and call joblib function in order to write data as json file\" (Data Processing, p.16)"
     }
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "Senior Project 2"
  },
  {
   "id": "2147",
@@ -1283,7 +1245,10 @@
      "evidence": "Section 5.3.3 p.27: Using AdobeXD, we were able to create a UI model of the website"
     }
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "IT4291 Senior Project 1 (2/2021)"
  },
  {
   "id": "2149",
@@ -1370,7 +1335,10 @@
      "evidence": "Section 2.2 related work: Alien Invaders is powered by the ARKit framework"
     }
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CSX 3010 Senior Project 1 (1/2022)"
  },
  {
   "id": "2203",
@@ -1463,6 +1431,9 @@
      "evidence": "Figure 5.3.7: Gradle Settings File for Firebase Connection"
     }
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CS 3200 Senior Project 1"
  }
 ]

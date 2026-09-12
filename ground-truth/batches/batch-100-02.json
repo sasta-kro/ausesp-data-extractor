@@ -45,7 +45,10 @@
     "php",
     "mysql"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "IT 4292 SENIOR PROJECT II"
  },
  {
   "id": "1640",
@@ -92,7 +95,10 @@
     "php",
     "mysql"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "Without him, we would not be able to complete this senior project I properly."
  },
  {
   "id": "1642",
@@ -141,7 +147,10 @@
     "php",
     "mysql"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "inferred:IT4299, IT4299",
+  "course_evidence": "codes mapped unanimously from corpus dictionary"
  },
  {
   "id": "1646",
@@ -187,7 +196,10 @@
    "technology": [
     "python"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "SENIOR PROJECT I"
  },
  {
   "id": "1650",
@@ -233,6 +245,9 @@
    ],
    "topic": [],
    "technology": []
-  }
+  },
+  "course": "sp1",
+  "course_basis": "inferred:IT4299, IT4299",
+  "course_evidence": "codes mapped unanimously from corpus dictionary"
  }
 ]

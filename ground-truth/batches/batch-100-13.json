@@ -41,7 +41,10 @@
     "geolocation"
    ],
    "technology": []
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CS4200/IT4292 Senior project 2"
  },
  {
   "id": "1927",
@@ -90,7 +93,10 @@
     "firebase",
     "python"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CS 3200/IT4291 SENIOR PROJECT 1"
  },
  {
   "id": "1928",
@@ -131,7 +137,10 @@
    "technology": [
     "python"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "SENIOR PROJECT I"
  },
  {
   "id": "1933",
@@ -178,7 +187,10 @@
    "technology": [
     "python"
    ]
-  }
+  },
+  "course": "unspecified",
+  "course_basis": "none",
+  "course_evidence": "IT 4291 / IT 4292; IT 4291 / IT 4292"
  },
  {
   "id": "1936",
@@ -223,6 +235,9 @@
    "technology": [
     "python"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "SENIOR PROJECT II"
  }
 ]

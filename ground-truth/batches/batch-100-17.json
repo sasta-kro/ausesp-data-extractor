@@ -36,7 +36,10 @@
     "firebase",
     "react"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "docx",
+  "course_evidence": "word-document explicit statement"
  },
  {
   "id": "2019",
@@ -79,7 +82,10 @@
    "technology": [
     "python"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CS 4200 Senior Project 2"
  },
  {
   "id": "2024",
@@ -117,7 +123,10 @@
     "geolocation"
    ],
    "technology": []
-  }
+  },
+  "course": "sp1",
+  "course_basis": "inferred:CS3200, CS3200",
+  "course_evidence": "codes mapped unanimously from corpus dictionary"
  },
  {
   "id": "2025",
@@ -165,7 +174,10 @@
    "technology": [
     "unity"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "inferred:CS3200, CS3200",
+  "course_evidence": "codes mapped unanimously from corpus dictionary"
  },
  {
   "id": "2036",
@@ -209,6 +221,9 @@
    "technology": [
     "python"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CS 3200 Senior Project 1 (2/2020)"
  }
 ]

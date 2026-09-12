@@ -45,7 +45,10 @@
    "technology": [
     "php"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "IT4291 SENIOR PROJECT I"
  },
  {
   "id": "2206",
@@ -93,7 +96,10 @@
     "nodejs",
     "react"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CS 4200 Senior Project 2 (1/2022)"
  },
  {
   "id": "2214",
@@ -145,7 +151,10 @@
     "mongodb",
     "nodejs"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CS 4200/ITX 3010 Senior Project 2 (1/2022)"
  },
  {
   "id": "2225",
@@ -195,6 +204,9 @@
     "nodejs",
     "react"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CS 3200 Senior Project 1"
  }
 ]

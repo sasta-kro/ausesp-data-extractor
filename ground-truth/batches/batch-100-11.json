@@ -1,52 +1,5 @@
 [
  {
-  "id": "1906",
-  "canonical_title": "Elderly care service Finder",
-  "aliases": [
-   "Elderly Care Service Finder"
-  ],
-  "phase": "final",
-  "course_code": "IT 4292",
-  "program": "information_technology",
-  "semester": "1",
-  "academic_year": 2019,
-  "students": [
-   {
-    "name": "Ms. Kaori Saito",
-    "student_id": "5828406"
-   },
-   {
-    "name": "Mr. Sophearith Saing",
-    "student_id": "5838108"
-   }
-  ],
-  "advisor": "Asst. Prof. Dr. Paitoon Porntrakoon",
-  "committee": [
-   "Asst. Prof. Dr. Rachsuda Setthawong",
-   "A. Chayapol Moemeng"
-  ],
-  "abstract": "This project is aimed at finding elderly care services for both parties in our system. The system is designed and developed based on the research by SCB Economic Intelligence Center. This is a web-based system, which can find and match Caregiver and Elders. Caregiver can provide services and schedules and Elders select services that they want then the system will match and show the list of Caregivers nearby Elders. Elders also can set services as default that they want to get. Then, they can choose whether they want to have a meeting with Caregiver who they selected from the list before making final decision to get services. Facility to communicate by using messenger and notification for both Caregiver and Elders are also available. Elderly care service Finder can be a very helpful system within Caregivers and Elders. This system provides services for not only Caregivers and Elders, but also administrators to approve Caregivers' information to be kept up-to-date and quality of their work by certification with identification or signature by the specific doctor or certified person, so that Elders feel secure and trust the information on our website. Furthermore, our system can also help both users to reduce the difficulty of finding care services around them by searching by postal code or service. Finally, this system is anticipated to be useful not only for specific area of Thailand, but also for all people in Thailand.",
-  "reported_keywords": [],
-  "classification": {
-   "category": [
-    "software_application"
-   ],
-   "platform": [
-    "web"
-   ],
-   "domain": [
-    "healthcare"
-   ],
-   "topic": [
-    "recommender_system"
-   ],
-   "technology": [
-    "mongodb",
-    "nodejs"
-   ]
-  }
- },
- {
   "id": "1908",
   "canonical_title": "AI Play Games",
   "aliases": [
@@ -88,7 +41,10 @@
     "opencv",
     "python"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "docx",
+  "course_evidence": "word-document explicit statement"
  },
  {
   "id": "1909",
@@ -129,7 +85,10 @@
    ],
    "topic": [],
    "technology": []
-  }
+  },
+  "course": "sp2",
+  "course_basis": "docx",
+  "course_evidence": "word-document explicit statement"
  },
  {
   "id": "1911",
@@ -176,7 +135,10 @@
     "nodejs",
     "react"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CS 4200 Senior Project II"
  },
  {
   "id": "1912",
@@ -213,6 +175,9 @@
    ],
    "topic": [],
    "technology": []
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "IT4292 SENIOR PROJECT II"
  }
 ]

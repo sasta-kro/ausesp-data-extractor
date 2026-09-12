@@ -35,7 +35,10 @@
     "recommender_system"
    ],
    "technology": []
-  }
+  },
+  "course": "sp1",
+  "course_basis": "inferred:IT4291, IT4291",
+  "course_evidence": "codes mapped unanimously from corpus dictionary"
  },
  {
   "id": "1914",
@@ -75,7 +78,10 @@
     "php",
     "mysql"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "docx",
+  "course_evidence": "word-document explicit statement"
  },
  {
   "id": "1916",
@@ -118,7 +124,10 @@
     "php",
     "mysql"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "IT 4292 SENIOR PROJECT II"
  },
  {
   "id": "1917",
@@ -164,7 +173,10 @@
    "technology": [
     "php"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "IT 4299/CS 3200 SENIOR PROJECT I"
  },
  {
   "id": "1919",
@@ -215,6 +227,9 @@
     "php",
     "react"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "IT 4292/CS 4200 SENIOR PROJECT II"
  }
 ]

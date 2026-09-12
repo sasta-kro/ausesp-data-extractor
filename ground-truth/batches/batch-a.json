@@ -39,7 +39,10 @@
    ],
    "topic": [],
    "technology": []
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CS 3200 SENIOR PROJECT I"
  },
  {
   "id": "1816",
@@ -89,7 +92,10 @@
     "firebase",
     "python"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CS4200 SENIOR PROJECT II"
  },
  {
   "id": "1825",
@@ -138,7 +144,10 @@
     "laravel",
     "php"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CS 4200  Senior Project 2"
  },
  {
   "id": "1829",
@@ -189,6 +198,9 @@
    "technology": [
     "nodejs"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CS4200 SENIOR PROJECT II"
  }
 ]

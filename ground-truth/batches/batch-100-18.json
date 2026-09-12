@@ -44,7 +44,10 @@
     "gamification"
    ],
    "technology": []
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CS 3200 Senior Project 1 (2/2020)"
  },
  {
   "id": "2039",
@@ -90,7 +93,10 @@
     "firebase",
     "react"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CS 4200 Senior Project 2 (1/2021)"
  },
  {
   "id": "2041",
@@ -130,7 +136,10 @@
     "nlp"
    ],
    "technology": []
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CS4200 SENIOR PROJECT II"
  },
  {
   "id": "2042",
@@ -178,7 +187,10 @@
    "technology": [
     "unity"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CS 3200 Senior Project 1 (1/2021)"
  },
  {
   "id": "2102",
@@ -228,6 +240,9 @@
    "technology": [
     "firebase"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CS 3200 Senior Project 1 (1/2021)"
  }
 ]

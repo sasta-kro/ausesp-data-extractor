@@ -44,7 +44,10 @@
     "postgresql",
     "react"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CSX3011 Senior Project 2 (2/2025)"
  },
  {
   "id": "26033",
@@ -95,6 +98,9 @@
     "kotlin",
     "mongodb"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CS 3010 Senior Project 1 (2/2025)"
  }
 ]

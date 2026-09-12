@@ -44,7 +44,10 @@
     "nlp"
    ],
    "technology": []
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CS3200 SENIOR PROJECT I"
  },
  {
   "id": "1621",
@@ -91,7 +94,10 @@
     "firebase",
     "python"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "Senior Project I"
  },
  {
   "id": "1627",
@@ -142,7 +148,10 @@
     "opencv",
     "python"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "docx",
+  "course_evidence": "word-document explicit statement"
  },
  {
   "id": "1628",
@@ -173,7 +182,10 @@
    ],
    "topic": [],
    "technology": []
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "SENIOR PROJECT I"
  },
  {
   "id": "1636",
@@ -215,6 +227,9 @@
     "recommender_system"
    ],
    "technology": []
-  }
+  },
+  "course": "unspecified",
+  "course_basis": "none",
+  "course_evidence": "SC 4299"
  }
 ]

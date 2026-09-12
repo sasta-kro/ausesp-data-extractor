@@ -48,7 +48,10 @@
     "opencv",
     "python"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CS3200/IT4291 SENIOR PROJECT 1"
  },
  {
   "id": "1934",
@@ -90,7 +93,10 @@
    "technology": [
     "unreal_engine"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "IT4291/CS3200 SENIOR PROJECT I"
  },
  {
   "id": "1941",
@@ -133,7 +139,10 @@
     "php",
     "mysql"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CS 4200 Senior Project 2"
  },
  {
   "id": "1953",
@@ -177,6 +186,9 @@
     "recommender_system"
    ],
    "technology": []
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CS4200 SENIOR PROJECT II FINAL REPORT"
  }
 ]

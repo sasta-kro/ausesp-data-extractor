@@ -37,7 +37,10 @@
    "technology": [
     "python"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CS 3200 Senior Project 1 (1/2020)"
  },
  {
   "id": "2008",
@@ -79,7 +82,10 @@
    ],
    "topic": [],
    "technology": []
-  }
+  },
+  "course": "sp1",
+  "course_basis": "docx",
+  "course_evidence": "word-document explicit statement"
  },
  {
   "id": "2010",
@@ -126,7 +132,10 @@
     "mysql",
     "php"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "IT 4292/CS 4200  Senior Project II"
  },
  {
   "id": "2014",
@@ -176,7 +185,10 @@
     "opencv",
     "python"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "inferred:IT4292, CS4200, IT4292, CS4200",
+  "course_evidence": "codes mapped unanimously from corpus dictionary"
  },
  {
   "id": "2017",
@@ -220,6 +232,9 @@
     "php",
     "python"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "docx",
+  "course_evidence": "word-document explicit statement"
  }
 ]

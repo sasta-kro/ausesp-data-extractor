@@ -408,20 +408,6 @@
   },
   "links": []
  },
- "1711": {
-  "logo": {
-   "has_logo": true,
-   "reason": null,
-   "extracted": true,
-   "source": {
-    "media": "image10.png"
-   },
-   "output": "logos/1711.png",
-   "verified": true,
-   "note": "Gold serif Amalia app wordmark on black, taken from the app header image; AU crest in image2.png excluded."
-  },
-  "links": []
- },
  "1715": {
   "logo": {
    "has_logo": false,
@@ -967,18 +953,6 @@
   },
   "links": []
  },
- "1827": {
-  "logo": {
-   "has_logo": false,
-   "reason": "au_crest_only",
-   "extracted": false,
-   "source": null,
-   "output": null,
-   "verified": false,
-   "note": "Only Assumption University crest on cover, SAMT MASTER title is plain text, no project mark on pages 1-4"
-  },
-  "links": []
- },
  "1828": {
   "logo": {
    "has_logo": false,
@@ -1083,18 +1057,6 @@
     }
    }
   ]
- },
- "1906": {
-  "logo": {
-   "has_logo": false,
-   "reason": "no_viewable_source",
-   "extracted": false,
-   "source": null,
-   "output": null,
-   "verified": false,
-   "note": "legacy .doc report with no recoverable embedded images and no rendered pages"
-  },
-  "links": []
  },
  "1908": {
   "logo": {
@@ -1692,18 +1654,6 @@
    "output": null,
    "verified": false,
    "note": "All 22 embedded media checked: only AU and Vincent Mary School marks; the rest are screenshots, diagrams, and third-party logos."
-  },
-  "links": []
- },
- "2003": {
-  "logo": {
-   "has_logo": false,
-   "reason": "au_crest_only",
-   "extracted": false,
-   "source": null,
-   "output": null,
-   "verified": false,
-   "note": "Cover shows only the Assumption University banner and Vincent Mary School crest; no project-specific mark."
   },
   "links": []
  },
@@ -2785,27 +2735,6 @@
    "output": "logos/2143.png",
    "verified": true,
    "note": "Let's Meet stylized teal wordmark, same mark also appears on slides page 1"
-  },
-  "links": []
- },
- "2145": {
-  "logo": {
-   "has_logo": true,
-   "reason": null,
-   "extracted": true,
-   "source": {
-    "pdf": "slides.pdf",
-    "page": 1,
-    "box": [
-     0.45,
-     0.1,
-     0.97,
-     0.9
-    ]
-   },
-   "output": "logos/2145.png",
-   "verified": true,
-   "note": "Designed room-with-person-and-wifi icon emblem from the title slide"
   },
   "links": []
  },
@@ -4088,18 +4017,6 @@
     }
    }
   ]
- },
- "26009": {
-  "logo": {
-   "has_logo": false,
-   "reason": "no_logo_found",
-   "extracted": false,
-   "source": null,
-   "output": null,
-   "verified": false,
-   "note": "Title slides use plain serif text on colored blocks with decorative flower and leaf photos, no project or business emblem in report or slides"
-  },
-  "links": []
  },
  "26010": {
   "logo": {

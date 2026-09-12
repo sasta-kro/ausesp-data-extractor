@@ -35,7 +35,10 @@
    "technology": [
     "python"
    ]
-  }
+  },
+  "course": "unspecified",
+  "course_basis": "none",
+  "course_evidence": "SC4299; SC4299"
  },
  {
   "id": "1802",
@@ -78,7 +81,10 @@
     "nodejs",
     "mysql"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "Senior Project 1"
  },
  {
   "id": "1804",
@@ -124,7 +130,10 @@
    ],
    "topic": [],
    "technology": []
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "SC4299/IT4291 SENIOR PROJECT I"
  },
  {
   "id": "1805",
@@ -173,7 +182,10 @@
    "technology": [
     "mysql"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "IT 4291 & CS 3200 SENIOR PROJECT I"
  },
  {
   "id": "1809",
@@ -214,6 +226,9 @@
     "nodejs",
     "mongodb"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "IT 4292 SENIOR PROJECT 2"
  }
 ]

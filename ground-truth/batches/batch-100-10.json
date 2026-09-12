@@ -39,7 +39,10 @@
    "technology": [
     "python"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "SENIOR PROJECT I"
  },
  {
   "id": "1836",
@@ -85,7 +88,10 @@
     "ocr"
    ],
    "technology": []
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "SENIOR PROJECT I"
  },
  {
   "id": "1837",
@@ -139,7 +145,10 @@
    "technology": [
     "python"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "SENIOR PROJECT II"
  },
  {
   "id": "1839",
@@ -176,7 +185,10 @@
     "laravel",
     "mysql"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "Senior Project II Final Report"
  },
  {
   "id": "1904",
@@ -221,6 +233,9 @@
    "technology": [
     "firebase"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "Senior Project 2"
  }
 ]

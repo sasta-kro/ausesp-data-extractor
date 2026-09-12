@@ -97,7 +97,10 @@
      "evidence": "Tech stack p.21 item 11: 'Visual Studio Code (Source-Code Editor)'"
     }
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "IT4292  Senior Project II"
  },
  {
   "id": "2207",
@@ -224,7 +227,10 @@
      "evidence": "Tech stack Programming Languages: 'CSS is used to describe how the content should be presented.'"
     }
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "IT 4291 Senior Project 1 (1/2023)"
  },
  {
   "id": "2211",
@@ -388,7 +394,10 @@
      "evidence": "Section 4.1 p.20: 'The IQAir AirVisual Pro may also be connected to the IFTTT (If This Then That) platform'"
     }
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CSX 3010 Senior Project 1 (1/2022)"
  },
  {
   "id": "2213",
@@ -517,7 +526,10 @@
      "evidence": "Page 7 related work: 'Other applications that we have shown to staff members of John Paul Sport Center is Bookado.'"
     }
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CSX 3011 Senior Project 2 (1/2022)"
  },
  {
   "id": "2216",
@@ -623,7 +635,10 @@
      "evidence": "Reference [6] on page 50: 'Draw.IO, https://app.diagrams.net/'."
     }
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "IT4292 SENIOR PROJECT II"
  },
  {
   "id": "2222",
@@ -713,7 +728,10 @@
      "evidence": "Reference [6] page 26: 'Netlify. Welcome to Netlify. docs.netlify.com'."
     }
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "reread",
+  "course_evidence": "Senior Project Report; CS 3200 Senior Project 2 (1/2022); Senior Project II : Au Tutify"
  },
  {
   "id": "2224",
@@ -857,7 +875,10 @@
      "evidence": "Section 2.2 related work: \"Mi has its own communication protocol, known as miio, which it uses to connect to its smart devices\"; team evaluated then decided against building on Mi devices"
     }
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CS 4200 / CSX3011 Senior Project 2 (1/2022)"
  },
  {
   "id": "2226",
@@ -968,7 +989,10 @@
      "evidence": "Section 1.1: \"players who play together and chat via communication app such as Discord, or TeamSpeak3\""
     }
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CSX 3010 Senior Project 1 (1/2021)"
  },
  {
   "id": "2231",
@@ -1046,7 +1070,10 @@
      "evidence": "Section 2.1 Old flow: \"each cost must be manually entered and computed on Google Sheets\" (the manual process the system replaces)"
     }
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CSX 3011 / ITX 3009 Senior Project II (2/2022)"
  },
  {
   "id": "2233",
@@ -1183,7 +1210,10 @@
      "evidence": "Section 2.4: 'captures images using a Hikvision IP camera, specifically the Hikvision ds-2cv2q21fd-iw model'"
     }
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CSX 3010 / ITX 3009 Senior Project 1 (2/2022)"
  },
  {
   "id": "2239",
@@ -1255,7 +1285,10 @@
      "evidence": "Section 3.1: 'capture the sense of horror from the environment design points, by using style of the PS1 game era. Its muddy and low resolution textures give the player a sense of vagueness'"
     }
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CSX 3010 Senior Project 1 (2/2022)"
  },
  {
   "id": "2241",
@@ -1368,7 +1401,10 @@
      "evidence": "Section 3.3: 'The Model-View-Controller (MVC) design pattern is also employed to maintain a clear separation of concerns'"
     }
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "inferred:CSX3011, CSX3011",
+  "course_evidence": "codes mapped unanimously from corpus dictionary"
  },
  {
   "id": "2242",
@@ -1473,7 +1509,10 @@
      "evidence": "Page 27: \"We use VULTR[21] for our system testing.\""
     }
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CS 4200 Senior Project 2 (2/2022)"
  },
  {
   "id": "2248",
@@ -1575,7 +1614,10 @@
      "evidence": "Reference [2]: \"Smart Garden with IoT Based Real Time Communication using MQTT Protocol\""
     }
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CSX 3010 Senior Project I"
  },
  {
   "id": "2250",
@@ -1649,6 +1691,9 @@
      "evidence": "Reference [1]: \"Github Link: https://github.com/rohitks1997/Cinemo\""
     }
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CS3200 / IT 4291 Senior Project 1 (2/2022)"
  }
 ]

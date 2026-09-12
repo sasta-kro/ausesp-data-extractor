@@ -33,7 +33,10 @@
    ],
    "topic": [],
    "technology": []
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "IT4292 Senior Project 2"
  },
  {
   "id": "2114",
@@ -77,7 +80,10 @@
    "technology": [
     "unity"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "Senior Project I Proposal"
  },
  {
   "id": "2115",
@@ -122,7 +128,10 @@
     "mongodb",
     "react"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CS4200 SENIOR PROJECT II"
  },
  {
   "id": "2116",
@@ -169,7 +178,10 @@
    "technology": [
     "mysql"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "IT4292 SENIOR PROJECT II FINAL REPORT"
  },
  {
   "id": "2118",
@@ -207,6 +219,9 @@
     "geolocation"
    ],
    "technology": []
-  }
+  },
+  "course": "sp2",
+  "course_basis": "inferred:CS4200, CS4200",
+  "course_evidence": "codes mapped unanimously from corpus dictionary"
  }
 ]

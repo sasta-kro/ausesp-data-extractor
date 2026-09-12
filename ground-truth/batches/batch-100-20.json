@@ -39,7 +39,10 @@
    "technology": [
     "unity"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CS4200 SENIOR PROJECT II FINAL REPORT"
  },
  {
   "id": "2120",
@@ -88,7 +91,10 @@
    "technology": [
     "react"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CS 3200 / ITX 3009 Senior Project 1 (1/2020)"
  },
  {
   "id": "2125",
@@ -136,7 +142,10 @@
    "technology": [
     "firebase"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "ITX3009/CSX3010 Senior Project I (2/2021)"
  },
  {
   "id": "2126",
@@ -186,7 +195,10 @@
     "python",
     "wordpress"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "Senior Project II Report"
  },
  {
   "id": "2127",
@@ -229,6 +241,9 @@
     "mysql",
     "python"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "Senior Project 2 Report"
  }
 ]

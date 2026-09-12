@@ -39,7 +39,10 @@
    "technology": [
     "python"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "Senior Project 1"
  },
  {
   "id": "2129",
@@ -89,7 +92,10 @@
     "react",
     "wordpress"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "ITX 3009 Senior Project 1 (2/2022)"
  },
  {
   "id": "2134",
@@ -134,7 +140,10 @@
     "opencv",
     "python"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "Senior Project 2"
  },
  {
   "id": "2139",
@@ -177,6 +186,9 @@
    "technology": [
     "react"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CS 4200 Senior Project 2 (2/2021)"
  }
 ]

@@ -41,7 +41,10 @@
    ],
    "topic": [],
    "technology": []
-  }
+  },
+  "course": "sp1",
+  "course_basis": "inferred:IT4299",
+  "course_evidence": "codes mapped unanimously from corpus dictionary"
  },
  {
   "id": "1707",
@@ -88,7 +91,10 @@
     "php",
     "mysql"
    ]
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "IT 4291 SENIOR PROJECT I"
  },
  {
   "id": "1709",
@@ -124,7 +130,10 @@
    ],
    "topic": [],
    "technology": []
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CS 4200 Senior Project 2"
  },
  {
   "id": "1710",
@@ -174,50 +183,9 @@
     "opencv",
     "python"
    ]
-  }
- },
- {
-  "id": "1711",
-  "canonical_title": "Restaurant Management System",
-  "aliases": [],
-  "phase": "final",
-  "course_code": "IT 4299",
-  "program": "information_technology",
-  "semester": "2",
-  "academic_year": 2017,
-  "students": [
-   {
-    "name": "Aniceto Manuel Moreira Belo",
-    "student_id": "5538432"
-   },
-   {
-    "name": "Agostinho de Sousa Gama da Costa",
-    "student_id": "5538429"
-   },
-   {
-    "name": "Sai Than Htike",
-    "student_id": "5618394"
-   }
-  ],
-  "advisor": "Dr. Chokdee Liopanich",
-  "committee": [
-   "A. Chayapol Moemeng",
-   "Dr. Benjawan Srisura"
-  ],
-  "abstract": "Today, the restaurant business has been growing rapidly. Every restaurant tries to present something new and unique to its customers. Many successful restaurants attract customers, but many of them fail. A contributing factor in addition to food, the more important is the service that is offered. The system integrates restaurant management, or simply called restaurant management system, will greatly helping restaurants to provide faster and better service to its customers, at the same time providing reliable control for the management of the restaurant. that's why we want to try to apply an online-based system to facilitate transactions and provide convenience for customers. Restaurant management system can handle the overall operations of the restaurant, from the moment customers arrive, order a meal, food preparation, up until customers make a payment and left the restaurant.",
-  "reported_keywords": [],
-  "classification": {
-   "category": [
-    "software_application"
-   ],
-   "platform": [
-    "web"
-   ],
-   "domain": [
-    "business"
-   ],
-   "topic": [],
-   "technology": []
-  }
+  },
+  "course": "sp1",
+  "course_basis": "inferred:CS3200, CS3200",
+  "course_evidence": "codes mapped unanimously from corpus dictionary"
  }
 ]

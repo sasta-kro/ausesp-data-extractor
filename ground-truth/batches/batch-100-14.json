@@ -37,7 +37,10 @@
    "technology": [
     "firebase"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CS 4200 Senior Project 2"
  },
  {
   "id": "1938",
@@ -79,7 +82,10 @@
     "nlp"
    ],
    "technology": []
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CS 3200 Senior Project 1 Report"
  },
  {
   "id": "1949",
@@ -119,7 +125,10 @@
    "technology": [
     "firebase"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "IT4292 SENIOR PROJECT II Final Report"
  },
  {
   "id": "1950",
@@ -163,7 +172,10 @@
    ],
    "topic": [],
    "technology": []
-  }
+  },
+  "course": "sp1",
+  "course_basis": "explicit",
+  "course_evidence": "CS3200 SENIOR PROJECT I FINAL REPORT"
  },
  {
   "id": "1952",
@@ -208,6 +220,9 @@
     "firebase",
     "python"
    ]
-  }
+  },
+  "course": "sp2",
+  "course_basis": "explicit",
+  "course_evidence": "CS 4200 SENIOR PROJECT 2 FINAL REPORT"
  }
 ]
