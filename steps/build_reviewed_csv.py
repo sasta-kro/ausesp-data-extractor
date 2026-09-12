@@ -135,6 +135,20 @@ def main() -> int:
         for record in entries:
             records[record["id"]] = record
 
+    def clean_aliases(raw_aliases: list, title: str) -> list[str]:
+        """Keep each alias once: non-empty, not repeating the title, and not
+        repeating an earlier alias, all compared case/space-insensitively
+        (the importer rejects rows with duplicate aliases)."""
+        cleaned: list[str] = []
+        seen = {title.lower()}
+        for alias in raw_aliases:
+            squished = squish(alias)
+            key = squished.lower()
+            if squished and key not in seen:
+                seen.add(key)
+                cleaned.append(squished)
+        return cleaned
+
     taxonomy = load_taxonomy(args.taxonomy) if args.taxonomy.exists() else {}
     invalid_keys: list[tuple[str, str, str]] = []
     rows: list[dict] = []
@@ -164,7 +178,7 @@ def main() -> int:
             "program_key": record.get("program") or "computer_science",
             "major_key": "",
             "course_key": "senior_project",
-            "title_aliases": json.dumps([squish(alias) for alias in record.get("aliases", []) if squish(alias) and squish(alias).lower() != title.lower()], ensure_ascii=False),
+            "title_aliases": json.dumps(clean_aliases(record.get("aliases", []), title), ensure_ascii=False),
             "students": json.dumps(student_json(record.get("students", [])), ensure_ascii=False),
             "advisors": json.dumps([{"display_name": person_name(record["advisor"])}] if squish(record.get("advisor") or "") else [], ensure_ascii=False),
             "co_advisors": json.dumps([], ensure_ascii=False),
