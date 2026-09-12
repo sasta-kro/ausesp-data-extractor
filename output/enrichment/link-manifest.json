@@ -1,0 +1,160 @@
+{
+  "version": 1,
+  "projects": [
+    {
+      "project_import_key": "sp-1719",
+      "links": [
+        {
+          "url": "https://github.com/taechasit1001/au_seniorproject_1",
+          "primary": true,
+          "availability": "not_accessible",
+          "checked_at": "2026-09-11T07:32:06+00:00"
+        }
+      ]
+    },
+    {
+      "project_import_key": "sp-1814",
+      "links": [
+        {
+          "url": "https://gitlab.com/islabac/smartdigest/concept-predictor-api",
+          "primary": true,
+          "availability": "unverified",
+          "checked_at": "2026-09-11T07:32:35+00:00"
+        }
+      ]
+    },
+    {
+      "project_import_key": "sp-1816",
+      "links": [
+        {
+          "url": "https://github.com/williampoch/aspectbasedsentimentanalysis",
+          "primary": true,
+          "availability": "accessible",
+          "checked_at": "2026-09-11T07:32:25+00:00"
+        }
+      ]
+    },
+    {
+      "project_import_key": "sp-1825",
+      "links": [
+        {
+          "url": "https://github.com/serhii-bielik/cs4200-sp2-advising",
+          "primary": true,
+          "availability": "accessible",
+          "checked_at": "2026-09-11T07:31:59+00:00"
+        }
+      ]
+    },
+    {
+      "project_import_key": "sp-1908",
+      "links": [
+        {
+          "url": "https://github.com/jg-fisher/dinoai",
+          "primary": true,
+          "availability": "accessible",
+          "checked_at": "2026-09-11T07:31:17+00:00"
+        }
+      ]
+    },
+    {
+      "project_import_key": "sp-1925",
+      "links": [
+        {
+          "url": "https://github.com/williampoch/sp1",
+          "primary": true,
+          "availability": "accessible",
+          "checked_at": "2026-09-11T07:32:27+00:00"
+        },
+        {
+          "url": "https://github.com/williampoch/sp1website",
+          "primary": false,
+          "availability": "accessible",
+          "checked_at": "2026-09-11T07:32:30+00:00"
+        }
+      ]
+    },
+    {
+      "project_import_key": "sp-2141",
+      "links": [
+        {
+          "url": "https://github.com/garrukzijian/cvcoach",
+          "primary": true,
+          "availability": "accessible",
+          "checked_at": "2026-09-11T07:31:02+00:00"
+        }
+      ]
+    },
+    {
+      "project_import_key": "sp-2207",
+      "links": [
+        {
+          "url": "https://github.com/morgancsit/lba-frontend",
+          "primary": true,
+          "availability": "accessible",
+          "checked_at": "2026-09-11T07:31:29+00:00"
+        },
+        {
+          "url": "https://github.com/morgancsit/sp1-longtailbookingdapp",
+          "primary": false,
+          "availability": "accessible",
+          "checked_at": "2026-09-11T07:31:31+00:00"
+        }
+      ]
+    },
+    {
+      "project_import_key": "sp-2224",
+      "links": [
+        {
+          "url": "https://github.com/pandalabos/smarthomefinal",
+          "primary": true,
+          "availability": "accessible",
+          "checked_at": "2026-09-11T07:31:40+00:00"
+        }
+      ]
+    },
+    {
+      "project_import_key": "sp-2239",
+      "links": [
+        {
+          "url": "https://github.com/singekkasith/senior-project-i",
+          "primary": true,
+          "availability": "accessible",
+          "checked_at": "2026-09-11T07:32:01+00:00"
+        }
+      ]
+    },
+    {
+      "project_import_key": "sp-2250",
+      "links": [
+        {
+          "url": "https://github.com/rohitks1997/cinemo",
+          "primary": true,
+          "availability": "accessible",
+          "checked_at": "2026-09-11T07:31:52+00:00"
+        }
+      ]
+    },
+    {
+      "project_import_key": "sp-2594",
+      "links": [
+        {
+          "url": "https://github.com/kusk24/augo",
+          "primary": true,
+          "availability": "accessible",
+          "checked_at": "2026-09-11T07:31:21+00:00"
+        }
+      ]
+    },
+    {
+      "project_import_key": "sp-26020",
+      "links": [
+        {
+          "url": "https://github.com/thuyein96/internal-developer-tool-orchestronic",
+          "primary": true,
+          "availability": "accessible",
+          "checked_at": "2026-09-11T07:32:17+00:00"
+        }
+      ]
+    }
+  ]
+}

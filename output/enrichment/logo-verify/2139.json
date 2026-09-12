@@ -1,0 +1,1 @@
+{"id": "2139", "verdict": "pass", "issue": "clipped: final letter M cut off at right edge of the XAM wordmark", "shows": "pink and purple overlapping circles beside XAM wordmark", "note": "Re-cropped page 1 with the box extended right so the full M is inside the crop; the tool's uniform-border trim leaves the lockup flush but complete, with no clipped glyph."}

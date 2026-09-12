@@ -52,3 +52,35 @@ archives, legacy .doc media, and PPTX posters) → `render_enrichment.py`
 `build_pass_assignments.py` (per-worker assignment prompts) →
 `check_link_liveness.py` → `classify_links.py` → `merge_enrichment.py`
 (validation and manifest).
+
+## Logo verification and square normalization (2026-09-13)
+
+Second treatment of the logo set, after maintainer review of padded samples.
+
+- Verification: all 69 logos reviewed visually (12 workers, 6 logos each)
+  against three criteria: mark complete (nothing clipped), crop clean (no
+  slide/page background or stray content), mark genuine (the project's own,
+  matching title or team). Result: 37 passed untouched, 27 re-cropped from
+  their recorded sources, 5 investigated for suspected wrong content and all
+  kept (2130 Baksters and 26003 "TEAM KGB" are the teams' own brands; 26023's
+  deck presents itself under the iReadCustomer brand; 2593 and 26034 were
+  re-cropped to their real marks), 2 reclassified as passes (2213/2226: the
+  hex-a-gon mark is the shared team brand of the same three students across
+  their SP1 and SP2 projects). Zero logos dropped.
+- 2024 required a second fix pass: its first re-crop left a black fringe from
+  the slide footer, which polluted the fill; the final crop lands entirely on
+  the orange square (white chevron complete) and the fill is now the logo's
+  own orange.
+- Normalization: every logo squared to 1:1 with background-aware padding
+  (`steps/normalize_logo.py --all`): the fill is the exact dominant border
+  color (no snapping, no rounding; near-white edges stay white because their
+  exact color is white), transparent padding only for the rare
+  transparent-bordered logo. No upscaling; square side capped at 1024 px.
+  Final set: 69 squares, sides 119-1024 px.
+- Fill decisions came from a maintainer-reviewed sample run (21 comparison
+  sheets under `.tmp-enrichment/pad-demo/`, regenerable with
+  `steps/normalize_logo.py --demo <id>`): background-aware fill chosen over
+  white and transparent; an earlier white-snapping rule was dropped after it
+  falsified 2141's true off-white (248,248,248) background.
+- Verification records live in `output/enrichment/logo-verify/` (one JSON per
+  logo: verdict, issue, what the image shows, fix notes).

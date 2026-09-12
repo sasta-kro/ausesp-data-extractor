@@ -1,0 +1,14 @@
+{
+  "2024": {
+    "art": "3D-rendered pigeon-like bird with monocle, red scarf, and sword on its back; center is the bird's grey-blue chest",
+    "border_color": "black",
+    "border_is": "padding",
+    "correct_fill": "dark navy (near-black purple-blue, ~#15151f) matching the render's own backdrop"
+  },
+  "26035": {
+    "art": "white upward arrow / lambda mark on an orange square tile; center is the arrow's apex",
+    "border_color": "orange",
+    "border_is": "artwork",
+    "correct_fill": "n/a (art fills the square, no padding)"
+  }
+}
