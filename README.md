@@ -21,9 +21,11 @@ recipe and the home of the dataset itself.
 
 AUSE Discovery accepts bulk metadata through a CSV import: exact headers,
 taxonomy keys from `config/taxonomy/values.yaml`, people as JSON fields.
-This repository exists to produce that CSV from the university's raw report
-files. The main project consumes only the result CSV. How it is produced is
-this repository's concern alone.
+It accepts bulk content (logos, project files, repository links) through a
+strict JSON Project Content manifest. This repository produces both: the
+CSV from the university's raw report files, and the content bundle the
+application imports after the CSV. How they are produced is this
+repository's concern alone.
 
 Repository split:
 
@@ -104,6 +106,10 @@ python3 -m venv .venv
 .venv/bin/python pipeline/build_reviewed_csv.py \
   --taxonomy <path-to>/ause-discover/config/taxonomy/values.yaml
 
+# Assemble the content bundle (manifest, logos, project files) into the
+# main repository's resources/REAL_IMPORT_BUNDLE/
+.venv/bin/python pipeline/build_import_bundle.py [--dry-run]
+
 # Regenerate the taxonomy research report and fold corrections into batches
 .venv/bin/python pipeline/apply_discovery.py
 
@@ -133,6 +139,8 @@ database with `ausectl catalog sync`.
   analysis behind the canonical name map.
 - `notes/sp1-sp2-pass.md`: the SP1/SP2 course classification record,
   course-code dictionary, and culling decisions.
+- `notes/bundle-building.md`: how the content bundle is assembled, what
+  it includes, and which files cannot be imported.
 
 ## License
 
