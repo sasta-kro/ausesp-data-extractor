@@ -8,8 +8,8 @@ Each discovered URL is classified as:
   dropped               a scrape artifact (mangled URL), excluded entirely
 
 Output: output/extraction-evidence/repo-link-evidence/link-kinds.json ({url: {"kind": ..., "note": ...}}).
-Hand-curated 2026-09-11 by cross-checking owners against ground-truth student
-names and repo names against ground-truth titles.
+Hand-curated 2026-09-11 by cross-checking owners against dataset student
+names and repo names against dataset titles.
 
 Usage: python3 pipeline/classify_links.py
 """
@@ -19,7 +19,7 @@ import json
 from pathlib import Path
 
 PROJECT_REPOS = {
-    # owner matches a ground-truth student name
+    # owner matches a dataset student name
     "https://github.com/chawanvtp/sakpha-android": "owner = Chawan Vattanalap (student)",
     "https://github.com/aretisd/sakpha-": "owner = Artisd Chanyawadee (student)",
     "https://github.com/morgancsit/lba-frontend": "owner = Morgan Kieffer (student)",
