@@ -9,19 +9,19 @@ Documents print the same person under different spellings, and the AUSE
 Discovery importer matches people by exact 7-digit student id or by
 case/space-insensitive name, so any spelling that differs in letters becomes
 a separate person row. The canonical map is applied after honorific
-stripping; dataset records stay verbatim.
+stripping. Dataset records stay verbatim.
 
 ## Policies
 
 - Staff canonical form = the most frequent mention, cross-checked against
   real AU Vincent Mary faculty names. Fifteen professor spelling families
   collapsed (Anilkumar Kothalil Gopalakrishnan had six spellings alone,
-  including initial and truncated forms; "Dean" is not in the honorific
+  including initial and truncated forms. "Dean" is not in the honorific
   regex, so "Dean Suparwat Charoenvikrom" needed an explicit map entry).
 - Burmese names carry no surname: every word is part of a single given name,
   spacing is not significant, and elements like Aung, Moe, Oo, Htet, Naing
   are name parts, not family names. Students sharing such elements are never
-  the same person by that fact alone; only a shared 7-digit student id proves
+  the same person by that fact alone. Only a shared 7-digit student id proves
   identity. `Phone Pyae Kyaw Swar` is a manual fix: his documents print fused
   spellings (`PhonePyaeKyawSwar`, `PhonePyae KyawSwar`) and the map supplies
   the properly spaced form. There is no way to enforce the spacing rule
@@ -31,7 +31,7 @@ stripping; dataset records stay verbatim.
   Vibolrottana Seng (6217429) and Vibolrottanak Seng (6118173) are two
   different students who share a title page, not a duplicate.
 - The university has only student ids, no staff ids. A student always has an
-  id in real life; a "student" without one is either a document that did not
+  id in real life. A "student" without one is either a document that did not
   print it or a role error worth investigating.
 
 ## Spelling tie-breaks and their evidence
@@ -44,7 +44,7 @@ stripping; dataset records stay verbatim.
 - Kwangmin Kim: the only CSV-visible form.
 - Setthanant Tetanonsakul: judgment call, no online trace exists. The
   spelling matches standard Thai romanization of the likely original
-  (เสฏฐนันท์); revisit if a self-spelled source ever turns up.
+  (เสฏฐนันท์). Revisit if a self-spelled source ever turns up.
 
 ## Students without ids (documented exceptions)
 
@@ -53,5 +53,5 @@ Sheng have no id printed anywhere in their documents. The ids cannot be
 recovered through the university anymore (the students are gone from MS
 Teams and their email accounts). Nattalie Shinkoi and Sai Kham Sheng
 additionally had wrong ids extracted earlier, which were removed. They
-import as students without ids; if the ids are ever recovered from paper
+import as students without ids. If the ids are ever recovered from paper
 records, fill them into the batch records.

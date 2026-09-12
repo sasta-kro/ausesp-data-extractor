@@ -1,7 +1,7 @@
 # Known defects of the regex pipeline (step 3)
 
 Observed in real import output, 2026-09-05. Step 3 is regex-based and never
-reached the quality of the hand-transcribed records; kept for reference only.
+reached the quality of the hand-transcribed records. Kept for reference only.
 The shipped CSV is built from the ground truth by
 `pipeline/build_reviewed_csv.py`.
 

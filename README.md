@@ -22,7 +22,7 @@ recipe and the home of the dataset itself.
 AUSE Discovery accepts bulk metadata through a CSV import: exact headers,
 taxonomy keys from `config/taxonomy/values.yaml`, people as JSON fields.
 This repository exists to produce that CSV from the university's raw report
-files. The main project consumes only the result CSV; how it is produced is
+files. The main project consumes only the result CSV. How it is produced is
 this repository's concern alone.
 
 Repository split:
@@ -77,7 +77,7 @@ pipeline/build_reviewed_csv.py      ground truth -> the AUSE Discovery import CS
 
 Steps 1 and 2 came from the earlier frontmatter-extractor project. Step 3
 is regex-based and never reached the quality of the hand-transcribed
-records; its known defects are in `notes/regex-pipeline-defects.md`. The
+records. Its known defects are in `notes/regex-pipeline-defects.md`. The
 shipped CSV is built from the ground truth by `pipeline/build_reviewed_csv.py`,
 which is the step that matters. Fix data in the batch records, never in the
 CSV.
@@ -120,18 +120,18 @@ database with `ausectl catalog sync`.
 
 ## Maintainer notes
 
-- `notes/dataset-notes.md` — dataset contents, the five unimportable
+- `notes/dataset-notes.md`: dataset contents, the five unimportable
   projects, where data fixes go.
-- `notes/person-name-canonicalization.md` — the person dedup policies
+- `notes/person-name-canonicalization.md`: the person dedup policies
   (Burmese names, student-id rules, spelling tie-breaks).
-- `notes/enrichment-pass.md` — the logo and repository-link products and
+- `notes/enrichment-pass.md`: the logo and repository-link products and
   their open integration decisions.
-- `notes/regex-pipeline-defects.md` — why step 3 is reference-only.
-- `notes/document-traps.md` — recurring corpus patterns that break naive
+- `notes/regex-pipeline-defects.md`: why step 3 is reference-only.
+- `notes/document-traps.md`: recurring corpus patterns that break naive
   extraction.
-- `notes/people-duplication-review.md` — the full 2026-09-11 duplication
+- `notes/people-duplication-review.md`: the full 2026-09-11 duplication
   analysis behind the canonical name map.
-- `notes/sp1-sp2-pass.md` — the SP1/SP2 course classification record,
+- `notes/sp1-sp2-pass.md`: the SP1/SP2 course classification record,
   course-code dictionary, and culling decisions.
 
 ## License
