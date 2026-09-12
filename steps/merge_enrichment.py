@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """Validate enrichment records and merge them into the final manifest.
 
-Reads output/enrichment/records/*.json (one per project), text-grep.json, and
+Reads output/extraction-evidence/logo-and-link-records/*.json (one per project), text-grep.json, and
 liveness.json, validates every record against the schema and the staged file
 universe, merges text and visual link sightings per project (deduplicated by
 normalized URL, first text sighting marked primary), attaches liveness state,
-and writes output/enrichment/manifest.json plus a summary at
-output/enrichment/summary.md. Any validation failure is reported and fails
+and writes output/extraction-evidence/manifest.json plus a summary at
+output/extraction-evidence/summary.md. Any validation failure is reported and fails
 the run.
 
 Usage: python3 steps/merge_enrichment.py
@@ -20,6 +20,8 @@ from collections import Counter
 from pathlib import Path
 
 REASONS = {"au_crest_only", "no_logo_found", "no_viewable_source"}
+# worse sides of the duplicate pairs, fully deleted by the SP1/SP2 pass
+CULLED = {"1711", "2003", "1906", "1827", "26009", "2145"}
 NORMALIZE_STRIP = re.compile(r"\.git$", re.IGNORECASE)
 
 
@@ -73,12 +75,12 @@ def validate_record(project_id: str, record: dict, errors: list[str]) -> None:
 
 def main() -> int:
     root = Path(__file__).resolve().parent.parent
-    base = root / ".tmp-enrichment"
-    prepared = json.loads((base / "prepared-manifest.json").read_text())
-    records_dir = root / "output" / "enrichment" / "records"
-    logos_dir = root / "output" / "enrichment" / "logos"
-    grep_file = root / "output" / "enrichment" / "text-grep.json"
-    liveness_file = root / "output" / "enrichment" / "liveness.json"
+    base = root / "_workspace"
+    prepared = json.loads((base / "intermediate-data" / "extracted-sources.json").read_text())
+    records_dir = root / "output" / "extraction-evidence" / "logo-and-link-records"
+    logos_dir = root / "output" / "logos"
+    grep_file = root / "output" / "extraction-evidence" / "repo-link-evidence" / "text-grep.json"
+    liveness_file = root / "output" / "extraction-evidence" / "repo-link-evidence" / "liveness.json"
 
     errors: list[str] = []
     records: dict[str, dict] = {}
@@ -92,7 +94,7 @@ def main() -> int:
         validate_record(project_id, record, errors)
         records[project_id] = record
 
-    expected = set(prepared)
+    expected = set(prepared) - CULLED
     missing = expected - set(records)
     extra = set(records) - expected
     for project_id in sorted(missing):
@@ -110,7 +112,7 @@ def main() -> int:
     text_grep = json.loads(grep_file.read_text()) if grep_file.exists() else []
     liveness = {entry["url"]: entry for entry in
                 (json.loads(liveness_file.read_text()) if liveness_file.exists() else [])}
-    kinds_file = root / "output" / "enrichment" / "link-kinds.json"
+    kinds_file = root / "output" / "extraction-evidence" / "repo-link-evidence" / "link-kinds.json"
     kinds = json.loads(kinds_file.read_text()) if kinds_file.exists() else {}
 
     if errors:
@@ -151,7 +153,7 @@ def main() -> int:
             ordered[0]["primary"] = True
         manifest[project_id] = {"logo": record["logo"], "links": ordered}
 
-    output = root / "output" / "enrichment" / "manifest.json"
+    output = root / "output" / "extraction-evidence" / "manifest.json"
     output.write_text(json.dumps(manifest, ensure_ascii=False, indent=1))
 
     logo_counts = Counter(r["logo"].get("reason") or ("extracted" if r["logo"].get("extracted")
@@ -164,7 +166,7 @@ def main() -> int:
     statuses = Counter(l["liveness"].get("status", "unchecked")
                        for r in manifest.values() for l in r["links"])
 
-    summary = root / "output" / "enrichment" / "summary.md"
+    summary = root / "output" / "extraction-evidence" / "summary.md"
     summary.write_text(
         "# Enrichment pass summary\n\n"
         f"- projects: {len(manifest)}\n"

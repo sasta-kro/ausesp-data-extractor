@@ -1,11 +1,11 @@
 # Enrichment pass: project logos and repository links
 
 Record of the second full-corpus pass (2026-09-11), what it produced, and
-decisions that still matter. Products live in `output/enrichment/`.
+decisions that still matter. Products live in `output/extraction-evidence/`.
 
 ## What was produced
 
-- `output/enrichment/logos/<id>.png` — the project's own logo, cropped at
+- `output/logos/<id>.png` — the project's own logo, cropped at
   300 DPI from the slide title page or report cover, auto-trimmed, max
   1600 px. 71 of 220 projects have one. Only project-specific marks are
   taken: reports carrying just the university crest record `au_crest_only`
@@ -13,13 +13,13 @@ decisions that still matter. Products live in `output/enrichment/`.
   put their brand mark (41 of 71 logos come from slide page 1); report
   covers are crest-only territory in almost every era, and exactly one logo
   came from a poster.
-- `output/enrichment/records/<id>.json` and `manifest.json` — logo
+- `output/extraction-evidence/logo-and-link-records/<id>.json` and `manifest.json` — logo
   provenance (source file, page, crop box) plus every repository URL found
   in the documents, classified as `project_repo` (the team's own
   repository, 17 URLs across 14 projects) or `third_party_reference` (a
   cited library such as tesseract or zxing, kept for provenance but not for
   display).
-- `output/enrichment/liveness.json` — public accessibility of each URL at
+- `output/extraction-evidence/repo-link-evidence/liveness.json` — public accessibility of each URL at
   check time: `public` (200), `not_found` (404, private or deleted,
   indistinguishable from outside), `unknown` (rate limit or network error).
   Renamed repositories resolve to their new home through the recorded final
@@ -78,9 +78,9 @@ Second treatment of the logo set, after maintainer review of padded samples.
   transparent-bordered logo. No upscaling; square side capped at 1024 px.
   Final set: 69 squares, sides 119-1024 px.
 - Fill decisions came from a maintainer-reviewed sample run (21 comparison
-  sheets under `.tmp-enrichment/pad-demo/`, regenerable with
+  sheets under `_workspace/review-outputs/padding-samples/`, regenerable with
   `steps/normalize_logo.py --demo <id>`): background-aware fill chosen over
   white and transparent; an earlier white-snapping rule was dropped after it
   falsified 2141's true off-white (248,248,248) background.
-- Verification records live in `output/enrichment/logo-verify/` (one JSON per
+- Verification records live in `output/extraction-evidence/logo-verification/` (one JSON per
   logo: verdict, issue, what the image shows, fix notes).

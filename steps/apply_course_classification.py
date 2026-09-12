@@ -3,13 +3,13 @@
 
 Evidence layers, strongest first:
   1. Explicit statements re-read under contradiction (reread-*.json)
-  2. Explicit cover statements (output/sp-course/<id>.json)
+  2. Explicit cover statements (_workspace/sp-course-code-tracking/<id>.json)
   3. Explicit Word-doc statements (mechanical textutil harvest, hardcoded below
-     from .tmp-enrichment/docx-course-lines.json)
+     from _workspace/docx-course-lines.json)
   4. Dictionary inference from the printed code (dominant explicit mapping)
   5. Unspecified
 
-Outputs .tmp-enrichment/course-final.json: {id: {"course": "sp1"|"sp2"|"unspecified",
+Outputs _workspace/course-final.json: {id: {"course": "sp1"|"sp2"|"unspecified",
 "basis": "explicit"|"reread"|"docx"|"inferred:<code>"|"none", "evidence": ...}}.
 
 Usage: python3 steps/apply_course_classification.py
@@ -37,7 +37,7 @@ CULLED = {"1711", "2003", "1906", "1827", "26009", "2145"}
 
 def main() -> int:
     root = Path(__file__).resolve().parent.parent
-    base = root / ".tmp-enrichment"
+    base = root / "_workspace"
 
     gt = {}
     for f in (root / "ground-truth" / "batches").glob("*.json"):
@@ -48,14 +48,14 @@ def main() -> int:
     # dictionary from explicit sightings (agent covers + docx), excluding
     # superseded rereads handled below
     rereads = {}
-    for f in (base / "slideonly").glob("reread-*.json"):
+    for f in (base / "review-outputs").glob("reread-*.json"):
         r = json.loads(f.read_text())
         if r.get("explicit"):
             rereads[r["id"]] = r
 
     dic = defaultdict(lambda: defaultdict(int))
     covers = {}
-    for f in (root / "output" / "sp-course").glob("*.json"):
+    for f in (root / "_workspace" / "sp-course-code-tracking").glob("*.json"):
         r = json.loads(f.read_text())
         covers[r["id"]] = r
         if r.get("explicit") and r["id"] not in rereads and r["id"] not in CULLED:
@@ -63,7 +63,7 @@ def main() -> int:
                 dic[re.sub(r"\s+", "", code)][r["explicit"]] += 1
     for pid, sp in DOCX_EXPLICIT.items():
         if pid not in rereads and pid not in CULLED:
-            lines = json.loads((base / "docx-course-lines.json").read_text()).get(pid, [])
+            lines = json.loads((base / "intermediate-data" / "docx-course-lines.json").read_text()).get(pid, [])
             for line in lines:
                 for code in CODE_RE.findall(line.upper()):
                     dic[re.sub(r"\s+", "", code)][sp] += 1
@@ -110,7 +110,7 @@ def main() -> int:
                           "evidence": "; ".join(filter(None, [(cover or {}).get("course_code_printed"),
                                                                gt[pid].get("course_code")])) or None}
 
-    (base / "course-final.json").write_text(json.dumps(final, ensure_ascii=False, indent=1))
+    (base / "intermediate-data" / "course-final.json").write_text(json.dumps(final, ensure_ascii=False, indent=1))
     counts = defaultdict(int)
     for v in final.values():
         counts[v["course"]] += 1

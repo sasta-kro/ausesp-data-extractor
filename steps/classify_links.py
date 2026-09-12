@@ -7,7 +7,7 @@ Each discovered URL is classified as:
   third_party_reference a cited library, tool, or tutorial repository
   dropped               a scrape artifact (mangled URL), excluded entirely
 
-Output: output/enrichment/link-kinds.json ({url: {"kind": ..., "note": ...}}).
+Output: output/extraction-evidence/repo-link-evidence/link-kinds.json ({url: {"kind": ..., "note": ...}}).
 Hand-curated 2026-09-11 by cross-checking owners against ground-truth student
 names and repo names against ground-truth titles.
 
@@ -49,7 +49,7 @@ DROPPED = {
 
 def main() -> int:
     root = Path(__file__).resolve().parent.parent
-    grep = json.loads((root / "output" / "enrichment" / "text-grep.json").read_text())
+    grep = json.loads((root / "output" / "extraction-evidence" / "repo-link-evidence" / "text-grep.json").read_text())
     urls = sorted({g["url"] for g in grep if g.get("url")})
     kinds = {}
     for url in urls:
@@ -62,7 +62,7 @@ def main() -> int:
         else:
             kinds[url] = {"kind": "third_party_reference",
                           "note": "cited library, tool, or tutorial repository"}
-    output = root / "output" / "enrichment" / "link-kinds.json"
+    output = root / "output" / "extraction-evidence" / "repo-link-evidence" / "link-kinds.json"
     output.write_text(json.dumps(kinds, ensure_ascii=False, indent=1))
     project = sum(1 for v in kinds.values() if v["kind"] == "project_repo")
     print(f"classified {len(kinds)} urls: {project} project_repo, "

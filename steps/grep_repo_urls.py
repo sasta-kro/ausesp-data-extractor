@@ -4,7 +4,7 @@
 Scans every staged report, slide deck, poster, and external-evidence PDF page
 by page for github.com / gitlab.com / bitbucket.org URLs, and converts DOCX
 reports to text through macOS textutil (no page numbers there). Writes
-output/enrichment/text-grep.json with one record per sighting.
+output/extraction-evidence/repo-link-evidence/text-grep.json with one record per sighting.
 
 Usage: python3 steps/grep_repo_urls.py
 """
@@ -73,9 +73,9 @@ def scan_pptx(pptx: Path, project_id: str, name: str, records: list[dict]) -> No
 
 def main() -> int:
     root = Path(__file__).resolve().parent.parent
-    base = root / ".tmp-enrichment"
+    base = root / "_workspace"
     prepared = base / "prepared"
-    manifest = json.loads((base / "prepared-manifest.json").read_text())
+    manifest = json.loads((base / "intermediate-data" / "extracted-sources.json").read_text())
 
     records: list[dict] = []
     for project_id, entry in manifest.items():
@@ -101,7 +101,7 @@ def main() -> int:
         if poster_pptx.exists():
             scan_pptx(poster_pptx, project_id, "poster.pptx", records)
 
-    output = root / "output" / "enrichment" / "text-grep.json"
+    output = root / "output" / "extraction-evidence" / "repo-link-evidence" / "text-grep.json"
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(json.dumps(records, ensure_ascii=False, indent=1))
 

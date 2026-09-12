@@ -5,7 +5,8 @@
 **/**.zip
 
 output/*
-!output/enrichment/
+!output/logos/
+!output/extraction-evidence/
 test-subset/
 
 all-senior-projects/
@@ -13,5 +14,5 @@ all-senior-projects/
 .venv/
 __pycache__/
 
-.tmp-prepared/
-.tmp-enrichment/
+_workspace/*
+!_workspace/sp-course-code-tracking/

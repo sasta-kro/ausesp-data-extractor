@@ -11,7 +11,7 @@ trimming only shrinks, content is never touched, and a 2% margin is kept.
 
 Modes:
   --logo <path> [--out <path>] [--max-side N]   one logo -> square PNG
-  --all [--max-side N]                          every output/enrichment/logos/*.png
+  --all [--max-side N]                          every output/logos/*.png
                                                  (replaces in place after verification)
   --demo <id>                                   3-panel comparison sheet for review
 
@@ -27,7 +27,7 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parent.parent
-LOGOS = ROOT / "output" / "enrichment" / "logos"
+LOGOS = ROOT / "output" / "logos"
 PAPER = (251, 247, 240)   # app page background #fbf7f0
 TILE = (244, 242, 247)    # app logo tile background #f4f2f7
 
@@ -129,7 +129,7 @@ def demo(pid: str) -> None:
         x = pad + index * (cell + pad)
         sheet.paste(img.convert("RGB"), (x + (cell - side) // 2, pad + 26))
         draw.text((x + 10, pad + 26 + side + 10), label, fill=(33, 26, 26), font=small)
-    out = ROOT / ".tmp-enrichment" / "pad-demo" / f"{pid}-comparison.png"
+    out = ROOT / "_workspace" / "review-outputs" / "padding-samples" / f"{pid}-comparison.png"
     out.parent.mkdir(exist_ok=True)
     sheet.save(out)
     print(f"{pid}: fill={fill} -> {out}")

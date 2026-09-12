@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Build agent assignment prompt files for the enrichment pass.
 
-Reads .tmp-enrichment/render-manifest.json, skips the pilot and no-source
+Reads _workspace/renders-manifest.json, skips the pilot and no-source
 projects (records for the latter are written mechanically), chunks the rest
 into groups, and writes one complete prompt per group under
-.tmp-enrichment/prompts/group-NN.md. The shared rules block matches the pilot
+_workspace/prompts/group-NN.md. The shared rules block matches the pilot
 prompt so behavior stays identical across waves.
 
 Usage: python3 steps/build_pass_assignments.py [--group-size 6]
@@ -45,15 +45,15 @@ When the same logo appears in several places, use the largest, cleanest, fully v
 
 # COMMAND TEMPLATE (run from this exact directory)
 
-cd /Users/saiaikeshwetunaung/Developer/WebApps/ause-discover/tools/ausesp-data-extractor && .venv/bin/python steps/crop_logo.py --pdf .tmp-enrichment/prepared/<ID>/report.pdf --page <N> --box 0.20,0.05,0.80,0.25 --out output/enrichment/logos/<ID>.png
+cd /Users/saiaikeshwetunaung/Developer/WebApps/ause-discover/tools/ausesp-data-extractor && .venv/bin/python steps/crop_logo.py --pdf _workspace/extracted-sources/<ID>/report.pdf --page <N> --box 0.20,0.05,0.80,0.25 --out output/logos/<ID>.png
 
 - page numbers are 1-based and must be within the page ranges stated for that document below.
 - box is x0,y0,x1,y1 fractions of the page, 0.0-1.0, measured from the TOP-LEFT, with x0<x1 and y0<y1; give generous margins because the script auto-trims.
 - use slides.pdf or poster.pdf in place of report.pdf as stated in the project block.
 - for DOCX projects the template is instead:
-  ... crop_logo.py --media .tmp-enrichment/prepared/<ID>/media/<FILENAME> --out output/enrichment/logos/<ID>.png
+  ... crop_logo.py --media _workspace/extracted-sources/<ID>/media/<FILENAME> --out output/logos/<ID>.png
 
-After a successful crop you MUST Read output/enrichment/logos/<ID>.png and confirm it actually shows the logo (not blank, not the wrong region, not the university crest). If wrong, crop again with a corrected box.
+After a successful crop you MUST Read output/logos/<ID>.png and confirm it actually shows the logo (not blank, not the wrong region, not the university crest). If wrong, crop again with a corrected box.
 
 # WHILE VIEWING PAGES: REPOSITORY LINKS
 
@@ -105,11 +105,11 @@ def project_block(project_id: str, record: dict, manifest_entry: dict) -> str | 
         lines.append("Read these images:")
         for group, files in pages.items():
             if group == "poster" and len(files) == 1 and not files[0].startswith("poster-p"):
-                lines.append(f"- poster (image file, in .tmp-enrichment/prepared/{project_id}/): {files[0]}")
+                lines.append(f"- poster (image file, in _workspace/extracted-sources/{project_id}/): {files[0]}")
             else:
-                prefix = {"report": ".tmp-enrichment/render", "slides": ".tmp-enrichment/render"}.get(group, ".tmp-enrichment/render")
+                prefix = {"report": "_workspace/renders", "slides": "_workspace/render"}.get(group, "_workspace/render")
                 joined = " ".join(files)
-                lines.append(f"- {group} (in .tmp-enrichment/render/{project_id}/): {joined}")
+                lines.append(f"- {group} (in _workspace/renders/{project_id}/): {joined}")
         lines.append("")
         lines.append("Crop sources (page must be within the range shown):")
         report = manifest_entry.get("report") or {}
@@ -122,10 +122,10 @@ def project_block(project_id: str, record: dict, manifest_entry: dict) -> str | 
         if poster.get("file") == "poster.pdf":
             lines.append("- poster.pdf: pages 1-2 (only the pages you saw rendered)")
         elif poster.get("file") == "poster.pptx":
-            lines.append(f"- poster pptx media images (in .tmp-enrichment/prepared/{project_id}/media/): "
+            lines.append(f"- poster pptx media images (in _workspace/extracted-sources/{project_id}/media/): "
                          + ", ".join(poster.get("media", [])[:20]))
         elif poster.get("file", "").startswith("poster.") and not poster.get("file") == "poster.pdf":
-            lines.append(f"- poster image: .tmp-enrichment/prepared/{project_id}/{poster['file']}")
+            lines.append(f"- poster image: _workspace/extracted-sources/{project_id}/{poster['file']}")
         externals = manifest_entry.get("external") or []
         if externals:
             lines.append(f"- external evidence (view the rendered external pages): pages as rendered")
@@ -133,31 +133,31 @@ def project_block(project_id: str, record: dict, manifest_entry: dict) -> str | 
         if pages:
             lines.append("")
             lines.append(f"DOCX fallback: if no logo is found on rendered pages, the report's embedded images "
-                         f"are in .tmp-enrichment/prepared/{project_id}/media/ ({len(media)} files). "
+                         f"are in _workspace/extracted-sources/{project_id}/media/ ({len(media)} files). "
                          f"Read up to {DOC_LIMIT} of them in order.")
         else:
             lines.append("This project has a Word report: no rendered pages exist. The report's embedded "
-                         f"images are in .tmp-enrichment/prepared/{project_id}/media/ ({len(media)} files). "
+                         f"images are in _workspace/extracted-sources/{project_id}/media/ ({len(media)} files). "
                          f"Read them in order, up to {DOC_LIMIT}, stopping early once you have confidently "
                          f"found the best project logo. Cover art usually comes first. If none of the images "
                          "is a project-specific logo, record has_logo false. Use the --media crop template.")
     lines.append("")
-    lines.append(f"Record path: output/enrichment/records/{project_id}.json")
+    lines.append(f"Record path: output/extraction-evidence/logo-and-link-records/{project_id}.json")
     lines.append("")
     return "\n".join(lines)
 
 
 def main() -> int:
     root = Path(__file__).resolve().parent.parent
-    base = root / ".tmp-enrichment"
-    render_manifest = json.loads((base / "render-manifest.json").read_text())
-    prepared_manifest = json.loads((base / "prepared-manifest.json").read_text())
+    base = root / "_workspace"
+    render_manifest = json.loads((base / "intermediate-data" / "renders-manifest.json").read_text())
+    prepared_manifest = json.loads((base / "intermediate-data" / "extracted-sources.json").read_text())
 
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--group-size", type=int, default=6)
     args = parser.parse_args()
 
-    prompts_dir = base / "prompts"
+    prompts_dir = base / "assignment-prompts"
     prompts_dir.mkdir(exist_ok=True)
     for old in prompts_dir.glob("group-*.md"):
         old.unlink()

@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Check public accessibility of every discovered repository URL.
 
-Collects distinct normalized URLs from output/enrichment/text-grep.json and
-output/enrichment/records/*.json, then checks each with an unauthenticated
+Collects distinct normalized URLs from output/extraction-evidence/repo-link-evidence/text-grep.json and
+output/extraction-evidence/logo-and-link-records/*.json, then checks each with an unauthenticated
 GET (redirects followed, one second pacing). github.com HTML pages are not
-API-rate-limited at this scale. Writes output/enrichment/liveness.json.
+API-rate-limited at this scale. Writes output/extraction-evidence/repo-link-evidence/liveness.json.
 
 Status semantics: public = final 200; not_found = final 404, meaning private
 or deleted (indistinguishable from outside); unknown = anything else
@@ -27,12 +27,12 @@ USER_AGENT = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
 
 def collect(root: Path) -> set[str]:
     urls: set[str] = set()
-    grep_file = root / "output" / "enrichment" / "text-grep.json"
+    grep_file = root / "output" / "extraction-evidence" / "repo-link-evidence" / "text-grep.json"
     if grep_file.exists():
         for record in json.loads(grep_file.read_text()):
             if record.get("url"):
                 urls.add(record["url"])
-    records_dir = root / "output" / "enrichment" / "records"
+    records_dir = root / "output" / "extraction-evidence" / "logo-and-link-records"
     for record_file in sorted(records_dir.glob("*.json")):
         record = json.loads(record_file.read_text())
         for link in record.get("links", []):
@@ -75,7 +75,7 @@ def main() -> int:
         time.sleep(1.0)
         print(f"[{index + 1}/{len(urls)}] {url} -> {results[-1]['status']}")
 
-    output = root / "output" / "enrichment" / "liveness.json"
+    output = root / "output" / "extraction-evidence" / "repo-link-evidence" / "liveness.json"
     output.write_text(json.dumps(results, ensure_ascii=False, indent=1))
     counts = {status: sum(1 for r in results if r["status"] == status)
               for status in ("public", "not_found", "unknown")}

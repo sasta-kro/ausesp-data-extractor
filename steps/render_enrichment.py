@@ -3,8 +3,8 @@
 
 For every staged project: report pages 1-4, slide pages 1-8, poster pages 1-2,
 and up to four pages of each external-evidence PDF, at screen resolution.
-Writes .tmp-enrichment/render/<id>/<name>-p<N>.png and
-.tmp-enrichment/render-manifest.json listing what exists per project.
+Writes _workspace/renders/<id>/<name>-p<N>.png and
+_workspace/renders-manifest.json listing what exists per project.
 
 Usage: python3 steps/render_enrichment.py [--dpi 150] [--clean]
 """
@@ -48,13 +48,13 @@ def main() -> int:
     parser.add_argument("--clean", action="store_true")
     args = parser.parse_args()
 
-    base = root / ".tmp-enrichment"
+    base = root / "_workspace"
     prepared = base / "prepared"
     render_dir = base / "render"
     if args.clean and render_dir.exists():
         shutil.rmtree(render_dir)
 
-    manifest = json.loads((base / "prepared-manifest.json").read_text())
+    manifest = json.loads((base / "intermediate-data" / "extracted-sources.json").read_text())
     zoom = args.dpi / 72.0
     out_manifest: dict[str, dict] = {}
     failure_count = 0
@@ -89,7 +89,7 @@ def main() -> int:
         if any("cannot open" in note or "render failed" in note for note in record["notes"]):
             failure_count += 1
 
-    (base / "render-manifest.json").write_text(json.dumps(out_manifest, ensure_ascii=False, indent=1))
+    (base / "intermediate-data" / "renders-manifest.json").write_text(json.dumps(out_manifest, ensure_ascii=False, indent=1))
 
     total_pages = sum(len(p) for r in out_manifest.values() for p in r["pages"].values())
     projects_with_pages = sum(1 for r in out_manifest.values() if r["pages"])

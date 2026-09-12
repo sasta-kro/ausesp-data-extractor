@@ -39,9 +39,19 @@ ground-truth/discovery/   taxonomy research notes with page-level evidence
 notes/                    maintainer notes: policies, decisions, traps, reviews
 steps/                    preparation, conversion, and build tooling
 output/                   deliverables
-output/reviewed-import.csv    the import product (rebuilt, untracked)
-output/enrichment/            logos, per-project records, repository links,
-                              link liveness (tracked, see notes/enrichment-pass.md)
+output/ause-discovery-projects-metadata-import.csv   project metadata for the
+                          AUSE Discovery import (rebuilt from ground truth, untracked)
+output/logos/             one square PNG per project that has its own logo
+output/extraction-evidence/  where every logo was cropped from, which repository
+                          links were found and whether they were reachable:
+                          per-project records, logo verification results,
+                          repository-link evidence, and the combined manifest
+_workspace/               regenerable working area for the corpus passes
+_workspace/extracted-sources/      corpus unpacked and staged per project
+_workspace/sp-course-code-tracking/ cover readings behind the SP1/SP2 course map
+_workspace/assignment-prompts/     per-batch work assignments
+_workspace/review-outputs/         verification outputs and review samples
+_workspace/intermediate-data/      pass intermediates (course map, link greps)
 ```
 
 ## Pipeline
@@ -56,10 +66,10 @@ steps/1_prepare.py               unzip, normalize, clean -> reports/
 steps/2_trim.py                  keep front matter only -> thinned/
         |
         v
-steps/3_extract_and_build_csv.py extract metadata, classify, emit CSV
+steps/3_extract_and_build_csv.py extract metadata, classify, emit CSV (scratch)
         |
         v
-output/import.csv                import into AUSE Discovery admin UI
+steps/build_reviewed_csv.py      ground truth -> the AUSE Discovery import CSV
 ```
 
 Steps 1 and 2 came from the earlier frontmatter-extractor project. Step 3
@@ -87,7 +97,7 @@ python3 -m venv .venv
   --taxonomy <path-to>/ause-discover/config/taxonomy/values.yaml \
   --output output
 
-# Build the reviewed CSV from the hand-transcribed ground truth
+# Build the AUSE Discovery import CSV from the hand-transcribed ground truth
 .venv/bin/python steps/build_reviewed_csv.py \
   --taxonomy <path-to>/ause-discover/config/taxonomy/values.yaml
 
@@ -118,6 +128,8 @@ database with `ausectl catalog sync`.
   extraction.
 - `notes/people-duplication-review.md` — the full 2026-09-11 duplication
   analysis behind the canonical name map.
+- `notes/sp1-sp2-pass.md` — the SP1/SP2 course classification record,
+  course-code dictionary, and culling decisions.
 
 ## License
 

@@ -2,7 +2,7 @@
 """Build the reviewed import CSV from the hand-transcribed ground truth.
 
 Inputs: every JSON file in ground-truth/batches/. Output:
-output/reviewed-import.csv in the exact AUSE Discovery import schema.
+output/ause-discovery-projects-metadata-import.csv in the exact AUSE Discovery import schema.
 Records missing an abstract or a title are dropped and reported; the
 application rejects such rows anyway.
 
@@ -197,7 +197,7 @@ def main() -> int:
             row[column] = json.dumps(keys, ensure_ascii=False)
         rows.append(row)
 
-    output = root / "output" / "reviewed-import.csv"
+    output = root / "output" / "ause-discovery-projects-metadata-import.csv"
     output.parent.mkdir(exist_ok=True)
     with output.open("w", newline="", encoding="utf-8") as handle:
         writer = csv.DictWriter(handle, fieldnames=CSV_HEADERS)

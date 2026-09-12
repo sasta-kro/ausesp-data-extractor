@@ -3,7 +3,7 @@
 the slide-only transcriptions, rebuild the CSV and logo manifest.
 
 Every mutation is printed as it happens. Run steps/apply_course_classification.py
-first (produces .tmp-enrichment/course-final.json).
+first (produces _workspace/course-final.json).
 
 Usage: python3 steps/apply_sp_pass.py
 """
@@ -45,7 +45,7 @@ COURSE_KEYS = {"sp1": "senior_project_1", "sp2": "senior_project_2"}
 def main() -> int:
     root = Path(__file__).resolve().parent.parent
     batches = root / "ground-truth" / "batches"
-    course = json.loads((root / ".tmp-enrichment" / "course-final.json").read_text())
+    course = json.loads((root / "_workspace" / "course-final.json").read_text())
     delete_ids = {d for _, d in CULLED}
 
     # 1. write course fields into every kept record, culling as we go
@@ -77,9 +77,9 @@ def main() -> int:
         touched[source.name] = len(kept)
 
     # 2. fold in the slide-only transcriptions
-    slideonly = []
+    review_outputs = []
     for pid in ("2021", "2031", "2032"):
-        raw = json.loads((root / ".tmp-enrichment" / "slideonly" / f"{pid}.json").read_text())
+        raw = json.loads((root / "_workspace" / "review-outputs" / f"{pid}.json").read_text())
         students = []
         for s in raw["students"]:
             override = ID_ATTACH.get((pid, s["name"]))
@@ -114,17 +114,17 @@ def main() -> int:
             record["note"] += "; " + "; ".join(attach_notes)
         if raw.get("course_evidence"):
             record["course_evidence"] = raw["course_evidence"]
-        slideonly.append(record)
+        review_outputs.append(record)
         print(f"added {pid} {record['canonical_title']!r} course={record['course']}")
     (batches / "batch-slideonly.json").write_text(
-        json.dumps(slideonly, ensure_ascii=False, indent=1))
+        json.dumps(review-outputs, ensure_ascii=False, indent=1))
 
     # 3. drop culled enrichment records, logos, and manifest entries
-    enr_root = root / "output" / "enrichment"
+    enr_root = root / "output" / "extraction-evidence"
     manifest = json.loads((enr_root / "manifest.json").read_text())
     for pid in delete_ids:
         manifest.pop(pid, None)
-        (enr_root / "records" / f"{pid}.json").unlink(missing_ok=True)
+        (enr_root / "logo-and-link-records" / f"{pid}.json").unlink(missing_ok=True)
         (enr_root / "logos" / f"{pid}.png").unlink(missing_ok=True)
         print(f"enrichment cleaned for {pid}")
     (enr_root / "manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=1))
@@ -139,20 +139,7 @@ def main() -> int:
         print(result.stderr.strip())
         return 1
 
-    # 5. logo manifest filtered by actual CSV membership (no hardcoded ids)
-    import csv
-    keys = {row["import_key"] for row in csv.DictReader(
-        (root / "output" / "reviewed-import.csv").open(encoding="utf-8"))}
-    logo_projects = [{"project_import_key": key,
-                      "logo": {"file_path": manifest[key[len("sp-"):]]["logo"]["output"]},
-                      "files": []}
-                     for key in sorted(keys)
-                     if key[len("sp-"):] in manifest
-                     and manifest[key[len("sp-"):]]["logo"].get("output")]
-    (enr_root / "logo-manifest.json").write_text(json.dumps(
-        {"version": 1, "projects": logo_projects}, ensure_ascii=False, indent=1))
-    print(f"logo manifest: {len(logo_projects)} entries, filtered to CSV membership")
-    return 0
+return 0
 
 
 if __name__ == "__main__":

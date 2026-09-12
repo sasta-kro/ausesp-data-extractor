@@ -2,9 +2,9 @@
 """Stage per-project sources for the enrichment pass (logos, repository links).
 
 Walks the raw corpus and stages one normalized folder per project under
-.tmp-enrichment/prepared/<id>/ with report.pdf (or report.docx), slides.pdf,
+_workspace/extracted-sources/<id>/ with report.pdf (or report.docx), slides.pdf,
 poster.pdf, extracted external-evidence files, and media images pulled out of
-DOCX reports. Writes .tmp-enrichment/prepared-manifest.json describing exactly
+DOCX reports. Writes _workspace/extracted-sources-manifest.json describing exactly
 what was found per project, including anomalies.
 
 Usage: python3 steps/prepare_enrichment.py [--source <corpus-dir>] [--clean]
@@ -272,9 +272,9 @@ def main() -> int:
                         help="Delete the prepared tree before staging")
     args = parser.parse_args()
 
-    prepared = root / ".tmp-enrichment" / "prepared"
-    manifest = stage(args.source.resolve(), prepared, root / ".tmp-enrichment", args.clean)
-    (root / ".tmp-enrichment" / "prepared-manifest.json").write_text(
+    prepared = root / "_workspace" / "prepared"
+    manifest = stage(args.source.resolve(), prepared, root / "_workspace", args.clean)
+    (root / "_workspace" / "extracted-sources.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=1))
 
     total = len(manifest)

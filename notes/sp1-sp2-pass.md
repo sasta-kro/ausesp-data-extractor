@@ -26,9 +26,10 @@ in this pass is written here.
 5. **Duplicate culling.** The worse side of each pair is fully deleted
    (ground-truth record, enrichment record, logo PNG, manifest entries, CSV
    row). Decisions below.
-6. **Logo manifest generation** now filters to projects present in the
-   metadata CSV (handled by `steps/apply_sp_pass.py`), replacing the
-   temporary hardcoded exclusion of 2021.
+6. **Logo manifest generation** filters to projects present in the
+   metadata CSV (the jq documented in the main repository's operator note),
+   replacing the temporary hardcoded exclusion of 2021. The generated file
+   is disposable and no longer committed.
 
 ## Course-code dictionary
 
@@ -115,8 +116,8 @@ period is printed in its document.
   cross-evidence is self-contradictory). (2004 resolved to sp2 through its
   culled twin's explicit statement; 2031/2032 resolved by student
   cross-check.)
-- Logo manifest: 69 entries, generated filtered to CSV membership; the
+- Logo manifest: 69 entries when generated, filtered to CSV membership; the
   hardcoded 2021 exclusion is gone (2021 now has both metadata and logo).
-- Evidence files: raw cover reads in `output/sp-course/` (202 JSON),
-  contradiction re-reads and verifications in `.tmp-enrichment/slideonly/`
-  (untracked working data).
+- Evidence files: raw cover reads tracked in
+  `_workspace/sp-course-code-tracking/` (202 JSON); contradiction re-reads
+  and verifications in `_workspace/review-outputs/`.
