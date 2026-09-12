@@ -5,6 +5,9 @@ The fill rule (decided 2026-09-12 after sample review): sample the exact
 dominant color along the image border and pad the shorter dimension with that
 color so the logo's own canvas extends naturally; no rounding or snapping to
 white. Logos whose border is mostly transparent pad with transparency.
+Before squaring, uniform borders of that same canvas color are trimmed
+(2026-09-13, feedback on 26002) so slack canvas does not dwarf the mark;
+trimming only shrinks, content is never touched, and a 2% margin is kept.
 
 Modes:
   --logo <path> [--out <path>] [--max-side N]   one logo -> square PNG
@@ -43,10 +46,35 @@ def edge_background(image: Image.Image) -> tuple[int, int, int, int] | None:
     return (r, g, b, 255)
 
 
+def trim_canvas(image: Image.Image, background: tuple[int, int, int, int] | None,
+                tolerance: int = 24) -> Image.Image:
+    """Trim uniform borders of the logo's own canvas color so the mark fills
+    the square (feedback on 26002: slack canvas around the emblem). Keeps a
+    2% margin; content is never touched."""
+    if background is None:
+        return image
+    grayscale = image.convert("L")
+    r, g, b = background[0], background[1], background[2]
+    luminance = (r * 299 + g * 587 + b * 114) // 1000
+    mask = grayscale.point(lambda p: 255 if abs(p - luminance) > tolerance else 0)
+    bbox = mask.getbbox()
+    if bbox is None:
+        return image
+    pad = max(2, int(0.02 * max(image.size)))
+    left = max(0, bbox[0] - pad)
+    top = max(0, bbox[1] - pad)
+    right = min(image.width, bbox[2] + pad)
+    bottom = min(image.height, bbox[3] + pad)
+    trimmed = image.crop((left, top, right, bottom))
+    return trimmed if min(trimmed.size) >= 40 else image
+
+
 def square(image: Image.Image, max_side: int,
            background: tuple[int, int, int, int] | None) -> Image.Image:
     """Logo centered on a square canvas of side min(longest edge, max_side),
-    never upscaled beyond its own longest edge, padded with the background."""
+    never upscaled beyond its own longest edge, padded with the background.
+    Uniform canvas slack is trimmed first so the mark fills the square."""
+    image = trim_canvas(image, background)
     side = min(max(image.width, image.height), max_side)
     fitted = image.copy()
     fitted.thumbnail((side, side), Image.LANCZOS)
@@ -78,9 +106,10 @@ def demo(pid: str) -> None:
 
     fitted = image.copy()
     fitted.thumbnail((side, side), Image.LANCZOS)
+    squared = square(image, side, background)
     on_page = Image.alpha_composite(
-        Image.new("RGBA", (side, side), PAPER + (255,)),
-        square(image, side, background)).convert("RGBA")
+        Image.new("RGBA", squared.size, PAPER + (255,)),
+        squared).convert("RGBA")
     panels = [
         ("original (as extracted)", on_tile(fitted)),
         ("bg-aware square (final rule)", on_tile(square(image, side, background))),
