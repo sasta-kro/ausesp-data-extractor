@@ -45,7 +45,11 @@ submitted beside the report (published conference papers, a confirmation
 letter, a feedback report). Files there import under the `other` type when
 their extension is permitted, which covers the six PDFs. The three YRSS
 2021 award images in sp-2039 (jpg, png) have no type that permits their
-extension, so they stay out and the build reports a warning for each.
+extension. The maintainer decided on 2026-09-12 to leave them out until
+the application gains image support for such material. That follow-up is
+recorded as item 19 in the main repository's MVP improvement backlog
+(`.memory/mvp_implementation_status.md`). Until then the build reports a
+warning for each skipped image.
 
 ## The sp-26027 external report
 
