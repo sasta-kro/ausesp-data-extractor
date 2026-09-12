@@ -57,6 +57,23 @@ SP2 = CSX3011/ITX3010, but several 2025 documents print the SP1 code next to
 an explicit SP2 statement (or vice versa). Per-document explicit statements
 always override the dictionary.
 
+## Student cross-check (added after review, 2026-09-12)
+
+Maintainer rule: when a project's course cannot be told from its own
+documents, check its students' other corpus projects. SP1 and SP2 form a
+pair per student, so a student whose other project is SP1 means this one is
+SP2, and vice versa.
+
+| Project | Cross-evidence | Outcome |
+|---|---|---|
+| 1823 | Kamonchanok Arttanate's only other project (1616) is SP1 | confirms the document's own SP2 claim |
+| 2222 | both students' other projects (2102, 2042) are SP1 | confirms SP2 |
+| 26022 / 26030 / 25117 | no student has another project | document claims stand |
+| 2031 | all three students' only other project (2116) is SP2 | resolved to SP1 |
+| 2032 | two students' other project (2017) is SP1 | resolved to SP2 (same team's dental work continued from SP1 to SP2) |
+| 1933 | conflicting: one member's other project (1927) is SP1, two members' (2001) is SP2 | stays unspecified; cross-evidence itself contradicts |
+| 1636 / 1653 / 1657 / 1801 / 25101 | no student has another project | stay unspecified |
+
 ## Culling decisions per pair
 
 | Pair | Kept | Deleted | Reason |
@@ -90,11 +107,14 @@ period is printed in its document.
 
 ## Pass results
 
-- CSV: 209 rows (212 minus 6 culled plus 3 slide-only), course split
-  102 senior_project_1 / 99 senior_project_2 / 8 unspecified.
-- Unspecified projects (8): 1636, 1653, 1657, 1801, 1933, 2031, 2032, 25101 —
-  no explicit statement anywhere and codes absent or conflicted. (2004
-  resolved to sp2 through its culled twin's explicit statement.)
+- CSV: 209 rows (212 minus 6 culled plus 3 slide-only), course split after
+  the student cross-check: 103 senior_project_1 / 100 senior_project_2 /
+  6 unspecified.
+- Unspecified projects (6): 1636, 1653, 1657, 1801, 1933, 25101 — no explicit
+  statement, codes absent or conflicted, and no student cross-evidence (1933's
+  cross-evidence is self-contradictory). (2004 resolved to sp2 through its
+  culled twin's explicit statement; 2031/2032 resolved by student
+  cross-check.)
 - Logo manifest: 69 entries, generated filtered to CSV membership; the
   hardcoded 2021 exclusion is gone (2021 now has both metadata and logo).
 - Evidence files: raw cover reads in `output/sp-course/` (202 JSON),

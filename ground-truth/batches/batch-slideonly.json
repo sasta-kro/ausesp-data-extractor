@@ -60,8 +60,8 @@
   ],
   "phase": "final",
   "course_code": null,
-  "course": "unspecified",
-  "course_basis": "none",
+  "course": "sp1",
+  "course_basis": "student-crosscheck:2116",
   "program": "information_technology",
   "semester": "2",
   "academic_year": 2020,
@@ -99,7 +99,8 @@
     "mysql"
    ]
   },
-  "note": "slide deck only, no report document exists; No course line, semester, year, advisor, or committee is printed anywhere; period (AY2020 semester 2) inferred from Gantt dates 19-Oct-20 to 24-Mar-21; program is a guess (information_technology) since no program or course code appears; demo site branded 'Hotel Jaa' and Gantt charts labeled 'Hotel Reservation System'; conclusion says the project failed last semester and is continued."
+  "note": "slide deck only, no report document exists; No course line, semester, year, advisor, or committee is printed anywhere; period (AY2020 semester 2) inferred from Gantt dates 19-Oct-20 to 24-Mar-21; program is a guess (information_technology) since no program or course code appears; demo site branded 'Hotel Jaa' and Gantt charts labeled 'Hotel Reservation System'; conclusion says the project failed last semester and is continued.",
+  "course_evidence": "no course line on any slide; all three students' only other project (2116, Data Analytics with D-Network Worldwide) is SP2, so this deck is their SP1"
  },
  {
   "id": "2032",
@@ -109,8 +110,8 @@
   ],
   "phase": "final",
   "course_code": null,
-  "course": "unspecified",
-  "course_basis": "none",
+  "course": "sp2",
+  "course_basis": "student-crosscheck:2017",
   "program": "information_technology",
   "semester": "2",
   "academic_year": 2020,
@@ -150,6 +151,6 @@
    ]
   },
   "note": "slide deck only, no report document exists; Title slide prints typo 'Managerment' (corrected from intro/Gantt/conclusion usage); no course code, advisor, committee, student ids, program, or printed semester, phase sp2-final inferred from 'Background on Senior 1' plus Mar-2021 Gantt and finished Django screenshots, semester 2/2020 inferred from Gantt 30-Oct-20 to 24-Mar-21, program information_technology is a bare guess with no course code to go on.; Tanakorn Navanugraha: id attached from id from project 2017; Rajbir Singh: id attached from id from project 2017",
-  "course_evidence": "Background on Senior 1 / \"Senior Project I aimed on improve and provide the website on Changnoi dental clinic\""
+  "course_evidence": "no course line on any slide; Tanakorn Navanugraha and Rajbir Singh's other project (2017, Dental Management System) is SP1, so this deck is their SP2"
  }
 ]
