@@ -35,3 +35,10 @@ they are. Read before touching `dataset/` or rebuilding the CSV.
 - Two legacy .doc reports (1636, 1906) yield no recoverable embedded images
   and no renderable pages. 1906's project is also filed as 2004, which has a
   proper PDF, so nothing is lost.
+- The raw corpus directory (`resources/all-sp-projects-raw` in the main
+  repository: the original per-project ZIPs and PDFs with original
+  filenames) was archived off-machine by the maintainer and deleted
+  locally on 2026-09-13 to save disk space. `_workspace/extracted-sources/`
+  is therefore no longer regenerable in place: restoring the archive is the
+  first step before any fresh `1_prepare.py` run. Treat the staged copy as
+  the working original from now on.

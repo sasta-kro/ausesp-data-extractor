@@ -62,8 +62,8 @@ _workspace/intermediate-data/      pass intermediates (course map, link greps)
 ## Pipeline
 
 ```text
-resources/all-sp-projects/        raw corpus: 220 projects, ZIPs and PDFs
-        |
+raw corpus archive (off-machine)   original per-project ZIPs and PDFs,
+        |                          removed locally 2026-09-13, see notes
         v
 pipeline/1_prepare.py               unzip, normalize, clean -> reports/
         |
@@ -90,7 +90,8 @@ CSV.
 python3 -m venv .venv
 .venv/bin/pip install -r requirements.txt
 
-# Step 1: prepare raw reports (only needed for a fresh corpus copy)
+# Step 1: prepare raw reports (only needed for a fresh corpus copy,
+# which first means restoring the archived raw corpus, see notes)
 .venv/bin/python pipeline/1_prepare.py <raw-dir> <reports-dir>
 
 # Step 2: trim to front matter
