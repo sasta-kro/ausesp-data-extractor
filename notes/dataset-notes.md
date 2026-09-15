@@ -42,3 +42,8 @@ they are. Read before touching `dataset/` or rebuilding the CSV.
   is therefore no longer regenerable in place: restoring the archive is the
   first step before any fresh `1_prepare.py` run. Treat the staged copy as
   the working original from now on.
+- Project 2254 lost its `game` platform on 2026-09-15: game is its
+  category, not its runtime platform. The main repository retired the
+  platform dimension's `game` value the same day (temporary retirement
+  until the next full rebuild, which may drop the entry entirely). The
+  project keeps `android` as its platform.
