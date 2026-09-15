@@ -142,6 +142,8 @@ database with `ausectl catalog sync`.
   course-code dictionary, and culling decisions.
 - `notes/bundle-building.md`: how the content bundle is assembled, what
   it includes, and which files cannot be imported.
+- `notes/new-batch-comparison-2026-09-15.md`: verdict on the admins' 2016
+  to 2022 batch, nothing new in it.
 
 ## License
 
